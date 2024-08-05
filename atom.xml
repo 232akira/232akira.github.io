@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://232akira.github.io/</id>
+    <title>@232akira</title>
+    <updated>2024-08-05T08:16:02.297Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://232akira.github.io/"/>
+    <link rel="self" href="https://232akira.github.io/atom.xml"/>
+    <subtitle>IT&apos;S TIME TO GO TO BED</subtitle>
+    <logo>https://232akira.github.io/images/avatar.png</logo>
+    <icon>https://232akira.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, @232akira</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello World!]]></title>
+        <id>https://232akira.github.io/post/hello-gridea/</id>
+        <link href="https://232akira.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到我的博客~这里是沃德第一篇笔记🤗</p>
+]]></content>
+    </entry>
+</feed>
