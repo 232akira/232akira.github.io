@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://232akira.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://232akira.github.io/"/>
+  <updated>2024-11-23T11:23:44.442Z</updated>
+  <id>http://232akira.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;232akira-first-blog&#39;</title>
+    <link href="http://232akira.github.io/2024/11/23/232akira-first-blog/"/>
+    <id>http://232akira.github.io/2024/11/23/232akira-first-blog/</id>
+    <published>2024-11-23T10:40:43.000Z</published>
+    <updated>2024-11-23T11:23:44.442Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cy一下markdowm语法"><a href="#cy一下markdowm语法" class="headerlink" title="cy一下markdowm语法"></a>cy一下markdowm语法</h1><h2 id="这是232akira的第一篇博客的二级标题两个井号加空格"><a href="#这是232akira的第一篇博客的二级标题两个井号加空格" class="headerlink" title="这是232akira的第一篇博客的二级标题两个井号加空格"></a>这是232akira的第一篇博客的二级标题两个井号加空格</h2><h3 id="这是232akira的第一篇博客的三级标题三个井号加空格"><a href="#这是232akira的第一篇博客的三级标题三个井号加空格" class="headerlink" title="这是232akira的第一篇博客的三级标题三个井号加空格"></a>这是232akira的第一篇博客的三级标题三个井号加空格</h3><p>这是232akira的第一篇博客的第一段直接回车</p><p>这是232akira的第一篇博客的第二段</p><p>这是换行尝试两个空格+回车<br><br><br>换行！</p><p>这是字体加粗尝试加粗 <strong>前后各加2个星星号</strong></p><p>这是字体斜体尝试斜体 <em>前后各加1个星星号</em></p><p>这是字体同时加粗斜体尝试 <em><strong>前后各加3个星星号</strong></em></p><p>这是创建块引用</p><blockquote><p>kuaiyinyongkuaiyinyongkkk<br>这是多个段落的块引用<br>kuaiyinyongkkk</p><p>kkk</p></blockquote><p>这是嵌套块引用</p><blockquote><p>kuaiyinyongkkk</p><blockquote><p>qiantaoaaa</p><ul><li>用短横杠（注意两边空格）出来是圆点</li></ul></blockquote></blockquote><p>这是有序列表<br>1.我是1第一项必须数字一加英文句号后面数字无所谓<br>2.我是2<br>    1.我是1<br>    2.我是2<br>3.我是3</p><p>这是无序列表点乘加短横杠都可以变成圆点<br>-111<br>-222<br>    -1111嵌套前面四个空格<br>    -代码在列表里缩进8个空格或者2个tab<br>            print(“hello world~”)<br>-333</p><p>这是代码语法<br>把代码包裹在反引号<code>中 比如我这里是 </code>代码代码代码<code>创建代码块就还是缩进4个空格or1个tab</code>        我是代码块啊啊啊`</p><h2 id="这是分隔线单独一行三星或多星-破折号-下划线"><a href="#这是分隔线单独一行三星或多星-破折号-下划线" class="headerlink" title="这是分隔线单独一行三星或多星/破折号/下划线***"></a>这是分隔线单独一行三星或多星/破折号/下划线<br>***</h2><hr><p>出来的效果一样的</p><p>这是链接链接的文本放中括号地址放后面圆括号<a href="https://www.xuexi.cn/" title="我是title">快来学习</a><br>或者直接尖括号链接跳转<a href="https://www.xuexi.cn/">https://www.xuexi.cn/</a></p><p>强调链接就在尖括号前后增加星号，表示为代码就加反引号<br>I love <strong><a href="https://www.xuexi.cn/" title="我是title">学习</a></strong></p><p>这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接<br>[跳转跳转啊啊啊] <a href="https://www.xuexi.cn/">1</a></p><p>这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。<br><img src="/images/kabi.jpg" alt="这是图片" title="我是title"></p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;cy一下markdowm语法&quot;&gt;&lt;a href=&quot;#cy一下markdowm语法&quot; class=&quot;headerlink&quot; title=&quot;cy一下markdowm语法&quot;&gt;&lt;/a&gt;cy一下markdowm语法&lt;/h1&gt;&lt;h2 id=&quot;这是232akira的第一篇博客的二级标题两个井号加空格&quot;&gt;&lt;a href=&quot;#这是232akira的第一篇博客的二级标题两个井号加空格&quot; class=&quot;headerlink&quot; title=&quot;这是232akira的第一篇博客的二级标题两个井号加空格&quot;&gt;&lt;/a&gt;这是232akira的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;&lt;h3 id=&quot;这是232akira的第一篇博客的三级标题三个井号加空格&quot;&gt;&lt;a href=&quot;#这是232akira的第一篇博客的三级标题三个井号加空格&quot; class=&quot;headerlink&quot; title=&quot;这是232akira的第一篇博客的三级标题三个井号加空格&quot;&gt;&lt;/a&gt;这是232akira的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;&lt;p&gt;这是232akira的第一篇博客的第一段直接回车&lt;/p&gt;
+&lt;p&gt;这是232akira的第一篇博客的第二段&lt;/p&gt;
+&lt;p&gt;这是换行尝试两个空格+回车&lt;br&gt;&lt;br&gt;&lt;br&gt;换行！&lt;/p&gt;
+&lt;p&gt;这是字体加粗尝试加粗 &lt;strong&gt;前后各加2个星星号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是字体斜体尝试斜体 &lt;em&gt;前后各加1个星星号&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这是字体同时加粗斜体尝试 &lt;em&gt;&lt;strong&gt;前后各加3个星星号&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这是创建块引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kuaiyinyongkuaiyinyongkkk&lt;br&gt;这是多个段落的块引用&lt;br&gt;kuaiyinyongkkk&lt;/p&gt;
+&lt;p&gt;kkk&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是嵌套块引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kuaiyinyongkkk&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;qiantaoaaa&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用短横杠（注意两边空格）出来是圆点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是有序列表&lt;br&gt;1.我是1第一项必须数字一加英文句号后面数字无所谓&lt;br&gt;2.我是2&lt;br&gt;    1.我是1&lt;br&gt;    2.我是2&lt;br&gt;3.我是3&lt;/p&gt;
+&lt;p&gt;这是无序列表点乘加短横杠都可以变成圆点&lt;br&gt;-111&lt;br&gt;-222&lt;br&gt;    -1111嵌套前面四个空格&lt;br&gt;    -代码在列表里缩进8个空格或者2个tab&lt;br&gt;            print(“hello world~”)&lt;br&gt;-333&lt;/p&gt;
+&lt;p&gt;这是代码语法&lt;br&gt;把代码包裹在反引号&lt;code&gt;中 比如我这里是 &lt;/code&gt;代码代码代码&lt;code&gt;创建代码块就还是缩进4个空格or1个tab&lt;/code&gt;        我是代码块啊啊啊`&lt;/p&gt;
+&lt;h2 id=&quot;这是分隔线单独一行三星或多星-破折号-下划线&quot;&gt;&lt;a href=&quot;#这是分隔线单独一行三星或多星-破折号-下划线&quot; class=&quot;headerlink&quot; title=&quot;这是分隔线单独一行三星或多星/破折号/下划线***&quot;&gt;&lt;/a&gt;这是分隔线单独一行三星或多星/破折号/下划线&lt;br&gt;***&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;出来的效果一样的&lt;/p&gt;
+&lt;p&gt;这是链接链接的文本放中括号地址放后面圆括号&lt;a href=&quot;https://www.xuexi.cn/&quot; title=&quot;我是title&quot;&gt;快来学习&lt;/a&gt;&lt;br&gt;或者直接尖括号链接跳转&lt;a href=&quot;https://www.xuexi.cn/&quot;&gt;https://www.xuexi.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;强调链接就在尖括号前后增加星号，表示为代码就加反引号&lt;br&gt;I love &lt;strong&gt;&lt;a href=&quot;https://www.xuexi.cn/&quot; title=&quot;我是title&quot;&gt;学习&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接&lt;br&gt;[跳转跳转啊啊啊] &lt;a href=&quot;https://www.xuexi.cn/&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;&lt;img src=&quot;/images/kabi.jpg&quot; alt=&quot;这是图片&quot; title=&quot;我是title&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://232akira.github.io/2024/11/23/hello-world/"/>
+    <id>http://232akira.github.io/2024/11/23/hello-world/</id>
+    <published>2024-11-23T09:56:54.739Z</published>
+    <updated>2024-11-23T09:56:54.739Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
