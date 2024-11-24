@@ -1,19 +1,23 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://232akira.github.io</id>
-    <title>Hexo</title>
-    <subtitle></subtitle>
-    <icon>http://232akira.github.io/images/favicon.ico</icon>
-    <link href="http://232akira.github.io" />
-    <author>
-      <name>John Doe</name>
-    </author>
-    <updated>2024-11-23T10:40:43.000Z</updated>
-    <entry>
-        <id>http://232akira.github.io/2024/11/23/232akira-first-blog/</id>
-        <title>&#39;232akira-first-blog&#39;</title>
-        <link rel="alternate" href="http://232akira.github.io/2024/11/23/232akira-first-blog/"/>
-        <content type="html">&lt;h1 id=&#34;cy一下markdowm语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cy一下markdowm语法&#34;&gt;#&lt;/a&gt; cy 一下 markdowm 语法&lt;/h1&gt;
+<rss version="2.0">
+    <channel>
+        <title>Hexo</title>
+        <subtitle></subtitle>
+        <icon>http://232akira.github.io/images/favicon.ico</icon>
+        <link>http://232akira.github.io</link>
+        <author>
+          <name>John Doe</name>
+        </author>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
+        <lastBuildDate>Sat, 23 Nov 2024 18:40:43 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://232akira.github.io/2024/11/23/232akira-first-blog/</guid>
+            <title>&#39;232akira-first-blog&#39;</title>
+            <link>http://232akira.github.io/2024/11/23/232akira-first-blog/</link>
+            <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;cy一下markdowm语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cy一下markdowm语法&#34;&gt;#&lt;/a&gt; cy 一下 markdowm 语法&lt;/h1&gt;
 &lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;
 &lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;
 &lt;p&gt;这是 232akira 的第一篇博客的第一段直接回车&lt;/p&gt;
@@ -70,14 +74,14 @@ print(&#34;hello world~&#34;)&lt;br&gt;
 &lt;p&gt;这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;
 &lt;img data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-</content>
-        <updated>2024-11-23T10:40:43.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://232akira.github.io/2024/11/23/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="http://232akira.github.io/2024/11/23/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://232akira.github.io/2024/11/23/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://232akira.github.io/2024/11/23/hello-world/</link>
+            <pubDate>Sat, 23 Nov 2024 17:56:54 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
@@ -91,7 +95,7 @@ print(&#34;hello world~&#34;)&lt;br&gt;
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
-</content>
-        <updated>2024-11-23T09:56:54.739Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
