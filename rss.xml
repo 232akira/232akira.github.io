@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>232akira</title>
-        <subtitle></subtitle>
+        <title>Per aspera ad astra</title>
+        <subtitle>循此苦旅 以达繁星</subtitle>
         <icon>https://232akira.github.io/assets/favicon.ico</icon>
         <link>https://232akira.github.io</link>
         <author>
-          <name>YiChenK</name>
+          <name>YiChenKang</name>
         </author>
-        <description>欢迎来到我的个人博客OvO</description>
+        <description>欢迎交流学习~</description>
         <language>zh-CN</language>
         <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
         <lastBuildDate>Sat, 23 Nov 2024 18:40:43 +0800</lastBuildDate>
