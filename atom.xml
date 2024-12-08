@@ -1,55 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>232akira</title>
   
   
   <link href="https://232akira.github.io/atom.xml" rel="self"/>
   
   <link href="https://232akira.github.io/"/>
-  <updated>2024-11-23T11:23:44.442Z</updated>
+  <updated>2024-12-08T02:22:34.715Z</updated>
   <id>https://232akira.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>YiChenK</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>&#39;232akira-first-blog&#39;</title>
+    <title>cy一下markdown语法</title>
     <link href="https://232akira.github.io/2024/11/23/232akira-first-blog/"/>
     <id>https://232akira.github.io/2024/11/23/232akira-first-blog/</id>
     <published>2024-11-23T10:40:43.000Z</published>
-    <updated>2024-11-23T11:23:44.442Z</updated>
+    <updated>2024-12-08T02:22:34.715Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="cy一下markdowm语法"><a class="anchor" href="#cy一下markdowm语法">#</a> cy 一下 markdowm 语法</h1><h2 id="这是232akira的第一篇博客的二级标题两个井号加空格"><a class="anchor" href="#这是232akira的第一篇博客的二级标题两个井号加空格">#</a> 这是 232akira 的第一篇博客的二级标题两个井号加空格</h2><h3 id="这是232akira的第一篇博客的三级标题三个井号加空格"><a class="anchor" href="#这是232akira的第一篇博客的三级标题三个井号加空格">#</a> 这是 232akira 的第一篇博客的三级标题三个井号加空格</h3><p>这是 232akira 的第一篇博客的第一段直接回车</p><p>这是 232akira 的第一篇博客的第二段</p><p>这是换行尝试两个空格 + 回车<br> &lt;br&gt;<br> 换行！</p><p>这是字体加粗尝试加粗 <strong>前后各加 2 个星星号</strong></p><p>这是字体斜体尝试斜体 <em>前后各加 1 个星星号</em></p><p>这是字体同时加粗斜体尝试 <em><strong>前后各加 3 个星星号</strong></em></p><p>这是创建块引用</p><blockquote><p>kuaiyinyongkuaiyinyongkkk<br> 这是多个段落的块引用<br> kuaiyinyongkkk</p><p>kkk</p></blockquote><p>这是嵌套块引用</p><blockquote><p>kuaiyinyongkkk</p><blockquote><p>qiantaoaaa</p><ul><li>用短横杠（注意两边空格）出来是圆点</li></ul></blockquote></blockquote><p>这是有序列表<br> 1. 我是 1 第一项必须数字一加英文句号后面数字无所谓<br> 2. 我是 2<br>1. 我是 1<br>2. 我是 2<br>3. 我是 3</p><p>这是无序列表点乘加短横杠都可以变成圆点<br> - 111<br>-222<br>-1111 嵌套前面四个空格<br> - 代码在列表里缩进 8 个空格或者 2 个 tab<br>print(“hello world~”)<br>-333</p><p>这是代码语法<br>把代码包裹在反引号 <code>中 比如我这里是 </code> 代码代码代码 <code>创建代码块就还是缩进4个空格or1个tab</code>         我是代码块啊啊啊 `</p><p>这是分隔线单独一行三星或多星 / 破折号 / 下划线</p><hr><hr><hr><p>出来的效果一样的</p><p>这是链接链接的文本放中括号地址放后面圆括号<a href="https://www.xuexi.cn/" title="我是title">快来学习</a><br>或者直接尖括号链接跳转<a href="https://www.xuexi.cn/"> https://www.xuexi.cn/</a></p><p>强调链接就在尖括号前后增加星号，表示为代码就加反引号<br> I love <strong><a href="https://www.xuexi.cn/" title="我是title">学习</a></strong></p><p>这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接<br> [跳转跳转啊啊啊] <a href="https://www.xuexi.cn/">1</a></p><p>这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。<br><img loading="lazy" data-src="/images/kabi.jpg" alt="这是图片" title="我是title"></p><p>&lt;!–more–&gt;</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;cy一下markdowm语法&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#cy一下markdowm语法&quot;&gt;#&lt;/a&gt; cy 一下 markdowm 语法&lt;/h1&gt;
-&lt;h2 id=&quot;这是232akira的第一篇博客的二级标题两个井号加空格&quot;&gt;&lt;a class</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://232akira.github.io/2024/11/23/hello-world/"/>
-    <id>https://232akira.github.io/2024/11/23/hello-world/</id>
-    <published>2024-11-23T09:56:54.739Z</published>
-    <updated>2024-11-23T09:56:54.739Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="anchor" href="#create-a-new-post">#</a> Create a new post</h3><p>&lt;!–code￼0–&gt;</p><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="anchor" href="#run-server">#</a> Run server</h3><p>&lt;!–code￼1–&gt;</p><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="anchor" href="#generate-static-files">#</a> Generate static files</h3><p>&lt;!–code￼2–&gt;</p><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><p>&lt;!–code￼3–&gt;</p><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="这是232akira的第一篇博客的二级标题两个井号加空格"><a class="anchor" href="#这是232akira的第一篇博客的二级标题两个井号加空格">#</a> 这是 232akira 的第一篇博客的二级标题两个井号加空格</h2><h3 id="这是232akira的第一篇博客的三级标题三个井号加空格"><a class="anchor" href="#这是232akira的第一篇博客的三级标题三个井号加空格">#</a> 这是 232akira 的第一篇博客的三级标题三个井号加空格</h3><p>这是 232akira 的第一篇博客的第一段直接回车</p><p>这是 232akira 的第一篇博客的第二段</p><p>这是换行尝试两个空格 + 回车<br> &lt;br&gt;<br> 换行！</p><p>这是字体加粗尝试加粗 <strong>前后各加 2 个星星号</strong></p><p>这是字体斜体尝试斜体 <em>前后各加 1 个星星号</em></p><p>这是字体同时加粗斜体尝试 <em><strong>前后各加 3 个星星号</strong></em></p><p>这是创建块引用</p><blockquote><p>kuaiyinyongkuaiyinyongkkk<br> 这是多个段落的块引用<br> kuaiyinyongkkk</p><p>kkk</p></blockquote><p>这是嵌套块引用</p><blockquote><p>kuaiyinyongkkk</p><blockquote><p>qiantaoaaa</p><ul><li>用短横杠（注意两边空格）出来是圆点</li></ul></blockquote></blockquote><p>这是有序列表<br> 1. 我是 1 第一项必须数字一加英文句号后面数字无所谓<br> 2. 我是 2<br>1. 我是 1<br>2. 我是 2<br>3. 我是 3</p><p>这是无序列表点乘加短横杠都可以变成圆点<br> - 111<br>-222<br>-1111 嵌套前面四个空格<br> - 代码在列表里缩进 8 个空格或者 2 个 tab<br>print(“hello world~”)<br>-333</p><p>这是代码语法<br>把代码包裹在反引号 <code>中 比如我这里是 </code> 代码代码代码 <code>创建代码块就还是缩进4个空格or1个tab</code>         我是代码块啊啊啊 `</p><p>这是分隔线单独一行三星或多星 / 破折号 / 下划线</p><hr><hr><hr><p>出来的效果一样的</p><p>这是链接链接的文本放中括号地址放后面圆括号<a href="https://www.xuexi.cn/" title="我是title">快来学习</a><br>或者直接尖括号链接跳转<a href="https://www.xuexi.cn/"> https://www.xuexi.cn/</a></p><p>强调链接就在尖括号前后增加星号，表示为代码就加反引号<br> I love <strong><a href="https://www.xuexi.cn/" title="我是title">学习</a></strong></p><p>这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接<br> [跳转跳转啊啊啊] <a href="https://www.xuexi.cn/">1</a></p><p>这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。<br><img loading="lazy" data-src="/images/kabi.jpg" alt="这是图片" title="我是title"></p><p>&lt;!–more–&gt;</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;这是232akira的第一篇博客的二级标题两个井号加空格&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#这是232akira的第一篇博客的二级标题两个井号加空格&quot;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;
+&lt;h3 i</summary>
       
     
     

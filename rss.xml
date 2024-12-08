@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Hexo</title>
+        <title>232akira</title>
         <subtitle></subtitle>
         <icon>https://232akira.github.io/assets/favicon.ico</icon>
         <link>https://232akira.github.io</link>
         <author>
-          <name>John Doe</name>
+          <name>YiChenK</name>
         </author>
-        <description></description>
+        <description>欢迎来到我的个人博客OvO</description>
         <language>zh-CN</language>
         <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
         <lastBuildDate>Sat, 23 Nov 2024 18:40:43 +0800</lastBuildDate>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2024/11/23/232akira-first-blog/</guid>
-            <title>&#39;232akira-first-blog&#39;</title>
+            <title>cy一下markdown语法</title>
             <link>https://232akira.github.io/2024/11/23/232akira-first-blog/</link>
             <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;cy一下markdowm语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cy一下markdowm语法&#34;&gt;#&lt;/a&gt; cy 一下 markdowm 语法&lt;/h1&gt;
-&lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;
 &lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;#&lt;/a&gt; 这是 232akira 的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;
 &lt;p&gt;这是 232akira 的第一篇博客的第一段直接回车&lt;/p&gt;
 &lt;p&gt;这是 232akira 的第一篇博客的第二段&lt;/p&gt;
@@ -74,27 +73,6 @@ print(“hello world~”)&lt;br&gt;
 &lt;p&gt;这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&amp;lt;!–more–&amp;gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2024/11/23/hello-world/</guid>
-            <title>Hello World</title>
-            <link>https://232akira.github.io/2024/11/23/hello-world/</link>
-            <pubDate>Sat, 23 Nov 2024 17:56:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;p&gt;&amp;lt;!–code￼0–&amp;gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;p&gt;&amp;lt;!–code￼1–&amp;gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;p&gt;&amp;lt;!–code￼2–&amp;gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;p&gt;&amp;lt;!–code￼3–&amp;gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
