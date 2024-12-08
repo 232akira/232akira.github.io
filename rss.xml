@@ -72,7 +72,6 @@ print(“hello world~”)&lt;br&gt;
  [跳转跳转啊啊啊] &lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;
 &lt;img loading=&#34;lazy&#34; data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more–&amp;gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
