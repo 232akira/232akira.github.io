@@ -3,7 +3,7 @@
     <channel>
         <title>Hexo</title>
         <subtitle></subtitle>
-        <icon>https://232akira.github.io/images/favicon.ico</icon>
+        <icon>https://232akira.github.io/assets/favicon.ico</icon>
         <link>https://232akira.github.io</link>
         <author>
           <name>John Doe</name>
@@ -56,7 +56,7 @@
 -222&lt;br&gt;
 -1111 嵌套前面四个空格&lt;br&gt;
  - 代码在列表里缩进 8 个空格或者 2 个 tab&lt;br&gt;
-print(&#34;hello world~&#34;)&lt;br&gt;
+print(“hello world~”)&lt;br&gt;
 -333&lt;/p&gt;
 &lt;p&gt;这是代码语法&lt;br&gt;
 把代码包裹在反引号 &lt;code&gt;中 比如我这里是 &lt;/code&gt; 代码代码代码 &lt;code&gt;创建代码块就还是缩进4个空格or1个tab&lt;/code&gt;         我是代码块啊啊啊 `&lt;/p&gt;
@@ -65,15 +65,15 @@ print(&#34;hello world~&#34;)&lt;br&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;p&gt;出来的效果一样的&lt;/p&gt;
-&lt;p&gt;这是链接链接的文本放中括号地址放后面圆括号&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHVleGkuY24v&#34;&gt;快来学习&lt;/span&gt;&lt;br&gt;
-或者直接尖括号链接跳转&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHVleGkuY24v&#34;&gt; https://www.xuexi.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这是链接链接的文本放中括号地址放后面圆括号&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;快来学习&lt;/a&gt;&lt;br&gt;
+或者直接尖括号链接跳转&lt;a href=&#34;https://www.xuexi.cn/&#34;&gt; https://www.xuexi.cn/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;强调链接就在尖括号前后增加星号，表示为代码就加反引号&lt;br&gt;
- I love &lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHVleGkuY24v&#34;&gt;学习&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+ I love &lt;strong&gt;&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;学习&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接&lt;br&gt;
- [跳转跳转啊啊啊] &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueHVleGkuY24v&#34;&gt;1&lt;/span&gt;&lt;/p&gt;
+ [跳转跳转啊啊啊] &lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是添加图像使用感叹号 + 方括号 + 圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;
-&lt;img data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–more–&amp;gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -81,20 +81,20 @@ print(&#34;hello world~&#34;)&lt;br&gt;
             <title>Hello World</title>
             <link>https://232akira.github.io/2024/11/23/hello-world/</link>
             <pubDate>Sat, 23 Nov 2024 17:56:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
 &lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–code￼0–&amp;gt;&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–code￼1–&amp;gt;&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–code￼2–&amp;gt;&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;p&gt;&lt;/p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–code￼3–&amp;gt;&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
