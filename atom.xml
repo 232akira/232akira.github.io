@@ -6,7 +6,7 @@
   <link href="https://232akira.github.io/atom.xml" rel="self"/>
   
   <link href="https://232akira.github.io/"/>
-  <updated>2024-12-08T10:32:23.246Z</updated>
+  <updated>2024-12-10T13:03:18.959Z</updated>
   <id>https://232akira.github.io/</id>
   
   <author>
@@ -17,9 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Attention Is All You Need阅读</title>
+    <link href="https://232akira.github.io/2024/12/10/Attention%20Is%20All%20You%20Need%E9%98%85%E8%AF%BB/"/>
+    <id>https://232akira.github.io/2024/12/10/Attention%20Is%20All%20You%20Need%E9%98%85%E8%AF%BB/</id>
+    <published>2024-12-10T10:40:43.000Z</published>
+    <updated>2024-12-10T13:03:18.959Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="attention-is-all-you-need阅读"><a class="anchor" href="#attention-is-all-you-need阅读">#</a> Attention Is All You Need 阅读</h1><p><em><strong>先把作业贴过来，后面会慢慢补充。</strong></em></p><p>《Attention Is All You Need》阅读笔记<br> 2252805 - 康怡晨 - 24/12/10</p><blockquote><p>这篇论文首先上来给人的感觉是题目特别短。因为之前看过的一些论文标题少说一两行，所以我以为这篇内容会很水。<br>结果完全完全相反，这里主要讲讲学到的自注意力机制。</p></blockquote><hr><h2 id="先上个github链接都去star"><a class="anchor" href="#先上个github链接都去star">#</a> 先上个<a href="https://github.com/tensorflow/tensor2tensor/" title="tensor2tensor"> github 链接</a>，都去 star</h2><h2 id="首先标题attention-self-attention也就是这篇文章所研究的transformer模型中最关键的自注意力机制-自注意力机制简单来说就是让模型学会区分一句话中不同词语的重要程度-正如abstract部分所讲transformer模型完全不需要递归和卷积并且效果好-泛化能力也强同时具有并行性-相比像rnn这种怎么改都没法打破串行处理带来的限制的模型优势很明显其中算法公式看不太懂这里就先就不赘述了-自注意力机制能够让ai更像人的思维一样去理解语言的上下文-当下流行的openai家的gpt全称叫generative-pre-trained-transformer就是基与trans-former架构的自然语言处理模型-回到论文introduction提到attention在输入输出序列建模过程其实并不少见比如rnn的一部分就用到了-这里注意到自注意力机制并非本论文作者提出而是已经有很多成功应用但是完全依赖它的transformer还是第一次-文章中32提到了组成自注意力机制的几个向量query查询-key键-value值和output输出-注意力函数可被描述成将query和一系列key-value对映射到output的函数-实际中query打包成矩阵q同理key-kvalue-v得到输出矩阵的计算公式详见312-想起来上上次老师代课那节课学了个产生词向量的word2vec模型与它相比看transformer能通过上下文来动态计算向量显然更优-看不完略过论文中后部分这里写一下总结-虽然是2017年的论文但是这篇文章可谓是开辟了ai的新时代它使用自注意力机制取代传统的encoder-decoder编码器-解码器中的递归层且能够更快更好的训练这是划时代的成就-但是当然也有缺点attention机制的计算成本增长很快就像是更贵更聪明的gpt版本响应速度其实会更慢一些一样-最后收藏了一下httpsgithubcomtensorflowtensor2tensor-这篇论文很值得我们读"><a class="anchor" href="#首先标题attention-self-attention也就是这篇文章所研究的transformer模型中最关键的自注意力机制-自注意力机制简单来说就是让模型学会区分一句话中不同词语的重要程度-正如abstract部分所讲transformer模型完全不需要递归和卷积并且效果好-泛化能力也强同时具有并行性-相比像rnn这种怎么改都没法打破串行处理带来的限制的模型优势很明显其中算法公式看不太懂这里就先就不赘述了-自注意力机制能够让ai更像人的思维一样去理解语言的上下文-当下流行的openai家的gpt全称叫generative-pre-trained-transformer就是基与trans-former架构的自然语言处理模型-回到论文introduction提到attention在输入输出序列建模过程其实并不少见比如rnn的一部分就用到了-这里注意到自注意力机制并非本论文作者提出而是已经有很多成功应用但是完全依赖它的transformer还是第一次-文章中32提到了组成自注意力机制的几个向量query查询-key键-value值和output输出-注意力函数可被描述成将query和一系列key-value对映射到output的函数-实际中query打包成矩阵q同理key-kvalue-v得到输出矩阵的计算公式详见312-想起来上上次老师代课那节课学了个产生词向量的word2vec模型与它相比看transformer能通过上下文来动态计算向量显然更优-看不完略过论文中后部分这里写一下总结-虽然是2017年的论文但是这篇文章可谓是开辟了ai的新时代它使用自注意力机制取代传统的encoder-decoder编码器-解码器中的递归层且能够更快更好的训练这是划时代的成就-但是当然也有缺点attention机制的计算成本增长很快就像是更贵更聪明的gpt版本响应速度其实会更慢一些一样-最后收藏了一下httpsgithubcomtensorflowtensor2tensor-这篇论文很值得我们读">#</a> 首先，标题：Attention-&gt;self-attention，也就是这篇文章所研究的 Transformer 模型中最关键的自注意力机制。自注意力机制简单来说就是：让模型学会区分一句话中不同词语的重要程度。<br>正如 Abstract 部分所讲，Transformer 模型完全不需要递归和卷积，并且效果好、泛化能力也强，同时具有并行性。（相比像 RNN 这种怎么改都没法打破串行处理带来的限制的模型，优势很明显）<br>其中算法公式看不太懂，这里就先就不赘述了。<br>自注意力机制能够让 AI 更像人的思维一样去理解语言的上下文。当下流行的 openai 家的 GPT，全称叫 Generative Pre-trained Transformer，就是基与 Trans<br>-former 架构的自然语言处理模型。<br>回到论文，Introduction 提到，Attention 在输入输出序列建模过程其实并不少见（比如 RNN 的一部分就用到了）。这里注意到，自注意力机制并非本论文作者提出，而是已经有很多成功应用，但是完全依赖它的 Transformer 还是第一次。<br>文章中 3.2 提到了组成自注意力机制的几个向量：query 查询、key 键、value 值和 output 输出。注意力函数可被描述成：将 Query 和一系列 key-value 对映射到 output 的函数。实际中，query 打包成矩阵 Q，同理 key-&gt;K，value-&gt;V，得到输出矩阵的计算公式（详见 3.1.2）。<br>想起来上上次老师代课那节课，学了个产生词向量的 word2vec 模型，与它相比看，transformer 能通过上下文来动态计算向量，显然更优。<br>看不完，略过论文中后部分这里写一下总结。虽然是 2017 年的论文，但是这篇文章可谓是开辟了 AI 的新时代，它使用自注意力机制取代传统的 encoder<br>-decoder（编码器 - 解码器）中的递归层，且能够更快更好的训练，这是划时代的成就。但是当然也有缺点，attention 机制的计算成本增长很快，就像是更贵更 “聪明” 的 GPT 版本响应速度其实会更慢一些一样。<br>最后收藏了一下 https://github.com/tensorflow/tensor2tensor。<br>这篇论文很值得我们读。</h2><p>参考链接放这里，感谢分享：<br><a href="https://yinguobing.com/attention-is-all-you-need/">https://yinguobing.com/attention-is-all-you-need/</a><br><a href="https://blog.csdn.net/lbr15660656263/article/details/140032130">https://blog.csdn.net/lbr15660656263/article/details/140032130</a><br><a href="https://zhuanlan.zhihu.com/p/638884759">https://zhuanlan.zhihu.com/p/638884759</a><br><a href="http://www.shengxianshuyuan.com/book/show?id=787616">http://www.shengxianshuyuan.com/book/show?id=787616</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;attention-is-all-you-need阅读&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#attention-is-all-you-need阅读&quot;&gt;#&lt;/a&gt; Attention Is All You Need 阅读&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;&lt;s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>cy一下markdown语法</title>
-    <link href="https://232akira.github.io/2024/11/23/232akira-first-blog/"/>
-    <id>https://232akira.github.io/2024/11/23/232akira-first-blog/</id>
+    <link href="https://232akira.github.io/2024/11/23/cy%E4%B8%80%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95/"/>
+    <id>https://232akira.github.io/2024/11/23/cy%E4%B8%80%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95/</id>
     <published>2024-11-23T10:40:43.000Z</published>
     <updated>2024-12-08T10:32:23.246Z</updated>
     
