@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Per aspera ad astra",
+    "description": "欢迎交流学习~",
+    "home_page_url": "https://232akira.github.io",
+    "items": [
+        {
+            "id": "https://232akira.github.io/2024/12/10/Attention%20Is%20All%20You%20Need%E9%98%85%E8%AF%BB/",
+            "url": "https://232akira.github.io/2024/12/10/Attention%20Is%20All%20You%20Need%E9%98%85%E8%AF%BB/",
+            "title": "Attention Is All You Need阅读",
+            "date_published": "2024-12-10T10:40:43.000Z",
+            "content_html": "<h1 id=\"Attention-Is-All-You-Need阅读\"><a href=\"#Attention-Is-All-You-Need阅读\" class=\"headerlink\" title=\"Attention Is All You Need阅读\"></a>Attention Is All You Need阅读</h1><p><em><strong>先把作业贴过来，后面会慢慢补充。</strong></em></p>\n<p>《Attention Is All You Need》阅读笔记</p>\n<blockquote>\n<p>这篇论文首先上来给人的感觉是题目特别短。因为之前看过的一些论文标题少说一两行，所以我以为这篇内容会很水。<br>结果完全完全相反，这里主要讲讲学到的自注意力机制。</p>\n</blockquote>\n<hr>\n<h2 id=\"先上个github链接，都去star\"><a href=\"#先上个github链接，都去star\" class=\"headerlink\" title=\"先上个github链接，都去star\"></a>先上个<a href=\"https://github.com/tensorflow/tensor2tensor/\" title=\"tensor2tensor\">github链接</a>，都去star</h2><h2 id=\"标题党一下-正文整理好上传\"><a href=\"#标题党一下-正文整理好上传\" class=\"headerlink\" title=\"标题党一下~正文整理好上传\"></a>标题党一下~正文整理好上传</h2><h2 id=\"2024-12-29记-你好，我又苟了一个月。等两周期末考完回家就补博客儿，尊嘟。\"><a href=\"#2024-12-29记-你好，我又苟了一个月。等两周期末考完回家就补博客儿，尊嘟。\" class=\"headerlink\" title=\"2024.12.29记 你好，我又苟了一个月。等两周期末考完回家就补博客儿，尊嘟。\"></a><em>2024.12.29记</em> 你好，我又苟了一个月。等两周期末考完回家就补博客儿，尊嘟。</h2><p>把参考链接放这里，感谢分享：<br><a href=\"https://yinguobing.com/attention-is-all-you-need/\">https://yinguobing.com/attention-is-all-you-need/</a><br><a href=\"https://blog.csdn.net/lbr15660656263/article/details/140032130\">https://blog.csdn.net/lbr15660656263/article/details/140032130</a><br><a href=\"https://zhuanlan.zhihu.com/p/638884759\">https://zhuanlan.zhihu.com/p/638884759</a><br><a href=\"http://www.shengxianshuyuan.com/book/show?id=787616\">http://www.shengxianshuyuan.com/book/show?id=787616</a></p>\n",
+            "tags": []
+        },
+        {
+            "id": "https://232akira.github.io/2024/11/23/cy%E4%B8%80%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95/",
+            "url": "https://232akira.github.io/2024/11/23/cy%E4%B8%80%E4%B8%8Bmarkdown%E8%AF%AD%E6%B3%95/",
+            "title": "cy一下markdown语法",
+            "date_published": "2024-11-23T10:40:43.000Z",
+            "content_html": "<h2 id=\"这是232akira的第一篇博客的二级标题两个井号加空格\"><a href=\"#这是232akira的第一篇博客的二级标题两个井号加空格\" class=\"headerlink\" title=\"这是232akira的第一篇博客的二级标题两个井号加空格\"></a>这是232akira的第一篇博客的二级标题两个井号加空格</h2><h3 id=\"这是232akira的第一篇博客的三级标题三个井号加空格\"><a href=\"#这是232akira的第一篇博客的三级标题三个井号加空格\" class=\"headerlink\" title=\"这是232akira的第一篇博客的三级标题三个井号加空格\"></a>这是232akira的第一篇博客的三级标题三个井号加空格</h3><p>这是232akira的第一篇博客的第一段直接回车</p>\n<p>这是232akira的第一篇博客的第二段</p>\n<p>这是换行尝试两个空格+回车<br><br><br>换行！</p>\n<p>这是字体加粗尝试加粗 <strong>前后各加2个星星号</strong></p>\n<p>这是字体斜体尝试斜体 <em>前后各加1个星星号</em></p>\n<p>这是字体同时加粗斜体尝试 <em><strong>前后各加3个星星号</strong></em></p>\n<p>这是创建块引用</p>\n<blockquote>\n<p>kuaiyinyongkuaiyinyongkkk<br>这是多个段落的块引用<br>kuaiyinyongkkk</p>\n<p>kkk</p>\n</blockquote>\n<p>这是嵌套块引用</p>\n<blockquote>\n<p>kuaiyinyongkkk</p>\n<blockquote>\n<p>qiantaoaaa</p>\n<ul>\n<li>用短横杠（注意两边空格）出来是圆点</li>\n</ul>\n</blockquote>\n</blockquote>\n<p>这是有序列表<br>1.我是1第一项必须数字一加英文句号后面数字无所谓<br>2.我是2<br>    1.我是1<br>    2.我是2<br>3.我是3</p>\n<p>这是无序列表点乘加短横杠都可以变成圆点<br>-111<br>-222<br>    -1111嵌套前面四个空格<br>    -代码在列表里缩进8个空格或者2个tab<br>            print(“hello world~”)<br>-333</p>\n<p>这是代码语法<br>把代码包裹在反引号<code>中 比如我这里是 </code>代码代码代码<code>创建代码块就还是缩进4个空格or1个tab</code>        我是代码块啊啊啊&#96;</p>\n<h2 id=\"这是分隔线单独一行三星或多星-破折号-下划线\"><a href=\"#这是分隔线单独一行三星或多星-破折号-下划线\" class=\"headerlink\" title=\"这是分隔线单独一行三星或多星&#x2F;破折号&#x2F;下划线***\"></a>这是分隔线单独一行三星或多星&#x2F;破折号&#x2F;下划线<br>***</h2><hr>\n<p>出来的效果一样的</p>\n<p>这是链接链接的文本放中括号地址放后面圆括号<a href=\"https://www.xuexi.cn/\" title=\"我是title\">快来学习</a><br>或者直接尖括号链接跳转<a href=\"https://www.xuexi.cn/\">https://www.xuexi.cn/</a></p>\n<p>强调链接就在尖括号前后增加星号，表示为代码就加反引号<br>I love <strong><a href=\"https://www.xuexi.cn/\" title=\"我是title\">学习</a></strong></p>\n<p>这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接<br>[跳转跳转啊啊啊] <a href=\"https://www.xuexi.cn/\">1</a></p>\n<p>这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。<br><img loading=\"lazy\" data-src=\"/images/kabi.jpg\" alt=\"这是图片\" title=\"我是title\"></p>\n",
+            "tags": []
+        }
+    ]
+}
