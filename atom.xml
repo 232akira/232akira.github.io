@@ -45,19 +45,19 @@
         <id>https://232akira.github.io/2024/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</id>
         <title>博客搭建小半年的痛</title>
         <link rel="alternate" href="https://232akira.github.io/2024/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/"/>
-        <content type="html">&lt;h2 id=&#34;主打一个备忘&#34;&gt;&lt;a href=&#34;#主打一个备忘&#34; class=&#34;headerlink&#34; title=&#34;主打一个备忘&#34;&gt;&lt;/a&gt;主打一个备忘&lt;/h2&gt;&lt;p&gt;断断续续从24年中搞到现在25年初，最磨蹭的一集。&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;strong&gt;主打一个备忘&lt;/strong&gt;&lt;br&gt;断断续续从24年中搞到现在25年初，最磨蹭的一集。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;最新问题&lt;img loading=&#34;lazy&#34; data-src=&#34;/002A4F6B.png&#34; alt=&#34;alt text&#34;&gt;&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最新问题&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;提交评论 ×&lt;br&gt;替换部分主题图片 ×&lt;br&gt;文章总访问量显示 ×&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;首先是参考链接&#34;&gt;&lt;a href=&#34;#首先是参考链接&#34; class=&#34;headerlink&#34; title=&#34;首先是参考链接&#34;&gt;&lt;/a&gt;首先是参考链接&lt;/h3&gt;&lt;p&gt;非常感谢！&lt;/p&gt;
-&lt;h4 id=&#34;ShokaX&#34;&gt;&lt;a href=&#34;#ShokaX&#34; class=&#34;headerlink&#34; title=&#34;ShokaX&#34;&gt;&lt;/a&gt;ShokaX&lt;/h4&gt;&lt;p&gt;github：&lt;a href=&#34;https://github.com/theme-shoka-x/hexo-theme-shokaX&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX&lt;/a&gt;&lt;br&gt;官方文档：&lt;a href=&#34;https://hexo.docs.shokax.top/&#34;&gt;https://hexo.docs.shokax.top/&lt;/a&gt;&lt;br&gt;主题指南：&lt;a href=&#34;https://docs.kaitaku.xyz/&#34;&gt;https://docs.kaitaku.xyz/&lt;/a&gt;&lt;br&gt;社区资源：&lt;a href=&#34;https://github.com/theme-shoka-x/awesome-shokaX&#34;&gt;https://github.com/theme-shoka-x/awesome-shokaX&lt;/a&gt;&lt;br&gt;shoka：&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;其他相关网站&#34;&gt;&lt;a href=&#34;#其他相关网站&#34; class=&#34;headerlink&#34; title=&#34;其他相关网站&#34;&gt;&lt;/a&gt;其他相关网站&lt;/h4&gt;&lt;p&gt;waline快速上手：&lt;a href=&#34;https://waline.js.org/guide/get-started/&#34;&gt;https://waline.js.org/guide/get-started/&lt;/a&gt;&lt;br&gt;Vercel服务端部署：&lt;a href=&#34;https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example&amp;teamSlug=232akiras-projects&#34;&gt;https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample&amp;amp;teamSlug=232akiras-projects&lt;/a&gt;&lt;br&gt;leancloud：&lt;a href=&#34;https://console.leancloud.app/apps&#34;&gt;https://console.leancloud.app/apps&lt;/a&gt;&lt;br&gt;Gimhoy图床：&lt;a href=&#34;https://pic.gimhoy.com/&#34;&gt;https://pic.gimhoy.com/&lt;/a&gt;&lt;br&gt;Google字体：&lt;a href=&#34;https://fonts.google.com/&#34;&gt;https://fonts.google.com/&lt;/a&gt;&lt;br&gt;百度统计：&lt;a href=&#34;https://tongji.baidu.com/main/setting/10000672027/home/site/index&#34;&gt;https://tongji.baidu.com/main/setting/10000672027/home/site/index&lt;/a&gt;&lt;br&gt;markdown排版：&lt;a href=&#34;https://markdown.com.cn/editor/&#34;&gt;https://markdown.com.cn/editor/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;搭建思路&#34;&gt;&lt;a href=&#34;#搭建思路&#34; class=&#34;headerlink&#34; title=&#34;搭建思路&#34;&gt;&lt;/a&gt;搭建思路&lt;/h3&gt;&lt;p&gt;这方面毫无实战知识，不停地踩坑踩坑…&lt;img loading=&#34;lazy&#34; data-src=&#34;/00361602.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;Hexo初始化博客&#34;&gt;&lt;a href=&#34;#Hexo初始化博客&#34; class=&#34;headerlink&#34; title=&#34;Hexo初始化博客&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://hexo.io/zh-cn/&#34; title=&#34;点此跳转Hexo官网&#34;&gt;Hexo&lt;/a&gt;初始化博客&lt;/h4&gt;&lt;p&gt;基于Node.js的博客框架。本博客采用Hexo+Github搭建。&lt;br&gt;&lt;strong&gt;常用命令&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;首先是参考链接&#34;&gt;&lt;a href=&#34;#首先是参考链接&#34; class=&#34;headerlink&#34; title=&#34;首先是参考链接&#34;&gt;&lt;/a&gt;首先是参考链接&lt;/h2&gt;&lt;p&gt;非常感谢！&lt;/p&gt;
+&lt;h3 id=&#34;ShokaX&#34;&gt;&lt;a href=&#34;#ShokaX&#34; class=&#34;headerlink&#34; title=&#34;ShokaX&#34;&gt;&lt;/a&gt;ShokaX&lt;/h3&gt;&lt;p&gt;github：&lt;a href=&#34;https://github.com/theme-shoka-x/hexo-theme-shokaX&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX&lt;/a&gt;&lt;br&gt;官方文档：&lt;a href=&#34;https://hexo.docs.shokax.top/&#34;&gt;https://hexo.docs.shokax.top/&lt;/a&gt;&lt;br&gt;主题指南：&lt;a href=&#34;https://docs.kaitaku.xyz/&#34;&gt;https://docs.kaitaku.xyz/&lt;/a&gt;&lt;br&gt;社区资源：&lt;a href=&#34;https://github.com/theme-shoka-x/awesome-shokaX&#34;&gt;https://github.com/theme-shoka-x/awesome-shokaX&lt;/a&gt;&lt;br&gt;shoka：&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;其他相关网站&#34;&gt;&lt;a href=&#34;#其他相关网站&#34; class=&#34;headerlink&#34; title=&#34;其他相关网站&#34;&gt;&lt;/a&gt;其他相关网站&lt;/h3&gt;&lt;p&gt;waline快速上手：&lt;a href=&#34;https://waline.js.org/guide/get-started/&#34;&gt;https://waline.js.org/guide/get-started/&lt;/a&gt;&lt;br&gt;Vercel服务端部署：&lt;a href=&#34;https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example&amp;teamSlug=232akiras-projects&#34;&gt;https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample&amp;amp;teamSlug=232akiras-projects&lt;/a&gt;&lt;br&gt;leancloud：&lt;a href=&#34;https://console.leancloud.app/apps&#34;&gt;https://console.leancloud.app/apps&lt;/a&gt;&lt;br&gt;Gimhoy图床：&lt;a href=&#34;https://pic.gimhoy.com/&#34;&gt;https://pic.gimhoy.com/&lt;/a&gt;&lt;br&gt;Google字体：&lt;a href=&#34;https://fonts.google.com/&#34;&gt;https://fonts.google.com/&lt;/a&gt;&lt;br&gt;百度统计：&lt;a href=&#34;https://tongji.baidu.com/main/setting/10000672027/home/site/index&#34;&gt;https://tongji.baidu.com/main/setting/10000672027/home/site/index&lt;/a&gt;&lt;br&gt;markdown排版：&lt;a href=&#34;https://markdown.com.cn/editor/&#34;&gt;https://markdown.com.cn/editor/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;搭建思路&#34;&gt;&lt;a href=&#34;#搭建思路&#34; class=&#34;headerlink&#34; title=&#34;搭建思路&#34;&gt;&lt;/a&gt;搭建思路&lt;/h2&gt;&lt;p&gt;这方面毫无实战知识，不停地踩坑踩坑…&lt;/p&gt;
+&lt;h3 id=&#34;Hexo初始化博客&#34;&gt;&lt;a href=&#34;#Hexo初始化博客&#34; class=&#34;headerlink&#34; title=&#34;Hexo初始化博客&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://hexo.io/zh-cn/&#34; title=&#34;点此跳转Hexo官网&#34;&gt;Hexo&lt;/a&gt;初始化博客&lt;/h3&gt;&lt;p&gt;基于Node.js的博客框架。本博客采用Hexo+Github搭建。&lt;br&gt;&lt;strong&gt;常用命令&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -87,18 +87,18 @@
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;hexo s&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h4 id=&#34;Shoka主题配置&#34;&gt;&lt;a href=&#34;#Shoka主题配置&#34; class=&#34;headerlink&#34; title=&#34;Shoka主题配置&#34;&gt;&lt;/a&gt;Shoka主题配置&lt;/h4&gt;&lt;p&gt;一开始胡乱配置，后来更新的时候爆出来好多问题。于是这两天从头重做&lt;img loading=&#34;lazy&#34; data-src=&#34;/004664FF.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;前置hexo init、Node.js等
+&lt;h3 id=&#34;Shoka主题配置&#34;&gt;&lt;a href=&#34;#Shoka主题配置&#34; class=&#34;headerlink&#34; title=&#34;Shoka主题配置&#34;&gt;&lt;/a&gt;Shoka主题配置&lt;/h3&gt;&lt;p&gt;一开始胡乱配置，后来更新的时候爆出来好多问题。于是这两天从头重做&lt;img loading=&#34;lazy&#34; data-src=&#34;/004664FF.png&#34; alt=&#34;alt text&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;前置hexo init、Node.js等
 pnpm安装shokax
 /_config.landscape.yml重命名为_config.shokax.yml
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;markdown配置
+&lt;h4 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;markdown配置
 停用默认代码高亮
 文件压缩
 feed生成
 站内搜索
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;静态资源存放目录
+&lt;h4 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;静态资源存放目录
 ShokaX功能模块
 主页头图
 Iconfont图标
@@ -117,7 +117,7 @@ SEO优化和访客优化
 分类翻转块
 实验性特性
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&#34;其他配置项&#34;&gt;&lt;a href=&#34;#其他配置项&#34; class=&#34;headerlink&#34; title=&#34;其他配置项&#34;&gt;&lt;/a&gt;其他配置项&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;1、图片素材替换&lt;/strong&gt;&lt;br&gt;文件目录&lt;code&gt;/source/_data/assets&lt;/code&gt;&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/blog01_1.png&#34; title=&#34;依旧是官方教程~本文仅做总结，非原创&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;其他配置项&#34;&gt;&lt;a href=&#34;#其他配置项&#34; class=&#34;headerlink&#34; title=&#34;其他配置项&#34;&gt;&lt;/a&gt;其他配置项&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1、图片素材替换&lt;/strong&gt;&lt;br&gt;文件目录&lt;code&gt;/source/_data/assets&lt;/code&gt;&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/blog01_1.png&#34; title=&#34;依旧是官方教程~本文仅做总结，非原创&#34;&gt;&lt;/p&gt;
 </content>
         <updated>2024-02-20T02:26:39.000Z</updated>
     </entry>
