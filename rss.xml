@@ -5,50 +5,81 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
-        <lastBuildDate>Sat, 23 Nov 2024 18:40:43 +0800</lastBuildDate>
+        <pubDate>Thu, 20 Feb 2025 19:42:10 +0800</pubDate>
+        <lastBuildDate>Thu, 20 Feb 2025 19:42:10 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</guid>
-            <title>存存markdown相关</title>
-            <link>https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</link>
-            <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;&lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;&lt;p&gt;这是232akira的第一篇博客的第一段直接回车&lt;/p&gt;
-&lt;p&gt;这是232akira的第一篇博客的第二段&lt;/p&gt;
-&lt;p&gt;这是换行尝试两个空格+回车&lt;br&gt;&lt;br&gt;&lt;br&gt;换行！&lt;/p&gt;
-&lt;p&gt;这是字体加粗尝试加粗 &lt;strong&gt;前后各加2个星星号&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这是字体斜体尝试斜体 &lt;em&gt;前后各加1个星星号&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;这是字体同时加粗斜体尝试 &lt;em&gt;&lt;strong&gt;前后各加3个星星号&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;这是创建块引用&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;kuaiyinyongkuaiyinyongkkk&lt;br&gt;这是多个段落的块引用&lt;br&gt;kuaiyinyongkkk&lt;/p&gt;
-&lt;p&gt;kkk&lt;/p&gt;
+            <guid isPermalink="true">https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
+            <title>力扣刷题备忘录</title>
+            <link>https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</link>
+            <pubDate>Thu, 20 Feb 2025 19:42:10 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;吐槽一句，本人太健忘了&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;啰嗦几句，黑历史放这了。&lt;br&gt;去年蓝桥杯省三都没拿到。而且一直以来我的数学成绩都挺难办的，尤其是大学学的高数、妈呀还有概率论、离散数学等一系列轰炸，我算是意识到自己做算法确实很吃力并且这种逻辑问题我一点都不擅长，于是中间鸽了小半年没怎么打代码。当然也有我自己确实不够上心的客观因素在。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;但是现在重新拾起来被我踩两脚都比认真写写要分高的答题卡：我还是得面对。
+马上25年中暑期实习，我绝对不能找一个文职混日子。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;人有时候不到这种关头还真的动不起来，反正我是这种拖延症。&lt;/p&gt;
+&lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。&lt;strong&gt;请注意&lt;/strong&gt;，必须在不复制数组的情况下原地对数组进行操作。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;输入&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;输出&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;示例1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;nums &amp;#x3D; &lt;code&gt;[0,1,0,3,12]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1,3,12,0,0]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;示例2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;nums &amp;#x3D; &lt;code&gt;[0]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[0]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;提示&lt;/strong&gt;：&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;这是嵌套块引用&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;kuaiyinyongkkk&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;qiantaoaaa&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;用短横杠（注意两边空格）出来是圆点&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-231 &amp;lt;= nums[i] &amp;lt;= 231 - 1&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这是有序列表&lt;br&gt;1.我是1第一项必须数字一加英文句号后面数字无所谓&lt;br&gt;2.我是2&lt;br&gt;    1.我是1&lt;br&gt;    2.我是2&lt;br&gt;3.我是3&lt;/p&gt;
-&lt;p&gt;这是无序列表点乘加短横杠都可以变成圆点&lt;br&gt;-111&lt;br&gt;-222&lt;br&gt;    -1111嵌套前面四个空格&lt;br&gt;    -代码在列表里缩进8个空格或者2个tab&lt;br&gt;            print(“hello world~”)&lt;br&gt;-333&lt;/p&gt;
-&lt;p&gt;这是代码语法&lt;br&gt;把代码包裹在反引号&lt;code&gt;中 比如我这里是 &lt;/code&gt;代码代码代码&lt;code&gt;创建代码块就还是缩进4个空格or1个tab&lt;/code&gt;        我是代码块啊啊啊&amp;#96;&lt;/p&gt;
-&lt;h2 id=&#34;这是分隔线单独一行三星或多星-破折号-下划线&#34;&gt;&lt;a href=&#34;#这是分隔线单独一行三星或多星-破折号-下划线&#34; class=&#34;headerlink&#34; title=&#34;这是分隔线单独一行三星或多星&amp;#x2F;破折号&amp;#x2F;下划线***&#34;&gt;&lt;/a&gt;这是分隔线单独一行三星或多星&amp;#x2F;破折号&amp;#x2F;下划线&lt;br&gt;***&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;出来的效果一样的&lt;/p&gt;
-&lt;p&gt;这是链接链接的文本放中括号地址放后面圆括号&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;快来学习&lt;/a&gt;&lt;br&gt;或者直接尖括号链接跳转&lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;https://www.xuexi.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;强调链接就在尖括号前后增加星号，表示为代码就加反引号&lt;br&gt;I love &lt;strong&gt;&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;学习&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接&lt;br&gt;[跳转跳转啊啊啊] &lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被ai君拉回正道。&lt;br&gt;核心思想不变，仍是“交换”。&lt;br&gt;但是交换的条件是&lt;strong&gt;将非零元素全部移到数组头部&lt;/strong&gt;，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是&lt;/p&gt;
+&lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    void swap(vector&amp;lt;int&amp;gt;&amp;amp; nums,int i,int j)&amp;#123;
+        int t;
+        t=nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+        
+    &amp;#125;
+    void moveZeroes(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int i=0; 
+        for(int j=0;j&amp;lt;nums.size();j++)&amp;#123;
+            if(nums[j]!=0)&amp;#123;
+                swap(nums,i,j);
+                i++;
+            &amp;#125;
+        &amp;#125;
+
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;时间复杂度&lt;code&gt;O(n)&lt;/code&gt;&lt;br&gt;空间复杂度&lt;code&gt;O(1)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这个问题的关键在于理解题目要求“原地操作”，并通过&lt;strong&gt;双指针&lt;/strong&gt;技巧有效地解决。开始可能觉得有些复杂，但通过交换元素，可以避免额外的空间开销，同时保证顺序不变。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2024/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</guid>
             <title>博客搭建小半年的痛</title>
-            <link>https://232akira.github.io/2024/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</link>
-            <pubDate>Tue, 20 Feb 2024 10:26:39 +0800</pubDate>
+            <link>https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</link>
+            <pubDate>Thu, 20 Feb 2025 10:26:39 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;strong&gt;主打一个备忘&lt;/strong&gt;&lt;br&gt;断断续续从24年中搞到现在25年初，最磨蹭的一集。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;最新问题&lt;/strong&gt;&lt;/p&gt;
@@ -122,6 +153,43 @@ SEO优化和访客优化
 实验性特性
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;其他配置项&#34;&gt;&lt;a href=&#34;#其他配置项&#34; class=&#34;headerlink&#34; title=&#34;其他配置项&#34;&gt;&lt;/a&gt;其他配置项&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1、图片素材替换&lt;/strong&gt;&lt;br&gt;文件目录&lt;code&gt;/source/_data/assets&lt;/code&gt;&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/blog01_1.png&#34; title=&#34;依旧是官方教程~本文仅做总结，非原创&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</guid>
+            <title>存存markdown相关</title>
+            <link>https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</link>
+            <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;&lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;&lt;p&gt;这是232akira的第一篇博客的第一段直接回车&lt;/p&gt;
+&lt;p&gt;这是232akira的第一篇博客的第二段&lt;/p&gt;
+&lt;p&gt;这是换行尝试两个空格+回车&lt;br&gt;&lt;br&gt;&lt;br&gt;换行！&lt;/p&gt;
+&lt;p&gt;这是字体加粗尝试加粗 &lt;strong&gt;前后各加2个星星号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是字体斜体尝试斜体 &lt;em&gt;前后各加1个星星号&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这是字体同时加粗斜体尝试 &lt;em&gt;&lt;strong&gt;前后各加3个星星号&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这是创建块引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kuaiyinyongkuaiyinyongkkk&lt;br&gt;这是多个段落的块引用&lt;br&gt;kuaiyinyongkkk&lt;/p&gt;
+&lt;p&gt;kkk&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是嵌套块引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kuaiyinyongkkk&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;qiantaoaaa&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用短横杠（注意两边空格）出来是圆点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是有序列表&lt;br&gt;1.我是1第一项必须数字一加英文句号后面数字无所谓&lt;br&gt;2.我是2&lt;br&gt;    1.我是1&lt;br&gt;    2.我是2&lt;br&gt;3.我是3&lt;/p&gt;
+&lt;p&gt;这是无序列表点乘加短横杠都可以变成圆点&lt;br&gt;-111&lt;br&gt;-222&lt;br&gt;    -1111嵌套前面四个空格&lt;br&gt;    -代码在列表里缩进8个空格或者2个tab&lt;br&gt;            print(“hello world~”)&lt;br&gt;-333&lt;/p&gt;
+&lt;p&gt;这是代码语法&lt;br&gt;把代码包裹在反引号&lt;code&gt;中 比如我这里是 &lt;/code&gt;代码代码代码&lt;code&gt;创建代码块就还是缩进4个空格or1个tab&lt;/code&gt;        我是代码块啊啊啊&amp;#96;&lt;/p&gt;
+&lt;h2 id=&#34;这是分隔线单独一行三星或多星-破折号-下划线&#34;&gt;&lt;a href=&#34;#这是分隔线单独一行三星或多星-破折号-下划线&#34; class=&#34;headerlink&#34; title=&#34;这是分隔线单独一行三星或多星&amp;#x2F;破折号&amp;#x2F;下划线***&#34;&gt;&lt;/a&gt;这是分隔线单独一行三星或多星&amp;#x2F;破折号&amp;#x2F;下划线&lt;br&gt;***&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;出来的效果一样的&lt;/p&gt;
+&lt;p&gt;这是链接链接的文本放中括号地址放后面圆括号&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;快来学习&lt;/a&gt;&lt;br&gt;或者直接尖括号链接跳转&lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;https://www.xuexi.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;强调链接就在尖括号前后增加星号，表示为代码就加反引号&lt;br&gt;I love &lt;strong&gt;&lt;a href=&#34;https://www.xuexi.cn/&#34; title=&#34;我是title&#34;&gt;学习&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接&lt;br&gt;[跳转跳转啊啊啊] &lt;a href=&#34;https://www.xuexi.cn/&#34;&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/kabi.jpg&#34; alt=&#34;这是图片&#34; title=&#34;我是title&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
