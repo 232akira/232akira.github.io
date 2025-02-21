@@ -12,44 +12,10 @@
             <title>力扣刷题备忘录</title>
             <link>https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</link>
             <pubDate>Thu, 20 Feb 2025 19:42:10 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;吐槽一句，本人太健忘了&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;啰嗦几句，黑历史放这了。&lt;br&gt;去年蓝桥杯省三都没拿到。而且一直以来我的数学成绩都挺难办的，尤其是大学学的高数、妈呀还有概率论、离散数学等一系列轰炸，我算是意识到自己做算法确实很吃力并且这种逻辑问题我一点都不擅长，于是中间鸽了小半年没怎么打代码。当然也有我自己确实不够上心的客观因素在。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;但是现在重新拾起来被我踩两脚都比认真写写要分高的答题卡：我还是得面对。
-马上25年中暑期实习，我绝对不能找一个文职混日子。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;人有时候不到这种关头还真的动不起来，反正我是这种拖延症。&lt;/p&gt;
-&lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。&lt;strong&gt;请注意&lt;/strong&gt;，必须在不复制数组的情况下原地对数组进行操作。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;输入&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;输出&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;示例1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;nums &amp;#x3D; &lt;code&gt;[0,1,0,3,12]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1,3,12,0,0]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;示例2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;nums &amp;#x3D; &lt;code&gt;[0]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[0]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;提示&lt;/strong&gt;：&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-231 &amp;lt;= nums[i] &amp;lt;= 231 - 1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被ai君拉回正道。&lt;br&gt;核心思想不变，仍是“交换”。&lt;br&gt;但是交换的条件是&lt;strong&gt;将非零元素全部移到数组头部&lt;/strong&gt;，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是&lt;/p&gt;
+&lt;br&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被拉回正道。&lt;br&gt;核心思想不变，仍是“交换”。&lt;br&gt;但是交换的条件是&lt;strong&gt;将非零元素全部移到数组头部&lt;/strong&gt;，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是&lt;/p&gt;
 &lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
 public:
     void swap(vector&amp;lt;int&amp;gt;&amp;amp; nums,int i,int j)&amp;#123;
@@ -71,8 +37,65 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;时间复杂度&lt;code&gt;O(n)&lt;/code&gt;&lt;br&gt;空间复杂度&lt;code&gt;O(1)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;这个问题的关键在于理解题目要求“原地操作”，并通过&lt;strong&gt;双指针&lt;/strong&gt;技巧有效地解决。开始可能觉得有些复杂，但通过交换元素，可以避免额外的空间开销，同时保证顺序不变。&lt;/p&gt;
+&lt;h2 id=&#34;66-加一&#34;&gt;&lt;a href=&#34;#66-加一&#34; class=&#34;headerlink&#34; title=&#34;66.加一&#34;&gt;&lt;/a&gt;66.加一&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。&lt;br&gt;最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。&lt;br&gt;你可以假设除了整数 0 之外，这个整数不会以零开头。&lt;/p&gt;
+&lt;br&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;判断数组末尾是否有9：&lt;br&gt;    无9：末尾数字+1;&lt;br&gt;    有9：&lt;br&gt;        是否全为9：&lt;br&gt;            是全9：&lt;br&gt;                构造长度&amp;#x3D;size+1的数组，首位&amp;#x3D;1，其余全置0;&lt;br&gt;            非全9：&lt;br&gt;                找到倒着数第一个不是9的元素,&lt;br&gt;                该元素加1,&lt;br&gt;                末尾所有的9置0;&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-1&#34;&gt;&lt;a href=&#34;#AC代码-1&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;int&amp;gt; plusOne(vector&amp;lt;int&amp;gt;&amp;amp; digits) &amp;#123;
+        int len=digits.size();
+        if(digits[len-1]!=9)&amp;#123;
+            digits[len-1]+=1;
+        &amp;#125;
+        else&amp;#123;
+            int cnt=0;//记录9出现的次数，第一个非9元素的下标即为len-cnt-1
+            for(int i=len-1;i&amp;gt;=0;i--)&amp;#123;
+                if(digits[i]==9)&amp;#123;
+                    cnt++;
+                &amp;#125;
+                else&amp;#123;
+                    break;
+                &amp;#125;
+            &amp;#125;
+            if(cnt==len)&amp;#123;
+                digits.insert(digits.begin(),1);
+                for(int i=1;i&amp;lt;len+1;i++)&amp;#123;
+                    digits[i]=0;
+                &amp;#125;
+            &amp;#125;
+            else&amp;#123;
+                int index=len-cnt-1;
+                digits[index]+=1;
+                for(int i=index+1;i&amp;lt;len;i++)&amp;#123;
+                    digits[i]=0;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return digits;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;896-单调数列&#34;&gt;&lt;a href=&#34;#896-单调数列&#34; class=&#34;headerlink&#34; title=&#34;896.单调数列&#34;&gt;&lt;/a&gt;896.单调数列&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果数组是单调递增或单调递减的，那么它是 单调 的。&lt;br&gt;如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;lt;&amp;#x3D; nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;gt;&amp;#x3D; nums[j]，那么数组 nums 是单调递减的。&lt;br&gt;当给定的数组 nums 是单调数组时返回 true，否则返回 false。&lt;/p&gt;
+&lt;br&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;bool 递增变量&amp;#x3D;真，递减变量&amp;#x3D;真；&lt;br&gt;遍历数组：&lt;br&gt;    如果该元素+1 大于 该元素：&lt;br&gt;        标记递减变量&amp;#x3D;假；&lt;br&gt;    如果该元素+1 小于 该元素：&lt;br&gt;        标记递增变量&amp;#x3D;假；&lt;br&gt;如果递增or递减&amp;#x3D;真，返回真；&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-2&#34;&gt;&lt;a href=&#34;#AC代码-2&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool isMonotonic(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        bool increase=true,decrease=true;
+        for(int i=0;i&amp;lt;nums.size()-1;i++)&amp;#123;
+            if(nums[i+1] &amp;gt; nums[i])&amp;#123;
+                decrease=false;
+            &amp;#125;
+            if(nums[i+1] &amp;lt; nums[i])&amp;#123;
+                increase=false;
+            &amp;#125;
+        &amp;#125;
+        return decrease || increase;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
