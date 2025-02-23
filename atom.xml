@@ -201,8 +201,9 @@ public:
 &lt;h2 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。&lt;br&gt;&lt;strong&gt;单词&lt;/strong&gt;是指仅由字母组成、不包含任何空格字符的最大子字符串。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我的思路是&lt;strong&gt;从后向前&lt;/strong&gt;遍历字符串时：如果它的后一个是空格，前一个不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母。如果它的前一个是空格，后一个不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。&lt;br&gt;但是这样写大多数样例不通过（悲&lt;/p&gt;
-&lt;p&gt;不对那就改呗：直接从字符串的尾部开始遍历，&lt;strong&gt;跳过所有尾部空格&lt;/strong&gt;，直到遇到&lt;strong&gt;第一个非空格字符&lt;/strong&gt;，并计算其长度。能够更好的处理边界情况。&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;【方法一】&lt;/strong&gt;&lt;br&gt;我的思路是&lt;strong&gt;从后向前&lt;/strong&gt;遍历字符串时：如果它的后一个是空格或空，自己不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母；如果前一个是空格或空，自己不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。&lt;br&gt;但是这样写大多数样例不通过（悲&lt;/p&gt;
+&lt;p&gt;（二编）卧槽我改对了！！！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【方法二】&lt;/strong&gt;&lt;br&gt;不对那就改呗：直接从字符串的尾部开始遍历，&lt;strong&gt;跳过所有尾部空格&lt;/strong&gt;，直到遇到&lt;strong&gt;第一个非空格字符&lt;/strong&gt;，并计算其长度。能够更好的处理边界情况。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;int 长度=字符串长度;
 int i=长度-1;
 int 结果长度=0
@@ -214,7 +215,27 @@ int 结果长度=0
     i--；
 返回结果长度;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码-4&#34;&gt;&lt;a href=&#34;#AC代码-4&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-4&#34;&gt;&lt;a href=&#34;#AC代码-4&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;【方法一】&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int lengthOfLastWord(string s) &amp;#123;
+        int len=s.length();
+        int m=0,n=0;
+        for(int i=len-1;i&amp;gt;0;i--)&amp;#123;
+            if(s[i]!=&amp;#39; &amp;#39; &amp;amp;&amp;amp; (s[i+1]==&amp;#39; &amp;#39; || s[i+1]==&amp;#39;\0&amp;#39;))&amp;#123;
+                m=i;
+            &amp;#125;
+            if((s[i-1]==&amp;#39; &amp;#39; || s[i-1]==&amp;#39;\0&amp;#39;) &amp;amp;&amp;amp; s[i]!=&amp;#39; &amp;#39;)&amp;#123;
+                n=i;
+                break;
+            &amp;#125;
+        &amp;#125;
+        return m-n+1;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;【方法二】&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int lengthOfLastWord(string s) &amp;#123;
         int len=s.length();
