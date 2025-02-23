@@ -10,7 +10,7 @@
         <link rel="alternate" href="https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/"/>
         <content type="html">&lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。&lt;strong&gt;请注意&lt;/strong&gt;，必须在不复制数组的情况下原地对数组进行操作。&lt;/p&gt;
-&lt;br&gt;&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被拉回正道。&lt;br&gt;核心思想不变，仍是“交换”。&lt;br&gt;但是交换的条件是&lt;strong&gt;将非零元素全部移到数组头部&lt;/strong&gt;，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是&lt;/p&gt;
 &lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
 public:
@@ -35,7 +35,7 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;66-加一&#34;&gt;&lt;a href=&#34;#66-加一&#34; class=&#34;headerlink&#34; title=&#34;66.加一&#34;&gt;&lt;/a&gt;66.加一&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。&lt;br&gt;最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。&lt;br&gt;你可以假设除了整数 0 之外，这个整数不会以零开头。&lt;/p&gt;
-&lt;br&gt;&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;判断数组末尾是否有9：
     无9：末尾数字+1;
     有9：
@@ -83,8 +83,8 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;896-单调数列&#34;&gt;&lt;a href=&#34;#896-单调数列&#34; class=&#34;headerlink&#34; title=&#34;896.单调数列&#34;&gt;&lt;/a&gt;896.单调数列&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;如果数组是单调递增或单调递减的，那么它是 单调 的。&lt;br&gt;如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;lt;&amp;#x3D; nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;gt;&amp;#x3D; nums[j]，那么数组 nums 是单调递减的。&lt;br&gt;当给定的数组 nums 是单调数组时返回 true，否则返回 false。&lt;/p&gt;
-&lt;br&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果数组是单调递增或单调递减的，那么它是&lt;strong&gt;单调&lt;/strong&gt;的。&lt;br&gt;如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;lt;&amp;#x3D; nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;gt;&amp;#x3D; nums[j]，那么数组 nums 是单调递减的。&lt;br&gt;当给定的数组 nums 是单调数组时返回 true，否则返回 false。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool 递增变量=真，递减变量=真；
 遍历数组：
     如果该元素+1 大于 该元素：
@@ -110,23 +110,22 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;896-单调数列-1&#34;&gt;&lt;a href=&#34;#896-单调数列-1&#34; class=&#34;headerlink&#34; title=&#34;896.单调数列&#34;&gt;&lt;/a&gt;896.单调数列&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。&lt;/strong&gt;&lt;br&gt;字符          数值&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;字符          数值&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如， 罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。&lt;/li&gt;
+&lt;li&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：&lt;br&gt;①I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。&lt;br&gt;②X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。&lt;br&gt;③C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;例如， 罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。&lt;br&gt;X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。&lt;br&gt;C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。&lt;br&gt;给定一个罗马数字，将其转换成整数。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;给定一个罗马数字，将其转换成整数。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;这题一开始我无从下手，直接跑去翻题解了。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C++ &lt;a href=&#34;https://www.w3cschool.cn/cpp/cpp-fu8l2ppt.html&#34;&gt;map&lt;/a&gt;用法&lt;/strong&gt;&lt;br&gt;想起来python的字典。同样cpp stl中的map提供的是一种键值对（key-value）容器，其中的数据成对出现。&lt;/p&gt;
-&lt;p&gt;-初始化：&lt;code&gt;map类型&amp;lt;数据类型1，数据类型2&amp;gt;容器名&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始化：&lt;code&gt;map类型 &amp;lt;数据类型1，数据类型2&amp;gt; 容器名&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;对于map类型：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -161,10 +160,9 @@ public:
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;对于本题&lt;/strong&gt;&lt;br&gt;引用评论区&lt;a href=&#34;https://leetcode.cn/u/hust_wei/&#34;&gt;佬&lt;/a&gt;的解释：当前位置的元素比下个位置的元素小，就减去当前值，否则加上当前值。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;①
-定义键值对容器 &amp;lt;字符，整型&amp;gt; 
+&lt;pre&gt;&lt;code&gt;定义键值对容器 &amp;lt;字符，整型&amp;gt; 
     分别对应罗马数字的字符和数值(注意字符变量加单引号);
-②
+
 int 结果变量；
 int 罗马数字长度；
 遍历罗马数字：
@@ -201,22 +199,16 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。&lt;/p&gt;
+&lt;p&gt;给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。&lt;br&gt;&lt;strong&gt;单词&lt;/strong&gt;是指仅由字母组成、不包含任何空格字符的最大子字符串。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;单词 是指仅由字母组成、不包含任何空格字符的最大子字符串。&lt;/p&gt;
-&lt;br&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我的思路是从后向前遍历时，对于一个字符：如果它的后一个是空格，前一个不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母。如果它的前一个是空格，后一个不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。&lt;br&gt;但是这样写大多数样例不通过（悲&lt;/p&gt;
-&lt;p&gt;不对那就改：**直接从字符串的尾部开始遍历，跳过所有尾部空格，直到遇到第一个非空格字符，并计算其长度。**能够更好的处理边界情况。&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我的思路是&lt;strong&gt;从后向前&lt;/strong&gt;遍历字符串时：如果它的后一个是空格，前一个不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母。如果它的前一个是空格，后一个不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。&lt;br&gt;但是这样写大多数样例不通过（悲&lt;/p&gt;
+&lt;p&gt;不对那就改呗：直接从字符串的尾部开始遍历，&lt;strong&gt;跳过所有尾部空格&lt;/strong&gt;，直到遇到&lt;strong&gt;第一个非空格字符&lt;/strong&gt;，并计算其长度。能够更好的处理边界情况。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;int 长度=字符串长度;
 int i=长度-1;
 int 结果长度=0
-
 当i大于等于0并且s的第i个字符为空格时：
     i--；（倒着循环遍历）
-
 *本题设定s不为空，若无此条件需在此判断：当i&amp;lt;0时直接返回（s为空）
-
 当i大于等于0并且s的第i个字符不为空格时：
     结果长度++；
     i--；
