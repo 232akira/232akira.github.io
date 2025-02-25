@@ -282,7 +282,7 @@ int 子串长度；
 &lt;p&gt;非常暴力但是低效。那么KMP的思想就是：利用&lt;strong&gt;已经部分匹配&lt;/strong&gt;这个信息，保持&lt;strong&gt;i指针不回溯&lt;/strong&gt;，并通过j指针让&lt;strong&gt;模式串&lt;/strong&gt;尽可能移动到&lt;strong&gt;更有效的位置&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;那么重点来了！！！&lt;/p&gt;
 &lt;h4 id=&#34;【问题一】j指针怎么移动才最有效？&#34;&gt;&lt;a href=&#34;#【问题一】j指针怎么移动才最有效？&#34; class=&#34;headerlink&#34; title=&#34;【问题一】j指针怎么移动才最有效？&#34;&gt;&lt;/a&gt;【问题一】j指针怎么移动才最有效？&lt;/h4&gt;&lt;p&gt;**模式串从头开始的&lt;code&gt;k&lt;/code&gt;个字符与主串&lt;code&gt;i&lt;/code&gt;前的&lt;code&gt;k&lt;/code&gt;的字符相同时。k即为最佳位置。**换种说法：若模式串的前缀集和后缀集中，重复的最长模式串的长度为k，则下次匹配时，j可以移动到k位（默认下标0位第0位）。&lt;br&gt;这里涉及到一个定义：&lt;strong&gt;最大重复子串&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;通俗一点&lt;/strong&gt; 按我的理解来讲，上面一大堆KMP的思路就是：主串位置和模式串匹着批着在4这个位置突然不匹配了，那么！j悲伤的飞回0开始从头数123，i则冷淡的倒着走321。然后发现：从我这个旁观者来看，i从不匹配位置向前数的k位，和j从零开始走的那k位，是一样的…那么，既然让我i不变只挪j的话，就让j跑到k的后一个位置，接着进行下一轮匹配，不就省事了吗？&lt;br&gt;而且我发现，kmp示例多数主串和模式串都有ABA的形式，方便实现以上算法来匹配。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通俗一点&lt;/strong&gt; 按我的理解来讲，上面一大堆KMP的思路就是：主串位置和模式串匹着匹着在4这个位置突然不匹配了，那么！j悲伤的飞回0开始从头数123，i则冷淡的倒着走321。然后发现：从我这个旁观者来看，i从不匹配位置向前数的k位，和j从零开始走的那k位，是一样的…那么，既然让我i不变只挪j的话，就让j跑到k的后一个位置，接着进行下一轮匹配，不就省事了吗？&lt;br&gt;而且我发现，kmp示例多数主串和模式串都有ABA的形式，方便实现以上算法来匹配。&lt;/p&gt;
 &lt;h4 id=&#34;【问题2】怎么求k？&#34;&gt;&lt;a href=&#34;#【问题2】怎么求k？&#34; class=&#34;headerlink&#34; title=&#34;【问题2】怎么求k？&#34;&gt;&lt;/a&gt;【问题2】怎么求k？&lt;/h4&gt;&lt;p&gt;可能每个位置都不匹配，那么每个位置都要算一个k，所以用&lt;strong&gt;next数组&lt;/strong&gt;（也叫部分匹配表）来存k。&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;，表示当主串的第i个与模式串的第j个不匹配时，j的下一个位置是k。也就是&lt;strong&gt;从位置&lt;code&gt;0&lt;/code&gt;到位置&lt;code&gt;j&lt;/code&gt;这段子串的最长前缀（同时也是最长后缀）的长度。&lt;/strong&gt;&lt;br&gt;利用next数组提供的信息，得以让算法跳过已经比对过的部分，避免重复比对，提高效率。&lt;/p&gt;
 &lt;p&gt;先贴代码：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;//KMP中的next数组，以下代码与主串无关
@@ -300,16 +300,141 @@ next[0]=-1；
     否则：
         返回 next数组；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;好抽象的代码。看不懂，哼╭(╯^╰)╮不知道不知道~不整活了，马上图书馆要关门。&lt;/p&gt;
 &lt;p&gt;关于上面求next的算法说明：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;next[0]&amp;#x3D;-1&lt;/strong&gt; 表示模式串的第一个字符无前后缀匹配。&lt;/li&gt;
-&lt;li&gt;&lt;hr&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;hr&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;AC代码-5&#34;&gt;&lt;a href=&#34;#AC代码-5&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt; ]]></description>
+&lt;p&gt;&lt;strong&gt;歇歇脑子，这里太难理解…后续补上。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9-回文数&#34;&gt;&lt;a href=&#34;#9-回文数&#34; class=&#34;headerlink&#34; title=&#34;9.回文数&#34;&gt;&lt;/a&gt;9.回文数&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。&lt;br&gt;回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。&lt;br&gt;例如，121 是回文，而 123 不是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;回文数是正整数&lt;/li&gt;
+&lt;li&gt;负数不是回文数&lt;/li&gt;
+&lt;li&gt;一个数的最后一位是0且这个数不为0，不是回文数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将数字的后半部分反转，用&lt;code&gt;反转数字&lt;/code&gt;存储。最后的反转数字包含原始x的后半部分，x包含原始x的前半部分。&lt;br&gt;最后返回时：若&lt;strong&gt;原始x是偶数&lt;/strong&gt;，那么对于回文数，&lt;strong&gt;x一定&amp;#x3D;反转数字&lt;/strong&gt;。若&lt;strong&gt;原始x是奇数&lt;/strong&gt;，那么反转数字会比x多一位，这一位是反转数字的个位并且是原始x的中位数，不影响回文数判断。所以&lt;strong&gt;先去掉个位&lt;/strong&gt;再与当前的x比较。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;如果（x小于0，或者x的个位不等于0且x不等于0）：
+    不是回文数；
+定义反转数字=0；
+当（x &amp;gt; 反转数字）：
+    反转数字=反转数字*10+x%10；
+    x/=10；
+x = 反转数字
+返回x = 反转数字 或者 x = 去掉个位的反转数字；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-5&#34;&gt;&lt;a href=&#34;#AC代码-5&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool isPalindrome(int x) &amp;#123;
+        if(x&amp;lt;0 || (x%10==0 &amp;amp;&amp;amp; x!=0))&amp;#123;
+            return false;
+        &amp;#125;
+        int num=0;
+        while(x&amp;gt;num)&amp;#123;
+            num=num*10+x%10;
+            x/=10;
+        &amp;#125;
+        return x==num || x==num/10;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;14-最长公共前缀&#34;&gt;&lt;a href=&#34;#14-最长公共前缀&#34; class=&#34;headerlink&#34; title=&#34;14.最长公共前缀&#34;&gt;&lt;/a&gt;14.最长公共前缀&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;编写一个函数来查找字符串数组中的最长公共前缀。&lt;br&gt;如果不存在公共前缀，返回空字符串 “”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;区区小简单，真是难倒我了。&lt;br&gt;这里总结力扣官方题解的纵向扫描方法。我一开始想的也是类似思路，奈何憋不出来代码。&lt;br&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最长公共前缀的长度不可能超过任何一个字符串的长度&lt;/li&gt;
+&lt;li&gt;数组strs的大小即为字符串的总个数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;二维数组形式&lt;/strong&gt;可以直接表示第i个字符的第j位&lt;/li&gt;
+&lt;li&gt;如果 &lt;strong&gt;&lt;code&gt;i&lt;/code&gt;超出某个字符串的长度&lt;/strong&gt;或**第&lt;code&gt;j&lt;/code&gt;个字符串的第&lt;code&gt;i&lt;/code&gt;个字符不等于&lt;code&gt;c&lt;/code&gt;**时，直接返回当前的公共前缀。&lt;/li&gt;
+&lt;li&gt;循环结束说明所有字符串的所有字符都匹配，那么第一个字符串本身就是最长公共前缀，返回第一个字符串&lt;code&gt;strs[0]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;如果数组为空：
+    返回&amp;quot;&amp;quot;；
+int 长度变量=数组第一个字符串元素的长度；
+int 计数变量=数组大小；
+遍历i，从0到长度变量：
+    char 字符变量=第一个字符串的第i个字符；
+    遍历j，从1到计数变量：
+        如果（i==第j个字符串的大小 || 第j个字符串的第i个字符 ！= 字符变量）：
+            返回 第一个字符串的第一个字符~第i个字符；
+返回 第一个字符；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-6&#34;&gt;&lt;a href=&#34;#AC代码-6&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; strs) &amp;#123;
+        if(!strs.size())&amp;#123;
+            return &amp;quot;&amp;quot;;
+        &amp;#125;
+        int len=strs[0].size();
+        int cnt=strs.size();
+        for(int i=0;i&amp;lt;len;i++)&amp;#123;
+            char c=strs[0][i];
+            for(int j=1;j&amp;lt;cnt;j++)&amp;#123;
+                if(i==strs[j].size() || strs[j][i]!=c)&amp;#123;
+                    return strs[0].substr(0,i);
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return strs[0];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;20-有效的括号&#34;&gt;&lt;a href=&#34;#20-有效的括号&#34; class=&#34;headerlink&#34; title=&#34;20.有效的括号&#34;&gt;&lt;/a&gt;20.有效的括号&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串 s ，判断字符串是否有效。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有效字符串需满足：&lt;br&gt;左括号必须用相同类型的右括号闭合。&lt;br&gt;左括号必须以正确的顺序闭合。&lt;br&gt;每个右括号都有一个对应的相同类型的左括号。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;定义栈的括号匹配规则；() [] &amp;#123;&amp;#125;
+
+初始化一个栈;
+当遇到左括号时：
+    左括号压栈；
+当遇到右括号时:
+    如果（栈空）:
+        ×；
+    否则：
+        char 栈顶元素；
+        弹出栈顶元素；
+        如果栈顶元素与当前右括号不匹配：
+            ×；
+字符串遍历完后：
+    如果（栈空）：
+        √；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;这里的for循环可以直接用for(char ch:s)，表示&lt;strong&gt;对于字符串&lt;code&gt;s&lt;/code&gt;中的每一个字符&lt;code&gt;ch&lt;/code&gt;,执行循环内容&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;AC代码-7&#34;&gt;&lt;a href=&#34;#AC代码-7&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool isValid(string s) &amp;#123;
+        unordered_map&amp;lt;char,char&amp;gt;pairs=&amp;#123;&amp;#123;&#39;)&#39;,&#39;(&#39;&amp;#125;,&amp;#123;&#39;]&#39;,&#39;[&#39;&amp;#125;,&amp;#123;&#39;&amp;#125;&#39;,&#39;&amp;#123;&#39;&amp;#125;&amp;#125;;
+        stack&amp;lt;char&amp;gt;stk;
+        for(char ch:s)&amp;#123;
+            if(ch==&amp;#39;(&amp;#39; || ch==&amp;#39;[&amp;#39; || ch==&amp;#39;&amp;#123;&amp;#39;)&amp;#123;
+                stk.push(ch);
+            &amp;#125;
+            else&amp;#123;
+                if(stk.empty())&amp;#123;
+                    return false;
+                &amp;#125;
+                char top=stk.top();
+                stk.pop();
+                if(pairs[ch]!=top)&amp;#123;
+                    return false;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        if(stk.empty())&amp;#123;
+            return true;
+        &amp;#125;
+        return false;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</guid>
