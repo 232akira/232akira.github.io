@@ -1,0 +1,582 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Per aspera ad astra" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Per aspera ad astra" type="application/atom+xml"><link rel="alternate" type="application/json" title="Per aspera ad astra" href="https://232akira.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CCairo:400,400italic,700,700italic%7CDela%20Gothic%20One:400,400italic,700,700italic%7CIBM%20Plex%20Sans%20JP:400,400italic,700,700italic%7CUbuntu:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.20"><link rel="modulepreload" href="/js/chunk-453UFKYO.js"></link><link rel="modulepreload" href="/js/chunk-6VCL6TDD.js"></link><link rel="modulepreload" href="/js/chunk-JVLGGYI2.js"></link><link rel="modulepreload" href="/js/chunk-WIQECBEN.js"></link><link rel="modulepreload" href="/js/chunk-XCXJVJNL.js"></link><link rel="modulepreload" href="/js/comments-GFLLHNRV.js"></link><link rel="modulepreload" href="/js/copy-tex-ENOUP2ZV.js"></link><link rel="modulepreload" href="/js/index.esm-65RY3HHY.js"></link><link rel="modulepreload" href="/js/post-IIGRVJSA.js"></link><link rel="modulepreload" href="/js/quicklink-XRR67I6U.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/waline-NVSVNCZW.js"></link><link rel="stylesheet" href="/css/comments-F4ZGS7LD.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="stylesheet" href="/css/waline-IDNZKML2.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="preload" href="/images/kgyk.jpg" as="image" fetchpriority="high"><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/"><title>力扣刷题备忘录</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">力扣刷题备忘录</h1><div class="meta"><span class="item" title="创建时间：2025-03-02 19:55:55"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-03-02T19:55:55+08:00">2025-03-02</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>13k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>12 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/kgyk.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="KangYiChen"/><meta itemprop="description" content="循此苦旅 以达繁星, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><h1 id="简单题"><a href="#简单题" class="headerlink" title="简单题"></a>简单题</h1><h2 id="283-移动零"><a href="#283-移动零" class="headerlink" title="283.移动零"></a>283.移动零</h2><blockquote>
+<p>给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。<strong>请注意</strong>，必须在不复制数组的情况下原地对数组进行操作。</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被拉回正道。<br>核心思想不变，仍是“交换”。<br>但是交换的条件是<strong>将非零元素全部移到数组头部</strong>，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是</p>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    void swap(vector&lt;int&gt;&amp; nums,int i,int j)&#123;
+        int t;
+        t=nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+        
+    &#125;
+    void moveZeroes(vector&lt;int&gt;&amp; nums) &#123;
+        int i=0; 
+        for(int j=0;j&lt;nums.size();j++)&#123;
+            if(nums[j]!=0)&#123;
+                swap(nums,i,j);
+                i++;
+            &#125;
+        &#125;
+
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="66-加一"><a href="#66-加一" class="headerlink" title="66.加一"></a>66.加一</h2><blockquote>
+<p>给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。<br>最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。<br>你可以假设除了整数 0 之外，这个整数不会以零开头。</p>
+</blockquote>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><pre><code>判断数组末尾是否有9：
+    无9：末尾数字+1;
+    有9：
+        是否全为9：
+            是全9：
+                构造长度=size+1的数组，首位=1，其余全置0;
+            非全9：
+                找到倒着数第一个不是9的元素,
+                该元素加1,
+                末尾所有的9置0;
+</code></pre>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    vector&lt;int&gt; plusOne(vector&lt;int&gt;&amp; digits) &#123;
+        int len=digits.size();
+        if(digits[len-1]!=9)&#123;
+            digits[len-1]+=1;
+        &#125;
+        else&#123;
+            int cnt=0;//记录9出现的次数，第一个非9元素的下标即为len-cnt-1
+            for(int i=len-1;i&gt;=0;i--)&#123;
+                if(digits[i]==9)&#123;
+                    cnt++;
+                &#125;
+                else&#123;
+                    break;
+                &#125;
+            &#125;
+            if(cnt==len)&#123;
+                digits.insert(digits.begin(),1);
+                for(int i=1;i&lt;len+1;i++)&#123;
+                    digits[i]=0;
+                &#125;
+            &#125;
+            else&#123;
+                int index=len-cnt-1;
+                digits[index]+=1;
+                for(int i=index+1;i&lt;len;i++)&#123;
+                    digits[i]=0;
+                &#125;
+            &#125;
+        &#125;
+        return digits;
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="896-单调数列"><a href="#896-单调数列" class="headerlink" title="896.单调数列"></a>896.单调数列</h2><blockquote>
+<p>如果数组是单调递增或单调递减的，那么它是<strong>单调</strong>的。<br>如果对于所有 i &lt;&#x3D; j，nums[i] &lt;&#x3D; nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &lt;&#x3D; j，nums[i] &gt;&#x3D; nums[j]，那么数组 nums 是单调递减的。<br>当给定的数组 nums 是单调数组时返回 true，否则返回 false。</p>
+</blockquote>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><pre><code>bool 递增变量=真，递减变量=真；
+遍历数组：
+    如果该元素+1 大于 该元素：
+        标记递减变量=假；
+    如果该元素+1 小于 该元素：
+        标记递增变量=假；
+如果递增or递减=真，返回真；
+</code></pre>
+<h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    bool isMonotonic(vector&lt;int&gt;&amp; nums) &#123;
+        bool increase=true,decrease=true;
+        for(int i=0;i&lt;nums.size()-1;i++)&#123;
+            if(nums[i+1] &gt; nums[i])&#123;
+                decrease=false;
+            &#125;
+            if(nums[i+1] &lt; nums[i])&#123;
+                increase=false;
+            &#125;
+        &#125;
+        return decrease || increase;
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="896-单调数列-1"><a href="#896-单调数列-1" class="headerlink" title="896.单调数列"></a>896.单调数列</h2><blockquote>
+<p><strong>罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。</strong><br>字符          数值<br>I             1<br>V             5<br>X             10<br>L             50<br>C             100<br>D             500<br>M             1000</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>例如， 罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。</li>
+<li>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：<br>①I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。<br>②X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。<br>③C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>给定一个罗马数字，将其转换成整数。</strong></p>
+</blockquote>
+<h3 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h3><p>这题一开始我无从下手，直接跑去翻题解了。</p>
+<p><strong>C++ <a target="_blank" rel="noopener" href="https://www.w3cschool.cn/cpp/cpp-fu8l2ppt.html">map</a>用法</strong><br>想起来python的字典。同样cpp stl中的map提供的是一种键值对（key-value）容器，其中的数据成对出现。</p>
+<ul>
+<li>初始化：<code>map类型 &lt;数据类型1，数据类型2&gt; 容器名</code></li>
+</ul>
+<p>对于map类型：</p>
+<table>
+<thead>
+<tr>
+<th align="center">键值对容器</th>
+<th align="center">实现方式</th>
+<th align="center">时间复杂度</th>
+<th align="center">排序</th>
+<th align="center">使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>unordered_map</code></td>
+<td align="center">哈希表</td>
+<td align="center">平均 O(1)</td>
+<td align="center">无序，元素不按照键的顺序存储。</td>
+<td align="center">适用于不关心元素顺序、要求快速查找的情况。</td>
+</tr>
+<tr>
+<td align="center"><code>map</code></td>
+<td align="center">红黑树</td>
+<td align="center">O(log n)</td>
+<td align="center">有序，元素根据键的大小自动排序。</td>
+<td align="center">适用于需要 有序 键值对存储的情况，比如按照键的大小遍历容器。</td>
+</tr>
+<tr>
+<td align="center"><code>unordered_multimap</code></td>
+<td align="center">哈希表（允许重复的键）</td>
+<td align="center">平均 O(1)</td>
+<td align="center">无序，和 unordered_map 相同。</td>
+<td align="center">适用于有重复键且不关心顺序的情况。</td>
+</tr>
+</tbody></table>
+<p><strong>对于本题</strong><br>引用评论区<a target="_blank" rel="noopener" href="https://leetcode.cn/u/hust_wei/">大佬</a>的解释：当前位置的元素比下个位置的元素小，就减去当前值，否则加上当前值。</p>
+<pre><code>定义键值对容器 &lt;字符，整型&gt; 
+    分别对应罗马数字的字符和数值(注意字符变量加单引号);
+
+int 结果变量；
+int 罗马数字长度；
+遍历罗马数字：
+    如果元素 当前位置&lt;下一个位置：（注意使用值时加方括号[]）
+        结果变量-=值变量；
+    否则：
+        结果变量+=值变量；
+返回结果；
+</code></pre>
+<h3 id="AC代码-3"><a href="#AC代码-3" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    unordered_map&lt;char,int&gt;mymap=&#123;
+        &#123;&#39;I&#39;,1&#125;,
+        &#123;&#39;V&#39;,5&#125;,
+        &#123;&#39;X&#39;,10&#125;,
+        &#123;&#39;L&#39;,50&#125;,
+        &#123;&#39;C&#39;,100&#125;,
+        &#123;&#39;D&#39;,500&#125;,
+        &#123;&#39;M&#39;,1000&#125;,
+    &#125;;
+    int romanToInt(string s) &#123;
+        int ans=0;
+        int len=s.length();
+        for(int i=0;i&lt;len;i++)&#123;
+            if(mymap[s[i]]&lt;mymap[s[i+1]])&#123;
+                ans-=mymap[s[i]];
+            &#125;
+            else&#123;
+                ans+=mymap[s[i]];
+            &#125;
+        &#125;
+        return ans;
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="58-最后一个单词的长度"><a href="#58-最后一个单词的长度" class="headerlink" title="58.最后一个单词的长度"></a>58.最后一个单词的长度</h2><blockquote>
+<p>给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。<br><strong>单词</strong>是指仅由字母组成、不包含任何空格字符的最大子字符串。</p>
+</blockquote>
+<h3 id="解题思路-4"><a href="#解题思路-4" class="headerlink" title="解题思路"></a>解题思路</h3><p><strong>【方法一】</strong><br>我的思路是<strong>从后向前</strong>遍历字符串时：如果它的后一个是空格或空，自己不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母；如果前一个是空格或空，自己不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。<br>但是这样写大多数样例不通过（悲</p>
+<p>（二编）卧槽我改对了！！！</p>
+<p><strong>【方法二】</strong><br>不对那就改呗：直接从字符串的尾部开始遍历，<strong>跳过所有尾部空格</strong>，直到遇到<strong>第一个非空格字符</strong>，并计算其长度。能够更好的处理边界情况。</p>
+<pre><code>int 长度=字符串长度;
+int i=长度-1;
+int 结果长度=0
+当i大于等于0并且s的第i个字符为空格时：
+    i--；（倒着循环遍历）
+*本题设定s不为空，若无此条件需在此判断：当i&lt;0时直接返回（s为空）
+当i大于等于0并且s的第i个字符不为空格时：
+    结果长度++；
+    i--；
+返回结果长度;
+</code></pre>
+<h3 id="AC代码-4"><a href="#AC代码-4" class="headerlink" title="AC代码"></a>AC代码</h3><p><strong>【方法一】</strong></p>
+<pre><code>class Solution &#123;
+public:
+    int lengthOfLastWord(string s) &#123;
+        int len=s.length();
+        int m=0,n=0;
+        for(int i=len-1;i&gt;0;i--)&#123;
+            if(s[i]!=&#39; &#39; &amp;&amp; (s[i+1]==&#39; &#39; || s[i+1]==&#39;\0&#39;))&#123;
+                m=i;
+            &#125;
+            if((s[i-1]==&#39; &#39; || s[i-1]==&#39;\0&#39;) &amp;&amp; s[i]!=&#39; &#39;)&#123;
+                n=i;
+                break;
+            &#125;
+        &#125;
+        return m-n+1;
+    &#125;
+&#125;;
+</code></pre>
+<p><strong>【方法二】</strong></p>
+<pre><code class="language-cpp">class Solution &#123;
+public:
+    int lengthOfLastWord(string s) &#123;
+        int len=s.length();
+        int ans=0;
+        int i=len-1;
+        while(i&gt;=0 &amp;&amp; s[i]==&#39; &#39;)&#123;
+            i--;
+        &#125;
+        while(i&gt;=0 &amp;&amp; s[i]!=&#39; &#39;)&#123;
+            ans++;
+            i--;
+        &#125;
+        return ans;
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="58-最后一个单词的长度-1"><a href="#58-最后一个单词的长度-1" class="headerlink" title="58.最后一个单词的长度"></a>58.最后一个单词的长度</h2><blockquote>
+<p>给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。</p>
+</blockquote>
+<h3 id="解题思路-5"><a href="#解题思路-5" class="headerlink" title="解题思路"></a>解题思路</h3><h2 id="这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！"><a href="#这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！" class="headerlink" title="这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！"></a>这题真的是简单题吗（悲）…人在角落默默的碎掉了<br>主要解法是<code>KMP</code>算法。<br>下文非原创，总结自<a target="_blank" rel="noopener" href="https://www.cnblogs.com/dusf/p/kmp.html">大佬</a>博客，感谢！！！</h2><p><strong>KMP</strong>即<strong>字符串模式匹配算法</strong>，用来解决在主串T中对模式串（关键字）进行定位的问题。</p>
+<p>首先来个<strong>暴力</strong>方法：不匹配模式串就右挪一位。</p>
+<pre><code>//暴力模式匹配
+int 主串位置i；
+int 模式串位置j；
+int 主串长度；
+int 子串长度；
+
+当（主串位置 &lt;= 主串长度 &amp;&amp; 模式串位置&lt;模式串长度）:
+    如果（该主串位置的主串字符 == 该模式串位置的模式串字符）：
+        i++；
+        j++；
+    否则：
+        i后退至上一轮匹配开始位置的后一位；
+        j归零；
+如果（模式串位置 == 模式串长度）：
+    匹配成功，返回出现位置；
+否则
+    匹配失败，返回-1；
+</code></pre>
+<p>非常暴力但是低效。那么KMP的思想就是：利用<strong>已经部分匹配</strong>这个信息，保持<strong>i指针不回溯</strong>，并通过j指针让<strong>模式串</strong>尽可能移动到<strong>更有效的位置</strong>。</p>
+<p>那么重点来了！！！</p>
+<h4 id="【问题一】j指针怎么移动才最有效？"><a href="#【问题一】j指针怎么移动才最有效？" class="headerlink" title="【问题一】j指针怎么移动才最有效？"></a>【问题一】j指针怎么移动才最有效？</h4><p>**模式串从头开始的<code>k</code>个字符与主串<code>i</code>前的<code>k</code>的字符相同时。k即为最佳位置。**换种说法：若模式串的前缀集和后缀集中，重复的最长模式串的长度为k，则下次匹配时，j可以移动到k位（默认下标0位第0位）。<br>这里涉及到一个定义：<strong>最大重复子串</strong>。</p>
+<p><strong>通俗一点</strong> 按我的理解来讲，上面一大堆KMP的思路就是：主串位置和模式串匹着匹着在4这个位置突然不匹配了，那么！j悲伤的飞回0开始从头数123，i则冷淡的倒着走321。然后发现：从我这个旁观者来看，i从不匹配位置向前数的k位，和j从零开始走的那k位，是一样的…那么，既然让我i不变只挪j的话，就让j跑到k的后一个位置，接着进行下一轮匹配，不就省事了吗？<br>而且我发现，kmp示例多数主串和模式串都有ABA的形式，方便实现以上算法来匹配。</p>
+<h4 id="【问题2】怎么求k？"><a href="#【问题2】怎么求k？" class="headerlink" title="【问题2】怎么求k？"></a>【问题2】怎么求k？</h4><p>可能每个位置都不匹配，那么每个位置都要算一个k，所以用<strong>next数组</strong>（也叫部分匹配表）来存k。<br><code>next[j]=k</code>，表示当主串的第i个与模式串的第j个不匹配时，j的下一个位置是k。也就是<strong>从位置<code>0</code>到位置<code>j</code>这段子串的最长前缀（同时也是最长后缀）的长度。</strong><br>利用next数组提供的信息，得以让算法跳过已经比对过的部分，避免重复比对，提高效率。</p>
+<p>先贴代码：</p>
+<pre><code>//KMP中的next数组，以下代码与主串无关
+int 模式串长度；
+int 动态数组next（模式串长度）；
+int 模式串位置 j=0；
+int j的下一个位置 k=-1；
+next[0]=-1；
+
+当（j &lt; 模式串长度-1）：
+    如果（k == -1 或 模式串的第j个==模式串的第k个）：
+        ++j；
+        ++k；
+        next[j]=k；//更新next[j]；
+    否则：
+        返回 next数组；
+</code></pre>
+<p>关于上面求next的算法说明：</p>
+<ul>
+<li><strong>next[0]&#x3D;-1</strong> 表示模式串的第一个字符无前后缀匹配。</li>
+</ul>
+<p><strong>歇歇脑子，这里太难理解…后续补上。</strong></p>
+<h2 id="9-回文数"><a href="#9-回文数" class="headerlink" title="9.回文数"></a>9.回文数</h2><blockquote>
+<p>给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。<br>回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。<br>例如，121 是回文，而 123 不是。</p>
+</blockquote>
+<h3 id="解题思路-6"><a href="#解题思路-6" class="headerlink" title="解题思路"></a>解题思路</h3><p><strong>关键点</strong></p>
+<ul>
+<li>回文数是正整数</li>
+<li>负数不是回文数</li>
+<li>一个数的最后一位是0且这个数不为0，不是回文数</li>
+</ul>
+<p>将数字的后半部分反转，用<code>反转数字</code>存储。最后的反转数字包含原始x的后半部分，x包含原始x的前半部分。<br>最后返回时：若<strong>原始x是偶数</strong>，那么对于回文数，<strong>x一定&#x3D;反转数字</strong>。若<strong>原始x是奇数</strong>，那么反转数字会比x多一位，这一位是反转数字的个位并且是原始x的中位数，不影响回文数判断。所以<strong>先去掉个位</strong>再与当前的x比较。</p>
+<pre><code>如果（x小于0，或者x的个位不等于0且x不等于0）：
+    不是回文数；
+定义反转数字=0；
+当（x &gt; 反转数字）：
+    反转数字=反转数字*10+x%10；
+    x/=10；
+x = 反转数字
+返回x = 反转数字 或者 x = 去掉个位的反转数字；
+</code></pre>
+<h3 id="AC代码-5"><a href="#AC代码-5" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    bool isPalindrome(int x) &#123;
+        if(x&lt;0 || (x%10==0 &amp;&amp; x!=0))&#123;
+            return false;
+        &#125;
+        int num=0;
+        while(x&gt;num)&#123;
+            num=num*10+x%10;
+            x/=10;
+        &#125;
+        return x==num || x==num/10;
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="14-最长公共前缀"><a href="#14-最长公共前缀" class="headerlink" title="14.最长公共前缀"></a>14.最长公共前缀</h2><blockquote>
+<p>编写一个函数来查找字符串数组中的最长公共前缀。<br>如果不存在公共前缀，返回空字符串 “”。</p>
+</blockquote>
+<h3 id="解题思路-7"><a href="#解题思路-7" class="headerlink" title="解题思路"></a>解题思路</h3><p>区区小简单，真是难倒我了。<br>这里总结力扣官方题解的纵向扫描方法。我一开始想的也是类似思路，奈何憋不出来代码。<br><strong>关键点</strong></p>
+<ul>
+<li>最长公共前缀的长度不可能超过任何一个字符串的长度</li>
+<li>数组strs的大小即为字符串的总个数</li>
+<li><strong>二维数组形式</strong>可以直接表示第i个字符的第j位</li>
+<li>如果 <strong><code>i</code>超出某个字符串的长度</strong>或**第<code>j</code>个字符串的第<code>i</code>个字符不等于<code>c</code>**时，直接返回当前的公共前缀。</li>
+<li>循环结束说明所有字符串的所有字符都匹配，那么第一个字符串本身就是最长公共前缀，返回第一个字符串<code>strs[0]</code>。</li>
+</ul>
+<pre><code>如果数组为空：
+    返回&quot;&quot;；
+int 长度变量=数组第一个字符串元素的长度；
+int 计数变量=数组大小；
+遍历i，从0到长度变量：
+    char 字符变量=第一个字符串的第i个字符；
+    遍历j，从1到计数变量：
+        如果（i==第j个字符串的大小 || 第j个字符串的第i个字符 ！= 字符变量）：
+            返回 第一个字符串的第一个字符~第i个字符；
+返回 第一个字符；
+</code></pre>
+<h3 id="AC代码-6"><a href="#AC代码-6" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>class Solution &#123;
+public:
+    string longestCommonPrefix(vector&lt;string&gt;&amp; strs) &#123;
+        if(!strs.size())&#123;
+            return &quot;&quot;;
+        &#125;
+        int len=strs[0].size();
+        int cnt=strs.size();
+        for(int i=0;i&lt;len;i++)&#123;
+            char c=strs[0][i];
+            for(int j=1;j&lt;cnt;j++)&#123;
+                if(i==strs[j].size() || strs[j][i]!=c)&#123;
+                    return strs[0].substr(0,i);
+                &#125;
+            &#125;
+        &#125;
+        return strs[0];
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="20-有效的括号"><a href="#20-有效的括号" class="headerlink" title="20.有效的括号"></a>20.有效的括号</h2><blockquote>
+<p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串 s ，判断字符串是否有效。</p>
+</blockquote>
+<blockquote>
+<p>有效字符串需满足：<br>左括号必须用相同类型的右括号闭合。<br>左括号必须以正确的顺序闭合。<br>每个右括号都有一个对应的相同类型的左括号。</p>
+</blockquote>
+<h3 id="解题思路-8"><a href="#解题思路-8" class="headerlink" title="解题思路"></a>解题思路</h3><pre><code>定义栈的括号匹配规则；() [] &#123;&#125;
+
+初始化一个栈;
+当遇到左括号时：
+    左括号压栈；
+当遇到右括号时:
+    如果（栈空）:
+        ×；
+    否则：
+        char 栈顶元素；
+        弹出栈顶元素；
+        如果栈顶元素与当前右括号不匹配：
+            ×；
+字符串遍历完后：
+    如果（栈空）：
+        √；
+</code></pre>
+<ul>
+<li>这里的for循环可以直接用for(char ch:s)，表示<strong>对于字符串<code>s</code>中的每一个字符<code>ch</code>,执行循环内容</strong>。</li>
+</ul>
+<h3 id="AC代码-7"><a href="#AC代码-7" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code>
+</code></pre>
+<h2 id="682-棒球比赛"><a href="#682-棒球比赛" class="headerlink" title="682.棒球比赛"></a>682.棒球比赛</h2><blockquote>
+<p>你现在是一场采用特殊赛制棒球比赛的记录员。这场比赛由若干回合组成，过去几回合的得分可能会影响以后几回合的得分。</p>
+</blockquote>
+<blockquote>
+<p>比赛开始时，记录是空白的。你会得到一个记录操作的<strong>字符串列表</strong> ops，其中 ops[i] 是你需要记录的第 i 项操作，ops 遵循下述规则：</p>
+<ul>
+<li>整数 x - 表示本回合新获得分数 x</li>
+<li>“+” - 表示本回合新获得的得分是前两次得分的总和。题目数据保证记录此操作时前面总是存在两个有效的分数。</li>
+<li>“D” - 表示本回合新获得的得分是前一次得分的两倍。题目数据保证记录此操作时前面总是存在一个有效的分数。</li>
+<li>“C” - 表示前一次得分无效，将其从记录中移除。题目数据保证记录此操作时前面总是存在一个有效的分数。<br>请你返回记录中所有得分的总和。</li>
+</ul>
+</blockquote>
+<h3 id="解题思路-9"><a href="#解题思路-9" class="headerlink" title="解题思路"></a>解题思路</h3><p>用int动态数组ans记录得分，但是不用i做索引来查询，而是用begin、end、size、back等方法来防止发生越界访问。</p>
+<ul>
+<li>注意<code>string</code>类型为字符串，用双引号””括起来，<code>char</code>类型为字符，用单引号’’。</li>
+</ul>
+<pre><code>前两次得分之和：size-1 +size-2
+前一次得分：back
+最近一次得分移除-&gt;出栈-&gt;pop_back
+加入得分：压栈-&gt;push_back
+字符串转整型：stoi
+计算动态数组的和：accumulate
+</code></pre>
+<p>另外，我一开始想用<code>unordered_map</code>，做题做迷了。后来发现动态数组完全可以解决：C++ 标准库中的 vector 支持动态调整大小，可以方便地模拟栈的行为。而unordered_map 是用来存储键值对（key-value pairs）的哈希表。<br>本问题中不需要映射关系，所以并不需要用到 unordered_map。<br>还有，<strong>stack<int><strong>的<code>.push()</code>和<code>.pop()</code>也可，但是</strong>vector</strong>的<code>.push_back()</code>和<code>.pop_back()</code>也同样可以。那就选更常用的vector，何乐而不为呢？</p>
+<h3 id="AC代码-8"><a href="#AC代码-8" class="headerlink" title="AC代码"></a>AC代码</h3><p>用时击败7%，悲。之后滚回来优化算法。</p>
+<pre><code>class Solution &#123;
+public:
+    int calPoints(vector&lt;string&gt;&amp; operations) &#123;
+        vector&lt;int&gt;ans;
+        for(string ch:operations)&#123;
+            if(ch==&quot;+&quot;)&#123;
+                ans.push_back(ans[ans.size()-1]+ans[ans.size()-2]);
+            &#125;
+            else if(ch==&quot;D&quot;)&#123;
+                ans.push_back(ans.back()*2);
+            &#125;
+            else if(ch==&quot;C&quot;)&#123;
+                ans.pop_back();
+            &#125;
+            else&#123;
+                ans.push_back(stoi(ch));
+            &#125;
+        &#125;
+        return accumulate(ans.begin(),ans.end(),0);
+    &#125;
+&#125;;
+</code></pre>
+<h2 id="26-删除有序数组中的重复项"><a href="#26-删除有序数组中的重复项" class="headerlink" title="26.删除有序数组中的重复项"></a>26.删除有序数组中的重复项</h2><blockquote>
+<p>给你一个非严格递增排列的数组nums,请你原地删除重复出现的元素，使每个元素只出现一次，返回删除后数组的新长度。元素的相对顺序应该保持一致。然后返回nums中唯一元素的个数。</p>
+</blockquote>
+<blockquote>
+<p>考虑nums的唯一元素的数量为k，你需要做以下事情确保你的题解可以被通过：</p>
+<ul>
+<li>更改数组nums，使nums的前k个元素包含唯一元素，并按照它们最初在nums中出现的顺序排列。nums的其余元素与nums的大小不重要。</li>
+<li>返回 k 。</li>
+</ul>
+</blockquote>
+<h3 id="解题思路-10"><a href="#解题思路-10" class="headerlink" title="解题思路"></a>解题思路</h3><pre><code>int 最终数组长度=1;
+遍历nums：
+    如果第i个元素不等于第i-1个元素：
+        nums[最终数组长度]=nums[i]；
+        最终数组长度++；
+返回最终数组长度；
+</code></pre>
+<h3 id="AC代码-9"><a href="#AC代码-9" class="headerlink" title="AC代码"></a>AC代码</h3><p>妈呀这题一提交发现每ms都有解法…密密麻麻(ΩДΩ)</p>
+<pre><code>class Solution &#123;
+public:
+    int removeDuplicates(vector&lt;int&gt;&amp; nums) &#123;
+        int ans=1;
+        for(int i=1;i&lt;nums.size();i++)&#123;
+            if(nums[i]!=nums[i-1])&#123;
+                nums[ans]=nums[i];
+                ans++;
+            &#125;
+        &#125;
+        return ans;
+    &#125;
+&#125;;
+</code></pre>
+<hr>
+<h2 id="35-搜索插入位置"><a href="#35-搜索插入位置" class="headerlink" title="35.搜索插入位置"></a>35.搜索插入位置</h2><blockquote>
+<p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。<br><strong>请必须使用时间复杂度为<code>O(logn)</code>的算法。</strong></p>
+</blockquote>
+<h3 id="解题思路-11"><a href="#解题思路-11" class="headerlink" title="解题思路"></a>解题思路</h3><p>我一开始用的暴力穷举，如下。</p>
+<pre><code>class Solution &#123;
+public:
+    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;
+        while(nums.size()!=1)&#123;
+            if(target&lt;nums[0])&#123;
+                return 0;
+            &#125;
+            for(int i=0;i&lt;nums.size()-1;i++)&#123;
+                if(nums[i]==target)&#123;
+                    return i;
+                &#125;
+                else if(nums[i]&lt;target &amp;&amp; nums[i+1]&gt;=target)&#123;
+                    return i+1;
+                &#125;
+            &#125;
+            return nums.size();
+        &#125;
+        return (target&lt;=nums[0])? 0:1;
+    &#125;
+&#125;;
+</code></pre>
+<p>然后提交之后意识到不符合题意，于是再来换个思路：<strong>二分查找</strong><br>我前几天刚记的二分查找笔记 今天竟然没意识到这道题有多直白地明示我要用!!!∑(ﾟДﾟノ)ノ</p>
+<blockquote>
+<p><strong>二分查找</strong>：在有序集合中搜索特定值。</p>
+</blockquote>
+<p><strong>使用术语</strong>：</p>
+<ul>
+<li>目标 <code>target</code></li>
+<li>索引 <code>index</code></li>
+<li>左、右指示符 <code>left</code>、<code>right</code></li>
+<li>中间指示符 <code>mid</code></li>
+</ul>
+<p><strong>计算 <code>mid</code> 位置</strong>：<br>如果 <code>nums[mid] == target</code>，直接返回索引。<br>如果 <code>nums[mid] &lt; target</code>，说明 target 应该在右半部分，所以left向右移动（left &#x3D; mid + 1）。<br>如果 <code>nums[mid] &gt; target</code>，说明 target 应该在左半部分，所以right向左移动（ right &#x3D; mid - 1）。</p>
+<p>循环结束后，left 就是 target 应该插入的位置。</p>
+<h3 id="AC代码-10"><a href="#AC代码-10" class="headerlink" title="AC代码"></a>AC代码</h3><p>二分查找最基础的方法。</p>
+<pre><code>class Solution &#123;
+public:
+    int searchInsert(vector&lt;int&gt;&amp; nums, int target) &#123;
+        int left,right;
+        left=0;
+        right=nums.size()-1;
+        while(left&lt;=right)&#123;
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target)&#123;
+                return mid;
+            &#125;
+            else if(nums[mid]&lt;target)&#123;
+                left=mid+1;
+            &#125;
+            else&#123;
+                right=mid-1;
+            &#125;
+        &#125;
+        return left;
+    &#125;
+&#125;;
+</code></pre>
+</div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/03/02/力扣刷题备忘录/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-03-02 20:11:02" itemprop="dateModified" datetime="2025-03-02T20:11:02+08:00">2025-03-02</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="KangYiChen 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="KangYiChen 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>KangYiChen<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/" title="力扣刷题备忘录">https://232akira.github.io/2025/03/02/力扣刷题备忘录/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/" rel="prev" itemprop="url" title="博客搭建小半年的痛" style="background-image: linear-gradient(to bottom right, #a3f2fb, #f78e9c);"><span class="type">上一篇</span><h3>博客搭建小半年的痛</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">简单题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#283-%E7%A7%BB%E5%8A%A8%E9%9B%B6"><span class="toc-number">1.1.</span> <span class="toc-text">283.移动零</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#66-%E5%8A%A0%E4%B8%80"><span class="toc-number">1.2.</span> <span class="toc-text">66.加一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#896-%E5%8D%95%E8%B0%83%E6%95%B0%E5%88%97"><span class="toc-number">1.3.</span> <span class="toc-text">896.单调数列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#896-%E5%8D%95%E8%B0%83%E6%95%B0%E5%88%97-1"><span class="toc-number">1.4.</span> <span class="toc-text">896.单调数列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-3"><span class="toc-number">1.4.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-3"><span class="toc-number">1.4.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#58-%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6"><span class="toc-number">1.5.</span> <span class="toc-text">58.最后一个单词的长度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-4"><span class="toc-number">1.5.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-4"><span class="toc-number">1.5.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#58-%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6-1"><span class="toc-number">1.6.</span> <span class="toc-text">58.最后一个单词的长度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-5"><span class="toc-number">1.6.1.</span> <span class="toc-text">解题思路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E9%A2%98%E7%9C%9F%E7%9A%84%E6%98%AF%E7%AE%80%E5%8D%95%E9%A2%98%E5%90%97%EF%BC%88%E6%82%B2%EF%BC%89%E2%80%A6%E4%BA%BA%E5%9C%A8%E8%A7%92%E8%90%BD%E9%BB%98%E9%BB%98%E7%9A%84%E7%A2%8E%E6%8E%89%E4%BA%86%E4%B8%BB%E8%A6%81%E8%A7%A3%E6%B3%95%E6%98%AFKMP%E7%AE%97%E6%B3%95%E3%80%82%E4%B8%8B%E6%96%87%E9%9D%9E%E5%8E%9F%E5%88%9B%EF%BC%8C%E6%80%BB%E7%BB%93%E8%87%AA%E5%A4%A7%E4%BD%AC%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%84%9F%E8%B0%A2%EF%BC%81%EF%BC%81%EF%BC%81"><span class="toc-number">1.7.</span> <span class="toc-text">这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E3%80%90%E9%97%AE%E9%A2%98%E4%B8%80%E3%80%91j%E6%8C%87%E9%92%88%E6%80%8E%E4%B9%88%E7%A7%BB%E5%8A%A8%E6%89%8D%E6%9C%80%E6%9C%89%E6%95%88%EF%BC%9F"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">【问题一】j指针怎么移动才最有效？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E3%80%90%E9%97%AE%E9%A2%982%E3%80%91%E6%80%8E%E4%B9%88%E6%B1%82k%EF%BC%9F"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">【问题2】怎么求k？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E5%9B%9E%E6%96%87%E6%95%B0"><span class="toc-number">1.8.</span> <span class="toc-text">9.回文数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-6"><span class="toc-number">1.8.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-5"><span class="toc-number">1.8.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80"><span class="toc-number">1.9.</span> <span class="toc-text">14.最长公共前缀</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-7"><span class="toc-number">1.9.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-6"><span class="toc-number">1.9.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7"><span class="toc-number">1.10.</span> <span class="toc-text">20.有效的括号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-8"><span class="toc-number">1.10.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-7"><span class="toc-number">1.10.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#682-%E6%A3%92%E7%90%83%E6%AF%94%E8%B5%9B"><span class="toc-number">1.11.</span> <span class="toc-text">682.棒球比赛</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-9"><span class="toc-number">1.11.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-8"><span class="toc-number">1.11.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#26-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9"><span class="toc-number">1.12.</span> <span class="toc-text">26.删除有序数组中的重复项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-10"><span class="toc-number">1.12.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-9"><span class="toc-number">1.12.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#35-%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.13.</span> <span class="toc-text">35.搜索插入位置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-11"><span class="toc-number">1.13.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-10"><span class="toc-number">1.13.2.</span> <span class="toc-text">AC代码</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="KangYiChen" src="/assets/avatar.jpg"/><p class="name" itemprop="name">KangYiChen</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">3</span><span class="name">文章</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/">存存markdown相关</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/">博客搭建小半年的痛</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/">力扣刷题备忘录</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">KangYiChen @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">16k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">14 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2025/03/02/力扣刷题备忘录/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script data-pjax="data-pjax">var _hmt = _hmt || [];
+(function () {
+    const hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3320ed8870d3707cace61e4b8d5c146f"
+    hm.async = true;
+    const s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+ })();</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.20" type="module" fetchpriority="high" defer></script></body></html>

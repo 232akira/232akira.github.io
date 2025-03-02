@@ -3,11 +3,11 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-02-20T11:42:10.000Z</updated>
+    <updated>2025-03-02T11:55:55.000Z</updated>
     <entry>
-        <id>https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+        <id>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</id>
         <title>力扣刷题备忘录</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/02/20/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/"/>
         <content type="html">&lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。&lt;strong&gt;请注意&lt;/strong&gt;，必须在不复制数组的情况下原地对数组进行操作。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -403,35 +403,151 @@ public:
 &lt;ul&gt;
 &lt;li&gt;这里的for循环可以直接用for(char ch:s)，表示&lt;strong&gt;对于字符串&lt;code&gt;s&lt;/code&gt;中的每一个字符&lt;code&gt;ch&lt;/code&gt;,执行循环内容&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;AC代码-7&#34;&gt;&lt;a href=&#34;#AC代码-7&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-7&#34;&gt;&lt;a href=&#34;#AC代码-7&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;682-棒球比赛&#34;&gt;&lt;a href=&#34;#682-棒球比赛&#34; class=&#34;headerlink&#34; title=&#34;682.棒球比赛&#34;&gt;&lt;/a&gt;682.棒球比赛&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你现在是一场采用特殊赛制棒球比赛的记录员。这场比赛由若干回合组成，过去几回合的得分可能会影响以后几回合的得分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;比赛开始时，记录是空白的。你会得到一个记录操作的&lt;strong&gt;字符串列表&lt;/strong&gt; ops，其中 ops[i] 是你需要记录的第 i 项操作，ops 遵循下述规则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整数 x - 表示本回合新获得分数 x&lt;/li&gt;
+&lt;li&gt;“+” - 表示本回合新获得的得分是前两次得分的总和。题目数据保证记录此操作时前面总是存在两个有效的分数。&lt;/li&gt;
+&lt;li&gt;“D” - 表示本回合新获得的得分是前一次得分的两倍。题目数据保证记录此操作时前面总是存在一个有效的分数。&lt;/li&gt;
+&lt;li&gt;“C” - 表示前一次得分无效，将其从记录中移除。题目数据保证记录此操作时前面总是存在一个有效的分数。&lt;br&gt;请你返回记录中所有得分的总和。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;用int动态数组ans记录得分，但是不用i做索引来查询，而是用begin、end、size、back等方法来防止发生越界访问。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意&lt;code&gt;string&lt;/code&gt;类型为字符串，用双引号””括起来，&lt;code&gt;char&lt;/code&gt;类型为字符，用单引号’’。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;前两次得分之和：size-1 +size-2
+前一次得分：back
+最近一次得分移除-&amp;gt;出栈-&amp;gt;pop_back
+加入得分：压栈-&amp;gt;push_back
+字符串转整型：stoi
+计算动态数组的和：accumulate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外，我一开始想用&lt;code&gt;unordered_map&lt;/code&gt;，做题做迷了。后来发现动态数组完全可以解决：C++ 标准库中的 vector 支持动态调整大小，可以方便地模拟栈的行为。而unordered_map 是用来存储键值对（key-value pairs）的哈希表。&lt;br&gt;本问题中不需要映射关系，所以并不需要用到 unordered_map。&lt;br&gt;还有，&lt;strong&gt;stack&lt;int&gt;&lt;strong&gt;的&lt;code&gt;.push()&lt;/code&gt;和&lt;code&gt;.pop()&lt;/code&gt;也可，但是&lt;/strong&gt;vector&lt;/strong&gt;的&lt;code&gt;.push_back()&lt;/code&gt;和&lt;code&gt;.pop_back()&lt;/code&gt;也同样可以。那就选更常用的vector，何乐而不为呢？&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-8&#34;&gt;&lt;a href=&#34;#AC代码-8&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;用时击败7%，悲。之后滚回来优化算法。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
 public:
-    bool isValid(string s) &amp;#123;
-        unordered_map&amp;lt;char,char&amp;gt;pairs=&amp;#123;&amp;#123;&#39;)&#39;,&#39;(&#39;&amp;#125;,&amp;#123;&#39;]&#39;,&#39;[&#39;&amp;#125;,&amp;#123;&#39;&amp;#125;&#39;,&#39;&amp;#123;&#39;&amp;#125;&amp;#125;;
-        stack&amp;lt;char&amp;gt;stk;
-        for(char ch:s)&amp;#123;
-            if(ch==&amp;#39;(&amp;#39; || ch==&amp;#39;[&amp;#39; || ch==&amp;#39;&amp;#123;&amp;#39;)&amp;#123;
-                stk.push(ch);
+    int calPoints(vector&amp;lt;string&amp;gt;&amp;amp; operations) &amp;#123;
+        vector&amp;lt;int&amp;gt;ans;
+        for(string ch:operations)&amp;#123;
+            if(ch==&amp;quot;+&amp;quot;)&amp;#123;
+                ans.push_back(ans[ans.size()-1]+ans[ans.size()-2]);
+            &amp;#125;
+            else if(ch==&amp;quot;D&amp;quot;)&amp;#123;
+                ans.push_back(ans.back()*2);
+            &amp;#125;
+            else if(ch==&amp;quot;C&amp;quot;)&amp;#123;
+                ans.pop_back();
             &amp;#125;
             else&amp;#123;
-                if(stk.empty())&amp;#123;
-                    return false;
-                &amp;#125;
-                char top=stk.top();
-                stk.pop();
-                if(pairs[ch]!=top)&amp;#123;
-                    return false;
-                &amp;#125;
+                ans.push_back(stoi(ch));
             &amp;#125;
         &amp;#125;
-        if(stk.empty())&amp;#123;
-            return true;
+        return accumulate(ans.begin(),ans.end(),0);
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;26-删除有序数组中的重复项&#34;&gt;&lt;a href=&#34;#26-删除有序数组中的重复项&#34; class=&#34;headerlink&#34; title=&#34;26.删除有序数组中的重复项&#34;&gt;&lt;/a&gt;26.删除有序数组中的重复项&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个非严格递增排列的数组nums,请你原地删除重复出现的元素，使每个元素只出现一次，返回删除后数组的新长度。元素的相对顺序应该保持一致。然后返回nums中唯一元素的个数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考虑nums的唯一元素的数量为k，你需要做以下事情确保你的题解可以被通过：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更改数组nums，使nums的前k个元素包含唯一元素，并按照它们最初在nums中出现的顺序排列。nums的其余元素与nums的大小不重要。&lt;/li&gt;
+&lt;li&gt;返回 k 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-10&#34;&gt;&lt;a href=&#34;#解题思路-10&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;int 最终数组长度=1;
+遍历nums：
+    如果第i个元素不等于第i-1个元素：
+        nums[最终数组长度]=nums[i]；
+        最终数组长度++；
+返回最终数组长度；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-9&#34;&gt;&lt;a href=&#34;#AC代码-9&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;妈呀这题一提交发现每ms都有解法…密密麻麻(ΩДΩ)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int removeDuplicates(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int ans=1;
+        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
+            if(nums[i]!=nums[i-1])&amp;#123;
+                nums[ans]=nums[i];
+                ans++;
+            &amp;#125;
         &amp;#125;
-        return false;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;35-搜索插入位置&#34;&gt;&lt;a href=&#34;#35-搜索插入位置&#34; class=&#34;headerlink&#34; title=&#34;35.搜索插入位置&#34;&gt;&lt;/a&gt;35.搜索插入位置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。&lt;br&gt;&lt;strong&gt;请必须使用时间复杂度为&lt;code&gt;O(logn)&lt;/code&gt;的算法。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-11&#34;&gt;&lt;a href=&#34;#解题思路-11&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我一开始用的暴力穷举，如下。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int searchInsert(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) &amp;#123;
+        while(nums.size()!=1)&amp;#123;
+            if(target&amp;lt;nums[0])&amp;#123;
+                return 0;
+            &amp;#125;
+            for(int i=0;i&amp;lt;nums.size()-1;i++)&amp;#123;
+                if(nums[i]==target)&amp;#123;
+                    return i;
+                &amp;#125;
+                else if(nums[i]&amp;lt;target &amp;amp;&amp;amp; nums[i+1]&amp;gt;=target)&amp;#123;
+                    return i+1;
+                &amp;#125;
+            &amp;#125;
+            return nums.size();
+        &amp;#125;
+        return (target&amp;lt;=nums[0])? 0:1;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后提交之后意识到不符合题意，于是再来换个思路：&lt;strong&gt;二分查找&lt;/strong&gt;&lt;br&gt;我前几天刚记的二分查找笔记 今天竟然没意识到这道题有多直白地明示我要用!!!∑(ﾟДﾟノ)ノ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;二分查找&lt;/strong&gt;：在有序集合中搜索特定值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;使用术语&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目标 &lt;code&gt;target&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;索引 &lt;code&gt;index&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;左、右指示符 &lt;code&gt;left&lt;/code&gt;、&lt;code&gt;right&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;中间指示符 &lt;code&gt;mid&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;计算 &lt;code&gt;mid&lt;/code&gt; 位置&lt;/strong&gt;：&lt;br&gt;如果 &lt;code&gt;nums[mid] == target&lt;/code&gt;，直接返回索引。&lt;br&gt;如果 &lt;code&gt;nums[mid] &amp;lt; target&lt;/code&gt;，说明 target 应该在右半部分，所以left向右移动（left &amp;#x3D; mid + 1）。&lt;br&gt;如果 &lt;code&gt;nums[mid] &amp;gt; target&lt;/code&gt;，说明 target 应该在左半部分，所以right向左移动（ right &amp;#x3D; mid - 1）。&lt;/p&gt;
+&lt;p&gt;循环结束后，left 就是 target 应该插入的位置。&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-10&#34;&gt;&lt;a href=&#34;#AC代码-10&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;二分查找最基础的方法。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int searchInsert(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) &amp;#123;
+        int left,right;
+        left=0;
+        right=nums.size()-1;
+        while(left&amp;lt;=right)&amp;#123;
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target)&amp;#123;
+                return mid;
+            &amp;#125;
+            else if(nums[mid]&amp;lt;target)&amp;#123;
+                left=mid+1;
+            &amp;#125;
+            else&amp;#123;
+                right=mid-1;
+            &amp;#125;
+        &amp;#125;
+        return left;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <updated>2025-02-20T11:42:10.000Z</updated>
+        <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</id>
