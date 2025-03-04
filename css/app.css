@@ -1617,7 +1617,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Mulish', 'IBM Plex Sans JP', 'Dela Gothic One', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Mulish', 'Noto Serif CJK', 'Kode Mono', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 1.25rem 0 0.9375rem;
@@ -1628,7 +1628,7 @@ h3.title,
 h4.title,
 h5.title,
 h6.title {
-  font-family: 'Mulish', 'Dela Gothic One', 'IBM Plex Sans JP', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Mulish', 'Kode Mono', 'Noto Serif CJK', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 a {
   border: none;
@@ -2428,7 +2428,7 @@ main >.inner {
   align-items: center;
 }
 #brand .artboard {
-  font-family: 'Cairo', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Kode Mono', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 3.5em;
   line-height: 1.2;
 }
@@ -5114,7 +5114,7 @@ use.stop-animation {
 pre,
 code,
 .code-container {
-  font-family: 'Ubuntu', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Source Code Pro', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
   font-size: 1em;
 }
 :not(td)>pre {
@@ -5695,7 +5695,7 @@ code,
 }
 .links .item .title {
   margin: 0.5rem 0;
-  font-family: 'Mulish', 'Dela Gothic One', 'IBM Plex Sans JP', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Mulish', 'Kode Mono', 'Noto Serif CJK', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   color: var(--bg-color);
   border: none;
@@ -5841,7 +5841,7 @@ span.label {
   border-radius: 0.3rem;
   border: 0.0625rem solid;
   padding: 0.2rem 0.3rem;
-  font-family: 'Ubuntu', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Source Code Pro', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
   font-size: 1em;
   background: var(--note-bg, var(--grey-2));
   border-color: var(--note-border, var(--grey-4));

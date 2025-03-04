@@ -5,10 +5,11 @@
     <link href="https://232akira.github.io" />
     <updated>2025-03-04T05:41:46.000Z</updated>
     <category term="算法" />
+    <category term="记录" />
     <entry>
-        <id>https://232akira.github.io/2025/03/04/text/</id>
-        <title>贪心算法</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/text/"/>
+        <id>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
+        <title>Leetcode贪心算法</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
         <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;贪心算法&#34;&gt;&lt;a href=&#34;#贪心算法&#34; class=&#34;headerlink&#34; title=&#34;贪心算法&#34;&gt;&lt;/a&gt;贪心算法&lt;/h2&gt;&lt;p&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;br&gt;下面上题：&lt;/p&gt;

@@ -8,10 +8,11 @@
         <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
         <lastBuildDate>Tue, 04 Mar 2025 13:41:46 +0800</lastBuildDate>
         <category>算法</category>
+        <category>记录</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/04/text/</guid>
-            <title>贪心算法</title>
-            <link>https://232akira.github.io/2025/03/04/text/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
+            <title>Leetcode贪心算法</title>
+            <link>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
             <category>算法</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;

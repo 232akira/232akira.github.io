@@ -1,96 +1,11 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://232akira.github.io</id>
-    <title>Per aspera ad astra</title>
+    <title>Per aspera ad astra • Posts by &#34;记录&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-03-04T05:41:46.000Z</updated>
+    <updated>2025-02-20T02:26:39.000Z</updated>
     <category term="算法" />
     <category term="记录" />
-    <entry>
-        <id>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
-        <title>Leetcode贪心算法</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
-        <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
-&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;贪心算法&#34;&gt;&lt;a href=&#34;#贪心算法&#34; class=&#34;headerlink&#34; title=&#34;贪心算法&#34;&gt;&lt;/a&gt;贪心算法&lt;/h2&gt;&lt;p&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;br&gt;下面上题：&lt;/p&gt;
-&lt;h3 id=&#34;Leetcode-No-455-分发饼干&#34;&gt;&lt;a href=&#34;#Leetcode-No-455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.455 分发饼干&#34;&gt;&lt;/a&gt;Leetcode No.455 分发饼干&lt;/h3&gt;&lt;p&gt;待续~&lt;/p&gt;
-&lt;h3 id=&#34;Leetcode-No-976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#Leetcode-No-976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.976 三角形的最大周长&#34;&gt;&lt;/a&gt;Leetcode No.976 三角形的最大周长&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;3 &amp;lt;= nums.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 106&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;因为题目需要的是最大的三角形周长，所以不需要暴力列举所有的情况再一一对比，而是直接奔着“最大”这个目标求解就行:&lt;br&gt;三条边a,b,c（假设从小到大已排好），当a+b&amp;gt;c时满足三角形。&lt;strong&gt;如果不满足，必须换更大的a,b&lt;/strong&gt;。&lt;br&gt;贪心优化策略：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;nums排序&lt;/li&gt;
-&lt;li&gt;从最大的三个数开始 尝试是否满足&lt;/li&gt;
-&lt;li&gt;若无法满足，往前找更小的a,b&lt;/li&gt;
-&lt;li&gt;一旦找到符合条件的三边，直接返回&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
-public:
-    int largestPerimeter(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
-        sort(nums.begin(),nums.end());
-        for(int i=nums.size()-1;i&amp;gt;=2;i++)&amp;#123;
-            if(nums[i-1]+nums[i-2]&amp;gt;nums[i])
-        &amp;#125;
-        return 0;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;Leetcode-No-860-柠檬水找零&#34;&gt;&lt;a href=&#34;#Leetcode-No-860-柠檬水找零&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.860 柠檬水找零&#34;&gt;&lt;/a&gt;Leetcode No.860 柠檬水找零&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，（按账单 bills 支付的顺序）一次购买一杯。&lt;br&gt;每位顾客只买一杯柠檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，也就是说净交易是每位顾客向你支付 5 美元。&lt;br&gt;注意，一开始你手头没有任何零钱。&lt;br&gt;给你一个整数数组 bills ，其中 bills[i] 是第 i 位顾客付的账。如果你能给每位顾客正确找零，返回 true ，否则返回 false 。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= bills.length &amp;lt;= 105&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bills[i] 不是 5 就是 10 或是 20 &lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;**找零时，尽量先用大额。**并且只记录5美元、10美元的数量（因为这题目的情况不可能找20块）那么&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;收到5美元  直接收 &lt;/li&gt;
-&lt;li&gt;收到10美元 &lt;code&gt;10-5=5&lt;/code&gt; 找5美元（如果有）&lt;/li&gt;
-&lt;li&gt;收到20美元 &lt;strong&gt;贪心来了~&lt;/strong&gt;&lt;code&gt;20-5=15&lt;/code&gt;优先使用10+5找零，否则用5+5+5（如果有）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
-public:
-    bool lemonadeChange(vector&amp;lt;int&amp;gt;&amp;amp; bills) &amp;#123;
-        int five=0,ten=0;
-        for(int bill:bills)&amp;#123;
-            if(bill==5)&amp;#123;
-                five++;
-            &amp;#125;
-            else if(bill==10)&amp;#123;
-                if(five!=0)&amp;#123;
-                    five--;
-                    ten++;
-                &amp;#125;
-                else&amp;#123;
-                    return false;
-                &amp;#125;
-            &amp;#125;
-            else if(bill==20)&amp;#123;
-                if(ten&amp;gt;0 &amp;amp;&amp;amp; five&amp;gt;0)&amp;#123;
-                    ten--;
-                    five--;
-                &amp;#125;
-                else if(five&amp;gt;=3)&amp;#123;
-                    five-=3;
-                &amp;#125;
-                else&amp;#123;
-                    return false;
-                &amp;#125;
-                
-            &amp;#125;
-        &amp;#125;
-        return true;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-        <category term="算法" />
-        <updated>2025-03-04T05:41:46.000Z</updated>
-    </entry>
     <entry>
         <id>https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</id>
         <title>博客搭建小半年的痛</title>
