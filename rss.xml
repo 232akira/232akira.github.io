@@ -5,8 +5,94 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
-        <lastBuildDate>Sun, 02 Mar 2025 19:55:55 +0800</lastBuildDate>
+        <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
+        <lastBuildDate>Tue, 04 Mar 2025 13:41:46 +0800</lastBuildDate>
+        <category>算法</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/04/text/</guid>
+            <title>贪心算法</title>
+            <link>https://232akira.github.io/2025/03/04/text/</link>
+            <category>算法</category>
+            <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;贪心算法&#34;&gt;&lt;a href=&#34;#贪心算法&#34; class=&#34;headerlink&#34; title=&#34;贪心算法&#34;&gt;&lt;/a&gt;贪心算法&lt;/h2&gt;&lt;p&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;br&gt;下面上题：&lt;/p&gt;
+&lt;h3 id=&#34;Leetcode-No-455-分发饼干&#34;&gt;&lt;a href=&#34;#Leetcode-No-455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.455 分发饼干&#34;&gt;&lt;/a&gt;Leetcode No.455 分发饼干&lt;/h3&gt;&lt;p&gt;待续~&lt;/p&gt;
+&lt;h3 id=&#34;Leetcode-No-976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#Leetcode-No-976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.976 三角形的最大周长&#34;&gt;&lt;/a&gt;Leetcode No.976 三角形的最大周长&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;3 &amp;lt;= nums.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 106&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;因为题目需要的是最大的三角形周长，所以不需要暴力列举所有的情况再一一对比，而是直接奔着“最大”这个目标求解就行:&lt;br&gt;三条边a,b,c（假设从小到大已排好），当a+b&amp;gt;c时满足三角形。&lt;strong&gt;如果不满足，必须换更大的a,b&lt;/strong&gt;。&lt;br&gt;贪心优化策略：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nums排序&lt;/li&gt;
+&lt;li&gt;从最大的三个数开始 尝试是否满足&lt;/li&gt;
+&lt;li&gt;若无法满足，往前找更小的a,b&lt;/li&gt;
+&lt;li&gt;一旦找到符合条件的三边，直接返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int largestPerimeter(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        sort(nums.begin(),nums.end());
+        for(int i=nums.size()-1;i&amp;gt;=2;i++)&amp;#123;
+            if(nums[i-1]+nums[i-2]&amp;gt;nums[i])
+        &amp;#125;
+        return 0;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Leetcode-No-860-柠檬水找零&#34;&gt;&lt;a href=&#34;#Leetcode-No-860-柠檬水找零&#34; class=&#34;headerlink&#34; title=&#34;Leetcode No.860 柠檬水找零&#34;&gt;&lt;/a&gt;Leetcode No.860 柠檬水找零&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，（按账单 bills 支付的顺序）一次购买一杯。&lt;br&gt;每位顾客只买一杯柠檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，也就是说净交易是每位顾客向你支付 5 美元。&lt;br&gt;注意，一开始你手头没有任何零钱。&lt;br&gt;给你一个整数数组 bills ，其中 bills[i] 是第 i 位顾客付的账。如果你能给每位顾客正确找零，返回 true ，否则返回 false 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= bills.length &amp;lt;= 105&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bills[i] 不是 5 就是 10 或是 20 &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;**找零时，尽量先用大额。**并且只记录5美元、10美元的数量（因为这题目的情况不可能找20块）那么&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;收到5美元  直接收 &lt;/li&gt;
+&lt;li&gt;收到10美元 &lt;code&gt;10-5=5&lt;/code&gt; 找5美元（如果有）&lt;/li&gt;
+&lt;li&gt;收到20美元 &lt;strong&gt;贪心来了~&lt;/strong&gt;&lt;code&gt;20-5=15&lt;/code&gt;优先使用10+5找零，否则用5+5+5（如果有）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool lemonadeChange(vector&amp;lt;int&amp;gt;&amp;amp; bills) &amp;#123;
+        int five=0,ten=0;
+        for(int bill:bills)&amp;#123;
+            if(bill==5)&amp;#123;
+                five++;
+            &amp;#125;
+            else if(bill==10)&amp;#123;
+                if(five!=0)&amp;#123;
+                    five--;
+                    ten++;
+                &amp;#125;
+                else&amp;#123;
+                    return false;
+                &amp;#125;
+            &amp;#125;
+            else if(bill==20)&amp;#123;
+                if(ten&amp;gt;0 &amp;amp;&amp;amp; five&amp;gt;0)&amp;#123;
+                    ten--;
+                    five--;
+                &amp;#125;
+                else if(five&amp;gt;=3)&amp;#123;
+                    five-=3;
+                &amp;#125;
+                else&amp;#123;
+                    return false;
+                &amp;#125;
+                
+            &amp;#125;
+        &amp;#125;
+        return true;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣刷题备忘录</title>
@@ -549,6 +635,26 @@ public:
         return left;
     &amp;#125;
 &amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;35-搜索插入位置-1&#34;&gt;&lt;a href=&#34;#35-搜索插入位置-1&#34; class=&#34;headerlink&#34; title=&#34;35.搜索插入位置&#34;&gt;&lt;/a&gt;35.搜索插入位置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;假设你正在爬楼梯。需要 n 阶你才能到达楼顶。&lt;br&gt;每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-12&#34;&gt;&lt;a href=&#34;#解题思路-12&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;试图暴力然后失败。然后查看题解：竟然是&lt;strong&gt;动态规划&lt;/strong&gt;~&lt;/p&gt;
+&lt;p&gt;重点理解部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;逆向思维&lt;/strong&gt;：如果要到第&lt;code&gt;n&lt;/code&gt;个台阶，就必须从第&lt;code&gt;n-1&lt;/code&gt;阶走1步，或者从第&lt;code&gt;n-2&lt;/code&gt;阶走2步。&lt;/li&gt;
+&lt;li&gt;dp[n]&amp;#x3D;dp[n-1]+dp[n-2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;为什么这样递推？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;动态规划的核心是&lt;strong&gt;拆分子问题,然后找到递推关系&lt;/strong&gt;。本质根据题目限制条件，建立递推关系，然后用代码实现。&lt;br&gt;👉 因为你每次只能走 1 级或 2 级，所以你到 n 级的方式只能来自 n-1 和 n-2，而不能来自 n-3、n-4 等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//先处理边界情况
+如果n&amp;lt;=2：返回n；
+//动规
+定义a=1,b=2；（对应能上的楼梯阶数）和当前阶梯的方案数量temp;
+遍历n（从3开始）：
+    temp=a+b； //dp[i]=dp[i-2]+dp[i-1]
+    a=b;      //a=dp[i-1]
+    b=temp;   //b=dp[i];
+返回 b;
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
