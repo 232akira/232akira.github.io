@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Per aspera ad astra • All posts by \"markdown\" tag",
+    "description": "欢迎交流学习!",
+    "home_page_url": "https://232akira.github.io",
+    "items": [
+        {
+            "id": "https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/",
+            "url": "https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/",
+            "title": "存存markdown相关",
+            "date_published": "2024-11-23T10:40:43.000Z",
+            "content_html": "<h2 id=\"这是232akira的第一篇博客的二级标题两个井号加空格\"><a href=\"#这是232akira的第一篇博客的二级标题两个井号加空格\" class=\"headerlink\" title=\"这是232akira的第一篇博客的二级标题两个井号加空格\"></a>这是232akira的第一篇博客的二级标题两个井号加空格</h2><h3 id=\"这是232akira的第一篇博客的三级标题三个井号加空格\"><a href=\"#这是232akira的第一篇博客的三级标题三个井号加空格\" class=\"headerlink\" title=\"这是232akira的第一篇博客的三级标题三个井号加空格\"></a>这是232akira的第一篇博客的三级标题三个井号加空格</h3><p>这是232akira的第一篇博客的第一段直接回车</p>\n<p>这是232akira的第一篇博客的第二段</p>\n<p>这是换行尝试两个空格+回车<br><br><br>换行！</p>\n<p>这是字体加粗尝试加粗 <strong>前后各加2个星星号</strong></p>\n<p>这是字体斜体尝试斜体 <em>前后各加1个星星号</em></p>\n<p>这是字体同时加粗斜体尝试 <em><strong>前后各加3个星星号</strong></em></p>\n<p>这是创建块引用</p>\n<blockquote>\n<p>kuaiyinyongkuaiyinyongkkk<br>这是多个段落的块引用<br>kuaiyinyongkkk</p>\n<p>kkk</p>\n</blockquote>\n<p>这是嵌套块引用</p>\n<blockquote>\n<p>kuaiyinyongkkk</p>\n<blockquote>\n<p>qiantaoaaa</p>\n<ul>\n<li>用短横杠（注意两边空格）出来是圆点</li>\n</ul>\n</blockquote>\n</blockquote>\n<p>这是有序列表<br>1.我是1第一项必须数字一加英文句号后面数字无所谓<br>2.我是2<br>    1.我是1<br>    2.我是2<br>3.我是3</p>\n<p>这是无序列表点乘加短横杠都可以变成圆点<br>-111<br>-222<br>    -1111嵌套前面四个空格<br>    -代码在列表里缩进8个空格或者2个tab<br>            print(“hello world~”)<br>-333</p>\n<p>这是代码语法<br>把代码包裹在反引号<code>中 比如我这里是 </code>代码代码代码<code>创建代码块就还是缩进4个空格or1个tab</code>        我是代码块啊啊啊&#96;</p>\n<h2 id=\"这是分隔线单独一行三星或多星-破折号-下划线\"><a href=\"#这是分隔线单独一行三星或多星-破折号-下划线\" class=\"headerlink\" title=\"这是分隔线单独一行三星或多星&#x2F;破折号&#x2F;下划线***\"></a>这是分隔线单独一行三星或多星&#x2F;破折号&#x2F;下划线<br>***</h2><hr>\n<p>出来的效果一样的</p>\n<p>这是链接链接的文本放中括号地址放后面圆括号<a href=\"https://www.xuexi.cn/\" title=\"我是title\">快来学习</a><br>或者直接尖括号链接跳转<a href=\"https://www.xuexi.cn/\">https://www.xuexi.cn/</a></p>\n<p>强调链接就在尖括号前后增加星号，表示为代码就加反引号<br>I love <strong><a href=\"https://www.xuexi.cn/\" title=\"我是title\">学习</a></strong></p>\n<p>这是引用型链接，两个方括号前一个写文本后一个指向其他位置的链接<br>[跳转跳转啊啊啊] <a href=\"https://www.xuexi.cn/\">1</a></p>\n<p>这是添加图像使用感叹号+方括号+圆括号。方括号里写替代文本，圆括号里写图片链接，也可以后接图片标题文本。跳转链接写在最外面并再套一层方括号。<br><img loading=\"lazy\" data-src=\"/images/kabi.jpg\" alt=\"这是图片\" title=\"我是title\"></p>\n",
+            "tags": [
+                "记录",
+                "Markdown"
+            ]
+        }
+    ]
+}

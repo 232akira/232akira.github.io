@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://232akira.github.io</id>
+    <title>Per aspera ad astra • Posts by &#34;数组&#34; tag</title>
+    <link href="https://232akira.github.io" />
+    <updated>2025-03-04T11:15:05.000Z</updated>
+    <category term="算法" />
+    <category term="数组" />
+    <category term="C++" />
+    <category term="记录" />
+    <category term="Markdown" />
+    <entry>
+        <id>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</id>
+        <title>Leetcode数组</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/"/>
+        <content type="html">&lt;h2 id=&#34;Leetcode数组&#34;&gt;&lt;a href=&#34;#Leetcode数组&#34; class=&#34;headerlink&#34; title=&#34;Leetcode数组&#34;&gt;&lt;/a&gt;Leetcode数组&lt;/h2&gt;&lt;p&gt;本来想一道题一篇文，但是做的大多是简单题所以按模块归类好复习一点。&lt;/p&gt;
+&lt;h3 id=&#34;1232-缀点成线&#34;&gt;&lt;a href=&#34;#1232-缀点成线&#34; class=&#34;headerlink&#34; title=&#34;1232.缀点成线&#34;&gt;&lt;/a&gt;1232.缀点成线&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个数组 coordinates ，其中 coordinates[i] &amp;#x3D; [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 &amp;lt;&amp;#x3D; coordinates.length &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
+&lt;li&gt;coordinates[i].length &amp;#x3D;&amp;#x3D; 2&lt;/li&gt;
+&lt;li&gt;-10^4 &amp;lt;&amp;#x3D; coordinates[i][0], coordinates[i][1] &amp;lt;&amp;#x3D; 10^4&lt;/li&gt;
+&lt;li&gt;coordinates 中不含重复的点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
+&lt;p&gt;那么就不使用斜率，而是使用&lt;strong&gt;斜率交叉乘法&lt;/strong&gt;：如果所有点都在同一条直线上，那么&lt;strong&gt;对于任意两点P1(x1,y1)、P2(x2,y2)、P3(x3,y3)之间的斜率必须相等&lt;/strong&gt;。也就是&lt;code&gt;(y2-y1)/(x2-x1)=(y3-y1)/(x3-x1)&lt;/code&gt;。为避免除法带来的浮点误差，用&lt;strong&gt;交叉相乘&lt;/strong&gt;验证更好。&lt;br&gt;&lt;em&gt;&lt;strong&gt;并且注意！&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为我的验证方法需要三个点，但是这道题有可&lt;code&gt;coordinates,length=2&lt;/code&gt;的情况，那就直接返回true，因为&lt;strong&gt;两点确定一条直线&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool checkStraightLine(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; coordinates) &amp;#123;
+        int x1,y1,x2,y2;
+        x1=coordinates[0][0];
+        y1=coordinates[0][1];
+        x2=coordinates[1][0];
+        y2=coordinates[1][1];
+        if(coordinates.size()==2)&amp;#123;
+            return true;
+        &amp;#125;
+        for(int i=2;i&amp;lt;coordinates.size();i++)&amp;#123;
+            int x3=coordinates[i][0];
+            int y3=coordinates[i][1];
+            if((y2-y1)*(x3-x1)!=(x2-x1)*(y3-y1))&amp;#123;
+                return false;
+            &amp;#125;
+        &amp;#125;
+        return true;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="算法" />
+        <category term="数组" />
+        <category term="C++" />
+        <updated>2025-03-04T11:15:05.000Z</updated>
+    </entry>
+</feed>
