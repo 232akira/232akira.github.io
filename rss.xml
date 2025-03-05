@@ -20,8 +20,8 @@
             <category>数组</category>
             <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Leetcode数组&#34;&gt;&lt;a href=&#34;#Leetcode数组&#34; class=&#34;headerlink&#34; title=&#34;Leetcode数组&#34;&gt;&lt;/a&gt;Leetcode数组&lt;/h2&gt;&lt;p&gt;本来想一道题一篇文，但是做的大多是简单题所以按模块归类好复习一点。&lt;/p&gt;
-&lt;h3 id=&#34;1232-缀点成线&#34;&gt;&lt;a href=&#34;#1232-缀点成线&#34; class=&#34;headerlink&#34; title=&#34;1232.缀点成线&#34;&gt;&lt;/a&gt;1232.缀点成线&lt;/h3&gt;&lt;blockquote&gt;
+            <description><![CDATA[ &lt;p&gt;本来想一道题一篇文，但是做的大多是简单题所以按模块归类好复习一点。&lt;/p&gt;
+&lt;h1 id=&#34;1232-缀点成线&#34;&gt;&lt;a href=&#34;#1232-缀点成线&#34; class=&#34;headerlink&#34; title=&#34;1232.缀点成线&#34;&gt;&lt;/a&gt;1232.缀点成线&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个数组 coordinates ，其中 coordinates[i] &amp;#x3D; [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;2 &amp;lt;&amp;#x3D; coordinates.length &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
@@ -30,9 +30,9 @@
 &lt;li&gt;coordinates 中不含重复的点&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h4&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
 &lt;p&gt;那么就不使用斜率，而是使用&lt;strong&gt;斜率交叉乘法&lt;/strong&gt;：如果所有点都在同一条直线上，那么&lt;strong&gt;对于任意两点P1(x1,y1)、P2(x2,y2)、P3(x3,y3)之间的斜率必须相等&lt;/strong&gt;。也就是&lt;code&gt;(y2-y1)/(x2-x1)=(y3-y1)/(x3-x1)&lt;/code&gt;。为避免除法带来的浮点误差，用&lt;strong&gt;交叉相乘&lt;/strong&gt;验证更好。&lt;br&gt;&lt;em&gt;&lt;strong&gt;并且注意！&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为我的验证方法需要三个点，但是这道题有可&lt;code&gt;coordinates,length=2&lt;/code&gt;的情况，那就直接返回true，因为&lt;strong&gt;两点确定一条直线&lt;/strong&gt;。&lt;/p&gt;
-&lt;h4 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
 public:
     bool checkStraightLine(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; coordinates) &amp;#123;
         int x1,y1,x2,y2;
@@ -251,7 +251,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;896-单调数列-1&#34;&gt;&lt;a href=&#34;#896-单调数列-1&#34; class=&#34;headerlink&#34; title=&#34;896.单调数列&#34;&gt;&lt;/a&gt;896.单调数列&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h2 id=&#34;896-罗马数字转整数&#34;&gt;&lt;a href=&#34;#896-罗马数字转整数&#34; class=&#34;headerlink&#34; title=&#34;896.罗马数字转整数&#34;&gt;&lt;/a&gt;896.罗马数字转整数&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。&lt;/strong&gt;&lt;br&gt;字符          数值&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -394,59 +394,10 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;58-最后一个单词的长度-1&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度-1&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;h2 id=&#34;这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！&#34;&gt;&lt;a href=&#34;#这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！&#34; class=&#34;headerlink&#34; title=&#34;这题真的是简单题吗（悲）…人在角落默默的碎掉了主要解法是KMP算法。下文非原创，总结自大佬博客，感谢！！！&#34;&gt;&lt;/a&gt;这题真的是简单题吗（悲）…人在角落默默的碎掉了&lt;br&gt;主要解法是&lt;code&gt;KMP&lt;/code&gt;算法。&lt;br&gt;下文非原创，总结自&lt;a href=&#34;https://www.cnblogs.com/dusf/p/kmp.html&#34;&gt;大佬&lt;/a&gt;博客，感谢！！！&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;KMP&lt;/strong&gt;即&lt;strong&gt;字符串模式匹配算法&lt;/strong&gt;，用来解决在主串T中对模式串（关键字）进行定位的问题。&lt;/p&gt;
-&lt;p&gt;首先来个&lt;strong&gt;暴力&lt;/strong&gt;方法：不匹配模式串就右挪一位。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//暴力模式匹配
-int 主串位置i；
-int 模式串位置j；
-int 主串长度；
-int 子串长度；
-
-当（主串位置 &amp;lt;= 主串长度 &amp;amp;&amp;amp; 模式串位置&amp;lt;模式串长度）:
-    如果（该主串位置的主串字符 == 该模式串位置的模式串字符）：
-        i++；
-        j++；
-    否则：
-        i后退至上一轮匹配开始位置的后一位；
-        j归零；
-如果（模式串位置 == 模式串长度）：
-    匹配成功，返回出现位置；
-否则
-    匹配失败，返回-1；
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;非常暴力但是低效。那么KMP的思想就是：利用&lt;strong&gt;已经部分匹配&lt;/strong&gt;这个信息，保持&lt;strong&gt;i指针不回溯&lt;/strong&gt;，并通过j指针让&lt;strong&gt;模式串&lt;/strong&gt;尽可能移动到&lt;strong&gt;更有效的位置&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;那么重点来了！！！&lt;/p&gt;
-&lt;h4 id=&#34;【问题一】j指针怎么移动才最有效？&#34;&gt;&lt;a href=&#34;#【问题一】j指针怎么移动才最有效？&#34; class=&#34;headerlink&#34; title=&#34;【问题一】j指针怎么移动才最有效？&#34;&gt;&lt;/a&gt;【问题一】j指针怎么移动才最有效？&lt;/h4&gt;&lt;p&gt;**模式串从头开始的&lt;code&gt;k&lt;/code&gt;个字符与主串&lt;code&gt;i&lt;/code&gt;前的&lt;code&gt;k&lt;/code&gt;的字符相同时。k即为最佳位置。**换种说法：若模式串的前缀集和后缀集中，重复的最长模式串的长度为k，则下次匹配时，j可以移动到k位（默认下标0位第0位）。&lt;br&gt;这里涉及到一个定义：&lt;strong&gt;最大重复子串&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;通俗一点&lt;/strong&gt; 按我的理解来讲，上面一大堆KMP的思路就是：主串位置和模式串匹着匹着在4这个位置突然不匹配了，那么！j悲伤的飞回0开始从头数123，i则冷淡的倒着走321。然后发现：从我这个旁观者来看，i从不匹配位置向前数的k位，和j从零开始走的那k位，是一样的…那么，既然让我i不变只挪j的话，就让j跑到k的后一个位置，接着进行下一轮匹配，不就省事了吗？&lt;br&gt;而且我发现，kmp示例多数主串和模式串都有ABA的形式，方便实现以上算法来匹配。&lt;/p&gt;
-&lt;h4 id=&#34;【问题2】怎么求k？&#34;&gt;&lt;a href=&#34;#【问题2】怎么求k？&#34; class=&#34;headerlink&#34; title=&#34;【问题2】怎么求k？&#34;&gt;&lt;/a&gt;【问题2】怎么求k？&lt;/h4&gt;&lt;p&gt;可能每个位置都不匹配，那么每个位置都要算一个k，所以用&lt;strong&gt;next数组&lt;/strong&gt;（也叫部分匹配表）来存k。&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;，表示当主串的第i个与模式串的第j个不匹配时，j的下一个位置是k。也就是&lt;strong&gt;从位置&lt;code&gt;0&lt;/code&gt;到位置&lt;code&gt;j&lt;/code&gt;这段子串的最长前缀（同时也是最长后缀）的长度。&lt;/strong&gt;&lt;br&gt;利用next数组提供的信息，得以让算法跳过已经比对过的部分，避免重复比对，提高效率。&lt;/p&gt;
-&lt;p&gt;先贴代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//KMP中的next数组，以下代码与主串无关
-int 模式串长度；
-int 动态数组next（模式串长度）；
-int 模式串位置 j=0；
-int j的下一个位置 k=-1；
-next[0]=-1；
-
-当（j &amp;lt; 模式串长度-1）：
-    如果（k == -1 或 模式串的第j个==模式串的第k个）：
-        ++j；
-        ++k；
-        next[j]=k；//更新next[j]；
-    否则：
-        返回 next数组；
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;关于上面求next的算法说明：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;next[0]&amp;#x3D;-1&lt;/strong&gt; 表示模式串的第一个字符无前后缀匹配。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;歇歇脑子，这里太难理解…后续补上。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;9-回文数&#34;&gt;&lt;a href=&#34;#9-回文数&#34; class=&#34;headerlink&#34; title=&#34;9.回文数&#34;&gt;&lt;/a&gt;9.回文数&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。&lt;br&gt;回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。&lt;br&gt;例如，121 是回文，而 123 不是。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;回文数是正整数&lt;/li&gt;
 &lt;li&gt;负数不是回文数&lt;/li&gt;
@@ -480,7 +431,7 @@ public:
 &lt;h2 id=&#34;14-最长公共前缀&#34;&gt;&lt;a href=&#34;#14-最长公共前缀&#34; class=&#34;headerlink&#34; title=&#34;14.最长公共前缀&#34;&gt;&lt;/a&gt;14.最长公共前缀&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;编写一个函数来查找字符串数组中的最长公共前缀。&lt;br&gt;如果不存在公共前缀，返回空字符串 “”。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;区区小简单，真是难倒我了。&lt;br&gt;这里总结力扣官方题解的纵向扫描方法。我一开始想的也是类似思路，奈何憋不出来代码。&lt;br&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;区区小简单，真是难倒我了。&lt;br&gt;这里总结力扣官方题解的纵向扫描方法。我一开始想的也是类似思路，奈何憋不出来代码。&lt;br&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;最长公共前缀的长度不可能超过任何一个字符串的长度&lt;/li&gt;
 &lt;li&gt;数组strs的大小即为字符串的总个数&lt;/li&gt;
@@ -525,7 +476,7 @@ public:
 &lt;blockquote&gt;
 &lt;p&gt;有效字符串需满足：&lt;br&gt;左括号必须用相同类型的右括号闭合。&lt;br&gt;左括号必须以正确的顺序闭合。&lt;br&gt;每个右括号都有一个对应的相同类型的左括号。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;定义栈的括号匹配规则；() [] &amp;#123;&amp;#125;
+&lt;h3 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;定义栈的括号匹配规则；() [] &amp;#123;&amp;#125;
 
 初始化一个栈;
 当遇到左括号时：
@@ -559,7 +510,7 @@ public:
 &lt;li&gt;“C” - 表示前一次得分无效，将其从记录中移除。题目数据保证记录此操作时前面总是存在一个有效的分数。&lt;br&gt;请你返回记录中所有得分的总和。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;用int动态数组ans记录得分，但是不用i做索引来查询，而是用begin、end、size、back等方法来防止发生越界访问。&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;用int动态数组ans记录得分，但是不用i做索引来查询，而是用begin、end、size、back等方法来防止发生越界访问。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;注意&lt;code&gt;string&lt;/code&gt;类型为字符串，用双引号””括起来，&lt;code&gt;char&lt;/code&gt;类型为字符，用单引号’’。&lt;/li&gt;
 &lt;/ul&gt;
@@ -604,7 +555,7 @@ public:
 &lt;li&gt;返回 k 。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-10&#34;&gt;&lt;a href=&#34;#解题思路-10&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;int 最终数组长度=1;
+&lt;h3 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;int 最终数组长度=1;
 遍历nums：
     如果第i个元素不等于第i-1个元素：
         nums[最终数组长度]=nums[i]；
@@ -630,7 +581,7 @@ public:
 &lt;h2 id=&#34;35-搜索插入位置&#34;&gt;&lt;a href=&#34;#35-搜索插入位置&#34; class=&#34;headerlink&#34; title=&#34;35.搜索插入位置&#34;&gt;&lt;/a&gt;35.搜索插入位置&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。&lt;br&gt;&lt;strong&gt;请必须使用时间复杂度为&lt;code&gt;O(logn)&lt;/code&gt;的算法。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-11&#34;&gt;&lt;a href=&#34;#解题思路-11&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我一开始用的暴力穷举，如下。&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-10&#34;&gt;&lt;a href=&#34;#解题思路-10&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我一开始用的暴力穷举，如下。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
 public:
     int searchInsert(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) &amp;#123;
@@ -691,7 +642,7 @@ public:
 &lt;h2 id=&#34;35-搜索插入位置-1&#34;&gt;&lt;a href=&#34;#35-搜索插入位置-1&#34; class=&#34;headerlink&#34; title=&#34;35.搜索插入位置&#34;&gt;&lt;/a&gt;35.搜索插入位置&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;假设你正在爬楼梯。需要 n 阶你才能到达楼顶。&lt;br&gt;每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;解题思路-12&#34;&gt;&lt;a href=&#34;#解题思路-12&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;试图暴力然后失败。然后查看题解：竟然是&lt;strong&gt;动态规划&lt;/strong&gt;~&lt;/p&gt;
+&lt;h3 id=&#34;解题思路-11&#34;&gt;&lt;a href=&#34;#解题思路-11&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;试图暴力然后失败。然后查看题解：竟然是&lt;strong&gt;动态规划&lt;/strong&gt;~&lt;/p&gt;
 &lt;p&gt;重点理解部分：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;逆向思维&lt;/strong&gt;：如果要到第&lt;code&gt;n&lt;/code&gt;个台阶，就必须从第&lt;code&gt;n-1&lt;/code&gt;阶走1步，或者从第&lt;code&gt;n-2&lt;/code&gt;阶走2步。&lt;/li&gt;
