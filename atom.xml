@@ -3,12 +3,262 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-03-04T11:15:05.000Z</updated>
+    <updated>2025-03-05T07:22:48.000Z</updated>
     <category term="算法" />
+    <category term="字符串" />
     <category term="数组" />
     <category term="C++" />
     <category term="记录" />
     <category term="Markdown" />
+    <entry>
+        <id>https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+        <title>Leetcode字符串</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+        <content type="html">&lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;KMP有点难理解了对我而言…看不懂就放两天继续钻，再多看看大佬博客的不同理解，效果会更好。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考链接：&lt;br&gt;&lt;a href=&#34;https://www.cnblogs.com/dusf/p/kmp.html&#34;&gt;1️⃣&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/yyzsir/article/details/89462339?ops_request_misc=%257B%2522request%255Fid%2522%253A%252292dce769a412320e26ef79eb85ca18cd%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=92dce769a412320e26ef79eb85ca18cd&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-89462339-null-null.142%5Ev101%5Epc_search_result_base5&amp;utm_term=yyzsir%20kmp&amp;spm=1018.2226.3001.4187&#34;&gt;2️⃣&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;朴素模式匹配BF&#34;&gt;&lt;a href=&#34;#朴素模式匹配BF&#34; class=&#34;headerlink&#34; title=&#34;朴素模式匹配BF&#34;&gt;&lt;/a&gt;朴素模式匹配&lt;code&gt;BF&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;首先来个&lt;strong&gt;暴力&lt;/strong&gt;方法：不匹配模式串就右挪一位。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//暴力模式匹配
+int 主串位置i；
+int 模式串位置j；
+int 主串长度；
+int 子串长度；
+
+当（主串位置 &amp;lt;= 主串长度 &amp;amp;&amp;amp; 模式串位置&amp;lt;模式串长度）:
+    如果（该主串位置的主串字符 == 该模式串位置的模式串字符）：
+        i++；
+        j++；
+    否则：
+        i后退至上一轮匹配开始位置的后一位；
+        j归零；
+如果（模式串位置 == 模式串长度）：
+    匹配成功，返回出现位置；
+否则
+    匹配失败，返回-1；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;优化模式匹配KMP&#34;&gt;&lt;a href=&#34;#优化模式匹配KMP&#34; class=&#34;headerlink&#34; title=&#34;优化模式匹配KMP&#34;&gt;&lt;/a&gt;优化模式匹配&lt;code&gt;KMP&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;即利用&lt;strong&gt;已经部分匹配&lt;/strong&gt;这个信息，保持&lt;strong&gt;i指针不回溯&lt;/strong&gt;，并通过j指针让&lt;strong&gt;模式串&lt;/strong&gt;尽可能移动到&lt;strong&gt;更有效的位置&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么有几个要点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;前缀(Prefix)和后缀（Suffix）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;举个🌰，给定一个字符串s:&lt;code&gt;“abcab”&lt;/code&gt;,那么:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;s的子串&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;前缀&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;后缀&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;c,bc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab,abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ca,bca&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab,abc,abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b,ab,cab,bcab&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;公共前后缀最长长度&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;从上面的前后缀不难看出，对于s的子串，存在部分前后缀重复的情况，我们需要的正是重复子串的最大长度。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;s的子串&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;前缀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;后缀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;公共前后缀最长长度&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;c,bc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;,ab,abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;,ca,bca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,&lt;code&gt;ab&lt;/code&gt;,abc,abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b,&lt;code&gt;ab&lt;/code&gt;,cab,bcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;next数组（部分匹配表）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;KMP的next数组告诉我们：当模式串中的某个字符跟主串中的某个字符失配时，模式串下一步应该跳到哪个位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于s的&lt;strong&gt;每个字符&lt;/strong&gt;而言，当这个字符作为子串的最后一位时，公共前后缀最长长度为：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;字符（标红部分）&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;公共前后缀最长长度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;bcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;code&gt;b&lt;/code&gt;cab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;code&gt;c&lt;/code&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;code&gt;a&lt;/code&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;那么全部右移一位，令next[0]&amp;#x3D;-1：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;字符&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;i&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;next[i]&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;c&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;实际匹配过程中，j移动到子串p的next[j]位置，p相对s向右移动j-next[j]位置。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;迭代法求p的next数组&lt;/strong&gt;&lt;br&gt;我们知道：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;next[0]=-1;
+next[1]=0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;并且&lt;code&gt;next[j]&lt;/code&gt;代表p[0…j-1]的子串公共前后缀最长长度。&lt;br&gt;∴ 变量定义如下：&lt;br&gt;&lt;code&gt;j&lt;/code&gt;：当前子串指针&lt;br&gt;&lt;code&gt;k&lt;/code&gt;：当前匹配的前后缀长度（&amp;#x3D;next[j-1]）&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;：next[0]&amp;#x3D;-1 即当p[0]都匹配失败时，只能回到j&amp;#x3D;0重新匹配。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void GetNext(char p[], int next[])
+&amp;#123;
+    int j = 0, k = -1;
+    next[j] = k;
+    while (p[j] != &amp;#39;\0&amp;#39;)             //遍历整个子串p
+    &amp;#123;
+        if (k == -1 || p[j] == p[k]) //匹配成功😀或者k=-1（刚匹配到字串的第一个）
+        &amp;#123;
+            j++;                     //j指针后移
+            k++;
+            next[j] = k;             //记录当前前后缀匹配长度
+        &amp;#125; 
+        else 
+        &amp;#123;
+            k = next[k];             //匹配失败😭，回溯到next[k]寻找更短的前后缀
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;KMP主算法&lt;br&gt;得到next数组的方法&lt;code&gt;GetNext()&lt;/code&gt;，就可以完整的写出KMP函数。这里写成一个函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;int KMP(string s,string p)&amp;#123;
+    int m=s.size();
+    int n=p.size();
+    if(m==0)&amp;#123;
+        return 0;
+    &amp;#125;
+    //⬇️计算next数组
+    vector&amp;lt;int&amp;gt;next;
+    int j=0;
+    for(int i=0;i&amp;lt;n;i++)&amp;#123;
+        while(j&amp;gt;0 &amp;amp;&amp;amp; p[i]!=p[j])&amp;#123;
+            j=next[j-1];
+        &amp;#125;
+        if(p[i]==p[j])&amp;#123;
+            j++;
+        &amp;#125;
+        next[i]=j;
+    &amp;#125;
+    //⬇️KMP搜索匹配
+    int j=0;
+    for(int i=0;i&amp;lt;m;i++)&amp;#123;
+        while(j&amp;gt;0 &amp;amp;&amp;amp; s[i]!=p[j])&amp;#123;
+            j=next[j-1];
+        &amp;#125;
+        if(s[i]==p[j])&amp;#123;
+            j++;
+        &amp;#125;
+        if(j==n)&amp;#123;
+            return i-n+1;
+        &amp;#125;
+    &amp;#125;
+    return -1;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;说实话，后半部分现在不能完全理解，让我再多磕几天。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;</content>
+        <category term="算法" />
+        <category term="字符串" />
+        <updated>2025-03-05T07:22:48.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</id>
         <title>Leetcode数组</title>
