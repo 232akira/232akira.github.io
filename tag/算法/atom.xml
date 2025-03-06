@@ -3,14 +3,126 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;算法&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-03-05T07:22:48.000Z</updated>
+    <updated>2025-03-06T02:25:28.000Z</updated>
     <category term="算法" />
     <category term="字符串" />
     <category term="数组" />
     <category term="C++" />
-    <category term="算法，链表" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
+    <entry>
+        <id>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</id>
+        <title>Leetcode链表</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/"/>
+        <content type="html">&lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
+&lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;节点结构 &lt;code&gt;ListNode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;值 &lt;code&gt;data&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;指向下一个节点的指针 &lt;code&gt;next&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;struct ListNode&amp;#123;
+    int data;
+    ListNode* next;
+    ListNode(int x):data(x),next(nullptr)&amp;#123;&amp;#125;
+&amp;#125;Node;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;&lt;a href=&#34;#基本操作&#34; class=&#34;headerlink&#34; title=&#34;基本操作&#34;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;h3 id=&#34;创建链表&#34;&gt;&lt;a href=&#34;#创建链表&#34; class=&#34;headerlink&#34; title=&#34;创建链表&#34;&gt;&lt;/a&gt;创建链表&lt;/h3&gt;&lt;p&gt;定义单链表类，封装基本操作。下面的几个操作都在public里~&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class LinkedList&amp;#123;
+public:
+    ListNode* head;
+    LinkedList():head(nullptr);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;插入节点&#34;&gt;&lt;a href=&#34;#插入节点&#34; class=&#34;headerlink&#34; title=&#34;插入节点&#34;&gt;&lt;/a&gt;插入节点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;头插法:新节点加到链表头部&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void insertAtHead(int data)&amp;#123;
+    ListNode* newNode=new ListNode(data);
+    newNode-&amp;gt;next=head;
+    head=newNode;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;尾插法：:新节点加到链表尾部&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;void insertAtTail(int data)&amp;#123;
+    ListNode* newNode=new ListNode(data);
+    if(!head)&amp;#123;
+        head=newNode;
+        return;
+    &amp;#125;
+    ListNode* temp=head;
+    while(temp-&amp;gt;next)&amp;#123;
+        temp=temp-&amp;gt;next;
+    &amp;#125;
+    temp-&amp;gt;next=newNode;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void deleteNode(int data)&amp;#123;
+    if(!head)&amp;#123;
+        return;
+    &amp;#125;
+    if(head-&amp;gt;data==data)&amp;#123;
+        ListNode* temp=head;
+        head=head-&amp;gt;next;
+        delete temp;
+        return;
+    &amp;#125;
+    ListNode* temp=head;
+    while(temp-&amp;gt;next &amp;amp;&amp;amp; temp-&amp;gt;next-&amp;gt;val !=val)&amp;#123;
+        temp=temp-&amp;gt;next;
+    &amp;#125;
+    if(temp-&amp;gt;next)&amp;#123;
+        ListNode* delNode=temp-&amp;gt;next;
+        temp-&amp;gt;next=temp-&amp;gt;next-&amp;gt;next;
+        delete delNode;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void updateNode(int oldData,newData)&amp;#123;
+    ListNode* temp=head;
+    while(temp)&amp;#123;
+        if(temp-data==oldData)&amp;#123;
+            temp-&amp;gt;data==oldData;
+            return;
+        &amp;#125;
+        temp=temp-&amp;gt;next;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool searchNode(int data)&amp;#123;
+    ListNode* temp=head;
+    while(temp)&amp;#123;
+        if(temp-&amp;gt;data==data)&amp;#123;
+            return true;
+        &amp;#125;
+    &amp;#125;
+    return false;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void printList()&amp;#123;
+    ListNode* temp=head;
+    while(temp)&amp;#123;
+        cout&amp;lt;&amp;lt;temp-&amp;gt;val&amp;lt;&amp;lt;&amp;quot;-&amp;gt;&amp;quot;;
+        temp=temp-&amp;gt;next;
+    &amp;#125;
+    cout&amp;lt;&amp;lt;&amp;quot;NULL&amp;quot;&amp;lt;&amp;lt;endl;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;~LinkedList()&amp;#123;
+    while(head)&amp;#123;
+        ListNode* temp=head;
+        head=head-&amp;gt;next;
+        delete temp;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="算法" />
+        <category term="链表" />
+        <updated>2025-03-06T02:25:28.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
         <title>Leetcode字符串</title>
