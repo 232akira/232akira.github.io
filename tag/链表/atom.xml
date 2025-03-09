@@ -4,12 +4,15 @@
     <title>Per aspera ad astra • Posts by &#34;链表&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-06T02:25:28.000Z</updated>
-    <category term="算法" />
+    <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
+    <category term="哈希表" />
+    <category term="动态规划" />
+    <category term="二分查找" />
+    <category term="算法" />
     <category term="字符串" />
     <category term="链表" />
-    <category term="力扣" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -22,7 +25,7 @@
 &lt;li&gt;值 &lt;code&gt;data&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;指向下一个节点的指针 &lt;code&gt;next&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;struct ListNode&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;struct ListNode&amp;#123;
     int data;
     ListNode* next;
     ListNode(int x):data(x),next(nullptr)&amp;#123;&amp;#125;
@@ -119,10 +122,63 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;21-合并两个有序链表&#34;&gt;&lt;a href=&#34;#21-合并两个有序链表&#34; class=&#34;headerlink&#34; title=&#34;21.合并两个有序链表&#34;&gt;&lt;/a&gt;21.合并两个有序链表&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&lt;br&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个链表的节点数目范围是 [0, 50]&lt;/li&gt;
+&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;l1和l2均按非递减顺序排列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;终止条件&lt;/strong&gt;&lt;/em&gt;：有链表为空&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;list1为空，合并结果直接为list2&lt;/li&gt;
+&lt;li&gt;list2为空，合并结果直接为list1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;递归调用&lt;/strong&gt;&lt;/em&gt;：小的打头，每一步递归后返回的值链接到链表末尾&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果&lt;code&gt;list1节点的值 &amp;lt; list2&lt;/code&gt;：寻找list1后面节点还有没有也比list2小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list1-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;else：寻找list2后面节点还有没有也比list1小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list2;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &amp;#123;
+        if(list1==NULL || list2==NULL)&amp;#123;
+            return list1==NULL ? list2:list1;
+        &amp;#125;
+        if(list1-&amp;gt;val &amp;lt; list2-&amp;gt;val)&amp;#123;
+            list1-&amp;gt;next = mergeTwoLists(list1-&amp;gt;next,list2);
+            return list1;
+        &amp;#125;
+        else&amp;#123;
+            list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
+            return list2;
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="力扣" />
         <category term="算法" />
         <category term="链表" />
-        <category term="力扣" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
 </feed>

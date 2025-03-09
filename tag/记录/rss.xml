@@ -7,20 +7,23 @@
         <language>zh-CN</language>
         <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
         <lastBuildDate>Sun, 02 Mar 2025 19:55:55 +0800</lastBuildDate>
-        <category>算法</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
+        <category>哈希表</category>
+        <category>动态规划</category>
+        <category>二分查找</category>
+        <category>算法</category>
         <category>字符串</category>
         <category>链表</category>
-        <category>力扣</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>算法</category>
             <category>C++</category>
+            <category>算法</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
@@ -550,7 +553,7 @@ public:
 &lt;hr&gt;
 &lt;h2 id=&#34;首先是参考链接&#34;&gt;&lt;a href=&#34;#首先是参考链接&#34; class=&#34;headerlink&#34; title=&#34;首先是参考链接&#34;&gt;&lt;/a&gt;首先是参考链接&lt;/h2&gt;&lt;p&gt;非常感谢！&lt;/p&gt;
 &lt;h3 id=&#34;ShokaX&#34;&gt;&lt;a href=&#34;#ShokaX&#34; class=&#34;headerlink&#34; title=&#34;ShokaX&#34;&gt;&lt;/a&gt;ShokaX&lt;/h3&gt;&lt;p&gt;github：&lt;a href=&#34;https://github.com/theme-shoka-x/hexo-theme-shokaX&#34;&gt;https://github.com/theme-shoka-x/hexo-theme-shokaX&lt;/a&gt;&lt;br&gt;官方文档：&lt;a href=&#34;https://hexo.docs.shokax.top/&#34;&gt;https://hexo.docs.shokax.top/&lt;/a&gt;&lt;br&gt;主题指南：&lt;a href=&#34;https://docs.kaitaku.xyz/&#34;&gt;https://docs.kaitaku.xyz/&lt;/a&gt;&lt;br&gt;社区资源：&lt;a href=&#34;https://github.com/theme-shoka-x/awesome-shokaX&#34;&gt;https://github.com/theme-shoka-x/awesome-shokaX&lt;/a&gt;&lt;br&gt;shoka：&lt;a href=&#34;https://github.com/amehime/hexo-theme-shoka&#34;&gt;https://github.com/amehime/hexo-theme-shoka&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;其他相关网站&#34;&gt;&lt;a href=&#34;#其他相关网站&#34; class=&#34;headerlink&#34; title=&#34;其他相关网站&#34;&gt;&lt;/a&gt;其他相关网站&lt;/h3&gt;&lt;p&gt;waline快速上手：&lt;a href=&#34;https://waline.js.org/guide/get-started/&#34;&gt;https://waline.js.org/guide/get-started/&lt;/a&gt;&lt;br&gt;Vercel服务端部署：&lt;a href=&#34;https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example&amp;teamSlug=232akiras-projects&#34;&gt;https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample&amp;amp;teamSlug=232akiras-projects&lt;/a&gt;&lt;br&gt;leancloud：&lt;a href=&#34;https://console.leancloud.app/apps&#34;&gt;https://console.leancloud.app/apps&lt;/a&gt;&lt;br&gt;Gimhoy图床：&lt;a href=&#34;https://pic.gimhoy.com/&#34;&gt;https://pic.gimhoy.com/&lt;/a&gt;&lt;br&gt;Google字体：&lt;a href=&#34;https://fonts.google.com/&#34;&gt;https://fonts.google.com/&lt;/a&gt;&lt;br&gt;百度统计：&lt;a href=&#34;https://tongji.baidu.com/main/setting/10000672027/home/site/index&#34;&gt;https://tongji.baidu.com/main/setting/10000672027/home/site/index&lt;/a&gt;&lt;br&gt;markdown排版：&lt;a href=&#34;https://markdown.com.cn/editor/&#34;&gt;https://markdown.com.cn/editor/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;其他相关网站-教程&#34;&gt;&lt;a href=&#34;#其他相关网站-教程&#34; class=&#34;headerlink&#34; title=&#34;其他相关网站&amp;amp;教程&#34;&gt;&lt;/a&gt;其他相关网站&amp;amp;教程&lt;/h3&gt;&lt;p&gt;Linn’s Shoka：&lt;a href=&#34;https://linn-ylz.com/Hexo/blog-content-test/&#34;&gt;https://linn-ylz.com/Hexo/blog-content-test/&lt;/a&gt;&lt;br&gt;waline快速上手：&lt;a href=&#34;https://waline.js.org/guide/get-started/&#34;&gt;https://waline.js.org/guide/get-started/&lt;/a&gt;&lt;br&gt;Vercel服务端部署：&lt;a href=&#34;https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example&amp;teamSlug=232akiras-projects&#34;&gt;https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample&amp;amp;teamSlug=232akiras-projects&lt;/a&gt;&lt;br&gt;leancloud：&lt;a href=&#34;https://console.leancloud.app/apps&#34;&gt;https://console.leancloud.app/apps&lt;/a&gt;&lt;br&gt;Gimhoy图床：&lt;a href=&#34;https://pic.gimhoy.com/&#34;&gt;https://pic.gimhoy.com/&lt;/a&gt;&lt;br&gt;Google字体：&lt;a href=&#34;https://fonts.google.com/&#34;&gt;https://fonts.google.com/&lt;/a&gt;&lt;br&gt;百度统计：&lt;a href=&#34;https://tongji.baidu.com/main/setting/10000672027/home/site/index&#34;&gt;https://tongji.baidu.com/main/setting/10000672027/home/site/index&lt;/a&gt;&lt;br&gt;markdown排版：&lt;a href=&#34;https://markdown.com.cn/editor/&#34;&gt;https://markdown.com.cn/editor/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;搭建思路&#34;&gt;&lt;a href=&#34;#搭建思路&#34; class=&#34;headerlink&#34; title=&#34;搭建思路&#34;&gt;&lt;/a&gt;搭建思路&lt;/h2&gt;&lt;p&gt;这方面毫无实战知识，不停地踩坑踩坑…&lt;/p&gt;
 &lt;h3 id=&#34;Hexo初始化博客&#34;&gt;&lt;a href=&#34;#Hexo初始化博客&#34; class=&#34;headerlink&#34; title=&#34;Hexo初始化博客&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://hexo.io/zh-cn/&#34; title=&#34;点此跳转Hexo官网&#34;&gt;Hexo&lt;/a&gt;初始化博客&lt;/h3&gt;&lt;p&gt;基于Node.js的博客框架。本博客采用Hexo+Github搭建。&lt;br&gt;&lt;strong&gt;常用命令&lt;/strong&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -612,7 +615,10 @@ SEO优化和访客优化
 分类翻转块
 实验性特性
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;其他配置项&#34;&gt;&lt;a href=&#34;#其他配置项&#34; class=&#34;headerlink&#34; title=&#34;其他配置项&#34;&gt;&lt;/a&gt;其他配置项&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1、图片素材替换&lt;/strong&gt;&lt;br&gt;文件目录&lt;code&gt;/source/_data/assets&lt;/code&gt;&lt;br&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/blog01_1.png&#34; title=&#34;依旧是官方教程~本文仅做总结，非原创&#34;&gt;&lt;/p&gt;
+&lt;p&gt;回到我的主页😼👇️&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;site: K’s BLOG&lt;br&gt;url: &lt;a href=&#34;https://232akira.github.io/&#34;&gt;https://232akira.github.io/&lt;/a&gt;&lt;br&gt;color: “#adff2f”&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>

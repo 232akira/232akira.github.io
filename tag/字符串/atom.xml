@@ -4,12 +4,15 @@
     <title>Per aspera ad astra • Posts by &#34;字符串&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-05T07:22:48.000Z</updated>
-    <category term="算法" />
+    <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
+    <category term="哈希表" />
+    <category term="动态规划" />
+    <category term="二分查找" />
+    <category term="算法" />
     <category term="字符串" />
     <category term="链表" />
-    <category term="力扣" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -256,7 +259,20 @@ next[1]=0;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;说实话，后半部分现在不能完全理解，让我再多磕几天。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;</content>
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1021-删除最外层的括号&#34;&gt;&lt;a href=&#34;#1021-删除最外层的括号&#34; class=&#34;headerlink&#34; title=&#34;1021.删除最外层的括号&#34;&gt;&lt;/a&gt;1021.删除最外层的括号&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;有效括号字符串为空 “”、”(“ + A + “)” 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。&lt;br&gt;例如，””，”()”，”(())()” 和 “(()(()))” 都是有效的括号字符串。&lt;br&gt;如果有效字符串 s 非空，且不存在将其拆分为 s &amp;#x3D; A + B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。&lt;br&gt;给出一个非空有效字符串 s，考虑将其进行原语化分解，使得：s &amp;#x3D; P_1 + P_2 + … + P_k，其中 P_i 是有效括号字符串原语。&lt;br&gt;对 s 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 s 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘(‘ 或 ‘)’&lt;/li&gt;
+&lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;</content>
         <category term="算法" />
         <category term="字符串" />
         <updated>2025-03-05T07:22:48.000Z</updated>

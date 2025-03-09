@@ -7,21 +7,24 @@
         <language>zh-CN</language>
         <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
         <lastBuildDate>Thu, 06 Mar 2025 10:25:28 +0800</lastBuildDate>
-        <category>算法</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
+        <category>哈希表</category>
+        <category>动态规划</category>
+        <category>二分查找</category>
+        <category>算法</category>
         <category>字符串</category>
         <category>链表</category>
-        <category>力扣</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
+            <category>力扣</category>
             <category>算法</category>
             <category>链表</category>
-            <category>力扣</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
@@ -29,7 +32,7 @@
 &lt;li&gt;值 &lt;code&gt;data&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;指向下一个节点的指针 &lt;code&gt;next&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;struct ListNode&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;struct ListNode&amp;#123;
     int data;
     ListNode* next;
     ListNode(int x):data(x),next(nullptr)&amp;#123;&amp;#125;
@@ -125,6 +128,59 @@ public:
         delete temp;
     &amp;#125;
 &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;21-合并两个有序链表&#34;&gt;&lt;a href=&#34;#21-合并两个有序链表&#34; class=&#34;headerlink&#34; title=&#34;21.合并两个有序链表&#34;&gt;&lt;/a&gt;21.合并两个有序链表&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&lt;br&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个链表的节点数目范围是 [0, 50]&lt;/li&gt;
+&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;l1和l2均按非递减顺序排列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;终止条件&lt;/strong&gt;&lt;/em&gt;：有链表为空&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;list1为空，合并结果直接为list2&lt;/li&gt;
+&lt;li&gt;list2为空，合并结果直接为list1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;递归调用&lt;/strong&gt;&lt;/em&gt;：小的打头，每一步递归后返回的值链接到链表末尾&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果&lt;code&gt;list1节点的值 &amp;lt; list2&lt;/code&gt;：寻找list1后面节点还有没有也比list2小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list1-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;else：寻找list2后面节点还有没有也比list1小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list2;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &amp;#123;
+        if(list1==NULL || list2==NULL)&amp;#123;
+            return list1==NULL ? list2:list1;
+        &amp;#125;
+        if(list1-&amp;gt;val &amp;lt; list2-&amp;gt;val)&amp;#123;
+            list1-&amp;gt;next = mergeTwoLists(list1-&amp;gt;next,list2);
+            return list1;
+        &amp;#125;
+        else&amp;#123;
+            list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
+            return list2;
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
@@ -375,58 +431,27 @@ next[1]=0;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;说实话，后半部分现在不能完全理解，让我再多磕几天。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</guid>
-            <title>Leetcode数组</title>
-            <link>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</link>
-            <category>算法</category>
-            <category>数组</category>
-            <category>C++</category>
-            <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;本来想一道题一篇文，但是做的大多是简单题所以按模块归类好复习一点。&lt;/p&gt;
-&lt;h1 id=&#34;1232-缀点成线&#34;&gt;&lt;a href=&#34;#1232-缀点成线&#34; class=&#34;headerlink&#34; title=&#34;1232.缀点成线&#34;&gt;&lt;/a&gt;1232.缀点成线&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;给定一个数组 coordinates ，其中 coordinates[i] &amp;#x3D; [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1021-删除最外层的括号&#34;&gt;&lt;a href=&#34;#1021-删除最外层的括号&#34; class=&#34;headerlink&#34; title=&#34;1021.删除最外层的括号&#34;&gt;&lt;/a&gt;1021.删除最外层的括号&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;有效括号字符串为空 “”、”(“ + A + “)” 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。&lt;br&gt;例如，””，”()”，”(())()” 和 “(()(()))” 都是有效的括号字符串。&lt;br&gt;如果有效字符串 s 非空，且不存在将其拆分为 s &amp;#x3D; A + B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。&lt;br&gt;给出一个非空有效字符串 s，考虑将其进行原语化分解，使得：s &amp;#x3D; P_1 + P_2 + … + P_k，其中 P_i 是有效括号字符串原语。&lt;br&gt;对 s 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 s 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;2 &amp;lt;&amp;#x3D; coordinates.length &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
-&lt;li&gt;coordinates[i].length &amp;#x3D;&amp;#x3D; 2&lt;/li&gt;
-&lt;li&gt;-10^4 &amp;lt;&amp;#x3D; coordinates[i][0], coordinates[i][1] &amp;lt;&amp;#x3D; 10^4&lt;/li&gt;
-&lt;li&gt;coordinates 中不含重复的点&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘(‘ 或 ‘)’&lt;/li&gt;
+&lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
-&lt;p&gt;那么就不使用斜率，而是使用&lt;strong&gt;斜率交叉乘法&lt;/strong&gt;：如果所有点都在同一条直线上，那么&lt;strong&gt;对于任意两点P1(x1,y1)、P2(x2,y2)、P3(x3,y3)之间的斜率必须相等&lt;/strong&gt;。也就是&lt;code&gt;(y2-y1)/(x2-x1)=(y3-y1)/(x3-x1)&lt;/code&gt;。为避免除法带来的浮点误差，用&lt;strong&gt;交叉相乘&lt;/strong&gt;验证更好。&lt;br&gt;&lt;em&gt;&lt;strong&gt;并且注意！&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为我的验证方法需要三个点，但是这道题有可&lt;code&gt;coordinates,length=2&lt;/code&gt;的情况，那就直接返回true，因为&lt;strong&gt;两点确定一条直线&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
-public:
-    bool checkStraightLine(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; coordinates) &amp;#123;
-        int x1,y1,x2,y2;
-        x1=coordinates[0][0];
-        y1=coordinates[0][1];
-        x2=coordinates[1][0];
-        y2=coordinates[1][1];
-        if(coordinates.size()==2)&amp;#123;
-            return true;
-        &amp;#125;
-        for(int i=2;i&amp;lt;coordinates.size();i++)&amp;#123;
-            int x3=coordinates[i][0];
-            int y3=coordinates[i][1];
-            if((y2-y1)*(x3-x1)!=(x2-x1)*(y3-y1))&amp;#123;
-                return false;
-            &amp;#125;
-        &amp;#125;
-        return true;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
- ]]></description>
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>Leetcode贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>算法</category>
             <category>C++</category>
+            <category>算法</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
@@ -511,8 +536,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>算法</category>
             <category>C++</category>
+            <category>算法</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
