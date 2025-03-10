@@ -7,14 +7,15 @@
         <language>zh-CN</language>
         <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
         <lastBuildDate>Thu, 06 Mar 2025 10:25:28 +0800</lastBuildDate>
+        <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>算法</category>
-        <category>字符串</category>
         <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
@@ -22,8 +23,8 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -190,6 +191,7 @@ public:
             <link>https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
             <category>算法</category>
             <category>字符串</category>
+            <category>滑动窗口</category>
             <pubDate>Wed, 05 Mar 2025 15:22:48 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
@@ -431,7 +433,23 @@ next[1]=0;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;说实话，后半部分现在不能完全理解，让我再多磕几天。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int lengthOfLastWord(string s) &amp;#123;
+        int len=s.length();
+        int m=0,n=0;
+        for(int i=len-1;i&amp;gt;0;i--)&amp;#123;
+            if(s[i]!=&amp;#39; &amp;#39; &amp;amp;&amp;amp; (s[i+1]==&amp;#39; &amp;#39; || s[i+1]==&amp;#39;\0&amp;#39;))&amp;#123;
+                m=i;
+            &amp;#125;
+            if((s[i-1]==&amp;#39; &amp;#39; || s[i-1]==&amp;#39;\0&amp;#39;) &amp;amp;&amp;amp; s[i]!=&amp;#39; &amp;#39;)&amp;#123;
+                n=i;
+                break;
+            &amp;#125;
+        &amp;#125;
+        return m-n+1;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;1021-删除最外层的括号&#34;&gt;&lt;a href=&#34;#1021-删除最外层的括号&#34; class=&#34;headerlink&#34; title=&#34;1021.删除最外层的括号&#34;&gt;&lt;/a&gt;1021.删除最外层的括号&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;有效括号字符串为空 “”、”(“ + A + “)” 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。&lt;br&gt;例如，””，”()”，”(())()” 和 “(()(()))” 都是有效的括号字符串。&lt;br&gt;如果有效字符串 s 非空，且不存在将其拆分为 s &amp;#x3D; A + B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。&lt;br&gt;给出一个非空有效字符串 s，考虑将其进行原语化分解，使得：s &amp;#x3D; P_1 + P_2 + … + P_k，其中 P_i 是有效括号字符串原语。&lt;br&gt;对 s 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 s 。&lt;/p&gt;
@@ -444,14 +462,93 @@ next[1]=0;
 &lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt; ]]></description>
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个整数num的k美丽值定义为num中符合以下条件的子字符串数目：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;子字符串长度为k。&lt;/li&gt;
+&lt;li&gt;子字符串能整除num。&lt;br&gt;给你整数num和k，请你返回num的k美丽值。&lt;br&gt;注意：&lt;br&gt;允许有前缀0。&lt;br&gt;0不能整除任何值。&lt;br&gt;一个子字符串是一个字符串里的连续一段字符序列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= num &amp;lt;= 109&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= k &amp;lt;= num.length&lt;/code&gt; （将 num 视为字符串）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我觉得这道的要点就是子串怎么得，剩下的就好判断了。偏偏我就栽在这儿了😅&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;int转string&lt;/strong&gt; &lt;code&gt;to_string()&lt;/code&gt;注意此函数需要赋给个string变量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;string转int&lt;/strong&gt; &lt;code&gt;stoi()&lt;/code&gt;同样，需要赋给个int变量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;获取长度为k的字符串&lt;/strong&gt; &lt;code&gt;substr(i,k)&lt;/code&gt;距离c++学这个函数已经过了一两年了，忘的一干二净，趁此好机会来总结一下。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;获取子串&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;函数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;substr(pos,len)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;从pos开始，提取长度为len的子串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;查找字符串&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;函数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;find(str,pos)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;从pos开始，提取长度为len的子串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;rfind(str,pos)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;逆向查找str,从pos开始向前找&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;find_first_of(chars,pos)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;查找chars中的任意字符的第一次出现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;find_last_of(chars,pos)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;查找chars中的任意字符的最后一次出现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;替换字符串&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;大小写转换&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;数字与字符串转换&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int divisorSubstrings(int num, int k) &amp;#123;
+        int cnt=0;
+        string str=to_string(num);
+        for(int i=0;i&amp;lt;=str.size()-k;i++)&amp;#123;
+            string ans=str.substr(i,k);
+            int answer=stoi(ans);
+            if(answer!=0 &amp;amp;&amp;amp; num%answer==0)&amp;#123;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return cnt;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>Leetcode贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
@@ -536,8 +633,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;

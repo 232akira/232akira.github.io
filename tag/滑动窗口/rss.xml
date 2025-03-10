@@ -1,26 +1,33 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://232akira.github.io</id>
-    <title>Per aspera ad astra • Posts by &#34;字符串&#34; tag</title>
-    <link href="https://232akira.github.io" />
-    <updated>2025-03-05T07:22:48.000Z</updated>
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
-    <category term="力扣" />
-    <category term="数组" />
-    <category term="C++" />
-    <category term="哈希表" />
-    <category term="动态规划" />
-    <category term="二分查找" />
-    <category term="链表" />
-    <category term="记录" />
-    <category term="Markdown" />
-    <entry>
-        <id>https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
-        <title>Leetcode字符串</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-        <content type="html">&lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
+<rss version="2.0">
+    <channel>
+        <title>Per aspera ad astra • Posts by &#34;滑动窗口&#34; tag</title>
+        <link>https://232akira.github.io</link>
+        <description>欢迎交流学习!</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 05 Mar 2025 15:22:48 +0800</pubDate>
+        <lastBuildDate>Wed, 05 Mar 2025 15:22:48 +0800</lastBuildDate>
+        <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
+        <category>力扣</category>
+        <category>数组</category>
+        <category>C++</category>
+        <category>哈希表</category>
+        <category>动态规划</category>
+        <category>二分查找</category>
+        <category>链表</category>
+        <category>记录</category>
+        <category>Markdown</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+            <title>Leetcode字符串</title>
+            <link>https://232akira.github.io/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+            <category>算法</category>
+            <category>字符串</category>
+            <category>滑动窗口</category>
+            <pubDate>Wed, 05 Mar 2025 15:22:48 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;KMP有点难理解了对我而言…看不懂就放两天继续钻，再多看看大佬博客的不同理解，效果会更好。&lt;/p&gt;
@@ -368,10 +375,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-</content>
-        <category term="算法" />
-        <category term="字符串" />
-        <category term="滑动窗口" />
-        <updated>2025-03-05T07:22:48.000Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>

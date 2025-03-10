@@ -4,14 +4,15 @@
     <title>Per aspera ad astra • Posts by &#34;哈希表&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-04T11:15:05.000Z</updated>
+    <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="算法" />
-    <category term="字符串" />
     <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
@@ -65,8 +66,8 @@ public:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;涉及&lt;strong&gt;子集&lt;/strong&gt;相关问题，一般有两种方法：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;回溯&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;位运算&lt;/strong&gt;&lt;br&gt;本题选择&lt;/em&gt;&lt;em&gt;回溯&lt;strong&gt;算法。因为该方法可在生成子集时&lt;/strong&gt;剪枝*&lt;/em&gt;。&lt;/li&gt;
+&lt;li&gt;回溯&lt;/li&gt;
+&lt;li&gt;位运算&lt;br&gt;本题选择&lt;strong&gt;回溯&lt;/strong&gt;算法。因为该方法可在生成子集时&lt;strong&gt;剪枝&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;假设 nums &amp;#x3D; [2, 4, 6]，我们希望生成所有子集,那么回溯的选择路径如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;          dfs(0)
@@ -154,7 +155,7 @@ public:
 &lt;ul&gt;
 &lt;li&gt;先按照price递增排序;&lt;/li&gt;
 &lt;li&gt;定义美丽数组;&lt;/li&gt;
-&lt;li&gt;遍历items:&lt;strong&gt;存储当前遍历到的最大美丽值&lt;/strong&gt;。的最大美丽值;&lt;/li&gt;
+&lt;li&gt;遍历items:&lt;strong&gt;存储当前遍历到的最大美丽值&lt;/strong&gt;;&lt;/li&gt;
 &lt;li&gt;定义答案数组;&lt;/li&gt;
 &lt;li&gt;遍历querties：&lt;strong&gt;二分查找&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
