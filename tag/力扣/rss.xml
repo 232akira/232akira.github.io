@@ -10,9 +10,9 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>C++</category>
         <category>力扣</category>
         <category>数组</category>
-        <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
@@ -189,9 +189,9 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</guid>
             <title>Leetcode数组</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</link>
+            <category>C++</category>
             <category>力扣</category>
             <category>数组</category>
-            <category>C++</category>
             <category>哈希表</category>
             <category>动态规划</category>
             <category>二分查找</category>
@@ -366,6 +366,76 @@ public:
             &amp;#125;
         &amp;#125;
         return answer;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从0开始的整数数组nums。对于每个下标i（1 &amp;lt;&amp;#x3D; i &amp;lt;&amp;#x3D; nums.length - 2），nums[i] 的美丽值等于：&lt;br&gt;2，对于所有 0 &amp;lt;&amp;#x3D; j &amp;lt; i 且 i &amp;lt; k &amp;lt;&amp;#x3D; nums.length - 1 ，满足 nums[j] &amp;lt; nums[i] &amp;lt; nums[k]&lt;br&gt;1，如果满足 nums[i - 1] &amp;lt; nums[i] &amp;lt; nums[i + 1] ，且不满足前面的条件&lt;br&gt;0，如果上述条件全部不满足&lt;br&gt;返回符合 1 &amp;lt;&amp;#x3D; i &amp;lt;&amp;#x3D; nums.length - 2 的所有 nums[i] 的美丽值的总和。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;难点在于nums[i]的美丽值为2的情况：&lt;/strong&gt;&lt;br&gt;突然想起来高中数学老师的口头禅：“大于大的，小于小的”。&lt;br&gt;nums[i]需要满足：比其左侧所有的nums[j]更大，以及&lt;em&gt;比其右侧所有的nums&lt;/em&gt;[k]更小。&lt;br&gt;即&lt;strong&gt;大于左侧最大值，小于右侧最小值&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*max_element(arr.begin(),arr.end())&lt;/code&gt;求数组最大值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*min_element(arr.begin(),arr.end())&lt;/code&gt;求数组最小值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;？超时了😇我还说想清楚了不难呢…&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int sumOfBeauties(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int maxval,minval,ans=0;
+        for(int i=1;i&amp;lt;nums.size()-1;i++)&amp;#123;
+            maxval=*max_element(nums.begin(),nums.begin()+i);
+            minval=*min_element(nums.begin()+i+1,nums.end());
+            if(maxval&amp;lt;nums[i] &amp;amp;&amp;amp; minval&amp;gt;nums[i])&amp;#123;
+                ans+=2;
+            &amp;#125;
+            else if(nums[i-1]&amp;lt;nums[i] &amp;amp;&amp;amp; nums[i+1]&amp;gt;nums[i])&amp;#123;
+                ans+=1;
+            &amp;#125;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;改进方法就是：左侧最大值和右侧最小值各自都用一个数组存起来所有i的情况，再进行条件判断。同时可以存一个，另一个随每次判断进行更新就好。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;定义左侧最大int数组leftMax;
+遍历i从1到nums.size()：
+    leftMax[i]=max(左侧最大数组[i-1],原数组[i-1]);
+int 美丽值;
+定义右侧最小int变量rightMin并初始化为原数组[length()-1];
+遍历i从length()-2到0:
+    如果（条件一）：
+        美丽值+=2;
+    否则如果（条件2）：
+        美丽值+=1;
+    更新右侧最小值=min（右侧最小值，原数组[i]）;
+返回美丽值
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int sumOfBeauties(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        vector&amp;lt;int&amp;gt; leftMax(nums.size(),0);
+        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
+            leftMax[i]=max(leftMax[i-1],nums[i-1]);
+        &amp;#125;
+        int ans=0;
+        int rightMin=nums[nums.size()-1];
+        for(int i=nums.size()-2;i&amp;gt;0;i--)&amp;#123;
+            if(leftMax[i]&amp;lt;nums[i] &amp;amp;&amp;amp; nums[i]&amp;lt;rightMin)&amp;#123;
+                ans+=2;
+            &amp;#125;
+            else if(nums[i-1]&amp;lt;nums[i] &amp;amp;&amp;amp; nums[i]&amp;lt;nums[i+1])&amp;#123;
+                ans+=1;
+            &amp;#125;
+            rightMin=min(rightMin,nums[i]);
+        &amp;#125;
+        return ans;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;

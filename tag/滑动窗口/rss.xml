@@ -10,9 +10,9 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>C++</category>
         <category>力扣</category>
         <category>数组</category>
-        <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
@@ -210,7 +210,7 @@ int 子串长度；
 next[1]=0;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;并且&lt;code&gt;next[j]&lt;/code&gt;代表p[0…j-1]的子串公共前后缀最长长度。&lt;br&gt;∴ 变量定义如下：&lt;br&gt;&lt;code&gt;j&lt;/code&gt;：当前子串指针&lt;br&gt;&lt;code&gt;k&lt;/code&gt;：当前匹配的前后缀长度（&amp;#x3D;next[j-1]）&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;：next[0]&amp;#x3D;-1 即当p[0]都匹配失败时，只能回到j&amp;#x3D;0重新匹配。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;void GetNext(char p[], int next[])
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void GetNext(char p[], int next[])
 &amp;#123;
     int j = 0, k = -1;
     next[j] = k;
@@ -232,7 +232,7 @@ next[1]=0;
 &lt;ul&gt;
 &lt;li&gt;KMP主算法&lt;br&gt;得到next数组的方法&lt;code&gt;GetNext()&lt;/code&gt;，就可以完整的写出KMP函数。这里写成一个函数：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;int KMP(string s,string p)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;int KMP(string s,string p)&amp;#123;
     int m=s.size();
     int n=p.size();
     if(m==0)&amp;#123;
@@ -298,7 +298,8 @@ public:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;一个整数num的k美丽值定义为num中符合以下条件的子字符串数目：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;子字符串长度为k。&lt;/li&gt;
@@ -341,7 +342,7 @@ public:
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;find(str,pos)&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;从pos开始，提取长度为len的子串&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;在pos之后查找str的位置，找不到返回string::pos&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;rfind(str,pos)&lt;/code&gt;&lt;/td&gt;
@@ -357,8 +358,68 @@ public:
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;替换字符串&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;函数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;replace(pos,len,str)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;从pos开始，用str替换len个字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;erase(pos,len)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;删除从pos开始的len个字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;insert(pos,str)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;在pos位置插入str&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;大小写转换&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;函数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;toupper(c)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;将字符c转换为大写&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;tolower(c)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;将字符c转换为小写&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;👇️ &lt;em&gt;&lt;strong&gt;数字与字符串转换&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;函数&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;to_string(num)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;把num转换为字符串&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;stoi(str)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;把str转换为int&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;stol(str)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;把str转换为long&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;stod(str)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;把str转换为double&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int divisorSubstrings(int num, int k) &amp;#123;
