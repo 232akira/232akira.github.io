@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Per aspera ad astra" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Per aspera ad astra" type="application/atom+xml"><link rel="alternate" type="application/json" title="Per aspera ad astra" href="https://232akira.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kode%20Mono:400,400italic,700,700italic%7CNoto%20Serif%20CJK:400,400italic,700,700italic%7CSource%20Code%20Pro:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.21"><link rel="modulepreload" href="/js/chunk-EKMYCN4G.js"></link><link rel="modulepreload" href="/js/chunk-NWK445F7.js"></link><link rel="modulepreload" href="/js/chunk-P3VSU34Z.js"></link><link rel="modulepreload" href="/js/chunk-P6P6JOKB.js"></link><link rel="modulepreload" href="/js/chunk-WIQECBEN.js"></link><link rel="modulepreload" href="/js/comments-6CZX7ZDR.js"></link><link rel="modulepreload" href="/js/copy-tex-L5APVQRW.js"></link><link rel="modulepreload" href="/js/index.esm-GXMHRLU4.js"></link><link rel="modulepreload" href="/js/post-JVTNTI7P.js"></link><link rel="modulepreload" href="/js/quicklink-EOEU5HGF.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/waline-NVSVNCZW.js"></link><link rel="stylesheet" href="/css/comments-F4ZGS7LD.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="stylesheet" href="/css/waline-IDNZKML2.css" media="none" onload="this.media&#x3D;&#39;all&#39;"></link><link rel="preload" href="/images/kgyk.jpg" as="image" fetchpriority="high"><meta name="keywords" content="算法,滑动窗口,哈希表"/><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"><title>专题1️⃣ 滑动窗口</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">专题1️⃣ 滑动窗口</h1><div class="meta"><span class="item" title="创建时间：2025-03-12 18:20:15"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-03-12T18:20:15+08:00">2025-03-12</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>6.4k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>6 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/kgyk.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="KangYiChen"/><meta itemprop="description" content="😼, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><p>今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。</p>
+<h1 id="2269-找到一个数字的-K-美丽值"><a href="#2269-找到一个数字的-K-美丽值" class="headerlink" title="2269.找到一个数字的 K 美丽值"></a>2269.找到一个数字的 K 美丽值</h1><p>今天字符串也要美丽了🆘</p>
+<blockquote>
+<p>一个整数num的k美丽值定义为num中符合以下条件的子字符串数目：</p>
+<ul>
+<li>子字符串长度为k。</li>
+<li>子字符串能整除num。<br>给你整数num和k，请你返回num的k美丽值。<br>注意：<br>允许有前缀0。<br>0不能整除任何值。<br>一个子字符串是一个字符串里的连续一段字符序列。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>提示：</p>
+<ul>
+<li><code>1 &lt;= num &lt;= 109</code></li>
+<li><code>1 &lt;= k &lt;= num.length</code> （将 num 视为字符串）</li>
+</ul>
+</blockquote>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>我觉得这道的要点就是子串怎么得，剩下的就好判断了。偏偏我就栽在这儿了😅</p>
+<ul>
+<li><strong>int转string</strong> <code>to_string()</code>注意此函数需要赋给个string变量</li>
+<li><strong>string转int</strong> <code>stoi()</code>同样，需要赋给个int变量</li>
+<li><strong>获取长度为k的字符串</strong> <code>substr(i,k)</code>距离c++学这个函数已经过了一两年了，忘的一干二净，趁此好机会来总结一下。</li>
+</ul>
+<p>👇️ <em><strong>获取子串</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>substr(pos,len)</code></td>
+<td align="center">从pos开始，提取长度为len的子串</td>
+</tr>
+</tbody></table>
+<p>👇️ <em><strong>查找字符串</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>find(str,pos)</code></td>
+<td align="center">在pos之后查找str的位置，找不到返回string::pos</td>
+</tr>
+<tr>
+<td align="center"><code>rfind(str,pos)</code></td>
+<td align="center">逆向查找str,从pos开始向前找</td>
+</tr>
+<tr>
+<td align="center"><code>find_first_of(chars,pos)</code></td>
+<td align="center">查找chars中的任意字符的第一次出现</td>
+</tr>
+<tr>
+<td align="center"><code>find_last_of(chars,pos)</code></td>
+<td align="center">查找chars中的任意字符的最后一次出现</td>
+</tr>
+</tbody></table>
+<p>👇️ <em><strong>替换字符串</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>replace(pos,len,str)</code></td>
+<td align="center">从pos开始，用str替换len个字符</td>
+</tr>
+<tr>
+<td align="center"><code>erase(pos,len)</code></td>
+<td align="center">删除从pos开始的len个字符</td>
+</tr>
+<tr>
+<td align="center"><code>insert(pos,str)</code></td>
+<td align="center">在pos位置插入str</td>
+</tr>
+</tbody></table>
+<p>👇️ <em><strong>大小写转换</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>toupper(c)</code></td>
+<td align="center">将字符c转换为大写</td>
+</tr>
+<tr>
+<td align="center"><code>tolower(c)</code></td>
+<td align="center">将字符c转换为小写</td>
+</tr>
+</tbody></table>
+<p>👇️ <em><strong>数字与字符串转换</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>to_string(num)</code></td>
+<td align="center">把num转换为字符串</td>
+</tr>
+<tr>
+<td align="center"><code>stoi(str)</code></td>
+<td align="center">把str转换为int</td>
+</tr>
+<tr>
+<td align="center"><code>stol(str)</code></td>
+<td align="center">把str转换为long</td>
+</tr>
+<tr>
+<td align="center"><code>stod(str)</code></td>
+<td align="center">把str转换为double</td>
+</tr>
+</tbody></table>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><pre><code class="language-cpp">class Solution &#123;
+public:
+    int divisorSubstrings(int num, int k) &#123;
+        int cnt=0;
+        string str=to_string(num);
+        for(int i=0;i&lt;=str.size()-k;i++)&#123;
+            string ans=str.substr(i,k);
+            int answer=stoi(ans);
+            if(answer!=0 &amp;&amp; num%answer==0)&#123;
+                cnt++;
+            &#125;
+        &#125;
+        return cnt;
+    &#125;
+&#125;;
+</code></pre>
+<h1 id="3305-元音辅音字符串计数Ⅰ"><a href="#3305-元音辅音字符串计数Ⅰ" class="headerlink" title="3305.元音辅音字符串计数Ⅰ"></a>3305.元音辅音字符串计数Ⅰ</h1><blockquote>
+<p>给你一个字符串word和一个非负整数 k。<br>返回word的子字符串中，每个元音字母（’a’、’e’、’i’、’o’、’u’）至少出现一次，并且恰好包含k个辅音字母的子字符串的总数。</p>
+</blockquote>
+<blockquote>
+<p>提示：</p>
+<ul>
+<li>5 &lt;&#x3D; word.length &lt;&#x3D; 250</li>
+<li>word 仅由小写英文字母组成。</li>
+<li>0 &lt;&#x3D; k &lt;&#x3D; word.length - 5</li>
+</ul>
+</blockquote>
+<h2 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h2><p>先试了试暴力😤循环套三层观感太差，不放上来。</p>
+<p><strong>正经解法</strong></p>
+<ul>
+<li>滑动窗口代替暴力循环</li>
+<li>哈希表统计元音出现次数</li>
+</ul>
+<p><strong>注意几个用法</strong><br><em><strong>1️⃣ 几个键值对容器</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="center">键值对容器</th>
+<th align="center">实现方式</th>
+<th align="center">键值</th>
+<th align="center">时间复杂度</th>
+<th align="center">是否有序</th>
+<th align="center">使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>unordered_map</code></td>
+<td align="center">哈希表</td>
+<td align="center">键-值对</td>
+<td align="center">平均O(1)</td>
+<td align="center">无序</td>
+<td align="center">快速查找键对应的值</td>
+</tr>
+<tr>
+<td align="center"><code>map</code></td>
+<td align="center">红黑树</td>
+<td align="center">键-值对</td>
+<td align="center">O(logn)</td>
+<td align="center">有序</td>
+<td align="center">需要有序键值对</td>
+</tr>
+<tr>
+<td align="center"><code>unordered_set</code></td>
+<td align="center">哈希表</td>
+<td align="center">键</td>
+<td align="center">平均O(1)</td>
+<td align="center">无序</td>
+<td align="center">快速查找元素是否存在</td>
+</tr>
+<tr>
+<td align="center"><code>set</code></td>
+<td align="center">红黑树</td>
+<td align="center">键</td>
+<td align="center">O(logn)</td>
+<td align="center">有序</td>
+<td align="center">需要排序的集合</td>
+</tr>
+</tbody></table>
+<p><em><strong>2️⃣ 键值对容器+函数求的是什么？</strong></em></p>
+<ul>
+<li><code>unordered_map.size()</code>返回unordered_map中<strong>键值对的数量</strong>。</li>
+<li><code>unordered_set.count(x)</code>unordered_set中<strong>某个元素是否存在</strong>，返回1表示在，0表示不在。</li>
+</ul>
+<p>代码思路如下。这个方法时间空间上并非最优，后续需要调整思路。</p>
+<pre><code class="language-cpp">定义n：word长度;
+定义unordered_map类型的vowel_cnt:元音出现次数;
+定义consonant_cnt:辅音个数;
+定义ans：统计最终答案;
+定义unordered_set类型的vowels:所有元音字母;
+定义左指针j=0;
+遍历word从下标0~word.size():
+    定义右元素right=word[i];
+    统计元音出现次数：
+        进行元/辅音计数;
+    当辅音数量超过k://收缩窗口左边界
+        定义左元素left=word[左指针];//取左边界字符
+        如果left是元音：
+            该元音出现次数--;
+            当元音的计数减少到0时：
+                将它从vowel_cnt中删除；
+        否则：
+            辅音个数--;
+        左指针右移;
+    如果包含所有元音且辅音个数为k:
+        //避免修改原窗口状态,思路整体与上半部分相同☝️
+        定义临时变量temp_vowel=vowel_cnt;
+        定义临时变量temp_consonant=consonant_cnt;
+        定义临时变量temp_j=j;
+        定义计数cnt=0;
+        当临时左下标&lt;=右下标:
+            如果包含所有临时元音且临时辅音个数为k:
+                cnt++;
+            否则:
+                退出该层循环;
+            定义c:word[临时左指针];
+            如果c是元音：
+                临时该元音出现次数--;
+                当临时元音的计数减少到0时：
+                    将它从临时vowel_cnt中删除;
+            否则:
+                临时辅音个数--;
+            临时左指针j右移;
+        ans+=cnt;
+返回ans;
+</code></pre>
+<h2 id="完整代码-1"><a href="#完整代码-1" class="headerlink" title="完整代码"></a>完整代码</h2><pre><code class="language-cpp">class Solution &#123;
+public:
+    int countOfSubstrings(string word, int k) &#123;
+        int len=word.size();
+        unordered_map&lt;char,int&gt;vowel_cnt;
+        int consonant_cnt=0;
+        int ans=0;
+        unordered_set&lt;int&gt;vowels=&#123;&#39;a&#39;,&#39;e&#39;,&#39;i&#39;,&#39;o&#39;,&#39;u&#39;&#125;;
+        int j=0;
+        for(int i=0;i&lt;len;i++)&#123;
+            char right=word[i];
+            if(vowels.count(right))&#123;
+                vowel_cnt[right]++;
+            &#125;
+            else&#123;
+                consonant_cnt++;
+            &#125;
+            while(consonant_cnt&gt;k)&#123;
+                char left=word[j];
+                if(vowels.count(left))&#123;
+                    vowel_cnt[left]--;
+                    if(vowel_cnt[left]==0)&#123;
+                        vowel_cnt.erase(left);
+                    &#125;
+                &#125;
+                else&#123;
+                    consonant_cnt--;
+                &#125;
+                j++;
+            &#125;
+            if(vowel_cnt.size()==5 &amp;&amp; consonant_cnt==k)&#123;
+                unordered_map&lt;char,int&gt;temp_vowel=vowel_cnt;
+                int temp_consonant=consonant_cnt;
+                int temp_j=j;
+                int cnt=0;
+                while(temp_j&lt;=i)&#123;
+                    if(temp_vowel.size()==5 &amp;&amp; temp_consonant==k)&#123;
+                        cnt++;
+                    &#125;
+                    else&#123;
+                        break;
+                    &#125;
+                    int c=word[temp_j];
+                    if(vowels.count(c))&#123;
+                        temp_vowel[c]--;
+                        if(temp_vowel[c]==0)&#123;
+                            temp_vowel.erase(c);
+                        &#125;
+                    &#125;
+                    else&#123;
+                        temp_consonant--;
+                    &#125;
+                    temp_j++;
+                &#125;
+                ans+=cnt;
+            &#125;
+        &#125;
+        return ans;
+    &#125;
+&#125;;
+</code></pre>
+<h1 id="3306-元音辅音字符串计数Ⅱ"><a href="#3306-元音辅音字符串计数Ⅱ" class="headerlink" title="3306.元音辅音字符串计数Ⅱ"></a>3306.元音辅音字符串计数Ⅱ</h1><p>不行，彻底懵了脑子转不动做梦都是元辅音😫先把copy的官方题解放这，过两天我再苟回来看。</p>
+<h2 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="完整代码-2"><a href="#完整代码-2" class="headerlink" title="完整代码"></a>完整代码</h2><pre><code class="language-cpp">class Solution &#123;
+public:
+    long long countOfSubstrings(string word, int k) &#123;
+        set&lt;char&gt; vowels = &#123;&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;&#125;;
+        auto count = [&amp;](int m) -&gt; long long &#123;
+            int n = word.size(), consonants = 0;
+            long long res = 0;
+            map&lt;char, int&gt; occur;
+            for (int i = 0, j = 0; i &lt; n; i++) &#123;
+                while (j &lt; n &amp;&amp; (consonants &lt; m || occur.size() &lt; vowels.size())) &#123;
+                    if (vowels.count(word[j])) &#123;
+                        occur[word[j]]++;
+                    &#125; else &#123;
+                        consonants++;
+                    &#125;
+                    j++;
+                &#125;
+                if (consonants &gt;= m &amp;&amp; occur.size() == vowels.size()) &#123;
+                    res += n - j + 1;
+                &#125;
+                if (vowels.count(word[i])) &#123;
+                    occur[word[i]]--;
+                    if (occur[word[i]] == 0) &#123;
+                        occur.erase(word[i]);
+                    &#125;
+                &#125; else &#123;
+                    consonants--;
+                &#125;
+            &#125;
+            return res;
+        &#125;;
+        return count(k) - count(k + 1);
+    &#125;
+&#125;;
+</code></pre>
+<div class="tags"><a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="ic i-tag"></i>算法</a><a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="tag"><i class="ic i-tag"></i>字符串</a><a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="tag"><i class="ic i-tag"></i>滑动窗口</a><a href="/tags/%E5%8A%9B%E6%89%A3/" rel="tag"><i class="ic i-tag"></i>力扣</a><a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="tag"><i class="ic i-tag"></i>哈希表</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/03/12/专题1-滑动窗口/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-03-13 13:57:50" itemprop="dateModified" datetime="2025-03-13T13:57:50+08:00">2025-03-13</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="KangYiChen 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="KangYiChen 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>KangYiChen<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" title="专题1️⃣ 滑动窗口">https://232akira.github.io/2025/03/12/专题1-滑动窗口/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/" rel="prev" itemprop="url" title="Leetcode链表" style="background-image: linear-gradient(to bottom right, #919fa0, #e3b4ba);"><span class="type">上一篇</span><h3>Leetcode链表</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2269-%E6%89%BE%E5%88%B0%E4%B8%80%E4%B8%AA%E6%95%B0%E5%AD%97%E7%9A%84-K-%E7%BE%8E%E4%B8%BD%E5%80%BC"><span class="toc-number">1.</span> <span class="toc-text">2269.找到一个数字的 K 美丽值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text">完整代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3305-%E5%85%83%E9%9F%B3%E8%BE%85%E9%9F%B3%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%AE%A1%E6%95%B0%E2%85%A0"><span class="toc-number">2.</span> <span class="toc-text">3305.元音辅音字符串计数Ⅰ</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-number">2.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81-1"><span class="toc-number">2.2.</span> <span class="toc-text">完整代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3306-%E5%85%83%E9%9F%B3%E8%BE%85%E9%9F%B3%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%AE%A1%E6%95%B0%E2%85%A1"><span class="toc-number">3.</span> <span class="toc-text">3306.元音辅音字符串计数Ⅱ</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2"><span class="toc-number">3.1.</span> <span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81-2"><span class="toc-number">3.2.</span> <span class="toc-text">完整代码</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="KangYiChen" src="/assets/avatar.jpg"/><p class="name" itemprop="name">KangYiChen</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">8</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">12</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://y.music.163.com/m/user?id=1399789377" class="item music" title="https:&#x2F;&#x2F;y.music.163.com&#x2F;m&#x2F;user?id&#x3D;1399789377"><i class="ic i-cloud-music"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">Leetcode贪心算法</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/">Leetcode链表</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">专题1️⃣ 滑动窗口</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/">Leetcode数组</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/">存存markdown相关</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/05/Leetcode%E5%AD%97%E7%AC%A6%E4%B8%B2/">Leetcode字符串</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/">力扣备忘录</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/">博客搭建小半年的痛</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">KangYiChen @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">38k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">34 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2025/03/12/专题1-滑动窗口/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script data-pjax="data-pjax">var _hmt = _hmt || [];
+(function () {
+    const hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3320ed8870d3707cace61e4b8d5c146f"
+    hm.async = true;
+    const s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+ })();</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.21" type="module" fetchpriority="high" defer></script></body></html>

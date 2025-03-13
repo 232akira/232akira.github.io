@@ -7,9 +7,9 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="C++" />
     <category term="力扣" />
     <category term="数组" />
+    <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
@@ -264,9 +264,9 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="C++" />
         <category term="力扣" />
         <category term="数组" />
+        <category term="C++" />
         <category term="哈希表" />
         <category term="动态规划" />
         <category term="二分查找" />
@@ -486,31 +486,51 @@ public:
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;键值对容器&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;实现方式&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;键值&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;时间复杂度&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;排序&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;是否有序&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;使用场景&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_map&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;平均 O(1)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;无序，元素不按照键的顺序存储。&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;适用于不关心元素顺序、要求快速查找的情况。&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值对&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快速查找键对应的值&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;map&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;红黑树&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;O(log n)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;有序，元素根据键的大小自动排序。&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;适用于需要 有序 键值对存储的情况，比如按照键的大小遍历容器。&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值对&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(logn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;需要有序键值对&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_set&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快速查找元素是否存在&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;set&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;红黑树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(logn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;需要排序的集合&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_multimap&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;哈希表（允许重复的键）&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;平均 O(1)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;无序，和 unordered_map 相同。&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;适用于有重复键且不关心顺序的情况。&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有重复键且不关心顺序&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;对于本题&lt;/strong&gt;&lt;br&gt;引用评论区&lt;a href=&#34;https://leetcode.cn/u/hust_wei/&#34;&gt;大佬&lt;/a&gt;的解释：当前位置的元素比下个位置的元素小，就减去当前值，否则加上当前值。&lt;/p&gt;
