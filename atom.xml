@@ -7,14 +7,14 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
+    <category term="C++" />
     <category term="力扣" />
     <category term="数组" />
-    <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="链表" />
     <category term="记录" />
+    <category term="链表" />
     <category term="Markdown" />
     <entry>
         <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
@@ -1068,9 +1068,9 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="C++" />
         <category term="力扣" />
         <category term="数组" />
-        <category term="C++" />
         <category term="哈希表" />
         <category term="动态规划" />
         <category term="二分查找" />
