@@ -7,16 +7,16 @@
         <language>zh-CN</language>
         <pubDate>Fri, 14 Mar 2025 16:00:53 +0800</pubDate>
         <lastBuildDate>Fri, 14 Mar 2025 16:00:53 +0800</lastBuildDate>
+        <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
+        <category>C++</category>
         <category>力扣</category>
         <category>数组</category>
-        <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>算法</category>
         <category>链表</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
@@ -39,7 +39,7 @@
 &lt;li&gt;顺便修修本博客，结果越修坑越多&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;💻-关于这个博客&#34;&gt;&lt;a href=&#34;#💻-关于这个博客&#34; class=&#34;headerlink&#34; title=&#34;💻 关于这个博客&#34;&gt;&lt;/a&gt;💻 &lt;strong&gt;关于这个博客&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&#34;为什么建？&#34;&gt;&lt;a href=&#34;#为什么建？&#34; class=&#34;headerlink&#34; title=&#34;为什么建？&#34;&gt;&lt;/a&gt;&lt;strong&gt;为什么建？&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;作为学计算机的，最开始是想至少有个地方记录技术笔记，后来上头了啥都放进来。&lt;/p&gt;
-&lt;h2 id=&#34;🛠-目前配置：&#34;&gt;&lt;a href=&#34;#🛠-目前配置：&#34; class=&#34;headerlink&#34; title=&#34;🛠 目前配置：&#34;&gt;&lt;/a&gt;🛠 &lt;strong&gt;目前配置：&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;目前配置：&#34;&gt;&lt;a href=&#34;#目前配置：&#34; class=&#34;headerlink&#34; title=&#34;目前配置：&#34;&gt;&lt;/a&gt;&lt;strong&gt;目前配置：&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hexo + ShokaX 主题&lt;/strong&gt; 踩坑无数，终于稳定&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Waline + Vercel&lt;/strong&gt; 没成。您会发现评论提交不了😂想联系我直接+v没问题的&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GitHub Actions 自动部署&lt;/strong&gt; 避免手动push折腾&lt;/li&gt;
@@ -50,15 +50,16 @@
 &lt;li&gt;添加不蒜子访问量统计&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;a href=&#34;#踩过的坑：博客运维现场实录&#34; class=&#34;headerlink&#34; title=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;/a&gt;&lt;strong&gt;踩过的坑：博客运维现场实录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;早期 GitHub Actions一直自动部署失败，巨崩溃，排查半天才发现是Node.js版本问题，最后升级+重装插件才修好。&lt;br&gt;具体搭载方式可以看&lt;a href=&#34;https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/&#34;&gt;另一篇&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;🔧技术探索碎片&#34;&gt;&lt;a href=&#34;#🔧技术探索碎片&#34; class=&#34;headerlink&#34; title=&#34;🔧技术探索碎片&#34;&gt;&lt;/a&gt;🔧技术探索碎片&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;除了简历上的项目，这里还有些更零散但值得一提的东西：&lt;br&gt;您完全可以批评我没有特别专精某一部分，我承认事实的确如此。早点确定方向磨练技术一定不错，但是奈何哪部分我都有点兴趣而且懒懒的😤所以就拖到现在啦。&lt;/p&gt;
+&lt;h1 id=&#34;🔧技术探索碎片&#34;&gt;&lt;a href=&#34;#🔧技术探索碎片&#34; class=&#34;headerlink&#34; title=&#34;🔧技术探索碎片&#34;&gt;&lt;/a&gt;🔧技术探索碎片&lt;/h1&gt;&lt;p&gt;除了简历上的项目，这里还有些更零散但值得一提的东西：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;您完全可以批评我没有特别专精某一部分，我觉得事实的确如此。早点确定方向磨练技术一定不错，但是奈何哪部分我都有点兴趣而且懒懒的😤所以就拖到现在啦。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;1️⃣-后端开发&#34;&gt;&lt;a href=&#34;#1️⃣-后端开发&#34; class=&#34;headerlink&#34; title=&#34;1️⃣ 后端开发&#34;&gt;&lt;/a&gt;1️⃣ &lt;strong&gt;后端开发&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;C++&lt;/code&gt;和&lt;code&gt;Python&lt;/code&gt;是主力。但是主要是语法和算法方面，开发这一块经验少。Java课上做过一点项目。&lt;/li&gt;
 &lt;li&gt;习惯关注代码工程化，做项目时会尽量保证清晰的模块划分（命名强迫症在此）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2️⃣-人工智能-深度学习&#34;&gt;&lt;a href=&#34;#2️⃣-人工智能-深度学习&#34; class=&#34;headerlink&#34; title=&#34;2️⃣ 人工智能 &amp;amp; 深度学习&#34;&gt;&lt;/a&gt;2️⃣ &lt;strong&gt;人工智能 &amp;amp; 深度学习&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;VGG16&lt;/code&gt;进行花卉识别，也做过&lt;code&gt;DO（溶解氧）预测实验&lt;/code&gt;·&amp;#96;等等，不过由于个人设备和资源限制，没法深入优化模型（数据量但凡大一点我的笔记本就超烫），只能在已有框架上调整参数、跑实验、对比结果。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VGG16&lt;/code&gt;进行花卉识别，也做过&lt;code&gt;DO（溶解氧）预测实验&lt;/code&gt;等等，不过由于个人设备和资源限制，没法深入优化模型（数据量但凡大一点我的笔记本就超烫），只能在已有框架上调整参数、跑实验、对比结果。&lt;/li&gt;
 &lt;li&gt;之前了解过&lt;code&gt;YOLOv8&lt;/code&gt;，尝试过跑一些示例代码和&lt;code&gt;labelimg打标&lt;/code&gt;，但目前还没深入应用，更多是出于兴趣在学习。&lt;/li&gt;
 &lt;li&gt;AI方面的&lt;code&gt;理论知识&lt;/code&gt;课上是学过，什么卷积层全连接层、什么池化归一化…浅尝辄止，说实话难以理解，我的水平确实有所欠缺。&lt;/li&gt;
 &lt;/ul&gt;
@@ -86,11 +87,11 @@
 &lt;li&gt;&lt;code&gt;写字&lt;/code&gt;还不错&lt;/li&gt;
 &lt;li&gt;乱七八糟的&lt;code&gt;手工&lt;/code&gt;都沾点边&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;📬-来唠个五毛钱的？&#34;&gt;&lt;a href=&#34;#📬-来唠个五毛钱的？&#34; class=&#34;headerlink&#34; title=&#34;📬 来唠个五毛钱的？&#34;&gt;&lt;/a&gt;📬 &lt;strong&gt;来唠个五毛钱的？&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;如果你看到这里…&lt;code&gt;非常感谢&lt;/code&gt;🥰&lt;code&gt;祝你今天好心情&lt;/code&gt;！！！&lt;/p&gt;
+&lt;h1 id=&#34;📬-来唠个五毛钱的？&#34;&gt;&lt;a href=&#34;#📬-来唠个五毛钱的？&#34; class=&#34;headerlink&#34; title=&#34;📬 来唠个五毛钱的？&#34;&gt;&lt;/a&gt;📬 &lt;strong&gt;来唠个五毛钱的？&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;如果你看到这里…&lt;code&gt;非常感谢🥰祝你今天好心情！！！&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;是 HR →&lt;/strong&gt; 欢迎随时联系。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;是同行→&lt;/strong&gt; 求分享防脱发秘籍，长时间写代码头发真的越来越秃了。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;是校友→&lt;/strong&gt; 相逢即是缘。来二餐一，请你喝我老家蜜雪。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;是同行 →&lt;/strong&gt; 求分享防脱发秘籍，长时间写代码头发真的越来越秃了。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;是校友 →&lt;/strong&gt; 相逢即是缘。来二餐一，请你喝我老家蜜雪。&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -98,11 +99,11 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
-            <category>哈希表</category>
             <category>算法</category>
             <category>字符串</category>
             <category>滑动窗口</category>
+            <category>力扣</category>
+            <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
@@ -455,8 +456,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -902,9 +903,9 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</guid>
             <title>Leetcode数组</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</link>
+            <category>C++</category>
             <category>力扣</category>
             <category>数组</category>
-            <category>C++</category>
             <category>哈希表</category>
             <category>动态规划</category>
             <category>二分查找</category>
@@ -1158,8 +1159,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>Leetcode贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
@@ -1244,8 +1245,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
