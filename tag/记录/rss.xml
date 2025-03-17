@@ -5,14 +5,14 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 14 Mar 2025 16:00:53 +0800</pubDate>
-        <lastBuildDate>Fri, 14 Mar 2025 16:00:53 +0800</lastBuildDate>
+        <pubDate>Mon, 17 Mar 2025 16:19:53 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Mar 2025 16:19:53 +0800</lastBuildDate>
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>C++</category>
         <category>力扣</category>
         <category>数组</category>
+        <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
@@ -20,11 +20,11 @@
         <category>记录</category>
         <category>Markdown</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/14/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
             <title>🔝这里有些简历上没写的故事</title>
-            <link>https://232akira.github.io/2025/03/14/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+            <link>https://232akira.github.io/2025/03/17/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</link>
             <category>记录</category>
-            <pubDate>Fri, 14 Mar 2025 16:00:53 +0800</pubDate>
+            <pubDate>Mon, 17 Mar 2025 16:19:53 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;无论最后是否有结果，感谢您愿意抽出时间。&lt;/p&gt;
 &lt;h1 id=&#34;🎯-我是谁？&#34;&gt;&lt;a href=&#34;#🎯-我是谁？&#34; class=&#34;headerlink&#34; title=&#34;🎯 我是谁？&#34;&gt;&lt;/a&gt;🎯 &lt;strong&gt;我是谁？&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
 &lt;ul&gt;
@@ -32,7 +32,7 @@
 &lt;li&gt;&lt;strong&gt;副业&lt;/strong&gt;：GitHub折腾者 &amp;#x2F; 深夜Debug战士 &amp;#x2F; 奶茶续命选手（在控制了）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;最近在干什么？&#34;&gt;&lt;a href=&#34;#最近在干什么？&#34; class=&#34;headerlink&#34; title=&#34;最近在干什么？&#34;&gt;&lt;/a&gt;最近在干什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;找暑期实习&lt;/strong&gt;&lt;/em&gt;。对的，主要干这个。&lt;/p&gt;
+&lt;h2 id=&#34;最近在干什么？&#34;&gt;&lt;a href=&#34;#最近在干什么？&#34; class=&#34;headerlink&#34; title=&#34;最近在干什么？&#34;&gt;&lt;/a&gt;最近在干什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;找暑期实习&lt;/strong&gt;&lt;/em&gt;。六月中结课后立即到岗👋&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;死磕算法基础，感觉自己还不够扎实，正在找补&lt;/li&gt;
 &lt;li&gt;梳理之前做过的项目内容&lt;/li&gt;
@@ -93,6 +93,140 @@
 &lt;li&gt;&lt;strong&gt;是同行 →&lt;/strong&gt; 求分享防脱发秘籍，长时间写代码头发真的越来越秃了。  &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;是校友 →&lt;/strong&gt; 相逢即是缘。来二餐一，请你喝我老家蜜雪。&lt;/li&gt;
 &lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E9%9D%A2%E8%AF%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
+            <title>面试备忘录</title>
+            <link>https://232akira.github.io/2025/03/17/%E9%9D%A2%E8%AF%95%E5%A4%87%E5%BF%98%E5%BD%95/</link>
+            <category>力扣</category>
+            <category>记录</category>
+            <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
+&lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;杨辉三角&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[118/119]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一维数组&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;斐波那契数列&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[509]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;爬楼梯问题&lt;code&gt;[70]&lt;/code&gt;&amp;#x2F;①递归②迭代③动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;两数之和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表优化时间复杂度到O(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序数组&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[88]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地合并（从后向前填充）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最大子序和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转字符串&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[344]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地修改（双指针）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;有效的括号&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[20]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;用栈实现括号匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最长公共前缀&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[14]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;①纵向扫描②分治&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;字符串转整数&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[8]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界（溢出&amp;#x2F;符号&amp;#x2F;空格）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[206]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;①迭代②递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;环形链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[141]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快慢指针判环&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[21]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;①迭代②递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;删除链表倒数第N个节点&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[19]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一趟扫描&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;二叉树的最大深度&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[104]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;①迭代②递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;对称二叉树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[101]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;①迭代（队列&amp;#x2F;栈）②递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;路径总和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[112]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动回溯法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;| 打家劫舍 | &lt;code&gt;[198]&lt;/code&gt; | 状态转移方程推导 |&lt;br&gt;| 零钱兑换 | &lt;code&gt;[322]&lt;/code&gt; | 完全背包问题解法 |&lt;br&gt;| 最长递增子序列 | &lt;code&gt;[300]&lt;/code&gt; | O(nlogn)优化解法 |&lt;/p&gt;
+&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;| 快速排序 | &lt;code&gt;力扣排序题均可&lt;/code&gt; | 手写递归和非递归版本 |&lt;br&gt;| 二分查找 | &lt;code&gt;[53]&lt;/code&gt; | 处理边界条件（左闭右闭&amp;#x2F;左闭右开） |&lt;br&gt;| 寻找峰值 | &lt;code&gt;[53]&lt;/code&gt; | 二分法的特殊应用 |&lt;/p&gt;
+&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;p&gt;| LRU缓存 | &lt;code&gt;[146]&lt;/code&gt; | 手写递归和非递归版本 |&lt;br&gt;| 实现队列&amp;#x2F;栈 | &lt;code&gt;[232/225]&lt;/code&gt; | 处理边界条件（左闭右闭&amp;#x2F;左闭右开） |&lt;br&gt;| 汉明距离 | &lt;code&gt;[461]&lt;/code&gt; | 二分法的特殊应用 |&lt;/p&gt;
+&lt;p&gt;这些题我会陆陆续续写成纸质笔记拿着背，有需要dd我发你扫描版。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -712,10 +846,12 @@ SEO优化和访客优化
 分类翻转块
 实验性特性
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/github_blog.jpg&#34; alt=&#34;2025&amp;#x2F;3&amp;#x2F;17&#34; title=&#34;Insights&#34;&gt;&lt;/p&gt;
 &lt;p&gt;回到我的主页😼👇️&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;site: K’s BLOG&lt;br&gt;url: &lt;a href=&#34;https://232akira.github.io/&#34;&gt;https://232akira.github.io/&lt;/a&gt;&lt;br&gt;color: “#adff2f”&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;（？渲染器没安装好…&lt;/p&gt;
  ]]></description>
         </item>
         <item>
