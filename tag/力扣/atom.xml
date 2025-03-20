@@ -4,15 +4,15 @@
     <title>Per aspera ad astra • Posts by &#34;力扣&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-17T07:29:31.000Z</updated>
+    <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
     <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
@@ -214,8 +214,8 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 </content>
-        <category term="力扣" />
         <category term="算法" />
+        <category term="力扣" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
     </entry>
@@ -569,11 +569,11 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="力扣" />
-        <category term="哈希表" />
         <category term="算法" />
         <category term="字符串" />
         <category term="滑动窗口" />
+        <category term="力扣" />
+        <category term="哈希表" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
@@ -749,15 +749,17 @@ public:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;**让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。**而不是后一个节点next&lt;/li&gt;
-&lt;li&gt;**更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。**此时pre为新的head节点&lt;/li&gt;
+&lt;li&gt;让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。此时pre为新的head节点&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;pre = nullptr&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cur = head&lt;/code&gt;&lt;br&gt;那么逐步变化如下：&lt;br&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;br&gt;最终pre变成4，即新的链表头头。此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/li&gt;
+&lt;li&gt;pre &amp;#x3D; nullptr&lt;/li&gt;
+&lt;li&gt;cur &amp;#x3D; head&lt;br&gt;那么逐步变化如下：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;br&gt;over。&lt;/p&gt;
+&lt;p&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;/p&gt;
+&lt;p&gt;最终pre变成4，即新的链表头头。&lt;br&gt;&lt;strong&gt;此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;/p&gt;
 &lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
@@ -784,8 +786,8 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="力扣" />
         <category term="算法" />
+        <category term="力扣" />
         <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>

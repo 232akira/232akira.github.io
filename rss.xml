@@ -7,15 +7,15 @@
         <language>zh-CN</language>
         <pubDate>Mon, 17 Mar 2025 16:19:53 +0800</pubDate>
         <lastBuildDate>Mon, 17 Mar 2025 16:19:53 +0800</lastBuildDate>
+        <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
@@ -97,8 +97,8 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>算法备忘录</title>
             <link>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
@@ -300,11 +300,11 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
-            <category>哈希表</category>
             <category>算法</category>
             <category>字符串</category>
             <category>滑动窗口</category>
+            <category>力扣</category>
+            <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
@@ -657,8 +657,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -830,15 +830,17 @@ public:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;**让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。**而不是后一个节点next&lt;/li&gt;
-&lt;li&gt;**更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。**此时pre为新的head节点&lt;/li&gt;
+&lt;li&gt;让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。此时pre为新的head节点&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;pre = nullptr&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cur = head&lt;/code&gt;&lt;br&gt;那么逐步变化如下：&lt;br&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;br&gt;最终pre变成4，即新的链表头头。此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/li&gt;
+&lt;li&gt;pre &amp;#x3D; nullptr&lt;/li&gt;
+&lt;li&gt;cur &amp;#x3D; head&lt;br&gt;那么逐步变化如下：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;br&gt;over。&lt;/p&gt;
+&lt;p&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;/p&gt;
+&lt;p&gt;最终pre变成4，即新的链表头头。&lt;br&gt;&lt;strong&gt;此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;/p&gt;
 &lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
@@ -1621,8 +1623,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>Leetcode贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;https://zhuanlan.zhihu.com/p/180104885&lt;/a&gt;&lt;/p&gt;
@@ -1707,8 +1709,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
