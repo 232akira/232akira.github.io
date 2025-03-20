@@ -5,8 +5,8 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
-        <lastBuildDate>Wed, 12 Mar 2025 18:20:15 +0800</lastBuildDate>
+        <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Mar 2025 15:29:31 +0800</lastBuildDate>
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
@@ -19,6 +19,209 @@
         <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
+            <title>算法备忘录</title>
+            <link>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</link>
+            <category>算法</category>
+            <category>力扣</category>
+            <category>记录</category>
+            <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
+&lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体 &amp;#x2F; 要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;杨辉三角&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[118/119]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一维数组&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;斐波那契数列&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[509]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;爬楼梯问题&lt;code&gt;[70]&lt;/code&gt;&amp;#x2F;递归&amp;#x2F;迭代&amp;#x2F;动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;两数之和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表优化时间复杂度到O(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序数组&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[88]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地合并（从后向前填充）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最大子数组和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转字符串&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[344]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地修改（双指针）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;有效的括号&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[20]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;用栈实现括号匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最长公共前缀&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[14]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;纵向扫描&amp;#x2F;分治&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;字符串转整数&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[8]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界（溢出&amp;#x2F;符号&amp;#x2F;空格）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[206]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;环形链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[141]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快慢指针判环&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[21]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;删除链表倒数第N个节点&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[19]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一趟扫描&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;二叉树的最大深度&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[104]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;对称二叉树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[101]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代（队列&amp;#x2F;栈）&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;路径总和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[112]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动回溯法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;打家劫舍&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[198]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;状态转移方程推导&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;零钱兑换&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[322]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;完全背包问题解法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最长递增子序列&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[300]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)优化解法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;快速排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;力扣排序题均可&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;二分查找&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;寻找峰值&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;LRU缓存&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[146]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;实现队列&amp;#x2F;栈&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[232/225]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;汉明距离&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[461]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
@@ -397,7 +600,7 @@ public:
 &amp;#125;Node;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;基本操作&#34;&gt;&lt;a href=&#34;#基本操作&#34; class=&#34;headerlink&#34; title=&#34;基本操作&#34;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;h3 id=&#34;创建链表&#34;&gt;&lt;a href=&#34;#创建链表&#34; class=&#34;headerlink&#34; title=&#34;创建链表&#34;&gt;&lt;/a&gt;创建链表&lt;/h3&gt;&lt;p&gt;定义单链表类，封装基本操作。下面的几个操作都在public里~&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class LinkedList&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class LinkedList&amp;#123;
 public:
     ListNode* head;
     LinkedList():head(nullptr);
@@ -406,7 +609,7 @@ public:
 &lt;h3 id=&#34;插入节点&#34;&gt;&lt;a href=&#34;#插入节点&#34; class=&#34;headerlink&#34; title=&#34;插入节点&#34;&gt;&lt;/a&gt;插入节点&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;头插法:新节点加到链表头部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtHead(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtHead(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     newNode-&amp;gt;next=head;
     head=newNode;
@@ -415,7 +618,7 @@ public:
 &lt;ul&gt;
 &lt;li&gt;尾插法：:新节点加到链表尾部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtTail(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtTail(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     if(!head)&amp;#123;
         head=newNode;
@@ -428,7 +631,7 @@ public:
     temp-&amp;gt;next=newNode;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void deleteNode(int data)&amp;#123;
+&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void deleteNode(int data)&amp;#123;
     if(!head)&amp;#123;
         return;
     &amp;#125;
@@ -449,7 +652,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void updateNode(int oldData,newData)&amp;#123;
+&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void updateNode(int oldData,newData)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-data==oldData)&amp;#123;
@@ -460,7 +663,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool searchNode(int data)&amp;#123;
+&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;bool searchNode(int data)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-&amp;gt;data==data)&amp;#123;
@@ -470,7 +673,7 @@ public:
     return false;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void printList()&amp;#123;
+&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void printList()&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         cout&amp;lt;&amp;lt;temp-&amp;gt;val&amp;lt;&amp;lt;&amp;quot;-&amp;gt;&amp;quot;;
@@ -479,7 +682,7 @@ public:
     cout&amp;lt;&amp;lt;&amp;quot;NULL&amp;quot;&amp;lt;&amp;lt;endl;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;~LinkedList()&amp;#123;
+&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;~LinkedList()&amp;#123;
     while(head)&amp;#123;
         ListNode* temp=head;
         head=head-&amp;gt;next;
@@ -513,7 +716,7 @@ public:
 &lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
 返回当前较小的节点list2;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/**
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
  *     int val;
@@ -537,6 +740,53 @@ public:
             list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
             return list2;
         &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h1&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
+&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。**而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;**更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。**此时pre为新的head节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pre = nullptr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cur = head&lt;/code&gt;&lt;br&gt;那么逐步变化如下：&lt;br&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;br&gt;最终pre变成4，即新的链表头头。此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;br&gt;over。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* reverseList(ListNode* head) &amp;#123;
+        ListNode* pre=nullptr;
+        ListNode* cur=head;
+        while(cur!=nullptr)&amp;#123;
+            ListNode* tmp=cur-&amp;gt;next;
+            cur-&amp;gt;next=pre;
+            pre=cur;
+            cur=tmp;
+        &amp;#125;
+        return pre;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
@@ -729,7 +979,7 @@ int 子串长度；
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;迭代法求p的next数组&lt;/strong&gt;&lt;br&gt;我们知道：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;next[0]=-1;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;next[0]=-1;
 next[1]=0;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;并且&lt;code&gt;next[j]&lt;/code&gt;代表p[0…j-1]的子串公共前后缀最长长度。&lt;br&gt;∴ 变量定义如下：&lt;br&gt;&lt;code&gt;j&lt;/code&gt;：当前子串指针&lt;br&gt;&lt;code&gt;k&lt;/code&gt;：当前匹配的前后缀长度（&amp;#x3D;next[j-1]）&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;：next[0]&amp;#x3D;-1 即当p[0]都匹配失败时，只能回到j&amp;#x3D;0重新匹配。&lt;/p&gt;
@@ -819,7 +1069,86 @@ public:
 &lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;引用官方题解的话：&lt;strong&gt;遍历 s，并用一个栈来表示括号的深度。遇到 ‘(’ 则将字符入栈，遇到 ‘)’ 则将栈顶字符出栈。栈从空到下一次空的过程，则是扫描了一个原语的过程。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string removeOuterParentheses(string s) &amp;#123;
+        string res;
+        int cnt=0;
+        for(char ch:s)&amp;#123;
+            if(ch==&amp;#39;)&amp;#39;)&amp;#123;
+                cnt--;
+            &amp;#125;
+            if(cnt&amp;gt;0)&amp;#123;
+                res.push_back(ch);
+            &amp;#125;
+            if(ch==&amp;#39;(&amp;#39;)&amp;#123;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return res;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;859-亲密字符串&#34;&gt;&lt;a href=&#34;#859-亲密字符串&#34; class=&#34;headerlink&#34; title=&#34;859.亲密字符串&#34;&gt;&lt;/a&gt;859.亲密字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。&lt;br&gt;交换字母的定义是：取两个下标 i 和 j （下标从 0 开始）且满足 i !&amp;#x3D; j ，接着交换 s[i] 和 s[j] 处的字符。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，在 “abcd” 中交换下标 0 和下标 2 的元素可以生成 “cbad” 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length, goal.length &amp;lt;&amp;#x3D; 2 * 104&lt;/li&gt;
+&lt;li&gt;s 和 goal 由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;属于&lt;strong&gt;模拟&lt;/strong&gt;类型的题目&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣不亲密&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;br&gt;&lt;em&gt;&lt;strong&gt;2️⃣亲密&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的的字符串数量为2&lt;br&gt;&lt;strong&gt;或&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的字符串数量为0 并且 &lt;code&gt;s&lt;/code&gt;中存在出现次数&amp;gt;2的字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;p&gt;所以注意：即使一开始s&amp;#x3D;&amp;#x3D;goal，但是s怎么交换2字符都不能再&amp;#x3D;&amp;#x3D;goal，也&lt;strong&gt;不算亲密&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个：&lt;br&gt;题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-CPP&#34;&gt;class Solution &amp;#123;
+public:
+    bool buddyStrings(string s, string goal) &amp;#123;
+        if(s.size()!=goal.size())&amp;#123;
+            return false;
+        &amp;#125;
+        if(s==goal)&amp;#123;
+            vector&amp;lt;int&amp;gt; cnt(26);
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                cnt[s[i]-&amp;#39;a&amp;#39;]++;
+                if(cnt[s[i]-&amp;#39;a&amp;#39;]&amp;gt;1)&amp;#123;
+                    return true;
+                &amp;#125;
+            &amp;#125;
+            return false;
+        &amp;#125;
+        else&amp;#123;//记录s和goal不相同的字符位置
+            int first,second;
+            first=-1;
+            second=-1;
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                if(s[i]!=goal[i])&amp;#123;
+                    if(first==-1)&amp;#123;
+                        first=i;
+                    &amp;#125;
+                    else if(second==-1)&amp;#123;
+                        second=i;
+                    &amp;#125;
+                    else&amp;#123;
+                        return false;
+                    &amp;#125;
+                &amp;#125;
+            &amp;#125;
+        //检查是否可以交换
+        return (second!=-1 &amp;amp;&amp;amp; s[first]==goal[second] &amp;amp;&amp;amp; s[second]==goal[first]);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>

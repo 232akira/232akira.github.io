@@ -33,7 +33,7 @@
 &amp;#125;Node;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;基本操作&#34;&gt;&lt;a href=&#34;#基本操作&#34; class=&#34;headerlink&#34; title=&#34;基本操作&#34;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;h3 id=&#34;创建链表&#34;&gt;&lt;a href=&#34;#创建链表&#34; class=&#34;headerlink&#34; title=&#34;创建链表&#34;&gt;&lt;/a&gt;创建链表&lt;/h3&gt;&lt;p&gt;定义单链表类，封装基本操作。下面的几个操作都在public里~&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class LinkedList&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class LinkedList&amp;#123;
 public:
     ListNode* head;
     LinkedList():head(nullptr);
@@ -42,7 +42,7 @@ public:
 &lt;h3 id=&#34;插入节点&#34;&gt;&lt;a href=&#34;#插入节点&#34; class=&#34;headerlink&#34; title=&#34;插入节点&#34;&gt;&lt;/a&gt;插入节点&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;头插法:新节点加到链表头部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtHead(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtHead(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     newNode-&amp;gt;next=head;
     head=newNode;
@@ -51,7 +51,7 @@ public:
 &lt;ul&gt;
 &lt;li&gt;尾插法：:新节点加到链表尾部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtTail(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtTail(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     if(!head)&amp;#123;
         head=newNode;
@@ -64,7 +64,7 @@ public:
     temp-&amp;gt;next=newNode;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void deleteNode(int data)&amp;#123;
+&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void deleteNode(int data)&amp;#123;
     if(!head)&amp;#123;
         return;
     &amp;#125;
@@ -85,7 +85,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void updateNode(int oldData,newData)&amp;#123;
+&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void updateNode(int oldData,newData)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-data==oldData)&amp;#123;
@@ -96,7 +96,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool searchNode(int data)&amp;#123;
+&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;bool searchNode(int data)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-&amp;gt;data==data)&amp;#123;
@@ -106,7 +106,7 @@ public:
     return false;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void printList()&amp;#123;
+&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void printList()&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         cout&amp;lt;&amp;lt;temp-&amp;gt;val&amp;lt;&amp;lt;&amp;quot;-&amp;gt;&amp;quot;;
@@ -115,7 +115,7 @@ public:
     cout&amp;lt;&amp;lt;&amp;quot;NULL&amp;quot;&amp;lt;&amp;lt;endl;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;~LinkedList()&amp;#123;
+&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;~LinkedList()&amp;#123;
     while(head)&amp;#123;
         ListNode* temp=head;
         head=head-&amp;gt;next;
@@ -149,7 +149,7 @@ public:
 &lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
 返回当前较小的节点list2;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/**
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
  *     int val;
@@ -173,6 +173,53 @@ public:
             list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
             return list2;
         &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h1&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
+&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。**而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;**更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。**此时pre为新的head节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pre = nullptr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cur = head&lt;/code&gt;&lt;br&gt;那么逐步变化如下：&lt;br&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;br&gt;最终pre变成4，即新的链表头头。此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;br&gt;over。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* reverseList(ListNode* head) &amp;#123;
+        ListNode* pre=nullptr;
+        ListNode* cur=head;
+        while(cur!=nullptr)&amp;#123;
+            ListNode* tmp=cur-&amp;gt;next;
+            cur-&amp;gt;next=pre;
+            pre=cur;
+            cur=tmp;
+        &amp;#125;
+        return pre;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;

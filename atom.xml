@@ -27,7 +27,7 @@
 &lt;li&gt;&lt;strong&gt;副业&lt;/strong&gt;：GitHub折腾者 &amp;#x2F; 深夜Debug战士 &amp;#x2F; 奶茶续命选手（在控制了）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;最近在干什么？&#34;&gt;&lt;a href=&#34;#最近在干什么？&#34; class=&#34;headerlink&#34; title=&#34;最近在干什么？&#34;&gt;&lt;/a&gt;最近在干什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;找暑期实习&lt;/strong&gt;&lt;/em&gt;。六月中结课后立即到岗👋&lt;/p&gt;
+&lt;h2 id=&#34;最近在干什么？&#34;&gt;&lt;a href=&#34;#最近在干什么？&#34; class=&#34;headerlink&#34; title=&#34;最近在干什么？&#34;&gt;&lt;/a&gt;最近在干什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;找暑期实习&lt;/strong&gt;&lt;/em&gt;。六月期末结束立即到岗👋&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;死磕算法基础，感觉自己还不够扎实，正在找补&lt;/li&gt;
 &lt;li&gt;梳理之前做过的项目内容&lt;/li&gt;
@@ -36,7 +36,7 @@
 &lt;h1 id=&#34;💻-关于这个博客&#34;&gt;&lt;a href=&#34;#💻-关于这个博客&#34; class=&#34;headerlink&#34; title=&#34;💻 关于这个博客&#34;&gt;&lt;/a&gt;💻 &lt;strong&gt;关于这个博客&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&#34;为什么建？&#34;&gt;&lt;a href=&#34;#为什么建？&#34; class=&#34;headerlink&#34; title=&#34;为什么建？&#34;&gt;&lt;/a&gt;&lt;strong&gt;为什么建？&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;作为学计算机的，最开始是想至少有个地方记录技术笔记，后来上头了啥都放进来。&lt;/p&gt;
 &lt;h2 id=&#34;目前配置：&#34;&gt;&lt;a href=&#34;#目前配置：&#34; class=&#34;headerlink&#34; title=&#34;目前配置：&#34;&gt;&lt;/a&gt;&lt;strong&gt;目前配置：&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hexo + ShokaX 主题&lt;/strong&gt; 踩坑无数，终于稳定&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Waline + Vercel&lt;/strong&gt; 没成。您会发现评论提交不了😂想联系我直接+v没问题的&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Waline + Vercel&lt;/strong&gt; 没成。您会发现评论提交不了😂想联系我直接+v即可&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;GitHub Actions 自动部署&lt;/strong&gt; 避免手动push折腾&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;未来要做的&#34;&gt;&lt;a href=&#34;#未来要做的&#34; class=&#34;headerlink&#34; title=&#34;未来要做的&#34;&gt;&lt;/a&gt;&lt;strong&gt;未来要做的&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
@@ -45,23 +45,21 @@
 &lt;li&gt;添加不蒜子访问量统计&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;a href=&#34;#踩过的坑：博客运维现场实录&#34; class=&#34;headerlink&#34; title=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;/a&gt;&lt;strong&gt;踩过的坑：博客运维现场实录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;早期 GitHub Actions一直自动部署失败，巨崩溃，排查半天才发现是Node.js版本问题，最后升级+重装插件才修好。&lt;br&gt;具体搭载方式可以看&lt;a href=&#34;https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/&#34;&gt;另一篇&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;🔧技术探索碎片&#34;&gt;&lt;a href=&#34;#🔧技术探索碎片&#34; class=&#34;headerlink&#34; title=&#34;🔧技术探索碎片&#34;&gt;&lt;/a&gt;🔧技术探索碎片&lt;/h1&gt;&lt;p&gt;除了简历上的项目，这里还有些更零散但值得一提的东西：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;您完全可以批评我没有特别专精某一部分，我觉得事实的确如此。早点确定方向磨练技术一定不错，但是奈何哪部分我都有点兴趣而且懒懒的😤所以就拖到现在啦。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h1 id=&#34;🔧技术探索碎片&#34;&gt;&lt;a href=&#34;#🔧技术探索碎片&#34; class=&#34;headerlink&#34; title=&#34;🔧技术探索碎片&#34;&gt;&lt;/a&gt;🔧技术探索碎片&lt;/h1&gt;&lt;p&gt;除了简历上的项目，这里还有些更零散但值得一提的东西。最近在尝试深入一些方向，记录作品都会慢慢放上来。&lt;/p&gt;
 &lt;h2 id=&#34;1️⃣-后端开发&#34;&gt;&lt;a href=&#34;#1️⃣-后端开发&#34; class=&#34;headerlink&#34; title=&#34;1️⃣ 后端开发&#34;&gt;&lt;/a&gt;1️⃣ &lt;strong&gt;后端开发&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;C++&lt;/code&gt;和&lt;code&gt;Python&lt;/code&gt;是主力。但是主要是语法和算法方面，开发这一块经验少。Java课上做过一点项目。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C++&lt;/code&gt;和&lt;code&gt;Python&lt;/code&gt;是主力。但是主要是算法方面，纯开发这一块经验少。Java和sql多少做过几个前后端项目。&lt;/li&gt;
 &lt;li&gt;习惯关注代码工程化，做项目时会尽量保证清晰的模块划分（命名强迫症在此）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;2️⃣-人工智能-深度学习&#34;&gt;&lt;a href=&#34;#2️⃣-人工智能-深度学习&#34; class=&#34;headerlink&#34; title=&#34;2️⃣ 人工智能 &amp;amp; 深度学习&#34;&gt;&lt;/a&gt;2️⃣ &lt;strong&gt;人工智能 &amp;amp; 深度学习&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;VGG16&lt;/code&gt;进行花卉识别，也做过&lt;code&gt;DO（溶解氧）预测实验&lt;/code&gt;等等，不过由于个人设备和资源限制，没法深入优化模型（数据量但凡大一点我的笔记本就超烫），只能在已有框架上调整参数、跑实验、对比结果。&lt;/li&gt;
 &lt;li&gt;之前了解过&lt;code&gt;YOLOv8&lt;/code&gt;，尝试过跑一些示例代码和&lt;code&gt;labelimg打标&lt;/code&gt;，但目前还没深入应用，更多是出于兴趣在学习。&lt;/li&gt;
-&lt;li&gt;AI方面的&lt;code&gt;理论知识&lt;/code&gt;课上是学过，什么卷积层全连接层、什么池化归一化…浅尝辄止，说实话难以理解，我的水平确实有所欠缺。&lt;/li&gt;
+&lt;li&gt;AI方面的&lt;code&gt;理论知识&lt;/code&gt;课上是学过，什么卷积层全连接层、什么池化归一化…浅尝辄止&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;3️⃣-游戏开发&#34;&gt;&lt;a href=&#34;#3️⃣-游戏开发&#34; class=&#34;headerlink&#34; title=&#34;3️⃣ 游戏开发&#34;&gt;&lt;/a&gt;3️⃣ &lt;strong&gt;游戏开发&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;用&lt;code&gt;Unity&lt;/code&gt;+&lt;code&gt;C#&lt;/code&gt;做过一些小demo，尝试为部分元素添加材质、物理碰撞体，并进行脚本控制。记得当时特别想试试做人物交互，但是事情一多起来就抛在脑后了。&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;shader&lt;/code&gt;有兴趣，之前没事就在blender上玩弄模型的渲染😂之前也试图做了点mmd和Ae的pv&lt;/li&gt;
-&lt;li&gt;对于&lt;code&gt;玩游戏&lt;/code&gt;的经验：手机端游大多玩过点，PC上的steam趁史低入库然后吃灰，switch主玩塞尔达和文字冒险。最近忙起来玩的都少了，反倒b站刷视频多一点。&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;shader&lt;/code&gt;有兴趣，之前没事就在blender上玩弄模型的渲染😂之前也试图做了点mmd和Ae的pv。&lt;/li&gt;
+&lt;li&gt;这块实际求职中发现项目需求很高，最近在思考做个作品集。&lt;/li&gt;
+&lt;li&gt;对于&lt;code&gt;玩游戏&lt;/code&gt;的经验：移动pc和掌机都玩过不少类型：模拟经营、解谜、横板2d像素、3d开放世界、RPG、ARPG、回合制、卡牌类，包括常年玩的音游和女性向游戏等等。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;4️⃣-GIS-课程相关&#34;&gt;&lt;a href=&#34;#4️⃣-GIS-课程相关&#34; class=&#34;headerlink&#34; title=&#34;4️⃣ GIS &amp;amp; 课程相关&#34;&gt;&lt;/a&gt;4️⃣ &lt;strong&gt;GIS &amp;amp; 课程相关&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;在&lt;code&gt;GIS&lt;/code&gt;课程里做过空间分析实验，包括Kriging插值、网络分析等，还有IDW、Kriging、Spline等空间插值算法的参数影响分析。软件包括ArcGIS&amp;#x2F;ENVI&amp;#x2F;SNAP等。&lt;/li&gt;
@@ -93,9 +91,9 @@
         <updated>2025-03-17T08:19:53.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/17/%E9%9D%A2%E8%AF%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
-        <title>面试备忘录</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/17/%E9%9D%A2%E8%AF%95%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+        <id>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+        <title>算法备忘录</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/"/>
         <content type="html">&lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
 &lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
 &lt;blockquote&gt;
@@ -130,7 +128,7 @@
 &lt;td align=&#34;center&#34;&gt;原地合并（从后向前填充）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;最大子序和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;最大子数组和&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
 &lt;/tr&gt;
@@ -290,6 +288,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 </content>
+        <category term="算法" />
         <category term="力扣" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
@@ -668,7 +667,7 @@ public:
 &amp;#125;Node;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;基本操作&#34;&gt;&lt;a href=&#34;#基本操作&#34; class=&#34;headerlink&#34; title=&#34;基本操作&#34;&gt;&lt;/a&gt;基本操作&lt;/h2&gt;&lt;h3 id=&#34;创建链表&#34;&gt;&lt;a href=&#34;#创建链表&#34; class=&#34;headerlink&#34; title=&#34;创建链表&#34;&gt;&lt;/a&gt;创建链表&lt;/h3&gt;&lt;p&gt;定义单链表类，封装基本操作。下面的几个操作都在public里~&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class LinkedList&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class LinkedList&amp;#123;
 public:
     ListNode* head;
     LinkedList():head(nullptr);
@@ -677,7 +676,7 @@ public:
 &lt;h3 id=&#34;插入节点&#34;&gt;&lt;a href=&#34;#插入节点&#34; class=&#34;headerlink&#34; title=&#34;插入节点&#34;&gt;&lt;/a&gt;插入节点&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;头插法:新节点加到链表头部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtHead(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtHead(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     newNode-&amp;gt;next=head;
     head=newNode;
@@ -686,7 +685,7 @@ public:
 &lt;ul&gt;
 &lt;li&gt;尾插法：:新节点加到链表尾部&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;void insertAtTail(int data)&amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void insertAtTail(int data)&amp;#123;
     ListNode* newNode=new ListNode(data);
     if(!head)&amp;#123;
         head=newNode;
@@ -699,7 +698,7 @@ public:
     temp-&amp;gt;next=newNode;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void deleteNode(int data)&amp;#123;
+&lt;h3 id=&#34;删除节点&#34;&gt;&lt;a href=&#34;#删除节点&#34; class=&#34;headerlink&#34; title=&#34;删除节点&#34;&gt;&lt;/a&gt;删除节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void deleteNode(int data)&amp;#123;
     if(!head)&amp;#123;
         return;
     &amp;#125;
@@ -720,7 +719,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void updateNode(int oldData,newData)&amp;#123;
+&lt;h3 id=&#34;修改节点&#34;&gt;&lt;a href=&#34;#修改节点&#34; class=&#34;headerlink&#34; title=&#34;修改节点&#34;&gt;&lt;/a&gt;修改节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void updateNode(int oldData,newData)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-data==oldData)&amp;#123;
@@ -731,7 +730,7 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool searchNode(int data)&amp;#123;
+&lt;h3 id=&#34;查找节点&#34;&gt;&lt;a href=&#34;#查找节点&#34; class=&#34;headerlink&#34; title=&#34;查找节点&#34;&gt;&lt;/a&gt;查找节点&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;bool searchNode(int data)&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         if(temp-&amp;gt;data==data)&amp;#123;
@@ -741,7 +740,7 @@ public:
     return false;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;void printList()&amp;#123;
+&lt;h3 id=&#34;打印链表&#34;&gt;&lt;a href=&#34;#打印链表&#34; class=&#34;headerlink&#34; title=&#34;打印链表&#34;&gt;&lt;/a&gt;打印链表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void printList()&amp;#123;
     ListNode* temp=head;
     while(temp)&amp;#123;
         cout&amp;lt;&amp;lt;temp-&amp;gt;val&amp;lt;&amp;lt;&amp;quot;-&amp;gt;&amp;quot;;
@@ -750,7 +749,7 @@ public:
     cout&amp;lt;&amp;lt;&amp;quot;NULL&amp;quot;&amp;lt;&amp;lt;endl;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;~LinkedList()&amp;#123;
+&lt;h3 id=&#34;释放链表内存&#34;&gt;&lt;a href=&#34;#释放链表内存&#34; class=&#34;headerlink&#34; title=&#34;释放链表内存&#34;&gt;&lt;/a&gt;释放链表内存&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;~LinkedList()&amp;#123;
     while(head)&amp;#123;
         ListNode* temp=head;
         head=head-&amp;gt;next;
@@ -784,7 +783,7 @@ public:
 &lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
 返回当前较小的节点list2;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/**
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
  *     int val;
@@ -808,6 +807,53 @@ public:
             list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
             return list2;
         &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h1&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
+&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。**而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;**更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。**此时pre为新的head节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pre = nullptr&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cur = head&lt;/code&gt;&lt;br&gt;那么逐步变化如下：&lt;br&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;br&gt;最终pre变成4，即新的链表头头。此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;br&gt;over。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* reverseList(ListNode* head) &amp;#123;
+        ListNode* pre=nullptr;
+        ListNode* cur=head;
+        while(cur!=nullptr)&amp;#123;
+            ListNode* tmp=cur-&amp;gt;next;
+            cur-&amp;gt;next=pre;
+            pre=cur;
+            cur=tmp;
+        &amp;#125;
+        return pre;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1000,7 +1046,7 @@ int 子串长度；
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;迭代法求p的next数组&lt;/strong&gt;&lt;br&gt;我们知道：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;next[0]=-1;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;next[0]=-1;
 next[1]=0;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;并且&lt;code&gt;next[j]&lt;/code&gt;代表p[0…j-1]的子串公共前后缀最长长度。&lt;br&gt;∴ 变量定义如下：&lt;br&gt;&lt;code&gt;j&lt;/code&gt;：当前子串指针&lt;br&gt;&lt;code&gt;k&lt;/code&gt;：当前匹配的前后缀长度（&amp;#x3D;next[j-1]）&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;：next[0]&amp;#x3D;-1 即当p[0]都匹配失败时，只能回到j&amp;#x3D;0重新匹配。&lt;/p&gt;
@@ -1090,7 +1136,86 @@ public:
 &lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;引用官方题解的话：&lt;strong&gt;遍历 s，并用一个栈来表示括号的深度。遇到 ‘(’ 则将字符入栈，遇到 ‘)’ 则将栈顶字符出栈。栈从空到下一次空的过程，则是扫描了一个原语的过程。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string removeOuterParentheses(string s) &amp;#123;
+        string res;
+        int cnt=0;
+        for(char ch:s)&amp;#123;
+            if(ch==&amp;#39;)&amp;#39;)&amp;#123;
+                cnt--;
+            &amp;#125;
+            if(cnt&amp;gt;0)&amp;#123;
+                res.push_back(ch);
+            &amp;#125;
+            if(ch==&amp;#39;(&amp;#39;)&amp;#123;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return res;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;859-亲密字符串&#34;&gt;&lt;a href=&#34;#859-亲密字符串&#34; class=&#34;headerlink&#34; title=&#34;859.亲密字符串&#34;&gt;&lt;/a&gt;859.亲密字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。&lt;br&gt;交换字母的定义是：取两个下标 i 和 j （下标从 0 开始）且满足 i !&amp;#x3D; j ，接着交换 s[i] 和 s[j] 处的字符。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，在 “abcd” 中交换下标 0 和下标 2 的元素可以生成 “cbad” 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length, goal.length &amp;lt;&amp;#x3D; 2 * 104&lt;/li&gt;
+&lt;li&gt;s 和 goal 由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;属于&lt;strong&gt;模拟&lt;/strong&gt;类型的题目&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣不亲密&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;br&gt;&lt;em&gt;&lt;strong&gt;2️⃣亲密&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的的字符串数量为2&lt;br&gt;&lt;strong&gt;或&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的字符串数量为0 并且 &lt;code&gt;s&lt;/code&gt;中存在出现次数&amp;gt;2的字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;p&gt;所以注意：即使一开始s&amp;#x3D;&amp;#x3D;goal，但是s怎么交换2字符都不能再&amp;#x3D;&amp;#x3D;goal，也&lt;strong&gt;不算亲密&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个：&lt;br&gt;题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-CPP&#34;&gt;class Solution &amp;#123;
+public:
+    bool buddyStrings(string s, string goal) &amp;#123;
+        if(s.size()!=goal.size())&amp;#123;
+            return false;
+        &amp;#125;
+        if(s==goal)&amp;#123;
+            vector&amp;lt;int&amp;gt; cnt(26);
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                cnt[s[i]-&amp;#39;a&amp;#39;]++;
+                if(cnt[s[i]-&amp;#39;a&amp;#39;]&amp;gt;1)&amp;#123;
+                    return true;
+                &amp;#125;
+            &amp;#125;
+            return false;
+        &amp;#125;
+        else&amp;#123;//记录s和goal不相同的字符位置
+            int first,second;
+            first=-1;
+            second=-1;
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                if(s[i]!=goal[i])&amp;#123;
+                    if(first==-1)&amp;#123;
+                        first=i;
+                    &amp;#125;
+                    else if(second==-1)&amp;#123;
+                        second=i;
+                    &amp;#125;
+                    else&amp;#123;
+                        return false;
+                    &amp;#125;
+                &amp;#125;
+            &amp;#125;
+        //检查是否可以交换
+        return (second!=-1 &amp;amp;&amp;amp; s[first]==goal[second] &amp;amp;&amp;amp; s[second]==goal[first]);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
@@ -1340,6 +1465,97 @@ public:
                 ans+=1;
             &amp;#125;
             rightMin=min(rightMin,nums[i]);
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void Print_TR(int n)&amp;#123;
+    int arr[n]=&amp;#123;1&amp;#125;;
+    for(int i=0;i&amp;lt;n;i++)&amp;#123;
+        for(int j=i;j&amp;gt;0;j--)&amp;#123;
+            arr[j]+=arr[j-1];
+        &amp;#125;
+        //打印
+        for(int j=0;j&amp;lt;=i;j++)&amp;#123;
+            printf(&amp;quot;%d &amp;quot;,arr[j]);
+        &amp;#125;
+        printf(&amp;quot;\n&amp;quot;);
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;53-最大子数组和&#34;&gt;&lt;a href=&#34;#53-最大子数组和&#34; class=&#34;headerlink&#34; title=&#34;53.最大子数组和&#34;&gt;&lt;/a&gt;53.最大子数组和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。&lt;br&gt;子数组是数组中的一个连续部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;-104 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;经典解法：Kadane算法&lt;/strong&gt;。核心思路是动态规划，通过遍历数组维护当前最大子数组和。整体思路如下：&lt;br&gt;1️⃣&lt;strong&gt;维护两个变量：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sum&lt;/code&gt;当前最大子数组和&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;maxsum&lt;/code&gt;全局最大子数组和&lt;br&gt;2️⃣&lt;strong&gt;遍历数组，每次决定是否扩展当前子数组&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如果&lt;code&gt;sum+nums[i] &amp;lt; nums[i]&lt;/code&gt; 从nums[i]重新开始（之前的子数组必定与最大和无关&lt;/li&gt;
+&lt;li&gt;否则继续累加nums[i]&lt;br&gt;3️⃣&lt;strong&gt;每次更新&lt;code&gt;maxsum&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int maxSubArray(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int sum=nums[0];
+        int maxsum=nums[0];
+        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
+            sum=max(nums[i],sum+nums[i]);
+            maxsum=max(sum,maxsum);
+        &amp;#125;
+        return maxsum;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;53-最大子数组和-1&#34;&gt;&lt;a href=&#34;#53-最大子数组和-1&#34; class=&#34;headerlink&#34; title=&#34;53.最大子数组和&#34;&gt;&lt;/a&gt;53.最大子数组和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums 。请你创建一个满足以下条件的二维数组：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;二维数组应该 只 包含数组 nums 中的元素。&lt;/li&gt;
+&lt;li&gt;二维数组中的每一行都包含 不同 的整数。&lt;/li&gt;
+&lt;li&gt;二维数组的行数应尽可能 少 。&lt;br&gt;返回结果数组。如果存在多种答案，则返回其中任何一种。&lt;br&gt;请注意，二维数组的每一行上可以存在不同数量的元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 200&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; nums.length&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;用&lt;strong&gt;哈希表&lt;/strong&gt;！😎统计元素出现次数，定义一个一维数组存每行元素。每用一个元素。哈希表中该元素次数–（当次数为0时）从表中删除该元素。&lt;/p&gt;
+&lt;p&gt;这里看题解 涉及到stl&lt;strong&gt;迭代器&lt;/strong&gt;&lt;code&gt;it&lt;/code&gt;的用法：对于定义一个哈希表:&lt;code&gt;unordered_map&amp;lt;int,int&amp;gt;cnt&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当用&lt;code&gt;auto:it&lt;/code&gt;遍历&lt;code&gt;cnt.begin()&lt;/code&gt;到&lt;code&gt;!=cnt.end()&lt;/code&gt;时&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;it-&amp;gt;first&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;key&lt;/code&gt;。本题中即为&lt;strong&gt;元素本身&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;it-&amp;gt;second&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;value&lt;/code&gt;。本题中即为元素的&lt;strong&gt;出现次数&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;感谢&lt;a href=&#34;https://leetcode.cn/u/endlesscheng/&#34;&gt;灵神&lt;/a&gt;题解，教会我很多&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; findMatrix(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        unordered_map&amp;lt;int,int&amp;gt; cnt;
+        vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; ans;
+        for(int x:nums)&amp;#123;
+            cnt[x]++;
+        &amp;#125;
+        while(!cnt.empty())&amp;#123;
+            vector&amp;lt;int&amp;gt;row;
+            for(auto it=cnt.begin();it!=cnt.end();)&amp;#123;
+                row.push_back(it-&amp;gt;first);
+                if(--it-&amp;gt;second==0)&amp;#123;
+                    it=cnt.erase(it);
+                &amp;#125;
+                else&amp;#123;
+                    it++;
+                &amp;#125;
+            &amp;#125;
+            ans.push_back(row);
         &amp;#125;
         return ans;
     &amp;#125;
@@ -2056,6 +2272,7 @@ SEO优化和访客优化
 实验性特性
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;/images/github_blog.jpg&#34; alt=&#34;2025&amp;#x2F;3&amp;#x2F;17&#34; title=&#34;Insights&#34;&gt;&lt;/p&gt;
+&lt;p&gt;突然发现放简历上的的网站二维码扫出来404😇可能当初生成二维码时没事，链接是某个具体的文章路径，后来Hexo更新或者改了文章的permalink，导致原来的链接失效了。&lt;/p&gt;
 &lt;p&gt;回到我的主页😼👇️&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;site: K’s BLOG&lt;br&gt;url: &lt;a href=&#34;https://232akira.github.io/&#34;&gt;https://232akira.github.io/&lt;/a&gt;&lt;br&gt;color: “#adff2f”&lt;/li&gt;
