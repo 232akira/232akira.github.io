@@ -8,12 +8,12 @@
     <category term="字符串" />
     <category term="滑动窗口" />
     <category term="力扣" />
-    <category term="数组" />
-    <category term="C++" />
     <category term="哈希表" />
+    <category term="C++" />
+    <category term="链表" />
+    <category term="数组" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -724,6 +724,50 @@ public:
         //检查是否可以交换
         return (second!=-1 &amp;amp;&amp;amp; s[first]==goal[second] &amp;amp;&amp;amp; s[second]==goal[first]);
         &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3304-找出第K个字符Ⅰ&#34;&gt;&lt;a href=&#34;#3304-找出第K个字符Ⅰ&#34; class=&#34;headerlink&#34; title=&#34;3304.找出第K个字符Ⅰ&#34;&gt;&lt;/a&gt;3304.找出第K个字符Ⅰ&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Alice 和 Bob 正在玩一个游戏。最初，Alice 有一个字符串 word &amp;#x3D; “a”。&lt;br&gt;给定一个正整数 k。&lt;br&gt;现在 Bob 会要求 Alice 执行以下操作 无限次 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 word 中的每个字符 更改 为英文字母表中的 下一个 字符来生成一个新字符串，并将其 追加 到原始的 word。&lt;br&gt;例如，对 “c” 进行操作生成 “cd”，对 “zb” 进行操作生成 “zbac”。&lt;br&gt;在执行足够多的操作后， word 中 至少 存在 k 个字符，此时返回 word 中第 k 个字符的值。&lt;br&gt;注意，在操作中字符 ‘z’ 可以变成 ‘a’。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 500&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里用ASCII码运算，因为’a’&lt;del&gt;‘z’为98&lt;/del&gt;233,所以&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;计算word[i]相对与a的偏移量，即字符word[i]是字母表中的&lt;strong&gt;第&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;个字母&lt;/strong&gt;，&lt;code&gt;+1&lt;/code&gt;即为后一个字符；&lt;br&gt;&lt;code&gt;%26+&amp;#39;a&amp;#39;&lt;/code&gt;的原因是：当word[i]为&lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;时,让26变回0，所以%26取模。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;2️⃣终止条件&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当&lt;code&gt;s.size()&amp;gt;=k&lt;/code&gt;时，直接返回s[k-1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;c&amp;#x3D;word[i]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    char kthCharacter(int k) &amp;#123;
+        string word=&amp;quot;a&amp;quot;;
+        while(word.size()&amp;lt;k)&amp;#123;
+            string t;
+            for(char c:word)&amp;#123;
+                t.push_back((c-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;);
+            &amp;#125;
+            word+=t;
+        &amp;#125;
+        return word[k-1];
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
