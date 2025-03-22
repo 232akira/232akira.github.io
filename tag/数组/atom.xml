@@ -8,13 +8,13 @@
     <category term="字符串" />
     <category term="滑动窗口" />
     <category term="力扣" />
+    <category term="哈希表" />
     <category term="数组" />
     <category term="C++" />
-    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="链表" />
     <category term="记录" />
+    <category term="链表" />
     <category term="Markdown" />
     <entry>
         <id>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</id>
@@ -354,11 +354,50 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2643-一最多的行&#34;&gt;&lt;a href=&#34;#2643-一最多的行&#34; class=&#34;headerlink&#34; title=&#34;2643.一最多的行&#34;&gt;&lt;/a&gt;2643.一最多的行&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个大小为 m x n 的二进制矩阵 mat ，请你找出包含最多 1 的行的下标（从 0 开始）以及这一行中 1 的数目。&lt;br&gt;如果有多行包含最多的 1 ，只需要选择 行下标最小 的那一行。&lt;br&gt;返回一个由行下标和该行中 1 的数量组成的数组。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;m &amp;#x3D;&amp;#x3D; mat.length &lt;/li&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; mat[i].length &lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; m, n &amp;lt;&amp;#x3D; 100 &lt;/li&gt;
+&lt;li&gt;mat[i][j] 为 0 或 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;最轻松的一集😂但是我写的代码略史山，还有优化空间。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;这里直接用&lt;code&gt;int ones = count(mat[i].begin(), mat[i].end(), 1); &lt;/code&gt;统计1的个数可以减少一次遍历。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;int&amp;gt; rowAndMaximumOnes(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; mat) &amp;#123;
+        vector&amp;lt;int&amp;gt; cnt(100,0),ans;
+        int index=0;
+        for(int i=0;i&amp;lt;mat.size();i++)&amp;#123;
+            for(int j=0;j&amp;lt;mat[i].size();j++)&amp;#123;
+                if(mat[i][j]==1)&amp;#123;
+                    cnt[i]++;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        int maxnum=cnt[0];
+        for(int i=0;i&amp;lt;cnt.size();i++)&amp;#123;
+            if(cnt[i]&amp;gt;maxnum)&amp;#123;
+                maxnum=cnt[i];
+                index=i;
+            &amp;#125;
+        &amp;#125;
+        ans.push_back(index);
+        ans.push_back(cnt[index]);
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
+        <category term="哈希表" />
         <category term="数组" />
         <category term="C++" />
-        <category term="哈希表" />
         <category term="动态规划" />
         <category term="二分查找" />
         <updated>2025-03-04T11:15:05.000Z</updated>
