@@ -8,13 +8,13 @@
     <category term="字符串" />
     <category term="滑动窗口" />
     <category term="力扣" />
-    <category term="哈希表" />
     <category term="数组" />
     <category term="C++" />
+    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="记录" />
     <category term="链表" />
+    <category term="记录" />
     <category term="Markdown" />
     <entry>
         <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
@@ -768,6 +768,41 @@ public:
             word+=t;
         &amp;#125;
         return word[k-1];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1544-整理字符串&#34;&gt;&lt;a href=&#34;#1544-整理字符串&#34; class=&#34;headerlink&#34; title=&#34;1544.整理字符串&#34;&gt;&lt;/a&gt;1544.整理字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个由大小写英文字母组成的字符串 s 。&lt;br&gt;一个整理好的字符串中，两个相邻字符 s[i] 和 s[i+1]，其中 0&amp;lt;&amp;#x3D; i &amp;lt;&amp;#x3D; s.length-2 ，要满足如下条件:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若 s[i] 是小写字符，则 s[i+1] 不可以是相同的大写字符。&lt;/li&gt;
+&lt;li&gt;若 s[i] 是大写字符，则 s[i+1] 不可以是相同的小写字符。&lt;br&gt;请你将字符串整理好，每次你都可以从字符串中选出满足上述条件的 两个相邻 字符并删除，直到字符串整理好为止。&lt;br&gt;请返回整理好的 字符串 。题目保证在给出的约束条件下，测试样例对应的答案是唯一的。&lt;br&gt;注意：空字符串也属于整理好的字符串，尽管其中没有任何字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 只包含小写和大写英文字母&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;一开始直接用erase删符合条件的字符，而且删除后索引没有回退，报错显示 &lt;code&gt;std::out_of_range&lt;/code&gt;。&lt;br&gt;后来用&lt;strong&gt;栈&lt;/strong&gt;来解决：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;迭代字符串s，删除互为大小写的字符，其他的正常压栈&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;abs(stk.back() - ch) == 32&lt;/code&gt; 栈顶字符和当前字符互为大小写（用abs确保大小写前后顺序都可）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string makeGood(string s) &amp;#123;
+        string stk;
+        for(char ch:s)&amp;#123;
+            if(!stk.empty() &amp;amp;&amp;amp; abs(stk.back()-ch)==32)&amp;#123;
+                stk.pop_back();
+            &amp;#125;
+            else&amp;#123;
+                stk.push_back(ch);
+            &amp;#125;
+        &amp;#125;
+        return stk;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;

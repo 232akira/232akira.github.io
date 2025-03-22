@@ -11,13 +11,13 @@
         <category>字符串</category>
         <category>滑动窗口</category>
         <category>力扣</category>
-        <category>哈希表</category>
         <category>数组</category>
         <category>C++</category>
+        <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>记录</category>
         <category>链表</category>
+        <category>记录</category>
         <category>Markdown</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
@@ -1270,6 +1270,41 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1544-整理字符串&#34;&gt;&lt;a href=&#34;#1544-整理字符串&#34; class=&#34;headerlink&#34; title=&#34;1544.整理字符串&#34;&gt;&lt;/a&gt;1544.整理字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个由大小写英文字母组成的字符串 s 。&lt;br&gt;一个整理好的字符串中，两个相邻字符 s[i] 和 s[i+1]，其中 0&amp;lt;&amp;#x3D; i &amp;lt;&amp;#x3D; s.length-2 ，要满足如下条件:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若 s[i] 是小写字符，则 s[i+1] 不可以是相同的大写字符。&lt;/li&gt;
+&lt;li&gt;若 s[i] 是大写字符，则 s[i+1] 不可以是相同的小写字符。&lt;br&gt;请你将字符串整理好，每次你都可以从字符串中选出满足上述条件的 两个相邻 字符并删除，直到字符串整理好为止。&lt;br&gt;请返回整理好的 字符串 。题目保证在给出的约束条件下，测试样例对应的答案是唯一的。&lt;br&gt;注意：空字符串也属于整理好的字符串，尽管其中没有任何字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 只包含小写和大写英文字母&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;一开始直接用erase删符合条件的字符，而且删除后索引没有回退，报错显示 &lt;code&gt;std::out_of_range&lt;/code&gt;。&lt;br&gt;后来用&lt;strong&gt;栈&lt;/strong&gt;来解决：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;迭代字符串s，删除互为大小写的字符，其他的正常压栈&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;abs(stk.back() - ch) == 32&lt;/code&gt; 栈顶字符和当前字符互为大小写（用abs确保大小写前后顺序都可）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string makeGood(string s) &amp;#123;
+        string stk;
+        for(char ch:s)&amp;#123;
+            if(!stk.empty() &amp;amp;&amp;amp; abs(stk.back()-ch)==32)&amp;#123;
+                stk.pop_back();
+            &amp;#125;
+            else&amp;#123;
+                stk.push_back(ch);
+            &amp;#125;
+        &amp;#125;
+        return stk;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
@@ -1277,9 +1312,9 @@ public:
             <title>Leetcode数组</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</link>
             <category>力扣</category>
-            <category>哈希表</category>
             <category>数组</category>
             <category>C++</category>
+            <category>哈希表</category>
             <category>动态规划</category>
             <category>二分查找</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
