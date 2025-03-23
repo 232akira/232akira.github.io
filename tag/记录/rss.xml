@@ -5,93 +5,43 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 17 Mar 2025 16:19:53 +0800</pubDate>
-        <lastBuildDate>Mon, 17 Mar 2025 16:19:53 +0800</lastBuildDate>
+        <pubDate>Sun, 23 Mar 2025 22:22:22 +0800</pubDate>
+        <lastBuildDate>Sun, 23 Mar 2025 22:22:22 +0800</lastBuildDate>
         <category>算法</category>
-        <category>链表</category>
-        <category>力扣</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>力扣</category>
+        <category>哈希表</category>
         <category>数组</category>
         <category>C++</category>
-        <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
         <category>记录</category>
         <category>Markdown</category>
+        <category>链表</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
-            <title>🔝这里有些简历上没写的故事</title>
-            <link>https://232akira.github.io/2025/03/17/%E8%BF%99%E9%87%8C%E6%9C%89%E4%BA%9B%E7%AE%80%E5%8E%86%E4%B8%8A%E6%B2%A1%E5%86%99%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/23/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</guid>
+            <title>游戏开发笔记</title>
+            <link>https://232akira.github.io/2025/03/23/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</link>
             <category>记录</category>
-            <pubDate>Mon, 17 Mar 2025 16:19:53 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;无论最后是否有结果，感谢您愿意抽出时间。&lt;/p&gt;
-&lt;h1 id=&#34;🎯-我是谁？&#34;&gt;&lt;a href=&#34;#🎯-我是谁？&#34; class=&#34;headerlink&#34; title=&#34;🎯 我是谁？&#34;&gt;&lt;/a&gt;🎯 &lt;strong&gt;我是谁？&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;主业&lt;/strong&gt;：相信您已经从简历里了解到了&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;副业&lt;/strong&gt;：GitHub折腾者 &amp;#x2F; 深夜Debug战士 &amp;#x2F; 奶茶续命选手（在控制了）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;最近在干什么？&#34;&gt;&lt;a href=&#34;#最近在干什么？&#34; class=&#34;headerlink&#34; title=&#34;最近在干什么？&#34;&gt;&lt;/a&gt;最近在干什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;找暑期实习&lt;/strong&gt;&lt;/em&gt;。六月期末结束立即到岗👋&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;死磕算法基础，感觉自己还不够扎实，正在找补&lt;/li&gt;
-&lt;li&gt;梳理之前做过的项目内容&lt;/li&gt;
-&lt;li&gt;顺便修修本博客，结果越修坑越多&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;💻-关于这个博客&#34;&gt;&lt;a href=&#34;#💻-关于这个博客&#34; class=&#34;headerlink&#34; title=&#34;💻 关于这个博客&#34;&gt;&lt;/a&gt;💻 &lt;strong&gt;关于这个博客&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&#34;为什么建？&#34;&gt;&lt;a href=&#34;#为什么建？&#34; class=&#34;headerlink&#34; title=&#34;为什么建？&#34;&gt;&lt;/a&gt;&lt;strong&gt;为什么建？&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;作为学计算机的，最开始是想至少有个地方记录技术笔记，后来上头了啥都放进来。&lt;/p&gt;
-&lt;h2 id=&#34;目前配置：&#34;&gt;&lt;a href=&#34;#目前配置：&#34; class=&#34;headerlink&#34; title=&#34;目前配置：&#34;&gt;&lt;/a&gt;&lt;strong&gt;目前配置：&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hexo + ShokaX 主题&lt;/strong&gt; 踩坑无数，终于稳定&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Waline + Vercel&lt;/strong&gt; 没成。您会发现评论提交不了😂想联系我直接+v即可&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Actions 自动部署&lt;/strong&gt; 避免手动push折腾&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;未来要做的&#34;&gt;&lt;a href=&#34;#未来要做的&#34; class=&#34;headerlink&#34; title=&#34;未来要做的&#34;&gt;&lt;/a&gt;&lt;strong&gt;未来要做的&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;集成评论系统&lt;/li&gt;
-&lt;li&gt;代码渲染器&lt;/li&gt;
-&lt;li&gt;添加不蒜子访问量统计&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;a href=&#34;#踩过的坑：博客运维现场实录&#34; class=&#34;headerlink&#34; title=&#34;踩过的坑：博客运维现场实录&#34;&gt;&lt;/a&gt;&lt;strong&gt;踩过的坑：博客运维现场实录&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;早期 GitHub Actions一直自动部署失败，巨崩溃，排查半天才发现是Node.js版本问题，最后升级+重装插件才修好。&lt;br&gt;具体搭载方式可以看&lt;a href=&#34;https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/&#34;&gt;另一篇&lt;/a&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;🔧技术探索碎片&#34;&gt;&lt;a href=&#34;#🔧技术探索碎片&#34; class=&#34;headerlink&#34; title=&#34;🔧技术探索碎片&#34;&gt;&lt;/a&gt;🔧技术探索碎片&lt;/h1&gt;&lt;p&gt;除了简历上的项目，这里还有些更零散但值得一提的东西。最近在尝试深入一些方向，记录作品都会慢慢放上来。&lt;/p&gt;
-&lt;h2 id=&#34;1️⃣-后端开发&#34;&gt;&lt;a href=&#34;#1️⃣-后端开发&#34; class=&#34;headerlink&#34; title=&#34;1️⃣ 后端开发&#34;&gt;&lt;/a&gt;1️⃣ &lt;strong&gt;后端开发&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;C++&lt;/code&gt;和&lt;code&gt;Python&lt;/code&gt;是主力。但是主要是算法方面，纯开发这一块经验少。Java和sql多少做过几个前后端项目。&lt;/li&gt;
-&lt;li&gt;习惯关注代码工程化，做项目时会尽量保证清晰的模块划分（命名强迫症在此）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2️⃣-人工智能-深度学习&#34;&gt;&lt;a href=&#34;#2️⃣-人工智能-深度学习&#34; class=&#34;headerlink&#34; title=&#34;2️⃣ 人工智能 &amp;amp; 深度学习&#34;&gt;&lt;/a&gt;2️⃣ &lt;strong&gt;人工智能 &amp;amp; 深度学习&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;VGG16&lt;/code&gt;进行花卉识别，也做过&lt;code&gt;DO（溶解氧）预测实验&lt;/code&gt;等等，不过由于个人设备和资源限制，没法深入优化模型（数据量但凡大一点我的笔记本就超烫），只能在已有框架上调整参数、跑实验、对比结果。&lt;/li&gt;
-&lt;li&gt;之前了解过&lt;code&gt;YOLOv8&lt;/code&gt;，尝试过跑一些示例代码和&lt;code&gt;labelimg打标&lt;/code&gt;，但目前还没深入应用，更多是出于兴趣在学习。&lt;/li&gt;
-&lt;li&gt;AI方面的&lt;code&gt;理论知识&lt;/code&gt;课上是学过，什么卷积层全连接层、什么池化归一化…浅尝辄止&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3️⃣-游戏开发&#34;&gt;&lt;a href=&#34;#3️⃣-游戏开发&#34; class=&#34;headerlink&#34; title=&#34;3️⃣ 游戏开发&#34;&gt;&lt;/a&gt;3️⃣ &lt;strong&gt;游戏开发&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;用&lt;code&gt;Unity&lt;/code&gt;+&lt;code&gt;C#&lt;/code&gt;做过一些小demo，尝试为部分元素添加材质、物理碰撞体，并进行脚本控制。记得当时特别想试试做人物交互，但是事情一多起来就抛在脑后了。&lt;/li&gt;
-&lt;li&gt;对&lt;code&gt;shader&lt;/code&gt;有兴趣，之前没事就在blender上玩弄模型的渲染😂之前也试图做了点mmd和Ae的pv。&lt;/li&gt;
-&lt;li&gt;这块实际求职中发现项目需求很高，最近在思考做个作品集。&lt;/li&gt;
-&lt;li&gt;对于&lt;code&gt;玩游戏&lt;/code&gt;的经验：移动pc和掌机都玩过不少类型：模拟经营、解谜、横板2d像素、3d开放世界、RPG、ARPG、回合制、卡牌类，包括常年玩的音游和女性向游戏等等。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4️⃣-GIS-课程相关&#34;&gt;&lt;a href=&#34;#4️⃣-GIS-课程相关&#34; class=&#34;headerlink&#34; title=&#34;4️⃣ GIS &amp;amp; 课程相关&#34;&gt;&lt;/a&gt;4️⃣ &lt;strong&gt;GIS &amp;amp; 课程相关&lt;/strong&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;在&lt;code&gt;GIS&lt;/code&gt;课程里做过空间分析实验，包括Kriging插值、网络分析等，还有IDW、Kriging、Spline等空间插值算法的参数影响分析。软件包括ArcGIS&amp;#x2F;ENVI&amp;#x2F;SNAP等。&lt;/li&gt;
-&lt;li&gt;matlab&lt;code&gt;数字信号处理&lt;/code&gt;，有音频倒放、图片去噪之类。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;🎨-非技术面面观：&#34;&gt;&lt;a href=&#34;#🎨-非技术面面观：&#34; class=&#34;headerlink&#34; title=&#34;🎨 非技术面面观：&#34;&gt;&lt;/a&gt;🎨 &lt;strong&gt;非技术面面观：&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;我认为展示自己的&lt;code&gt;其他技能&lt;/code&gt;也同样重要，但是因为这些对技术岗而言并非硬性需求，所以简历上就没有放。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;性格方面&#34;&gt;&lt;a href=&#34;#性格方面&#34; class=&#34;headerlink&#34; title=&#34;性格方面&#34;&gt;&lt;/a&gt;性格方面&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;按现在年轻人的认知，e还是i？那我必是个&lt;code&gt;i人&lt;/code&gt;。&lt;br&gt;关于具体mbti我实在记不住什么abcd，而且有时候每次测结果都不一样…所以问了就是不知道。&lt;br&gt;说实话，性格比较&lt;code&gt;倔&lt;/code&gt;。如果有什么事情没完成，我就那个如鲠在喉啊，睡不着受不了。&lt;/li&gt;
-&lt;li&gt;另，我还是那种&lt;code&gt;又菜又倔&lt;/code&gt;，如果你想了解我先前的教育经历：&lt;br&gt;坐标22河南理科，排名两万六来的海大计算机专业。经历多年衡水式教育+疫情封校，午睡都是掐着分钟睡（当然现在来上海发现中午睡都不用睡了）。入学时编程基础几乎为0，装个C语言的IDE不会，问一圈舍友和百度才装好，输出helloworld好几天理解不了，笨吧？真的学起来很吃力。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;一眨眼明年就要毕业了，感慨啊...&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;兴趣爱好方面&#34;&gt;&lt;a href=&#34;#兴趣爱好方面&#34; class=&#34;headerlink&#34; title=&#34;兴趣爱好方面&#34;&gt;&lt;/a&gt;兴趣爱好方面&lt;/h2&gt;&lt;p&gt;基本都是小学练的，这点感谢父母。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;跟班学了&lt;code&gt;电子琴/钢琴&lt;/code&gt;6~7年，现在怎么弹琴快忘光，手速全用在打字上了😂&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;画画&lt;/code&gt;跟班+自学到现在也有15年了，业余水平画着玩，主打解闷儿&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;写字&lt;/code&gt;还不错&lt;/li&gt;
-&lt;li&gt;乱七八糟的&lt;code&gt;手工&lt;/code&gt;都沾点边&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;📬-来唠个五毛钱的？&#34;&gt;&lt;a href=&#34;#📬-来唠个五毛钱的？&#34; class=&#34;headerlink&#34; title=&#34;📬 来唠个五毛钱的？&#34;&gt;&lt;/a&gt;📬 &lt;strong&gt;来唠个五毛钱的？&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;如果你看到这里…&lt;code&gt;非常感谢🥰祝你今天好心情！！！&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;是 HR →&lt;/strong&gt; 欢迎随时联系。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;是同行 →&lt;/strong&gt; 求分享防脱发秘籍，长时间写代码头发真的越来越秃了。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;是校友 →&lt;/strong&gt; 相逢即是缘。来二餐一，请你喝我老家蜜雪。&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
+            <pubDate>Sun, 23 Mar 2025 22:22:22 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可&lt;/p&gt;
+&lt;h1 id=&#34;Unity&#34;&gt;&lt;a href=&#34;#Unity&#34; class=&#34;headerlink&#34; title=&#34;Unity&#34;&gt;&lt;/a&gt;Unity&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本结构&#34;&gt;&lt;a href=&#34;#Shader代码基本结构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本结构&#34;&gt;&lt;/a&gt;Shader代码基本结构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;&amp;quot;
+&amp;#123;
+    Properties
+    &amp;#123;
+
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h3&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
@@ -294,30 +244,6 @@
 &lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</guid>
-            <title>游戏开发笔记</title>
-            <link>https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</link>
-            <category>记录</category>
-            <pubDate>Mon, 03 Mar 2025 22:22:22 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可&lt;/p&gt;
-&lt;h1 id=&#34;Unity&#34;&gt;&lt;a href=&#34;#Unity&#34; class=&#34;headerlink&#34; title=&#34;Unity&#34;&gt;&lt;/a&gt;Unity&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）&#34;&gt;&lt;a href=&#34;#Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）&#34; class=&#34;headerlink&#34; title=&#34;[Shader代码基础]（https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）&#34;&gt;&lt;/a&gt;[Shader代码基础]（&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b%EF%BC%89&#34;&gt;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本结构&#34;&gt;&lt;a href=&#34;#Shader代码基本结构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本结构&#34;&gt;&lt;/a&gt;Shader代码基本结构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;&amp;quot;
-&amp;#123;
-    Properties
-    &amp;#123;
-
-    &amp;#125;
-    SubShader
-    &amp;#123;
-        Pass
-        &amp;#123;
-            
-        &amp;#125;
-    &amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
