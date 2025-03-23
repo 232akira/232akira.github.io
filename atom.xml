@@ -11,9 +11,9 @@
     <category term="动态规划" />
     <category term="二分查找" />
     <category term="算法" />
+    <category term="链表" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -248,6 +248,50 @@
         <category term="算法" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</id>
+        <title>游戏开发笔记</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+        <content type="html">&lt;p&gt;当下主要学习方向是&lt;strong&gt;图形&lt;/strong&gt;，包括：&lt;br&gt;具体细分可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;渲染管线
+摄像机
+光照
+模型
+网格
+纹理
+着色器
+材质
+Visual effects
+天空
+颜色
+图形API
+Graphics performance and profiling
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然自己程序方面更擅长C++而且现在用UE也是个趋势，但是Unity普及度更高而且教程更多，UE蓝图也摒弃了传统的纯程序开发路线，所以打好这方面基础是现在最需要做的。如果有任何建议和想法需要交流欢迎联系我！不断试错不断学习中🤗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;基本白嫖b站佬们的教程（先三连之后看的！）&lt;/p&gt;
+&lt;p&gt;🤟参考教程点击标题跳转&lt;/p&gt;
+&lt;h1 id=&#34;项目实战-Uinty&#34;&gt;&lt;a href=&#34;#项目实战-Uinty&#34; class=&#34;headerlink&#34; title=&#34;项目实战-Uinty&#34;&gt;&lt;/a&gt;项目实战-Uinty&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本架构&#34;&gt;&lt;a href=&#34;#Shader代码基本架构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本架构&#34;&gt;&lt;/a&gt;Shader代码基本架构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;1️⃣&amp;quot;
+&amp;#123;
+    Properties
+    &amp;#123;
+    2️⃣
+    &amp;#125;
+    SubShader
+    &amp;#123;
+    ️3️⃣
+        Pass
+        &amp;#123;
+        4️⃣
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h3&gt;</content>
+        <category term="记录" />
+        <updated>2025-03-15T14:22:22.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
@@ -1890,30 +1934,6 @@ public:
         <category term="C++" />
         <category term="算法" />
         <updated>2025-03-04T05:41:46.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</id>
-        <title>游戏开发笔记</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;p&gt;基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可&lt;/p&gt;
-&lt;h1 id=&#34;Unity&#34;&gt;&lt;a href=&#34;#Unity&#34; class=&#34;headerlink&#34; title=&#34;Unity&#34;&gt;&lt;/a&gt;Unity&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本结构&#34;&gt;&lt;a href=&#34;#Shader代码基本结构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本结构&#34;&gt;&lt;/a&gt;Shader代码基本结构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;&amp;quot;
-&amp;#123;
-    Properties
-    &amp;#123;
-
-    &amp;#125;
-    SubShader
-    &amp;#123;
-        Pass
-        &amp;#123;
-            
-        &amp;#125;
-    &amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h3&gt;</content>
-        <category term="记录" />
-        <updated>2025-03-03T14:22:22.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</id>

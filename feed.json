@@ -27,6 +27,16 @@
             ]
         },
         {
+            "id": "https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
+            "url": "https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
+            "title": "游戏开发笔记",
+            "date_published": "2025-03-15T14:22:22.000Z",
+            "content_html": "<p>当下主要学习方向是<strong>图形</strong>，包括：<br>具体细分可以查看<a href=\"https://docs.unity3d.com/cn/current/Manual/Graphics.html\">Unity官方文档</a></p>\n<pre><code>渲染管线\n摄像机\n光照\n模型\n网格\n纹理\n着色器\n材质\nVisual effects\n天空\n颜色\n图形API\nGraphics performance and profiling\n</code></pre>\n<blockquote>\n<p>虽然自己程序方面更擅长C++而且现在用UE也是个趋势，但是Unity普及度更高而且教程更多，UE蓝图也摒弃了传统的纯程序开发路线，所以打好这方面基础是现在最需要做的。如果有任何建议和想法需要交流欢迎联系我！不断试错不断学习中🤗</p>\n</blockquote>\n<p>基本白嫖b站佬们的教程（先三连之后看的！）</p>\n<p>🤟参考教程点击标题跳转</p>\n<h1 id=\"项目实战-Uinty\"><a href=\"#项目实战-Uinty\" class=\"headerlink\" title=\"项目实战-Uinty\"></a>项目实战-Uinty</h1><h2 id=\"Shader代码基础\"><a href=\"#Shader代码基础\" class=\"headerlink\" title=\"Shader代码基础\"></a><a href=\"https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&vd_source=6cef69f555ee1eb889d44945f2a3a38b\">Shader代码基础</a></h2><h3 id=\"Shader代码基本架构\"><a href=\"#Shader代码基本架构\" class=\"headerlink\" title=\"Shader代码基本架构\"></a>Shader代码基本架构</h3><pre><code class=\"language-c#\">Shader&quot;1️⃣&quot;\n&#123;\n    Properties\n    &#123;\n    2️⃣\n    &#125;\n    SubShader\n    &#123;\n    ️3️⃣\n        Pass\n        &#123;\n        4️⃣\n        &#125;\n    &#125;\n&#125;\n</code></pre>\n<h3 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h3>",
+            "tags": [
+                "记录"
+            ]
+        },
+        {
             "id": "https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/",
             "url": "https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/",
             "title": "专题1️⃣ 滑动窗口",
@@ -88,16 +98,6 @@
             "tags": [
                 "C++",
                 "算法"
-            ]
-        },
-        {
-            "id": "https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
-            "url": "https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
-            "title": "游戏开发笔记",
-            "date_published": "2025-03-03T14:22:22.000Z",
-            "content_html": "<p>基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可</p>\n<h1 id=\"Unity\"><a href=\"#Unity\" class=\"headerlink\" title=\"Unity\"></a>Unity</h1><h2 id=\"Shader代码基础\"><a href=\"#Shader代码基础\" class=\"headerlink\" title=\"Shader代码基础\"></a><a href=\"https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&vd_source=6cef69f555ee1eb889d44945f2a3a38b\">Shader代码基础</a></h2><h3 id=\"Shader代码基本结构\"><a href=\"#Shader代码基本结构\" class=\"headerlink\" title=\"Shader代码基本结构\"></a>Shader代码基本结构</h3><pre><code class=\"language-c#\">Shader&quot;&quot;\n&#123;\n    Properties\n    &#123;\n\n    &#125;\n    SubShader\n    &#123;\n        Pass\n        &#123;\n            \n        &#125;\n    &#125;\n&#125;\n</code></pre>\n<h3 id=\"\"><a href=\"#\" class=\"headerlink\" title=\"\"></a></h3>",
-            "tags": [
-                "记录"
             ]
         },
         {
