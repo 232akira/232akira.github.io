@@ -3,19 +3,49 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;记录&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-03-17T07:29:31.000Z</updated>
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
+    <updated>2025-03-23T11:22:34.000Z</updated>
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
+    <entry>
+        <id>https://232akira.github.io/2025/03/23/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</id>
+        <title>🔝点我查看指引</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/23/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/"/>
+        <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;h2 id=&#34;🪧博客看板&#34;&gt;&lt;a href=&#34;#🪧博客看板&#34; class=&#34;headerlink&#34; title=&#34;🪧博客看板&#34;&gt;&lt;/a&gt;🪧博客看板&lt;/h2&gt;&lt;p&gt;是我喜欢的动漫小人儿（？好像不算指引&lt;/p&gt;
+&lt;h2 id=&#34;👋了解更多我的故事&#34;&gt;&lt;a href=&#34;#👋了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;👋了解更多我的故事&#34;&gt;&lt;/a&gt;👋了解更多我的故事&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;左上角三横杠➡️关于&lt;br&gt;🫧一些碎碎念，感谢赏光&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;☀️昼夜模式&#34;&gt;&lt;a href=&#34;#☀️昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;☀️昼夜模式&#34;&gt;&lt;/a&gt;☀️昼夜模式&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;右上角➡️太阳or月亮图标&lt;br&gt;🫧不管白天黑夜&lt;del&gt;选择您舒适的方式浏览&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;👓️更清晰的看看有哪些文章&#34;&gt;&lt;a href=&#34;#👓️更清晰的看看有哪些文章&#34; class=&#34;headerlink&#34; title=&#34;👓️更清晰的看看有哪些文章&#34;&gt;&lt;/a&gt;👓️更清晰的看看有哪些文章&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;左上角三横杠➡️文章➡️归档&lt;br&gt;🫧看看每月写了什么&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;左上角三横杠➡️文章➡️标签&lt;br&gt;🫧关键词定位文章更高效&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;也可以直接点击目录上方的数字跳转。&lt;/p&gt;
+&lt;h2 id=&#34;🔗其他&#34;&gt;&lt;a href=&#34;#🔗其他&#34; class=&#34;headerlink&#34; title=&#34;🔗其他&#34;&gt;&lt;/a&gt;🔗其他&lt;/h2&gt;&lt;h3 id=&#34;🎵想来点音乐？&#34;&gt;&lt;a href=&#34;#🎵想来点音乐？&#34; class=&#34;headerlink&#34; title=&#34;🎵想来点音乐？&#34;&gt;&lt;/a&gt;🎵想来点音乐？&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;波浪动效➡️右边播放键&lt;br&gt;🫧主日本流行和v家曲，多数估计听不惯😂慎重播放&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;🧩完善中的功能&#34;&gt;&lt;a href=&#34;#🧩完善中的功能&#34; class=&#34;headerlink&#34; title=&#34;🧩完善中的功能&#34;&gt;&lt;/a&gt;🧩完善中的功能&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;评论系统&lt;/li&gt;
+&lt;li&gt;文章搜索&lt;/li&gt;
+&lt;li&gt;其他异常显示&lt;br&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="记录" />
+        <updated>2025-03-23T11:22:34.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
         <title>算法备忘录</title>
@@ -214,8 +244,8 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 </content>
-        <category term="算法" />
         <category term="力扣" />
+        <category term="算法" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
     </entry>
@@ -777,8 +807,8 @@ public:
 返回 b;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="算法" />
         <category term="C++" />
+        <category term="算法" />
         <category term="记录" />
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>
