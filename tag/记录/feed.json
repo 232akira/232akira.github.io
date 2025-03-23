@@ -27,6 +27,16 @@
             ]
         },
         {
+            "id": "https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
+            "url": "https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/",
+            "title": "游戏开发笔记",
+            "date_published": "2025-03-03T14:22:22.000Z",
+            "content_html": "<p>基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可</p>\n<h1 id=\"Unity\"><a href=\"#Unity\" class=\"headerlink\" title=\"Unity\"></a>Unity</h1><h2 id=\"Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）\"><a href=\"#Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）\" class=\"headerlink\" title=\"[Shader代码基础]（https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）\"></a>[Shader代码基础]（<a href=\"https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&vd_source=6cef69f555ee1eb889d44945f2a3a38b%EF%BC%89\">https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）</a></h2><h3 id=\"Shader代码基本结构\"><a href=\"#Shader代码基本结构\" class=\"headerlink\" title=\"Shader代码基本结构\"></a>Shader代码基本结构</h3><pre><code class=\"language-c#\">Shader&quot;&quot;\n&#123;\n    Properties\n    &#123;\n\n    &#125;\n    SubShader\n    &#123;\n        Pass\n        &#123;\n            \n        &#125;\n    &#125;\n&#125;\n</code></pre>\n",
+            "tags": [
+                "记录"
+            ]
+        },
+        {
             "id": "https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/",
             "url": "https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/",
             "title": "力扣备忘录",

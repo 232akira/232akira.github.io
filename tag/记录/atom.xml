@@ -5,15 +5,15 @@
     <link href="https://232akira.github.io" />
     <updated>2025-03-17T08:19:53.000Z</updated>
     <category term="算法" />
+    <category term="链表" />
+    <category term="力扣" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -292,6 +292,30 @@
         <category term="力扣" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</id>
+        <title>游戏开发笔记</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/03/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+        <content type="html">&lt;p&gt;基本白嫖b站佬们的教程（先三连之后看的！）参考教程点击标题跳转即可&lt;/p&gt;
+&lt;h1 id=&#34;Unity&#34;&gt;&lt;a href=&#34;#Unity&#34; class=&#34;headerlink&#34; title=&#34;Unity&#34;&gt;&lt;/a&gt;Unity&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）&#34;&gt;&lt;a href=&#34;#Shader代码基础-（https-www-bilibili-com-video-BV1Xu4y1S7LF-spm-id-from-333-1387-favlist-content-click-vd-source-6cef69f555ee1eb889d44945f2a3a38b）&#34; class=&#34;headerlink&#34; title=&#34;[Shader代码基础]（https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）&#34;&gt;&lt;/a&gt;[Shader代码基础]（&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b%EF%BC%89&#34;&gt;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b）&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本结构&#34;&gt;&lt;a href=&#34;#Shader代码基本结构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本结构&#34;&gt;&lt;/a&gt;Shader代码基本结构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;&amp;quot;
+&amp;#123;
+    Properties
+    &amp;#123;
+
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="记录" />
+        <updated>2025-03-03T14:22:22.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</id>

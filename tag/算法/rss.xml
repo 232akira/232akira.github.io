@@ -8,15 +8,15 @@
         <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
         <lastBuildDate>Mon, 17 Mar 2025 15:29:31 +0800</lastBuildDate>
         <category>算法</category>
+        <category>链表</category>
+        <category>力扣</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
@@ -227,9 +227,9 @@
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
             <category>算法</category>
+            <category>力扣</category>
             <category>字符串</category>
             <category>滑动窗口</category>
-            <category>力扣</category>
             <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
@@ -584,8 +584,8 @@ public:
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
             <category>算法</category>
-            <category>力扣</category>
             <category>链表</category>
+            <category>力扣</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
@@ -1071,7 +1071,7 @@ public:
 &lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;引用官方题解的话：&lt;strong&gt;遍历 s，并用一个栈来表示括号的深度。遇到 ‘(’ 则将字符入栈，遇到 ‘)’ 则将栈顶字符出栈。栈从空到下一次空的过程，则是扫描了一个原语的过程。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;引用&lt;strong&gt;官方题解&lt;/strong&gt;的话：&lt;br&gt;遍历 s，并用一个栈来表示括号的深度。遇到 ‘(’ 则将字符入栈，遇到 ‘)’ 则将栈顶字符出栈。栈从空到下一次空的过程，则是扫描了一个原语的过程。&lt;/p&gt;
 &lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     string removeOuterParentheses(string s) &amp;#123;
@@ -1228,6 +1228,71 @@ public:
             &amp;#125;
         &amp;#125;
         return stk;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2116-判断一个括号字符串是否有效&#34;&gt;&lt;a href=&#34;#2116-判断一个括号字符串是否有效&#34; class=&#34;headerlink&#34; title=&#34;2116.判断一个括号字符串是否有效&#34;&gt;&lt;/a&gt;2116.判断一个括号字符串是否有效&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个括号字符串是只由 ‘(‘ 和 ‘)’ 组成的 非空 字符串。如果一个字符串满足下面 任意一个条件，那么它就是有效的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串为 ().&lt;/li&gt;
+&lt;li&gt;它可以表示为 AB（A 与 B 连接），其中A 和 B 都是有效括号字符串。&lt;/li&gt;
+&lt;li&gt;它可以表示为 (A) ，其中 A 是一个有效括号字符串。&lt;br&gt;给你一个括号字符串 s 和一个字符串 locked ，两者长度都为 n 。locked &amp;gt;是一个二进制字符串，只包含 ‘0’ 和 ‘1’ 。对于 locked 中 每一个 下标 i ：&lt;/li&gt;
+&lt;li&gt;如果 locked[i] 是 ‘1’ ，你 不能 改变 s[i] 。&lt;/li&gt;
+&lt;li&gt;如果 locked[i] 是 ‘0’ ，你 可以 将 s[i] 变为 ‘(‘ 或者 ‘)’ 。&lt;br&gt;如果你可以将s变为有效括号字符串，请你返回true，否则返回false。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; s.length &amp;#x3D;&amp;#x3D; locked.length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 要么是 ‘(‘ 要么是 ‘)’ 。&lt;/li&gt;
+&lt;li&gt;locked[i] 要么是 ‘0’ 要么是 ‘1’ 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;做到好几个括号匹配问题了，浅总结一下：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;👉️括号平衡的核心规则&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;任何前缀都不能有多余的右括号 &amp;amp; 任何后缀都不能有多余的左括号&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;❔️为什么要检查前&amp;#x2F;后缀而不是整个括号字符串？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为括号是从左到右依次匹配的。一旦前面某个位置出现错误，后面就绝对无法补救。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;✅️关键思路&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;前缀遍历判断防止提前失配；后缀遍历防止无法闭合&lt;/li&gt;
+&lt;li&gt;两边遍历保证整体匹配&lt;/li&gt;
+&lt;li&gt;最终判断是否可以调整&lt;code&gt;（locked[i])&lt;/code&gt;使其符合匹配规则&lt;/li&gt;
+&lt;li&gt;注意locked也是字符串不是int&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;用时21ms，还有优化空间。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool canBeValid(string s, string locked) &amp;#123;
+        if(s.size()%2!=0)&amp;#123;
+            return false;
+        &amp;#125;
+        int left,right;
+        left=right=0;
+        for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+            if(s[i]==&amp;#39;(&amp;#39; || locked[i]==&amp;#39;0&amp;#39;)&amp;#123;
+                left++;
+            &amp;#125;
+            else&amp;#123;
+                right++;
+            &amp;#125;
+            if(right&amp;gt;left)&amp;#123;
+                return false;
+            &amp;#125;
+        &amp;#125;
+        left=right=0;
+        for(int i=s.size()-1;i&amp;gt;=0;i--)&amp;#123;
+            if(s[i]==&amp;#39;)&amp;#39; || locked[i]==&amp;#39;0&amp;#39;)&amp;#123;
+                right++;
+            &amp;#125;
+            else&amp;#123;
+                left++;
+            &amp;#125;
+            if(left&amp;gt;right)&amp;#123;
+                return false;
+            &amp;#125;
+        &amp;#125;
+        return true;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
