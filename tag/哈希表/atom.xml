@@ -5,13 +5,13 @@
     <link href="https://232akira.github.io" />
     <updated>2025-03-12T10:20:15.000Z</updated>
     <category term="算法" />
-    <category term="链表" />
-    <category term="力扣" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="哈希表" />
-    <category term="C++" />
+    <category term="链表" />
+    <category term="力扣" />
     <category term="数组" />
+    <category term="C++" />
+    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
     <category term="记录" />
@@ -367,9 +367,9 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="力扣" />
         <category term="字符串" />
         <category term="滑动窗口" />
+        <category term="力扣" />
         <category term="哈希表" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
@@ -750,11 +750,50 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;661-图片平滑器&#34;&gt;&lt;a href=&#34;#661-图片平滑器&#34; class=&#34;headerlink&#34; title=&#34;661.图片平滑器&#34;&gt;&lt;/a&gt;661.图片平滑器&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图像平滑器&lt;/strong&gt;是大小为 3 x 3 的过滤器，用于对图像的每个单元格平滑处理，平滑处理后单元格的值为该单元格的平均灰度。&lt;br&gt;每个单元格的&lt;strong&gt;平均灰度&lt;/strong&gt;定义为：该单元格自身及其周围的 8 个单元格的平均值，结果需向下取整。（即，需要计算蓝色平滑器中 9 个单元格的平均值）。&lt;br&gt;如果一个单元格周围存在单元格缺失的情况，则计算平均灰度时不考虑缺失的单元格（即，需要计算红色平滑器中 4 个单元格的平均值）。&lt;br&gt;给你一个表示图像灰度的&lt;code&gt;m x n&lt;/code&gt;整数矩阵&lt;code&gt;img&lt;/code&gt;，返回对图像的每个单元格平滑处理后的图像 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;m &amp;#x3D;&amp;#x3D; img.length&lt;/li&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; img[i].length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; m, n &amp;lt;&amp;#x3D; 200&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; img[i][j] &amp;lt;&amp;#x3D; 255&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;关键知道矩阵边界，也就是不全加9个数的情况怎么算。我一开始还想着一个个情况穷举😂其实3*3区域安心两层遍历就行，对于这道题不会超时。&lt;br&gt;***刷题以来第一次碰到四层循环能通过的。。。***不看题解都不敢想像这个方法。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; imageSmoother(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; img) &amp;#123;
+        int m,n;
+        m=img.size();
+        n=img[0].size();
+        vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;ans(m,vector&amp;lt;int&amp;gt;(n,0));
+        for(int i=0;i&amp;lt;m;i++)&amp;#123;
+            for(int j=0;j&amp;lt;n;j++)&amp;#123;
+                int sum,cnt;
+                sum=cnt=0;
+                for(int r=i-1;r&amp;lt;=i+1;r++)&amp;#123;
+                    for(int c=j-1;c&amp;lt;=j+1;c++)&amp;#123;
+                        if(0&amp;lt;=r &amp;amp;&amp;amp; r&amp;lt;m &amp;amp;&amp;amp; 0&amp;lt;=c &amp;amp;&amp;amp; c&amp;lt;n)&amp;#123;
+                            sum+=img[r][c];
+                            cnt++;
+                        &amp;#125;
+                    &amp;#125;
+                &amp;#125;
+                ans[i][j]=cnt&amp;gt;0?sum/cnt:img[i][j];
+            &amp;#125;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
-        <category term="哈希表" />
-        <category term="C++" />
         <category term="数组" />
+        <category term="C++" />
+        <category term="哈希表" />
         <category term="动态规划" />
         <category term="二分查找" />
         <updated>2025-03-04T11:15:05.000Z</updated>

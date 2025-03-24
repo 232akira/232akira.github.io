@@ -5,13 +5,13 @@
     <link href="https://232akira.github.io" />
     <updated>2025-03-12T10:20:15.000Z</updated>
     <category term="算法" />
-    <category term="链表" />
-    <category term="力扣" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="哈希表" />
-    <category term="C++" />
+    <category term="链表" />
+    <category term="力扣" />
     <category term="数组" />
+    <category term="C++" />
+    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
     <category term="记录" />
@@ -367,9 +367,9 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="力扣" />
         <category term="字符串" />
         <category term="滑动窗口" />
+        <category term="力扣" />
         <category term="哈希表" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
@@ -868,6 +868,35 @@ public:
             &amp;#125;
         &amp;#125;
         return true;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2255-统计是给定字符串前缀的字符串数目&#34;&gt;&lt;a href=&#34;#2255-统计是给定字符串前缀的字符串数目&#34; class=&#34;headerlink&#34; title=&#34;2255.统计是给定字符串前缀的字符串数目&#34;&gt;&lt;/a&gt;2255.统计是给定字符串前缀的字符串数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个字符串数组 words 和一个字符串 s ，其中 words[i] 和 s 只包含 小写英文字母 。&lt;br&gt;请你返回 words 中是字符串 s 前缀 的 字符串数目 。&lt;br&gt;一个字符串的 前缀 是出现在字符串开头的子字符串。子字符串 是一个字符串中的连续一段字符序列。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; words.length &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; words[i].length, s.length &amp;lt;&amp;#x3D; 10&lt;/li&gt;
+&lt;li&gt;words[i] 和 s 只 包含小写英文字母。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;暴力双循环嵌套，第一个substr得子串，第二个判断子串是否与words[i]相等。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int countPrefixes(vector&amp;lt;string&amp;gt;&amp;amp; words, string s) &amp;#123;
+        string ch;
+        int cnt=0;
+        for(int i=0;i&amp;lt;=s.length();i++)&amp;#123;
+            ch=s.substr(0,i);
+            for(int j=0;j&amp;lt;words.size();j++)&amp;#123;
+                if(words[j]==ch)&amp;#123;
+                    cnt++;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return cnt;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
