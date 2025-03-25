@@ -30,7 +30,137 @@
             <category>动态规划</category>
             <category>二分查找</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;本来想一道题一篇文，但是做的大多是简单题所以按模块归类好复习一点。&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums，请你将该数组升序排列。&lt;br&gt;你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;先来总结一下&lt;/p&gt;
+&lt;h3 id=&#34;十大排序算法&#34;&gt;&lt;a href=&#34;#十大排序算法&#34; class=&#34;headerlink&#34; title=&#34;十大排序算法~&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.runoob.com/w3cnote/ten-sorting-algorithm.html&#34;&gt;十大排序算法&lt;/a&gt;~&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;排序算法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;「平均」时间复杂度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;「最坏」时间复杂度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;「最好」时间复杂度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;空间复杂度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;稳定性&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;适用场景&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;冒泡排序&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数据量小、基本有序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;选择排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数据量小&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;插入排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数据量小、基本有序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;希尔排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlog^2n)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlog^2n)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;归并排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;链表排序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;快速排序&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(logn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理大数据最常用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;堆排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;优先队列&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;计数排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数据范围较小、整数分布集中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;桶排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n^2)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数据分布均匀&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;基数排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n×k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n×k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(n+k)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;稳定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;非比较排序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;其他总结&#34;&gt;&lt;a href=&#34;#其他总结&#34; class=&#34;headerlink&#34; title=&#34;其他总结&#34;&gt;&lt;/a&gt;其他总结&lt;/h3&gt;&lt;p&gt;1️⃣按稳定性分类&lt;br&gt;在排序前后，相等元素的相对顺序是否保持不变，如果相对顺序不变，则该排序算法是稳定的，否则是不稳定的。&lt;br&gt;&lt;strong&gt;🔹 稳定排序&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;冒泡&lt;/li&gt;
+&lt;li&gt;插入&lt;/li&gt;
+&lt;li&gt;归并&lt;/li&gt;
+&lt;li&gt;基数&lt;br&gt;&lt;strong&gt;🔹 不稳定排序&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;/li&gt;
+&lt;li&gt;快速&lt;/li&gt;
+&lt;li&gt;堆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2️⃣排序算法优劣的&lt;a href=&#34;https://blog.csdn.net/2203_75646004/article/details/135172906&#34;&gt;衡量标准&lt;/a&gt;：&lt;br&gt;🔹 &lt;strong&gt;时间复杂度&lt;/strong&gt; 排序速度（比较&amp;amp;移动次数）&lt;br&gt;🔹 &lt;strong&gt;空间复杂度&lt;/strong&gt; 占内存辅助空间的大小&lt;br&gt;🔹 &lt;strong&gt;稳定性&lt;/strong&gt; A与B的关键字相等，排序后A、B的先后次序保持不变&lt;/p&gt;
+&lt;p&gt;3️⃣按排序类别分类&lt;br&gt;&lt;strong&gt;🔹 插入&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;插入&lt;/li&gt;
+&lt;li&gt;希尔&lt;br&gt;&lt;strong&gt;🔹 选择&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;/li&gt;
+&lt;li&gt;堆&lt;br&gt;&lt;strong&gt;🔹 交换&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;冒泡&lt;/li&gt;
+&lt;li&gt;快速&lt;br&gt;&lt;strong&gt;🔹 归并&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;归并&lt;br&gt;&lt;strong&gt;🔹 基数&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;基数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;1232-缀点成线&#34;&gt;&lt;a href=&#34;#1232-缀点成线&#34; class=&#34;headerlink&#34; title=&#34;1232.缀点成线&#34;&gt;&lt;/a&gt;1232.缀点成线&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个数组 coordinates ，其中 coordinates[i] &amp;#x3D; [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。&lt;/p&gt;
 &lt;ul&gt;
@@ -40,9 +170,9 @@
 &lt;li&gt;coordinates 中不含重复的点&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我本来是想着soeasy，用y&amp;#x2F;x对比斜率就行了，然后发现部分样例通不过。定睛一看，发现直线不一定过原点…&lt;/p&gt;
 &lt;p&gt;那么就不使用斜率，而是使用&lt;strong&gt;斜率交叉乘法&lt;/strong&gt;：如果所有点都在同一条直线上，那么&lt;strong&gt;对于任意两点P1(x1,y1)、P2(x2,y2)、P3(x3,y3)之间的斜率必须相等&lt;/strong&gt;。也就是&lt;code&gt;(y2-y1)/(x2-x1)=(y3-y1)/(x3-x1)&lt;/code&gt;。为避免除法带来的浮点误差，用&lt;strong&gt;交叉相乘&lt;/strong&gt;验证更好。&lt;br&gt;&lt;em&gt;&lt;strong&gt;并且注意！&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为我的验证方法需要三个点，但是这道题有可&lt;code&gt;coordinates,length=2&lt;/code&gt;的情况，那就直接返回true，因为&lt;strong&gt;两点确定一条直线&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     bool checkStraightLine(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; coordinates) &amp;#123;
         int x1,y1,x2,y2;
@@ -74,7 +204,7 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i], k &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;涉及&lt;strong&gt;子集&lt;/strong&gt;相关问题，一般有两种方法：&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;涉及&lt;strong&gt;子集&lt;/strong&gt;相关问题，一般有两种方法：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;回溯&lt;/li&gt;
 &lt;li&gt;位运算&lt;br&gt;本题选择&lt;strong&gt;回溯&lt;/strong&gt;算法。因为该方法可在生成子集时&lt;strong&gt;剪枝&lt;/strong&gt;。&lt;/li&gt;
@@ -87,7 +217,7 @@ public:
   不选4  选4   不选4  选4
   ...
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int ans=0;
     void dfs(int index,vector&amp;lt;int&amp;gt;&amp;amp; nums,unordered_map&amp;lt;int,int&amp;gt;&amp;amp; freq,int k)&amp;#123;
@@ -116,7 +246,7 @@ public:
 &lt;blockquote&gt;
 &lt;p&gt;提示：&lt;br&gt;-1 &amp;lt;&amp;#x3D; items.length, queries.length &amp;lt;&amp;#x3D; 105&lt;br&gt;-items[i].length &amp;#x3D;&amp;#x3D; 2&lt;br&gt;-1 &amp;lt;&amp;#x3D; pricei, beautyi, queries[j] &amp;lt;&amp;#x3D; 109&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h3 id=&#34;二分查找&#34;&gt;&lt;a href=&#34;#二分查找&#34; class=&#34;headerlink&#34; title=&#34;二分查找&#34;&gt;&lt;/a&gt;二分查找&lt;/h3&gt;&lt;p&gt;首先复习一下二分查找，我又忘了咋写。&lt;a href=&#34;https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/&#34;&gt;另一篇&lt;/a&gt;copy来的&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h3 id=&#34;二分查找&#34;&gt;&lt;a href=&#34;#二分查找&#34; class=&#34;headerlink&#34; title=&#34;二分查找&#34;&gt;&lt;/a&gt;二分查找&lt;/h3&gt;&lt;p&gt;首先复习一下二分查找，我又忘了咋写。&lt;a href=&#34;https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/&#34;&gt;另一篇&lt;/a&gt;copy来的&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;要查找的目标&lt;code&gt;target&lt;/code&gt;&lt;/li&gt;
@@ -170,7 +300,7 @@ public:
 &lt;li&gt;遍历querties：&lt;strong&gt;二分查找&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;二分查找目标🤟&lt;code&gt;items[i][0] &amp;lt;= queries[j]&lt;/code&gt; 的最大 i&lt;br&gt;有点绕了，兄弟兄弟…&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;int&amp;gt; maximumBeauty(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; items, vector&amp;lt;int&amp;gt;&amp;amp; queries) &amp;#123;
         sort(items.begin(),items.end());
@@ -213,7 +343,7 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 105&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;难点在于nums[i]的美丽值为2的情况：&lt;/strong&gt;&lt;br&gt;突然想起来高中数学老师的口头禅：“大于大的，小于小的”。&lt;br&gt;nums[i]需要满足：比其左侧所有的nums[j]更大，以及&lt;em&gt;比其右侧所有的nums&lt;/em&gt;[k]更小。&lt;br&gt;即&lt;strong&gt;大于左侧最大值，小于右侧最小值&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;难点在于nums[i]的美丽值为2的情况：&lt;/strong&gt;&lt;br&gt;突然想起来高中数学老师的口头禅：“大于大的，小于小的”。&lt;br&gt;nums[i]需要满足：比其左侧所有的nums[j]更大，以及&lt;em&gt;比其右侧所有的nums&lt;/em&gt;[k]更小。&lt;br&gt;即&lt;strong&gt;大于左侧最大值，小于右侧最小值&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;*max_element(arr.begin(),arr.end())&lt;/code&gt;求数组最大值&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;*min_element(arr.begin(),arr.end())&lt;/code&gt;求数组最小值&lt;/li&gt;
@@ -251,7 +381,7 @@ int 美丽值;
     更新右侧最小值=min（右侧最小值，原数组[i]）;
 返回美丽值
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int sumOfBeauties(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
         vector&amp;lt;int&amp;gt; leftMax(nums.size(),0);
@@ -273,7 +403,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void Print_TR(int n)&amp;#123;
+&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void Print_TR(int n)&amp;#123;
     int arr[n]=&amp;#123;1&amp;#125;;
     for(int i=0;i&amp;lt;n;i++)&amp;#123;
         for(int j=i;j&amp;gt;0;j--)&amp;#123;
@@ -297,14 +427,14 @@ public:
 &lt;li&gt;-104 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;经典解法：Kadane算法&lt;/strong&gt;。核心思路是动态规划，通过遍历数组维护当前最大子数组和。整体思路如下：&lt;br&gt;1️⃣&lt;strong&gt;维护两个变量：&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;经典解法：Kadane算法&lt;/strong&gt;。核心思路是动态规划，通过遍历数组维护当前最大子数组和。整体思路如下：&lt;br&gt;1️⃣&lt;strong&gt;维护两个变量：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;sum&lt;/code&gt;当前最大子数组和&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;maxsum&lt;/code&gt;全局最大子数组和&lt;br&gt;2️⃣&lt;strong&gt;遍历数组，每次决定是否扩展当前子数组&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;如果&lt;code&gt;sum+nums[i] &amp;lt; nums[i]&lt;/code&gt; 从nums[i]重新开始（之前的子数组必定与最大和无关&lt;/li&gt;
 &lt;li&gt;否则继续累加nums[i]&lt;br&gt;3️⃣&lt;strong&gt;每次更新&lt;code&gt;maxsum&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int maxSubArray(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
         int sum=nums[0];
@@ -331,14 +461,14 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; nums.length&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;用&lt;strong&gt;哈希表&lt;/strong&gt;！😎统计元素出现次数，定义一个一维数组存每行元素。每用一个元素。哈希表中该元素次数–（当次数为0时）从表中删除该元素。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;用&lt;strong&gt;哈希表&lt;/strong&gt;！😎统计元素出现次数，定义一个一维数组存每行元素。每用一个元素。哈希表中该元素次数–（当次数为0时）从表中删除该元素。&lt;/p&gt;
 &lt;p&gt;这里看题解 涉及到stl&lt;strong&gt;迭代器&lt;/strong&gt;&lt;code&gt;it&lt;/code&gt;的用法：对于定义一个哈希表:&lt;code&gt;unordered_map&amp;lt;int,int&amp;gt;cnt&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;当用&lt;code&gt;auto:it&lt;/code&gt;遍历&lt;code&gt;cnt.begin()&lt;/code&gt;到&lt;code&gt;!=cnt.end()&lt;/code&gt;时&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;it-&amp;gt;first&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;key&lt;/code&gt;。本题中即为&lt;strong&gt;元素本身&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;it-&amp;gt;second&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;value&lt;/code&gt;。本题中即为元素的&lt;strong&gt;出现次数&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;感谢&lt;a href=&#34;https://leetcode.cn/u/endlesscheng/&#34;&gt;灵神&lt;/a&gt;题解，教会我很多&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;感谢&lt;a href=&#34;https://leetcode.cn/u/endlesscheng/&#34;&gt;灵神&lt;/a&gt;题解，教会我很多&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; findMatrix(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
@@ -376,8 +506,8 @@ public:
 &lt;li&gt;mat[i][j] 为 0 或 1&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;最轻松的一集😂但是我写的代码略史山，还有优化空间。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;这里直接用&lt;code&gt;int ones = count(mat[i].begin(), mat[i].end(), 1); &lt;/code&gt;统计1的个数可以减少一次遍历。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;最轻松的一集😂但是我写的代码略史山，还有优化空间。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;这里直接用&lt;code&gt;int ones = count(mat[i].begin(), mat[i].end(), 1); &lt;/code&gt;统计1的个数可以减少一次遍历。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;int&amp;gt; rowAndMaximumOnes(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; mat) &amp;#123;
@@ -415,8 +545,8 @@ public:
 &lt;li&gt;0 &amp;lt;&amp;#x3D; img[i][j] &amp;lt;&amp;#x3D; 255&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;关键知道矩阵边界，也就是不全加9个数的情况怎么算。我一开始还想着一个个情况穷举😂其实3*3区域安心两层遍历就行，对于这道题不会超时。&lt;br&gt;***刷题以来第一次碰到四层循环能通过的。。。***不看题解都不敢想像这个方法。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;关键知道矩阵边界，也就是不全加9个数的情况怎么算。我一开始还想着一个个情况穷举😂其实3*3区域安心两层遍历就行，对于这道题不会超时。&lt;br&gt;***刷题以来第一次碰到四层循环能通过的。。。***不看题解都不敢想像这个方法。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; imageSmoother(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; img) &amp;#123;
         int m,n;
@@ -453,7 +583,7 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; m, n, grid[i][j] &amp;lt;&amp;#x3D; 50&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;几个地方思考的时候容易卡住：&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;几个地方思考的时候容易卡住：&lt;/p&gt;
 &lt;p&gt;1️⃣&lt;strong&gt;不同值是什么意思？&lt;/strong&gt;&lt;br&gt;我一开始理解的是对于grid[i][j]，它的左对角线上和它不同的元素数量叫做topleft，右对角线上和它不同的元素数量叫做bottomright，然后就自以为大彻大悟☝️🤓&lt;del&gt;美美去打代码然后寄了&lt;/del&gt;。&lt;/p&gt;
 &lt;p&gt;个人理解中，实际上这里的不同值的意思是：对于这半拉对角线上的所有元素而言的&lt;strong&gt;种类&lt;/strong&gt;数量。&lt;/p&gt;
 &lt;ul&gt;
@@ -466,7 +596,7 @@ public:
 &lt;li&gt;新的不同值用myset.insert()添加&lt;/li&gt;
 &lt;li&gt;myset.size()获得不同值的数量&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-10&#34;&gt;&lt;a href=&#34;#完整代码-10&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; differenceOfDistinctValues(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; grid) &amp;#123;
         int m,n;
