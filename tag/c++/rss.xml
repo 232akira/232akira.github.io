@@ -10,13 +10,13 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>链表</category>
         <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
@@ -317,7 +317,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;53-最大子数组和-1&#34;&gt;&lt;a href=&#34;#53-最大子数组和-1&#34; class=&#34;headerlink&#34; title=&#34;53.最大子数组和&#34;&gt;&lt;/a&gt;53.最大子数组和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h1 id=&#34;2610-转换二维数组&#34;&gt;&lt;a href=&#34;#2610-转换二维数组&#34; class=&#34;headerlink&#34; title=&#34;2610.转换二维数组&#34;&gt;&lt;/a&gt;2610.转换二维数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums 。请你创建一个满足以下条件的二维数组：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;二维数组应该 只 包含数组 nums 中的元素。&lt;/li&gt;
@@ -439,6 +439,71 @@ public:
             &amp;#125;
         &amp;#125;
         return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;27171-对角线上不同值的数量差&#34;&gt;&lt;a href=&#34;#27171-对角线上不同值的数量差&#34; class=&#34;headerlink&#34; title=&#34;27171.对角线上不同值的数量差&#34;&gt;&lt;/a&gt;27171.对角线上不同值的数量差&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始、大小为 m x n 的二维矩阵 grid ，请你求解大小同样为 m x n 的答案矩阵 answer 。&lt;br&gt;矩阵 answer 中每个单元格 (r, c) 的值可以按下述方式进行计算：&lt;br&gt;令 topLeft[r][c] 为矩阵 grid 中单元格 (r, c) 左上角对角线上 不同值 的数量。&lt;br&gt;令 bottomRight[r][c] 为矩阵 grid 中单元格 (r, c) 右下角对角线上 不同值 的数量。&lt;br&gt;然后 answer[r][c] &amp;#x3D; |topLeft[r][c] - bottomRight[r][c]| 。&lt;br&gt;返回矩阵 answer 。&lt;br&gt;矩阵对角线 是从最顶行或最左列的某个单元格开始，向右下方向走到矩阵末尾的对角线。&lt;br&gt;如果单元格 (r1, c1) 和单元格 (r, c) 属于同一条对角线且 r1 &amp;lt; r ，则单元格 (r1, c1) 属于单元格 (r, c) 的左上对角线。类似地，可以定义右下对角线。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;m &amp;#x3D;&amp;#x3D; grid.length&lt;/li&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; grid[i].length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; m, n, grid[i][j] &amp;lt;&amp;#x3D; 50&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;几个地方思考的时候容易卡住：&lt;/p&gt;
+&lt;p&gt;1️⃣&lt;strong&gt;不同值是什么意思？&lt;/strong&gt;&lt;br&gt;我一开始理解的是对于grid[i][j]，它的左对角线上和它不同的元素数量叫做topleft，右对角线上和它不同的元素数量叫做bottomright，然后就自以为大彻大悟☝️🤓&lt;del&gt;美美去打代码然后寄了&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;个人理解中，实际上这里的不同值的意思是：对于这半拉对角线上的所有元素而言的&lt;strong&gt;种类&lt;/strong&gt;数量。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;比如全是1，那就1种，topleft&amp;#x3D;1；&lt;/li&gt;
+&lt;li&gt;如果有1有0，那就是2种，topleft&amp;#x3D;2。&lt;br&gt;右对角线同理.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2️⃣&lt;strong&gt;如何统计“不同值”？&lt;/strong&gt;&lt;br&gt;这里选用基于红黑树的std::set而不是之前我们常用的unordered_map。因为对于本题，只需要判断「是否不同」而不需要记录「不同的次数」。&lt;br&gt;对于set&lt;int&gt;myset 而言：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果rfind.find(grid[r][c])&amp;#x3D;&amp;#x3D;rfind.end()即为不同值&lt;/li&gt;
+&lt;li&gt;新的不同值用myset.insert()添加&lt;/li&gt;
+&lt;li&gt;myset.size()获得不同值的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; differenceOfDistinctValues(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; grid) &amp;#123;
+        int m,n;
+        m=grid.size();
+        n=grid[0].size();
+        vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; answer(m,vector&amp;lt;int&amp;gt;(n,0));
+        for(int i=0;i&amp;lt;m;i++)&amp;#123;
+            for(int j=0;j&amp;lt;n;j++)&amp;#123;
+                int lcnt,rcnt;
+                lcnt=rcnt=0;
+                set&amp;lt;int&amp;gt; lfind,rfind;
+                //左对角线
+                int r=i-1;
+                int c=j-1;
+                while(r&amp;gt;=0 &amp;amp;&amp;amp; c&amp;gt;=0)&amp;#123;
+                    if(「」)&amp;#123;
+                        lcnt++;
+                    &amp;#125;
+                    lfind.insert(grid[r][c]);
+                    r--;
+                    c--;
+                &amp;#125;
+                //右对角线
+                r=i+1;
+                c=j+1;
+                while(r&amp;lt;m &amp;amp;&amp;amp; c&amp;lt;n)&amp;#123;
+                    if(rfind.find(grid[r][c])==rfind.end())&amp;#123;
+                        rcnt++;
+                    &amp;#125;
+                    rfind.insert(grid[r][c]);
+                    r++;
+                    c++;
+                &amp;#125;
+                answer[i][j]=abs(lcnt-rcnt);
+            &amp;#125;
+        &amp;#125;
+        return answer;
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
