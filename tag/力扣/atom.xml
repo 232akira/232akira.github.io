@@ -7,13 +7,13 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -787,8 +787,8 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="链表" />
         <category term="力扣" />
+        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
@@ -902,27 +902,19 @@ public:
 &lt;td align=&#34;center&#34;&gt;非比较排序&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;其他总结&#34;&gt;&lt;a href=&#34;#其他总结&#34; class=&#34;headerlink&#34; title=&#34;其他总结&#34;&gt;&lt;/a&gt;其他总结&lt;/h3&gt;&lt;p&gt;1️⃣按稳定性分类&lt;br&gt;在排序前后，相等元素的相对顺序是否保持不变，如果相对顺序不变，则该排序算法是稳定的，否则是不稳定的。&lt;br&gt;&lt;strong&gt;🔹 稳定排序&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;其他总结&#34;&gt;&lt;a href=&#34;#其他总结&#34; class=&#34;headerlink&#34; title=&#34;其他总结&#34;&gt;&lt;/a&gt;其他总结&lt;/h3&gt;&lt;p&gt;1️⃣按稳定性分类&lt;br&gt;在排序前后，相等元素的相对顺序是否保持不变，如果相对顺序不变，则该排序算法是稳定的，否则是不稳定的。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;冒泡&lt;/li&gt;
-&lt;li&gt;插入&lt;/li&gt;
-&lt;li&gt;归并&lt;/li&gt;
-&lt;li&gt;基数&lt;br&gt;&lt;strong&gt;🔹 不稳定排序&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;选择&lt;/li&gt;
-&lt;li&gt;快速&lt;/li&gt;
-&lt;li&gt;堆&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;稳定排序&lt;/strong&gt;：冒泡&amp;#x2F;插入&amp;#x2F;归并&amp;#x2F;基数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不稳定排序&lt;/strong&gt;：选择&amp;#x2F;快速&amp;#x2F;堆&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2️⃣排序算法优劣的&lt;a href=&#34;https://blog.csdn.net/2203_75646004/article/details/135172906&#34;&gt;衡量标准&lt;/a&gt;：&lt;br&gt;🔹 &lt;strong&gt;时间复杂度&lt;/strong&gt; 排序速度（比较&amp;amp;移动次数）&lt;br&gt;🔹 &lt;strong&gt;空间复杂度&lt;/strong&gt; 占内存辅助空间的大小&lt;br&gt;🔹 &lt;strong&gt;稳定性&lt;/strong&gt; A与B的关键字相等，排序后A、B的先后次序保持不变&lt;/p&gt;
-&lt;p&gt;3️⃣按排序类别分类&lt;br&gt;&lt;strong&gt;🔹 插入&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3️⃣按排序类别分类&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;插入&lt;/li&gt;
-&lt;li&gt;希尔&lt;br&gt;&lt;strong&gt;🔹 选择&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;选择&lt;/li&gt;
-&lt;li&gt;堆&lt;br&gt;&lt;strong&gt;🔹 交换&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;冒泡&lt;/li&gt;
-&lt;li&gt;快速&lt;br&gt;&lt;strong&gt;🔹 归并&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;归并&lt;br&gt;&lt;strong&gt;🔹 基数&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;基数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;插入&lt;/strong&gt;：插入&amp;#x2F;希尔&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;选择&lt;/strong&gt;：选择&amp;#x2F;堆&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;交换&lt;/strong&gt;：冒泡&amp;#x2F;快速&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;归并&lt;/strong&gt;：归并&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;基数&lt;/strong&gt;：基数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;

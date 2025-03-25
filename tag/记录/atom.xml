@@ -7,13 +7,13 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -243,49 +243,7 @@
         <id>https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</id>
         <title>游戏开发笔记</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/15/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;p&gt;主要作品集会基于以下两个方向：&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;🛠 方向1：引擎开发（Engine Development）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt; &lt;strong&gt;目标岗位&lt;/strong&gt;：游戏引擎开发、游戏优化、底层系统开发&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1️⃣重点&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;优化 &amp;amp; 渲染管线定制&lt;/li&gt;
-&lt;li&gt;自定义渲染器 &amp;#x2F; 后处理&lt;/li&gt;
-&lt;li&gt;引擎扩展&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;2️⃣视频展示思路&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;项目标题 + 目标（比如 “基于 Unity SRP 自定义渲染管线”）&lt;/li&gt;
-&lt;li&gt;功能展示（比如 自定义的 Forward+ 渲染，或 Unity &amp;#x2F; Unreal 渲染器优化）&lt;/li&gt;
-&lt;li&gt;代码 &amp;#x2F; 技术解析（可以穿插代码片段，比如如何实现优化）&lt;/li&gt;
-&lt;li&gt;性能对比（前后效果对比，FPS对比）&lt;/li&gt;
-&lt;li&gt;总结技术要点（如 “使用 Compute Shader 实现 Tile-based Culling 提升性能”）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3️⃣推荐作品&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;基于 Unity &amp;#x2F; Unreal 实现一个小型渲染框架（比如基于URP &amp;#x2F; HDRP改造）&lt;/li&gt;
-&lt;li&gt;做一个渲染优化 Demo（比如 Shadow Cascading &amp;#x2F; Foveated Rendering）&lt;/li&gt;
-&lt;li&gt;实现实时 GI &amp;#x2F; 体积雾 &amp;#x2F; 后处理效果&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;🎨 方向2：图形开发（Graphics Programming）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;strong&gt;目标岗位&lt;/strong&gt;：图形开发工程师、Shader 开发、图形优化&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1️⃣重点&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;高质量 Shader 开发（HLSL &amp;#x2F; GLSL）&lt;/li&gt;
-&lt;li&gt;光照模型 &amp;#x2F; PBR &amp;#x2F; 体积渲染&lt;/li&gt;
-&lt;li&gt;计算着色器 &amp;#x2F; GPGPU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;2️⃣视频展示思路&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;作品名称 + 目标（如 “基于 GLSL 实现 PBR 渲染”）&lt;/li&gt;
-&lt;li&gt;Shader 效果展示（可以从多个角度转动模型，突出材质变化）&lt;/li&gt;
-&lt;li&gt;代码 &amp;amp; 技术解析（穿插代码，讲解 Shader 关键部分）&lt;/li&gt;
-&lt;li&gt;效果对比（基础 Blinn-Phong vs. PBR）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3️⃣推荐作品&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;自定义 PBR Shader（展示不同的 Roughness、Metallic、AO 效果）&lt;/li&gt;
-&lt;li&gt;水面 &amp;#x2F; 火焰 &amp;#x2F; 体积光 Shader（使用屏幕空间或计算着色器实现）&lt;/li&gt;
-&lt;li&gt;基于 Shader Toy &amp;#x2F; Unity 实现屏幕后处理（如 Bloom, Motion Blur, SSAO）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;
+        <content type="html">&lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;渲染管线
 摄像机
 光照
@@ -304,7 +262,7 @@ Graphics performance and profiling
 &lt;p&gt;虽然自己程序方面更擅长C++而且现在用UE也是个趋势，但是Unity普及度更高而且教程更多，UE蓝图也摒弃了传统的纯程序开发路线，所以打好这方面基础是现在最需要做的。如果有任何建议和想法需要交流欢迎联系我！不断试错不断学习中🤗&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;笔记内容90%来自视频原话，其他内容个人补充，欢迎勘误。&lt;br&gt;基本白嫖b站佬们的教程（先三连之后看的！）🤟参考教程点击标题跳转&lt;/p&gt;
-&lt;h1 id=&#34;项目实战-Uinty&#34;&gt;&lt;a href=&#34;#项目实战-Uinty&#34; class=&#34;headerlink&#34; title=&#34;项目实战-Uinty&#34;&gt;&lt;/a&gt;项目实战-Uinty&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;Shader代码基本架构&#34;&gt;&lt;a href=&#34;#Shader代码基本架构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本架构&#34;&gt;&lt;/a&gt;Shader代码基本架构&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;1️⃣&amp;quot;
+&lt;h1 id=&#34;项目实战-Uinty&#34;&gt;&lt;a href=&#34;#项目实战-Uinty&#34; class=&#34;headerlink&#34; title=&#34;项目实战-Uinty&#34;&gt;&lt;/a&gt;项目实战-Uinty&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;PART1&#34;&gt;&lt;a href=&#34;#PART1&#34; class=&#34;headerlink&#34; title=&#34;PART1&#34;&gt;&lt;/a&gt;PART1&lt;/h3&gt;&lt;h4 id=&#34;Shader代码基本架构&#34;&gt;&lt;a href=&#34;#Shader代码基本架构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本架构&#34;&gt;&lt;/a&gt;Shader代码基本架构&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;1️⃣&amp;quot;
 &amp;#123;
     Properties
     &amp;#123;
@@ -339,15 +297,51 @@ Graphics performance and profiling
         _Texture(&amp;quot;Texture&amp;quot;,2D)=&amp;quot;black&amp;quot;&amp;#123;&amp;#125;
     &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;3️⃣&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4️⃣主要Shader代码部分&lt;/strong&gt;&lt;br&gt;可以理解成一个Pass等于一个完整的GPU渲染管线，SubShader里可以写多个Pass，写几个代表会被重复渲染几次，而且每次调用的Shader都不一样。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3️⃣主要Shader代码部分&lt;/strong&gt;&lt;br&gt;可以理解成一个Pass等于一个完整的GPU渲染管线，SubShader里可以写多个Pass，写几个代表会被重复渲染几次，而且每次调用的Shader都不一样。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            CGPROGRAM
             //中间的任何代码都属于unity cg的范围
             ENDCG
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;👉️这里对于&lt;code&gt;float&lt;/code&gt;类型&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/SL-VertexProgramInputs.html&#34;&gt;补充&lt;/a&gt;一点：&lt;br&gt;‌&lt;code&gt;float‌&lt;/code&gt;：用于表示单个浮点数，常用于颜色通道、位置坐标等。&lt;br&gt;‌&lt;code&gt;float2‌&lt;/code&gt;（Vector2）：用于表示二维向量，如二维坐标、UV坐标等。&lt;br&gt;‌&lt;code&gt;float3‌&lt;/code&gt;（Vector3）：用于表示三维向量，如位置、法线等。&lt;br&gt;‌&lt;code&gt;float4‌&lt;/code&gt;（Vector4）：用于表示四维向量，如颜色、四元数等。&lt;/p&gt;
-&lt;p&gt;👉️在unity中，一个模型对多有四套UV&lt;/p&gt;
-&lt;h3 id=&#34;GPU渲染管线&#34;&gt;&lt;a href=&#34;#GPU渲染管线&#34; class=&#34;headerlink&#34; title=&#34;GPU渲染管线&#34;&gt;&lt;/a&gt;GPU渲染管线&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;基本结构&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;👉️在unity中，一个模型最多有四套UV&lt;/p&gt;
+&lt;p&gt;👉️float&amp;#x2F;half&amp;#x2F;fixed的区别&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;类型&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;位宽&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;适用范围&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;常见用途&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;精度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;现代GPU支持情况&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;float&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32-bit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;位置、物理计算、PBR&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;高&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;强烈推荐&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;half&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16-bit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;中&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;颜色计算、法线、屏幕后处理&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;中等&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;推荐（移动端优化）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;fixed&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10-bit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;小&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;颜色计算（老设备）&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;低&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;几乎淘汰&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h4 id=&#34;GPU渲染管线&#34;&gt;&lt;a href=&#34;#GPU渲染管线&#34; class=&#34;headerlink&#34; title=&#34;GPU渲染管线&#34;&gt;&lt;/a&gt;GPU渲染管线&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;基本结构&lt;/strong&gt;：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;【模型数据】 -&amp;gt; 【顶点Shader】 -&amp;gt; 【图元装配及光栅化】 -&amp;gt; 【片元Shader】 -&amp;gt; 【输出合并】
             |-----------------------------GPU渲染管线-----------------------------|
 &lt;/code&gt;&lt;/pre&gt;
@@ -370,9 +364,100 @@ Graphics performance and profiling
 &lt;ul&gt;
 &lt;li&gt;输出到对应的帧缓冲区&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;一个完整的Shader通常由顶点Shader和片段Shader共同组成。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;完整Shader代码&#34;&gt;&lt;a href=&#34;#完整Shader代码&#34; class=&#34;headerlink&#34; title=&#34;完整Shader代码&#34;&gt;&lt;/a&gt;完整Shader代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;
+&lt;p&gt;*** 一个完整的Shader通常由顶点Shader和片段Shader共同组成。 ***&lt;/p&gt;
+&lt;h4 id=&#34;完整Shader代码&#34;&gt;&lt;a href=&#34;#完整Shader代码&#34; class=&#34;headerlink&#34; title=&#34;完整Shader代码&#34;&gt;&lt;/a&gt;完整Shader代码&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;// Upgrade NOTE: replaced &amp;#39;mul(UNITY_MATRIX_MVP,*)&amp;#39; with &amp;#39;UnityObjectToClipPos(*)&amp;#39;
+// Upgrade NOTE: replaced &amp;#39;_Object2World&amp;#39; with &amp;#39;unity_ObjectToWorld&amp;#39;
+Shader &amp;quot;CS0102/shader&amp;quot;
+&amp;#123;
+    Properties
+    &amp;#123;
+        // 常用的五种数据类型
+        _Float(&amp;quot;Float&amp;quot;, Float) = 0.0
+        _Range(&amp;quot;Range&amp;quot;, Range(0.0, 1.0)) = 0.0
+        _Vector(&amp;quot;Vector&amp;quot;, Vector) = (1,1,1,1)
+        _Color(&amp;quot;Color&amp;quot;, Color) = (0.5,0.5,0.5,0.5)
+        //_Texture(&amp;quot;Texture&amp;quot;, 2D) = &amp;quot;black&amp;quot; &amp;#123;&amp;#125; 
+        _MainTex(&amp;quot;MainTex&amp;quot;,2D)=&amp;quot;black&amp;quot;&amp;#123;&amp;#125;
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            // Shader 主要代码部分
+            CGPROGRAM
+            #pragma vertex vert // 指定一个顶点 Shader：vert
+            #pragma fragment frag // 指定一个片元 Shader：frag
+            #include &amp;quot;UnityCG.cginc&amp;quot; // 头文件
+
+            // 从 CPU 端获取模型数据
+            struct appdata &amp;#123;
+                float4 vertex : POSITION;  // 模型顶点坐标
+                // 第一套uv，共4个可用（TEXCOORD0~TEXCOORD3）
+                float2 uv : TEXCOORD0; 
+                float3 normal : NORMAL;    // 法线
+                float4 color : COLOR;      // 顶点色
+            &amp;#125;;
+            // 输出结构体定义
+            struct v2f &amp;#123;
+                float4 pos : SV_POSITION;
+                //通用储存器（插值器），共16个可用（TEXCOORD0~TEXCOORD15）
+                float2 uv:TEXCOORD0;
+            &amp;#125;;
+            float4 _Color;
+            sampler2D _MainTex;
+            float4 _MainTex_ST;//动态链接四个参数
+            // 顶点 Shader
+            v2f vert(appdata v) &amp;#123;
+                v2f o;
+                //float4 pos_world = mul(unity_ObjectToWorld, v.vertex); // 模型空间转世界空间
+                //float4 pos_clip = mul(UNITY_MATRIX_VP, pos_world); // 世界空间直接变换到裁剪空间
+                //o.pos = pos_clip;
+                //或者直接合成一个mvp操作
+                o.pos=UnityObjectToClipPos(v.vertex);
+                //输出uv值
+                //o.uv=v.uv;
+                o.uv=v.uv*_MainTex_ST.xy+_MainTex_ST.zw;
+                return o;
+            &amp;#125;
+            // 片元 Shader
+            float4 frag(v2f i) : SV_Target &amp;#123;
+                //贴图采样
+                float4 col=tex2D(_MainTex,i.uv);
+                return col;
+            &amp;#125;
+            ENDCG
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;PART2&#34;&gt;&lt;a href=&#34;#PART2&#34; class=&#34;headerlink&#34; title=&#34;PART2&#34;&gt;&lt;/a&gt;PART2&lt;/h3&gt;&lt;h4 id=&#34;背面剔除（Backface-Culling）&#34;&gt;&lt;a href=&#34;#背面剔除（Backface-Culling）&#34; class=&#34;headerlink&#34; title=&#34;背面剔除（Backface Culling）&#34;&gt;&lt;/a&gt;背面剔除（Backface Culling）&lt;/h4&gt;&lt;p&gt;背面剔除在硬件阶段、NDC空间之后进行，Unity默认使用背面剔除（只渲染正面）。&lt;br&gt;👉️Shader代码控制:直接显示出渲染结果&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            Cull Off  //1️⃣不剔除
+            Cull Back //2️⃣默认剔除背面
+            Cull Front//3️⃣剔除正面
+            CGPROGRAM
+            ...
+            ENDCG
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;👉️材质球控制：物体材质球处出现可选项：Off&amp;#x2F;Front&amp;#x2F;Back&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+        [Enum(UnityEngine.Rendering.CullMode)]_CullMode(&amp;quot;CullMode&amp;quot;,float)=2
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            Cull [_CullMode]
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;待续&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;其他参考链接&#34;&gt;&lt;a href=&#34;#其他参考链接&#34; class=&#34;headerlink&#34; title=&#34;其他参考链接&#34;&gt;&lt;/a&gt;其他参考链接&lt;/h1&gt;&lt;p&gt;反射探针&lt;br&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/438022045&#34;&gt;https://zhuanlan.zhihu.com/p/438022045&lt;/a&gt;&lt;br&gt;三大Shader编程语言&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_56516170/article/details/135266277&#34;&gt;https://blog.csdn.net/weixin_56516170/article/details/135266277&lt;/a&gt;&lt;br&gt;《Shader入门精要》源代码&lt;br&gt;&lt;a href=&#34;https://github.com/candycat1992/Unity_Shaders_Book&#34;&gt;https://github.com/candycat1992/Unity_Shaders_Book&lt;/a&gt;&lt;br&gt;法线贴图&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49427945/article/details/136458398&#34;&gt;https://blog.csdn.net/weixin_49427945/article/details/136458398&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&#34;&gt;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="记录" />
