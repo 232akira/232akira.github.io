@@ -4,15 +4,15 @@
     <title>Per aspera ad astra • Posts by &#34;c++&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-04T11:15:05.000Z</updated>
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
@@ -803,9 +803,39 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2829-k-avoiding数组的最小总和&#34;&gt;&lt;a href=&#34;#2829-k-avoiding数组的最小总和&#34; class=&#34;headerlink&#34; title=&#34;2829.k-avoiding数组的最小总和&#34;&gt;&lt;/a&gt;2829.k-avoiding数组的最小总和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个整数 n 和 k 。&lt;br&gt;对于一个由 不同 正整数组成的数组，如果其中不存在任何求和等于 k 的不同元素对，则称其为 k-avoiding 数组。&lt;br&gt;返回长度为 n 的 k-avoiding 数组的可能的最小总和。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; n, k &amp;lt;&amp;#x3D; 50&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数组总和最小&lt;/strong&gt;&lt;br&gt;从&lt;code&gt;1&lt;/code&gt;开始逐步添加符合条件的数字，直到数组长度达到&lt;code&gt;n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免和为k&lt;/strong&gt;&lt;br&gt;尝试加入&lt;code&gt;x&lt;/code&gt;时，确保数组中不存在&lt;code&gt;k-x&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimumSum(int n, int k) &amp;#123;
+        vector&amp;lt;int&amp;gt; ans;
+        unordered_set&amp;lt;int&amp;gt; used;
+        int num=1;
+        while(ans.size()&amp;lt;n)&amp;#123;
+            if(used.find(k-num)==used.end())&amp;#123;
+                ans.push_back(num);
+                used.insert(num);
+            &amp;#125;
+            num++;
+        &amp;#125;
+        return accumulate(ans.begin(),ans.end(),0);
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="算法" />
         <category term="C++" />
+        <category term="算法" />
         <updated>2025-03-04T05:41:46.000Z</updated>
     </entry>
     <entry>
@@ -1342,8 +1372,8 @@ public:
 返回 b;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="算法" />
         <category term="C++" />
+        <category term="算法" />
         <category term="记录" />
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>
