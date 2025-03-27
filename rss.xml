@@ -8,15 +8,15 @@
         <pubDate>Sun, 23 Mar 2025 19:22:34 +0800</pubDate>
         <lastBuildDate>Sun, 23 Mar 2025 19:22:34 +0800</lastBuildDate>
         <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
+        <category>链表</category>
         <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>链表</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
@@ -462,8 +462,107 @@ Shader &amp;quot;CS0102/shader&amp;quot;
         &amp;#125;
     &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;待续&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&#34;其他参考链接&#34;&gt;&lt;a href=&#34;#其他参考链接&#34; class=&#34;headerlink&#34; title=&#34;其他参考链接&#34;&gt;&lt;/a&gt;其他参考链接&lt;/h1&gt;&lt;p&gt;反射探针&lt;br&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/438022045&#34;&gt;https://zhuanlan.zhihu.com/p/438022045&lt;/a&gt;&lt;br&gt;三大Shader编程语言&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_56516170/article/details/135266277&#34;&gt;https://blog.csdn.net/weixin_56516170/article/details/135266277&lt;/a&gt;&lt;br&gt;《Shader入门精要》源代码&lt;br&gt;&lt;a href=&#34;https://github.com/candycat1992/Unity_Shaders_Book&#34;&gt;https://github.com/candycat1992/Unity_Shaders_Book&lt;/a&gt;&lt;br&gt;法线贴图&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49427945/article/details/136458398&#34;&gt;https://blog.csdn.net/weixin_49427945/article/details/136458398&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&#34;&gt;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;PART3-纹理映射&#34;&gt;&lt;a href=&#34;#PART3-纹理映射&#34; class=&#34;headerlink&#34; title=&#34;PART3 纹理映射&#34;&gt;&lt;/a&gt;PART3 纹理映射&lt;/h3&gt;&lt;h4 id=&#34;正面纹理采样设定&#34;&gt;&lt;a href=&#34;#正面纹理采样设定&#34; class=&#34;headerlink&#34; title=&#34;正面纹理采样设定&#34;&gt;&lt;/a&gt;正面纹理采样设定&lt;/h4&gt;&lt;p&gt;这里用XY坐标值采样贴图，即uv按模型本身的XY展开。&lt;br&gt;代码如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            struct v2f &amp;#123;
+                ...
+                float2 pos_uv:TEXCOORD1;
+            &amp;#125;;
+            v2f vert(appdata v) &amp;#123;
+                ...
+                o.pos_uv=v.vertex.xy*_MainTex_ST.xy+_MainTex_ST.zw;
+                return o;
+            &amp;#125;
+            float4 frag(v2f i) : SV_Target &amp;#123;
+                float4 col=tex2D(_MainTex,i.pos_uv);
+                return col;
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;👉️补充：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正面 XY平面&lt;/li&gt;
+&lt;li&gt;侧面 ZY平面&lt;/li&gt;
+&lt;li&gt;俯视 XZ平面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总结：纹理映射的来源不一定是单纯的o.uv的uv坐标，也可以是上面写的o.pos_uv（世界坐标pos_world也可）这种自己设定的值。&lt;/p&gt;
+&lt;p&gt;另，如果想三平面都能够完美覆盖涉及到：&lt;strong&gt;三平面映射&lt;/strong&gt;。up在此链接中有提到，所以查了其他教程补充在这里。&lt;/p&gt;
+&lt;h4 id=&#34;三平面映射&#34;&gt;&lt;a href=&#34;#三平面映射&#34; class=&#34;headerlink&#34; title=&#34;三平面映射&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/opus/814269127492370548&#34;&gt;三平面映射&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;**目的：**防止”纹理拉伸”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;防止纹理拉伸传统思路可以手动展开uv坐标以贴合模型起伏，但是难以适应实时渲染的要求，因此引入这一方法：三平面映射。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;p&gt;**应用：**普通网格地形、瀑布、程序化建模的地形、水池的焦散效果&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;实现步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;根据顶点的世界空间坐标计算对应的UV坐标&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;//取每个片元在三个方向的uv坐标
+half2 yUV=IN.worldPos.xz/_TextureScale;
+half2 xUV=IN.worldPos.yz/_TextureScale;
+half2 zUV=IN.worldPos.xy/_TextureScale;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;从x&amp;#x2F;y&amp;#x2F;z三个方向对漫反射贴图进行采样&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;half3 yDiff=tex2D(_DiffuseMap,yUV);
+half3 xDiff=tex2D(_DiffuseMap,xUV);
+half3 zDiff=tex2D(_DiffuseMap,zUV);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;调整三平面边界过渡的锐利度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;//用法线方向作为从三个方向采样的权重值
+//额外解决纹理接缝问题（法线是连续过渡的）
+half3 blendWeights=pow(abs(In.worldNormal),_TriplanarBlendSharpness);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;将混合权重值单位化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;//第三步pow锐化三平面边界后，得到的法线值可能偏小
+//重新单位化
+blendWeights=blendWeights/(blendWeights.x+blendWeights.y+blendWeights.z);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;按三个面的混合权重，将采样颜色混合在一起&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;//根据混合系数混合
+p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更多相关内容&lt;a href=&#34;https://www.bilibili.com/video/BV1AM4y1Y78D/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;戳此&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;渲染扭曲问题&#34;&gt;&lt;a href=&#34;#渲染扭曲问题&#34; class=&#34;headerlink&#34; title=&#34;渲染扭曲问题&#34;&gt;&lt;/a&gt;渲染扭曲问题&lt;/h4&gt;&lt;p&gt;打印uv坐标：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            float4 frag(v2f i) : SV_Target &amp;#123;
+                float4 col=tex2D(_MainTex,i.uv);
+                return float4(i.uv,0.0,0.0);
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;若uv存在不连续的情况，则会导致贴图采样时引起纹理图像的失真问题。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;👉️为什么会有uv不连续的现象？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;光栅化过程产生。光栅化时根据三角面的进行，每个三角按照每个三角面进行一个插值。而对于模型而言，其三角网排列就会造成一定程度上的问题。&lt;br&gt;&lt;strong&gt;解决方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uv展开并缩放到0~1之间&lt;/li&gt;
+&lt;li&gt;模型加面&lt;/li&gt;
+&lt;li&gt;手动在片元shader中重新计算uv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;PART4-Alpha-test&#34;&gt;&lt;a href=&#34;#PART4-Alpha-test&#34; class=&#34;headerlink&#34; title=&#34;PART4 Alpha-test&#34;&gt;&lt;/a&gt;PART4 Alpha-test&lt;/h3&gt;&lt;p&gt;对于&lt;strong&gt;输出合并&lt;/strong&gt;阶段，可以细分为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    【片元数据】
+    Color,Depth
+         ↓
+   【Alpha测试】
+         ↓
+    【模板测试】
+   Stencil Test
+         ↓
+    【深度测试】
+    Depth test
+         ↓
+      【混合】
+     Blending
+         ↓
+    【帧缓冲区】
+Color,Depth,Stencil
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;其他参考链接&#34;&gt;&lt;a href=&#34;#其他参考链接&#34; class=&#34;headerlink&#34; title=&#34;其他参考链接&#34;&gt;&lt;/a&gt;其他参考链接&lt;/h1&gt;&lt;p&gt;反射探针：&lt;br&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/438022045&#34;&gt;https://zhuanlan.zhihu.com/p/438022045&lt;/a&gt;&lt;br&gt;三大Shader编程语言：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_56516170/article/details/135266277&#34;&gt;https://blog.csdn.net/weixin_56516170/article/details/135266277&lt;/a&gt;&lt;br&gt;《Shader入门精要》源代码&lt;br&gt;&lt;a href=&#34;https://github.com/candycat1992/Unity_Shaders_Book&#34;&gt;https://github.com/candycat1992/Unity_Shaders_Book&lt;/a&gt;&lt;br&gt;法线贴图：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49427945/article/details/136458398&#34;&gt;https://blog.csdn.net/weixin_49427945/article/details/136458398&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&#34;&gt;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -471,10 +570,10 @@ Shader &amp;quot;CS0102/shader&amp;quot;
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
             <category>算法</category>
-            <category>字符串</category>
-            <category>滑动窗口</category>
             <category>力扣</category>
             <category>哈希表</category>
+            <category>字符串</category>
+            <category>滑动窗口</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
@@ -828,8 +927,8 @@ public:
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
             <category>算法</category>
-            <category>力扣</category>
             <category>链表</category>
+            <category>力扣</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
