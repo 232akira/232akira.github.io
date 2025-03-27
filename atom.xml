@@ -4,15 +4,15 @@
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-23T11:22:34.000Z</updated>
+    <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
     <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
@@ -234,8 +234,8 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 </content>
-        <category term="力扣" />
         <category term="算法" />
+        <category term="力扣" />
         <category term="记录" />
         <updated>2025-03-17T07:29:31.000Z</updated>
     </entry>
@@ -813,11 +813,11 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="力扣" />
-        <category term="哈希表" />
         <category term="算法" />
         <category term="字符串" />
         <category term="滑动窗口" />
+        <category term="力扣" />
+        <category term="哈希表" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
@@ -1030,8 +1030,8 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="力扣" />
         <category term="算法" />
+        <category term="力扣" />
         <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
@@ -2385,9 +2385,77 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2712-使所有字符相等的最小成本&#34;&gt;&lt;a href=&#34;#2712-使所有字符相等的最小成本&#34; class=&#34;headerlink&#34; title=&#34;2712.使所有字符相等的最小成本&#34;&gt;&lt;/a&gt;2712.使所有字符相等的最小成本&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始、长度为 n 的二进制字符串 s ，你可以对其执行两种操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 0 到下标 i（包括下标 0 和下标 i ）的所有字符，成本为 i + 1 。&lt;/li&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 i 到下标 n - 1（包括下标 i 和下标 n - 1 ）的所有字符，成本为 n - i 。&lt;br&gt;返回使字符串内所有字符 相等 需要的 最小成本 。&lt;br&gt;反转字符意味着：如果原来的值是 ‘0’ ，则反转后值变为 ‘1’ ，反之亦然。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;#x3D;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘0’ 或 ‘1’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;所有字符相等&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;全&lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全&lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;对于&lt;code&gt;i&lt;/code&gt;，反转的成本&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;反转前缀&lt;code&gt;[0,i]&lt;/code&gt;，成本&lt;code&gt;i+1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;反转后缀&lt;code&gt;[i,n-1]&lt;/code&gt;，成本&lt;code&gt;n-i&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;核心问题&lt;/strong&gt;&lt;br&gt;对每个i，求出 min（s全1）和min（s全0），再对二者求min。&lt;br&gt;说人话就是：从0开始遍历，如果&lt;code&gt;s[i] ≠ s[i+1]&lt;/code&gt;，那么我们此时有两种选择：反转前缀[0,i] 或 反转后缀[i,n-1]。对于每一个这样需要反转的i，我们选择反转前缀还是后缀的原则就是&lt;strong&gt;哪个成本小选哪个&lt;/strong&gt;。最后得到的总成本也必然最小。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉️难理解的部分：&lt;code&gt;min(i,n-i)&lt;/code&gt; 或 &lt;code&gt;min(i+1,n-i-1)&lt;/code&gt;。&lt;br&gt;个人理解是因为对于此算法，实际上的分界点在s[i]和s[i+1]之间。也就是说：修正分界点需要做的是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;反转0~i&lt;/li&gt;
+&lt;li&gt;反转i+1~n-1&lt;br&gt;这样求得的min才能保证达到我们“最小成本”的目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️这里学到一个小知识：s.size()返回的类型为&lt;strong&gt;无符号整数（unsigned int）&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;size_t&lt;/code&gt;无符号整型 (unsigned)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++标准库中专门用于表示数组、容器的大小或索引的类型&lt;/li&gt;
+&lt;li&gt;不能表示负数&lt;/li&gt;
+&lt;li&gt;在 64 位系统上，size_t通常是unsigned long，比int更大，可表示更大的范围。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;有符号整型 (signed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++默认的整数类型，可以存储正数、负数和 0。&lt;/li&gt;
+&lt;li&gt;取值范围一般是 [-2³¹, 2³¹ - 1]（32位系统） 或 [-2⁶³, 2⁶³ - 1]（64位系统）&lt;br&gt;&lt;em&gt;&lt;strong&gt;更适合存储一般的计数、索引、数学运算，而size_t主要用于数组大小和内存管理。&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    long long minimumCost(string s) &amp;#123;
+        long long int sum=0;
+        int n=s.size();
+        for(int i=0;i&amp;lt;n-1;i++)&amp;#123;
+            if(s[i]!=s[i+1])&amp;#123;
+                sum+=min(i+1,n-i-1);
+            &amp;#125;
+        &amp;#125;
+        return sum;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="C++" />
         <category term="算法" />
+        <category term="C++" />
         <updated>2025-03-04T05:41:46.000Z</updated>
     </entry>
     <entry>
@@ -2924,8 +2992,8 @@ public:
 返回 b;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="C++" />
         <category term="算法" />
+        <category term="C++" />
         <category term="记录" />
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>

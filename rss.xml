@@ -7,15 +7,15 @@
         <language>zh-CN</language>
         <pubDate>Sun, 23 Mar 2025 19:22:34 +0800</pubDate>
         <lastBuildDate>Sun, 23 Mar 2025 19:22:34 +0800</lastBuildDate>
+        <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>链表</category>
         <category>记录</category>
         <category>Markdown</category>
@@ -43,8 +43,8 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>算法备忘录</title>
             <link>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
@@ -470,11 +470,11 @@ Shader &amp;quot;CS0102/shader&amp;quot;
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
-            <category>哈希表</category>
             <category>算法</category>
             <category>字符串</category>
             <category>滑动窗口</category>
+            <category>力扣</category>
+            <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
@@ -827,8 +827,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -2187,8 +2187,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>专题2️⃣ 贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
@@ -2391,14 +2391,82 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2712-使所有字符相等的最小成本&#34;&gt;&lt;a href=&#34;#2712-使所有字符相等的最小成本&#34; class=&#34;headerlink&#34; title=&#34;2712.使所有字符相等的最小成本&#34;&gt;&lt;/a&gt;2712.使所有字符相等的最小成本&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始、长度为 n 的二进制字符串 s ，你可以对其执行两种操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 0 到下标 i（包括下标 0 和下标 i ）的所有字符，成本为 i + 1 。&lt;/li&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 i 到下标 n - 1（包括下标 i 和下标 n - 1 ）的所有字符，成本为 n - i 。&lt;br&gt;返回使字符串内所有字符 相等 需要的 最小成本 。&lt;br&gt;反转字符意味着：如果原来的值是 ‘0’ ，则反转后值变为 ‘1’ ，反之亦然。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;#x3D;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘0’ 或 ‘1’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;所有字符相等&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;全&lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全&lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;对于&lt;code&gt;i&lt;/code&gt;，反转的成本&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;反转前缀&lt;code&gt;[0,i]&lt;/code&gt;，成本&lt;code&gt;i+1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;反转后缀&lt;code&gt;[i,n-1]&lt;/code&gt;，成本&lt;code&gt;n-i&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;核心问题&lt;/strong&gt;&lt;br&gt;对每个i，求出 min（s全1）和min（s全0），再对二者求min。&lt;br&gt;说人话就是：从0开始遍历，如果&lt;code&gt;s[i] ≠ s[i+1]&lt;/code&gt;，那么我们此时有两种选择：反转前缀[0,i] 或 反转后缀[i,n-1]。对于每一个这样需要反转的i，我们选择反转前缀还是后缀的原则就是&lt;strong&gt;哪个成本小选哪个&lt;/strong&gt;。最后得到的总成本也必然最小。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉️难理解的部分：&lt;code&gt;min(i,n-i)&lt;/code&gt; 或 &lt;code&gt;min(i+1,n-i-1)&lt;/code&gt;。&lt;br&gt;个人理解是因为对于此算法，实际上的分界点在s[i]和s[i+1]之间。也就是说：修正分界点需要做的是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;反转0~i&lt;/li&gt;
+&lt;li&gt;反转i+1~n-1&lt;br&gt;这样求得的min才能保证达到我们“最小成本”的目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️这里学到一个小知识：s.size()返回的类型为&lt;strong&gt;无符号整数（unsigned int）&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;size_t&lt;/code&gt;无符号整型 (unsigned)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++标准库中专门用于表示数组、容器的大小或索引的类型&lt;/li&gt;
+&lt;li&gt;不能表示负数&lt;/li&gt;
+&lt;li&gt;在 64 位系统上，size_t通常是unsigned long，比int更大，可表示更大的范围。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;有符号整型 (signed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++默认的整数类型，可以存储正数、负数和 0。&lt;/li&gt;
+&lt;li&gt;取值范围一般是 [-2³¹, 2³¹ - 1]（32位系统） 或 [-2⁶³, 2⁶³ - 1]（64位系统）&lt;br&gt;&lt;em&gt;&lt;strong&gt;更适合存储一般的计数、索引、数学运算，而size_t主要用于数组大小和内存管理。&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    long long minimumCost(string s) &amp;#123;
+        long long int sum=0;
+        int n=s.size();
+        for(int i=0;i&amp;lt;n-1;i++)&amp;#123;
+            if(s[i]!=s[i+1])&amp;#123;
+                sum+=min(i+1,n-i-1);
+            &amp;#125;
+        &amp;#125;
+        return sum;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>C++</category>
             <category>算法</category>
+            <category>C++</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
