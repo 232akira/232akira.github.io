@@ -5,6 +5,8 @@
     <link href="https://232akira.github.io" />
     <updated>2025-03-12T10:20:15.000Z</updated>
     <category term="算法" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
@@ -12,8 +14,6 @@
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -367,10 +367,10 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="力扣" />
-        <category term="哈希表" />
         <category term="字符串" />
         <category term="滑动窗口" />
+        <category term="力扣" />
+        <category term="哈希表" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
@@ -899,6 +899,45 @@ public:
         return cnt;
     &amp;#125;
 &amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2255-统计是给定字符串前缀的字符串数目-1&#34;&gt;&lt;a href=&#34;#2255-统计是给定字符串前缀的字符串数目-1&#34; class=&#34;headerlink&#34; title=&#34;2255.统计是给定字符串前缀的字符串数目&#34;&gt;&lt;/a&gt;2255.统计是给定字符串前缀的字符串数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;br&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在字符串中选出一个下标 i ，并使 c 为字符串下标 i 处的字符。并在 i 左侧（如果有）和 右侧（如果有）各 删除 一个距离 i 最近 的字符 c 。&lt;br&gt;请你通过执行上述操作任意次，使 s 的长度 最小化 。&lt;br&gt;返回一个表示 最小化 字符串的长度的整数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 仅由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;题目这么长，其实就是字符串&lt;strong&gt;去重&lt;/strong&gt;😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;我的方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimizedStringLength(string s) &amp;#123;
+        unordered_set&amp;lt;int&amp;gt; num;
+        for(char ch:s)&amp;#123;
+            if(num.find(ch)==num.end())&amp;#123;
+                num.insert(ch);
+            &amp;#125;
+        &amp;#125;
+        return num.size();
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;更简洁的方法&lt;br&gt;看到&lt;a href=&#34;https://leetcode.cn/problems/minimize-string-length/solutions/2296066/o1-kong-jian-wei-yun-suan-xie-fa-pythonj-7t4p/?envType=daily-question&amp;envId=2025-03-28&#34;&gt;题解&lt;/a&gt;，发现也可以直接写成一行：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unordered_set&amp;lt;char&amp;gt;(s.begin(), s.end())&lt;/code&gt;&lt;br&gt;直接用s.begin()和s.end()构造一个unordered_set&lt;char&gt;，会自动去重字符串中的字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.size()&lt;/code&gt;&lt;br&gt;计算去重后的字符个数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;return unoredered_set(s.begin(),s.end().size());
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />

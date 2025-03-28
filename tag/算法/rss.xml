@@ -8,6 +8,8 @@
         <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
         <lastBuildDate>Mon, 17 Mar 2025 15:29:31 +0800</lastBuildDate>
         <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>链表</category>
         <category>力扣</category>
         <category>数组</category>
@@ -15,8 +17,6 @@
         <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>记录</category>
         <category>Markdown</category>
         <item>
@@ -227,10 +227,10 @@
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
             <category>算法</category>
-            <category>力扣</category>
-            <category>哈希表</category>
             <category>字符串</category>
             <category>滑动窗口</category>
+            <category>力扣</category>
+            <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
@@ -792,6 +792,72 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2-两数相加&#34;&gt;&lt;a href=&#34;#2-两数相加&#34; class=&#34;headerlink&#34; title=&#34;2.两数相加&#34;&gt;&lt;/a&gt;2.两数相加&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。&lt;br&gt;请你将两个数相加，并以相同形式返回一个表示和的链表。&lt;br&gt;你可以假设除了数字 0 之外，这两个数都不会以 0 开头。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个链表中的节点数在范围 [1, 100] 内&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 9&lt;/li&gt;
+&lt;li&gt;题目数据保证列表表示的数字不含前导零&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;这道题着实难倒我🥹乖乖去看&lt;a href=&#34;https://leetcode.cn/problems/add-two-numbers/solutions/2327008/dong-hua-jian-ji-xie-fa-cong-di-gui-dao-oe0di/&#34;&gt;题解&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;链表&lt;strong&gt;逆序&lt;/strong&gt;存储数字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;两个链表的节点值 + 进位值&lt;/code&gt;如果记为&lt;code&gt;a&lt;/code&gt;：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;a % 10&lt;/code&gt;为当前节点保存的数位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a / 10&lt;/code&gt;为新的进位值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;递归思路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;如果l1、l2都为空且carry&amp;#x3D;0，递归结束&lt;/li&gt;
+&lt;li&gt;定义sum&amp;#x3D;carry&lt;/li&gt;
+&lt;li&gt;如果l1不为空，sum+&amp;#x3D;l1-&amp;gt;val，l1&amp;#x3D;l1-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;同理，如果l2不为空，sum+&amp;#x3D;l2-&amp;gt;val，l2&amp;#x3D;l2-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;new一个当前节点node：&lt;code&gt;ListNode* node=new ListNode(sum%10)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;递归调用处理node-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;返回当前节点node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2,int carry=0) &amp;#123;
+        if(l1==nullptr &amp;amp;&amp;amp; l2==nullptr &amp;amp;&amp;amp; carry==0)&amp;#123;
+            return nullptr;
+        &amp;#125;
+        int sum=carry;
+        if(l1!=nullptr)&amp;#123;
+            sum+=l1-&amp;gt;val;
+            l1=l1-&amp;gt;next;
+        &amp;#125;
+        if(l2!=nullptr)&amp;#123;
+            sum+=l2-&amp;gt;val;
+            l2=l2-&amp;gt;next;
+        &amp;#125;
+        ListNode* node=new ListNode(sum%10);
+        carry=sum/10;
+        node-&amp;gt;next=addTwoNumbers(l1,l2,carry);
+        return node;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
@@ -1324,6 +1390,45 @@ public:
         return cnt;
     &amp;#125;
 &amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2255-统计是给定字符串前缀的字符串数目-1&#34;&gt;&lt;a href=&#34;#2255-统计是给定字符串前缀的字符串数目-1&#34; class=&#34;headerlink&#34; title=&#34;2255.统计是给定字符串前缀的字符串数目&#34;&gt;&lt;/a&gt;2255.统计是给定字符串前缀的字符串数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;br&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在字符串中选出一个下标 i ，并使 c 为字符串下标 i 处的字符。并在 i 左侧（如果有）和 右侧（如果有）各 删除 一个距离 i 最近 的字符 c 。&lt;br&gt;请你通过执行上述操作任意次，使 s 的长度 最小化 。&lt;br&gt;返回一个表示 最小化 字符串的长度的整数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 仅由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;题目这么长，其实就是字符串&lt;strong&gt;去重&lt;/strong&gt;😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;我的方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimizedStringLength(string s) &amp;#123;
+        unordered_set&amp;lt;int&amp;gt; num;
+        for(char ch:s)&amp;#123;
+            if(num.find(ch)==num.end())&amp;#123;
+                num.insert(ch);
+            &amp;#125;
+        &amp;#125;
+        return num.size();
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;更简洁的方法&lt;br&gt;看到&lt;a href=&#34;https://leetcode.cn/problems/minimize-string-length/solutions/2296066/o1-kong-jian-wei-yun-suan-xie-fa-pythonj-7t4p/?envType=daily-question&amp;envId=2025-03-28&#34;&gt;题解&lt;/a&gt;，发现也可以直接写成一行：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unordered_set&amp;lt;char&amp;gt;(s.begin(), s.end())&lt;/code&gt;&lt;br&gt;直接用s.begin()和s.end()构造一个unordered_set&lt;char&gt;，会自动去重字符串中的字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.size()&lt;/code&gt;&lt;br&gt;计算去重后的字符个数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;return unoredered_set(s.begin(),s.end().size());
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
