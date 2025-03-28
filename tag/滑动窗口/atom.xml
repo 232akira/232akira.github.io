@@ -7,11 +7,11 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
+    <category term="哈希表" />
+    <category term="链表" />
     <category term="数组" />
     <category term="C++" />
-    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
     <category term="记录" />
@@ -900,7 +900,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2255-统计是给定字符串前缀的字符串数目-1&#34;&gt;&lt;a href=&#34;#2255-统计是给定字符串前缀的字符串数目-1&#34; class=&#34;headerlink&#34; title=&#34;2255.统计是给定字符串前缀的字符串数目&#34;&gt;&lt;/a&gt;2255.统计是给定字符串前缀的字符串数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h1 id=&#34;2716-最小化字符串长度&#34;&gt;&lt;a href=&#34;#2716-最小化字符串长度&#34; class=&#34;headerlink&#34; title=&#34;2716.最小化字符串长度&#34;&gt;&lt;/a&gt;2716.最小化字符串长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;br&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;在字符串中选出一个下标 i ，并使 c 为字符串下标 i 处的字符。并在 i 左侧（如果有）和 右侧（如果有）各 删除 一个距离 i 最近 的字符 c 。&lt;br&gt;请你通过执行上述操作任意次，使 s 的长度 最小化 。&lt;br&gt;返回一个表示 最小化 字符串的长度的整数。&lt;/li&gt;

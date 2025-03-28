@@ -7,11 +7,11 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
+    <category term="哈希表" />
+    <category term="链表" />
     <category term="数组" />
     <category term="C++" />
-    <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
     <category term="记录" />
@@ -851,10 +851,62 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;83-删除排序链表中的重复元素&#34;&gt;&lt;a href=&#34;#83-删除排序链表中的重复元素&#34; class=&#34;headerlink&#34; title=&#34;83.删除排序链表中的重复元素&#34;&gt;&lt;/a&gt;83.删除排序链表中的重复元素&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个已排序的链表的头head，删除所有重复的元素，使每个元素只出现一次。返回已排序的链表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;链表中节点数目在范围 [0, 300] 内&lt;/li&gt;
+&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;题目数据保证链表已经按升序排列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;【如果】头节点&amp;#x3D;空：直接返回该节点&lt;/li&gt;
+&lt;li&gt;初始化一个当前节点变量&amp;#x3D;头节点&lt;/li&gt;
+&lt;li&gt;【只要】当前&lt;code&gt;节点-&amp;gt;next&lt;/code&gt;不为空&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;「如果」&lt;code&gt;当前节点-&amp;gt;next的值&lt;/code&gt;&amp;#x3D;&lt;code&gt;当前节点的值&lt;/code&gt;： &lt;code&gt;当前节点-&amp;gt;next&lt;/code&gt;&amp;#x3D;&lt;code&gt;当前节点-&amp;gt;next-&amp;gt;next&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;「否则」&lt;code&gt;当前节点&lt;/code&gt;&amp;#x3D;&lt;code&gt;当前节点-&amp;gt;next&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;返回头节点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* deleteDuplicates(ListNode* head) &amp;#123;
+        if(head==nullptr)&amp;#123;
+            return head;
+        &amp;#125;
+        ListNode* cur=head;
+        while(cur-&amp;gt;next!=nullptr)&amp;#123;
+            if(cur-&amp;gt;next-&amp;gt;val==cur-&amp;gt;val)&amp;#123;
+                cur-&amp;gt;next=cur-&amp;gt;next-&amp;gt;next;
+            &amp;#125;
+            else&amp;#123;
+                cur=cur-&amp;gt;next;
+            &amp;#125;
+        &amp;#125;
+        return head;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="链表" />
         <category term="力扣" />
+        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
@@ -1462,9 +1514,9 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
+        <category term="哈希表" />
         <category term="数组" />
         <category term="C++" />
-        <category term="哈希表" />
         <category term="动态规划" />
         <category term="二分查找" />
         <updated>2025-03-04T11:15:05.000Z</updated>
