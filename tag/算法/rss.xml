@@ -10,11 +10,11 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>力扣</category>
-        <category>哈希表</category>
         <category>链表</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>C++</category>
+        <category>哈希表</category>
         <category>动态规划</category>
         <category>二分查找</category>
         <category>记录</category>
@@ -233,6 +233,98 @@
             <category>哈希表</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
+&lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单调性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;713-乘积小于K的子数组&#34;&gt;&lt;a href=&#34;#713-乘积小于K的子数组&#34; class=&#34;headerlink&#34; title=&#34;713.乘积小于K的子数组&#34;&gt;&lt;/a&gt;713.乘积小于K的子数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums 和一个整数 k ，请你返回子数组内所有元素的乘积严格小于 k 的连续子数组的数目。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 3 * 104&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 106&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3-无重复字符的最长子串&#34;&gt;&lt;a href=&#34;#3-无重复字符的最长子串&#34; class=&#34;headerlink&#34; title=&#34;3.无重复字符的最长子串&#34;&gt;&lt;/a&gt;3.无重复字符的最长子串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个字符串s，请你找出其中不含有重复字符的最长子串的长度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 5 * 104&lt;/li&gt;
+&lt;li&gt;s 由英文字母、数字、符号和空格组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;209-长度最小的子数组&#34;&gt;&lt;a href=&#34;#209-长度最小的子数组&#34; class=&#34;headerlink&#34; title=&#34;209.长度最小的子数组&#34;&gt;&lt;/a&gt;209.长度最小的子数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个含有n个正整数的数组和一个正整数target。&lt;br&gt;找出该数组中满足其总和大于等于target的长度最小的子数组 [numsl, numsl+1, …, numsr-1, numsr]，并返回其长度。如果不存在符合条件的子数组，返回0。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; target &amp;lt;&amp;#x3D; 109&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;进阶：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你已经实现 O(n) 时间复杂度的解法, 请尝试设计一个 O(n log(n)) 时间复杂度的解法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;在数组字串问题中，经常会用到&lt;strong&gt;双指针&lt;/strong&gt;这一技巧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;暴力方法 时间复杂度&lt;code&gt;O(n^2)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;枚举右端点，收缩左端点 时间复杂度&lt;code&gt;O(n)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;拿到数组的长度n&lt;/li&gt;
+&lt;li&gt;答案ans初始化为n+1或者更大&lt;/li&gt;
+&lt;li&gt;总和sum初始化为0&lt;/li&gt;
+&lt;li&gt;左端点left初始化为0&lt;/li&gt;
+&lt;li&gt;right右端点for循环(0~n-1)：sum+&amp;#x3D;nums[right]&lt;/li&gt;
+&lt;li&gt;for嵌套while(s-nums[left]):此时子数组的和减去左端点依旧&amp;gt;&amp;#x3D;target：sum-&amp;#x3D;nums[left];left+&amp;#x3D;1;(移掉左端点)&lt;/li&gt;
+&lt;li&gt;如果sum&amp;gt;&amp;#x3D;target:更新答案最小值 ans&amp;#x3D;min(ans,right-left+1)&lt;/li&gt;
+&lt;li&gt;返回ans（&amp;lt;&amp;#x3D;n返回ans，否则返回0）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**注：**并且此题不需要判断left和right两者间的大小关系，因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在「2」的基础上，把ans的更新写到while里面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minSubArrayLen(int target, vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int n,ans,sum,left;
+        n=nums.size();
+        ans=n+1;
+        sum=left=0;
+        for(int i=0;i&amp;lt;n;i++)&amp;#123;
+            // sum+=nums[i];
+            // while(sum-nums[left]&amp;gt;=target)&amp;#123;
+            //     sum-=nums[left];
+            //     left++;
+            // &amp;#125;
+            // if(sum&amp;gt;=target)&amp;#123;
+            //     ans=min(ans,i-left+1);
+            // &amp;#125;
+            while(sum&amp;gt;=target)&amp;#123;
+                ans=min(ans,i-left+1);
+                sum-=nums[left++];
+            &amp;#125;
+        &amp;#125;
+        return ans&amp;lt;=n?ans:0;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;2269-找到一个数字的-K-美丽值&#34;&gt;&lt;a href=&#34;#2269-找到一个数字的-K-美丽值&#34; class=&#34;headerlink&#34; title=&#34;2269.找到一个数字的 K 美丽值&#34;&gt;&lt;/a&gt;2269.找到一个数字的 K 美丽值&lt;/h1&gt;&lt;p&gt;今天字符串也要美丽了🆘&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个整数num的k美丽值定义为num中符合以下条件的子字符串数目：&lt;/p&gt;
@@ -248,7 +340,7 @@
 &lt;li&gt;&lt;code&gt;1 &amp;lt;= k &amp;lt;= num.length&lt;/code&gt; （将 num 视为字符串）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我觉得这道的要点就是子串怎么得，剩下的就好判断了。偏偏我就栽在这儿了😅&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我觉得这道的要点就是子串怎么得，剩下的就好判断了。偏偏我就栽在这儿了😅&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;int转string&lt;/strong&gt; &lt;code&gt;to_string()&lt;/code&gt;注意此函数需要赋给个string变量&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;string转int&lt;/strong&gt; &lt;code&gt;stoi()&lt;/code&gt;同样，需要赋给个int变量&lt;/li&gt;
@@ -355,7 +447,7 @@
 &lt;td align=&#34;center&#34;&gt;把str转换为double&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int divisorSubstrings(int num, int k) &amp;#123;
         int cnt=0;
@@ -382,7 +474,7 @@ public:
 &lt;li&gt;0 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; word.length - 5&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;先试了试暴力😤循环套三层观感太差，不放上来。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;先试了试暴力😤循环套三层观感太差，不放上来。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;正经解法&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;滑动窗口代替暴力循环&lt;/li&gt;
@@ -480,7 +572,7 @@ public:
         ans+=cnt;
 返回ans;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int countOfSubstrings(string word, int k) &amp;#123;
         int len=word.size();
@@ -542,7 +634,7 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;3306-元音辅音字符串计数Ⅱ&#34;&gt;&lt;a href=&#34;#3306-元音辅音字符串计数Ⅱ&#34; class=&#34;headerlink&#34; title=&#34;3306.元音辅音字符串计数Ⅱ&#34;&gt;&lt;/a&gt;3306.元音辅音字符串计数Ⅱ&lt;/h1&gt;&lt;p&gt;不行，彻底懵了脑子转不动做梦都是元辅音😫先把copy的官方题解放这，过两天我再苟回来看。&lt;/p&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     long long countOfSubstrings(string word, int k) &amp;#123;
         set&amp;lt;char&amp;gt; vowels = &amp;#123;&amp;#39;a&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;i&amp;#39;, &amp;#39;o&amp;#39;, &amp;#39;u&amp;#39;&amp;#125;;
@@ -584,8 +676,8 @@ public:
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
             <category>算法</category>
-            <category>力扣</category>
             <category>链表</category>
+            <category>力扣</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
