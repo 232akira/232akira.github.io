@@ -7,13 +7,13 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -261,7 +261,7 @@ Graphics performance and profiling
 &lt;blockquote&gt;
 &lt;p&gt;虽然自己程序方面更擅长C++而且现在用UE也是个趋势，但是Unity普及度更高而且教程更多，UE蓝图也摒弃了传统的纯程序开发路线，所以打好这方面基础是现在最需要做的。如果有任何建议和想法需要交流欢迎联系我！不断试错不断学习中🤗&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;笔记内容90%来自视频原话，其他内容个人补充，欢迎勘误。&lt;br&gt;基本白嫖b站佬们的教程（先三连之后看的！）🤟参考教程点击标题跳转&lt;/p&gt;
+&lt;p&gt;笔记内容90%来自视频原话，其他内容个人补充，欢迎勘误。&lt;br&gt;学习内容大多来自b站佬们的教程（先三连之后看的！）🤟参考链接点击标题跳转&lt;/p&gt;
 &lt;h1 id=&#34;项目实战-Uinty&#34;&gt;&lt;a href=&#34;#项目实战-Uinty&#34; class=&#34;headerlink&#34; title=&#34;项目实战-Uinty&#34;&gt;&lt;/a&gt;项目实战-Uinty&lt;/h1&gt;&lt;h2 id=&#34;Shader代码基础&#34;&gt;&lt;a href=&#34;#Shader代码基础&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基础&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Xu4y1S7LF/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;Shader代码基础&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;PART1&#34;&gt;&lt;a href=&#34;#PART1&#34; class=&#34;headerlink&#34; title=&#34;PART1&#34;&gt;&lt;/a&gt;PART1&lt;/h3&gt;&lt;h4 id=&#34;Shader代码基本架构&#34;&gt;&lt;a href=&#34;#Shader代码基本架构&#34; class=&#34;headerlink&#34; title=&#34;Shader代码基本架构&#34;&gt;&lt;/a&gt;Shader代码基本架构&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;Shader&amp;quot;1️⃣&amp;quot;
 &amp;#123;
     Properties
@@ -302,9 +302,19 @@ Graphics performance and profiling
             //中间的任何代码都属于unity cg的范围
             ENDCG
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;👉️这里对于&lt;code&gt;float&lt;/code&gt;类型&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/SL-VertexProgramInputs.html&#34;&gt;补充&lt;/a&gt;一点：&lt;br&gt;‌&lt;code&gt;float‌&lt;/code&gt;：用于表示单个浮点数，常用于颜色通道、位置坐标等。&lt;br&gt;‌&lt;code&gt;float2‌&lt;/code&gt;（Vector2）：用于表示二维向量，如二维坐标、UV坐标等。&lt;br&gt;‌&lt;code&gt;float3‌&lt;/code&gt;（Vector3）：用于表示三维向量，如位置、法线等。&lt;br&gt;‌&lt;code&gt;float4‌&lt;/code&gt;（Vector4）：用于表示四维向量，如颜色、四元数等。&lt;/p&gt;
-&lt;p&gt;👉️在unity中，一个模型最多有四套UV&lt;/p&gt;
-&lt;p&gt;👉️float&amp;#x2F;half&amp;#x2F;fixed的区别&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;这里对于&lt;code&gt;float&lt;/code&gt;类型&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/SL-VertexProgramInputs.html&#34;&gt;补充&lt;/a&gt;一点：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;‌&lt;code&gt;float‌&lt;/code&gt;：用于表示单个浮点数，常用于颜色通道、位置坐标等。&lt;/li&gt;
+&lt;li&gt;‌&lt;code&gt;float2‌&lt;/code&gt;（Vector2）：用于表示二维向量，如二维坐标、UV坐标等。&lt;/li&gt;
+&lt;li&gt;‌&lt;code&gt;float3‌&lt;/code&gt;（Vector3）：用于表示三维向量，如位置、法线等。&lt;/li&gt;
+&lt;li&gt;‌&lt;code&gt;float4‌&lt;/code&gt;（Vector4）：用于表示四维向量，如颜色、四元数等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;p&gt;在unity中，一个模型最多有四套UV&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;float&amp;#x2F;half&amp;#x2F;fixed的区别：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -341,9 +351,11 @@ Graphics performance and profiling
 &lt;td align=&#34;center&#34;&gt;几乎淘汰&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h4 id=&#34;GPU渲染管线&#34;&gt;&lt;a href=&#34;#GPU渲染管线&#34; class=&#34;headerlink&#34; title=&#34;GPU渲染管线&#34;&gt;&lt;/a&gt;GPU渲染管线&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;基本结构&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;【模型数据】 -&amp;gt; 【顶点Shader】 -&amp;gt; 【图元装配及光栅化】 -&amp;gt; 【片元Shader】 -&amp;gt; 【输出合并】
-            |-----------------------------GPU渲染管线-----------------------------|
+&lt;pre&gt;&lt;code&gt;【模型数据】 -&amp;gt; 1️⃣【顶点Shader】 -&amp;gt; 2️⃣【图元装配及光栅化】 -&amp;gt; 3️⃣【片元Shader】 -&amp;gt; 4️⃣【输出合并】
+            |-----------------------------GPU渲染管线---------------------------------------|
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;1️⃣顶点Shader&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
@@ -355,7 +367,7 @@ Graphics performance and profiling
 &lt;li&gt;硬件阶段&lt;/li&gt;
 &lt;li&gt;生成片元并进行光栅化插值&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;3️⃣片段Shader&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3️⃣片元Shader&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;每个片元调用片元shader给自身着色&lt;/li&gt;
 &lt;li&gt;计算对应的颜色后输出&lt;/li&gt;
@@ -430,7 +442,10 @@ Shader &amp;quot;CS0102/shader&amp;quot;
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;PART2&#34;&gt;&lt;a href=&#34;#PART2&#34; class=&#34;headerlink&#34; title=&#34;PART2&#34;&gt;&lt;/a&gt;PART2&lt;/h3&gt;&lt;h4 id=&#34;背面剔除（Backface-Culling）&#34;&gt;&lt;a href=&#34;#背面剔除（Backface-Culling）&#34; class=&#34;headerlink&#34; title=&#34;背面剔除（Backface Culling）&#34;&gt;&lt;/a&gt;背面剔除（Backface Culling）&lt;/h4&gt;&lt;p&gt;背面剔除在硬件阶段、NDC空间之后进行，Unity默认使用背面剔除（只渲染正面）。&lt;br&gt;👉️Shader代码控制:直接显示出渲染结果&lt;/p&gt;
+&lt;h3 id=&#34;PART2&#34;&gt;&lt;a href=&#34;#PART2&#34; class=&#34;headerlink&#34; title=&#34;PART2&#34;&gt;&lt;/a&gt;PART2&lt;/h3&gt;&lt;h4 id=&#34;背面剔除（Backface-Culling）&#34;&gt;&lt;a href=&#34;#背面剔除（Backface-Culling）&#34; class=&#34;headerlink&#34; title=&#34;背面剔除（Backface Culling）&#34;&gt;&lt;/a&gt;背面剔除（Backface Culling）&lt;/h4&gt;&lt;p&gt;背面剔除在硬件阶段、NDC空间之后进行，Unity默认使用背面剔除（只渲染正面）。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Shader代码控制:直接显示出渲染结果&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
     &amp;#123;
         Pass
@@ -438,13 +453,16 @@ Shader &amp;quot;CS0102/shader&amp;quot;
             Cull Off  //1️⃣不剔除
             Cull Back //2️⃣默认剔除背面
             Cull Front//3️⃣剔除正面
+            //注意在CGPROGRAM之前
             CGPROGRAM
             ...
             ENDCG
         &amp;#125;
     &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;👉️材质球控制：物体材质球处出现可选项：Off&amp;#x2F;Front&amp;#x2F;Back&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;材质球控制：物体材质球处出现可选项：Off&amp;#x2F;Front&amp;#x2F;Back&lt;/li&gt;
+&lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
     &amp;#123;
         [Enum(UnityEngine.Rendering.CullMode)]_CullMode(&amp;quot;CullMode&amp;quot;,float)=2
@@ -533,31 +551,328 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
             &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;若uv存在不连续的情况，则会导致贴图采样时引起纹理图像的失真问题。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;👉️为什么会有uv不连续的现象？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;光栅化过程产生。光栅化时根据三角面的进行，每个三角按照每个三角面进行一个插值。而对于模型而言，其三角网排列就会造成一定程度上的问题。&lt;br&gt;&lt;strong&gt;解决方式：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👉️为什么会有uv不连续的现象？&lt;/strong&gt;&lt;br&gt;光栅化过程产生。光栅化时根据三角面的进行，每个三角按照每个三角面进行一个插值。而对于模型而言，其三角网排列就会造成一定程度上的问题。&lt;br&gt;&lt;strong&gt;解决方式：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;uv展开并缩放到0~1之间&lt;/li&gt;
 &lt;li&gt;模型加面&lt;/li&gt;
 &lt;li&gt;手动在片元shader中重新计算uv&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;PART4-Alpha-test&#34;&gt;&lt;a href=&#34;#PART4-Alpha-test&#34; class=&#34;headerlink&#34; title=&#34;PART4 Alpha-test&#34;&gt;&lt;/a&gt;PART4 Alpha-test&lt;/h3&gt;&lt;p&gt;对于&lt;strong&gt;输出合并&lt;/strong&gt;阶段，可以细分为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    【片元数据】
-    Color,Depth
-         ↓
-   【Alpha测试】
-         ↓
-    【模板测试】
-   Stencil Test
-         ↓
-    【深度测试】
-    Depth test
-         ↓
-      【混合】
-     Blending
-         ↓
-    【帧缓冲区】
-Color,Depth,Stencil
+&lt;h3 id=&#34;PART4-透明度测试-Alpha-test&#34;&gt;&lt;a href=&#34;#PART4-透明度测试-Alpha-test&#34; class=&#34;headerlink&#34; title=&#34;PART4 透明度测试 Alpha-test&#34;&gt;&lt;/a&gt;PART4 透明度测试 Alpha-test&lt;/h3&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://docs.unity3d.com/cn/2020.2/Manual/SL-AlphaTest.html&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/qq_34697930/article/details/136530909&#34;&gt;2️⃣&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;输出合并&#34;&gt;&lt;a href=&#34;#输出合并&#34; class=&#34;headerlink&#34; title=&#34;输出合并&#34;&gt;&lt;/a&gt;输出合并&lt;/h4&gt;&lt;p&gt;对于&lt;strong&gt;输出合并&lt;/strong&gt;阶段，可以细分为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;【片元数据】Color,Depth
+    ↓
+【Alpha测试】
+    ↓
+【模板测试】Stencil Test
+    ↓
+【深度测试】Depth test
+    ↓
+【混合】Blending
+    ↓
+【帧缓冲区】Color,Depth,Stencil
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;其他参考链接&#34;&gt;&lt;a href=&#34;#其他参考链接&#34; class=&#34;headerlink&#34; title=&#34;其他参考链接&#34;&gt;&lt;/a&gt;其他参考链接&lt;/h1&gt;&lt;p&gt;反射探针：&lt;br&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/438022045&#34;&gt;https://zhuanlan.zhihu.com/p/438022045&lt;/a&gt;&lt;br&gt;三大Shader编程语言：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_56516170/article/details/135266277&#34;&gt;https://blog.csdn.net/weixin_56516170/article/details/135266277&lt;/a&gt;&lt;br&gt;《Shader入门精要》源代码&lt;br&gt;&lt;a href=&#34;https://github.com/candycat1992/Unity_Shaders_Book&#34;&gt;https://github.com/candycat1992/Unity_Shaders_Book&lt;/a&gt;&lt;br&gt;法线贴图：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49427945/article/details/136458398&#34;&gt;https://blog.csdn.net/weixin_49427945/article/details/136458398&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&#34;&gt;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Alpha-test&#34;&gt;&lt;a href=&#34;#Alpha-test&#34; class=&#34;headerlink&#34; title=&#34;Alpha-test&#34;&gt;&lt;/a&gt;Alpha-test&lt;/h4&gt;&lt;p&gt;**Alpha 测试是拒绝将像素写入屏幕的最后机会。**在计算出最终输出颜色之后，颜色可选择性地将其 Alpha 值与固定值进行比较。如果测试失败，则不会将像素写入显示屏。&lt;/p&gt;
+&lt;p&gt;当下在Shader中，很少会直接用alpha test这个指令。一般用的是更好用、更可控的指令：&lt;code&gt;clip&lt;/code&gt;“裁剪”。&lt;/p&gt;
+&lt;p&gt;如果clip()括号中的值&amp;lt;0，整个模型将不显示。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;模型的一部分被裁剪掉&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            float4 frag(v2f i) : SV_Target &amp;#123;
+                float4 gradient=tex2D(_MainTex,i.uv);
+                clip(gradient-0.1);
+                return gradient.xxx;
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;设置一个值实现动态控制&lt;br&gt;好神奇😂我这里模型用的球，Cutout调到0.5变成吃豆人了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+         _MainTex(&amp;quot;MainTex&amp;quot;,2D)=&amp;quot;black&amp;quot;&amp;#123;&amp;#125;
+         _Cutout(&amp;quot;Cutout&amp;quot;,Range(-0.1,1.1))=0.0
+        [Enum(UnityEngine.Rendering.CullMode)]_CullMode(&amp;quot;CullMode&amp;quot;,float)=2
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+                half gradient=tex2D(_MainTex,i.uv).r;
+                clip(gradient-_Cutout);
+                return gradient.xxxx;
+                //gradient.xxxx等价于float4(gradient,gradient,gradient,gradient);
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;对UV进行动画处理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;                half gradient=tex2D(_MainTex,i.uv+_Time.y).r;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;对UV进行动画速度的处理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+        _Speed(&amp;quot;Speed&amp;quot;,Vector)=(1,1,0,0)
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            float4 _Speed;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+                half gradient=tex2D(_MainTex,i.uv+_Time.y*_Speed.xy).r;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;noise贴图控制&lt;br&gt;适当的模型+贴图可以实现波形扩散效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+         _NoiseTex(&amp;quot;Noise Tex&amp;quot;,2D)=&amp;quot;white&amp;quot;&amp;#123;&amp;#125;
+         //_MainColor(&amp;quot;MainColor&amp;quot;,Color)=(1,1,1,1)
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            float4 _NoiseTex_ST;
+            //float4 _MainColor;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+                half gradient=tex2D(_MainTex,i.uv+_Time.y*_Speed.xy).r;
+                half noise=tex2D(_NoiseTex,i.uv+_Time.y*_Speed.zw).r;
+                clip(gradient-noise-_Cutout);
+                return noise.xxxx;
+                //return _MainColor;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;综上&lt;/strong&gt; alpha-test可以用来做溶解相关的效果。&lt;/p&gt;
+&lt;h3 id=&#34;PART5-半透明混合-Blending&#34;&gt;&lt;a href=&#34;#PART5-半透明混合-Blending&#34; class=&#34;headerlink&#34; title=&#34;PART5 半透明混合 Blending&#34;&gt;&lt;/a&gt;PART5 半透明混合 Blending&lt;/h3&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://learnopengl-cn.readthedocs.io/zh/latest/04%20Advanced%20OpenGL/03%20Blending/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_34505326/article/details/112181270&#34;&gt;2️⃣&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;实现半透明混合&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+         _MainColor(&amp;quot;MainColor&amp;quot;,Color)=(1,1,1,1)
+    &amp;#125;saturate
+    SubShader
+    &amp;#123;
+        Blend SrcAlpha OneMinusSrcAlpha//注意此句在CGPROGRAM之前
+        float4 _MainColor;
+        Pass
+        &amp;#123;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+                half4 col=tex2D(_MainTex,i.uv)*_MainColor;
+                return col;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;关闭ZWrite深度写入&lt;br&gt;半透明混合的使用要注意排序问题：&lt;code&gt;ZWrite Off&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
+    &amp;#123;
+        Pass&amp;#123;
+            ZWrite Off
+            Blend SrcAlpha OneMinusSrcAlpha
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;渲染队列问题&lt;br&gt;先前我们的材质球的Render Queue为2000，处于不透明的渲染队列中。使用半透明效果必须记得使用&lt;code&gt;Tags&amp;#123;&amp;quot;Queue&amp;quot;=&amp;quot;Transparent&amp;quot;&amp;#125;&lt;/code&gt;+关掉&lt;code&gt;ZWrite&lt;/code&gt;（部分情况下ZWrite需要开启）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
+    &amp;#123;
+        Tags&amp;#123;&amp;quot;Queue&amp;quot;=&amp;quot;Transparent&amp;quot;&amp;#125;
+        Pass&amp;#123;
+            ZWrite Off
+            Blend SrcAlpha OneMinusSrcAlpha
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;贴图半透效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;当前贴图无alpha通道，所以只能用其灰度值来做一个半透效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            half4 frag(v2f i) : SV_Target &amp;#123;
+                half3 col=_MainColor.xyz;
+                half alpha=tex2D(_MainTex,i.uv).r*_MainColor.a;
+                return float4(col,alpha);
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;做出来的球像透明泡泡🤗好好看~&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;增加显示强度&lt;blockquote&gt;
+&lt;p&gt;此处要确保alpha值在0~1的范围内，否则开HDR的时候就很容易出问题&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+         _Emiss(&amp;quot;Emiss&amp;quot;,Float)=1.0
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        float _Emiss;
+        Pass
+        &amp;#123;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+                half3 col=_MainColor.xyz*_Emiss;
+
+                half alpha=saturate(tex2D(_MainTex,i.uv).r*_MainColor.a*_Emiss);
+                return float4(col,alpha);
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;其他混合模式&lt;br&gt;常用的柔和叠加模式：&lt;code&gt;Blend SrcAlpha One&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;PART6-边缘光&#34;&gt;&lt;a href=&#34;#PART6-边缘光&#34; class=&#34;headerlink&#34; title=&#34;PART6 边缘光&#34;&gt;&lt;/a&gt;PART6 边缘光&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;得到normal_world&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            struct appdata &amp;#123;
+                float3 normal : NORMAL;
+            &amp;#125;;
+            struct v2f &amp;#123;
+                float3 normal_world:TEXCOORD1;
+            &amp;#125;;
+            v2f vert(appdata v) &amp;#123;
+                v2f o;
+                o.pos=UnityObjectToClipPos(v.vertex);
+                o.normal_world=normalize(mul(float4(v.normal,0.0),unity_WorldToObject).xyz);
+                //
+                o.uv=v.uv*_MainTex_ST.xy+_MainTex_ST.zw;
+                return o;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;得到view_world&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            struct v2f &amp;#123;
+                float3 view_world:TEXCOORD2;
+            &amp;#125;;
+            v2f vert(appdata v) &amp;#123;
+                float3 pos_world=mul(unity_ObjectToWorld,v.vertex).xyz;
+                o.view_world=normalize(_WorldSpaceCameraPos.xyz-pos_world);
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在片元Shader中把数据承接过来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dot(a,b)&lt;/code&gt;：a向量与b向量进行点乘。&lt;br&gt;两个向量越重合就越接近1；180°为-1。[-1,1]👉️dot结果在[-1,1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            half4 frag(v2f i) : SV_Target &amp;#123;
+                float3 normal_world=normalize(i.normal_world);
+                //光栅化的过程会导致向量的长度变化
+                float3 view_world=normalize(i.view_world);
+                float NdoV=saturate(dot(normal_world,view_world));
+                float rim=1.0-NdoV;
+                return NdoV.xxxx;
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;得到边缘光效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;（来自弹幕佬的解释）边缘处的法线和视角方向接近垂直，dot&amp;#x3D;0,1-dot进行取反，边缘就显示出颜色，其他部分就较为透明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            half4 frag(v2f i) : SV_Target &amp;#123;
+                ...
+                float rim=1.0-NdoV;
+                return rim.xxxx;
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;边缘光改色&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;也可以用alpha通道调：&lt;code&gt;float alpha=saturate((1.0-NdoV)*_Emiss);&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;            half4 frag(v2f i) : SV_Target &amp;#123;
+                float3 col=_MainColor.xyz*_Emiss;//乘倍增系数，Inspector可调
+                ...
+                return float4(col,alpha);
+            &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;边缘光对比度调节&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    Properties
+    &amp;#123;
+        _RimPower(&amp;quot;_RimPower&amp;quot;,Float)=1.0
+    &amp;#125;
+    SubShader
+    &amp;#123;
+        Pass
+        &amp;#123;
+            float _RimPower;
+            half4 frag(v2f i) : SV_Target &amp;#123;
+               float NdoV=pow(saturate(dot(normal_world,view_world)),RimPower);
+               float fresnel=pow((1.0-NdoV),_RimPower);
+               float alpha=saturate(fresnel*_Emiss);
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;模型透过问题：预先写深度&lt;br&gt;👉️经过上面的步骤，模型能够看到内部的透过结构。如何避免这种现象？&lt;br&gt;1️⃣打开ZWrite：&lt;code&gt;ZWrite On&lt;/code&gt;。此时效果不算特别完美。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;或&lt;/p&gt;
+&lt;p&gt;2️⃣再加一个&lt;code&gt;Pass&lt;/code&gt;：预写一遍深度，代码如下。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c#&#34;&gt;    SubShader
+    &amp;#123;
+        Tags&amp;#123;&amp;quot;Queue&amp;quot;=&amp;quot;Transparent&amp;quot;&amp;#125;
+        Pass
+        &amp;#123;
+            Cull Of
+            ZWrite On
+            ColorMask 0
+            CGPROGRAM
+            float4 _Color;
+            #pragma vertex vert
+            #pragma fragment frag
+            float4 vert(float4 veryexPos:POSITION):SV_POSITION
+            &amp;#123;
+                return UnityObjectToClipPos(vertexPos);
+            &amp;#125;
+            float4 frag(void):COLOR
+            &amp;#123;
+                return _Color;
+            &amp;#125;
+            ENDCG
+        &amp;#125;
+        Pass
+        &amp;#123;
+            ...
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;把最靠前的三角形的片元的深度预先&lt;code&gt;ZWrite On&lt;/code&gt;写好&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Color Mask&lt;/code&gt;的操作：只写深度，不写任何的颜色信息&lt;/li&gt;
+&lt;li&gt;到了第二遍pass绘制的时候，这些片元就通过深度测试，默认把背后的像素剔除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ASE中有对应的功能，此处仅为简单演示。&lt;/p&gt;
+&lt;p&gt;🤯🤯🤯断断续续一个多星期终于把这一小时的视频啃完辣！！！休息休息继续战斗！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1 id=&#34;其他参考链接&#34;&gt;&lt;a href=&#34;#其他参考链接&#34; class=&#34;headerlink&#34; title=&#34;其他参考链接&#34;&gt;&lt;/a&gt;其他参考链接&lt;/h1&gt;&lt;p&gt;反射探针：&lt;br&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/438022045&#34;&gt;https://zhuanlan.zhihu.com/p/438022045&lt;/a&gt;&lt;br&gt;三大Shader编程语言：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_56516170/article/details/135266277&#34;&gt;https://blog.csdn.net/weixin_56516170/article/details/135266277&lt;/a&gt;&lt;br&gt;《Shader入门精要》源代码:&lt;br&gt;&lt;a href=&#34;https://github.com/candycat1992/Unity_Shaders_Book&#34;&gt;https://github.com/candycat1992/Unity_Shaders_Book&lt;/a&gt;&lt;br&gt;法线贴图：&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49427945/article/details/136458398&#34;&gt;https://blog.csdn.net/weixin_49427945/article/details/136458398&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&#34;&gt;https://docs.unity3d.com/cn/2021.1/Manual/StandardShaderMaterialParameterNormalMap.html&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="记录" />
         <updated>2025-03-15T14:22:22.000Z</updated>
@@ -630,7 +945,7 @@ Color,Depth,Stencil
 &lt;li&gt;如果sum&amp;gt;&amp;#x3D;target:更新答案最小值 ans&amp;#x3D;min(ans,right-left+1)&lt;/li&gt;
 &lt;li&gt;返回ans（&amp;lt;&amp;#x3D;n返回ans，否则返回0）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;**注：**并且此题不需要判断left和right两者间的大小关系，因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;注意：此题不需要判断left和right两者间的大小关系。&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在「2」的基础上，把ans的更新写到while里面&lt;/li&gt;
 &lt;/ol&gt;
@@ -1340,8 +1655,8 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="链表" />
         <category term="力扣" />
+        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
@@ -1651,14 +1966,24 @@ public:
 &lt;li&gt;s 和 goal 由小写英文字母组成&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;属于&lt;strong&gt;模拟&lt;/strong&gt;类型的题目&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣不亲密&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;br&gt;&lt;em&gt;&lt;strong&gt;2️⃣亲密&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不亲密&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;/li&gt;
+&lt;li&gt;亲密&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的的字符串数量为2&lt;br&gt;&lt;strong&gt;或&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的字符串数量为0 并且 &lt;code&gt;s&lt;/code&gt;中存在出现次数&amp;gt;2的字符&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt; PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;所以注意：即使一开始s&amp;#x3D;&amp;#x3D;goal，但是s怎么交换2字符都不能再&amp;#x3D;&amp;#x3D;goal，也&lt;strong&gt;不算亲密&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个：&lt;br&gt;题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个。因为题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-CPP&#34;&gt;class Solution &amp;#123;
 public:
     bool buddyStrings(string s, string goal) &amp;#123;
@@ -1710,19 +2035,21 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 500&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;li&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;blockquote&gt;
 &lt;p&gt;这里用ASCII码运算，因为’a’&lt;del&gt;‘z’为98&lt;/del&gt;233,所以&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;计算word[i]相对与a的偏移量，即字符word[i]是字母表中的&lt;strong&gt;第&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;个字母&lt;/strong&gt;，&lt;code&gt;+1&lt;/code&gt;即为后一个字符；&lt;br&gt;&lt;code&gt;%26+&amp;#39;a&amp;#39;&lt;/code&gt;的原因是：当word[i]为&lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;时,让26变回0，所以%26取模。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;2️⃣终止条件&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;终止条件&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;当&lt;code&gt;s.size()&amp;gt;=k&lt;/code&gt;时，直接返回s[k-1]&lt;/li&gt;
 &lt;/ul&gt;
@@ -1757,10 +2084,10 @@ public:
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;一开始直接用erase删符合条件的字符，而且删除后索引没有回退，报错显示 &lt;code&gt;std::out_of_range&lt;/code&gt;。&lt;br&gt;后来用&lt;strong&gt;栈&lt;/strong&gt;来解决：&lt;/p&gt;
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;迭代字符串s，删除互为大小写的字符，其他的正常压栈&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;abs(stk.back() - ch) == 32&lt;/code&gt; 栈顶字符和当前字符互为大小写（用abs确保大小写前后顺序都可）&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     string makeGood(string s) &amp;#123;
@@ -1909,6 +2236,38 @@ public:
 &lt;li&gt;&lt;code&gt;.size()&lt;/code&gt;&lt;br&gt;计算去重后的字符个数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;return unoredered_set(s.begin(),s.end().size());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2109最小化字符串长度&#34;&gt;&lt;a href=&#34;#2109最小化字符串长度&#34; class=&#34;headerlink&#34; title=&#34;2109最小化字符串长度&#34;&gt;&lt;/a&gt;2109最小化字符串长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，以及一个下标从 0 开始的整数数组 spaces 。&lt;br&gt;数组 spaces 描述原字符串中需要添加空格的下标。每个空格都应该插入到给定索引处的字符值 之前 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，s &amp;#x3D; “EnjoyYourCoffee” 且 spaces &amp;#x3D; [5, 9] ，那么我们需要在 ‘Y’ 和 ‘C’ 之前添加空格，这两个字符分别位于下标 5 和下标 9 。因此，最终得到 “Enjoy Your Coffee” 。&lt;br&gt;请你添加空格，并返回修改后的字符串。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;s 仅由大小写英文字母组成&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; spaces.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; spaces[i] &amp;lt;&amp;#x3D; s.length - 1&lt;/li&gt;
+&lt;li&gt;spaces 中的所有值严格递增&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;咳咳，虽然用时击败5%，但是自己写出来中等题而且没超时已经很棒了！夸夸自己😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string addSpaces(string s, vector&amp;lt;int&amp;gt;&amp;amp; spaces) &amp;#123;
+        int idx=0,cnt=0;
+        for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+            while(idx&amp;lt;spaces.size())&amp;#123;
+                s.insert(spaces[idx]+cnt,&amp;quot; &amp;quot;);
+                idx++;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return s;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />

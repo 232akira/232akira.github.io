@@ -7,13 +7,13 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -287,7 +287,7 @@
 &lt;li&gt;如果sum&amp;gt;&amp;#x3D;target:更新答案最小值 ans&amp;#x3D;min(ans,right-left+1)&lt;/li&gt;
 &lt;li&gt;返回ans（&amp;lt;&amp;#x3D;n返回ans，否则返回0）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;**注：**并且此题不需要判断left和right两者间的大小关系，因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;注意：此题不需要判断left和right两者间的大小关系。&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在「2」的基础上，把ans的更新写到while里面&lt;/li&gt;
 &lt;/ol&gt;
@@ -997,8 +997,8 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="链表" />
         <category term="力扣" />
+        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
@@ -1308,14 +1308,24 @@ public:
 &lt;li&gt;s 和 goal 由小写英文字母组成&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;属于&lt;strong&gt;模拟&lt;/strong&gt;类型的题目&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣不亲密&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;br&gt;&lt;em&gt;&lt;strong&gt;2️⃣亲密&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不亲密&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;/li&gt;
+&lt;li&gt;亲密&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的的字符串数量为2&lt;br&gt;&lt;strong&gt;或&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的字符串数量为0 并且 &lt;code&gt;s&lt;/code&gt;中存在出现次数&amp;gt;2的字符&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt; PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;所以注意：即使一开始s&amp;#x3D;&amp;#x3D;goal，但是s怎么交换2字符都不能再&amp;#x3D;&amp;#x3D;goal，也&lt;strong&gt;不算亲密&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个：&lt;br&gt;题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个。因为题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-CPP&#34;&gt;class Solution &amp;#123;
 public:
     bool buddyStrings(string s, string goal) &amp;#123;
@@ -1367,19 +1377,21 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 500&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;br&gt;&lt;em&gt;&lt;strong&gt;1️⃣构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;li&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;blockquote&gt;
 &lt;p&gt;这里用ASCII码运算，因为’a’&lt;del&gt;‘z’为98&lt;/del&gt;233,所以&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;计算word[i]相对与a的偏移量，即字符word[i]是字母表中的&lt;strong&gt;第&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;个字母&lt;/strong&gt;，&lt;code&gt;+1&lt;/code&gt;即为后一个字符；&lt;br&gt;&lt;code&gt;%26+&amp;#39;a&amp;#39;&lt;/code&gt;的原因是：当word[i]为&lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;时,让26变回0，所以%26取模。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;2️⃣终止条件&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;终止条件&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;当&lt;code&gt;s.size()&amp;gt;=k&lt;/code&gt;时，直接返回s[k-1]&lt;/li&gt;
 &lt;/ul&gt;
@@ -1414,10 +1426,10 @@ public:
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;一开始直接用erase删符合条件的字符，而且删除后索引没有回退，报错显示 &lt;code&gt;std::out_of_range&lt;/code&gt;。&lt;br&gt;后来用&lt;strong&gt;栈&lt;/strong&gt;来解决：&lt;/p&gt;
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;迭代字符串s，删除互为大小写的字符，其他的正常压栈&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;abs(stk.back() - ch) == 32&lt;/code&gt; 栈顶字符和当前字符互为大小写（用abs确保大小写前后顺序都可）&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     string makeGood(string s) &amp;#123;
@@ -1566,6 +1578,38 @@ public:
 &lt;li&gt;&lt;code&gt;.size()&lt;/code&gt;&lt;br&gt;计算去重后的字符个数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;return unoredered_set(s.begin(),s.end().size());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2109最小化字符串长度&#34;&gt;&lt;a href=&#34;#2109最小化字符串长度&#34; class=&#34;headerlink&#34; title=&#34;2109最小化字符串长度&#34;&gt;&lt;/a&gt;2109最小化字符串长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，以及一个下标从 0 开始的整数数组 spaces 。&lt;br&gt;数组 spaces 描述原字符串中需要添加空格的下标。每个空格都应该插入到给定索引处的字符值 之前 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，s &amp;#x3D; “EnjoyYourCoffee” 且 spaces &amp;#x3D; [5, 9] ，那么我们需要在 ‘Y’ 和 ‘C’ 之前添加空格，这两个字符分别位于下标 5 和下标 9 。因此，最终得到 “Enjoy Your Coffee” 。&lt;br&gt;请你添加空格，并返回修改后的字符串。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;s 仅由大小写英文字母组成&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; spaces.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; spaces[i] &amp;lt;&amp;#x3D; s.length - 1&lt;/li&gt;
+&lt;li&gt;spaces 中的所有值严格递增&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;咳咳，虽然用时击败5%，但是自己写出来中等题而且没超时已经很棒了！夸夸自己😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string addSpaces(string s, vector&amp;lt;int&amp;gt;&amp;amp; spaces) &amp;#123;
+        int idx=0,cnt=0;
+        for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+            while(idx&amp;lt;spaces.size())&amp;#123;
+                s.insert(spaces[idx]+cnt,&amp;quot; &amp;quot;);
+                idx++;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return s;
+    &amp;#125;
+&amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />

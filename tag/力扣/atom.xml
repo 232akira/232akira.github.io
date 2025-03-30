@@ -7,13 +7,13 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="力扣" />
     <category term="数组" />
     <category term="C++" />
     <category term="哈希表" />
     <category term="动态规划" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="记录" />
     <category term="Markdown" />
     <entry>
@@ -287,7 +287,7 @@
 &lt;li&gt;如果sum&amp;gt;&amp;#x3D;target:更新答案最小值 ans&amp;#x3D;min(ans,right-left+1)&lt;/li&gt;
 &lt;li&gt;返回ans（&amp;lt;&amp;#x3D;n返回ans，否则返回0）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;**注：**并且此题不需要判断left和right两者间的大小关系，因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;注意：此题不需要判断left和right两者间的大小关系。&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为当left&amp;#x3D;right时，s-nums[left]&amp;#x3D;0，一定比target小（target为正整数），不满足while条件。&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;在「2」的基础上，把ans的更新写到while里面&lt;/li&gt;
 &lt;/ol&gt;
@@ -997,8 +997,8 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="算法" />
-        <category term="链表" />
         <category term="力扣" />
+        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
