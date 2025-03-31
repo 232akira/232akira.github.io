@@ -25,7 +25,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -59,7 +59,7 @@
 &lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -88,7 +88,7 @@
 &lt;td align=&#34;center&#34;&gt;处理边界（溢出&amp;#x2F;符号&amp;#x2F;空格）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -117,7 +117,7 @@
 &lt;td align=&#34;center&#34;&gt;一趟扫描&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -141,7 +141,7 @@
 &lt;td align=&#34;center&#34;&gt;动回溯法&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -165,7 +165,7 @@
 &lt;td align=&#34;center&#34;&gt;O(nlogn)优化解法&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -189,7 +189,7 @@
 &lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
@@ -213,6 +213,7 @@
 &lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;具体题目思路&amp;amp;代码记录见各个专题🤗&lt;/p&gt;
 </content>
         <category term="算法" />
         <category term="力扣" />
