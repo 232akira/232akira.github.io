@@ -3,7 +3,7 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-03-23T11:22:34.000Z</updated>
+    <updated>2025-04-01T01:19:00.000Z</updated>
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
@@ -17,9 +17,9 @@
     <category term="记录" />
     <category term="Markdown" />
     <entry>
-        <id>https://232akira.github.io/2025/03/23/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</id>
+        <id>https://232akira.github.io/2025/04/01/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看指引</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/23/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/"/>
         <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;左上角三横杠&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -34,7 +34,123 @@
 &lt;/ul&gt;
 </content>
         <category term="记录" />
-        <updated>2025-03-23T11:22:34.000Z</updated>
+        <updated>2025-04-01T01:19:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
+        <title>专题3️⃣ 动态规划</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+        <content type="html">&lt;p&gt;动规来力！！！&lt;/p&gt;
+&lt;h1 id=&#34;198-打家劫舍&#34;&gt;&lt;a href=&#34;#198-打家劫舍&#34; class=&#34;headerlink&#34; title=&#34;198.打家劫舍&#34;&gt;&lt;/a&gt;198.打家劫舍&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。&lt;br&gt;给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;br&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 100&lt;br&gt;0 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 400&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/house-robber/solutions/138131/dong-tai-gui-hua-jie-ti-si-bu-zou-xiang-jie-cjavap/&#34;&gt;题解&lt;/a&gt;写的特别详细！这里复述一下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;动态规划的四个解题步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义子问题&lt;/li&gt;
+&lt;li&gt;写出子问题的递推关系&lt;/li&gt;
+&lt;li&gt;确定dp数组的计算顺序&lt;/li&gt;
+&lt;li&gt;（可选）空间优化&lt;blockquote&gt;
+&lt;p&gt;这里根据自己现有的水平仅梳理前三点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;定义子问题&lt;/strong&gt;&lt;br&gt;原问题：“从全部房间偷到的最大金额”&lt;code&gt;→&lt;/code&gt;子问题：“从前k个房间偷到的最大金额”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;写出&lt;strong&gt;子问题的递推关系&lt;/strong&gt;&lt;br&gt;👉已知子问题f(k)，那么只关注当前（即第k个）房间，只有两种偷法：&lt;br&gt;偷k &amp;amp;&amp;amp; 偷k-2&lt;code&gt;or&lt;/code&gt;不偷k &amp;amp;&amp;amp; 偷k-1间&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉可得递推关系：&lt;code&gt;f(k)=max&amp;#123;f(k-1),k-1房间的钱+f(k-2)&amp;#125;&lt;/code&gt;。这里的f(k)也叫做状态，式子也叫做状态转移方程。&lt;/p&gt;
+&lt;p&gt;同时别忘了边界情况：无房子（k&amp;#x3D;0）和只有一个房子(k&amp;#x3D;1)。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;确定&lt;strong&gt;dp数组的计算顺序&lt;/strong&gt;&lt;br&gt;👉dp数组（子问题数组，）：dp[k]&amp;#x3D;偷前k间房子的最大金额。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉大多动规问题使用&lt;code&gt;自底向上&lt;/code&gt;的dp数组循环方法。&lt;/p&gt;
+&lt;p&gt;✅️由子问题的计算顺序可得：dp[k]依赖于dp[k-1]和dp[k-2]。那么就可以开写力&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int rob(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int n=nums.size();
+        if(n==0)&amp;#123;
+            return 0;
+        &amp;#125;
+        vector&amp;lt;int&amp;gt; dp(n+1,0);
+        dp[1]=nums[0];
+        for(int i=2;i&amp;lt;=n;i++)&amp;#123;
+            dp[i]=max(dp[i-1],nums[i-1]+dp[i-2]);
+        &amp;#125;
+        return dp[n];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的二维整数数组 questions ，其中 questions[i] &amp;#x3D; [pointsi, brainpoweri] 。&lt;br&gt;这个数组表示一场考试里的一系列题目，你需要 按顺序 （也就是从问题 0 开始依次解决），针对每个问题选择 解决 或者 跳过 操作。解决问题 i 将让你 获得  pointsi 的分数，但是你将 无法 解决接下来的 brainpoweri 个问题（即只能跳过接下来的 brainpoweri 个问题）。如果你跳过问题 i ，你可以对下一个问题决定使用哪种操作。&lt;br&gt;比方说，给你 questions &amp;#x3D; [[3, 2], [4, 3], [4, 4], [2, 5]] ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果问题 0 被解决了， 那么你可以获得 3 分，但你不能解决问题 1 和 2 。&lt;/li&gt;
+&lt;li&gt;如果你跳过问题 0 ，且解决问题 1 ，你将获得 4 分但是不能解决问题 2 和 3 。&lt;br&gt;请你返回这场考试里你能获得的 最高分数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; questions.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;questions[i].length &amp;#x3D;&amp;#x3D; 2&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; pointsi, brainpoweri &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;解决我的智力问题（不是🤯&lt;/p&gt;
+&lt;p&gt;看了&lt;a href=&#34;https://leetcode.cn/problems/solving-questions-with-brainpower/solutions/1213919/dao-xu-dp-by-endlesscheng-2qkc/?envType=daily-question&amp;envId=2025-04-01&#34;&gt;题解&lt;/a&gt;发现是打家劫舍的变体题，所以带着一块儿做了（如上）。&lt;/p&gt;
+&lt;p&gt;👉相当于如果选了k，接下来有x个不能选：打家劫舍是x&amp;#x3D;1，本题x&amp;#x3D;questions[i][1]。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;子问题&lt;br&gt;原问题：“完成考试（即所有题都已解决or跳过）能获得的最大分数”&lt;code&gt;→&lt;/code&gt;子问题：“完成前k道题能获得的最大分数”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;递推关系&lt;br&gt;👉已知子问题f(k)，那么只关注当前（即第k道）题，只有两种做题方法：&lt;br&gt;做k &amp;amp;&amp;amp; 做k+x&lt;code&gt;or&lt;/code&gt;不做k &amp;amp;&amp;amp; 做k+1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉递推关系：&lt;code&gt;f(k)=max&amp;#123;f(k-1),k-1道题的分数+f(k-1+x)&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;边界：无题目（k&amp;#x3D;0）和只有一道题(k&amp;#x3D;1)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;dp数组的计算顺序&lt;br&gt;✅️dp[k]依赖于dp[k-1]和dp[k-1+x]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不对。这题搞得我现在有点懵，这会正好感冒昏昏沉沉的😵‍💫等我二编…&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;416-分割等和子集&#34;&gt;&lt;a href=&#34;#416-分割等和子集&#34; class=&#34;headerlink&#34; title=&#34;416.分割等和子集&#34;&gt;&lt;/a&gt;416.分割等和子集&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 200&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;这里涉及「恰好装满」的0-1背包问题，教程&lt;a href=&#34;https://www.bilibili.com/video/BV16Y411v7Y6/?vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;戳此&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool canPartition(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int sum=accumulate(nums.begin(),nums.end(),0);
+        if(sum%2!=0)&amp;#123;
+            return false;
+        &amp;#125;
+        int target=sum/2;
+        vector&amp;lt;bool&amp;gt; dp(target+1,false);
+        dp[0]=true;//存在和为i=0的子集
+        for(int num:nums)&amp;#123;
+            for(int i=target;i&amp;gt;=num;i--)&amp;#123;
+                dp[i]=dp[i] || dp[i-num];
+            &amp;#125;
+        &amp;#125;
+        return dp[target];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <updated>2025-04-01T01:18:00.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
