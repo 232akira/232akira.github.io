@@ -5,233 +5,533 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
-        <lastBuildDate>Mon, 17 Mar 2025 15:29:31 +0800</lastBuildDate>
-        <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
+        <pubDate>Tue, 01 Apr 2025 15:29:31 +0800</pubDate>
+        <lastBuildDate>Tue, 01 Apr 2025 15:29:31 +0800</lastBuildDate>
+        <category>记录</category>
         <category>力扣</category>
+        <category>算法</category>
         <category>数组</category>
-        <category>C++</category>
         <category>哈希表</category>
-        <category>动态规划</category>
         <category>二分查找</category>
         <category>链表</category>
-        <category>记录</category>
+        <category>专题</category>
+        <category>C++</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>Markdown</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
-            <title>算法备忘录</title>
-            <link>https://232akira.github.io/2025/03/17/%E7%AE%97%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>算法</category>
-            <category>力扣</category>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/01/HOT%20100/</guid>
+            <title>HOT 100</title>
+            <link>https://232akira.github.io/2025/04/01/HOT%20100/</link>
             <category>记录</category>
-            <pubDate>Mon, 17 Mar 2025 15:29:31 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
-&lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
+            <category>力扣</category>
+            <category>算法</category>
+            <pubDate>Tue, 01 Apr 2025 15:29:31 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;/p&gt;
+&lt;p&gt;话不多说开刷😤！！！&lt;/p&gt;
+&lt;h1 id=&#34;哈希&#34;&gt;&lt;a href=&#34;#哈希&#34; class=&#34;headerlink&#34; title=&#34;哈希&#34;&gt;&lt;/a&gt;哈希&lt;/h1&gt;&lt;h2 id=&#34;283-移动零&#34;&gt;&lt;a href=&#34;#283-移动零&#34; class=&#34;headerlink&#34; title=&#34;283.移动零&#34;&gt;&lt;/a&gt;283.移动零&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。&lt;strong&gt;请注意&lt;/strong&gt;，必须在不复制数组的情况下原地对数组进行操作。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体 &amp;#x2F; 要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;杨辉三角&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[118/119]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;一维数组&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;斐波那契数列&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[509]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;爬楼梯问题&lt;code&gt;[70]&lt;/code&gt;&amp;#x2F;递归&amp;#x2F;迭代&amp;#x2F;动态规划&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;两数之和&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;哈希表优化时间复杂度到O(n)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;合并两个有序数组&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[88]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;原地合并（从后向前填充）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;最大子数组和&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;反转字符串&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[344]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;原地修改（双指针）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;有效的括号&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[20]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;用栈实现括号匹配&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;最长公共前缀&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[14]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;纵向扫描&amp;#x2F;分治&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;字符串转整数&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[8]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;处理边界（溢出&amp;#x2F;符号&amp;#x2F;空格）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;反转链表&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[206]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;环形链表&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[141]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;快慢指针判环&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;合并两个有序链表&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[21]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;删除链表倒数第N个节点&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[19]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;一趟扫描&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;二叉树的最大深度&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[104]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;对称二叉树&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[101]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;迭代（队列&amp;#x2F;栈）&amp;#x2F;递归&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;路径总和&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[112]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;动回溯法&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;打家劫舍&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[198]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;状态转移方程推导&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;零钱兑换&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[322]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;完全背包问题解法&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;最长递增子序列&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[300]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;O(nlogn)优化解法&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;快速排序&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;力扣排序题均可&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;二分查找&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;寻找峰值&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;LRU缓存&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[146]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;实现队列&amp;#x2F;栈&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[232/225]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;汉明距离&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[461]&lt;/code&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;具体题目思路&amp;amp;代码记录见各个专题🤗&lt;/p&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;一开始看到这道题就觉得不就是交换嘛。但是发现题目中的：“保持非零元素的相对顺序”我就懵了。于是开始暴力穷举循环一层套一层…后来被拉回正道。&lt;br&gt;核心思想不变，仍是“交换”。&lt;br&gt;但是交换的条件是&lt;strong&gt;将非零元素全部移到数组头部&lt;/strong&gt;，虽然直观看来与题目所引导的“0全部移到末尾”完全反着来，但是我发现这样做比把0移到末尾再对非零元素进行某种交换排序要来的简单得多。题目作者居心叵测啊（不是&lt;/p&gt;
+&lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    void swap(vector&amp;lt;int&amp;gt;&amp;amp; nums,int i,int j)&amp;#123;
+        int t;
+        t=nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+        
+    &amp;#125;
+    void moveZeroes(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int i=0; 
+        for(int j=0;j&amp;lt;nums.size();j++)&amp;#123;
+            if(nums[j]!=0)&amp;#123;
+                swap(nums,i,j);
+                i++;
+            &amp;#125;
+        &amp;#125;
+
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;双指针&#34;&gt;&lt;a href=&#34;#双指针&#34; class=&#34;headerlink&#34; title=&#34;双指针&#34;&gt;&lt;/a&gt;双指针&lt;/h1&gt;&lt;h1 id=&#34;滑动窗口&#34;&gt;&lt;a href=&#34;#滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;滑动窗口&#34;&gt;&lt;/a&gt;滑动窗口&lt;/h1&gt;&lt;h1 id=&#34;子串&#34;&gt;&lt;a href=&#34;#子串&#34; class=&#34;headerlink&#34; title=&#34;子串&#34;&gt;&lt;/a&gt;子串&lt;/h1&gt;&lt;h1 id=&#34;普通数组&#34;&gt;&lt;a href=&#34;#普通数组&#34; class=&#34;headerlink&#34; title=&#34;普通数组&#34;&gt;&lt;/a&gt;普通数组&lt;/h1&gt;&lt;h1 id=&#34;矩阵&#34;&gt;&lt;a href=&#34;#矩阵&#34; class=&#34;headerlink&#34; title=&#34;矩阵&#34;&gt;&lt;/a&gt;矩阵&lt;/h1&gt;&lt;h1 id=&#34;链表&#34;&gt;&lt;a href=&#34;#链表&#34; class=&#34;headerlink&#34; title=&#34;链表&#34;&gt;&lt;/a&gt;链表&lt;/h1&gt;&lt;h2 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h2&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
+&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。而不是后一个节点next&lt;/li&gt;
+&lt;li&gt;更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。此时pre为新的head节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pre &amp;#x3D; nullptr&lt;/li&gt;
+&lt;li&gt;cur &amp;#x3D; head&lt;br&gt;那么逐步变化如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;/p&gt;
+&lt;p&gt;最终pre变成4，即新的链表头头。&lt;br&gt;&lt;strong&gt;此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;/p&gt;
+&lt;h3 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* reverseList(ListNode* head) &amp;#123;
+        ListNode* pre=nullptr;
+        ListNode* cur=head;
+        while(cur!=nullptr)&amp;#123;
+            ListNode* tmp=cur-&amp;gt;next;
+            cur-&amp;gt;next=pre;
+            pre=cur;
+            cur=tmp;
+        &amp;#125;
+        return pre;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;21-合并两个有序链表&#34;&gt;&lt;a href=&#34;#21-合并两个有序链表&#34; class=&#34;headerlink&#34; title=&#34;21.合并两个有序链表&#34;&gt;&lt;/a&gt;21.合并两个有序链表&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&lt;br&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个链表的节点数目范围是 [0, 50]&lt;/li&gt;
+&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;l1和l2均按非递减顺序排列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;终止条件&lt;/strong&gt;&lt;/em&gt;：有链表为空&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;list1为空，合并结果直接为list2&lt;/li&gt;
+&lt;li&gt;list2为空，合并结果直接为list1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;递归调用&lt;/strong&gt;&lt;/em&gt;：小的打头，每一步递归后返回的值链接到链表末尾&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果&lt;code&gt;list1节点的值 &amp;lt; list2&lt;/code&gt;：寻找list1后面节点还有没有也比list2小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list1-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;else：寻找list2后面节点还有没有也比list1小的节点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
+返回当前较小的节点list2;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &amp;#123;
+        if(list1==NULL || list2==NULL)&amp;#123;
+            return list1==NULL ? list2:list1;
+        &amp;#125;
+        if(list1-&amp;gt;val &amp;lt; list2-&amp;gt;val)&amp;#123;
+            list1-&amp;gt;next = mergeTwoLists(list1-&amp;gt;next,list2);
+            return list1;
+        &amp;#125;
+        else&amp;#123;
+            list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
+            return list2;
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2-两数相加&#34;&gt;&lt;a href=&#34;#2-两数相加&#34; class=&#34;headerlink&#34; title=&#34;2.两数相加&#34;&gt;&lt;/a&gt;2.两数相加&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。&lt;br&gt;请你将两个数相加，并以相同形式返回一个表示和的链表。&lt;br&gt;你可以假设除了数字 0 之外，这两个数都不会以 0 开头。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个链表中的节点数在范围 [1, 100] 内&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 9&lt;/li&gt;
+&lt;li&gt;题目数据保证列表表示的数字不含前导零&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;这道题着实难倒我🥹乖乖去看&lt;a href=&#34;https://leetcode.cn/problems/add-two-numbers/solutions/2327008/dong-hua-jian-ji-xie-fa-cong-di-gui-dao-oe0di/&#34;&gt;题解&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;链表&lt;strong&gt;逆序&lt;/strong&gt;存储数字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;两个链表的节点值 + 进位值&lt;/code&gt;如果记为&lt;code&gt;a&lt;/code&gt;：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;a % 10&lt;/code&gt;为当前节点保存的数位&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a / 10&lt;/code&gt;为新的进位值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;递归思路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;如果l1、l2都为空且carry&amp;#x3D;0，递归结束&lt;/li&gt;
+&lt;li&gt;定义sum&amp;#x3D;carry&lt;/li&gt;
+&lt;li&gt;如果l1不为空，sum+&amp;#x3D;l1-&amp;gt;val，l1&amp;#x3D;l1-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;同理，如果l2不为空，sum+&amp;#x3D;l2-&amp;gt;val，l2&amp;#x3D;l2-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;new一个当前节点node：&lt;code&gt;ListNode* node=new ListNode(sum%10)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;递归调用处理node-&amp;gt;next&lt;/li&gt;
+&lt;li&gt;返回当前节点node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+ * Definition for singly-linked list.
+ * struct ListNode &amp;#123;
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
+ *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
+ * &amp;#125;;
+ */
+class Solution &amp;#123;
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2,int carry=0) &amp;#123;
+        if(l1==nullptr &amp;amp;&amp;amp; l2==nullptr &amp;amp;&amp;amp; carry==0)&amp;#123;
+            return nullptr;
+        &amp;#125;
+        int sum=carry;
+        if(l1!=nullptr)&amp;#123;
+            sum+=l1-&amp;gt;val;
+            l1=l1-&amp;gt;next;
+        &amp;#125;
+        if(l2!=nullptr)&amp;#123;
+            sum+=l2-&amp;gt;val;
+            l2=l2-&amp;gt;next;
+        &amp;#125;
+        ListNode* node=new ListNode(sum%10);
+        carry=sum/10;
+        node-&amp;gt;next=addTwoNumbers(l1,l2,carry);
+        return node;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;二叉树&#34;&gt;&lt;a href=&#34;#二叉树&#34; class=&#34;headerlink&#34; title=&#34;二叉树&#34;&gt;&lt;/a&gt;二叉树&lt;/h1&gt;&lt;h1 id=&#34;图论&#34;&gt;&lt;a href=&#34;#图论&#34; class=&#34;headerlink&#34; title=&#34;图论&#34;&gt;&lt;/a&gt;图论&lt;/h1&gt;&lt;h1 id=&#34;回溯&#34;&gt;&lt;a href=&#34;#回溯&#34; class=&#34;headerlink&#34; title=&#34;回溯&#34;&gt;&lt;/a&gt;回溯&lt;/h1&gt;&lt;h1 id=&#34;二分查找&#34;&gt;&lt;a href=&#34;#二分查找&#34; class=&#34;headerlink&#34; title=&#34;二分查找&#34;&gt;&lt;/a&gt;二分查找&lt;/h1&gt;&lt;h2 id=&#34;35-搜索插入位置&#34;&gt;&lt;a href=&#34;#35-搜索插入位置&#34; class=&#34;headerlink&#34; title=&#34;35.搜索插入位置&#34;&gt;&lt;/a&gt;35.搜索插入位置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。&lt;br&gt;&lt;strong&gt;请必须使用时间复杂度为&lt;code&gt;O(logn)&lt;/code&gt;的算法。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;我一开始用的暴力穷举，如下。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int searchInsert(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) &amp;#123;
+        while(nums.size()!=1)&amp;#123;
+            if(target&amp;lt;nums[0])&amp;#123;
+                return 0;
+            &amp;#125;
+            for(int i=0;i&amp;lt;nums.size()-1;i++)&amp;#123;
+                if(nums[i]==target)&amp;#123;
+                    return i;
+                &amp;#125;
+                else if(nums[i]&amp;lt;target &amp;amp;&amp;amp; nums[i+1]&amp;gt;=target)&amp;#123;
+                    return i+1;
+                &amp;#125;
+            &amp;#125;
+            return nums.size();
+        &amp;#125;
+        return (target&amp;lt;=nums[0])? 0:1;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后提交之后意识到不符合题意，于是再来换个思路：&lt;strong&gt;二分查找&lt;/strong&gt;&lt;br&gt;我前几天刚记的二分查找笔记 今天竟然没意识到这道题有多直白地明示我要用!!!∑(ﾟДﾟノ)ノ&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;二分查找&lt;/strong&gt;：在有序集合中搜索特定值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;使用术语&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目标 &lt;code&gt;target&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;索引 &lt;code&gt;index&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;左、右指示符 &lt;code&gt;left&lt;/code&gt;、&lt;code&gt;right&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;中间指示符 &lt;code&gt;mid&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;计算 &lt;code&gt;mid&lt;/code&gt; 位置&lt;/strong&gt;：&lt;br&gt;如果 &lt;code&gt;nums[mid] == target&lt;/code&gt;，直接返回索引。&lt;br&gt;如果 &lt;code&gt;nums[mid] &amp;lt; target&lt;/code&gt;，说明 target 应该在右半部分，所以left向右移动（left &amp;#x3D; mid + 1）。&lt;br&gt;如果 &lt;code&gt;nums[mid] &amp;gt; target&lt;/code&gt;，说明 target 应该在左半部分，所以right向左移动（ right &amp;#x3D; mid - 1）。&lt;/p&gt;
+&lt;p&gt;循环结束后，left 就是 target 应该插入的位置。&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-1&#34;&gt;&lt;a href=&#34;#AC代码-1&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;二分查找最基础的方法。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int searchInsert(vector&amp;lt;int&amp;gt;&amp;amp; nums, int target) &amp;#123;
+        int left,right;
+        left=0;
+        right=nums.size()-1;
+        while(left&amp;lt;=right)&amp;#123;
+            int mid=left+(right-left)/2;
+            if(nums[mid]==target)&amp;#123;
+                return mid;
+            &amp;#125;
+            else if(nums[mid]&amp;lt;target)&amp;#123;
+                left=mid+1;
+            &amp;#125;
+            else&amp;#123;
+                right=mid-1;
+            &amp;#125;
+        &amp;#125;
+        return left;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;栈&#34;&gt;&lt;a href=&#34;#栈&#34; class=&#34;headerlink&#34; title=&#34;栈&#34;&gt;&lt;/a&gt;栈&lt;/h1&gt;&lt;h2 id=&#34;20-有效的括号&#34;&gt;&lt;a href=&#34;#20-有效的括号&#34; class=&#34;headerlink&#34; title=&#34;20.有效的括号&#34;&gt;&lt;/a&gt;20.有效的括号&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串 s ，判断字符串是否有效。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有效字符串需满足：&lt;br&gt;左括号必须用相同类型的右括号闭合。&lt;br&gt;左括号必须以正确的顺序闭合。&lt;br&gt;每个右括号都有一个对应的相同类型的左括号。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;定义栈的括号匹配规则；() [] &amp;#123;&amp;#125;
+
+初始化一个栈;
+当遇到左括号时：
+    左括号压栈；
+当遇到右括号时:
+    如果（栈空）:
+        ×；
+    否则：
+        char 栈顶元素；
+        弹出栈顶元素；
+        如果栈顶元素与当前右括号不匹配：
+            ×；
+字符串遍历完后：
+    如果（栈空）：
+        √；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;这里的for循环可以直接用for(char ch:s)，表示&lt;strong&gt;对于字符串&lt;code&gt;s&lt;/code&gt;中的每一个字符&lt;code&gt;ch&lt;/code&gt;,执行循环内容&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;AC代码-2&#34;&gt;&lt;a href=&#34;#AC代码-2&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool isValid(string s) &amp;#123;
+        unordered_map&amp;lt;char,char&amp;gt;pairs=&amp;#123;&amp;#123;&#39;)&#39;,&#39;(&#39;&amp;#125;,&amp;#123;&#39;]&#39;,&#39;[&#39;&amp;#125;,&amp;#123;&#39;&amp;#125;&#39;,&#39;&amp;#123;&#39;&amp;#125;&amp;#125;;
+        stack&amp;lt;char&amp;gt;stk;
+        for(char ch:s)&amp;#123;
+            if(ch==&amp;#39;(&amp;#39; || ch==&amp;#39;[&amp;#39; || ch==&amp;#39;&amp;#123;&amp;#39;)&amp;#123;
+                stk.push(ch);
+            &amp;#125;
+            else&amp;#123;
+                if(stk.empty())&amp;#123;
+                    return false;
+                &amp;#125;
+                char top=stk.top();
+                stk.pop();
+                if(pairs[ch]!=top)&amp;#123;
+                    return false;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        if(stk.empty())&amp;#123;
+            return true;
+        &amp;#125;
+        return false;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;堆&#34;&gt;&lt;a href=&#34;#堆&#34; class=&#34;headerlink&#34; title=&#34;堆&#34;&gt;&lt;/a&gt;堆&lt;/h1&gt;&lt;h1 id=&#34;贪心算法&#34;&gt;&lt;a href=&#34;#贪心算法&#34; class=&#34;headerlink&#34; title=&#34;贪心算法&#34;&gt;&lt;/a&gt;贪心算法&lt;/h1&gt;&lt;h1 id=&#34;动态规划&#34;&gt;&lt;a href=&#34;#动态规划&#34; class=&#34;headerlink&#34; title=&#34;动态规划&#34;&gt;&lt;/a&gt;动态规划&lt;/h1&gt;&lt;h2 id=&#34;70-爬楼梯&#34;&gt;&lt;a href=&#34;#70-爬楼梯&#34; class=&#34;headerlink&#34; title=&#34;70.爬楼梯&#34;&gt;&lt;/a&gt;70.爬楼梯&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;假设你正在爬楼梯。需要 n 阶你才能到达楼顶。&lt;br&gt;每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;试图暴力然后失败。然后查看题解：竟然是&lt;strong&gt;动态规划&lt;/strong&gt;~&lt;/p&gt;
+&lt;p&gt;重点理解部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;逆向思维&lt;/strong&gt;：如果要到第&lt;code&gt;n&lt;/code&gt;个台阶，就必须从第&lt;code&gt;n-1&lt;/code&gt;阶走1步，或者从第&lt;code&gt;n-2&lt;/code&gt;阶走2步。&lt;/li&gt;
+&lt;li&gt;dp[n]&amp;#x3D;dp[n-1]+dp[n-2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;为什么这样递推？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;动态规划的核心是&lt;strong&gt;拆分子问题,然后找到递推关系&lt;/strong&gt;。本质根据题目限制条件，建立递推关系，然后用代码实现。&lt;br&gt;👉 因为你每次只能走 1 级或 2 级，所以你到 n 级的方式只能来自 n-1 和 n-2，而不能来自 n-3、n-4 等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//先处理边界情况
+如果n&amp;lt;=2：返回n；
+//动规
+定义a=1,b=2；（对应能上的楼梯阶数）和当前阶梯的方案数量temp;
+遍历n（从3开始）：
+    temp=a+b； //dp[i]=dp[i-2]+dp[i-1]
+    a=b;      //a=dp[i-1]
+    b=temp;   //b=dp[i];
+返回 b;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int climbStairs(int n) &amp;#123;
+        if(n&amp;lt;=2)&amp;#123;
+            return n;
+        &amp;#125;
+        int a=1,b=2,temp;
+        for(int i=3;i&amp;lt;=n;i++)&amp;#123;
+            temp=a+b;
+            a=b;
+            b=temp;
+        &amp;#125;
+        return b;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;198-打家劫舍&#34;&gt;&lt;a href=&#34;#198-打家劫舍&#34; class=&#34;headerlink&#34; title=&#34;198.打家劫舍&#34;&gt;&lt;/a&gt;198.打家劫舍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。&lt;br&gt;给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;br&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 100&lt;br&gt;0 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 400&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/house-robber/solutions/138131/dong-tai-gui-hua-jie-ti-si-bu-zou-xiang-jie-cjavap/&#34;&gt;题解&lt;/a&gt;写的特别详细！这里复述一下：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;动态规划的四个解题步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义子问题&lt;/li&gt;
+&lt;li&gt;写出子问题的递推关系&lt;/li&gt;
+&lt;li&gt;确定dp数组的计算顺序&lt;/li&gt;
+&lt;li&gt;（可选）空间优化&lt;blockquote&gt;
+&lt;p&gt;这里根据自己现有的水平仅梳理前三点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;定义子问题&lt;/strong&gt;&lt;br&gt;原问题：“从全部房间偷到的最大金额”&lt;code&gt;→&lt;/code&gt;子问题：“从前k个房间偷到的最大金额”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;写出&lt;strong&gt;子问题的递推关系&lt;/strong&gt;&lt;br&gt;👉已知子问题f(k)，那么只关注当前（即第k个）房间，只有两种偷法：&lt;br&gt;偷k &amp;amp;&amp;amp; 偷k-2&lt;code&gt;or&lt;/code&gt;不偷k &amp;amp;&amp;amp; 偷k-1间&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉可得递推关系：&lt;code&gt;f(k)=max&amp;#123;f(k-1),k-1房间的钱+f(k-2)&amp;#125;&lt;/code&gt;。这里的f(k)也叫做状态，式子也叫做状态转移方程。&lt;/p&gt;
+&lt;p&gt;同时别忘了边界情况：无房子（k&amp;#x3D;0）和只有一个房子(k&amp;#x3D;1)。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;确定&lt;strong&gt;dp数组的计算顺序&lt;/strong&gt;&lt;br&gt;👉dp数组（子问题数组，）：dp[k]&amp;#x3D;偷前k间房子的最大金额。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉大多动规问题使用&lt;code&gt;自底向上&lt;/code&gt;的dp数组循环方法。&lt;/p&gt;
+&lt;p&gt;✅️由子问题的计算顺序可得：dp[k]依赖于dp[k-1]和dp[k-2]。那么就可以开写力&lt;/p&gt;
+&lt;h3 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int rob(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int n=nums.size();
+        if(n==0)&amp;#123;
+            return 0;
+        &amp;#125;
+        vector&amp;lt;int&amp;gt; dp(n+1,0);
+        dp[1]=nums[0];
+        for(int i=2;i&amp;lt;=n;i++)&amp;#123;
+            dp[i]=max(dp[i-1],nums[i-1]+dp[i-2]);
+        &amp;#125;
+        return dp[n];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;416-分割等和子集&#34;&gt;&lt;a href=&#34;#416-分割等和子集&#34; class=&#34;headerlink&#34; title=&#34;416.分割等和子集&#34;&gt;&lt;/a&gt;416.分割等和子集&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 200&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;这里涉及「恰好装满」的0-1背包问题，教程&lt;a href=&#34;https://www.bilibili.com/video/BV16Y411v7Y6/?vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;戳此&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool canPartition(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int sum=accumulate(nums.begin(),nums.end(),0);
+        if(sum%2!=0)&amp;#123;
+            return false;
+        &amp;#125;
+        int target=sum/2;
+        vector&amp;lt;bool&amp;gt; dp(target+1,false);
+        dp[0]=true;//存在和为i=0的子集
+        for(int num:nums)&amp;#123;
+            for(int i=target;i&amp;gt;=num;i--)&amp;#123;
+                dp[i]=dp[i] || dp[i-num];
+            &amp;#125;
+        &amp;#125;
+        return dp[target];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;多维动态规划&#34;&gt;&lt;a href=&#34;#多维动态规划&#34; class=&#34;headerlink&#34; title=&#34;多维动态规划&#34;&gt;&lt;/a&gt;多维动态规划&lt;/h1&gt;&lt;h1 id=&#34;技巧&#34;&gt;&lt;a href=&#34;#技巧&#34; class=&#34;headerlink&#34; title=&#34;技巧&#34;&gt;&lt;/a&gt;技巧&lt;/h1&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+            <title>专题3️⃣ 动态规划</title>
+            <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+            <category>力扣</category>
+            <category>算法</category>
+            <category>专题</category>
+            <category>C++</category>
+            <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;动规来力！！！&lt;/p&gt;
+&lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的二维整数数组 questions ，其中 questions[i] &amp;#x3D; [pointsi, brainpoweri] 。&lt;br&gt;这个数组表示一场考试里的一系列题目，你需要 按顺序 （也就是从问题 0 开始依次解决），针对每个问题选择 解决 或者 跳过 操作。解决问题 i 将让你 获得  pointsi 的分数，但是你将 无法 解决接下来的 brainpoweri 个问题（即只能跳过接下来的 brainpoweri 个问题）。如果你跳过问题 i ，你可以对下一个问题决定使用哪种操作。&lt;br&gt;比方说，给你 questions &amp;#x3D; [[3, 2], [4, 3], [4, 4], [2, 5]] ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果问题 0 被解决了， 那么你可以获得 3 分，但你不能解决问题 1 和 2 。&lt;/li&gt;
+&lt;li&gt;如果你跳过问题 0 ，且解决问题 1 ，你将获得 4 分但是不能解决问题 2 和 3 。&lt;br&gt;请你返回这场考试里你能获得的 最高分数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; questions.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;questions[i].length &amp;#x3D;&amp;#x3D; 2&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; pointsi, brainpoweri &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;解决我的智力问题（不是🤯&lt;/p&gt;
+&lt;p&gt;看了&lt;a href=&#34;https://leetcode.cn/problems/solving-questions-with-brainpower/solutions/1213919/dao-xu-dp-by-endlesscheng-2qkc/?envType=daily-question&amp;envId=2025-04-01&#34;&gt;题解&lt;/a&gt;发现是打家劫舍的变体题，所以带着一块儿做了。&lt;/p&gt;
+&lt;p&gt;👉相当于如果选了k，接下来有x个不能选：打家劫舍是x&amp;#x3D;1，本题x&amp;#x3D;questions[i][1]。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;子问题&lt;br&gt;原问题：“完成考试（即所有题都已解决or跳过）能获得的最大分数”&lt;code&gt;→&lt;/code&gt;子问题：“完成前k道题能获得的最大分数”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;递推关系&lt;br&gt;👉已知子问题f(k)，那么只关注当前（即第k道）题，只有两种做题方法：&lt;br&gt;做k &amp;amp;&amp;amp; 做k+x&lt;code&gt;or&lt;/code&gt;不做k &amp;amp;&amp;amp; 做k+1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉递推关系：&lt;code&gt;f(k)=max&amp;#123;f(k-1),k-1道题的分数+f(k-1+x)&amp;#125;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;边界：无题目（k&amp;#x3D;0）和只有一道题(k&amp;#x3D;1)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;dp数组的计算顺序&lt;br&gt;✅️dp[k]依赖于dp[k-1]和dp[k-1+x]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不对。这题搞得我现在有点懵，这会正好感冒昏昏沉沉的😵‍💫等我二编…&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;53-最大子数组和&#34;&gt;&lt;a href=&#34;#53-最大子数组和&#34; class=&#34;headerlink&#34; title=&#34;53.最大子数组和&#34;&gt;&lt;/a&gt;53.最大子数组和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。&lt;br&gt;子数组是数组中的一个连续部分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;-104 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;经典解法：Kadane算法&lt;/strong&gt;。核心思路是动态规划，通过遍历数组维护当前最大子数组和。整体思路如下：&lt;br&gt;1️⃣&lt;strong&gt;维护两个变量：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sum&lt;/code&gt;当前最大子数组和&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;maxsum&lt;/code&gt;全局最大子数组和&lt;br&gt;2️⃣&lt;strong&gt;遍历数组，每次决定是否扩展当前子数组&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如果&lt;code&gt;sum+nums[i] &amp;lt; nums[i]&lt;/code&gt; 从nums[i]重新开始（之前的子数组必定与最大和无关&lt;/li&gt;
+&lt;li&gt;否则继续累加nums[i]&lt;br&gt;3️⃣&lt;strong&gt;每次更新&lt;code&gt;maxsum&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int maxSubArray(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int sum=nums[0];
+        int maxsum=nums[0];
+        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
+            sum=max(nums[i],sum+nums[i]);
+            maxsum=max(sum,maxsum);
+        &amp;#125;
+        return maxsum;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>算法</category>
-            <category>字符串</category>
-            <category>滑动窗口</category>
             <category>力扣</category>
-            <category>哈希表</category>
+            <category>算法</category>
+            <category>专题</category>
+            <category>C++</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
@@ -676,8 +976,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>算法</category>
             <category>力扣</category>
+            <category>算法</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -783,174 +1083,6 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;21-合并两个有序链表&#34;&gt;&lt;a href=&#34;#21-合并两个有序链表&#34; class=&#34;headerlink&#34; title=&#34;21.合并两个有序链表&#34;&gt;&lt;/a&gt;21.合并两个有序链表&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&lt;br&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;两个链表的节点数目范围是 [0, 50]&lt;/li&gt;
-&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
-&lt;li&gt;l1和l2均按非递减顺序排列&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;终止条件&lt;/strong&gt;&lt;/em&gt;：有链表为空&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;list1为空，合并结果直接为list2&lt;/li&gt;
-&lt;li&gt;list2为空，合并结果直接为list1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;递归调用&lt;/strong&gt;&lt;/em&gt;：小的打头，每一步递归后返回的值链接到链表末尾&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果&lt;code&gt;list1节点的值 &amp;lt; list2&lt;/code&gt;：寻找list1后面节点还有没有也比list2小的节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;让list1-&amp;gt;next接上递归后合并的结果；
-返回当前较小的节点list1;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;else：寻找list2后面节点还有没有也比list1小的节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
-返回当前较小的节点list2;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &amp;#123;
-        if(list1==NULL || list2==NULL)&amp;#123;
-            return list1==NULL ? list2:list1;
-        &amp;#125;
-        if(list1-&amp;gt;val &amp;lt; list2-&amp;gt;val)&amp;#123;
-            list1-&amp;gt;next = mergeTwoLists(list1-&amp;gt;next,list2);
-            return list1;
-        &amp;#125;
-        else&amp;#123;
-            list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
-            return list2;
-        &amp;#125;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h1&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
-&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。而不是后一个节点next&lt;/li&gt;
-&lt;li&gt;更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。此时pre为新的head节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pre &amp;#x3D; nullptr&lt;/li&gt;
-&lt;li&gt;cur &amp;#x3D; head&lt;br&gt;那么逐步变化如下：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;/p&gt;
-&lt;p&gt;最终pre变成4，即新的链表头头。&lt;br&gt;&lt;strong&gt;此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* reverseList(ListNode* head) &amp;#123;
-        ListNode* pre=nullptr;
-        ListNode* cur=head;
-        while(cur!=nullptr)&amp;#123;
-            ListNode* tmp=cur-&amp;gt;next;
-            cur-&amp;gt;next=pre;
-            pre=cur;
-            cur=tmp;
-        &amp;#125;
-        return pre;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2-两数相加&#34;&gt;&lt;a href=&#34;#2-两数相加&#34; class=&#34;headerlink&#34; title=&#34;2.两数相加&#34;&gt;&lt;/a&gt;2.两数相加&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。&lt;br&gt;请你将两个数相加，并以相同形式返回一个表示和的链表。&lt;br&gt;你可以假设除了数字 0 之外，这两个数都不会以 0 开头。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;每个链表中的节点数在范围 [1, 100] 内&lt;/li&gt;
-&lt;li&gt;0 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 9&lt;/li&gt;
-&lt;li&gt;题目数据保证列表表示的数字不含前导零&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;这道题着实难倒我🥹乖乖去看&lt;a href=&#34;https://leetcode.cn/problems/add-two-numbers/solutions/2327008/dong-hua-jian-ji-xie-fa-cong-di-gui-dao-oe0di/&#34;&gt;题解&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;链表&lt;strong&gt;逆序&lt;/strong&gt;存储数字&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;两个链表的节点值 + 进位值&lt;/code&gt;如果记为&lt;code&gt;a&lt;/code&gt;：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;a % 10&lt;/code&gt;为当前节点保存的数位&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a / 10&lt;/code&gt;为新的进位值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;递归思路&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;如果l1、l2都为空且carry&amp;#x3D;0，递归结束&lt;/li&gt;
-&lt;li&gt;定义sum&amp;#x3D;carry&lt;/li&gt;
-&lt;li&gt;如果l1不为空，sum+&amp;#x3D;l1-&amp;gt;val，l1&amp;#x3D;l1-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;同理，如果l2不为空，sum+&amp;#x3D;l2-&amp;gt;val，l2&amp;#x3D;l2-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;new一个当前节点node：&lt;code&gt;ListNode* node=new ListNode(sum%10)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;递归调用处理node-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;返回当前节点node&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2,int carry=0) &amp;#123;
-        if(l1==nullptr &amp;amp;&amp;amp; l2==nullptr &amp;amp;&amp;amp; carry==0)&amp;#123;
-            return nullptr;
-        &amp;#125;
-        int sum=carry;
-        if(l1!=nullptr)&amp;#123;
-            sum+=l1-&amp;gt;val;
-            l1=l1-&amp;gt;next;
-        &amp;#125;
-        if(l2!=nullptr)&amp;#123;
-            sum+=l2-&amp;gt;val;
-            l2=l2-&amp;gt;next;
-        &amp;#125;
-        ListNode* node=new ListNode(sum%10);
-        carry=sum/10;
-        node-&amp;gt;next=addTwoNumbers(l1,l2,carry);
-        return node;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;83-删除排序链表中的重复元素&#34;&gt;&lt;a href=&#34;#83-删除排序链表中的重复元素&#34; class=&#34;headerlink&#34; title=&#34;83.删除排序链表中的重复元素&#34;&gt;&lt;/a&gt;83.删除排序链表中的重复元素&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个已排序的链表的头head，删除所有重复的元素，使每个元素只出现一次。返回已排序的链表。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -962,7 +1094,7 @@ public:
 &lt;li&gt;题目数据保证链表已经按升序排列&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;【如果】头节点&amp;#x3D;空：直接返回该节点&lt;/li&gt;
 &lt;li&gt;初始化一个当前节点变量&amp;#x3D;头节点&lt;/li&gt;
 &lt;li&gt;【只要】当前&lt;code&gt;节点-&amp;gt;next&lt;/code&gt;不为空&lt;/li&gt;
@@ -974,7 +1106,7 @@ public:
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;返回头节点&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
  *     int val;
@@ -1011,9 +1143,7 @@ public:
             <link>https://232akira.github.io/2025/03/04/Leetcode%E6%95%B0%E7%BB%84/</link>
             <category>力扣</category>
             <category>数组</category>
-            <category>C++</category>
             <category>哈希表</category>
-            <category>动态规划</category>
             <category>二分查找</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
@@ -1395,36 +1525,6 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;53-最大子数组和&#34;&gt;&lt;a href=&#34;#53-最大子数组和&#34; class=&#34;headerlink&#34; title=&#34;53.最大子数组和&#34;&gt;&lt;/a&gt;53.最大子数组和&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。&lt;br&gt;子数组是数组中的一个连续部分。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
-&lt;li&gt;-104 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;经典解法：Kadane算法&lt;/strong&gt;。核心思路是动态规划，通过遍历数组维护当前最大子数组和。整体思路如下：&lt;br&gt;1️⃣&lt;strong&gt;维护两个变量：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sum&lt;/code&gt;当前最大子数组和&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;maxsum&lt;/code&gt;全局最大子数组和&lt;br&gt;2️⃣&lt;strong&gt;遍历数组，每次决定是否扩展当前子数组&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;如果&lt;code&gt;sum+nums[i] &amp;lt; nums[i]&lt;/code&gt; 从nums[i]重新开始（之前的子数组必定与最大和无关&lt;/li&gt;
-&lt;li&gt;否则继续累加nums[i]&lt;br&gt;3️⃣&lt;strong&gt;每次更新&lt;code&gt;maxsum&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
-public:
-    int maxSubArray(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
-        int sum=nums[0];
-        int maxsum=nums[0];
-        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
-            sum=max(nums[i],sum+nums[i]);
-            maxsum=max(sum,maxsum);
-        &amp;#125;
-        return maxsum;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;2610-转换二维数组&#34;&gt;&lt;a href=&#34;#2610-转换二维数组&#34; class=&#34;headerlink&#34; title=&#34;2610.转换二维数组&#34;&gt;&lt;/a&gt;2610.转换二维数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums 。请你创建一个满足以下条件的二维数组：&lt;/p&gt;
 &lt;ul&gt;
@@ -1439,14 +1539,14 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; nums.length&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;用&lt;strong&gt;哈希表&lt;/strong&gt;！😎统计元素出现次数，定义一个一维数组存每行元素。每用一个元素。哈希表中该元素次数–（当次数为0时）从表中删除该元素。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;用&lt;strong&gt;哈希表&lt;/strong&gt;！😎统计元素出现次数，定义一个一维数组存每行元素。每用一个元素。哈希表中该元素次数–（当次数为0时）从表中删除该元素。&lt;/p&gt;
 &lt;p&gt;这里看题解 涉及到stl&lt;strong&gt;迭代器&lt;/strong&gt;&lt;code&gt;it&lt;/code&gt;的用法：对于定义一个哈希表:&lt;code&gt;unordered_map&amp;lt;int,int&amp;gt;cnt&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;当用&lt;code&gt;auto:it&lt;/code&gt;遍历&lt;code&gt;cnt.begin()&lt;/code&gt;到&lt;code&gt;!=cnt.end()&lt;/code&gt;时&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;it-&amp;gt;first&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;key&lt;/code&gt;。本题中即为&lt;strong&gt;元素本身&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;it-&amp;gt;second&lt;/code&gt;即为哈希表键值对(key,value)中的&lt;code&gt;value&lt;/code&gt;。本题中即为元素的&lt;strong&gt;出现次数&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;感谢&lt;a href=&#34;https://leetcode.cn/u/endlesscheng/&#34;&gt;灵神&lt;/a&gt;题解，教会我很多&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;感谢&lt;a href=&#34;https://leetcode.cn/u/endlesscheng/&#34;&gt;灵神&lt;/a&gt;题解，教会我很多&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; findMatrix(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
@@ -1484,8 +1584,8 @@ public:
 &lt;li&gt;mat[i][j] 为 0 或 1&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;最轻松的一集😂但是我写的代码略史山，还有优化空间。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;这里直接用&lt;code&gt;int ones = count(mat[i].begin(), mat[i].end(), 1); &lt;/code&gt;统计1的个数可以减少一次遍历。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;最轻松的一集😂但是我写的代码略史山，还有优化空间。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;这里直接用&lt;code&gt;int ones = count(mat[i].begin(), mat[i].end(), 1); &lt;/code&gt;统计1的个数可以减少一次遍历。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;int&amp;gt; rowAndMaximumOnes(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; mat) &amp;#123;
@@ -1523,8 +1623,8 @@ public:
 &lt;li&gt;0 &amp;lt;&amp;#x3D; img[i][j] &amp;lt;&amp;#x3D; 255&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;关键知道矩阵边界，也就是不全加9个数的情况怎么算。我一开始还想着一个个情况穷举😂其实3*3区域安心两层遍历就行，对于这道题不会超时。&lt;br&gt;***刷题以来第一次碰到四层循环能通过的。。。***不看题解都不敢想像这个方法。&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;关键知道矩阵边界，也就是不全加9个数的情况怎么算。我一开始还想着一个个情况穷举😂其实3*3区域安心两层遍历就行，对于这道题不会超时。&lt;br&gt;***刷题以来第一次碰到四层循环能通过的。。。***不看题解都不敢想像这个方法。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; imageSmoother(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; img) &amp;#123;
         int m,n;
@@ -1561,7 +1661,7 @@ public:
 &lt;li&gt;1 &amp;lt;&amp;#x3D; m, n, grid[i][j] &amp;lt;&amp;#x3D; 50&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;几个地方思考的时候容易卡住：&lt;/p&gt;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;几个地方思考的时候容易卡住：&lt;/p&gt;
 &lt;p&gt;1️⃣&lt;strong&gt;不同值是什么意思？&lt;/strong&gt;&lt;br&gt;我一开始理解的是对于grid[i][j]，它的左对角线上和它不同的元素数量叫做topleft，右对角线上和它不同的元素数量叫做bottomright，然后就自以为大彻大悟☝️🤓&lt;del&gt;美美去打代码然后寄了&lt;/del&gt;。&lt;/p&gt;
 &lt;p&gt;个人理解中，实际上这里的不同值的意思是：对于这半拉对角线上的所有元素而言的&lt;strong&gt;种类&lt;/strong&gt;数量。&lt;/p&gt;
 &lt;ul&gt;
@@ -1574,7 +1674,7 @@ public:
 &lt;li&gt;新的不同值用myset.insert()添加&lt;/li&gt;
 &lt;li&gt;myset.size()获得不同值的数量&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-10&#34;&gt;&lt;a href=&#34;#完整代码-10&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; differenceOfDistinctValues(vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&amp;amp; grid) &amp;#123;
         int m,n;
@@ -1615,6 +1715,916 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3375-使数组的值全部为&#34;&gt;&lt;a href=&#34;#3375-使数组的值全部为&#34; class=&#34;headerlink&#34; title=&#34;3375.使数组的值全部为&#34;&gt;&lt;/a&gt;3375.使数组的值全部为&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums 和一个整数 k 。&lt;br&gt;如果一个数组中所有 严格大于 h 的整数值都 相等 ，那么我们称整数 h 是 合法的 。&lt;br&gt;比方说，如果 nums &amp;#x3D; [10, 8, 10, 8] ，那么 h &amp;#x3D; 9 是一个 合法 整数，因为所有满足 nums[i] &amp;gt; 9 的数都等于 10 ，但是 5 不是 合法 整数。&lt;br&gt;你可以对 nums 执行以下操作：&lt;br&gt;选择一个整数 h ，它对于 当前 nums 中的值是合法的。&lt;br&gt;对于每个下标 i ，如果它满足 nums[i] &amp;gt; h ，那么将 nums[i] 变为 h 。&lt;br&gt;你的目标是将 nums 中的所有元素都变为 k ，请你返回 最少 操作次数。如果无法将所有元素都变 k ，那么返回 -1 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;呃(⊙﹏⊙)自认为语文水平还不错，但是这题目着实看不懂…&lt;/p&gt;
+&lt;p&gt;看了评论区&amp;amp;题解佬们的耐心讲解，我浅总结一下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数返回&lt;br&gt;返回&lt;strong&gt;将nums所有元素变为k&lt;/strong&gt;的最少操作次数，变不了返回-1。&lt;/li&gt;
+&lt;li&gt;元素变k的前提&lt;br&gt;nums中&amp;gt;k的所有元素都相等，将这些元素全变为k。&lt;/li&gt;
+&lt;li&gt;无法满足返回-1是什么情况&lt;br&gt;如果nums中但凡有元素小于k，那么一定不中。&lt;/li&gt;
+&lt;li&gt;最少操作次数&lt;br&gt;&lt;del&gt;关键来了&lt;/del&gt;数组中所有大于k的元素种类。对，就这样就行😅&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-10&#34;&gt;&lt;a href=&#34;#完整代码-10&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minOperations(vector&amp;lt;int&amp;gt;&amp;amp; nums, int k) &amp;#123;
+        int cnt=0;
+        unordered_set&amp;lt;int&amp;gt;hashset;
+        for(int num:nums)&amp;#123;
+            if(num&amp;lt;k)&amp;#123;
+                return -1;
+            &amp;#125;
+            else&amp;#123;
+                if(hashset.find(num)==hashset.end() &amp;amp;&amp;amp; num&amp;gt;k)&amp;#123;
+                    hashset.insert(num);
+                    cnt++;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return cnt;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
+            <title>专题2️⃣ 贪心算法</title>
+            <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
+            <category>力扣</category>
+            <category>算法</category>
+            <category>专题</category>
+            <category>C++</category>
+            <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;3 &amp;lt;= nums.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 106&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;因为题目需要的是最大的三角形周长，所以不需要暴力列举所有的情况再一一对比，而是直接奔着“最大”这个目标求解就行:&lt;br&gt;三条边a,b,c（假设从小到大已排好），当a+b&amp;gt;c时满足三角形。&lt;strong&gt;如果不满足，必须换更大的a,b&lt;/strong&gt;。&lt;br&gt;贪心优化策略：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nums排序&lt;/li&gt;
+&lt;li&gt;从最大的三个数开始 尝试是否满足&lt;/li&gt;
+&lt;li&gt;若无法满足，往前找更小的a,b&lt;/li&gt;
+&lt;li&gt;一旦找到符合条件的三边，直接返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int largestPerimeter(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        sort(nums.begin(),nums.end());
+        for(int i=nums.size()-1;i&amp;gt;=2;i++)&amp;#123;
+            if(nums[i-1]+nums[i-2]&amp;gt;nums[i])
+        &amp;#125;
+        return 0;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;860-柠檬水找零&#34;&gt;&lt;a href=&#34;#860-柠檬水找零&#34; class=&#34;headerlink&#34; title=&#34;860.柠檬水找零&#34;&gt;&lt;/a&gt;860.柠檬水找零&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，（按账单 bills 支付的顺序）一次购买一杯。&lt;br&gt;每位顾客只买一杯柠檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，也就是说净交易是每位顾客向你支付 5 美元。&lt;br&gt;注意，一开始你手头没有任何零钱。&lt;br&gt;给你一个整数数组 bills ，其中 bills[i] 是第 i 位顾客付的账。如果你能给每位顾客正确找零，返回 true ，否则返回 false 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= bills.length &amp;lt;= 105&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bills[i] 不是 5 就是 10 或是 20 &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;**找零时，尽量先用大额。**并且只记录5美元、10美元的数量（因为这题目的情况不可能找20块）那么&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;收到5美元  直接收 &lt;/li&gt;
+&lt;li&gt;收到10美元 &lt;code&gt;10-5=5&lt;/code&gt; 找5美元（如果有）&lt;/li&gt;
+&lt;li&gt;收到20美元 &lt;strong&gt;贪心来了~&lt;/strong&gt;&lt;code&gt;20-5=15&lt;/code&gt;优先使用10+5找零，否则用5+5+5（如果有）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool lemonadeChange(vector&amp;lt;int&amp;gt;&amp;amp; bills) &amp;#123;
+        int five=0,ten=0;
+        for(int bill:bills)&amp;#123;
+            if(bill==5)&amp;#123;
+                five++;
+            &amp;#125;
+            else if(bill==10)&amp;#123;
+                if(five!=0)&amp;#123;
+                    five--;
+                    ten++;
+                &amp;#125;
+                else&amp;#123;
+                    return false;
+                &amp;#125;
+            &amp;#125;
+            else if(bill==20)&amp;#123;
+                if(ten&amp;gt;0 &amp;amp;&amp;amp; five&amp;gt;0)&amp;#123;
+                    ten--;
+                    five--;
+                &amp;#125;
+                else if(five&amp;gt;=3)&amp;#123;
+                    five-=3;
+                &amp;#125;
+                else&amp;#123;
+                    return false;
+                &amp;#125;
+                
+            &amp;#125;
+        &amp;#125;
+        return true;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2680-最大或值&#34;&gt;&lt;a href=&#34;#2680-最大或值&#34; class=&#34;headerlink&#34; title=&#34;2680.最大或值&#34;&gt;&lt;/a&gt;2680.最大或值&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始长度为 n 的整数数组 nums 和一个整数 k 。每一次操作中，你可以选择一个数并将它乘 2 。&lt;br&gt;你最多可以进行 k 次操作，请你返回 nums[0] | nums[1] | … | nums[n - 1] 的最大值。&lt;br&gt;a | b 表示两个整数 a 和 b 的 按位或 运算。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 109&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;做了这么几道中等题，发现很多难就难在变量大的时候怎么才能不超时的问题上😂&lt;/p&gt;
+&lt;p&gt;因此要注意：&lt;br&gt;&lt;em&gt;&lt;strong&gt;👉️按位或（|）的特性&lt;/strong&gt;&lt;/em&gt;（二进制数）某一位只要有一个是1，按位或的结果该位就是1。&lt;br&gt;题目需要按位或的最大值，那么也就意味着尽量让高位变成1。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;👉️不能直接暴力枚举&lt;/strong&gt;&lt;/em&gt;否则会超时。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;🔍️按位运算总结&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;运算&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;运算符&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;描述&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;示例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;按位与&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;两位都是1，结果才是1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;5 &amp;amp; 3 = 1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;按位或&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;一竖杠&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;只要有一个是1，结果就是1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;5 或 3 = 7&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;按位异或&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;^&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;相同为0，不同为1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;5 ^ 3 = 6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;按位取反&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;~&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0变1，1变0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;~5 = -6&lt;/code&gt;（补码）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;左移&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;乘2^k&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;5 &amp;lt;&amp;lt; 1 = 10&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;右移&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;除2^k&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;5 &amp;gt;&amp;gt; 1 = 2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;解决方案：&lt;br&gt;&lt;strong&gt;1️⃣预计算最初的或值&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;orsum|=num&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2️⃣按位或最大化&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;遍历nums，对每个num[i]进行优化&lt;/li&gt;
+&lt;li&gt;假设nums[i]被选中，*2^k，计算新的或值&lt;/li&gt;
+&lt;li&gt;对于已经选定的nums[i]，&lt;code&gt;0~i-1&lt;/code&gt;的或值设为&lt;code&gt;leftor&lt;/code&gt;;&lt;code&gt;i+1~n-1&lt;/code&gt;的或值设为&lt;code&gt;rightor&lt;/code&gt;。那么新的或值只需要让&lt;code&gt;leftor | nums[i]*2^k | rightor&lt;/code&gt;即可。&lt;/li&gt;
+&lt;li&gt;nums[i]*2^k用&lt;code&gt;nums[i] * (1LL &amp;lt;&amp;lt; k)&lt;/code&gt;。表示位运算中的左移操作，让nums[i]的二进制向左移动k位右侧补零，等价于&lt;code&gt;*2^k&lt;/code&gt;（这里可以自己试一试：&lt;code&gt;5&amp;lt;&amp;lt;3&lt;/code&gt;等价于&lt;code&gt;40=5*8&lt;/code&gt;。）；LL防止溢出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;🆗其他问题&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么 &lt;code&gt;left[i+1] = left[i] | nums[i]&lt;/code&gt;，&lt;code&gt;right[i] = right[i+1] | nums[i]&lt;/code&gt;？&lt;br&gt;按位或计算有个特点：计算或值具有单调性，也就是a|b|c的结果一定不会比a|b小。&lt;br&gt;&lt;code&gt;left[i]&lt;/code&gt;存的是nums[0]~nums[1]的或值，又因为left[i+1]相比left[i]需要加入nums[i]进行或值运算，所以&lt;code&gt;left[i+1] = left[i] | nums[i]&lt;/code&gt;；&lt;code&gt;right[i]&lt;/code&gt;同理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    long long maximumOr(vector&amp;lt;int&amp;gt;&amp;amp; nums, int k) &amp;#123;
+        int n=nums.size();
+        vector&amp;lt;long long&amp;gt; left(n+1,0),right(n+1,0);
+        for(int i=0;i&amp;lt;n;i++)&amp;#123;
+            left[i+1]=left[i]|nums[i];
+        &amp;#125;
+        for(int i=n-1;i&amp;gt;=0;i--)&amp;#123;
+            right[i]=right[i+1]|nums[i];
+        &amp;#125;
+        long long maxor=0;
+        for(int i=0;i&amp;lt;n;i++)&amp;#123;
+            long long newor;
+            newor=left[i]|(nums[i]*(1LL&amp;lt;&amp;lt;k))|right[i+1];
+            maxor=max(maxor,newor);
+        &amp;#125;
+        return maxor;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2829-k-avoiding数组的最小总和&#34;&gt;&lt;a href=&#34;#2829-k-avoiding数组的最小总和&#34; class=&#34;headerlink&#34; title=&#34;2829.k-avoiding数组的最小总和&#34;&gt;&lt;/a&gt;2829.k-avoiding数组的最小总和&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个整数 n 和 k 。&lt;br&gt;对于一个由 不同 正整数组成的数组，如果其中不存在任何求和等于 k 的不同元素对，则称其为 k-avoiding 数组。&lt;br&gt;返回长度为 n 的 k-avoiding 数组的可能的最小总和。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; n, k &amp;lt;&amp;#x3D; 50&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数组总和最小&lt;/strong&gt;&lt;br&gt;从&lt;code&gt;1&lt;/code&gt;开始逐步添加符合条件的数字，直到数组长度达到&lt;code&gt;n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免和为k&lt;/strong&gt;&lt;br&gt;尝试加入&lt;code&gt;x&lt;/code&gt;时，确保数组中不存在&lt;code&gt;k-x&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimumSum(int n, int k) &amp;#123;
+        vector&amp;lt;int&amp;gt; ans;
+        unordered_set&amp;lt;int&amp;gt; used;
+        int num=1;
+        while(ans.size()&amp;lt;n)&amp;#123;
+            if(used.find(k-num)==used.end())&amp;#123;
+                ans.push_back(num);
+                used.insert(num);
+            &amp;#125;
+            num++;
+        &amp;#125;
+        return accumulate(ans.begin(),ans.end(),0);
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2712-使所有字符相等的最小成本&#34;&gt;&lt;a href=&#34;#2712-使所有字符相等的最小成本&#34; class=&#34;headerlink&#34; title=&#34;2712.使所有字符相等的最小成本&#34;&gt;&lt;/a&gt;2712.使所有字符相等的最小成本&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始、长度为 n 的二进制字符串 s ，你可以对其执行两种操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 0 到下标 i（包括下标 0 和下标 i ）的所有字符，成本为 i + 1 。&lt;/li&gt;
+&lt;li&gt;选中一个下标 i 并且反转从下标 i 到下标 n - 1（包括下标 i 和下标 n - 1 ）的所有字符，成本为 n - i 。&lt;br&gt;返回使字符串内所有字符 相等 需要的 最小成本 。&lt;br&gt;反转字符意味着：如果原来的值是 ‘0’ ，则反转后值变为 ‘1’ ，反之亦然。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;#x3D;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘0’ 或 ‘1’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;所有字符相等&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;全&lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;全&lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;对于&lt;code&gt;i&lt;/code&gt;，反转的成本&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;反转前缀&lt;code&gt;[0,i]&lt;/code&gt;，成本&lt;code&gt;i+1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;反转后缀&lt;code&gt;[i,n-1]&lt;/code&gt;，成本&lt;code&gt;n-i&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;核心问题&lt;/strong&gt;&lt;br&gt;对每个i，求出 min（s全1）和min（s全0），再对二者求min。&lt;br&gt;说人话就是：从0开始遍历，如果&lt;code&gt;s[i] ≠ s[i+1]&lt;/code&gt;，那么我们此时有两种选择：反转前缀[0,i] 或 反转后缀[i,n-1]。对于每一个这样需要反转的i，我们选择反转前缀还是后缀的原则就是&lt;strong&gt;哪个成本小选哪个&lt;/strong&gt;。最后得到的总成本也必然最小。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉️难理解的部分：&lt;code&gt;min(i,n-i)&lt;/code&gt; 或 &lt;code&gt;min(i+1,n-i-1)&lt;/code&gt;。&lt;br&gt;个人理解是因为对于此算法，实际上的分界点在s[i]和s[i+1]之间。也就是说：修正分界点需要做的是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;反转0~i&lt;/li&gt;
+&lt;li&gt;反转i+1~n-1&lt;br&gt;这样求得的min才能保证达到我们“最小成本”的目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉️这里学到一个小知识：s.size()返回的类型为&lt;strong&gt;无符号整数（unsigned int）&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;size_t&lt;/code&gt;无符号整型 (unsigned)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++标准库中专门用于表示数组、容器的大小或索引的类型&lt;/li&gt;
+&lt;li&gt;不能表示负数&lt;/li&gt;
+&lt;li&gt;在 64 位系统上，size_t通常是unsigned long，比int更大，可表示更大的范围。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;有符号整型 (signed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;是C++默认的整数类型，可以存储正数、负数和 0。&lt;/li&gt;
+&lt;li&gt;取值范围一般是 [-2³¹, 2³¹ - 1]（32位系统） 或 [-2⁶³, 2⁶³ - 1]（64位系统）&lt;br&gt;&lt;em&gt;&lt;strong&gt;更适合存储一般的计数、索引、数学运算，而size_t主要用于数组大小和内存管理。&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    long long minimumCost(string s) &amp;#123;
+        long long int sum=0;
+        int n=s.size();
+        for(int i=0;i&amp;lt;n-1;i++)&amp;#123;
+            if(s[i]!=s[i+1])&amp;#123;
+                sum+=min(i+1,n-i-1);
+            &amp;#125;
+        &amp;#125;
+        return sum;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
+            <title>力扣备忘录</title>
+            <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
+            <category>记录</category>
+            <category>力扣</category>
+            <category>算法</category>
+            <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
+&lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1️⃣数组与数学类&#34;&gt;&lt;a href=&#34;#1️⃣数组与数学类&#34; class=&#34;headerlink&#34; title=&#34;1️⃣数组与数学类&#34;&gt;&lt;/a&gt;&lt;strong&gt;1️⃣数组与数学类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体 &amp;#x2F; 要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;杨辉三角&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[118/119]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一维数组&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;斐波那契数列&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[509]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;爬楼梯问题&lt;code&gt;[70]&lt;/code&gt;&amp;#x2F;递归&amp;#x2F;迭代&amp;#x2F;动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;两数之和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[1]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表优化时间复杂度到O(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序数组&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[88]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地合并（从后向前填充）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最大子数组和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动态规划&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;2️⃣字符串操作类&#34;&gt;&lt;a href=&#34;#2️⃣字符串操作类&#34; class=&#34;headerlink&#34; title=&#34;2️⃣字符串操作类&#34;&gt;&lt;/a&gt;&lt;strong&gt;2️⃣字符串操作类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转字符串&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[344]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;原地修改（双指针）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;有效的括号&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[20]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;用栈实现括号匹配&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最长公共前缀&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[14]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;纵向扫描&amp;#x2F;分治&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;字符串转整数&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[8]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界（溢出&amp;#x2F;符号&amp;#x2F;空格）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;3️⃣链表类&#34;&gt;&lt;a href=&#34;#3️⃣链表类&#34; class=&#34;headerlink&#34; title=&#34;3️⃣链表类&#34;&gt;&lt;/a&gt;&lt;strong&gt;3️⃣链表类&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;反转链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[206]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;环形链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[141]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快慢指针判环&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;合并两个有序链表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[21]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;删除链表倒数第N个节点&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[19]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;一趟扫描&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;4️⃣树与递归&#34;&gt;&lt;a href=&#34;#4️⃣树与递归&#34; class=&#34;headerlink&#34; title=&#34;4️⃣树与递归&#34;&gt;&lt;/a&gt;&lt;strong&gt;4️⃣树与递归&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;二叉树的最大深度&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[104]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;对称二叉树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[101]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;迭代（队列&amp;#x2F;栈）&amp;#x2F;递归&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;路径总和&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[112]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;动回溯法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;5️⃣动态规划&#34;&gt;&lt;a href=&#34;#5️⃣动态规划&#34; class=&#34;headerlink&#34; title=&#34;5️⃣动态规划&#34;&gt;&lt;/a&gt;&lt;strong&gt;5️⃣动态规划&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;打家劫舍&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[198]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;状态转移方程推导&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;零钱兑换&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[322]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;完全背包问题解法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;最长递增子序列&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[300]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(nlogn)优化解法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;6️⃣排序与查找&#34;&gt;&lt;a href=&#34;#6️⃣排序与查找&#34; class=&#34;headerlink&#34; title=&#34;6️⃣排序与查找&#34;&gt;&lt;/a&gt;&lt;strong&gt;6️⃣排序与查找&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;快速排序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;力扣排序题均可&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;二分查找&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;寻找峰值&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[53]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;7️⃣其他高频&#34;&gt;&lt;a href=&#34;#7️⃣其他高频&#34; class=&#34;headerlink&#34; title=&#34;7️⃣其他高频&#34;&gt;&lt;/a&gt;&lt;strong&gt;7️⃣其他高频&lt;/strong&gt;&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;题目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;力扣题号&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;变体&amp;#x2F;要求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;LRU缓存&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[146]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;手写递归和非递归版本&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;实现队列&amp;#x2F;栈&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[232/225]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;处理边界条件（左闭右闭&amp;#x2F;左闭右开）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;汉明距离&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;[461]&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;二分法的特殊应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;具体题目思路&amp;amp;代码记录见各个专题🤗&lt;/p&gt;
+&lt;h1 id=&#34;简单题&#34;&gt;&lt;a href=&#34;#简单题&#34; class=&#34;headerlink&#34; title=&#34;简单题&#34;&gt;&lt;/a&gt;简单题&lt;/h1&gt;&lt;h2 id=&#34;66-加一&#34;&gt;&lt;a href=&#34;#66-加一&#34; class=&#34;headerlink&#34; title=&#34;66.加一&#34;&gt;&lt;/a&gt;66.加一&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。&lt;br&gt;最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。&lt;br&gt;你可以假设除了整数 0 之外，这个整数不会以零开头。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;判断数组末尾是否有9：
+    无9：末尾数字+1;
+    有9：
+        是否全为9：
+            是全9：
+                构造长度=size+1的数组，首位=1，其余全置0;
+            非全9：
+                找到倒着数第一个不是9的元素,
+                该元素加1,
+                末尾所有的9置0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    vector&amp;lt;int&amp;gt; plusOne(vector&amp;lt;int&amp;gt;&amp;amp; digits) &amp;#123;
+        int len=digits.size();
+        if(digits[len-1]!=9)&amp;#123;
+            digits[len-1]+=1;
+        &amp;#125;
+        else&amp;#123;
+            int cnt=0;//记录9出现的次数，第一个非9元素的下标即为len-cnt-1
+            for(int i=len-1;i&amp;gt;=0;i--)&amp;#123;
+                if(digits[i]==9)&amp;#123;
+                    cnt++;
+                &amp;#125;
+                else&amp;#123;
+                    break;
+                &amp;#125;
+            &amp;#125;
+            if(cnt==len)&amp;#123;
+                digits.insert(digits.begin(),1);
+                for(int i=1;i&amp;lt;len+1;i++)&amp;#123;
+                    digits[i]=0;
+                &amp;#125;
+            &amp;#125;
+            else&amp;#123;
+                int index=len-cnt-1;
+                digits[index]+=1;
+                for(int i=index+1;i&amp;lt;len;i++)&amp;#123;
+                    digits[i]=0;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return digits;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;896-单调数列&#34;&gt;&lt;a href=&#34;#896-单调数列&#34; class=&#34;headerlink&#34; title=&#34;896.单调数列&#34;&gt;&lt;/a&gt;896.单调数列&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果数组是单调递增或单调递减的，那么它是&lt;strong&gt;单调&lt;/strong&gt;的。&lt;br&gt;如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;lt;&amp;#x3D; nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &amp;lt;&amp;#x3D; j，nums[i] &amp;gt;&amp;#x3D; nums[j]，那么数组 nums 是单调递减的。&lt;br&gt;当给定的数组 nums 是单调数组时返回 true，否则返回 false。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;bool 递增变量=真，递减变量=真；
+遍历数组：
+    如果该元素+1 大于 该元素：
+        标记递减变量=假；
+    如果该元素+1 小于 该元素：
+        标记递增变量=假；
+如果递增or递减=真，返回真；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-1&#34;&gt;&lt;a href=&#34;#AC代码-1&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool isMonotonic(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        bool increase=true,decrease=true;
+        for(int i=0;i&amp;lt;nums.size()-1;i++)&amp;#123;
+            if(nums[i+1] &amp;gt; nums[i])&amp;#123;
+                decrease=false;
+            &amp;#125;
+            if(nums[i+1] &amp;lt; nums[i])&amp;#123;
+                increase=false;
+            &amp;#125;
+        &amp;#125;
+        return decrease || increase;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;896-罗马数字转整数&#34;&gt;&lt;a href=&#34;#896-罗马数字转整数&#34; class=&#34;headerlink&#34; title=&#34;896.罗马数字转整数&#34;&gt;&lt;/a&gt;896.罗马数字转整数&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。&lt;/strong&gt;&lt;br&gt;字符          数值&lt;br&gt;I             1&lt;br&gt;V             5&lt;br&gt;X             10&lt;br&gt;L             50&lt;br&gt;C             100&lt;br&gt;D             500&lt;br&gt;M             1000&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;例如， 罗马数字 2 写做 II ，即为两个并列的 1 。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。&lt;/li&gt;
+&lt;li&gt;通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：&lt;br&gt;①I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。&lt;br&gt;②X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。&lt;br&gt;③C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;给定一个罗马数字，将其转换成整数。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;这题一开始我无从下手，直接跑去翻题解了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C++ &lt;a href=&#34;https://www.w3cschool.cn/cpp/cpp-fu8l2ppt.html&#34;&gt;map&lt;/a&gt;用法&lt;/strong&gt;&lt;br&gt;想起来python的字典。同样cpp stl中的map提供的是一种键值对（key-value）容器，其中的数据成对出现。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始化：&lt;code&gt;map类型 &amp;lt;数据类型1，数据类型2&amp;gt; 容器名&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于map类型：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;键值对容器&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;实现方式&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;键值&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;时间复杂度&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;是否有序&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;使用场景&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_map&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值对&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快速查找键对应的值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;map&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;红黑树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值对&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(logn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;需要有序键值对&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_set&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;快速查找元素是否存在&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;set&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;红黑树&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;O(logn)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;需要排序的集合&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;unordered_multimap&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;哈希表&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;键-值&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;平均O(1)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无序&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;有重复键且不关心顺序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;对于本题&lt;/strong&gt;&lt;br&gt;引用评论区&lt;a href=&#34;https://leetcode.cn/u/hust_wei/&#34;&gt;大佬&lt;/a&gt;的解释：当前位置的元素比下个位置的元素小，就减去当前值，否则加上当前值。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;定义键值对容器 &amp;lt;字符，整型&amp;gt; 
+    分别对应罗马数字的字符和数值(注意字符变量加单引号);
+
+int 结果变量；
+int 罗马数字长度；
+遍历罗马数字：
+    如果元素 当前位置&amp;lt;下一个位置：（注意使用值时加方括号[]）
+        结果变量-=值变量；
+    否则：
+        结果变量+=值变量；
+返回结果；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-2&#34;&gt;&lt;a href=&#34;#AC代码-2&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    unordered_map&amp;lt;char,int&amp;gt;mymap=&amp;#123;
+        &amp;#123;&amp;#39;I&amp;#39;,1&amp;#125;,
+        &amp;#123;&amp;#39;V&amp;#39;,5&amp;#125;,
+        &amp;#123;&amp;#39;X&amp;#39;,10&amp;#125;,
+        &amp;#123;&amp;#39;L&amp;#39;,50&amp;#125;,
+        &amp;#123;&amp;#39;C&amp;#39;,100&amp;#125;,
+        &amp;#123;&amp;#39;D&amp;#39;,500&amp;#125;,
+        &amp;#123;&amp;#39;M&amp;#39;,1000&amp;#125;,
+    &amp;#125;;
+    int romanToInt(string s) &amp;#123;
+        int ans=0;
+        int len=s.length();
+        for(int i=0;i&amp;lt;len;i++)&amp;#123;
+            if(mymap[s[i]]&amp;lt;mymap[s[i+1]])&amp;#123;
+                ans-=mymap[s[i]];
+            &amp;#125;
+            else&amp;#123;
+                ans+=mymap[s[i]];
+            &amp;#125;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。&lt;br&gt;&lt;strong&gt;单词&lt;/strong&gt;是指仅由字母组成、不包含任何空格字符的最大子字符串。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;【方法一】&lt;/strong&gt;&lt;br&gt;我的思路是&lt;strong&gt;从后向前&lt;/strong&gt;遍历字符串时：如果它的后一个是空格或空，自己不是空格，意味着句尾有空格，该下标是倒着数第一个不为空格的字母；如果前一个是空格或空，自己不是空格，代表这是词的开头，记录下标直接退出循环。最后长度就是二者相减。&lt;br&gt;但是这样写大多数样例不通过（悲&lt;/p&gt;
+&lt;p&gt;（二编）卧槽我改对了！！！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【方法二】&lt;/strong&gt;&lt;br&gt;不对那就改呗：直接从字符串的尾部开始遍历，&lt;strong&gt;跳过所有尾部空格&lt;/strong&gt;，直到遇到&lt;strong&gt;第一个非空格字符&lt;/strong&gt;，并计算其长度。能够更好的处理边界情况。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int 长度=字符串长度;
+int i=长度-1;
+int 结果长度=0
+当i大于等于0并且s的第i个字符为空格时：
+    i--；（倒着循环遍历）
+*本题设定s不为空，若无此条件需在此判断：当i&amp;lt;0时直接返回（s为空）
+当i大于等于0并且s的第i个字符不为空格时：
+    结果长度++；
+    i--；
+返回结果长度;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-3&#34;&gt;&lt;a href=&#34;#AC代码-3&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;【方法一】&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int lengthOfLastWord(string s) &amp;#123;
+        int len=s.length();
+        int m=0,n=0;
+        for(int i=len-1;i&amp;gt;0;i--)&amp;#123;
+            if(s[i]!=&amp;#39; &amp;#39; &amp;amp;&amp;amp; (s[i+1]==&amp;#39; &amp;#39; || s[i+1]==&amp;#39;\0&amp;#39;))&amp;#123;
+                m=i;
+            &amp;#125;
+            if((s[i-1]==&amp;#39; &amp;#39; || s[i-1]==&amp;#39;\0&amp;#39;) &amp;amp;&amp;amp; s[i]!=&amp;#39; &amp;#39;)&amp;#123;
+                n=i;
+                break;
+            &amp;#125;
+        &amp;#125;
+        return m-n+1;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;【方法二】&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int lengthOfLastWord(string s) &amp;#123;
+        int len=s.length();
+        int ans=0;
+        int i=len-1;
+        while(i&amp;gt;=0 &amp;amp;&amp;amp; s[i]==&amp;#39; &amp;#39;)&amp;#123;
+            i--;
+        &amp;#125;
+        while(i&amp;gt;=0 &amp;amp;&amp;amp; s[i]!=&amp;#39; &amp;#39;)&amp;#123;
+            ans++;
+            i--;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;9-回文数&#34;&gt;&lt;a href=&#34;#9-回文数&#34; class=&#34;headerlink&#34; title=&#34;9.回文数&#34;&gt;&lt;/a&gt;9.回文数&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。&lt;br&gt;回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。&lt;br&gt;例如，121 是回文，而 123 不是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;回文数是正整数&lt;/li&gt;
+&lt;li&gt;负数不是回文数&lt;/li&gt;
+&lt;li&gt;一个数的最后一位是0且这个数不为0，不是回文数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将数字的后半部分反转，用&lt;code&gt;反转数字&lt;/code&gt;存储。最后的反转数字包含原始x的后半部分，x包含原始x的前半部分。&lt;br&gt;最后返回时：若&lt;strong&gt;原始x是偶数&lt;/strong&gt;，那么对于回文数，&lt;strong&gt;x一定&amp;#x3D;反转数字&lt;/strong&gt;。若&lt;strong&gt;原始x是奇数&lt;/strong&gt;，那么反转数字会比x多一位，这一位是反转数字的个位并且是原始x的中位数，不影响回文数判断。所以&lt;strong&gt;先去掉个位&lt;/strong&gt;再与当前的x比较。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;如果（x小于0，或者x的个位不等于0且x不等于0）：
+    不是回文数；
+定义反转数字=0；
+当（x &amp;gt; 反转数字）：
+    反转数字=反转数字*10+x%10；
+    x/=10；
+x = 反转数字
+返回x = 反转数字 或者 x = 去掉个位的反转数字；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-4&#34;&gt;&lt;a href=&#34;#AC代码-4&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    bool isPalindrome(int x) &amp;#123;
+        if(x&amp;lt;0 || (x%10==0 &amp;amp;&amp;amp; x!=0))&amp;#123;
+            return false;
+        &amp;#125;
+        int num=0;
+        while(x&amp;gt;num)&amp;#123;
+            num=num*10+x%10;
+            x/=10;
+        &amp;#125;
+        return x==num || x==num/10;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;14-最长公共前缀&#34;&gt;&lt;a href=&#34;#14-最长公共前缀&#34; class=&#34;headerlink&#34; title=&#34;14.最长公共前缀&#34;&gt;&lt;/a&gt;14.最长公共前缀&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;编写一个函数来查找字符串数组中的最长公共前缀。&lt;br&gt;如果不存在公共前缀，返回空字符串 “”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;区区小简单，真是难倒我了。&lt;br&gt;这里总结力扣官方题解的纵向扫描方法。我一开始想的也是类似思路，奈何憋不出来代码。&lt;br&gt;&lt;strong&gt;关键点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最长公共前缀的长度不可能超过任何一个字符串的长度&lt;/li&gt;
+&lt;li&gt;数组strs的大小即为字符串的总个数&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;二维数组形式&lt;/strong&gt;可以直接表示第i个字符的第j位&lt;/li&gt;
+&lt;li&gt;如果 &lt;strong&gt;&lt;code&gt;i&lt;/code&gt;超出某个字符串的长度&lt;/strong&gt;或**第&lt;code&gt;j&lt;/code&gt;个字符串的第&lt;code&gt;i&lt;/code&gt;个字符不等于&lt;code&gt;c&lt;/code&gt;**时，直接返回当前的公共前缀。&lt;/li&gt;
+&lt;li&gt;循环结束说明所有字符串的所有字符都匹配，那么第一个字符串本身就是最长公共前缀，返回第一个字符串&lt;code&gt;strs[0]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;如果数组为空：
+    返回&amp;quot;&amp;quot;；
+int 长度变量=数组第一个字符串元素的长度；
+int 计数变量=数组大小；
+遍历i，从0到长度变量：
+    char 字符变量=第一个字符串的第i个字符；
+    遍历j，从1到计数变量：
+        如果（i==第j个字符串的大小 || 第j个字符串的第i个字符 ！= 字符变量）：
+            返回 第一个字符串的第一个字符~第i个字符；
+返回 第一个字符；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-5&#34;&gt;&lt;a href=&#34;#AC代码-5&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; strs) &amp;#123;
+        if(!strs.size())&amp;#123;
+            return &amp;quot;&amp;quot;;
+        &amp;#125;
+        int len=strs[0].size();
+        int cnt=strs.size();
+        for(int i=0;i&amp;lt;len;i++)&amp;#123;
+            char c=strs[0][i];
+            for(int j=1;j&amp;lt;cnt;j++)&amp;#123;
+                if(i==strs[j].size() || strs[j][i]!=c)&amp;#123;
+                    return strs[0].substr(0,i);
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return strs[0];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;682-棒球比赛&#34;&gt;&lt;a href=&#34;#682-棒球比赛&#34; class=&#34;headerlink&#34; title=&#34;682.棒球比赛&#34;&gt;&lt;/a&gt;682.棒球比赛&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你现在是一场采用特殊赛制棒球比赛的记录员。这场比赛由若干回合组成，过去几回合的得分可能会影响以后几回合的得分。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;比赛开始时，记录是空白的。你会得到一个记录操作的&lt;strong&gt;字符串列表&lt;/strong&gt; ops，其中 ops[i] 是你需要记录的第 i 项操作，ops 遵循下述规则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;整数 x - 表示本回合新获得分数 x&lt;/li&gt;
+&lt;li&gt;“+” - 表示本回合新获得的得分是前两次得分的总和。题目数据保证记录此操作时前面总是存在两个有效的分数。&lt;/li&gt;
+&lt;li&gt;“D” - 表示本回合新获得的得分是前一次得分的两倍。题目数据保证记录此操作时前面总是存在一个有效的分数。&lt;/li&gt;
+&lt;li&gt;“C” - 表示前一次得分无效，将其从记录中移除。题目数据保证记录此操作时前面总是存在一个有效的分数。&lt;br&gt;请你返回记录中所有得分的总和。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;用int动态数组ans记录得分，但是不用i做索引来查询，而是用begin、end、size、back等方法来防止发生越界访问。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;注意&lt;code&gt;string&lt;/code&gt;类型为字符串，用双引号””括起来，&lt;code&gt;char&lt;/code&gt;类型为字符，用单引号’’。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;前两次得分之和：size-1 +size-2
+前一次得分：back
+最近一次得分移除-&amp;gt;出栈-&amp;gt;pop_back
+加入得分：压栈-&amp;gt;push_back
+字符串转整型：stoi
+计算动态数组的和：accumulate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;另外，我一开始想用&lt;code&gt;unordered_map&lt;/code&gt;，做题做迷了。后来发现动态数组完全可以解决：C++ 标准库中的 vector 支持动态调整大小，可以方便地模拟栈的行为。而unordered_map 是用来存储键值对（key-value pairs）的哈希表。&lt;br&gt;本问题中不需要映射关系，所以并不需要用到 unordered_map。&lt;br&gt;还有，&lt;strong&gt;stack&lt;int&gt;&lt;strong&gt;的&lt;code&gt;.push()&lt;/code&gt;和&lt;code&gt;.pop()&lt;/code&gt;也可，但是&lt;/strong&gt;vector&lt;/strong&gt;的&lt;code&gt;.push_back()&lt;/code&gt;和&lt;code&gt;.pop_back()&lt;/code&gt;也同样可以。那就选更常用的vector，何乐而不为呢？&lt;/p&gt;
+&lt;h3 id=&#34;AC代码-6&#34;&gt;&lt;a href=&#34;#AC代码-6&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;用时击败7%，悲。之后滚回来优化算法。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int calPoints(vector&amp;lt;string&amp;gt;&amp;amp; operations) &amp;#123;
+        vector&amp;lt;int&amp;gt;ans;
+        for(string ch:operations)&amp;#123;
+            if(ch==&amp;quot;+&amp;quot;)&amp;#123;
+                ans.push_back(ans[ans.size()-1]+ans[ans.size()-2]);
+            &amp;#125;
+            else if(ch==&amp;quot;D&amp;quot;)&amp;#123;
+                ans.push_back(ans.back()*2);
+            &amp;#125;
+            else if(ch==&amp;quot;C&amp;quot;)&amp;#123;
+                ans.pop_back();
+            &amp;#125;
+            else&amp;#123;
+                ans.push_back(stoi(ch));
+            &amp;#125;
+        &amp;#125;
+        return accumulate(ans.begin(),ans.end(),0);
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;26-删除有序数组中的重复项&#34;&gt;&lt;a href=&#34;#26-删除有序数组中的重复项&#34; class=&#34;headerlink&#34; title=&#34;26.删除有序数组中的重复项&#34;&gt;&lt;/a&gt;26.删除有序数组中的重复项&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个非严格递增排列的数组nums,请你原地删除重复出现的元素，使每个元素只出现一次，返回删除后数组的新长度。元素的相对顺序应该保持一致。然后返回nums中唯一元素的个数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考虑nums的唯一元素的数量为k，你需要做以下事情确保你的题解可以被通过：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;更改数组nums，使nums的前k个元素包含唯一元素，并按照它们最初在nums中出现的顺序排列。nums的其余元素与nums的大小不重要。&lt;/li&gt;
+&lt;li&gt;返回 k 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;int 最终数组长度=1;
+遍历nums：
+    如果第i个元素不等于第i-1个元素：
+        nums[最终数组长度]=nums[i]；
+        最终数组长度++；
+返回最终数组长度；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;AC代码-7&#34;&gt;&lt;a href=&#34;#AC代码-7&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;妈呀这题一提交发现每ms都有解法…密密麻麻(ΩДΩ)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+public:
+    int removeDuplicates(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int ans=1;
+        for(int i=1;i&amp;lt;nums.size();i++)&amp;#123;
+            if(nums[i]!=nums[i-1])&amp;#123;
+                nums[ans]=nums[i];
+                ans++;
+            &amp;#125;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
  ]]></description>
         </item>
     </channel>

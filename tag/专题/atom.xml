@@ -1,34 +1,26 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>Per aspera ad astra • Posts by &#34;c++&#34; tag</title>
-        <link>https://232akira.github.io</link>
-        <description>欢迎交流学习!</description>
-        <language>zh-CN</language>
-        <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
-        <lastBuildDate>Tue, 01 Apr 2025 09:18:00 +0800</lastBuildDate>
-        <category>记录</category>
-        <category>力扣</category>
-        <category>算法</category>
-        <category>数组</category>
-        <category>哈希表</category>
-        <category>二分查找</category>
-        <category>链表</category>
-        <category>专题</category>
-        <category>C++</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
-        <category>Markdown</category>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
-            <title>专题3️⃣ 动态规划</title>
-            <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
-            <category>力扣</category>
-            <category>算法</category>
-            <category>专题</category>
-            <category>C++</category>
-            <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;动规来力！！！&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://232akira.github.io</id>
+    <title>Per aspera ad astra • Posts by &#34;专题&#34; tag</title>
+    <link href="https://232akira.github.io" />
+    <updated>2025-04-01T01:18:00.000Z</updated>
+    <category term="记录" />
+    <category term="力扣" />
+    <category term="算法" />
+    <category term="数组" />
+    <category term="哈希表" />
+    <category term="二分查找" />
+    <category term="链表" />
+    <category term="专题" />
+    <category term="C++" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
+    <category term="Markdown" />
+    <entry>
+        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
+        <title>专题3️⃣ 动态规划</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+        <content type="html">&lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个下标从 0 开始的二维整数数组 questions ，其中 questions[i] &amp;#x3D; [pointsi, brainpoweri] 。&lt;br&gt;这个数组表示一场考试里的一系列题目，你需要 按顺序 （也就是从问题 0 开始依次解决），针对每个问题选择 解决 或者 跳过 操作。解决问题 i 将让你 获得  pointsi 的分数，但是你将 无法 解决接下来的 brainpoweri 个问题（即只能跳过接下来的 brainpoweri 个问题）。如果你跳过问题 i ，你可以对下一个问题决定使用哪种操作。&lt;br&gt;比方说，给你 questions &amp;#x3D; [[3, 2], [4, 3], [4, 4], [2, 5]] ：&lt;/p&gt;
 &lt;ul&gt;
@@ -91,18 +83,18 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
-            <title>专题1️⃣ 滑动窗口</title>
-            <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
-            <category>算法</category>
-            <category>专题</category>
-            <category>C++</category>
-            <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
+</content>
+        <category term="力扣" />
+        <category term="算法" />
+        <category term="专题" />
+        <category term="C++" />
+        <updated>2025-04-01T01:18:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
+        <title>专题1️⃣ 滑动窗口</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+        <content type="html">&lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;单调性&lt;/li&gt;
@@ -539,18 +531,18 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
-            <title>专题2️⃣ 贪心算法</title>
-            <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>力扣</category>
-            <category>算法</category>
-            <category>专题</category>
-            <category>C++</category>
-            <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
+</content>
+        <category term="力扣" />
+        <category term="算法" />
+        <category term="专题" />
+        <category term="C++" />
+        <updated>2025-03-12T10:20:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
+        <title>专题2️⃣ 贪心算法</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+        <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
 &lt;ul&gt;
@@ -819,7 +811,11 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="力扣" />
+        <category term="算法" />
+        <category term="专题" />
+        <category term="C++" />
+        <updated>2025-03-04T05:41:46.000Z</updated>
+    </entry>
+</feed>

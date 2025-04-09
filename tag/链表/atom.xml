@@ -4,17 +4,17 @@
     <title>Per aspera ad astra • Posts by &#34;链表&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-03-06T02:25:28.000Z</updated>
-    <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
+    <category term="记录" />
     <category term="力扣" />
+    <category term="算法" />
     <category term="数组" />
-    <category term="C++" />
     <category term="哈希表" />
-    <category term="动态规划" />
     <category term="二分查找" />
     <category term="链表" />
-    <category term="记录" />
+    <category term="专题" />
+    <category term="C++" />
+    <category term="字符串" />
+    <category term="滑动窗口" />
     <category term="Markdown" />
     <entry>
         <id>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</id>
@@ -123,174 +123,6 @@ public:
     &amp;#125;
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;21-合并两个有序链表&#34;&gt;&lt;a href=&#34;#21-合并两个有序链表&#34; class=&#34;headerlink&#34; title=&#34;21.合并两个有序链表&#34;&gt;&lt;/a&gt;21.合并两个有序链表&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。&lt;br&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;两个链表的节点数目范围是 [0, 50]&lt;/li&gt;
-&lt;li&gt;-100 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 100&lt;/li&gt;
-&lt;li&gt;l1和l2均按非递减顺序排列&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;终止条件&lt;/strong&gt;&lt;/em&gt;：有链表为空&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;list1为空，合并结果直接为list2&lt;/li&gt;
-&lt;li&gt;list2为空，合并结果直接为list1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;递归调用&lt;/strong&gt;&lt;/em&gt;：小的打头，每一步递归后返回的值链接到链表末尾&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果&lt;code&gt;list1节点的值 &amp;lt; list2&lt;/code&gt;：寻找list1后面节点还有没有也比list2小的节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;让list1-&amp;gt;next接上递归后合并的结果；
-返回当前较小的节点list1;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;else：寻找list2后面节点还有没有也比list1小的节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;让list2-&amp;gt;next接上递归后合并的结果；
-返回当前较小的节点list2;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) &amp;#123;
-        if(list1==NULL || list2==NULL)&amp;#123;
-            return list1==NULL ? list2:list1;
-        &amp;#125;
-        if(list1-&amp;gt;val &amp;lt; list2-&amp;gt;val)&amp;#123;
-            list1-&amp;gt;next = mergeTwoLists(list1-&amp;gt;next,list2);
-            return list1;
-        &amp;#125;
-        else&amp;#123;
-            list2-&amp;gt;next = mergeTwoLists(list1,list2-&amp;gt;next);
-            return list2;
-        &amp;#125;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;206-反转链表&#34;&gt;&lt;a href=&#34;#206-反转链表&#34; class=&#34;headerlink&#34; title=&#34;206.反转链表&#34;&gt;&lt;/a&gt;206.反转链表&lt;/h1&gt;&lt;p&gt;又是一道经典中的经典题🙀&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;链表中节点的数目范围是 [0, 5000]&lt;/li&gt;
-&lt;li&gt;-5000 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 5000&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;链表反转的本质&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;让当前节点&lt;code&gt;cur&lt;/code&gt;指向它的前一个节点&lt;code&gt;pre&lt;/code&gt;。而不是后一个节点next&lt;/li&gt;
-&lt;li&gt;更新&lt;code&gt;pre&lt;/code&gt;和&lt;code&gt;cur&lt;/code&gt;，直到cur为空。此时pre为新的head节点&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这里模拟一下过程。&lt;br&gt;👉️ &lt;em&gt;&lt;strong&gt;假设存在链表：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;nullptr&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;初始状态：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pre &amp;#x3D; nullptr&lt;/li&gt;
-&lt;li&gt;cur &amp;#x3D; head&lt;br&gt;那么逐步变化如下：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;| &lt;code&gt;cur&lt;/code&gt; | &lt;code&gt;tmp(cur-&amp;gt;next)&lt;/code&gt; | &lt;code&gt;cur-&amp;gt;next=pre&lt;/code&gt; | &lt;code&gt;pre=cur&lt;/code&gt; | &lt;code&gt;cur=tmpS&lt;/code&gt; |&lt;br&gt;| :–: | :–: | :–: |&lt;br&gt;| 1 | 2 | &lt;code&gt;1-&amp;gt;nullptr&lt;/code&gt; | &lt;code&gt;pre=1&lt;/code&gt; | &lt;code&gt;cur=2&lt;/code&gt; |&lt;br&gt;| 2 | 3 | &lt;code&gt;2-&amp;gt;1&lt;/code&gt; | &lt;code&gt;pre=2&lt;/code&gt; | &lt;code&gt;cur=3&lt;/code&gt; |&lt;br&gt;| 3 | 4 | &lt;code&gt;3-&amp;gt;2&lt;/code&gt; | &lt;code&gt;pre=3&lt;/code&gt; | &lt;code&gt;cur=4&lt;/code&gt; |&lt;br&gt;| 4 | nullptr | &lt;code&gt;4-&amp;gt;3&lt;/code&gt; | &lt;code&gt;pre=4&lt;/code&gt; | &lt;code&gt;cur=nullptr&lt;/code&gt;（结束） |&lt;/p&gt;
-&lt;p&gt;最终pre变成4，即新的链表头头。&lt;br&gt;&lt;strong&gt;此时链表结构为：5 -&amp;gt; 4 -&amp;gt; 3 -&amp;gt; 2 -&amp;gt; 1 -&amp;gt; nullptr&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;👉️ &lt;em&gt;&lt;strong&gt;简单来说，关键步骤是&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;1️⃣记录下一个节点&lt;br&gt;2️⃣反转指向&lt;br&gt;3️⃣更新pre（当前节点变成新的头）&lt;br&gt;4️⃣继续遍历&lt;/p&gt;
-&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* reverseList(ListNode* head) &amp;#123;
-        ListNode* pre=nullptr;
-        ListNode* cur=head;
-        while(cur!=nullptr)&amp;#123;
-            ListNode* tmp=cur-&amp;gt;next;
-            cur-&amp;gt;next=pre;
-            pre=cur;
-            cur=tmp;
-        &amp;#125;
-        return pre;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;2-两数相加&#34;&gt;&lt;a href=&#34;#2-两数相加&#34; class=&#34;headerlink&#34; title=&#34;2.两数相加&#34;&gt;&lt;/a&gt;2.两数相加&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。&lt;br&gt;请你将两个数相加，并以相同形式返回一个表示和的链表。&lt;br&gt;你可以假设除了数字 0 之外，这两个数都不会以 0 开头。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;提示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;每个链表中的节点数在范围 [1, 100] 内&lt;/li&gt;
-&lt;li&gt;0 &amp;lt;&amp;#x3D; Node.val &amp;lt;&amp;#x3D; 9&lt;/li&gt;
-&lt;li&gt;题目数据保证列表表示的数字不含前导零&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;这道题着实难倒我🥹乖乖去看&lt;a href=&#34;https://leetcode.cn/problems/add-two-numbers/solutions/2327008/dong-hua-jian-ji-xie-fa-cong-di-gui-dao-oe0di/&#34;&gt;题解&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;链表&lt;strong&gt;逆序&lt;/strong&gt;存储数字&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;两个链表的节点值 + 进位值&lt;/code&gt;如果记为&lt;code&gt;a&lt;/code&gt;：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;a % 10&lt;/code&gt;为当前节点保存的数位&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a / 10&lt;/code&gt;为新的进位值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;递归思路&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;如果l1、l2都为空且carry&amp;#x3D;0，递归结束&lt;/li&gt;
-&lt;li&gt;定义sum&amp;#x3D;carry&lt;/li&gt;
-&lt;li&gt;如果l1不为空，sum+&amp;#x3D;l1-&amp;gt;val，l1&amp;#x3D;l1-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;同理，如果l2不为空，sum+&amp;#x3D;l2-&amp;gt;val，l2&amp;#x3D;l2-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;new一个当前节点node：&lt;code&gt;ListNode* node=new ListNode(sum%10)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;递归调用处理node-&amp;gt;next&lt;/li&gt;
-&lt;li&gt;返回当前节点node&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
- * Definition for singly-linked list.
- * struct ListNode &amp;#123;
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x) : val(x), next(nullptr) &amp;#123;&amp;#125;
- *     ListNode(int x, ListNode *next) : val(x), next(next) &amp;#123;&amp;#125;
- * &amp;#125;;
- */
-class Solution &amp;#123;
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2,int carry=0) &amp;#123;
-        if(l1==nullptr &amp;amp;&amp;amp; l2==nullptr &amp;amp;&amp;amp; carry==0)&amp;#123;
-            return nullptr;
-        &amp;#125;
-        int sum=carry;
-        if(l1!=nullptr)&amp;#123;
-            sum+=l1-&amp;gt;val;
-            l1=l1-&amp;gt;next;
-        &amp;#125;
-        if(l2!=nullptr)&amp;#123;
-            sum+=l2-&amp;gt;val;
-            l2=l2-&amp;gt;next;
-        &amp;#125;
-        ListNode* node=new ListNode(sum%10);
-        carry=sum/10;
-        node-&amp;gt;next=addTwoNumbers(l1,l2,carry);
-        return node;
-    &amp;#125;
-&amp;#125;;
-&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;83-删除排序链表中的重复元素&#34;&gt;&lt;a href=&#34;#83-删除排序链表中的重复元素&#34; class=&#34;headerlink&#34; title=&#34;83.删除排序链表中的重复元素&#34;&gt;&lt;/a&gt;83.删除排序链表中的重复元素&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定一个已排序的链表的头head，删除所有重复的元素，使每个元素只出现一次。返回已排序的链表。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -302,7 +134,7 @@ public:
 &lt;li&gt;题目数据保证链表已经按升序排列&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;【如果】头节点&amp;#x3D;空：直接返回该节点&lt;/li&gt;
 &lt;li&gt;初始化一个当前节点变量&amp;#x3D;头节点&lt;/li&gt;
 &lt;li&gt;【只要】当前&lt;code&gt;节点-&amp;gt;next&lt;/code&gt;不为空&lt;/li&gt;
@@ -314,7 +146,7 @@ public:
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;返回头节点&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**
  * Definition for singly-linked list.
  * struct ListNode &amp;#123;
  *     int val;
@@ -344,8 +176,8 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="算法" />
         <category term="力扣" />
+        <category term="算法" />
         <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
