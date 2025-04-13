@@ -6,16 +6,16 @@
     <updated>2025-04-08T07:29:31.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
+    <category term="链表" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
+    <category term="数组" />
+    <category term="哈希表" />
+    <category term="二分查找" />
     <category term="专题" />
     <category term="C++" />
     <category term="记录" />
     <category term="Markdown" />
-    <category term="数组" />
-    <category term="哈希表" />
-    <category term="二分查找" />
     <category term="笔记" />
     <entry>
         <id>https://232akira.github.io/2025/04/08/HOT%20100/</id>
@@ -2417,6 +2417,50 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;11-盛最多水的容器&#34;&gt;&lt;a href=&#34;#11-盛最多水的容器&#34; class=&#34;headerlink&#34; title=&#34;11.盛最多水的容器&#34;&gt;&lt;/a&gt;11.盛最多水的容器&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。&lt;br&gt;找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。&lt;br&gt;返回容器可以储存的最大水量。&lt;br&gt;说明：你不能倾斜容器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; height.length&lt;/li&gt;
+&lt;li&gt;2 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; height[i] &amp;lt;&amp;#x3D; 104&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;莫名想起接雨水（？😅一眼做不出来，上&lt;a href=&#34;https://leetcode.cn/problems/container-with-most-water/solutions/94102/on-shuang-zhi-zhen-jie-fa-li-jie-zheng-que-xing-tu/&#34;&gt;题解&lt;/a&gt;。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;哪里贪心？&lt;br&gt; &lt;a href=&#34;https://leetcode.cn/u/teaven/&#34;&gt;评论&lt;/a&gt;佬的解释：永远找最高和最远的柱子，局部最优推出全局最优。双指针的解法存在遗漏，但对全局最优解无影响。&lt;/li&gt;
+&lt;li&gt;双指针的解法本质：缩减搜索空间。&lt;/li&gt;
+&lt;li&gt;排除i&amp;#x2F;j的配对可能性：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;i和j相遇算法结束；&lt;/li&gt;
+&lt;li&gt;对于两边指针i、j，如果移动其中一边，那么新的容器h一定 不大于 另一边的柱子高度；&lt;/li&gt;
+&lt;li&gt;收缩过程中，配对的h较低一方的柱子必定被舍弃所有可能，该位置指针向中间收缩。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;单看代码理解应该也没问题，这道题知道思路后写起来是无压力的。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int maxArea(vector&amp;lt;int&amp;gt;&amp;amp; height) &amp;#123;
+        int left,right;
+        left=0;
+        right=height.size()-1;
+        int ans=0;
+        while(left&amp;lt;right)&amp;#123;
+            int h=height[left]&amp;lt;height[right]?height[left]:height[right];
+            ans=max(ans,(right-left)*h);
+            if(height[left]&amp;lt;height[right])&amp;#123;
+                left++;
+            &amp;#125;
+            else&amp;#123;
+                right--;
+            &amp;#125;           
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
         <category term="算法" />
@@ -2428,7 +2472,8 @@ public:
         <id>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</id>
         <title>力扣备忘录</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/"/>
-        <content type="html">&lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
+        <content type="html">&lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
+&lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
 &lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;题目并非只有表中那几个，可在&lt;a href=&#34;https://leetcode.cn/problemset/&#34;&gt;此页&lt;/a&gt;自行筛选。&lt;/p&gt;
@@ -2636,7 +2681,7 @@ public:
                 该元素加1,
                 末尾所有的9置0;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码&#34;&gt;&lt;a href=&#34;#AC代码&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     vector&amp;lt;int&amp;gt; plusOne(vector&amp;lt;int&amp;gt;&amp;amp; digits) &amp;#123;
         int len=digits.size();
@@ -2682,7 +2727,7 @@ public:
         标记递增变量=假；
 如果递增or递减=真，返回真；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码-1&#34;&gt;&lt;a href=&#34;#AC代码-1&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-1&#34;&gt;&lt;a href=&#34;#AC代码-1&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     bool isMonotonic(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
         bool increase=true,decrease=true;
@@ -2781,7 +2826,7 @@ int 罗马数字长度；
         结果变量+=值变量；
 返回结果；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码-2&#34;&gt;&lt;a href=&#34;#AC代码-2&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-2&#34;&gt;&lt;a href=&#34;#AC代码-2&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     unordered_map&amp;lt;char,int&amp;gt;mymap=&amp;#123;
         &amp;#123;&amp;#39;I&amp;#39;,1&amp;#125;,
@@ -2825,7 +2870,7 @@ int 结果长度=0
 返回结果长度;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;AC代码-3&#34;&gt;&lt;a href=&#34;#AC代码-3&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;【方法一】&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int lengthOfLastWord(string s) &amp;#123;
         int len=s.length();
@@ -2880,7 +2925,7 @@ public:
 x = 反转数字
 返回x = 反转数字 或者 x = 去掉个位的反转数字；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码-4&#34;&gt;&lt;a href=&#34;#AC代码-4&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-4&#34;&gt;&lt;a href=&#34;#AC代码-4&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     bool isPalindrome(int x) &amp;#123;
         if(x&amp;lt;0 || (x%10==0 &amp;amp;&amp;amp; x!=0))&amp;#123;
@@ -2906,7 +2951,7 @@ public:
 &lt;li&gt;如果 &lt;strong&gt;&lt;code&gt;i&lt;/code&gt;超出某个字符串的长度&lt;/strong&gt;或**第&lt;code&gt;j&lt;/code&gt;个字符串的第&lt;code&gt;i&lt;/code&gt;个字符不等于&lt;code&gt;c&lt;/code&gt;**时，直接返回当前的公共前缀。&lt;/li&gt;
 &lt;li&gt;循环结束说明所有字符串的所有字符都匹配，那么第一个字符串本身就是最长公共前缀，返回第一个字符串&lt;code&gt;strs[0]&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;如果数组为空：
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;如果数组为空：
     返回&amp;quot;&amp;quot;；
 int 长度变量=数组第一个字符串元素的长度；
 int 计数变量=数组大小；
@@ -2917,7 +2962,7 @@ int 计数变量=数组大小；
             返回 第一个字符串的第一个字符~第i个字符；
 返回 第一个字符；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;AC代码-5&#34;&gt;&lt;a href=&#34;#AC代码-5&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;h3 id=&#34;AC代码-5&#34;&gt;&lt;a href=&#34;#AC代码-5&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; strs) &amp;#123;
         if(!strs.size())&amp;#123;
@@ -2962,7 +3007,7 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;另外，我一开始想用&lt;code&gt;unordered_map&lt;/code&gt;，做题做迷了。后来发现动态数组完全可以解决：C++ 标准库中的 vector 支持动态调整大小，可以方便地模拟栈的行为。而unordered_map 是用来存储键值对（key-value pairs）的哈希表。&lt;br&gt;本问题中不需要映射关系，所以并不需要用到 unordered_map。&lt;br&gt;还有，&lt;strong&gt;stack&lt;int&gt;&lt;strong&gt;的&lt;code&gt;.push()&lt;/code&gt;和&lt;code&gt;.pop()&lt;/code&gt;也可，但是&lt;/strong&gt;vector&lt;/strong&gt;的&lt;code&gt;.push_back()&lt;/code&gt;和&lt;code&gt;.pop_back()&lt;/code&gt;也同样可以。那就选更常用的vector，何乐而不为呢？&lt;/p&gt;
 &lt;h3 id=&#34;AC代码-6&#34;&gt;&lt;a href=&#34;#AC代码-6&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;用时击败7%，悲。之后滚回来优化算法。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int calPoints(vector&amp;lt;string&amp;gt;&amp;amp; operations) &amp;#123;
         vector&amp;lt;int&amp;gt;ans;
@@ -3002,7 +3047,7 @@ public:
 返回最终数组长度；
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;AC代码-7&#34;&gt;&lt;a href=&#34;#AC代码-7&#34; class=&#34;headerlink&#34; title=&#34;AC代码&#34;&gt;&lt;/a&gt;AC代码&lt;/h3&gt;&lt;p&gt;妈呀这题一提交发现每ms都有解法…密密麻麻(ΩДΩ)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;class Solution &amp;#123;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
 public:
     int removeDuplicates(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
         int ans=1;
@@ -3016,7 +3061,129 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+&lt;h2 id=&#34;1922-统计好数字的数目&#34;&gt;&lt;a href=&#34;#1922-统计好数字的数目&#34; class=&#34;headerlink&#34; title=&#34;1922.统计好数字的数目&#34;&gt;&lt;/a&gt;1922.统计好数字的数目&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;我们称一个数字字符串是 好数字 当它满足（下标从 0 开始）偶数 下标处的数字为 偶数 且 奇数 下标处的数字为 质数 （2，3，5 或 7）。&lt;br&gt;比方说，”2582” 是好数字，因为偶数下标处的数字（2 和 8）是偶数且奇数下标处的数字（5 和 2）为质数。但 “3245” 不是 好数字，因为 3 在偶数下标处但不是偶数。&lt;br&gt;给你一个整数 n ，请你返回长度为 n 且为好数字的数字字符串 总数 。由于答案可能会很大，请你将它对 10^9 + 7 取余后返回 。&lt;br&gt;一个 数字字符串 是每一位都由 0 到 9 组成的字符串，且可能包含前导 0 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 1015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;🤔一开始就被范围吓到了，这完全穷举不了啊，悲。&lt;br&gt;这道题不超时的话只能用数学方法了，快来和我一起看&lt;a href=&#34;https://leetcode.cn/problems/count-good-numbers/solutions/857728/cheng-fa-yuan-li-kuai-su-mi-by-endlessch-btkn/?envType=daily-question&amp;envId=2025-04-13&#34;&gt;题解&lt;/a&gt;!&lt;br&gt;&lt;strong&gt;总结一下&lt;/strong&gt; 对于长度为n的好数字字符串：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;偶数下标个数&lt;code&gt;a=⌈n/2⌉=⌊(n+1)/2⌋&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;下标有五种可能：0、2、4、6、8&lt;/li&gt;
+&lt;li&gt;方案数&lt;code&gt;5^a&lt;/code&gt;&lt;blockquote&gt;
+&lt;p&gt;*注意这里⌈ ⌉是向上取整，⌊ ⌋是向下取整。我也是最近才学到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;奇数下标个数&lt;code&gt;b=⌊n/2⌋&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;下标有四种可能：2、3、5、7&lt;/li&gt;
+&lt;li&gt;方案数&lt;code&gt;4^b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;可得总方案数为&lt;code&gt;(5^a)*(4^b)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到这里涉及到两个问题：&lt;br&gt;&lt;strong&gt;👉️快速幂&lt;/strong&gt;&lt;br&gt;直接暴力pow必定超时&amp;#x2F;爆栈，所以需要快速幂。&lt;a href=&#34;https://leetcode.cn/problems/powx-n/solutions/2858114/tu-jie-yi-zhang-tu-miao-dong-kuai-su-mi-ykp3i/&#34;&gt;方法&lt;/a&gt;太神了…趁热打铁把&lt;a href=&#34;https://leetcode.cn/problems/powx-n/description/&#34;&gt;50.Pow(x,n)&lt;/a&gt;一起拿下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;x^n&lt;/code&gt;怎么快速算？&lt;br&gt;n转二进制后，从右往左遍历，遇到1就乘对应x的幂次。&lt;br&gt;比如&lt;code&gt;13 = 1101&lt;/code&gt;：&lt;br&gt;那么&lt;code&gt;x^13&lt;/code&gt; &amp;#x3D; &lt;code&gt;x^(2^0)&lt;/code&gt; * &lt;code&gt;x^(2^2)&lt;/code&gt; * &lt;code&gt;x^(2^3)&lt;/code&gt; &amp;#x3D; &lt;code&gt;x&lt;/code&gt; * &lt;code&gt;x^4&lt;/code&gt; * &lt;code&gt;x^8&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;👉️取模&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为题目要算的答案特别大以至于超出64位整数的范围，所以要求对&lt;code&gt;10^9 + 7&lt;/code&gt;取模。&lt;br&gt;这里好多数学公式😫先把代码总结&lt;a href=&#34;(https://leetcode.cn/discuss/post/3584387/fen-xiang-gun-mo-yun-suan-de-shi-jie-dan-7xgu/)&#34;&gt;copy&lt;/a&gt;过来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;MOD = 1_000_000_007
+// 加
+(a + b) % MOD
+// 减
+(a - b + MOD) % MOD
+// 把任意整数 a 取模到 [0,MOD-1] 中，无论 a 是正是负
+(a % MOD + MOD) % MOD
+// 乘（注意使用 64 位整数）
+a * b % MOD
+// 多个数相乘，要步步取模，防止溢出
+a * b % MOD * c % MOD
+// 除（MOD 是质数且 b 不是 MOD 的倍数）
+a * qpow(b, MOD - 2, MOD) % MOD
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    const long long mod=1e9+7;
+    //快速幂：计算base^exp
+    long long ModPow(long long base,long long exp)&amp;#123;
+        long long res=1;
+        while(exp)&amp;#123;
+            if(exp%2==1)&amp;#123;//当前位是1
+                res=(res*base)%mod;
+            &amp;#125;
+            base=(base*base)%mod;//base^2是base的下一步幂
+            exp/=2;
+        &amp;#125;
+        return res;
+    &amp;#125;
+    //主函数
+    int countGoodNumbers(long long n) &amp;#123;
+        long long a,b;
+        a=(n+1)/2;
+        b=n/2;
+        return (ModPow(5,a)*ModPow(4,b))% mod;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;50-Pow-x-n&#34;&gt;&lt;a href=&#34;#50-Pow-x-n&#34; class=&#34;headerlink&#34; title=&#34;50.Pow(x,n)&#34;&gt;&lt;/a&gt;50.Pow(x,n)&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;实现 pow(x, n) ，即计算 x 的整数 n 次幂函数（即，x^n ）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-100.0 &amp;lt; x &amp;lt; 100.0&lt;/li&gt;
+&lt;li&gt;231 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 231-1&lt;/li&gt;
+&lt;li&gt;n 是一个整数&lt;/li&gt;
+&lt;li&gt;要么 x 不为零，要么 n &amp;gt; 0 。&lt;/li&gt;
+&lt;li&gt;-104 &amp;lt;&amp;#x3D; xn &amp;lt;&amp;#x3D; 104&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h3&gt;&lt;p&gt;详见上一题~这里还涉及到：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;n为负数&lt;br&gt;把n变成-n，x变为1&amp;#x2F;x。&lt;/li&gt;
+&lt;li&gt;n&amp;#x3D;(−2)^31&lt;br&gt;此时n取反会超出int最大值，可以转为64位int。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;另外，关键代码&lt;a href=&#34;https://leetcode.cn/problems/powx-n/solutions/2858114/tu-jie-yi-zhang-tu-miao-dong-kuai-su-mi-ykp3i/&#34;&gt;灵神&lt;/a&gt;的更简洁，放在这里学习一下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;        while (n) &amp;#123; // 从低到高枚举 n 的每个比特位
+            if (n &amp;amp; 1) &amp;#123; // 这个比特位是 1
+                ans *= x; // 把 x 乘到 ans 中
+            &amp;#125;
+            x *= x; // x 自身平方
+            n &amp;gt;&amp;gt;= 1; // 继续枚举下一个比特位
+        &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    double myPow(double x, int N) &amp;#123;
+        double res=1;
+        long long n=N;
+        while(n)&amp;#123;
+            if(n&amp;lt;0)&amp;#123;
+                n=-n;
+                x=1/x;
+            &amp;#125;
+            if(n%2==1)&amp;#123;
+                res=(res*x);
+            &amp;#125;
+            x=x*x;
+            n/=2;
+        &amp;#125;
+        return res;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
         <category term="算法" />
