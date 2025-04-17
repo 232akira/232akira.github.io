@@ -7,16 +7,16 @@
         <language>zh-CN</language>
         <pubDate>Thu, 17 Apr 2025 14:13:00 +0800</pubDate>
         <lastBuildDate>Thu, 17 Apr 2025 14:13:00 +0800</lastBuildDate>
-        <category>力扣</category>
         <category>算法</category>
+        <category>链表</category>
+        <category>力扣</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>链表</category>
-        <category>专题</category>
-        <category>C++</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>专题</category>
+        <category>C++</category>
         <category>指南</category>
         <category>记录</category>
         <category>Markdown</category>
@@ -43,40 +43,44 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%982-%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
+            <title>实战2️⃣ 接入DeepSeek-R1优化提示词</title>
+            <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%982-%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+            <category>指南</category>
+            <category>实战</category>
+            <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🔆2025-04-16&lt;/p&gt;
+&lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
+&lt;h2 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h2&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后才是：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;C --&amp;gt; D(Stable Diffusion生成)
+D --&amp;gt; E[最终图像]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h2&gt; ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
             <title>实战1️⃣ Stable Difussion图像生成</title>
             <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
             <category>指南</category>
             <category>实战</category>
-            <pubDate>Thu, 17 Apr 2025 13:43:31 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;实现第一个图像生成Hello World（Stable Difussion模型）&lt;br&gt;🔆2025-4-15&lt;/p&gt;
-&lt;blockquote&gt;
+            <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;🔆2025-04-15&lt;/p&gt;
+&lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Difussion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Difussion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Difussion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Difussion模型）&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;什么是Stable-Difussion&#34;&gt;&lt;a href=&#34;#什么是Stable-Difussion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Difussion&#34;&gt;&lt;/a&gt;什么是Stable Difussion&lt;/h4&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt;。&lt;/p&gt;
-&lt;h4 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;注册&amp;#x2F;登录Gitee账号&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gitee AI：&lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;此处选择&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;，可获取每日免费体验次数&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;API代码中重点理解&lt;/p&gt;
-&lt;blockquote&gt;
+&lt;h2 id=&#34;什么是Stable-Difussion&#34;&gt;&lt;a href=&#34;#什么是Stable-Difussion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Difussion&#34;&gt;&lt;/a&gt;什么是Stable Difussion&lt;/h2&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;注册-登录Gitee账号&#34;&gt;&lt;a href=&#34;#注册-登录Gitee账号&#34; class=&#34;headerlink&#34; title=&#34;注册&amp;#x2F;登录Gitee账号&#34;&gt;&lt;/a&gt;注册&amp;#x2F;登录Gitee账号&lt;/h3&gt;&lt;h3 id=&#34;Gitee-AI&#34;&gt;&lt;a href=&#34;#Gitee-AI&#34; class=&#34;headerlink&#34; title=&#34;Gitee AI&#34;&gt;&lt;/a&gt;Gitee AI&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;沐曦-模型资源包&#34;&gt;&lt;a href=&#34;#沐曦-模型资源包&#34; class=&#34;headerlink&#34; title=&#34;沐曦-模型资源包&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;可获取每日免费体验次数&lt;/p&gt;
+&lt;h2 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h2&gt;&lt;h3 id=&#34;选中沐曦模型资源包后-下拉找到stable-diffusion-xl-base-1-0模型&#34;&gt;&lt;a href=&#34;#选中沐曦模型资源包后-下拉找到stable-diffusion-xl-base-1-0模型&#34; class=&#34;headerlink&#34; title=&#34;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&#34;&gt;&lt;/a&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/h3&gt;&lt;h3 id=&#34;选择在线体验-API-添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34;&gt;&lt;a href=&#34;#选择在线体验-API-添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34; class=&#34;headerlink&#34; title=&#34;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34;&gt;&lt;/a&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/h3&gt;&lt;h3 id=&#34;API代码中重点理解&#34;&gt;&lt;a href=&#34;#API代码中重点理解&#34; class=&#34;headerlink&#34; title=&#34;API代码中重点理解&#34;&gt;&lt;/a&gt;API代码中重点理解&lt;/h3&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;模型资源地址：API的基础URL（统一资源定位符）&lt;/li&gt;
 &lt;li&gt;API密钥：用于身份验证和授权，以保证用户正常访问。（注意！你会发现其他模型的api-key和此模型都是完全相同的，因为gitee ai的api-key分配模式是一个账号一个）&lt;/li&gt;
 &lt;li&gt;模型名称：指向模型完整名称（一定不能错）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;1️⃣Python&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;base_url&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1&#34;&gt;https://ai.gitee.com/v1&lt;/a&gt;&lt;/li&gt;
@@ -93,32 +97,13 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;curl&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1/images/generations&#34;&gt;https://ai.gitee.com/v1/images/generations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓️如果你发现这里的curl地址不同于上面的baseurl：&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
+&lt;p&gt;❓️如果你发现这里的&lt;strong&gt;curl地址&lt;/strong&gt;不同于上面的baseurl：&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我个人对url的具体理解：api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;br&gt;&lt;code&gt;ai.gitee.com&lt;/code&gt;：使用gitee平台上的AI服务（此网址可以直接访问）&lt;br&gt;&lt;code&gt;/v1/images/generations&lt;/code&gt;：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h4&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。记得缺失的包pip install一下~&lt;/p&gt;
-&lt;h4 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h4&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。&lt;/p&gt;
-&lt;p&gt;因此后续需要对提示词prompt进行调整。可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
+&lt;h2 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h2&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。&lt;br&gt;记得缺失的包pip install一下&lt;/p&gt;
+&lt;h2 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。&lt;br&gt;因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%982-%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
-            <title>实战2️⃣ 接入DeepSeek-R1优化提示词</title>
-            <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%982-%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
-            <category>指南</category>
-            <category>实战</category>
-            <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;🔆2025-4-16&lt;/p&gt;
-&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
-&lt;h4 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h4&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后才是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C --&amp;gt; D(Stable Diffusion生成)
-D --&amp;gt; E[最终图像]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h4&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
@@ -168,8 +153,8 @@ D --&amp;gt; E[最终图像]
             <guid isPermalink="true">https://232akira.github.io/2025/04/08/HOT%20100/</guid>
             <title>HOT 100</title>
             <link>https://232akira.github.io/2025/04/08/HOT%20100/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <pubDate>Tue, 08 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
@@ -1476,8 +1461,8 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
             <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
             <title>专题3️⃣ 动态规划</title>
             <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
@@ -1550,8 +1535,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
@@ -1998,9 +1983,9 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
             <category>链表</category>
+            <category>力扣</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
@@ -3544,8 +3529,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>专题2️⃣ 贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
@@ -3868,8 +3853,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
