@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Per aspera ad astra • All posts by \"指南\" tag",
+    "description": "欢迎交流学习!",
+    "home_page_url": "https://232akira.github.io",
+    "items": [
+        {
+            "id": "https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/",
+            "url": "https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/",
+            "title": "入门指南1️⃣ 使用Stable Diffusion",
+            "date_published": "2025-04-17T07:29:31.000Z",
+            "content_html": "<p>test</p>\n",
+            "tags": [
+                "指南"
+            ]
+        }
+    ]
+}

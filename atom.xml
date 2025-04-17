@@ -3,20 +3,30 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-04-09T07:09:00.000Z</updated>
+    <updated>2025-04-17T07:29:31.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
-    <category term="链表" />
     <category term="字符串" />
     <category term="滑动窗口" />
+    <category term="链表" />
     <category term="数组" />
     <category term="哈希表" />
     <category term="二分查找" />
     <category term="专题" />
     <category term="C++" />
+    <category term="指南" />
     <category term="记录" />
     <category term="Markdown" />
     <category term="笔记" />
+    <entry>
+        <id>https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
+        <title>入门指南1️⃣ 使用Stable Diffusion</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+        <content type="html">&lt;p&gt;test&lt;/p&gt;
+</content>
+        <category term="指南" />
+        <updated>2025-04-17T07:29:31.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/04/09/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看指引</title>
