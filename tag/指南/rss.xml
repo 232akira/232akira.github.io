@@ -7,14 +7,14 @@
         <language>zh-CN</language>
         <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
         <lastBuildDate>Thu, 17 Apr 2025 13:43:07 +0800</lastBuildDate>
-        <category>算法</category>
-        <category>链表</category>
         <category>力扣</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
+        <category>算法</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
+        <category>链表</category>
         <category>专题</category>
         <category>C++</category>
         <category>指南</category>
@@ -52,16 +52,22 @@ D --&amp;gt; E[最终图像]
 &lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;什么是Stable-Difussion&#34;&gt;&lt;a href=&#34;#什么是Stable-Difussion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Difussion&#34;&gt;&lt;/a&gt;什么是Stable Difussion&lt;/h2&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&#34;注册-登录Gitee账号&#34;&gt;&lt;a href=&#34;#注册-登录Gitee账号&#34; class=&#34;headerlink&#34; title=&#34;注册&amp;#x2F;登录Gitee账号&#34;&gt;&lt;/a&gt;注册&amp;#x2F;登录Gitee账号&lt;/h3&gt;&lt;h3 id=&#34;Gitee-AI&#34;&gt;&lt;a href=&#34;#Gitee-AI&#34; class=&#34;headerlink&#34; title=&#34;Gitee AI&#34;&gt;&lt;/a&gt;Gitee AI&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;沐曦-模型资源包&#34;&gt;&lt;a href=&#34;#沐曦-模型资源包&#34; class=&#34;headerlink&#34; title=&#34;沐曦-模型资源包&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;可获取每日免费体验次数&lt;/p&gt;
-&lt;h2 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h2&gt;&lt;h3 id=&#34;选中沐曦模型资源包后-下拉找到stable-diffusion-xl-base-1-0模型&#34;&gt;&lt;a href=&#34;#选中沐曦模型资源包后-下拉找到stable-diffusion-xl-base-1-0模型&#34; class=&#34;headerlink&#34; title=&#34;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&#34;&gt;&lt;/a&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/h3&gt;&lt;h3 id=&#34;选择在线体验-API-添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34;&gt;&lt;a href=&#34;#选择在线体验-API-添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34; class=&#34;headerlink&#34; title=&#34;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&#34;&gt;&lt;/a&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/h3&gt;&lt;h3 id=&#34;API代码中重点理解&#34;&gt;&lt;a href=&#34;#API代码中重点理解&#34; class=&#34;headerlink&#34; title=&#34;API代码中重点理解&#34;&gt;&lt;/a&gt;API代码中重点理解&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;模型资源地址：API的基础URL（统一资源定位符）&lt;/li&gt;
-&lt;li&gt;API密钥：用于身份验证和授权，以保证用户正常访问。（注意！你会发现其他模型的api-key和此模型都是完全相同的，因为gitee ai的api-key分配模式是一个账号一个）&lt;/li&gt;
-&lt;li&gt;模型名称：指向模型完整名称（一定不能错）&lt;/li&gt;
+&lt;h2 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;你需要按照以下顺序操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册&amp;#x2F;登录Gitee账号&lt;/li&gt;
+&lt;li&gt;访问Gitee AI &lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;使用&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/li&gt;
+&lt;li&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;关于API代码，你需要知道：&#34;&gt;&lt;a href=&#34;#关于API代码，你需要知道：&#34; class=&#34;headerlink&#34; title=&#34;关于API代码，你需要知道：&#34;&gt;&lt;/a&gt;关于API代码，你需要知道：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模型资源地址&lt;/strong&gt; API的基础URL（统一资源定位符）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API密钥&lt;/strong&gt; 用于身份验证和授权，以保证用户正常访问。（注意！你会发现其他模型的api-key和此模型都是完全相同的，因为gitee ai的api-key分配模式是一个账号一个）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;模型名称&lt;/strong&gt; 指向模型完整名称（一定不能错）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;1️⃣Python&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于Gitee的三种API代码：&lt;br&gt;&lt;strong&gt;1️⃣Python&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;base_url&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1&#34;&gt;https://ai.gitee.com/v1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;api_key&lt;/code&gt;&lt;/li&gt;
@@ -77,12 +83,12 @@ D --&amp;gt; E[最终图像]
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;curl&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1/images/generations&#34;&gt;https://ai.gitee.com/v1/images/generations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓️如果你发现这里的&lt;strong&gt;curl地址&lt;/strong&gt;不同于上面的baseurl：&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;如果你发现这里的curl地址不同于上面的baseurl❓️&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我个人对url的具体理解：api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;br&gt;&lt;code&gt;ai.gitee.com&lt;/code&gt;：使用gitee平台上的AI服务（此网址可以直接访问）&lt;br&gt;&lt;code&gt;/v1/images/generations&lt;/code&gt;：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h2&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。&lt;br&gt;记得缺失的包pip install一下&lt;/p&gt;
-&lt;h2 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。&lt;br&gt;因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
+&lt;h2 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】&lt;/p&gt;
  ]]></description>
         </item>
         <item>
