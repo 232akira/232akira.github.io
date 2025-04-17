@@ -5,15 +5,15 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 17 Apr 2025 14:13:00 +0800</pubDate>
-        <lastBuildDate>Thu, 17 Apr 2025 14:13:00 +0800</lastBuildDate>
-        <category>力扣</category>
+        <pubDate>Thu, 17 Apr 2025 14:44:00 +0800</pubDate>
+        <lastBuildDate>Thu, 17 Apr 2025 14:44:00 +0800</lastBuildDate>
         <category>算法</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>链表</category>
         <category>专题</category>
         <category>C++</category>
@@ -23,11 +23,11 @@
         <category>实战</category>
         <category>笔记</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
-            <link>https://232akira.github.io/2025/04/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%BC%95/</link>
+            <link>https://232akira.github.io/2025/04/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
             <category>记录</category>
-            <pubDate>Thu, 17 Apr 2025 14:13:00 +0800</pubDate>
+            <pubDate>Thu, 17 Apr 2025 14:44:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -136,31 +136,11 @@ D --&amp;gt; E[最终图像]
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/09/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
-            <title>🔝点我查看指引</title>
-            <link>https://232akira.github.io/2025/04/09/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
-            <category>记录</category>
-            <pubDate>Wed, 09 Apr 2025 15:09:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
-&lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
-&lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
-&lt;h2 id=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;a href=&#34;#更清晰的看看有哪些文章&#34; class=&#34;headerlink&#34; title=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;/a&gt;更清晰的看看有哪些文章&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;归档&lt;/code&gt;&lt;br&gt;看看每月写了什么&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;标签&lt;/code&gt;&lt;br&gt;关键词定位文章更高效&lt;/p&gt;
-&lt;p&gt;也可以直接点击目录上方的数字跳转。&lt;/p&gt;
-&lt;h2 id=&#34;🧩其他&#34;&gt;&lt;a href=&#34;#🧩其他&#34; class=&#34;headerlink&#34; title=&#34;🧩其他&#34;&gt;&lt;/a&gt;🧩其他&lt;/h2&gt;&lt;h3 id=&#34;想来点音乐？&#34;&gt;&lt;a href=&#34;#想来点音乐？&#34; class=&#34;headerlink&#34; title=&#34;想来点音乐？&#34;&gt;&lt;/a&gt;想来点音乐？&lt;/h3&gt;&lt;p&gt;&lt;code&gt;波浪动效&lt;/code&gt;-&amp;gt;&lt;code&gt;右边播放键&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;待完善的功能&#34;&gt;&lt;a href=&#34;#待完善的功能&#34; class=&#34;headerlink&#34; title=&#34;待完善的功能&#34;&gt;&lt;/a&gt;待完善的功能&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;评论系统&lt;/li&gt;
-&lt;li&gt;文章搜索&lt;/li&gt;
-&lt;li&gt;其他异常显示&lt;br&gt;…&lt;/li&gt;
-&lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/08/HOT%20100/</guid>
             <title>HOT 100</title>
             <link>https://232akira.github.io/2025/04/08/HOT%20100/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <pubDate>Tue, 08 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
@@ -1467,8 +1447,8 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
             <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
             <title>专题3️⃣ 动态规划</title>
             <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
@@ -1541,8 +1521,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
@@ -1989,8 +1969,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -3535,8 +3515,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>专题2️⃣ 贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
@@ -3859,8 +3839,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</guid>
             <title>力扣备忘录</title>
             <link>https://232akira.github.io/2025/03/02/%E5%8A%9B%E6%89%A3%E5%A4%87%E5%BF%98%E5%BD%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
