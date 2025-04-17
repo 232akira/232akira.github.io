@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
         <lastBuildDate>Thu, 17 Apr 2025 13:43:07 +0800</lastBuildDate>
-        <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
         <category>力扣</category>
+        <category>算法</category>
+        <category>专题</category>
+        <category>C++</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
         <category>链表</category>
-        <category>专题</category>
-        <category>C++</category>
+        <category>字符串</category>
+        <category>滑动窗口</category>
         <category>指南</category>
+        <category>实战</category>
         <category>记录</category>
         <category>Markdown</category>
-        <category>实战</category>
         <category>笔记</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%982-%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
@@ -38,7 +38,55 @@
 &lt;pre&gt;&lt;code&gt;C --&amp;gt; D(Stable Diffusion生成)
 D --&amp;gt; E[最终图像]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h2&gt; ]]></description>
+&lt;h2 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h2&gt;&lt;p&gt;和先前拿到Stable Diffusion是同一个方法：访问&lt;code&gt;沐曦资源包&lt;/code&gt;-&amp;gt;&lt;code&gt;DeepSeek-R1&lt;/code&gt;-&amp;gt;&lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base_url&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1&#34;&gt;https://ai.gitee.com/v1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;api_key&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;model&lt;/code&gt; DeepSeek-R1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码思路&#34;&gt;&lt;a href=&#34;#代码思路&#34; class=&#34;headerlink&#34; title=&#34;代码思路&#34;&gt;&lt;/a&gt;代码思路&lt;/h2&gt;&lt;p&gt;简而言之，就是在Stable Diffusion拿到提示词之前，把原始提示词先丢给DeepSeek处理一下，也可以说是&lt;strong&gt;双模型协同机制&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;DeepSeek-R1&#34;&gt;&lt;a href=&#34;#DeepSeek-R1&#34; class=&#34;headerlink&#34; title=&#34;DeepSeek-R1&#34;&gt;&lt;/a&gt;DeepSeek-R1&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;作为「提示词工程师」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;message模块向其发送指令，比如：你是一个专业的SD提示词优化助手等等&lt;/li&gt;
+&lt;li&gt;接受用户输入的提示词&lt;/li&gt;
+&lt;li&gt;优化&lt;br&gt;优化的策略可以有很多，针对Stable Diffusion我们可以这样做：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;转换成英文&lt;/li&gt;
+&lt;li&gt;语法结构优化（将描述性语言转换为SD擅长的标签式表达）&lt;/li&gt;
+&lt;li&gt;自动补充合适的艺术风格细节（如添加”ultra detailed, 8k”等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;⚠️注意！这里有个致命的提示词要点，影响整个案例是否成功。将放到后面作为重点补充。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;输出经优化后的提示词&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;def get_optimized_prompt(original_prompt: str) -&amp;gt; str：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Stable-Diffusion&#34;&gt;&lt;a href=&#34;#Stable-Diffusion&#34; class=&#34;headerlink&#34; title=&#34;Stable Diffusion&#34;&gt;&lt;/a&gt;Stable Diffusion&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;作为「图像生成器」&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;接受经优化后的提示词&lt;/li&gt;
+&lt;li&gt;输出文生图结果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;报错梳理&#34;&gt;&lt;a href=&#34;#报错梳理&#34; class=&#34;headerlink&#34; title=&#34;报错梳理&#34;&gt;&lt;/a&gt;报错梳理&lt;/h2&gt;&lt;h3 id=&#34;模型资源地址-模型名称置入错误&#34;&gt;&lt;a href=&#34;#模型资源地址-模型名称置入错误&#34; class=&#34;headerlink&#34; title=&#34;模型资源地址&amp;#x2F;模型名称置入错误&#34;&gt;&lt;/a&gt;模型资源地址&amp;#x2F;模型名称置入错误&lt;/h3&gt;&lt;p&gt;这个其实是非常没有技术含量的报错🫥因为个案例的代码比较冗长（200行左右），并且模型资源置入的地址的代码位置比较分散，所以在快速大量修改整体代码时，很容易没有调用到模型资源，但往往报错的时候不会意识到是这么简单的问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;举个🌰：&lt;/strong&gt;&lt;br&gt;遇到了401报错，那么可能是API Key：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为空&lt;/li&gt;
+&lt;li&gt;已过期&lt;/li&gt;
+&lt;li&gt;不属于当前使用的API服务（比如错用OpenAI的Key调用 Gitee AI，我就是没注意到这里）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;运行无报错但是无输出&#34;&gt;&lt;a href=&#34;#运行无报错但是无输出&#34; class=&#34;headerlink&#34; title=&#34;运行无报错但是无输出&#34;&gt;&lt;/a&gt;运行无报错但是无输出&lt;/h3&gt;&lt;p&gt;这里属于和模型无关的基础代码编写问题了。需要添加一定的逻辑，如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;增加代码调试输出逻辑&lt;/li&gt;
+&lt;li&gt;强制报错测试&lt;br&gt;最好是加个运行日志，方便看看细节啥情况。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里问了DS说的很专业，码一下👉️错误熔断设计：&lt;code&gt;独立捕获每个API的异常&lt;/code&gt; &amp;amp; &lt;code&gt;生成过程状态实时反馈&lt;/code&gt;&lt;/p&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
@@ -88,6 +136,7 @@ D --&amp;gt; E[最终图像]
 &lt;p&gt;我个人对url的具体理解：api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;br&gt;&lt;code&gt;ai.gitee.com&lt;/code&gt;：使用gitee平台上的AI服务（此网址可以直接访问）&lt;br&gt;&lt;code&gt;/v1/images/generations&lt;/code&gt;：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h2&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。&lt;br&gt;记得缺失的包pip install一下&lt;/p&gt;
+&lt;h3 id=&#34;代码思路&#34;&gt;&lt;a href=&#34;#代码思路&#34; class=&#34;headerlink&#34; title=&#34;代码思路&#34;&gt;&lt;/a&gt;代码思路&lt;/h3&gt;&lt;p&gt;&lt;code&gt;配置层&lt;/code&gt;-&amp;gt;&lt;code&gt;协议层&lt;/code&gt;-&amp;gt;&lt;code&gt;业务逻辑层&lt;/code&gt;-&amp;gt;&lt;code&gt;执行控制层&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】&lt;/p&gt;
  ]]></description>
         </item>
