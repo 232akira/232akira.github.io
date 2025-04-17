@@ -6,14 +6,14 @@
     <updated>2025-04-17T07:29:31.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
+    <category term="链表" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
+    <category term="专题" />
+    <category term="C++" />
     <category term="数组" />
     <category term="哈希表" />
     <category term="二分查找" />
-    <category term="专题" />
-    <category term="C++" />
     <category term="指南" />
     <category term="记录" />
     <category term="Markdown" />
@@ -22,7 +22,68 @@
         <id>https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
         <title>入门指南1️⃣ 使用Stable Diffusion</title>
         <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
-        <content type="html">&lt;p&gt;test&lt;/p&gt;
+        <content type="html">&lt;p&gt;先都放这，写完后续分区。&lt;/p&gt;
+&lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体&#34;&gt;&lt;a href=&#34;#本体&#34; class=&#34;headerlink&#34; title=&#34;本体&#34;&gt;&lt;/a&gt;本体&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;点我查看官网&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Cline&lt;br&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev&#34;&gt;点我查看官网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Copilot&lt;br&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&#34;&gt;点我查看官网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;新安装的vscode需要更多基础拓展（如python等）&lt;/p&gt;
+&lt;h3 id=&#34;安装Chatbox&#34;&gt;&lt;a href=&#34;#安装Chatbox&#34; class=&#34;headerlink&#34; title=&#34;安装Chatbox&#34;&gt;&lt;/a&gt;安装Chatbox&lt;/h3&gt;&lt;p&gt;这里调用Gitee的大模型API会出现报错，等我二编。&lt;/p&gt;
+&lt;h2 id=&#34;步骤2-实战&#34;&gt;&lt;a href=&#34;#步骤2-实战&#34; class=&#34;headerlink&#34; title=&#34;步骤2 实战&#34;&gt;&lt;/a&gt;步骤2 实战&lt;/h2&gt;&lt;h3 id=&#34;实现第一个图像生成Hello-World（Stable-Difussion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Difussion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Difussion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Difussion模型）&lt;/h3&gt;&lt;p&gt;🔆2025-4-15&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;什么是Stable-Difussion&#34;&gt;&lt;a href=&#34;#什么是Stable-Difussion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Difussion&#34;&gt;&lt;/a&gt;什么是Stable Difussion&lt;/h4&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;注册&amp;#x2F;登录Gitee账号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gitee AI：&lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;此处选择&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;，可获取每日免费体验次数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;API代码中重点理解&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;☝️模型资源地址：API的基础URL（统一资源定位符）&lt;br&gt;✌️API密钥：用于身份验证和授权，以保证用户正常访问。（注意！你会发现其他模型的api-key和此模型都是完全相同的，因为gitee ai的api-key分配模式是一个账号一个）&lt;br&gt;🤞模型名称：指向模型完整名称（一定不能错）&lt;br&gt;&lt;strong&gt;1️⃣Python&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base_url&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1&#34;&gt;https://ai.gitee.com/v1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;api_key&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;model&lt;/code&gt; stable-diffusion-xl-base-1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2️⃣JavaScript&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;baseURL&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1&#34;&gt;https://ai.gitee.com/v1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;apiKey&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;model&lt;/code&gt; stable-diffusion-xl-base-1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;3️⃣cURL&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;curl&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1/images/generations&#34;&gt;https://ai.gitee.com/v1/images/generations&lt;/a&gt;&lt;br&gt;发现这里的curl地址不同于上面的baseurl?&lt;br&gt;这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。这里涉及到curl命令：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url,因此包括基础url和资源路径。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;具体来讲，我个人对url的理解：&lt;br&gt;api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ai.gitee.com的理解是：使用gitee平台上的AI服务（此网址可以直接访问）&lt;/li&gt;
+&lt;li&gt;&amp;#x2F;v1&amp;#x2F;images&amp;#x2F;generations的理解是：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h4&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。记得缺失的包pip install一下~&lt;/p&gt;
+&lt;h3 id=&#34;实现第一个图像生成Hello-World（Stable-Difussion模型）-1&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Difussion模型）-1&#34; class=&#34;headerlink&#34; title=&#34;-实现第一个图像生成Hello World（Stable Difussion模型）&#34;&gt;&lt;/a&gt;-实现第一个图像生成Hello World（Stable Difussion模型）&lt;/h3&gt;&lt;p&gt;🔆2025-4-16&lt;/p&gt;
+&lt;h2 id=&#34;参考资料&#34;&gt;&lt;a href=&#34;#参考资料&#34; class=&#34;headerlink&#34; title=&#34;参考资料&#34;&gt;&lt;/a&gt;参考资料&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Serverless API编程开发指南&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="指南" />
         <updated>2025-04-17T07:29:31.000Z</updated>
