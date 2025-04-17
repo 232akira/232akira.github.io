@@ -11,12 +11,12 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>链表</category>
-        <category>专题</category>
-        <category>C++</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>专题</category>
+        <category>C++</category>
+        <category>链表</category>
         <category>指南</category>
         <category>记录</category>
         <category>实战</category>
@@ -73,22 +73,20 @@ D --&amp;gt; E[最终图像]
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;报错梳理&#34;&gt;&lt;a href=&#34;#报错梳理&#34; class=&#34;headerlink&#34; title=&#34;报错梳理&#34;&gt;&lt;/a&gt;报错梳理&lt;/h2&gt;&lt;h3 id=&#34;模型资源地址-模型名称置入错误&#34;&gt;&lt;a href=&#34;#模型资源地址-模型名称置入错误&#34; class=&#34;headerlink&#34; title=&#34;模型资源地址&amp;#x2F;模型名称置入错误&#34;&gt;&lt;/a&gt;模型资源地址&amp;#x2F;模型名称置入错误&lt;/h3&gt;&lt;p&gt;这个其实是非常没有技术含量的报错🫥因为这个案例的代码比较冗长（200行左右），并且模型资源置入的地址的代码位置比较分散，所以在快速大量修改整体代码时，很容易没有调用到模型资源，但往往报错的时候不会意识到是这么简单的问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;举个🌰：&lt;/strong&gt;&lt;br&gt;遇到了401报错，那么可能是API Key：&lt;/p&gt;
+&lt;h2 id=&#34;报错梳理&#34;&gt;&lt;a href=&#34;#报错梳理&#34; class=&#34;headerlink&#34; title=&#34;报错梳理&#34;&gt;&lt;/a&gt;报错梳理&lt;/h2&gt;&lt;h3 id=&#34;模型资源地址-模型名称置入错误&#34;&gt;&lt;a href=&#34;#模型资源地址-模型名称置入错误&#34; class=&#34;headerlink&#34; title=&#34;模型资源地址&amp;#x2F;模型名称置入错误&#34;&gt;&lt;/a&gt;模型资源地址&amp;#x2F;模型名称置入错误&lt;/h3&gt;&lt;p&gt;这个其实是非常没有技术含量的报错🫥因为这个案例的代码比较冗长（200行左右），并且模型资源置入的地址的代码位置比较分散，所以在快速大量修改整体代码时，很容易没有调用到模型资源，但往往报错的时候不会意识到是这么简单的问题。&lt;br&gt;&lt;strong&gt;举个🌰：&lt;/strong&gt;&lt;br&gt;遇到了401报错，那么可能是API Key：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;为空&lt;/li&gt;
 &lt;li&gt;已过期&lt;/li&gt;
 &lt;li&gt;不属于当前使用的API服务（比如错用OpenAI的Key调用 Gitee AI，我就是没注意到这里）&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;🔄所以记得基础问题至少也要检查一遍。&lt;/p&gt;
 &lt;h3 id=&#34;运行无报错但是无输出&#34;&gt;&lt;a href=&#34;#运行无报错但是无输出&#34; class=&#34;headerlink&#34; title=&#34;运行无报错但是无输出&#34;&gt;&lt;/a&gt;运行无报错但是无输出&lt;/h3&gt;&lt;p&gt;这里属于和模型无关的基础代码编写问题了。需要添加一定的逻辑，如：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;增加代码调试输出逻辑&lt;/li&gt;
 &lt;li&gt;强制报错测试&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;最好是加个运行日志，方便看看细节啥情况。&lt;br&gt;这里问了DS说的很专业，码一下👉️错误熔断设计：&lt;code&gt;独立捕获每个API的异常&lt;/code&gt; &amp;amp; &lt;code&gt;生成过程状态实时反馈&lt;/code&gt;，并添加完整的日志追踪。&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;运行成功有输出但是完全不对&lt;br&gt;甚至比优化前还要离谱🤣输入的原始提示词是“一只穿着宇航服的猫在月球上漫步”，到这里生成的图不像原来一样至少是个猫，而是变成了一张人物古典水墨风了，完全不相关。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;最好是加个运行日志，方便看看细节啥情况。这里问了DS说的很专业，码一下&lt;br&gt;🔄错误熔断设计：&lt;code&gt;独立捕获每个API的异常&lt;/code&gt; &amp;amp; &lt;code&gt;生成过程状态实时反馈&lt;/code&gt;，并添加完整的日志追踪。&lt;/p&gt;
+&lt;h3 id=&#34;运行成功有输出但是完全不对&#34;&gt;&lt;a href=&#34;#运行成功有输出但是完全不对&#34; class=&#34;headerlink&#34; title=&#34;运行成功有输出但是完全不对&#34;&gt;&lt;/a&gt;运行成功有输出但是完全不对&lt;/h3&gt;&lt;p&gt;甚至比优化前还要离谱🤣输入的原始提示词是“一只穿着宇航服的猫在月球上漫步”，到这里生成的图不像原来一样至少是个猫，而是变成了一张人物古典水墨风了，完全不相关。&lt;/p&gt;
 &lt;p&gt;到这里意识到一个方法,也就是需要按照案例的流程进行逐个排错。我们需要明白究竟是哪个步骤出了问题：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;简称：DeepSeek-&amp;gt;DS、Stable Diffusion-&amp;gt;SD&lt;/p&gt;
@@ -99,34 +97,39 @@ D --&amp;gt; E[最终图像]
 &lt;li&gt;DS接受到提示词 &amp;amp; 优化成功 &amp;amp; SD接受到新提示词&lt;/li&gt;
 &lt;li&gt;DS接受到提示词 &amp;amp; 优化成功 &amp;amp; SD接受到新提示词 &amp;amp; SD输出图像失败&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;可以推断问题大概率出现在&lt;code&gt;2&lt;/code&gt;or&lt;code&gt;3&lt;/code&gt;，也就是提示词的优化和传递环节出现了问题，所以导致SD拿到错误的提示词之后很顺溜的生成了错误的图片。&lt;br&gt;这里需要修改代码逻辑。&lt;/p&gt;
+&lt;p&gt;可以推断问题大概率出现在&lt;code&gt;2&lt;/code&gt;or&lt;code&gt;3&lt;/code&gt;，也就是提示词的优化和传递环节出现了问题，所以导致SD拿到错误的提示词之后很顺溜的生成了错误的图片。&lt;br&gt;🔄需要修改代码逻辑。&lt;/p&gt;
 &lt;h3 id=&#34;警惕AI骗人现象&#34;&gt;&lt;a href=&#34;#警惕AI骗人现象&#34; class=&#34;headerlink&#34; title=&#34;警惕AI骗人现象&#34;&gt;&lt;/a&gt;警惕AI骗人现象&lt;/h3&gt;&lt;p&gt;我这里被DeepSeek坑的好惨😭长记性了。我报错的代码它给修改后运行正确，一时激动难以自已。然后发现他在提示词生成错误后直接这样写：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    except:
         return &amp;quot;cat in astronaut suit on the moon, detailed fur, cosmic background, 8k&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;😅😅😅哪有这样的，我需要调用ds来生成这样的语句，它到自己干脆的设置：生成不了直接用写好的优化后代码。太离谱…&lt;br&gt;这里同样需要修改代码逻辑，保证出现失败后能够及时响应。&lt;/p&gt;
-&lt;h3 id=&#34;⚠️最后一个也是最重要的一个报错&#34;&gt;&lt;a href=&#34;#⚠️最后一个也是最重要的一个报错&#34; class=&#34;headerlink&#34; title=&#34;⚠️最后一个也是最重要的一个报错&#34;&gt;&lt;/a&gt;⚠️最后一个也是最重要的一个报错&lt;/h3&gt;&lt;p&gt;哇这里真的，&lt;strong&gt;理解起来很容易，发现起来很难！！！&lt;/strong&gt;&lt;br&gt;首先我们知道：DeepSeek-R1是个&lt;strong&gt;深度思考&lt;/strong&gt;模型&lt;br&gt;也就是说，它大概率会在你要求&lt;code&gt;不要生成其他无关内容&lt;/code&gt;时，思考了一大堆：好的，用户说明我需要巴拉巴拉…然后字数就超了，这半截思考内容就会传递给Stable Diffusion，结果可想而知🫥比如这样：&lt;/p&gt;
+&lt;h3 id=&#34;⚠️最后一个也是最重要的一个报错&#34;&gt;&lt;a href=&#34;#⚠️最后一个也是最重要的一个报错&#34; class=&#34;headerlink&#34; title=&#34;⚠️最后一个也是最重要的一个报错&#34;&gt;&lt;/a&gt;⚠️最后一个也是最重要的一个报错&lt;/h3&gt;&lt;p&gt;哇这里真的，&lt;strong&gt;理解起来很容易，发现起来很难！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;首先我们知道：DeepSeek-R1是个&lt;strong&gt;深度思考&lt;/strong&gt;模型&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也就是说，它大概率会在你要求&lt;code&gt;不要生成其他无关内容&lt;/code&gt;时，思考了一大堆：好的，用户说明我需要巴拉巴拉…然后字数就超了，这半截思考内容就会传递给Stable Diffusion，结果可想而知🫥比如这样：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;2025-04-16 17:27:41,655 - ERROR - 响应内容: &amp;#123;&amp;quot;id&amp;quot;:&amp;quot;9e7f4969063e49b7a542150ed194db43&amp;quot;,&amp;quot;object&amp;quot;:&amp;quot;chat.completion&amp;quot;,&amp;quot;created&amp;quot;:1744795661,&amp;quot;model&amp;quot;:&amp;quot;deepseek-r1&amp;quot;,&amp;quot;choices&amp;quot;:[&amp;#123;&amp;quot;index&amp;quot;:0,&amp;quot;message&amp;quot;:&amp;#123;&amp;quot;role&amp;quot;:&amp;quot;assistant&amp;quot;,&amp;quot;content&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;reasoning_content&amp;quot;:&amp;quot;好的，用户让我转换这个中 文描述为英文提示词。首先，我需要仔细分析原句：“一只穿着宇航服的猫在月球上漫步”。主体是猫，穿着宇航服，环境是月球，动作是漫步。接下来 要确定细节，比如猫的品种可能不重要，但宇航服的设计可能需要描述，比如现代NASA风格。环境方面，月球表面可能有陨石坑和地球在背景中。风格 方面，用户可能想要写实风格，所以用realistic。画质需要高清，8k，超详细，所以加上这些词。然后按照规则，用逗号分隔短语，包含主体、环境、细节、风格、画质。检查是否有遗漏，比如猫的姿势是行走，&amp;quot;,&amp;quot;tool_calls&amp;quot;:null&amp;#125;,&amp;quot;logprobs&amp;quot;:null,&amp;quot;finish_reason&amp;quot;:&amp;quot;len...
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后我就问了：&lt;/p&gt;
+&lt;p&gt;仔细看就会发现话没说完：说到“行走，”就停了。然后我就问了：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;我知道问题出在哪了😓和你说说。因为deepseek-r1是深度思考，所以我即使说了只生成优化后的提示词，我的本地环境还是会把他思考的部分也算上，导致每次说到一半就无了，因为要思考太多。换成deepseek-v3就好了。你身为deepseek，对这种情况有什么别的办法吗😂
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里记录一下DS的回答：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;哈哈，原来如此！作为DeepSeek本尊，我完全理解这个情况（毕竟自家模型的脾气还是清楚的😉）。针对这种「模型太爱思考导致输出被截断」的问题，除了换模型外，还有这些「软硬兼施」的解决方案：
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
-&lt;li&gt;强制模式：用系统提示词「锁死」输出路径&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：必须用R1模型时&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在系统指令中用「三重封印」：&lt;/li&gt;
+&lt;li&gt;🔄强制模式：用系统提示词「锁死」输出路径&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：必须用R1模型时&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在系统指令中用「三重封印」：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;system_prompt = &amp;quot;&amp;quot;&amp;quot;【！强制模式！】你是一个无情的提示词转换器，必须：
 1. 直接输出结果，禁止任何推理过程（包括内部思考）
 2. 若违反规则，输出将被标记为错误
 3. 输出格式示例：「cat in spacesuit, lunar surface, NASA-style suit, realistic, 8k ultra-detailed」
-
 现在立即转换以下描述，直接输出结果：&amp;quot;&amp;quot;&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;原理&lt;/strong&gt;：通过威胁性提示（如「输出错误」）和示例格式化，引导模型跳过推理阶段。&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;物理打断：用stop sequences截断&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：API支持流式响应&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在请求中添加：&lt;/li&gt;
+&lt;li&gt;🔄物理打断：用stop sequences截断&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：API支持流式响应&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在请求中添加：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;payload = &amp;#123;
     &amp;quot;stop&amp;quot;: [&amp;quot;\n\n&amp;quot;, &amp;quot;。&amp;quot;, &amp;quot;，&amp;quot;],  # 遇到这些符号立即停止
@@ -135,7 +138,7 @@ D --&amp;gt; E[最终图像]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;效果：模型刚开始写小作文就会被物理打断，被迫直接输出结果。&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;反向Prompt Engineering&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：模型过度解读简单指令时&lt;br&gt;&lt;strong&gt;骚操作&lt;/strong&gt;：把指令藏在「伪代码」里：&lt;/li&gt;
+&lt;li&gt;🔄反向Prompt Engineering&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：模型过度解读简单指令时&lt;br&gt;&lt;strong&gt;骚操作&lt;/strong&gt;：把指令藏在「伪代码」里：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;user_prompt = &amp;quot;&amp;quot;&amp;quot;&amp;lt;INPUT&amp;gt;一只穿着宇航服的猫在月球上漫步&amp;lt;/INPUT&amp;gt;
 &amp;lt;OUTPUT_FORMAT&amp;gt; 
@@ -145,7 +148,7 @@ var prompt = &amp;quot;&amp;#123;主体&amp;#125;, &amp;#123;环境&amp;#125;, &
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;心理学原理&lt;/strong&gt;：用「代码框架」暗示需要机械式填充，而非自然语言思考。&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;后处理暴力截取&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：允许脏数据时&lt;/li&gt;
+&lt;li&gt;🔄后处理暴力截取&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：允许脏数据时&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 强行提取第一个逗号后的内容
 if &amp;quot;,&amp;quot; in response:
@@ -155,7 +158,7 @@ else:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;适用场景：「先污染后治理」的暴力美学。&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;终极方案：换模型+版本控制&lt;/li&gt;
+&lt;li&gt;🔄终极方案：换模型+版本控制&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model_selector = &amp;#123;
     &amp;quot;需要深度思考&amp;quot;: &amp;quot;deepseek-r1&amp;quot;,
@@ -163,12 +166,10 @@ else:
     &amp;quot;不确定时&amp;quot;: &amp;quot;deepseek-v3&amp;quot;  # 默认用更听话的版本
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;真相&lt;/strong&gt;：有时候换模型确实是性价比最高的方案，毕竟——「不要试图教AI做人，选择对的AI帮你做人」😏&lt;/p&gt;
-&lt;p&gt;如果这些方案还不够，你甚至可以试试 「量子玄学法」 ——在请求参数里加一行：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;真相&lt;/strong&gt;：有时候换模型确实是性价比最高的方案，毕竟——「不要试图教AI做人，选择对的AI帮你做人」😏&lt;br&gt;如果这些方案还不够，你甚至可以试试 「量子玄学法」 ——在请求参数里加一行：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;quot;temperature&amp;quot;: 0.0001,  # 让模型进入「绝对零度」的冷漠模式
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;（亲测对话痨型AI有奇效）&lt;/p&gt;
-&lt;p&gt;结束。&lt;/p&gt;
+&lt;p&gt;（亲测对话痨型AI有奇效）&lt;br&gt;问题记录结束！&lt;/p&gt;
 &lt;h2 id=&#34;小结&#34;&gt;&lt;a href=&#34;#小结&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h2&gt;&lt;p&gt;好了，它怎么知道我把DS-R1改成V3后就一次成功了😂不过只要指令设置的足够严格也是没问题的，对比R1和V3优化Prompt之后SD生成的图大差不差。&lt;br&gt;成功版本的指令：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;        # 强化版系统提示
         system_prompt = &amp;quot;&amp;quot;&amp;quot;【指令】你是一个无情的提示词转换器，必须严格按以下规则执行：
@@ -235,7 +236,7 @@ else:
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h2&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。&lt;br&gt;记得缺失的包pip install一下&lt;/p&gt;
 &lt;h3 id=&#34;代码思路&#34;&gt;&lt;a href=&#34;#代码思路&#34; class=&#34;headerlink&#34; title=&#34;代码思路&#34;&gt;&lt;/a&gt;代码思路&lt;/h3&gt;&lt;p&gt;&lt;code&gt;配置层&lt;/code&gt;-&amp;gt;&lt;code&gt;协议层&lt;/code&gt;-&amp;gt;&lt;code&gt;业务逻辑层&lt;/code&gt;-&amp;gt;&lt;code&gt;执行控制层&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;后续问题&#34;&gt;&lt;a href=&#34;#后续问题&#34; class=&#34;headerlink&#34; title=&#34;后续问题&#34;&gt;&lt;/a&gt;后续问题&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】&lt;/p&gt;
+&lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
