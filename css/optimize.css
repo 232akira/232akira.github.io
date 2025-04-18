@@ -6,3 +6,21 @@
   content-visibility: auto;
   contain-intrinsic-size: auto 1em;
 }
+.md h1 {
+  padding-left: 0.5rem;
+}
+.md h2 {
+  padding-left: 1rem;
+}
+.md h3 {
+  padding-left: 1.5rem;
+}
+.md h4 {
+  padding-left: 2rem;
+}
+.md h5 {
+  padding-left: 2.5rem;
+}
+.md h6 {
+  padding-left: 3rem;
+}
