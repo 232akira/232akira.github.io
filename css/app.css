@@ -1736,6 +1736,45 @@ textarea {
   line-height: 0.75em;
   vertical-align: -0.0667em;
 }
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6 {
+  transition: color 0.3s ease, transform 0.2s ease, text-shadow 0.3s ease;
+  font-weight: bold;
+  line-height: 1.6;
+  color: inherit;
+}
+.md h1 {
+  padding-left: 0rem;
+}
+.md h2 {
+  padding-left: 1.25rem;
+}
+.md h3 {
+  padding-left: 2rem;
+}
+.md h4 {
+  padding-left: 2.75rem;
+}
+.md h5 {
+  padding-left: 3.5rem;
+}
+.md h6 {
+  padding-left: 4.25rem;
+}
+.md h1:hover,
+.md h2:hover,
+.md h3:hover,
+.md h4:hover,
+.md h5:hover,
+.md h6:hover {
+  color: inherit;
+  transform: translateX(2px);
+  text-shadow: 0 0 4px rgba(255,105,180,0.3);
+}
 .table-container {
   overflow: auto;
 }
