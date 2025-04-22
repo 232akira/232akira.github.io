@@ -11,10 +11,10 @@
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
-        <category>链表</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>链表</category>
         <category>专题</category>
         <category>C++</category>
         <category>指南</category>
@@ -1957,7 +1957,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;3375-使数组的值全部为&#34;&gt;&lt;a href=&#34;#3375-使数组的值全部为&#34; class=&#34;headerlink&#34; title=&#34;3375.使数组的值全部为&#34;&gt;&lt;/a&gt;3375.使数组的值全部为&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h1 id=&#34;3375-使数组的值全部为K的最少操作次数&#34;&gt;&lt;a href=&#34;#3375-使数组的值全部为K的最少操作次数&#34; class=&#34;headerlink&#34; title=&#34;3375.使数组的值全部为K的最少操作次数&#34;&gt;&lt;/a&gt;3375.使数组的值全部为K的最少操作次数&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums 和一个整数 k 。&lt;br&gt;如果一个数组中所有 严格大于 h 的整数值都 相等 ，那么我们称整数 h 是 合法的 。&lt;br&gt;比方说，如果 nums &amp;#x3D; [10, 8, 10, 8] ，那么 h &amp;#x3D; 9 是一个 合法 整数，因为所有满足 nums[i] &amp;gt; 9 的数都等于 10 ，但是 5 不是 合法 整数。&lt;br&gt;你可以对 nums 执行以下操作：&lt;br&gt;选择一个整数 h ，它对于 当前 nums 中的值是合法的。&lt;br&gt;对于每个下标 i ，如果它满足 nums[i] &amp;gt; h ，那么将 nums[i] 变为 h 。&lt;br&gt;你的目标是将 nums 中的所有元素都变为 k ，请你返回 最少 操作次数。如果无法将所有元素都变 k ，那么返回 -1 。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;呃(⊙﹏⊙)自认为语文水平还不错，但是这题目着实看不懂…&lt;/p&gt;
@@ -1987,6 +1987,25 @@ public:
         return cnt;
     &amp;#125;
 &amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2563-统计公平数对的数目&#34;&gt;&lt;a href=&#34;#2563-统计公平数对的数目&#34; class=&#34;headerlink&#34; title=&#34;2563.统计公平数对的数目&#34;&gt;&lt;/a&gt;2563.统计公平数对的数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始、长度为 n 的整数数组 nums ，和两个整数 lower 和 upper ，返回 公平数对的数目 。&lt;br&gt;如果 (i, j) 数对满足以下情况，则认为它是一个 公平数对 ：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; i &amp;lt; j &amp;lt; n，且&lt;/li&gt;
+&lt;li&gt;lower &amp;lt;&amp;#x3D; nums[i] + nums[j] &amp;lt;&amp;#x3D; upper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;nums.length &amp;#x3D;&amp;#x3D; n&lt;/li&gt;
+&lt;li&gt;-109 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 109&lt;/li&gt;
+&lt;li&gt;-109 &amp;lt;&amp;#x3D; lower &amp;lt;&amp;#x3D; upper &amp;lt;&amp;#x3D; 109&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-10&#34;&gt;&lt;a href=&#34;#解题思路-10&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;PS：因为实习鸽了五个工作日的我想了想又苟回来日更辣！！！现在是2025年4月19！等做到1000题再停更，主打一个保持编码的思维和手感😼&lt;del&gt;毕竟斥巨资开了力扣年卡不写一年也太亏了&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-11&#34;&gt;&lt;a href=&#34;#完整代码-11&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>

@@ -8,10 +8,10 @@
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
-    <category term="链表" />
     <category term="数组" />
     <category term="哈希表" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="专题" />
     <category term="C++" />
     <category term="指南" />
@@ -186,20 +186,20 @@ else:
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</id>
-        <title>实战1️⃣ Stable Difussion图像生成</title>
+        <title>实战1️⃣ Stable Diffusion图像生成</title>
         <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/"/>
         <content type="html">&lt;p&gt;🔆2025-04-15&lt;/p&gt;
-&lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Difussion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Difussion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Difussion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Difussion模型）&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;什么是Stable-Difussion&#34;&gt;&lt;a href=&#34;#什么是Stable-Difussion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Difussion&#34;&gt;&lt;/a&gt;什么是Stable Difussion&lt;/h2&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;什么是Stable-Diffusion&#34;&gt;&lt;a href=&#34;#什么是Stable-Diffusion&#34; class=&#34;headerlink&#34; title=&#34;什么是Stable Diffusion&#34;&gt;&lt;/a&gt;什么是Stable Diffusion&lt;/h2&gt;&lt;p&gt;参考链接&lt;a href=&#34;https://stabledifffusion.com/&#34;&gt;1️⃣&lt;/a&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/622238031&#34;&gt;2️⃣&lt;/a&gt;&lt;a href=&#34;https://blog.csdn.net/m0_59162248/article/details/146497738&#34;&gt;3️⃣&lt;/a&gt;&lt;br&gt;简而言之，就是：&lt;strong&gt;文生图&lt;/strong&gt; &amp;#x2F; &lt;code&gt;Text-to-Image&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;Gitee&#34;&gt;&lt;a href=&#34;#Gitee&#34; class=&#34;headerlink&#34; title=&#34;Gitee&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;你需要按照以下顺序操作：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;注册&amp;#x2F;登录Gitee账号&lt;/li&gt;
 &lt;li&gt;访问Gitee AI &lt;a href=&#34;https://ai.gitee.com/&#34;&gt;模力方舟&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;使用&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在模力方舟页面中，找到并启用&lt;a href=&#34;https://ai.gitee.com/serverless-api/packages/1492&#34;&gt;沐曦-模型资源包&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;获取Stable-Difussion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Difussion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Difussion API&#34;&gt;&lt;/a&gt;获取Stable Difussion API&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&#34;获取Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#获取Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;获取Stable Diffusion API&#34;&gt;&lt;/a&gt;获取Stable Diffusion API&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;选中沐曦模型资源包后,下拉找到stable-diffusion-xl-base-1.0模型&lt;/li&gt;
 &lt;li&gt;选择在线体验-&amp;gt;API-&amp;gt;添加令牌，会发现代码中的api-key已被正确替换（此处若无法选择记得先登录）&lt;/li&gt;
 &lt;/ol&gt;
@@ -224,13 +224,80 @@ else:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;curl&lt;/code&gt; &lt;a href=&#34;https://ai.gitee.com/v1/images/generations&#34;&gt;https://ai.gitee.com/v1/images/generations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;如果你发现这里的curl地址不同于上面的baseurl❓️&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;❓️如果你发现这里的curl地址不同于上面的baseurl&lt;/strong&gt;&lt;br&gt;真聪明！（我这里说话好像ai）这里的url比基础url多了两个资源路径&lt;code&gt;images/generations&lt;/code&gt;。&lt;br&gt;这里涉及到&lt;strong&gt;curl命令&lt;/strong&gt;：通过命令行直接执行HTTP请求，主要用来测试和调试API。因此其需要包含完整的请求url（包括基础url和资源路径）。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我个人对url的具体理解：api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;br&gt;&lt;code&gt;ai.gitee.com&lt;/code&gt;：使用gitee平台上的AI服务（此网址可以直接访问）&lt;br&gt;&lt;code&gt;/v1/images/generations&lt;/code&gt;：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/p&gt;
+&lt;p&gt;个人对url的具体理解：api发送请求的目标地址，这里直接指向stable-diffusion模型中的图像生成服务。&lt;br&gt;其中：&lt;br&gt;&lt;code&gt;ai.gitee.com&lt;/code&gt;：使用gitee平台上的AI服务（此网址可以直接访问）&lt;br&gt;&lt;code&gt;/v1/images/generations&lt;/code&gt;：具体的”模型版本&amp;#x2F;图像&amp;#x2F;生成”的路径&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;使用vscode调用gitee-Stable-Diffusion-API&#34;&gt;&lt;a href=&#34;#使用vscode调用gitee-Stable-Diffusion-API&#34; class=&#34;headerlink&#34; title=&#34;使用vscode调用gitee-Stable Diffusion-API&#34;&gt;&lt;/a&gt;使用vscode调用gitee-Stable Diffusion-API&lt;/h2&gt;&lt;p&gt;到这问题就不大了，正常拿个.py文件放上API代码，根据你的需求进行个性化调整。&lt;br&gt;记得缺失的包pip install一下&lt;/p&gt;
-&lt;h3 id=&#34;代码思路&#34;&gt;&lt;a href=&#34;#代码思路&#34; class=&#34;headerlink&#34; title=&#34;代码思路&#34;&gt;&lt;/a&gt;代码思路&lt;/h3&gt;&lt;p&gt;&lt;code&gt;配置层&lt;/code&gt;-&amp;gt;&lt;code&gt;协议层&lt;/code&gt;-&amp;gt;&lt;code&gt;业务逻辑层&lt;/code&gt;-&amp;gt;&lt;code&gt;执行控制层&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关。因此后续需要对提示词prompt进行调整。此处可查看【实战2️⃣ 接入DeepSeek-R1优化提示词】&lt;/p&gt;
+&lt;h3 id=&#34;代码思路&#34;&gt;&lt;a href=&#34;#代码思路&#34; class=&#34;headerlink&#34; title=&#34;代码思路&#34;&gt;&lt;/a&gt;代码思路&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;导包&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import requests                  #HTTP通信
+import json                      #json数据序列化
+from dotenv import load_dotenv   #安全配置
+import os                        #系统交互
+import base64                    #数据编码
+from io import BytesIO           #二进制流处理
+from PIL import Image            #图像操作
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;配置环境变量&lt;code&gt;load_dotenv() &lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;API_URL&lt;/li&gt;
+&lt;li&gt;API_KEY&lt;blockquote&gt;
+&lt;p&gt;为了降低泄露风险、确保安全性，请一定使用用&lt;strong&gt;私有环境变量&lt;/strong&gt;进行KEY的配置，不要直接把key写在代码里！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;协议配置 &amp;amp; 数据格式声明&lt;code&gt;headers&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;headers = &amp;#123;
+    &amp;quot;Authorization&amp;quot;: f&amp;quot;Bearer &amp;#123;API_KEY&amp;#125;&amp;quot;, #认证协议
+    &amp;quot;Content-Type&amp;quot;: &amp;quot;application/json&amp;quot;    #数据格式声明
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;4.向API发送请求时所需的参数&lt;code&gt;payload&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;payload = &amp;#123;                                    #请求参数（根据文档调整）
+    &amp;quot;model&amp;quot;: &amp;quot;stable-diffusion-xl-base-1.0&amp;quot;,   #模型选择
+    &amp;quot;prompt&amp;quot;: &amp;quot;一只穿着宇航服的猫在月球上漫步&amp;quot;,   #业务输入
+    &amp;quot;n&amp;quot;: 1,                                    #生成数量
+    &amp;quot;size&amp;quot;: &amp;quot;1024x1024&amp;quot;,                       #输出规格
+    &amp;quot;response_format&amp;quot;: &amp;quot;b64_json&amp;quot;              #数据返回格式
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;5.向API发送请求 &amp;amp; 处理响应结果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用&lt;code&gt;try-except&lt;/code&gt;异常处理结构，用于捕获并处理在请求API和处理响应过程中可能出现的异常，确保程序在遇到错误时不会崩溃，而是输出相应的错误信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;try:
+    print(f&amp;quot;请求API: &amp;#123;API_URL&amp;#125;&amp;quot;)
+    response = requests.post(API_URL, headers=headers, json=payload)
+    
+    if response.status_code == 200:
+        result = response.json()
+        if &amp;quot;data&amp;quot; in result and len(result[&amp;quot;data&amp;quot;]) &amp;gt; 0:
+            # 处理base64图像数据
+            image_data = base64.b64decode(result[&amp;quot;data&amp;quot;][0][&amp;quot;b64_json&amp;quot;])
+            image = Image.open(BytesIO(image_data))
+            
+            # 保存图像
+            output_path = &amp;quot;generated_image.png&amp;quot;
+            image.save(output_path)
+            print(f&amp;quot;图像生成成功，已保存到: &amp;#123;output_path&amp;#125;&amp;quot;)
+            image.show()
+        else:
+            print(&amp;quot;API响应中没有有效的图像数据&amp;quot;)
+    else:
+        print(f&amp;quot;请求失败，状态码: &amp;#123;response.status_code&amp;#125;&amp;quot;)
+        print(response.text)
+
+except Exception as e:
+    print(f&amp;quot;发生错误: &amp;#123;str(e)&amp;#125;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
+&lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
         <category term="指南" />
         <category term="实战" />
