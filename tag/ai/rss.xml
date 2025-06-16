@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
         <lastBuildDate>Mon, 16 Jun 2025 10:10:30 +0800</lastBuildDate>
-        <category>力扣</category>
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>链表</category>
         <category>专题</category>
         <category>C++</category>
-        <category>链表</category>
         <category>记录</category>
+        <category>Markdown</category>
         <category>AI</category>
         <category>指南</category>
-        <category>Markdown</category>
         <category>实战</category>
         <category>笔记</category>
         <item>
@@ -45,8 +45,10 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;VSCode + 插件为主，编译器用的少&lt;/li&gt;
+&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
 &lt;li&gt;Claude&lt;/li&gt;

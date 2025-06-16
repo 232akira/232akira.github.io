@@ -4,20 +4,20 @@
     <title>Per aspera ad astra • Posts by &#34;记录&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-06-16T02:11:30.000Z</updated>
-    <category term="力扣" />
     <category term="算法" />
     <category term="字符串" />
     <category term="滑动窗口" />
+    <category term="力扣" />
     <category term="数组" />
     <category term="哈希表" />
     <category term="二分查找" />
+    <category term="链表" />
     <category term="专题" />
     <category term="C++" />
-    <category term="链表" />
     <category term="记录" />
+    <category term="Markdown" />
     <category term="AI" />
     <category term="指南" />
-    <category term="Markdown" />
     <category term="实战" />
     <category term="笔记" />
     <entry>
@@ -59,8 +59,10 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;VSCode + 插件为主，编译器用的少&lt;/li&gt;
+&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
 &lt;li&gt;Claude&lt;/li&gt;
@@ -800,8 +802,8 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="力扣" />
         <category term="算法" />
+        <category term="力扣" />
         <category term="记录" />
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>

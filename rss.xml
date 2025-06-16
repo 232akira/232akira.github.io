@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Mon, 16 Jun 2025 10:11:30 +0800</pubDate>
         <lastBuildDate>Mon, 16 Jun 2025 10:11:30 +0800</lastBuildDate>
-        <category>力扣</category>
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>链表</category>
         <category>专题</category>
         <category>C++</category>
-        <category>链表</category>
         <category>记录</category>
+        <category>Markdown</category>
         <category>AI</category>
         <category>指南</category>
-        <category>Markdown</category>
         <category>实战</category>
         <category>笔记</category>
         <item>
@@ -65,8 +65,10 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;VSCode + 插件为主，编译器用的少&lt;/li&gt;
+&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
 &lt;li&gt;Claude&lt;/li&gt;
@@ -396,8 +398,8 @@ except Exception as e:
             <guid isPermalink="true">https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</guid>
             <title>Leetcode | HOT 100</title>
             <link>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <pubDate>Tue, 08 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
@@ -1704,8 +1706,8 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
             <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
             <title>专题3️⃣ | 动态规划</title>
             <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
@@ -1778,8 +1780,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ | 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
@@ -2226,8 +2228,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode | 链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
@@ -3791,8 +3793,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>专题2️⃣ | 贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>专题</category>
             <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
@@ -4115,8 +4117,8 @@ public:
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</guid>
             <title>备忘录 | 力扣</title>
             <link>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;

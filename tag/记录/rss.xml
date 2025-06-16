@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Mon, 16 Jun 2025 10:11:30 +0800</pubDate>
         <lastBuildDate>Mon, 16 Jun 2025 10:11:30 +0800</lastBuildDate>
-        <category>力扣</category>
         <category>算法</category>
         <category>字符串</category>
         <category>滑动窗口</category>
+        <category>力扣</category>
         <category>数组</category>
         <category>哈希表</category>
         <category>二分查找</category>
+        <category>链表</category>
         <category>专题</category>
         <category>C++</category>
-        <category>链表</category>
         <category>记录</category>
+        <category>Markdown</category>
         <category>AI</category>
         <category>指南</category>
-        <category>Markdown</category>
         <category>实战</category>
         <category>笔记</category>
         <item>
@@ -65,8 +65,10 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;VSCode + 插件为主，编译器用的少&lt;/li&gt;
+&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
 &lt;li&gt;Claude&lt;/li&gt;
@@ -90,8 +92,8 @@
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</guid>
             <title>备忘录 | 力扣</title>
             <link>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</link>
-            <category>力扣</category>
             <category>算法</category>
+            <category>力扣</category>
             <category>记录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
