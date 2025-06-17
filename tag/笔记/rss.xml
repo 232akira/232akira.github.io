@@ -5,20 +5,30 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 06 Apr 2025 22:22:22 +0800</pubDate>
-        <lastBuildDate>Sun, 06 Apr 2025 22:22:22 +0800</lastBuildDate>
+        <pubDate>Tue, 17 Jun 2025 11:22:10 +0800</pubDate>
+        <lastBuildDate>Tue, 17 Jun 2025 11:22:10 +0800</lastBuildDate>
         <category>力扣</category>
         <category>算法</category>
         <category>专题</category>
         <category>记录</category>
         <category>备忘录</category>
-        <category>AI</category>
         <category>案例</category>
+        <category>AI</category>
         <category>笔记</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
-            <title>笔记 ⋮ 游戏开发</title>
-            <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</guid>
+            <title>笔记2️⃣ ⋮ MCP+A2A</title>
+            <link>https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</link>
+            <category>AI</category>
+            <category>笔记</category>
+            <pubDate>Tue, 17 Jun 2025 11:22:10 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;MCP概述&#34;&gt;&lt;a href=&#34;#MCP概述&#34; class=&#34;headerlink&#34; title=&#34;MCP概述&#34;&gt;&lt;/a&gt;MCP概述&lt;/h2&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
+            <title>笔记1️⃣ ⋮ 游戏开发</title>
+            <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
             <category>笔记</category>
             <pubDate>Sun, 06 Apr 2025 22:22:22 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;

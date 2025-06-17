@@ -5,16 +5,26 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
-        <lastBuildDate>Mon, 16 Jun 2025 10:10:30 +0800</lastBuildDate>
+        <pubDate>Tue, 17 Jun 2025 11:22:10 +0800</pubDate>
+        <lastBuildDate>Tue, 17 Jun 2025 11:22:10 +0800</lastBuildDate>
         <category>力扣</category>
         <category>算法</category>
         <category>专题</category>
         <category>记录</category>
         <category>备忘录</category>
-        <category>AI</category>
         <category>案例</category>
+        <category>AI</category>
         <category>笔记</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</guid>
+            <title>笔记2️⃣ ⋮ MCP+A2A</title>
+            <link>https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</link>
+            <category>AI</category>
+            <category>笔记</category>
+            <pubDate>Tue, 17 Jun 2025 11:22:10 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;MCP概述&#34;&gt;&lt;a href=&#34;#MCP概述&#34; class=&#34;headerlink&#34; title=&#34;MCP概述&#34;&gt;&lt;/a&gt;MCP概述&lt;/h2&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
             <title>备忘录 ⋮ 案例</title>
@@ -23,10 +33,10 @@
             <category>AI</category>
             <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;案例记录的文章会以【实战x-x】的方式作为开头。&lt;/li&gt;
+&lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;记录的文章会以&lt;code&gt;【实战x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;h3 id=&#34;AIGC开发案例&#34;&gt;&lt;a href=&#34;#AIGC开发案例&#34; class=&#34;headerlink&#34; title=&#34;AIGC开发案例&#34;&gt;&lt;/a&gt;AIGC开发案例&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;1️⃣AIGC开发案例&#34;&gt;&lt;a href=&#34;#1️⃣AIGC开发案例&#34; class=&#34;headerlink&#34; title=&#34;1️⃣AIGC开发案例&#34;&gt;&lt;/a&gt;1️⃣AIGC开发案例&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;直接应用 + API编排&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -37,18 +47,18 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;2️⃣AI辅助编程&#34;&gt;&lt;a href=&#34;#2️⃣AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;2️⃣AI辅助编程&#34;&gt;&lt;/a&gt;2️⃣AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
-&lt;li&gt;Claude&lt;/li&gt;
+&lt;li&gt;Copilot&lt;/li&gt;
 &lt;li&gt;Cline&lt;/li&gt;
 &lt;li&gt;Lingma&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI客户端&#34;&gt;&lt;a href=&#34;#AI客户端&#34; class=&#34;headerlink&#34; title=&#34;AI客户端&#34;&gt;&lt;/a&gt;AI客户端&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;3️⃣AI客户端&#34;&gt;&lt;a href=&#34;#3️⃣AI客户端&#34; class=&#34;headerlink&#34; title=&#34;3️⃣AI客户端&#34;&gt;&lt;/a&gt;3️⃣AI客户端&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;LLM服务商配置、MCP服务部署&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -57,15 +67,17 @@
 &lt;li&gt;DeepChat&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;个人案例备忘&#34;&gt;&lt;a href=&#34;#个人案例备忘&#34; class=&#34;headerlink&#34; title=&#34;个人案例备忘&#34;&gt;&lt;/a&gt;个人案例备忘&lt;/h2&gt;&lt;p&gt;还没开始😋&lt;/p&gt;
- ]]></description>
+&lt;h2 id=&#34;个人案例备忘&#34;&gt;&lt;a href=&#34;#个人案例备忘&#34; class=&#34;headerlink&#34; title=&#34;个人案例备忘&#34;&gt;&lt;/a&gt;个人案例备忘&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;记录的文章会以&lt;code&gt;【笔记x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1️⃣游戏开发（图形学方向）&#34;&gt;&lt;a href=&#34;#1️⃣游戏开发（图形学方向）&#34; class=&#34;headerlink&#34; title=&#34;1️⃣游戏开发（图形学方向）&#34;&gt;&lt;/a&gt;1️⃣游戏开发（图形学方向）&lt;/h3&gt;&lt;h3 id=&#34;2️⃣Agent-MCP-A2A&#34;&gt;&lt;a href=&#34;#2️⃣Agent-MCP-A2A&#34; class=&#34;headerlink&#34; title=&#34;2️⃣Agent-&amp;gt;MCP-&amp;gt;A2A&#34;&gt;&lt;/a&gt;2️⃣Agent-&amp;gt;MCP-&amp;gt;A2A&lt;/h3&gt; ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
             <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
@@ -229,8 +241,8 @@ else:
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
             <title>案例1️⃣-2 ⋮ Stable Diffusion图像生成</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
@@ -348,8 +360,8 @@ except Exception as e:
             <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
             <title>案例1️⃣ ⋮ 入门指南</title>
             <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;

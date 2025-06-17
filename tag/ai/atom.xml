@@ -3,24 +3,34 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;ai&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-06-16T02:10:30.000Z</updated>
+    <updated>2025-06-17T03:22:10.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
     <category term="专题" />
     <category term="记录" />
     <category term="备忘录" />
-    <category term="AI" />
     <category term="案例" />
+    <category term="AI" />
     <category term="笔记" />
+    <entry>
+        <id>https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</id>
+        <title>笔记2️⃣ ⋮ MCP+A2A</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/"/>
+        <content type="html">&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;https://www.bilibili.com/video/BV1eK5DzHEWu/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;MCP概述&#34;&gt;&lt;a href=&#34;#MCP概述&#34; class=&#34;headerlink&#34; title=&#34;MCP概述&#34;&gt;&lt;/a&gt;MCP概述&lt;/h2&gt;</content>
+        <category term="AI" />
+        <category term="笔记" />
+        <updated>2025-06-17T03:22:10.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
         <title>备忘录 ⋮ 案例</title>
         <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/"/>
         <content type="html">&lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;案例记录的文章会以【实战x-x】的方式作为开头。&lt;/li&gt;
+&lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;记录的文章会以&lt;code&gt;【实战x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;h3 id=&#34;AIGC开发案例&#34;&gt;&lt;a href=&#34;#AIGC开发案例&#34; class=&#34;headerlink&#34; title=&#34;AIGC开发案例&#34;&gt;&lt;/a&gt;AIGC开发案例&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;1️⃣AIGC开发案例&#34;&gt;&lt;a href=&#34;#1️⃣AIGC开发案例&#34; class=&#34;headerlink&#34; title=&#34;1️⃣AIGC开发案例&#34;&gt;&lt;/a&gt;1️⃣AIGC开发案例&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;直接应用 + API编排&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -31,18 +41,18 @@
 &lt;li&gt;图生3D&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI辅助编程&#34;&gt;&lt;a href=&#34;#AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;AI辅助编程&#34;&gt;&lt;/a&gt;AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;2️⃣AI辅助编程&#34;&gt;&lt;a href=&#34;#2️⃣AI辅助编程&#34; class=&#34;headerlink&#34; title=&#34;2️⃣AI辅助编程&#34;&gt;&lt;/a&gt;2️⃣AI辅助编程&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;VSCode + 插件为主，编译器用的少&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;Cursor&lt;/li&gt;
 &lt;li&gt;Trae&lt;/li&gt;
-&lt;li&gt;Claude&lt;/li&gt;
+&lt;li&gt;Copilot&lt;/li&gt;
 &lt;li&gt;Cline&lt;/li&gt;
 &lt;li&gt;Lingma&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;AI客户端&#34;&gt;&lt;a href=&#34;#AI客户端&#34; class=&#34;headerlink&#34; title=&#34;AI客户端&#34;&gt;&lt;/a&gt;AI客户端&lt;/h3&gt;&lt;blockquote&gt;
+&lt;h3 id=&#34;3️⃣AI客户端&#34;&gt;&lt;a href=&#34;#3️⃣AI客户端&#34; class=&#34;headerlink&#34; title=&#34;3️⃣AI客户端&#34;&gt;&lt;/a&gt;3️⃣AI客户端&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;LLM服务商配置、MCP服务部署&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
@@ -51,8 +61,10 @@
 &lt;li&gt;DeepChat&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;个人案例备忘&#34;&gt;&lt;a href=&#34;#个人案例备忘&#34; class=&#34;headerlink&#34; title=&#34;个人案例备忘&#34;&gt;&lt;/a&gt;个人案例备忘&lt;/h2&gt;&lt;p&gt;还没开始😋&lt;/p&gt;
-</content>
+&lt;h2 id=&#34;个人案例备忘&#34;&gt;&lt;a href=&#34;#个人案例备忘&#34; class=&#34;headerlink&#34; title=&#34;个人案例备忘&#34;&gt;&lt;/a&gt;个人案例备忘&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;记录的文章会以&lt;code&gt;【笔记x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1️⃣游戏开发（图形学方向）&#34;&gt;&lt;a href=&#34;#1️⃣游戏开发（图形学方向）&#34; class=&#34;headerlink&#34; title=&#34;1️⃣游戏开发（图形学方向）&#34;&gt;&lt;/a&gt;1️⃣游戏开发（图形学方向）&lt;/h3&gt;&lt;h3 id=&#34;2️⃣Agent-MCP-A2A&#34;&gt;&lt;a href=&#34;#2️⃣Agent-MCP-A2A&#34; class=&#34;headerlink&#34; title=&#34;2️⃣Agent-&amp;gt;MCP-&amp;gt;A2A&#34;&gt;&lt;/a&gt;2️⃣Agent-&amp;gt;MCP-&amp;gt;A2A&lt;/h3&gt;</content>
         <category term="备忘录" />
         <category term="AI" />
         <updated>2025-06-16T02:10:30.000Z</updated>
@@ -218,8 +230,8 @@ else:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
@@ -337,8 +349,8 @@ except Exception as e:
 &lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
 &lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
@@ -361,8 +373,8 @@ except Exception as e:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
 </feed>
