@@ -13,9 +13,9 @@
     <category term="案例" />
     <category term="笔记" />
     <entry>
-        <id>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</id>
-        <title>实战1️⃣-2 ➳ 接入DeepSeek-R1优化提示词</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/"/>
+        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</id>
+        <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/"/>
         <content type="html">&lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
 &lt;h2 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h2&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
@@ -178,9 +178,9 @@ else:
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</id>
-        <title>实战1️⃣-2 ➳ Stable Diffusion图像生成</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/"/>
+        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</id>
+        <title>案例1️⃣-2 ⋮ Stable Diffusion图像生成</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/"/>
         <content type="html">&lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
@@ -297,9 +297,9 @@ except Exception as e:
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
-        <title>实战1️⃣ ➳ 入门指南</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+        <id>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
+        <title>案例1️⃣ ⋮ 入门指南</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
         <content type="html">&lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev&#34;&gt;Cline&lt;/a&gt;&lt;/p&gt;

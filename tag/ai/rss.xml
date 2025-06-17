@@ -17,7 +17,7 @@
         <category>笔记</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
-            <title>备忘录 ➳ 案例</title>
+            <title>备忘录 ⋮ 案例</title>
             <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
             <category>备忘录</category>
             <category>AI</category>
@@ -61,9 +61,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
-            <title>实战1️⃣-2 ➳ 接入DeepSeek-R1优化提示词</title>
-            <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
+            <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
+            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
@@ -226,9 +226,9 @@ else:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
-            <title>实战1️⃣-2 ➳ Stable Diffusion图像生成</title>
-            <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
+            <title>案例1️⃣-2 ⋮ Stable Diffusion图像生成</title>
+            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
@@ -345,9 +345,9 @@ except Exception as e:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
-            <title>实战1️⃣ ➳ 入门指南</title>
-            <link>https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+            <title>案例1️⃣ ⋮ 入门指南</title>
+            <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>
