@@ -6,23 +6,15 @@
     <updated>2025-04-08T07:29:31.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
-    <category term="字符串" />
-    <category term="滑动窗口" />
-    <category term="数组" />
-    <category term="哈希表" />
-    <category term="二分查找" />
     <category term="专题" />
-    <category term="C++" />
-    <category term="链表" />
     <category term="记录" />
+    <category term="备忘录" />
     <category term="AI" />
-    <category term="Markdown" />
-    <category term="指南" />
-    <category term="实战" />
+    <category term="案例" />
     <category term="笔记" />
     <entry>
         <id>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</id>
-        <title>Leetcode | HOT 100</title>
+        <title>Leetcode ➳ HOT 100</title>
         <link rel="alternate" href="https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/"/>
         <content type="html">&lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
@@ -692,7 +684,7 @@ public:
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
-        <title>专题3️⃣ | 动态规划</title>
+        <title>专题3️⃣ ➳ 动态规划</title>
         <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
         <content type="html">&lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
@@ -761,12 +753,11 @@ public:
         <category term="力扣" />
         <category term="算法" />
         <category term="专题" />
-        <category term="C++" />
         <updated>2025-04-01T01:18:00.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
-        <title>专题1️⃣ | 滑动窗口</title>
+        <title>专题1️⃣ ➳ 滑动窗口</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
         <content type="html">&lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
@@ -1209,12 +1200,11 @@ public:
         <category term="力扣" />
         <category term="算法" />
         <category term="专题" />
-        <category term="C++" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</id>
-        <title>Leetcode | 链表</title>
+        <title>Leetcode ➳ 链表</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/"/>
         <content type="html">&lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
@@ -1374,12 +1364,780 @@ public:
 </content>
         <category term="力扣" />
         <category term="算法" />
-        <category term="链表" />
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
+        <id>https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+        <title>Leetcode ➳ 字符串</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+        <content type="html">&lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;KMP有点难理解了对我而言…看不懂就放两天继续钻，再多看看大佬博客的不同理解，效果会更好。&lt;/p&gt;
+&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;参考链接：&lt;br&gt;&lt;a href=&#34;https://www.cnblogs.com/dusf/p/kmp.html&#34;&gt;1️⃣&lt;/a&gt;&lt;br&gt;&lt;a href=&#34;https://blog.csdn.net/yyzsir/article/details/89462339?ops_request_misc=%257B%2522request%255Fid%2522%253A%252292dce769a412320e26ef79eb85ca18cd%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&amp;request_id=92dce769a412320e26ef79eb85ca18cd&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-89462339-null-null.142%5Ev101%5Epc_search_result_base5&amp;utm_term=yyzsir%20kmp&amp;spm=1018.2226.3001.4187&#34;&gt;2️⃣&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;朴素模式匹配BF&#34;&gt;&lt;a href=&#34;#朴素模式匹配BF&#34; class=&#34;headerlink&#34; title=&#34;朴素模式匹配BF&#34;&gt;&lt;/a&gt;朴素模式匹配&lt;code&gt;BF&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;首先来个&lt;strong&gt;暴力&lt;/strong&gt;方法：不匹配模式串就右挪一位。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//暴力模式匹配
+int 主串位置i；
+int 模式串位置j；
+int 主串长度；
+int 子串长度；
+
+当（主串位置 &amp;lt;= 主串长度 &amp;amp;&amp;amp; 模式串位置&amp;lt;模式串长度）:
+    如果（该主串位置的主串字符 == 该模式串位置的模式串字符）：
+        i++；
+        j++；
+    否则：
+        i后退至上一轮匹配开始位置的后一位；
+        j归零；
+如果（模式串位置 == 模式串长度）：
+    匹配成功，返回出现位置；
+否则
+    匹配失败，返回-1；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;优化模式匹配KMP&#34;&gt;&lt;a href=&#34;#优化模式匹配KMP&#34; class=&#34;headerlink&#34; title=&#34;优化模式匹配KMP&#34;&gt;&lt;/a&gt;优化模式匹配&lt;code&gt;KMP&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;即利用&lt;strong&gt;已经部分匹配&lt;/strong&gt;这个信息，保持&lt;strong&gt;i指针不回溯&lt;/strong&gt;，并通过j指针让&lt;strong&gt;模式串&lt;/strong&gt;尽可能移动到&lt;strong&gt;更有效的位置&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么有几个要点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;前缀(Prefix)和后缀（Suffix）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;举个🌰，给定一个字符串s:&lt;code&gt;“abcab”&lt;/code&gt;,那么:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;s的子串&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;前缀&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;后缀&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;c,bc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab,abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ca,bca&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab,abc,abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b,ab,cab,bcab&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;公共前后缀最长长度&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;从上面的前后缀不难看出，对于s的子串，存在部分前后缀重复的情况，我们需要的正是重复子串的最大长度。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;s的子串&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;前缀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;后缀&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;公共前后缀最长长度&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;c,bc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;无&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;,ab,abc&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;,ca,bca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a,&lt;code&gt;ab&lt;/code&gt;,abc,abca&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;b,&lt;code&gt;ab&lt;/code&gt;,cab,bcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;next数组（部分匹配表）&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;KMP的next数组告诉我们：当模式串中的某个字符跟主串中的某个字符失配时，模式串下一步应该跳到哪个位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;对于s的&lt;strong&gt;每个字符&lt;/strong&gt;而言，当这个字符作为子串的最后一位时，公共前后缀最长长度为：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;字符（标红部分）&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;公共前后缀最长长度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;a&lt;/code&gt;bcab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;code&gt;b&lt;/code&gt;cab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ab&lt;code&gt;c&lt;/code&gt;ab&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abc&lt;code&gt;a&lt;/code&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;abca&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;那么全部右移一位，令next[0]&amp;#x3D;-1：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;字符&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;i&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;next[i]&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;c&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;b&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;实际匹配过程中，j移动到子串p的next[j]位置，p相对s向右移动j-next[j]位置。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;迭代法求p的next数组&lt;/strong&gt;&lt;br&gt;我们知道：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;next[0]=-1;
+next[1]=0;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;并且&lt;code&gt;next[j]&lt;/code&gt;代表p[0…j-1]的子串公共前后缀最长长度。&lt;br&gt;∴ 变量定义如下：&lt;br&gt;&lt;code&gt;j&lt;/code&gt;：当前子串指针&lt;br&gt;&lt;code&gt;k&lt;/code&gt;：当前匹配的前后缀长度（&amp;#x3D;next[j-1]）&lt;br&gt;&lt;code&gt;next[j]=k&lt;/code&gt;：next[0]&amp;#x3D;-1 即当p[0]都匹配失败时，只能回到j&amp;#x3D;0重新匹配。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void GetNext(char p[], int next[])
+&amp;#123;
+    int j = 0, k = -1;
+    next[j] = k;
+    while (p[j] != &amp;#39;\0&amp;#39;)             //遍历整个子串p
+    &amp;#123;
+        if (k == -1 || p[j] == p[k]) //匹配成功😀或者k=-1（刚匹配到字串的第一个）
+        &amp;#123;
+            j++;                     //j指针后移
+            k++;
+            next[j] = k;             //记录当前前后缀匹配长度
+        &amp;#125; 
+        else 
+        &amp;#123;
+            k = next[k];             //匹配失败😭，回溯到next[k]寻找更短的前后缀
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;KMP主算法&lt;br&gt;得到next数组的方法&lt;code&gt;GetNext()&lt;/code&gt;，就可以完整的写出KMP函数。这里写成一个函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;int KMP(string s,string p)&amp;#123;
+    int m=s.size();
+    int n=p.size();
+    if(m==0)&amp;#123;
+        return 0;
+    &amp;#125;
+    //⬇️计算next数组
+    vector&amp;lt;int&amp;gt;next;
+    int j=0;
+    for(int i=0;i&amp;lt;n;i++)&amp;#123;
+        while(j&amp;gt;0 &amp;amp;&amp;amp; p[i]!=p[j])&amp;#123;
+            j=next[j-1];
+        &amp;#125;
+        if(p[i]==p[j])&amp;#123;
+            j++;
+        &amp;#125;
+        next[i]=j;
+    &amp;#125;
+    //⬇️KMP搜索匹配
+    int j=0;
+    for(int i=0;i&amp;lt;m;i++)&amp;#123;
+        while(j&amp;gt;0 &amp;amp;&amp;amp; s[i]!=p[j])&amp;#123;
+            j=next[j-1];
+        &amp;#125;
+        if(s[i]==p[j])&amp;#123;
+            j++;
+        &amp;#125;
+        if(j==n)&amp;#123;
+            return i-n+1;
+        &amp;#125;
+    &amp;#125;
+    return -1;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;说实话，后半部分现在不能完全理解，让我再多磕几天。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int lengthOfLastWord(string s) &amp;#123;
+        int len=s.length();
+        int m=0,n=0;
+        for(int i=len-1;i&amp;gt;0;i--)&amp;#123;
+            if(s[i]!=&amp;#39; &amp;#39; &amp;amp;&amp;amp; (s[i+1]==&amp;#39; &amp;#39; || s[i+1]==&amp;#39;\0&amp;#39;))&amp;#123;
+                m=i;
+            &amp;#125;
+            if((s[i-1]==&amp;#39; &amp;#39; || s[i-1]==&amp;#39;\0&amp;#39;) &amp;amp;&amp;amp; s[i]!=&amp;#39; &amp;#39;)&amp;#123;
+                n=i;
+                break;
+            &amp;#125;
+        &amp;#125;
+        return m-n+1;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1021-删除最外层的括号&#34;&gt;&lt;a href=&#34;#1021-删除最外层的括号&#34; class=&#34;headerlink&#34; title=&#34;1021.删除最外层的括号&#34;&gt;&lt;/a&gt;1021.删除最外层的括号&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;有效括号字符串为空 “”、”(“ + A + “)” 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。&lt;br&gt;例如，””，”()”，”(())()” 和 “(()(()))” 都是有效的括号字符串。&lt;br&gt;如果有效字符串 s 非空，且不存在将其拆分为 s &amp;#x3D; A + B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。&lt;br&gt;给出一个非空有效字符串 s，考虑将其进行原语化分解，使得：s &amp;#x3D; P_1 + P_2 + … + P_k，其中 P_i 是有效括号字符串原语。&lt;br&gt;对 s 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 s 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 为 ‘(‘ 或 ‘)’&lt;/li&gt;
+&lt;li&gt;s 是一个有效括号字符串&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-1&#34;&gt;&lt;a href=&#34;#解题思路-1&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;引用&lt;strong&gt;官方题解&lt;/strong&gt;的话：&lt;br&gt;遍历 s，并用一个栈来表示括号的深度。遇到 ‘(’ 则将字符入栈，遇到 ‘)’ 则将栈顶字符出栈。栈从空到下一次空的过程，则是扫描了一个原语的过程。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-1&#34;&gt;&lt;a href=&#34;#完整代码-1&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string removeOuterParentheses(string s) &amp;#123;
+        string res;
+        int cnt=0;
+        for(char ch:s)&amp;#123;
+            if(ch==&amp;#39;)&amp;#39;)&amp;#123;
+                cnt--;
+            &amp;#125;
+            if(cnt&amp;gt;0)&amp;#123;
+                res.push_back(ch);
+            &amp;#125;
+            if(ch==&amp;#39;(&amp;#39;)&amp;#123;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return res;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;859-亲密字符串&#34;&gt;&lt;a href=&#34;#859-亲密字符串&#34; class=&#34;headerlink&#34; title=&#34;859.亲密字符串&#34;&gt;&lt;/a&gt;859.亲密字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。&lt;br&gt;交换字母的定义是：取两个下标 i 和 j （下标从 0 开始）且满足 i !&amp;#x3D; j ，接着交换 s[i] 和 s[j] 处的字符。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，在 “abcd” 中交换下标 0 和下标 2 的元素可以生成 “cbad” 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length, goal.length &amp;lt;&amp;#x3D; 2 * 104&lt;/li&gt;
+&lt;li&gt;s 和 goal 由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-2&#34;&gt;&lt;a href=&#34;#解题思路-2&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;都去给我关注&lt;a href=&#34;https://leetcode.cn/u/ac_oier/&#34;&gt;三叶大佬&lt;/a&gt;！&lt;br&gt;既然交换s中的两个字母&amp;#x3D;&amp;#x3D;goal，即为亲密。那么：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不亲密&lt;br&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;长度不同 &lt;strong&gt;或&lt;/strong&gt; 词频不同&lt;/li&gt;
+&lt;li&gt;亲密&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的的字符串数量为2&lt;br&gt;&lt;strong&gt;或&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt;与&lt;code&gt;goal&lt;/code&gt;不同的字符串数量为0 并且 &lt;code&gt;s&lt;/code&gt;中存在出现次数&amp;gt;2的字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 这里&lt;a href=&#34;https://leetcode.cn/u/MiracleSNeko/&#34;&gt;评论区&lt;/a&gt;特好玩😂“我真傻，真的，”我抬起我没有神采的眼睛来，接着说。“我单知道两个不同的字符互相交换，会生成一个亲密字符串；我不知道相同的字符也会互相换着玩。……” 我接着但是呜咽，说不出成句的话来。（&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所以注意：即使一开始s&amp;#x3D;&amp;#x3D;goal，但是s怎么交换2字符都不能再&amp;#x3D;&amp;#x3D;goal，也&lt;strong&gt;不算亲密&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;还有一个代码小细节：&lt;strong&gt;为什么是26？&lt;/strong&gt;&lt;br&gt;字符&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; - &lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;共26个。因为题目限定了输入字符串只包含小写字母，所以最多只需要存储26个字符的频次。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-2&#34;&gt;&lt;a href=&#34;#完整代码-2&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-CPP&#34;&gt;class Solution &amp;#123;
+public:
+    bool buddyStrings(string s, string goal) &amp;#123;
+        if(s.size()!=goal.size())&amp;#123;
+            return false;
+        &amp;#125;
+        if(s==goal)&amp;#123;
+            vector&amp;lt;int&amp;gt; cnt(26);
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                cnt[s[i]-&amp;#39;a&amp;#39;]++;
+                if(cnt[s[i]-&amp;#39;a&amp;#39;]&amp;gt;1)&amp;#123;
+                    return true;
+                &amp;#125;
+            &amp;#125;
+            return false;
+        &amp;#125;
+        else&amp;#123;//记录s和goal不相同的字符位置
+            int first,second;
+            first=-1;
+            second=-1;
+            for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+                if(s[i]!=goal[i])&amp;#123;
+                    if(first==-1)&amp;#123;
+                        first=i;
+                    &amp;#125;
+                    else if(second==-1)&amp;#123;
+                        second=i;
+                    &amp;#125;
+                    else&amp;#123;
+                        return false;
+                    &amp;#125;
+                &amp;#125;
+            &amp;#125;
+        //检查是否可以交换
+        return (second!=-1 &amp;amp;&amp;amp; s[first]==goal[second] &amp;amp;&amp;amp; s[second]==goal[first]);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3304-找出第K个字符Ⅰ&#34;&gt;&lt;a href=&#34;#3304-找出第K个字符Ⅰ&#34; class=&#34;headerlink&#34; title=&#34;3304.找出第K个字符Ⅰ&#34;&gt;&lt;/a&gt;3304.找出第K个字符Ⅰ&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Alice 和 Bob 正在玩一个游戏。最初，Alice 有一个字符串 word &amp;#x3D; “a”。&lt;br&gt;给定一个正整数 k。&lt;br&gt;现在 Bob 会要求 Alice 执行以下操作 无限次 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 word 中的每个字符 更改 为英文字母表中的 下一个 字符来生成一个新字符串，并将其 追加 到原始的 word。&lt;br&gt;例如，对 “c” 进行操作生成 “cd”，对 “zb” 进行操作生成 “zbac”。&lt;br&gt;在执行足够多的操作后， word 中 至少 存在 k 个字符，此时返回 word 中第 k 个字符的值。&lt;br&gt;注意，在操作中字符 ‘z’ 可以变成 ‘a’。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; k &amp;lt;&amp;#x3D; 500&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-3&#34;&gt;&lt;a href=&#34;#解题思路-3&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;主打一个模拟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;构造字符串&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;初始值为&lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;每轮迭代，生成s的副本t，然后每个字符变成它的下一个字母：&lt;code&gt;((word[i]-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;)&lt;/code&gt;&lt;blockquote&gt;
+&lt;p&gt;这里用ASCII码运算，因为’a’&lt;del&gt;‘z’为98&lt;/del&gt;233,所以&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;计算word[i]相对与a的偏移量，即字符word[i]是字母表中的&lt;strong&gt;第&lt;code&gt;word[i]-&amp;#39;a&amp;#39;&lt;/code&gt;个字母&lt;/strong&gt;，&lt;code&gt;+1&lt;/code&gt;即为后一个字符；&lt;br&gt;&lt;code&gt;%26+&amp;#39;a&amp;#39;&lt;/code&gt;的原因是：当word[i]为&lt;code&gt;&amp;#39;z&amp;#39;&lt;/code&gt;时,让26变回0，所以%26取模。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;将&lt;code&gt;t&lt;/code&gt;拼接回&lt;code&gt;s&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;终止条件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;当&lt;code&gt;s.size()&amp;gt;=k&lt;/code&gt;时，直接返回s[k-1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-3&#34;&gt;&lt;a href=&#34;#完整代码-3&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;c&amp;#x3D;word[i]&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    char kthCharacter(int k) &amp;#123;
+        string word=&amp;quot;a&amp;quot;;
+        while(word.size()&amp;lt;k)&amp;#123;
+            string t;
+            for(char c:word)&amp;#123;
+                t.push_back((c-&amp;#39;a&amp;#39;+1)%26+&amp;#39;a&amp;#39;);
+            &amp;#125;
+            word+=t;
+        &amp;#125;
+        return word[k-1];
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;1544-整理字符串&#34;&gt;&lt;a href=&#34;#1544-整理字符串&#34; class=&#34;headerlink&#34; title=&#34;1544.整理字符串&#34;&gt;&lt;/a&gt;1544.整理字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个由大小写英文字母组成的字符串 s 。&lt;br&gt;一个整理好的字符串中，两个相邻字符 s[i] 和 s[i+1]，其中 0&amp;lt;&amp;#x3D; i &amp;lt;&amp;#x3D; s.length-2 ，要满足如下条件:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若 s[i] 是小写字符，则 s[i+1] 不可以是相同的大写字符。&lt;/li&gt;
+&lt;li&gt;若 s[i] 是大写字符，则 s[i+1] 不可以是相同的小写字符。&lt;br&gt;请你将字符串整理好，每次你都可以从字符串中选出满足上述条件的 两个相邻 字符并删除，直到字符串整理好为止。&lt;br&gt;请返回整理好的 字符串 。题目保证在给出的约束条件下，测试样例对应的答案是唯一的。&lt;br&gt;注意：空字符串也属于整理好的字符串，尽管其中没有任何字符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 只包含小写和大写英文字母&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-4&#34;&gt;&lt;a href=&#34;#解题思路-4&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;一开始直接用erase删符合条件的字符，而且删除后索引没有回退，报错显示 &lt;code&gt;std::out_of_range&lt;/code&gt;。&lt;br&gt;后来用&lt;strong&gt;栈&lt;/strong&gt;来解决：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;迭代字符串s，删除互为大小写的字符，其他的正常压栈&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;abs(stk.back() - ch) == 32&lt;/code&gt; 栈顶字符和当前字符互为大小写（用abs确保大小写前后顺序都可）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-4&#34;&gt;&lt;a href=&#34;#完整代码-4&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string makeGood(string s) &amp;#123;
+        string stk;
+        for(char ch:s)&amp;#123;
+            if(!stk.empty() &amp;amp;&amp;amp; abs(stk.back()-ch)==32)&amp;#123;
+                stk.pop_back();
+            &amp;#125;
+            else&amp;#123;
+                stk.push_back(ch);
+            &amp;#125;
+        &amp;#125;
+        return stk;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2116-判断一个括号字符串是否有效&#34;&gt;&lt;a href=&#34;#2116-判断一个括号字符串是否有效&#34; class=&#34;headerlink&#34; title=&#34;2116.判断一个括号字符串是否有效&#34;&gt;&lt;/a&gt;2116.判断一个括号字符串是否有效&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一个括号字符串是只由 ‘(‘ 和 ‘)’ 组成的 非空 字符串。如果一个字符串满足下面 任意一个条件，那么它就是有效的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串为 ().&lt;/li&gt;
+&lt;li&gt;它可以表示为 AB（A 与 B 连接），其中A 和 B 都是有效括号字符串。&lt;/li&gt;
+&lt;li&gt;它可以表示为 (A) ，其中 A 是一个有效括号字符串。&lt;br&gt;给你一个括号字符串 s 和一个字符串 locked ，两者长度都为 n 。locked &amp;gt;是一个二进制字符串，只包含 ‘0’ 和 ‘1’ 。对于 locked 中 每一个 下标 i ：&lt;/li&gt;
+&lt;li&gt;如果 locked[i] 是 ‘1’ ，你 不能 改变 s[i] 。&lt;/li&gt;
+&lt;li&gt;如果 locked[i] 是 ‘0’ ，你 可以 将 s[i] 变为 ‘(‘ 或者 ‘)’ 。&lt;br&gt;如果你可以将s变为有效括号字符串，请你返回true，否则返回false。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;n &amp;#x3D;&amp;#x3D; s.length &amp;#x3D;&amp;#x3D; locked.length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; n &amp;lt;&amp;#x3D; 105&lt;/li&gt;
+&lt;li&gt;s[i] 要么是 ‘(‘ 要么是 ‘)’ 。&lt;/li&gt;
+&lt;li&gt;locked[i] 要么是 ‘0’ 要么是 ‘1’ 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-5&#34;&gt;&lt;a href=&#34;#解题思路-5&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;做到好几个括号匹配问题了，浅总结一下：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;👉️括号平衡的核心规则&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;任何前缀都不能有多余的右括号 &amp;amp; 任何后缀都不能有多余的左括号&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;❔️为什么要检查前&amp;#x2F;后缀而不是整个括号字符串？&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;因为括号是从左到右依次匹配的。一旦前面某个位置出现错误，后面就绝对无法补救。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;✅️关键思路&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;前缀遍历判断防止提前失配；后缀遍历防止无法闭合&lt;/li&gt;
+&lt;li&gt;两边遍历保证整体匹配&lt;/li&gt;
+&lt;li&gt;最终判断是否可以调整&lt;code&gt;（locked[i])&lt;/code&gt;使其符合匹配规则&lt;/li&gt;
+&lt;li&gt;注意locked也是字符串不是int&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;p&gt;用时21ms，还有优化空间。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    bool canBeValid(string s, string locked) &amp;#123;
+        if(s.size()%2!=0)&amp;#123;
+            return false;
+        &amp;#125;
+        int left,right;
+        left=right=0;
+        for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+            if(s[i]==&amp;#39;(&amp;#39; || locked[i]==&amp;#39;0&amp;#39;)&amp;#123;
+                left++;
+            &amp;#125;
+            else&amp;#123;
+                right++;
+            &amp;#125;
+            if(right&amp;gt;left)&amp;#123;
+                return false;
+            &amp;#125;
+        &amp;#125;
+        left=right=0;
+        for(int i=s.size()-1;i&amp;gt;=0;i--)&amp;#123;
+            if(s[i]==&amp;#39;)&amp;#39; || locked[i]==&amp;#39;0&amp;#39;)&amp;#123;
+                right++;
+            &amp;#125;
+            else&amp;#123;
+                left++;
+            &amp;#125;
+            if(left&amp;gt;right)&amp;#123;
+                return false;
+            &amp;#125;
+        &amp;#125;
+        return true;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2255-统计是给定字符串前缀的字符串数目&#34;&gt;&lt;a href=&#34;#2255-统计是给定字符串前缀的字符串数目&#34; class=&#34;headerlink&#34; title=&#34;2255.统计是给定字符串前缀的字符串数目&#34;&gt;&lt;/a&gt;2255.统计是给定字符串前缀的字符串数目&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个字符串数组 words 和一个字符串 s ，其中 words[i] 和 s 只包含 小写英文字母 。&lt;br&gt;请你返回 words 中是字符串 s 前缀 的 字符串数目 。&lt;br&gt;一个字符串的 前缀 是出现在字符串开头的子字符串。子字符串 是一个字符串中的连续一段字符序列。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; words.length &amp;lt;&amp;#x3D; 1000&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; words[i].length, s.length &amp;lt;&amp;#x3D; 10&lt;/li&gt;
+&lt;li&gt;words[i] 和 s 只 包含小写英文字母。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-6&#34;&gt;&lt;a href=&#34;#解题思路-6&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;暴力双循环嵌套，第一个substr得子串，第二个判断子串是否与words[i]相等。&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-6&#34;&gt;&lt;a href=&#34;#完整代码-6&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int countPrefixes(vector&amp;lt;string&amp;gt;&amp;amp; words, string s) &amp;#123;
+        string ch;
+        int cnt=0;
+        for(int i=0;i&amp;lt;=s.length();i++)&amp;#123;
+            ch=s.substr(0,i);
+            for(int j=0;j&amp;lt;words.size();j++)&amp;#123;
+                if(words[j]==ch)&amp;#123;
+                    cnt++;
+                &amp;#125;
+            &amp;#125;
+        &amp;#125;
+        return cnt;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2716-最小化字符串长度&#34;&gt;&lt;a href=&#34;#2716-最小化字符串长度&#34; class=&#34;headerlink&#34; title=&#34;2716.最小化字符串长度&#34;&gt;&lt;/a&gt;2716.最小化字符串长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;br&gt;给你一个下标从 0 开始的字符串 s ，重复执行下述操作 任意 次：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在字符串中选出一个下标 i ，并使 c 为字符串下标 i 处的字符。并在 i 左侧（如果有）和 右侧（如果有）各 删除 一个距离 i 最近 的字符 c 。&lt;br&gt;请你通过执行上述操作任意次，使 s 的长度 最小化 。&lt;br&gt;返回一个表示 最小化 字符串的长度的整数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;s 仅由小写英文字母组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-7&#34;&gt;&lt;a href=&#34;#解题思路-7&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;题目这么长，其实就是字符串&lt;strong&gt;去重&lt;/strong&gt;😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-7&#34;&gt;&lt;a href=&#34;#完整代码-7&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;我的方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimizedStringLength(string s) &amp;#123;
+        unordered_set&amp;lt;int&amp;gt; num;
+        for(char ch:s)&amp;#123;
+            if(num.find(ch)==num.end())&amp;#123;
+                num.insert(ch);
+            &amp;#125;
+        &amp;#125;
+        return num.size();
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;更简洁的方法&lt;br&gt;看到&lt;a href=&#34;https://leetcode.cn/problems/minimize-string-length/solutions/2296066/o1-kong-jian-wei-yun-suan-xie-fa-pythonj-7t4p/?envType=daily-question&amp;envId=2025-03-28&#34;&gt;题解&lt;/a&gt;，发现也可以直接写成一行：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;unordered_set&amp;lt;char&amp;gt;(s.begin(), s.end())&lt;/code&gt;&lt;br&gt;直接用s.begin()和s.end()构造一个unordered_set&lt;char&gt;，会自动去重字符串中的字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.size()&lt;/code&gt;&lt;br&gt;计算去重后的字符个数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;return unoredered_set(s.begin(),s.end().size());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2109-最小化字符串长度&#34;&gt;&lt;a href=&#34;#2109-最小化字符串长度&#34; class=&#34;headerlink&#34; title=&#34;2109.最小化字符串长度&#34;&gt;&lt;/a&gt;2109.最小化字符串长度&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个下标从 0 开始的字符串 s ，以及一个下标从 0 开始的整数数组 spaces 。&lt;br&gt;数组 spaces 描述原字符串中需要添加空格的下标。每个空格都应该插入到给定索引处的字符值 之前 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;例如，s &amp;#x3D; “EnjoyYourCoffee” 且 spaces &amp;#x3D; [5, 9] ，那么我们需要在 ‘Y’ 和 ‘C’ 之前添加空格，这两个字符分别位于下标 5 和下标 9 。因此，最终得到 “Enjoy Your Coffee” 。&lt;br&gt;请你添加空格，并返回修改后的字符串。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; s.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;s 仅由大小写英文字母组成&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; spaces.length &amp;lt;&amp;#x3D; 3 * 105&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;&amp;#x3D; spaces[i] &amp;lt;&amp;#x3D; s.length - 1&lt;/li&gt;
+&lt;li&gt;spaces 中的所有值严格递增&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-8&#34;&gt;&lt;a href=&#34;#解题思路-8&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;咳咳，虽然用时击败5%，但是自己写出来中等题而且没超时已经很棒了！夸夸自己😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-8&#34;&gt;&lt;a href=&#34;#完整代码-8&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string addSpaces(string s, vector&amp;lt;int&amp;gt;&amp;amp; spaces) &amp;#123;
+        int idx=0,cnt=0;
+        for(int i=0;i&amp;lt;s.size();i++)&amp;#123;
+            while(idx&amp;lt;spaces.size())&amp;#123;
+                s.insert(spaces[idx]+cnt,&amp;quot; &amp;quot;);
+                idx++;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return s;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;2278-字母在字符串中的百分比&#34;&gt;&lt;a href=&#34;#2278-字母在字符串中的百分比&#34; class=&#34;headerlink&#34; title=&#34;2278.字母在字符串中的百分比&#34;&gt;&lt;/a&gt;2278.字母在字符串中的百分比&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个字符串s和一个字符 letter，返回在s中等于letter字符所占的百分比，向下取整到最接近的百分比。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-9&#34;&gt;&lt;a href=&#34;#解题思路-9&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;我写的时候还很疑惑为什么返回的全是0😅然后意识到：&lt;br&gt;&lt;code&gt;return (cnt/s.size())*100&lt;/code&gt;这样合乎逻辑的写法实际上在这里是错误的。因为cnt&amp;#x2F;s.size()是整数除法（会直接去掉小数部分），那就必&amp;#x3D;0，然后0*100还是0，返回的也是0😂&lt;/p&gt;
+&lt;h2 id=&#34;完整代码-9&#34;&gt;&lt;a href=&#34;#完整代码-9&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int percentageLetter(string s, char letter) &amp;#123;
+        int cnt = 0;
+        for (char ch : s) &amp;#123;
+            if (ch == letter) &amp;#123;
+                cnt++;
+            &amp;#125;
+        &amp;#125;
+        return (cnt * 100) / s.size();  // 先乘 100 再除，确保整数除法不会丢失精度
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;168-Execl表列名称&#34;&gt;&lt;a href=&#34;#168-Execl表列名称&#34; class=&#34;headerlink&#34; title=&#34;168.Execl表列名称&#34;&gt;&lt;/a&gt;168.Execl表列名称&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数 columnNumber ，返回它在 Excel 表中相对应的列名称。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-10&#34;&gt;&lt;a href=&#34;#解题思路-10&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;上来看不明白这题，于是跑去看&lt;a href=&#34;https://leetcode.cn/problems/excel-sheet-column-title/solutions/849680/gong-shui-san-xie-cong-1-kai-shi-de-26-j-g2ur/&#34;&gt;题解&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;这道题其实是一道类似于&lt;strong&gt;26进制&lt;/strong&gt;的数字系统模拟。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;列名的构成&lt;br&gt;每个列名由字母组成，并且字母的排列规则类似于进制。比如 A 对应 1，B 对应 2，…，Z 对应 26。接着，列名会继续循环，例如 AA 对应 27，AB 对应 28，…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对应关系&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;第 1 列是 A（即 1）&lt;/li&gt;
+&lt;li&gt;第 2 列是 B（即 2）&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;li&gt;第 26 列是 Z（即 26）&lt;/li&gt;
+&lt;li&gt;第 27 列是 AA（即 27），可以看做是从 A（1）到 Z（26）循环一次&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;解题思路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;每次从最右边的字符开始计算&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;注意&lt;/strong&gt; Excel 列名从A开始（1），而不是从0开始。所以每次取余的时-1。&lt;br&gt;1️⃣模拟进制转换&lt;/li&gt;
+&lt;li&gt;每次对26取余，然后将结果映射到 A-Z&lt;/li&gt;
+&lt;li&gt;然后columnNumber-1，类似于进制中的进位操作&lt;br&gt;2️⃣构建列名&lt;/li&gt;
+&lt;li&gt;每次获得一个字符，将其加入列名的最前面，直到 columnNumber&amp;#x3D;0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完整代码-10&#34;&gt;&lt;a href=&#34;#完整代码-10&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    string convertToTitle(int columnNumber) &amp;#123;
+        string res=&amp;quot;&amp;quot;;
+        while(columnNumber&amp;gt;0)&amp;#123;
+            columnNumber--;
+            res=char(columnNumber%26+&amp;#39;A&amp;#39;)+res;
+            columnNumber/=26;
+        &amp;#125;
+        return res;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;3396-使数组元素互不相同所需的最少操作次数&#34;&gt;&lt;a href=&#34;#3396-使数组元素互不相同所需的最少操作次数&#34; class=&#34;headerlink&#34; title=&#34;3396.使数组元素互不相同所需的最少操作次数&#34;&gt;&lt;/a&gt;3396.使数组元素互不相同所需的最少操作次数&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给你一个整数数组 nums，你需要确保数组中的元素 互不相同 。为此，你可以执行以下操作任意次：&lt;br&gt;从数组的开头移除 3 个元素。如果数组中元素少于 3 个，则移除所有剩余元素。&lt;br&gt;注意：空数组也视作为数组元素互不相同。返回使数组元素互不相同所需的 最少操作次数 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-11&#34;&gt;&lt;a href=&#34;#解题思路-11&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;说实话这道题真难到我了，虽然是道简单题。&lt;/p&gt;
+&lt;p&gt;1️⃣&lt;del&gt;错误解法注意&lt;/del&gt;一开始for循环遍历的同时修改容器：&lt;br&gt;&lt;code&gt;for(int num:nums)&lt;/code&gt;是range-based for loop（基于拷贝值的遍历），是基于nums的快照。但是我在遍历里用了&lt;code&gt;nums.erase(nums.begin(),nums.begin()+3)&lt;/code&gt;会导致迭代器失效😂&lt;/p&gt;
+&lt;p&gt;2️⃣修改方案：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;使用无限循环&lt;br&gt;直到剩下的数组已经互不相同（flag&amp;#x3D;false）时跳出。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;bool flag&lt;br&gt;表示当前数组是否有重复元素，初始值为false。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;遍历nums&lt;br&gt;unordered_set&lt;int&gt;一个arr用来判断重复元素。这部分老操作了，上面有几道也是类似的做法。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;额外的就是要记得有重复元素时flag置为true&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进行一次移除操作，计数器加一&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;剩余元素不足三个，直接清空nums&lt;/li&gt;
+&lt;li&gt;否则删除begin()~begin()+3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;返回cnt&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-11&#34;&gt;&lt;a href=&#34;#完整代码-11&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int minimumOperations(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        int cnt=0;
+        while(true)&amp;#123;
+            unordered_set&amp;lt;int&amp;gt; arr;
+            bool flag=false;
+            for(int num:nums)&amp;#123;
+                if(arr.find(num)!=arr.end())&amp;#123;
+                    flag=true;
+                    break;
+                &amp;#125;
+                arr.insert(num);
+            &amp;#125;
+            if(flag==false)&amp;#123;
+                break;
+            &amp;#125;
+            if(nums.size()&amp;lt;=3)&amp;#123;
+                nums.clear();
+            &amp;#125;
+            else&amp;#123;
+                nums.erase(nums.begin(),nums.begin()+3);
+            &amp;#125;
+            cnt++;
+        &amp;#125;
+        return cnt;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;594-最长和谐子序列&#34;&gt;&lt;a href=&#34;#594-最长和谐子序列&#34; class=&#34;headerlink&#34; title=&#34;594.最长和谐子序列&#34;&gt;&lt;/a&gt;594.最长和谐子序列&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;和谐数组是指一个数组里元素的最大值和最小值之间的差别 正好是 1 。&lt;br&gt;给你一个整数数组nums，请你在所有可能的子序列中找到最长的和谐子序列的长度。&lt;br&gt;数组的子序列是一个由数组派生出来的序列，它可以通过删除一些元素或不删除元素、且不改变其余元素的顺序而得到。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;&amp;#x3D; nums.length &amp;lt;&amp;#x3D; 2 * 104&lt;/li&gt;
+&lt;li&gt;109 &amp;lt;&amp;#x3D; nums[i] &amp;lt;&amp;#x3D; 109&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;解题思路-12&#34;&gt;&lt;a href=&#34;#解题思路-12&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;p&gt;思路非原创。因为我一开始不知道子序列怎么得，所以跑去看&lt;a href=&#34;https://leetcode.cn/problems/longest-harmonious-subsequence/solutions/1110137/zui-chang-he-xie-zi-xu-lie-by-leetcode-s-8cyr/&#34;&gt;题解&lt;/a&gt;了，官方这里讲的很明了👍&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从小到大排序（直接sort即可）&lt;/li&gt;
+&lt;li&gt;begin&amp;#x2F;end控制头尾元素下标（我这里用的head&amp;#x2F;tail）&lt;/li&gt;
+&lt;li&gt;子序列长度end-begin+1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;完整代码-12&#34;&gt;&lt;a href=&#34;#完整代码-12&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;class Solution &amp;#123;
+public:
+    int findLHS(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;
+        sort(nums.begin(),nums.end());
+        int head=0,tail=0,ans=0;
+        while(tail&amp;lt;nums.size())&amp;#123;
+            while(nums[tail]-nums[head]&amp;gt;1)&amp;#123;
+                head++;
+            &amp;#125;
+            if(nums[tail]-nums[head]==1)&amp;#123;
+                ans=max(ans,tail-head+1);
+            &amp;#125;
+            tail++;
+        &amp;#125;
+        return ans;
+    &amp;#125;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="力扣" />
+        <category term="算法" />
+        <updated>2025-03-05T07:22:48.000Z</updated>
+    </entry>
+    <entry>
         <id>https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</id>
-        <title>Leetcode | 数组</title>
+        <title>Leetcode ➳ 数组</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/"/>
         <content type="html">&lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums，请你将该数组升序排列。&lt;br&gt;你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。&lt;/p&gt;
@@ -2002,14 +2760,12 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
-        <category term="数组" />
-        <category term="哈希表" />
-        <category term="二分查找" />
+        <category term="算法" />
         <updated>2025-03-04T11:15:05.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
-        <title>专题2️⃣ | 贪心算法</title>
+        <title>专题2️⃣ ➳ 贪心算法</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
         <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
@@ -2328,12 +3084,11 @@ public:
         <category term="力扣" />
         <category term="算法" />
         <category term="专题" />
-        <category term="C++" />
         <updated>2025-03-04T05:41:46.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</id>
-        <title>备忘录 | 力扣</title>
+        <title>备忘录 ➳ 力扣</title>
         <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/"/>
         <content type="html">&lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
 &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
@@ -3049,8 +3804,7 @@ public:
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="力扣" />
-        <category term="算法" />
-        <category term="记录" />
+        <category term="备忘录" />
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>
 </feed>

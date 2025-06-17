@@ -9,19 +9,11 @@
         <lastBuildDate>Mon, 16 Jun 2025 10:11:30 +0800</lastBuildDate>
         <category>力扣</category>
         <category>算法</category>
-        <category>字符串</category>
-        <category>滑动窗口</category>
-        <category>数组</category>
-        <category>哈希表</category>
-        <category>二分查找</category>
         <category>专题</category>
-        <category>C++</category>
-        <category>链表</category>
         <category>记录</category>
+        <category>备忘录</category>
         <category>AI</category>
-        <category>Markdown</category>
-        <category>指南</category>
-        <category>实战</category>
+        <category>案例</category>
         <category>笔记</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
@@ -45,9 +37,9 @@
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
-            <title>备忘录 | 案例</title>
+            <title>备忘录 ➳ 案例</title>
             <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
-            <category>记录</category>
+            <category>备忘录</category>
             <category>AI</category>
             <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
@@ -90,10 +82,10 @@
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
-            <title>实战1️⃣-2 | 接入DeepSeek-R1优化提示词</title>
+            <title>实战1️⃣-2 ➳ 接入DeepSeek-R1优化提示词</title>
             <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
-            <category>指南</category>
-            <category>实战</category>
+            <category>AI</category>
+            <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
@@ -255,9 +247,10 @@ else:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
-            <title>实战1️⃣-2 | Stable Diffusion图像生成</title>
+            <title>实战1️⃣-2 ➳ Stable Diffusion图像生成</title>
             <link>https://232akira.github.io/2025/04/17/%E5%AE%9E%E6%88%981-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
             <category>AI</category>
+            <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
@@ -373,9 +366,10 @@ except Exception as e:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
-            <title>实战1️⃣ | 入门指南</title>
+            <title>实战1️⃣ ➳ 入门指南</title>
             <link>https://232akira.github.io/2025/04/16/%E5%AE%9E%E6%88%981%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
-            <category>指南</category>
+            <category>AI</category>
+            <category>案例</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
@@ -396,7 +390,7 @@ except Exception as e:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</guid>
-            <title>Leetcode | HOT 100</title>
+            <title>Leetcode ➳ HOT 100</title>
             <link>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</link>
             <category>力扣</category>
             <category>算法</category>
@@ -1066,7 +1060,7 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
-            <title>笔记 | 游戏开发</title>
+            <title>笔记 ➳ 游戏开发</title>
             <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
             <category>笔记</category>
             <pubDate>Sun, 06 Apr 2025 22:22:22 +0800</pubDate>
@@ -1704,12 +1698,11 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
-            <title>专题3️⃣ | 动态规划</title>
+            <title>专题3️⃣ ➳ 动态规划</title>
             <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
             <category>力扣</category>
             <category>算法</category>
             <category>专题</category>
-            <category>C++</category>
             <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
@@ -1778,12 +1771,11 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
-            <title>专题1️⃣ | 滑动窗口</title>
+            <title>专题1️⃣ ➳ 滑动窗口</title>
             <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
             <category>力扣</category>
             <category>算法</category>
             <category>专题</category>
-            <category>C++</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
@@ -2226,11 +2218,10 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</guid>
-            <title>Leetcode | 链表</title>
+            <title>Leetcode ➳ 链表</title>
             <link>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</link>
             <category>力扣</category>
             <category>算法</category>
-            <category>链表</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
@@ -2391,11 +2382,10 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
-            <title>Leetcode | 字符串</title>
+            <title>Leetcode ➳ 字符串</title>
             <link>https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+            <category>力扣</category>
             <category>算法</category>
-            <category>字符串</category>
-            <category>滑动窗口</category>
             <pubDate>Wed, 05 Mar 2025 15:22:48 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
@@ -3161,12 +3151,10 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</guid>
-            <title>Leetcode | 数组</title>
+            <title>Leetcode ➳ 数组</title>
             <link>https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</link>
             <category>力扣</category>
-            <category>数组</category>
-            <category>哈希表</category>
-            <category>二分查找</category>
+            <category>算法</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums，请你将该数组升序排列。&lt;br&gt;你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。&lt;/p&gt;
@@ -3791,12 +3779,11 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
-            <title>专题2️⃣ | 贪心算法</title>
+            <title>专题2️⃣ ➳ 贪心算法</title>
             <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
             <category>力扣</category>
             <category>算法</category>
             <category>专题</category>
-            <category>C++</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
@@ -4115,11 +4102,10 @@ public:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</guid>
-            <title>备忘录 | 力扣</title>
+            <title>备忘录 ➳ 力扣</title>
             <link>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</link>
             <category>力扣</category>
-            <category>算法</category>
-            <category>记录</category>
+            <category>备忘录</category>
             <pubDate>Sun, 02 Mar 2025 19:55:55 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
 &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
@@ -4927,7 +4913,6 @@ SEO优化和访客优化
             <title>存存markdown相关</title>
             <link>https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</link>
             <category>记录</category>
-            <category>Markdown</category>
             <pubDate>Sat, 23 Nov 2024 18:40:43 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;&lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;&lt;p&gt;这是232akira的第一篇博客的第一段直接回车&lt;/p&gt;
 &lt;p&gt;这是232akira的第一篇博客的第二段&lt;/p&gt;
