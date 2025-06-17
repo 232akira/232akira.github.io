@@ -7,10 +7,10 @@
     <category term="力扣" />
     <category term="算法" />
     <category term="专题" />
-    <category term="记录" />
     <category term="备忘录" />
-    <category term="案例" />
     <category term="AI" />
+    <category term="记录" />
+    <category term="案例" />
     <category term="笔记" />
     <entry>
         <id>https://232akira.github.io/2025/06/17/%E7%AC%94%E8%AE%B02%20MCP+A2A/</id>
@@ -23,9 +23,9 @@
         <updated>2025-06-17T03:22:10.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/06/16/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
+        <id>https://232akira.github.io/2025/06/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/06/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
         <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -40,7 +40,7 @@
 &lt;/ul&gt;
 </content>
         <category term="记录" />
-        <updated>2025-06-16T02:11:30.000Z</updated>
+        <updated>2025-06-17T03:11:30.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
@@ -250,8 +250,8 @@ else:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
@@ -369,8 +369,8 @@ except Exception as e:
 &lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
 &lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
@@ -393,8 +393,8 @@ except Exception as e:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
     <entry>
