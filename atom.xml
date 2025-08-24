@@ -3,21 +3,41 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-08-24T08:30:10.000Z</updated>
+    <updated>2025-08-24T08:44:30.000Z</updated>
+    <category term="记录" />
+    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
-    <category term="记录" />
     <category term="备忘录" />
     <category term="AI" />
+    <category term="指南" />
     <category term="案例" />
     <category term="笔记" />
-    <category term="TIPS" />
-    <category term="指南" />
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</id>
+        <id>https://232akira.github.io/2025/08/24/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
+        <title>🔝点我查看站点指引</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
+        <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
+&lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
+&lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
+&lt;h2 id=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;a href=&#34;#更清晰的看看有哪些文章&#34; class=&#34;headerlink&#34; title=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;/a&gt;更清晰的看看有哪些文章&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;归档&lt;/code&gt;&lt;br&gt;看看每月写了什么&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;标签&lt;/code&gt;&lt;br&gt;关键词定位文章更高效&lt;/p&gt;
+&lt;p&gt;也可以直接点击目录上方的数字跳转。&lt;/p&gt;
+&lt;h2 id=&#34;🧩其他&#34;&gt;&lt;a href=&#34;#🧩其他&#34; class=&#34;headerlink&#34; title=&#34;🧩其他&#34;&gt;&lt;/a&gt;🧩其他&lt;/h2&gt;&lt;h3 id=&#34;想来点音乐？&#34;&gt;&lt;a href=&#34;#想来点音乐？&#34; class=&#34;headerlink&#34; title=&#34;想来点音乐？&#34;&gt;&lt;/a&gt;想来点音乐？&lt;/h3&gt;&lt;p&gt;&lt;code&gt;波浪动效&lt;/code&gt;-&amp;gt;&lt;code&gt;右边播放键&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;待完善的功能&#34;&gt;&lt;a href=&#34;#待完善的功能&#34; class=&#34;headerlink&#34; title=&#34;待完善的功能&#34;&gt;&lt;/a&gt;待完善的功能&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;评论系统&lt;/li&gt;
+&lt;li&gt;文章搜索&lt;/li&gt;
+&lt;li&gt;其他异常显示&lt;br&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="记录" />
+        <updated>2025-08-24T08:44:30.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</id>
         <title>TIPS💡 ⋮ STDIO的“本地”</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;关于MCP（模型上下文协议，Model Context Protocol）服务器传输方式中的STDIO👉一开始对其“只能用于本地进程间通信”的定义抱有疑问。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -45,9 +65,9 @@
         <updated>2025-08-24T08:30:10.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
+        <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
         <title>TIPS💡 ⋮ python虚拟环境</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
         <content type="html">&lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;python -m venv 起的名
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;.\起的名\Scripts\Activate.ps1
@@ -59,9 +79,9 @@
         <updated>2025-08-24T08:30:09.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</id>
+        <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</id>
         <title>TIPS💡 ⋮ MCP的“C”</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/"/>
         <content type="html">&lt;p&gt;应用MCP&lt;code&gt;(Model Context Protocol)&lt;/code&gt;以来，一直对其中的”Context：上下文”抱有疑问。&lt;br&gt;🧐MCP作为大模型调用外部工具的标准化协议，和大模型本身的上下文能有什么关系？&lt;/p&gt;
 &lt;h3 id=&#34;“上下文”是什么&#34;&gt;&lt;a href=&#34;#“上下文”是什么&#34; class=&#34;headerlink&#34; title=&#34;“上下文”是什么&#34;&gt;&lt;/a&gt;“上下文”是什么&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;我们知道，大模型高度依赖历史对话、环境信息、用户偏好……那么这些因素其实都是“上下文”。&lt;/p&gt;
@@ -85,9 +105,9 @@
         <updated>2025-08-24T08:30:08.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</id>
+        <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</id>
         <title>TIPS💡 ⋮ 关于requirements.txt</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/"/>
         <content type="html">&lt;p&gt;工作时发自己写的python项目但没注意依赖库这个问题😶后来发现requirements.txt是个好玩意。于是记录在这里备忘一下方便copy：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;以下命令已成功运行于&lt;strong&gt;Win11&lt;/strong&gt; VSCode Powershell&lt;/p&gt;
@@ -102,9 +122,9 @@
         <updated>2025-08-24T08:30:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</id>
         <title>指南🧭 ⋮ PKMer Market安装</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;最近在用Obsidian搭建自己的知识库。工作学习以来长时间接受各方面大量信息，光靠生物脑容量已经不够用了😫&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -133,9 +153,9 @@
         <updated>2025-08-24T08:30:06.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</id>
         <title>指南🧭 ⋮ Obsidian Git同步</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/"/>
         <content type="html">&lt;p&gt;这里假设你用&lt;code&gt;A设备&lt;/code&gt;写Obsidian笔记，并想要在&lt;code&gt;B设备&lt;/code&gt;上拉取笔记内容。&lt;a href=&#34;https://zhuanlan.zhihu.com/p/657663584&#34;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;在A设备上&#34;&gt;&lt;a href=&#34;#在A设备上&#34; class=&#34;headerlink&#34; title=&#34;在A设备上&#34;&gt;&lt;/a&gt;在A设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;a href=&#34;#1️⃣初始化本地Git仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;/a&gt;1️⃣初始化本地Git仓库&lt;/h3&gt;&lt;h4 id=&#34;安装Git&#34;&gt;&lt;a href=&#34;#安装Git&#34; class=&#34;headerlink&#34; title=&#34;安装Git&#34;&gt;&lt;/a&gt;安装&lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;官网下载&lt;/li&gt;
@@ -192,9 +212,9 @@ git push # 推送本地更改
         <updated>2025-08-24T08:30:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</id>
         <title>指南🧭 ⋮ API Key导入</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;在调用模型服务时需要配置对应平台的API Key，但直接将API Key硬编码在代码中是个非常危险且不推荐的行为！！！&lt;/p&gt;
 &lt;p&gt;因此关于Python项目中API Key的几种导入方法，简单归个类👇&lt;br&gt;&lt;em&gt;&lt;code&gt;（Windows11）&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
@@ -286,9 +306,9 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <updated>2025-08-24T08:30:04.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</id>
+        <id>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</id>
         <title>笔记🗒️ ⋮ MCP（Model Context Protocol）</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/"/>
         <content type="html">&lt;h2 id=&#34;应用背景&#34;&gt;&lt;a href=&#34;#应用背景&#34; class=&#34;headerlink&#34; title=&#34;应用背景&#34;&gt;&lt;/a&gt;应用背景&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;你是否向大模型提问过：“现在几点了？”“我这里的天气怎么样？”的问题？那么它能够正确回答吗？&lt;/p&gt;
 &lt;p&gt;目前来看——一般会回答错误。&lt;/p&gt;
@@ -331,9 +351,9 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <updated>2025-08-24T08:30:03.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</id>
+        <id>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</id>
         <title>笔记🗒️ ⋮ LangChain</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/"/>
         <content type="html">&lt;h2 id=&#34;定义&#34;&gt;&lt;a href=&#34;#定义&#34; class=&#34;headerlink&#34; title=&#34;定义&#34;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LangChain是一个&lt;/strong&gt;用于开发由语言模型驱动的应用程序的&lt;strong&gt;框架&lt;/strong&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;如何工作&#34;&gt;&lt;a href=&#34;#如何工作&#34; class=&#34;headerlink&#34; title=&#34;如何工作&#34;&gt;&lt;/a&gt;如何工作&lt;/h2&gt;&lt;h3 id=&#34;核心组件&#34;&gt;&lt;a href=&#34;#核心组件&#34; class=&#34;headerlink&#34; title=&#34;核心组件&#34;&gt;&lt;/a&gt;核心组件&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Compents&lt;/li&gt;
@@ -346,9 +366,9 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <updated>2025-08-24T08:30:02.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</id>
+        <id>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</id>
         <title>笔记🗒️ ⋮ AI Agent</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/"/>
         <content type="html">&lt;h2 id=&#34;Agent&#34;&gt;&lt;a href=&#34;#Agent&#34; class=&#34;headerlink&#34; title=&#34;Agent&#34;&gt;&lt;/a&gt;Agent&lt;/h2&gt;&lt;p&gt;智能体（Agent）更具备“人类”的思维方式，可以识别任务的需求分析、执行规划和问题决策。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;基于LLM驱动的Agent基本框架：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;![[SVG-1-Agent.svg]]&lt;/p&gt;
@@ -370,29 +390,9 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <updated>2025-08-24T08:30:01.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/06/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
-        <title>🔝点我查看站点指引</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/06/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
-        <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
-&lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
-&lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
-&lt;h2 id=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;a href=&#34;#更清晰的看看有哪些文章&#34; class=&#34;headerlink&#34; title=&#34;更清晰的看看有哪些文章&#34;&gt;&lt;/a&gt;更清晰的看看有哪些文章&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;归档&lt;/code&gt;&lt;br&gt;看看每月写了什么&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;文章&lt;/code&gt;-&amp;gt;&lt;code&gt;标签&lt;/code&gt;&lt;br&gt;关键词定位文章更高效&lt;/p&gt;
-&lt;p&gt;也可以直接点击目录上方的数字跳转。&lt;/p&gt;
-&lt;h2 id=&#34;🧩其他&#34;&gt;&lt;a href=&#34;#🧩其他&#34; class=&#34;headerlink&#34; title=&#34;🧩其他&#34;&gt;&lt;/a&gt;🧩其他&lt;/h2&gt;&lt;h3 id=&#34;想来点音乐？&#34;&gt;&lt;a href=&#34;#想来点音乐？&#34; class=&#34;headerlink&#34; title=&#34;想来点音乐？&#34;&gt;&lt;/a&gt;想来点音乐？&lt;/h3&gt;&lt;p&gt;&lt;code&gt;波浪动效&lt;/code&gt;-&amp;gt;&lt;code&gt;右边播放键&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;待完善的功能&#34;&gt;&lt;a href=&#34;#待完善的功能&#34; class=&#34;headerlink&#34; title=&#34;待完善的功能&#34;&gt;&lt;/a&gt;待完善的功能&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;评论系统&lt;/li&gt;
-&lt;li&gt;文章搜索&lt;/li&gt;
-&lt;li&gt;其他异常显示&lt;br&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <category term="记录" />
-        <updated>2025-06-17T03:51:30.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
+        <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
         <title>备忘录 ⋮ 案例</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/"/>
         <content type="html">&lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
 &lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;记录的文章会以&lt;code&gt;【实战x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
@@ -438,9 +438,9 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</id>
+        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</id>
         <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/"/>
         <content type="html">&lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
 &lt;h2 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h2&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
@@ -603,9 +603,9 @@ else:
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</id>
+        <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</id>
         <title>案例1️⃣-2 ⋮ Stable Diffusion图像生成</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/"/>
         <content type="html">&lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;基于沐曦+Gitee平台的40+个大模型，采用vscode&amp;#x2F;Chatbox和Serverless API开发创意型案例，跟踪最新开源模型和编程开发形成案例。&lt;br&gt;本案例使用vscode调用Gitee-Stable Diffusion接口&lt;/p&gt;
@@ -722,9 +722,9 @@ except Exception as e:
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
+        <id>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
         <title>案例1️⃣ ⋮ 入门指南</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
         <content type="html">&lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev&#34;&gt;Cline&lt;/a&gt;&lt;/p&gt;
@@ -746,9 +746,9 @@ except Exception as e:
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</id>
+        <id>https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/</id>
         <title>Leetcode ⋮ HOT 100</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/"/>
         <content type="html">&lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
 &lt;h2 id=&#34;常用C-头文件&#34;&gt;&lt;a href=&#34;#常用C-头文件&#34; class=&#34;headerlink&#34; title=&#34;常用C++头文件&#34;&gt;&lt;/a&gt;常用C++头文件&lt;/h2&gt;&lt;table&gt;
@@ -1416,9 +1416,9 @@ public:
         <updated>2025-04-08T07:29:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</id>
+        <id>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</id>
         <title>笔记1️⃣ ⋮ 游戏开发</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
         <content type="html">&lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;渲染管线
 摄像机
@@ -2054,9 +2054,9 @@ p.Albedo=xDiff*blendWeights.x+yDiff*blendWeights.y+zDiff*blendWeights.z;
         <updated>2025-04-06T14:22:22.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
+        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
         <title>专题3️⃣ ⋮ 动态规划</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
         <content type="html">&lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个下标从 0 开始的二维整数数组 questions ，其中 questions[i] &amp;#x3D; [pointsi, brainpoweri] 。&lt;br&gt;这个数组表示一场考试里的一系列题目，你需要 按顺序 （也就是从问题 0 开始依次解决），针对每个问题选择 解决 或者 跳过 操作。解决问题 i 将让你 获得  pointsi 的分数，但是你将 无法 解决接下来的 brainpoweri 个问题（即只能跳过接下来的 brainpoweri 个问题）。如果你跳过问题 i ，你可以对下一个问题决定使用哪种操作。&lt;br&gt;比方说，给你 questions &amp;#x3D; [[3, 2], [4, 3], [4, 4], [2, 5]] ：&lt;/p&gt;
@@ -2121,15 +2121,15 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-04-01T01:18:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
+        <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
         <title>专题1️⃣ ⋮ 滑动窗口</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
         <content type="html">&lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
 &lt;ul&gt;
@@ -2568,15 +2568,15 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</id>
+        <id>https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/</id>
         <title>Leetcode ⋮ 链表</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/"/>
         <content type="html">&lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;节点结构 &lt;code&gt;ListNode&lt;/code&gt;&lt;/li&gt;
@@ -2738,9 +2738,9 @@ public:
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+        <id>https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
         <title>Leetcode ⋮ 字符串</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
         <content type="html">&lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3507,9 +3507,9 @@ public:
         <updated>2025-03-05T07:22:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</id>
+        <id>https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/</id>
         <title>Leetcode ⋮ 数组</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/"/>
         <content type="html">&lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums，请你将该数组升序排列。&lt;br&gt;你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4135,9 +4135,9 @@ public:
         <updated>2025-03-04T11:15:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
+        <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
         <title>专题2️⃣ ⋮ 贪心算法</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
         <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
@@ -4452,15 +4452,15 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-03-04T05:41:46.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</id>
+        <id>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</id>
         <title>备忘录 ⋮ 力扣</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/"/>
         <content type="html">&lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
 &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
 &lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
@@ -5179,9 +5179,9 @@ public:
         <updated>2025-03-02T11:55:55.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</id>
+        <id>https://232akira.github.io/2025/02/20/%E5%85%B6%E4%BB%96/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/</id>
         <title>博客搭建小半年的痛</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/02/20/%E5%85%B6%E4%BB%96/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;主打一个备忘&lt;/strong&gt;&lt;br&gt;断断续续从24年中搞到现在25年初，最磨蹭的一集。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;最新问题&lt;/strong&gt;&lt;/p&gt;
@@ -5266,9 +5266,9 @@ SEO优化和访客优化
         <updated>2025-02-20T02:26:39.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</id>
+        <id>https://232akira.github.io/2024/11/23/%E5%85%B6%E4%BB%96/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/</id>
         <title>存存markdown相关</title>
-        <link rel="alternate" href="https://232akira.github.io/2024/11/23/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/"/>
+        <link rel="alternate" href="https://232akira.github.io/2024/11/23/%E5%85%B6%E4%BB%96/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/"/>
         <content type="html">&lt;h2 id=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的二级标题两个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的二级标题两个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的二级标题两个井号加空格&lt;/h2&gt;&lt;h3 id=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;a href=&#34;#这是232akira的第一篇博客的三级标题三个井号加空格&#34; class=&#34;headerlink&#34; title=&#34;这是232akira的第一篇博客的三级标题三个井号加空格&#34;&gt;&lt;/a&gt;这是232akira的第一篇博客的三级标题三个井号加空格&lt;/h3&gt;&lt;p&gt;这是232akira的第一篇博客的第一段直接回车&lt;/p&gt;
 &lt;p&gt;这是232akira的第一篇博客的第二段&lt;/p&gt;
 &lt;p&gt;这是换行尝试两个空格+回车&lt;br&gt;&lt;br&gt;&lt;br&gt;换行！&lt;/p&gt;

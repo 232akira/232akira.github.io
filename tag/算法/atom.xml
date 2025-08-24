@@ -4,20 +4,20 @@
     <title>Per aspera ad astra • Posts by &#34;算法&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-04-08T07:29:31.000Z</updated>
+    <category term="记录" />
+    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
-    <category term="记录" />
     <category term="备忘录" />
     <category term="AI" />
+    <category term="指南" />
     <category term="案例" />
     <category term="笔记" />
-    <category term="TIPS" />
-    <category term="指南" />
     <entry>
-        <id>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</id>
+        <id>https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/</id>
         <title>Leetcode ⋮ HOT 100</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/"/>
         <content type="html">&lt;p&gt;想了想方便复习，把&lt;a href=&#34;https://leetcode.cn/studyplan/top-100-liked/&#34;&gt;hot100&lt;/a&gt;先不按模块，零碎的把做过的还有简单题先搞定了再说。题都挪到这篇。&lt;br&gt;话不多说开刷😤！！！&lt;/p&gt;
 &lt;h1 id=&#34;在线OJ&#34;&gt;&lt;a href=&#34;#在线OJ&#34; class=&#34;headerlink&#34; title=&#34;在线OJ&#34;&gt;&lt;/a&gt;在线OJ&lt;/h1&gt;&lt;p&gt;输入输出和头文件使用的不熟练导致面的时候浪费了不少时间😅备忘一下：&lt;/p&gt;
 &lt;h2 id=&#34;常用C-头文件&#34;&gt;&lt;a href=&#34;#常用C-头文件&#34; class=&#34;headerlink&#34; title=&#34;常用C++头文件&#34;&gt;&lt;/a&gt;常用C++头文件&lt;/h2&gt;&lt;table&gt;
@@ -685,9 +685,9 @@ public:
         <updated>2025-04-08T07:29:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
+        <id>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</id>
         <title>专题3️⃣ ⋮ 动态规划</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
         <content type="html">&lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个下标从 0 开始的二维整数数组 questions ，其中 questions[i] &amp;#x3D; [pointsi, brainpoweri] 。&lt;br&gt;这个数组表示一场考试里的一系列题目，你需要 按顺序 （也就是从问题 0 开始依次解决），针对每个问题选择 解决 或者 跳过 操作。解决问题 i 将让你 获得  pointsi 的分数，但是你将 无法 解决接下来的 brainpoweri 个问题（即只能跳过接下来的 brainpoweri 个问题）。如果你跳过问题 i ，你可以对下一个问题决定使用哪种操作。&lt;br&gt;比方说，给你 questions &amp;#x3D; [[3, 2], [4, 3], [4, 4], [2, 5]] ：&lt;/p&gt;
@@ -752,15 +752,15 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-04-01T01:18:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
+        <id>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</id>
         <title>专题1️⃣ ⋮ 滑动窗口</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
         <content type="html">&lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
 &lt;ul&gt;
@@ -1199,15 +1199,15 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-03-12T10:20:15.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</id>
+        <id>https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/</id>
         <title>Leetcode ⋮ 链表</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/"/>
         <content type="html">&lt;p&gt;链表这东西真的学一阵忘一阵😂&lt;/p&gt;
 &lt;h1 id=&#34;单向链表&#34;&gt;&lt;a href=&#34;#单向链表&#34; class=&#34;headerlink&#34; title=&#34;单向链表&#34;&gt;&lt;/a&gt;单向链表&lt;/h1&gt;&lt;h2 id=&#34;结构定义&#34;&gt;&lt;a href=&#34;#结构定义&#34; class=&#34;headerlink&#34; title=&#34;结构定义&#34;&gt;&lt;/a&gt;结构定义&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;节点结构 &lt;code&gt;ListNode&lt;/code&gt;&lt;/li&gt;
@@ -1369,9 +1369,9 @@ public:
         <updated>2025-03-06T02:25:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
+        <id>https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
         <title>Leetcode ⋮ 字符串</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
         <content type="html">&lt;h1 id=&#34;58-最后一个单词的长度&#34;&gt;&lt;a href=&#34;#58-最后一个单词的长度&#34; class=&#34;headerlink&#34; title=&#34;58.最后一个单词的长度&#34;&gt;&lt;/a&gt;58.最后一个单词的长度&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2138,9 +2138,9 @@ public:
         <updated>2025-03-05T07:22:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</id>
+        <id>https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/</id>
         <title>Leetcode ⋮ 数组</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/"/>
         <content type="html">&lt;h1 id=&#34;912-排序数组&#34;&gt;&lt;a href=&#34;#912-排序数组&#34; class=&#34;headerlink&#34; title=&#34;912.排序数组&#34;&gt;&lt;/a&gt;912.排序数组&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给你一个整数数组 nums，请你将该数组升序排列。&lt;br&gt;你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2766,9 +2766,9 @@ public:
         <updated>2025-03-04T11:15:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
+        <id>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</id>
         <title>专题2️⃣ ⋮ 贪心算法</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"/>
         <content type="html">&lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;给定由一些正数（代表长度）组成的数组 nums ，返回 由其中三个长度组成的、面积不为零的三角形的最大周长 。如果不能形成任何面积不为零的三角形，返回 0。&lt;/p&gt;
@@ -3083,9 +3083,9 @@ public:
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="专题" />
         <category term="力扣" />
         <category term="算法" />
-        <category term="专题" />
         <updated>2025-03-04T05:41:46.000Z</updated>
     </entry>
 </feed>

@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Sun, 24 Aug 2025 16:30:10 +0800</pubDate>
         <lastBuildDate>Sun, 24 Aug 2025 16:30:10 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>专题</category>
-        <category>记录</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>指南</category>
         <category>案例</category>
         <category>笔记</category>
-        <category>TIPS</category>
-        <category>指南</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</guid>
             <title>TIPS💡 ⋮ STDIO的“本地”</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</link>
+            <link>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</link>
             <category>TIPS</category>
             <pubDate>Sun, 24 Aug 2025 16:30:10 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
@@ -48,9 +48,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
             <title>TIPS💡 ⋮ python虚拟环境</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+            <link>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
             <category>TIPS</category>
             <pubDate>Sun, 24 Aug 2025 16:30:09 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;python -m venv 起的名
@@ -62,9 +62,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</guid>
             <title>TIPS💡 ⋮ MCP的“C”</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</link>
+            <link>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</link>
             <category>TIPS</category>
             <pubDate>Sun, 24 Aug 2025 16:30:08 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;应用MCP&lt;code&gt;(Model Context Protocol)&lt;/code&gt;以来，一直对其中的”Context：上下文”抱有疑问。&lt;br&gt;🧐MCP作为大模型调用外部工具的标准化协议，和大模型本身的上下文能有什么关系？&lt;/p&gt;
@@ -88,9 +88,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</guid>
             <title>TIPS💡 ⋮ 关于requirements.txt</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</link>
+            <link>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</link>
             <category>TIPS</category>
             <pubDate>Sun, 24 Aug 2025 16:30:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工作时发自己写的python项目但没注意依赖库这个问题😶后来发现requirements.txt是个好玩意。于是记录在这里备忘一下方便copy：&lt;/p&gt;

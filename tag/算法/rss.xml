@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Tue, 08 Apr 2025 15:29:31 +0800</pubDate>
         <lastBuildDate>Tue, 08 Apr 2025 15:29:31 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>专题</category>
-        <category>记录</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>指南</category>
         <category>案例</category>
         <category>笔记</category>
-        <category>TIPS</category>
-        <category>指南</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/</guid>
             <title>Leetcode ⋮ HOT 100</title>
-            <link>https://232akira.github.io/2025/04/08/Leetcode-HOT%20100/</link>
+            <link>https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/</link>
             <category>力扣</category>
             <category>算法</category>
             <pubDate>Tue, 08 Apr 2025 15:29:31 +0800</pubDate>
@@ -688,12 +688,12 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
             <title>专题3️⃣ ⋮ 动态规划</title>
-            <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+            <link>https://232akira.github.io/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+            <category>专题</category>
             <category>力扣</category>
             <category>算法</category>
-            <category>专题</category>
             <pubDate>Tue, 01 Apr 2025 09:18:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;动规来力！！！&lt;/p&gt;
 &lt;h1 id=&#34;2140-解决智力问题&#34;&gt;&lt;a href=&#34;#2140-解决智力问题&#34; class=&#34;headerlink&#34; title=&#34;2140.解决智力问题&#34;&gt;&lt;/a&gt;2140.解决智力问题&lt;/h1&gt;&lt;blockquote&gt;
@@ -761,12 +761,12 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</guid>
             <title>专题1️⃣ ⋮ 滑动窗口</title>
-            <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
+            <link>https://232akira.github.io/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</link>
+            <category>专题</category>
             <category>力扣</category>
             <category>算法</category>
-            <category>专题</category>
             <pubDate>Wed, 12 Mar 2025 18:20:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天照例每日一题，然后麻溜的看题解，发现又是一道滑动窗口题。所以开个专题归类一下。&lt;/p&gt;
 &lt;h1 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h1&gt;&lt;h2 id=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;a href=&#34;#基础算法精讲03-滑动窗口&#34; class=&#34;headerlink&#34; title=&#34;基础算法精讲03-滑动窗口&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1hd4y1r7Gq/?spm_id_from=333.337.search-card.all.click&amp;vd_source=6cef69f555ee1eb889d44945f2a3a38b&#34;&gt;基础算法精讲03-滑动窗口&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;👉️双指针的应用场景：&lt;/p&gt;
@@ -1208,9 +1208,9 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/</guid>
             <title>Leetcode ⋮ 链表</title>
-            <link>https://232akira.github.io/2025/03/06/Leetcode-%E9%93%BE%E8%A1%A8/</link>
+            <link>https://232akira.github.io/2025/03/06/%E5%8A%9B%E6%89%A3/Leetcode-%E9%93%BE%E8%A1%A8/</link>
             <category>力扣</category>
             <category>算法</category>
             <pubDate>Thu, 06 Mar 2025 10:25:28 +0800</pubDate>
@@ -1372,9 +1372,9 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
             <title>Leetcode ⋮ 字符串</title>
-            <link>https://232akira.github.io/2025/03/05/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+            <link>https://232akira.github.io/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
             <category>力扣</category>
             <category>算法</category>
             <pubDate>Wed, 05 Mar 2025 15:22:48 +0800</pubDate>
@@ -2141,9 +2141,9 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/</guid>
             <title>Leetcode ⋮ 数组</title>
-            <link>https://232akira.github.io/2025/03/04/Leetcode-%E6%95%B0%E7%BB%84/</link>
+            <link>https://232akira.github.io/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/</link>
             <category>力扣</category>
             <category>算法</category>
             <pubDate>Tue, 04 Mar 2025 19:15:05 +0800</pubDate>
@@ -2769,12 +2769,12 @@ public:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</guid>
             <title>专题2️⃣ ⋮ 贪心算法</title>
-            <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
+            <link>https://232akira.github.io/2025/03/04/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%982-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</link>
+            <category>专题</category>
             <category>力扣</category>
             <category>算法</category>
-            <category>专题</category>
             <pubDate>Tue, 04 Mar 2025 13:41:46 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;力扣连着刷到了几个贪心，而且另一篇笔记字数要爆了，决定先按大类慢慢分一下。&lt;br&gt;🤟&lt;a href=&#34;https://zhuanlan.zhihu.com/p/180104885&#34;&gt;参考链接&lt;/a&gt;&lt;br&gt;规律特征就是更加注重当前的状态,通常用于组合优化问题。即每一次都做出&lt;strong&gt;当前&lt;/strong&gt;看起来&lt;strong&gt;最好的&lt;/strong&gt;选择。每次只需要考虑一个问题，并通常是自底向上求解。即&lt;strong&gt;局部最优→全局最优&lt;/strong&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;455-分发饼干&#34;&gt;&lt;a href=&#34;#455-分发饼干&#34; class=&#34;headerlink&#34; title=&#34;455.分发饼干&#34;&gt;&lt;/a&gt;455.分发饼干&lt;/h1&gt;&lt;h2 id=&#34;解题思路&#34;&gt;&lt;a href=&#34;#解题思路&#34; class=&#34;headerlink&#34; title=&#34;解题思路&#34;&gt;&lt;/a&gt;解题思路&lt;/h2&gt;&lt;h2 id=&#34;完整代码&#34;&gt;&lt;a href=&#34;#完整代码&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;h1 id=&#34;976-三角形的最大周长&#34;&gt;&lt;a href=&#34;#976-三角形的最大周长&#34; class=&#34;headerlink&#34; title=&#34;976.三角形的最大周长&#34;&gt;&lt;/a&gt;976.三角形的最大周长&lt;/h1&gt;&lt;blockquote&gt;

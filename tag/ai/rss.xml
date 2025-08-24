@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
         <lastBuildDate>Mon, 16 Jun 2025 10:10:30 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>专题</category>
-        <category>记录</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>指南</category>
         <category>案例</category>
         <category>笔记</category>
-        <category>TIPS</category>
-        <category>指南</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
             <title>备忘录 ⋮ 案例</title>
-            <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
+            <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
             <category>备忘录</category>
             <category>AI</category>
             <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
@@ -66,9 +66,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
             <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
-            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
@@ -231,9 +231,9 @@ else:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
             <title>案例1️⃣-2 ⋮ Stable Diffusion图像生成</title>
-            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
+            <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
@@ -350,9 +350,9 @@ except Exception as e:
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
             <title>案例1️⃣ ⋮ 入门指南</title>
-            <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+            <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
             <category>AI</category>
             <category>案例</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>

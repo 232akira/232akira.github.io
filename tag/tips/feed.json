@@ -5,8 +5,8 @@
     "home_page_url": "https://232akira.github.io",
     "items": [
         {
-            "id": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/",
-            "url": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/",
+            "id": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/",
+            "url": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/",
             "title": "TIPS💡 ⋮ STDIO的“本地”",
             "date_published": "2025-08-24T08:30:10.000Z",
             "content_html": "<blockquote>\n<p>关于MCP（模型上下文协议，Model Context Protocol）服务器传输方式中的STDIO👉一开始对其“只能用于本地进程间通信”的定义抱有疑问。</p>\n</blockquote>\n<p>因为实际应用场景中，我们常见的12306、飞常准等等很多Host MCP Server都支持以STDIO方式接入，但是它们的服务器代码也不在本地啊？</p>\n<p><em><strong>豆包在这里解释的特别清楚👇</strong></em></p>\n<p>上面所提到的MCP Server连接确实需要联网，但STDIO也确实不具备网络传输能力。因为它的配置是如下的“组合模式”</p>\n<pre><code>【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】\n</code></pre>\n<p>也就是说，STDIO的传输作用于<code>客户端</code>与<code>本地代理进程</code>的本地管道，相当于通过<code>本地代理进程</code>与<code>远程服务器</code>间接对接了远程MCP服务。</p>\n<p>💡通俗的打个比方就很容易理解了：你和快递。</p>\n<blockquote>\n<p><strong>你</strong>在网上买了件快递，快递走了x通长途跋涉从<strong>远方仓库</strong>送到了——<strong>快递柜</strong>，而不是你的手里……<br>于是你下班后赶忙跑去快递柜打开柜门，终于拿到了你的快递。</p>\n</blockquote>\n<pre><code>【你】--柜门交互--【快递柜】--物流网络--【远方仓库】\n</code></pre>\n<ul>\n<li>【你】-&gt;【MCP客户端】</li>\n<li>【快递柜】-&gt;【本地代理进程】</li>\n<li>【本地代理进程】-&gt;【MCP远程服务器】</li>\n</ul>\n<p>🧐这下理解多了。</p>\n<p>那么其实“本地”的概念指的是<strong>通信范围</strong><del>，而非服务位置</del>。就像是通过了本地代理进程中转，STDIO可以间接对接远程服务，但其实STDIO本身的通信范围始终是本地。</p>\n",
@@ -15,8 +15,8 @@
             ]
         },
         {
-            "id": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/",
-            "url": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/",
+            "id": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/",
+            "url": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/",
             "title": "TIPS💡 ⋮ python虚拟环境",
             "date_published": "2025-08-24T08:30:09.000Z",
             "content_html": "<h3 id=\"创建虚拟环境\"><a href=\"#创建虚拟环境\" class=\"headerlink\" title=\"创建虚拟环境\"></a>创建虚拟环境</h3><pre><code>python -m venv 起的名\n</code></pre>\n<h3 id=\"进入虚拟环境\"><a href=\"#进入虚拟环境\" class=\"headerlink\" title=\"进入虚拟环境\"></a>进入虚拟环境</h3><pre><code>.\\起的名\\Scripts\\Activate.ps1\n</code></pre>\n<h3 id=\"退出虚拟环境\"><a href=\"#退出虚拟环境\" class=\"headerlink\" title=\"退出虚拟环境\"></a>退出虚拟环境</h3><pre><code>deactivate\n</code></pre>\n",
@@ -25,8 +25,8 @@
             ]
         },
         {
-            "id": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/",
-            "url": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/",
+            "id": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/",
+            "url": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/",
             "title": "TIPS💡 ⋮ MCP的“C”",
             "date_published": "2025-08-24T08:30:08.000Z",
             "content_html": "<p>应用MCP<code>(Model Context Protocol)</code>以来，一直对其中的”Context：上下文”抱有疑问。<br>🧐MCP作为大模型调用外部工具的标准化协议，和大模型本身的上下文能有什么关系？</p>\n<h3 id=\"“上下文”是什么\"><a href=\"#“上下文”是什么\" class=\"headerlink\" title=\"“上下文”是什么\"></a>“上下文”是什么</h3><blockquote>\n<p>我们知道，大模型高度依赖历史对话、环境信息、用户偏好……那么这些因素其实都是“上下文”。</p>\n</blockquote>\n<p>传统的大模型与外部工具&#x2F;数据源的集成存在显著痛点:</p>\n<ul>\n<li>每个模型与每个工具&#x2F;数据源需要单独做适配</li>\n<li>工具返回的数据无法被模型自然整合</li>\n<li>安全问题</li>\n</ul>\n<h3 id=\"MCP的“使命”\"><a href=\"#MCP的“使命”\" class=\"headerlink\" title=\"MCP的“使命”\"></a>MCP的“使命”</h3><p>而MCP的使命正是让不同来源、格式的上下文能被标准化地提取、传输和注入大模型的推理过程中，避免了其上下文断裂或重复开发的适配成本消耗。<br>MCP通信机制可以理解简单为：</p>\n<ul>\n<li>Client与Server间使用JSON-RPC 2.0进行消息传输</li>\n<li>MCP服务器返回的上下文额外附带元信息</li>\n<li>协议握手</li>\n</ul>\n<h3 id=\"👇\"><a href=\"#👇\" class=\"headerlink\" title=\"👇\"></a>👇</h3><p>简而言之，MCP 不是简单的工具调用接口，而是<strong>模型与现实世界之间的上下文桥梁</strong>—— 它让工具调用成为上下文获取的手段，而非目的本身。通过标准化上下文交互，它消除了重复开发的负担，提升了模型的决策能力，并为大模型从 “对话机器人” 进化为<strong>能处理真实任务的智能代理</strong>奠定了基础。</p>\n<p>MCP 之所以叫 “模型上下文协议”，是因为它将<strong>大模型所需的一切背景信息、知识和工具能力统称为上下文</strong>，并通过标准化的接口协议解决如何高效、安全、智能地将这些上下文传递给模型，使其在现实场景中真正 “知情达意”，而不仅仅是触发工具执行指令。这种设计让模型真正具备了结合外部世界动态信息进行推理和行动的能力，是其成为 AI 生态基础设施的关键所在。</p>\n",
@@ -35,8 +35,8 @@
             ]
         },
         {
-            "id": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/",
-            "url": "https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/",
+            "id": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/",
+            "url": "https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/",
             "title": "TIPS💡 ⋮ 关于requirements.txt",
             "date_published": "2025-08-24T08:30:07.000Z",
             "content_html": "<p>工作时发自己写的python项目但没注意依赖库这个问题😶后来发现requirements.txt是个好玩意。于是记录在这里备忘一下方便copy：</p>\n<blockquote>\n<p>以下命令已成功运行于<strong>Win11</strong> VSCode Powershell</p>\n</blockquote>\n<h3 id=\"生成requirements-txt\"><a href=\"#生成requirements-txt\" class=\"headerlink\" title=\"生成requirements.txt\"></a>生成requirements.txt</h3><ol>\n<li><code>pip install pipreqs</code></li>\n<li><code>pipreqs ./ --encoding=utf8  --force</code></li>\n</ol>\n<h3 id=\"使用requirements-txt\"><a href=\"#使用requirements-txt\" class=\"headerlink\" title=\"使用requirements.txt\"></a>使用requirements.txt</h3><p><code>pip install -r requirements.txt</code></p>\n",

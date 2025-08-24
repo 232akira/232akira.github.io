@@ -4,20 +4,20 @@
     <title>Per aspera ad astra • Posts by &#34;指南&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-08-24T08:30:06.000Z</updated>
+    <category term="记录" />
+    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
-    <category term="记录" />
     <category term="备忘录" />
     <category term="AI" />
+    <category term="指南" />
     <category term="案例" />
     <category term="笔记" />
-    <category term="TIPS" />
-    <category term="指南" />
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</id>
         <title>指南🧭 ⋮ PKMer Market安装</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;最近在用Obsidian搭建自己的知识库。工作学习以来长时间接受各方面大量信息，光靠生物脑容量已经不够用了😫&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -46,9 +46,9 @@
         <updated>2025-08-24T08:30:06.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</id>
         <title>指南🧭 ⋮ Obsidian Git同步</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/"/>
         <content type="html">&lt;p&gt;这里假设你用&lt;code&gt;A设备&lt;/code&gt;写Obsidian笔记，并想要在&lt;code&gt;B设备&lt;/code&gt;上拉取笔记内容。&lt;a href=&#34;https://zhuanlan.zhihu.com/p/657663584&#34;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;在A设备上&#34;&gt;&lt;a href=&#34;#在A设备上&#34; class=&#34;headerlink&#34; title=&#34;在A设备上&#34;&gt;&lt;/a&gt;在A设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;a href=&#34;#1️⃣初始化本地Git仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;/a&gt;1️⃣初始化本地Git仓库&lt;/h3&gt;&lt;h4 id=&#34;安装Git&#34;&gt;&lt;a href=&#34;#安装Git&#34; class=&#34;headerlink&#34; title=&#34;安装Git&#34;&gt;&lt;/a&gt;安装&lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;官网下载&lt;/li&gt;
@@ -105,9 +105,9 @@ git push # 推送本地更改
         <updated>2025-08-24T08:30:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</id>
+        <id>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</id>
         <title>指南🧭 ⋮ API Key导入</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;在调用模型服务时需要配置对应平台的API Key，但直接将API Key硬编码在代码中是个非常危险且不推荐的行为！！！&lt;/p&gt;
 &lt;p&gt;因此关于Python项目中API Key的几种导入方法，简单归个类👇&lt;br&gt;&lt;em&gt;&lt;code&gt;（Windows11）&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;

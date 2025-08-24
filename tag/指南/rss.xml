@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Sun, 24 Aug 2025 16:30:06 +0800</pubDate>
         <lastBuildDate>Sun, 24 Aug 2025 16:30:06 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>专题</category>
-        <category>记录</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>指南</category>
         <category>案例</category>
         <category>笔记</category>
-        <category>TIPS</category>
-        <category>指南</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</guid>
             <title>指南🧭 ⋮ PKMer Market安装</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</link>
+            <link>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</link>
             <category>指南</category>
             <pubDate>Sun, 24 Aug 2025 16:30:06 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
@@ -49,9 +49,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</guid>
             <title>指南🧭 ⋮ Obsidian Git同步</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</link>
+            <link>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</link>
             <category>指南</category>
             <pubDate>Sun, 24 Aug 2025 16:30:05 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;这里假设你用&lt;code&gt;A设备&lt;/code&gt;写Obsidian笔记，并想要在&lt;code&gt;B设备&lt;/code&gt;上拉取笔记内容。&lt;a href=&#34;https://zhuanlan.zhihu.com/p/657663584&#34;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
@@ -108,9 +108,9 @@ git push # 推送本地更改
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</guid>
             <title>指南🧭 ⋮ API Key导入</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</link>
+            <link>https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</link>
             <category>指南</category>
             <pubDate>Sun, 24 Aug 2025 16:30:04 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;

@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Sun, 24 Aug 2025 16:30:03 +0800</pubDate>
         <lastBuildDate>Sun, 24 Aug 2025 16:30:03 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>专题</category>
-        <category>记录</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>指南</category>
         <category>案例</category>
         <category>笔记</category>
-        <category>TIPS</category>
-        <category>指南</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</guid>
             <title>笔记🗒️ ⋮ MCP（Model Context Protocol）</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</link>
+            <link>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</link>
             <category>笔记</category>
             <pubDate>Sun, 24 Aug 2025 16:30:03 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;应用背景&#34;&gt;&lt;a href=&#34;#应用背景&#34; class=&#34;headerlink&#34; title=&#34;应用背景&#34;&gt;&lt;/a&gt;应用背景&lt;/h2&gt;&lt;blockquote&gt;
@@ -63,9 +63,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</guid>
             <title>笔记🗒️ ⋮ LangChain</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</link>
+            <link>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</link>
             <category>笔记</category>
             <pubDate>Sun, 24 Aug 2025 16:30:02 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;定义&#34;&gt;&lt;a href=&#34;#定义&#34; class=&#34;headerlink&#34; title=&#34;定义&#34;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LangChain是一个&lt;/strong&gt;用于开发由语言模型驱动的应用程序的&lt;strong&gt;框架&lt;/strong&gt;。&lt;/p&gt;
@@ -78,9 +78,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</guid>
             <title>笔记🗒️ ⋮ AI Agent</title>
-            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</link>
+            <link>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</link>
             <category>笔记</category>
             <pubDate>Sun, 24 Aug 2025 16:30:01 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;Agent&#34;&gt;&lt;a href=&#34;#Agent&#34; class=&#34;headerlink&#34; title=&#34;Agent&#34;&gt;&lt;/a&gt;Agent&lt;/h2&gt;&lt;p&gt;智能体（Agent）更具备“人类”的思维方式，可以识别任务的需求分析、执行规划和问题决策。&lt;/p&gt;
@@ -102,9 +102,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
             <title>笔记1️⃣ ⋮ 游戏开发</title>
-            <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+            <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
             <category>笔记</category>
             <pubDate>Sun, 06 Apr 2025 22:22:22 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;

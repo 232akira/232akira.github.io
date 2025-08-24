@@ -4,20 +4,20 @@
     <title>Per aspera ad astra • Posts by &#34;备忘录&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-06-16T02:10:30.000Z</updated>
+    <category term="记录" />
+    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
-    <category term="记录" />
     <category term="备忘录" />
     <category term="AI" />
+    <category term="指南" />
     <category term="案例" />
     <category term="笔记" />
-    <category term="TIPS" />
-    <category term="指南" />
     <entry>
-        <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
+        <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
         <title>备忘录 ⋮ 案例</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/"/>
         <content type="html">&lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
 &lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;记录的文章会以&lt;code&gt;【实战x-x】&lt;/code&gt;的方式作为开头。&lt;/li&gt;
@@ -63,9 +63,9 @@
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</id>
+        <id>https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/</id>
         <title>备忘录 ⋮ 力扣</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/03/02/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/"/>
         <content type="html">&lt;p&gt;一些问题总结和标签比较杂、没有分类的题目会放到这篇。&lt;/p&gt;
 &lt;h1 id=&#34;基础算法问题&#34;&gt;&lt;a href=&#34;#基础算法问题&#34; class=&#34;headerlink&#34; title=&#34;基础算法问题&#34;&gt;&lt;/a&gt;基础算法问题&lt;/h1&gt;&lt;p&gt;这些题听着老熟了，一到写起来就主打一个略有耳闻🫠&lt;/p&gt;
 &lt;h2 id=&#34;题目一览&#34;&gt;&lt;a href=&#34;#题目一览&#34; class=&#34;headerlink&#34; title=&#34;题目一览&#34;&gt;&lt;/a&gt;题目一览&lt;/h2&gt;&lt;p&gt;省流表👇️&lt;/p&gt;
