@@ -3,7 +3,7 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;笔记&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-04-06T14:22:22.000Z</updated>
+    <updated>2025-08-24T08:30:03.000Z</updated>
     <category term="力扣" />
     <category term="算法" />
     <category term="专题" />
@@ -12,6 +12,92 @@
     <category term="AI" />
     <category term="案例" />
     <category term="笔记" />
+    <category term="TIPS" />
+    <category term="指南" />
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/</id>
+        <title>笔记🗒️ ⋮ MCP（Model Context Protocol）</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/"/>
+        <content type="html">&lt;h2 id=&#34;应用背景&#34;&gt;&lt;a href=&#34;#应用背景&#34; class=&#34;headerlink&#34; title=&#34;应用背景&#34;&gt;&lt;/a&gt;应用背景&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;你是否向大模型提问过：“现在几点了？”“我这里的天气怎么样？”的问题？那么它能够正确回答吗？&lt;/p&gt;
+&lt;p&gt;目前来看——一般会回答错误。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;当下，LLM的能力早已不局限于“文本生成”，而是能够通过外部工具的调用变得“手眼通天”：脱离原有的封闭环境，获得了&lt;strong&gt;与外部环境交互&lt;/strong&gt;的能力。&lt;/p&gt;
+&lt;p&gt;相当于给大模型加上了手脚🧐&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;与外部环境交互&lt;/strong&gt;通过&lt;code&gt;MCP&lt;/code&gt;进行工具调用的规范化，通过&lt;code&gt;A2A&lt;/code&gt;实现Agent与Agent之间交互的规范化。&lt;/p&gt;
+&lt;h2 id=&#34;Function-Calling-MCP&#34;&gt;&lt;a href=&#34;#Function-Calling-MCP&#34; class=&#34;headerlink&#34; title=&#34;Function Calling-&amp;gt;MCP&#34;&gt;&lt;/a&gt;Function Calling-&amp;gt;MCP&lt;/h2&gt;&lt;p&gt;工具调用基于&lt;code&gt;function calling&lt;/code&gt;实现并被广泛用于商业API交互，目前国产的主流LLM大多已支持。&lt;br&gt;而Ahthropic推出的&lt;strong&gt;MCP&lt;/strong&gt;（Model Context Protocol）正是针对“工具调用接口的规范化”应运而生的协议。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;调用的过程其实是让大模型理解我们需求的过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里按个人理解写一下MCP应用流程：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;用户通过配置MCP服务-&amp;gt;提供工具调用的相关函数及其对应的传参要求，
+
+模型在
+  - 理解用户需求
+  - 学会函数对应参数的攥写格式
+的基础上，
+判断函数是否调用、如何调用、拿到返回的结果后如何分析。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Function Calling和MCP是当前技术落地的核心方式。前者侧重模型原生能力，后者强调协议标准化。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么AI Agent（人工智能代理&amp;#x2F;智能体）则为更高阶的形态，其融合了自主决策+工具调用，能够更加适用于复杂场景。&lt;/p&gt;
+&lt;h2 id=&#34;MCP-A2A&#34;&gt;&lt;a href=&#34;#MCP-A2A&#34; class=&#34;headerlink&#34; title=&#34;MCP-&amp;gt;A2A&#34;&gt;&lt;/a&gt;MCP-&amp;gt;A2A&lt;/h2&gt;&lt;p&gt;若再视野拓展至MAS（Multi-Agent Systems）的多智能体系统协作领域，我们就不能不提起&lt;strong&gt;A2A&lt;/strong&gt;（Agent-to-Agent Protocol,代理间通信协议）。&lt;/p&gt;
+&lt;p&gt;到这里可以将上文提到的三个概念搭建为三层级的技术栈模型：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;       【A2A】         // Agent与Agent~协作网络
+          ↑
+       【MCP】         // Agent与工具~资源与会话管理
+          ↑
+ 【Function Calling】  //模型原生能力
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Google将A2A比作互联网早期的HTTP协议&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1916821381879931822&#34;&gt;(7 封私信) 深度研究报告：大模型工具调用（Tool-use）的技术演进与协议生态分析 - 知乎&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/hwhsong/article/details/147244842&#34;&gt;【AI学习】大模型调用外部工具的主流方式对比_大模型工具调用-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-08-24T08:30:03.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/</id>
+        <title>笔记🗒️ ⋮ LangChain</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/"/>
+        <content type="html">&lt;h2 id=&#34;定义&#34;&gt;&lt;a href=&#34;#定义&#34; class=&#34;headerlink&#34; title=&#34;定义&#34;&gt;&lt;/a&gt;定义&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;LangChain是一个&lt;/strong&gt;用于开发由语言模型驱动的应用程序的&lt;strong&gt;框架&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;如何工作&#34;&gt;&lt;a href=&#34;#如何工作&#34; class=&#34;headerlink&#34; title=&#34;如何工作&#34;&gt;&lt;/a&gt;如何工作&lt;/h2&gt;&lt;h3 id=&#34;核心组件&#34;&gt;&lt;a href=&#34;#核心组件&#34; class=&#34;headerlink&#34; title=&#34;核心组件&#34;&gt;&lt;/a&gt;核心组件&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Compents&lt;/li&gt;
+&lt;li&gt;Chains&lt;/li&gt;
+&lt;li&gt;Agents&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://python.langchain.com/docs/get_started/introduction&#34;&gt;https://python.langchain.com/docs/get_started/introduction&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-08-24T08:30:02.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</id>
+        <title>笔记🗒️ ⋮ AI Agent</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/"/>
+        <content type="html">&lt;h2 id=&#34;Agent&#34;&gt;&lt;a href=&#34;#Agent&#34; class=&#34;headerlink&#34; title=&#34;Agent&#34;&gt;&lt;/a&gt;Agent&lt;/h2&gt;&lt;p&gt;智能体（Agent）更具备“人类”的思维方式，可以识别任务的需求分析、执行规划和问题决策。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基于LLM驱动的Agent基本框架：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;![[SVG-1-Agent.svg]]&lt;/p&gt;
+&lt;h2 id=&#34;Agentic-LLMs&#34;&gt;&lt;a href=&#34;#Agentic-LLMs&#34; class=&#34;headerlink&#34; title=&#34;Agentic LLMs&#34;&gt;&lt;/a&gt;Agentic LLMs&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;在使用魔搭社区的&lt;a href=&#34;https://modelscope.cn/studios/modelscope/mcp-playground&#34;&gt;MCP Playground · 创空间&lt;/a&gt;时，看到实验场用的是Qwen3-Coder-480B-A35B-Instruct &lt;code&gt;Agentic 大模型&lt;/code&gt;，所以就好奇Agentic大模型是什么个概念🧐&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;代理型大语言模型（Agent LLMs）是指能够作为智能体（Agent）行动的大语言模型，具备推理、行动和交互的能力。&lt;/p&gt;
+&lt;h2 id=&#34;ReAct&#34;&gt;&lt;a href=&#34;#ReAct&#34; class=&#34;headerlink&#34; title=&#34;ReAct&#34;&gt;&lt;/a&gt;ReAct&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://react-lm.github.io/&#34;&gt;https://react-lm.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/678046050&#34;&gt;7000长文：一文读懂Agent，大模型的下一站 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/2401_84204207/article/details/147516308&#34;&gt;380篇文献！首份Agentic大模型最新技术综述_agentic+llm-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/2532014&#34;&gt;【科普篇】LLM、GPT、AIGC、AI Agent、Agentic AI 到底是个啥？-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-08-24T08:30:01.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</id>
         <title>笔记1️⃣ ⋮ 游戏开发</title>

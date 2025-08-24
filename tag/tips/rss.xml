@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Per aspera ad astra • Posts by &#34;tips&#34; tag</title>
+        <link>https://232akira.github.io</link>
+        <description>欢迎交流学习!</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 24 Aug 2025 16:30:10 +0800</pubDate>
+        <lastBuildDate>Sun, 24 Aug 2025 16:30:10 +0800</lastBuildDate>
+        <category>力扣</category>
+        <category>算法</category>
+        <category>专题</category>
+        <category>记录</category>
+        <category>备忘录</category>
+        <category>AI</category>
+        <category>案例</category>
+        <category>笔记</category>
+        <category>TIPS</category>
+        <category>指南</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</guid>
+            <title>TIPS💡 ⋮ STDIO的“本地”</title>
+            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</link>
+            <category>TIPS</category>
+            <pubDate>Sun, 24 Aug 2025 16:30:10 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;关于MCP（模型上下文协议，Model Context Protocol）服务器传输方式中的STDIO👉一开始对其“只能用于本地进程间通信”的定义抱有疑问。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因为实际应用场景中，我们常见的12306、飞常准等等很多Host MCP Server都支持以STDIO方式接入，但是它们的服务器代码也不在本地啊？&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;豆包在这里解释的特别清楚👇&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;上面所提到的MCP Server连接确实需要联网，但STDIO也确实不具备网络传输能力。因为它的配置是如下的“组合模式”&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;也就是说，STDIO的传输作用于&lt;code&gt;客户端&lt;/code&gt;与&lt;code&gt;本地代理进程&lt;/code&gt;的本地管道，相当于通过&lt;code&gt;本地代理进程&lt;/code&gt;与&lt;code&gt;远程服务器&lt;/code&gt;间接对接了远程MCP服务。&lt;/p&gt;
+&lt;p&gt;💡通俗的打个比方就很容易理解了：你和快递。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;你&lt;/strong&gt;在网上买了件快递，快递走了x通长途跋涉从&lt;strong&gt;远方仓库&lt;/strong&gt;送到了——&lt;strong&gt;快递柜&lt;/strong&gt;，而不是你的手里……&lt;br&gt;于是你下班后赶忙跑去快递柜打开柜门，终于拿到了你的快递。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;【你】--柜门交互--【快递柜】--物流网络--【远方仓库】
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;【你】-&amp;gt;【MCP客户端】&lt;/li&gt;
+&lt;li&gt;【快递柜】-&amp;gt;【本地代理进程】&lt;/li&gt;
+&lt;li&gt;【本地代理进程】-&amp;gt;【MCP远程服务器】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🧐这下理解多了。&lt;/p&gt;
+&lt;p&gt;那么其实“本地”的概念指的是&lt;strong&gt;通信范围&lt;/strong&gt;&lt;del&gt;，而非服务位置&lt;/del&gt;。就像是通过了本地代理进程中转，STDIO可以间接对接远程服务，但其实STDIO本身的通信范围始终是本地。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+            <title>TIPS💡 ⋮ python虚拟环境</title>
+            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+            <category>TIPS</category>
+            <pubDate>Sun, 24 Aug 2025 16:30:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;python -m venv 起的名
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;.\起的名\Scripts\Activate.ps1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;退出虚拟环境&#34;&gt;&lt;a href=&#34;#退出虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;退出虚拟环境&#34;&gt;&lt;/a&gt;退出虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</guid>
+            <title>TIPS💡 ⋮ MCP的“C”</title>
+            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/</link>
+            <category>TIPS</category>
+            <pubDate>Sun, 24 Aug 2025 16:30:08 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;应用MCP&lt;code&gt;(Model Context Protocol)&lt;/code&gt;以来，一直对其中的”Context：上下文”抱有疑问。&lt;br&gt;🧐MCP作为大模型调用外部工具的标准化协议，和大模型本身的上下文能有什么关系？&lt;/p&gt;
+&lt;h3 id=&#34;“上下文”是什么&#34;&gt;&lt;a href=&#34;#“上下文”是什么&#34; class=&#34;headerlink&#34; title=&#34;“上下文”是什么&#34;&gt;&lt;/a&gt;“上下文”是什么&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;我们知道，大模型高度依赖历史对话、环境信息、用户偏好……那么这些因素其实都是“上下文”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;传统的大模型与外部工具&amp;#x2F;数据源的集成存在显著痛点:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个模型与每个工具&amp;#x2F;数据源需要单独做适配&lt;/li&gt;
+&lt;li&gt;工具返回的数据无法被模型自然整合&lt;/li&gt;
+&lt;li&gt;安全问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;MCP的“使命”&#34;&gt;&lt;a href=&#34;#MCP的“使命”&#34; class=&#34;headerlink&#34; title=&#34;MCP的“使命”&#34;&gt;&lt;/a&gt;MCP的“使命”&lt;/h3&gt;&lt;p&gt;而MCP的使命正是让不同来源、格式的上下文能被标准化地提取、传输和注入大模型的推理过程中，避免了其上下文断裂或重复开发的适配成本消耗。&lt;br&gt;MCP通信机制可以理解简单为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client与Server间使用JSON-RPC 2.0进行消息传输&lt;/li&gt;
+&lt;li&gt;MCP服务器返回的上下文额外附带元信息&lt;/li&gt;
+&lt;li&gt;协议握手&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;👇&#34;&gt;&lt;a href=&#34;#👇&#34; class=&#34;headerlink&#34; title=&#34;👇&#34;&gt;&lt;/a&gt;👇&lt;/h3&gt;&lt;p&gt;简而言之，MCP 不是简单的工具调用接口，而是&lt;strong&gt;模型与现实世界之间的上下文桥梁&lt;/strong&gt;—— 它让工具调用成为上下文获取的手段，而非目的本身。通过标准化上下文交互，它消除了重复开发的负担，提升了模型的决策能力，并为大模型从 “对话机器人” 进化为&lt;strong&gt;能处理真实任务的智能代理&lt;/strong&gt;奠定了基础。&lt;/p&gt;
+&lt;p&gt;MCP 之所以叫 “模型上下文协议”，是因为它将&lt;strong&gt;大模型所需的一切背景信息、知识和工具能力统称为上下文&lt;/strong&gt;，并通过标准化的接口协议解决如何高效、安全、智能地将这些上下文传递给模型，使其在现实场景中真正 “知情达意”，而不仅仅是触发工具执行指令。这种设计让模型真正具备了结合外部世界动态信息进行推理和行动的能力，是其成为 AI 生态基础设施的关键所在。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</guid>
+            <title>TIPS💡 ⋮ 关于requirements.txt</title>
+            <link>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Erequirements.txt/</link>
+            <category>TIPS</category>
+            <pubDate>Sun, 24 Aug 2025 16:30:07 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;工作时发自己写的python项目但没注意依赖库这个问题😶后来发现requirements.txt是个好玩意。于是记录在这里备忘一下方便copy：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以下命令已成功运行于&lt;strong&gt;Win11&lt;/strong&gt; VSCode Powershell&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;生成requirements-txt&#34;&gt;&lt;a href=&#34;#生成requirements-txt&#34; class=&#34;headerlink&#34; title=&#34;生成requirements.txt&#34;&gt;&lt;/a&gt;生成requirements.txt&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pip install pipreqs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pipreqs ./ --encoding=utf8  --force&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;使用requirements-txt&#34;&gt;&lt;a href=&#34;#使用requirements-txt&#34; class=&#34;headerlink&#34; title=&#34;使用requirements.txt&#34;&gt;&lt;/a&gt;使用requirements.txt&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

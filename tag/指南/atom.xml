@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://232akira.github.io</id>
+    <title>Per aspera ad astra • Posts by &#34;指南&#34; tag</title>
+    <link href="https://232akira.github.io" />
+    <updated>2025-08-24T08:30:06.000Z</updated>
+    <category term="力扣" />
+    <category term="算法" />
+    <category term="专题" />
+    <category term="记录" />
+    <category term="备忘录" />
+    <category term="AI" />
+    <category term="案例" />
+    <category term="笔记" />
+    <category term="TIPS" />
+    <category term="指南" />
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</id>
+        <title>指南🧭 ⋮ PKMer Market安装</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;最近在用Obsidian搭建自己的知识库。工作学习以来长时间接受各方面大量信息，光靠生物脑容量已经不够用了😫&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么拓展Obsidian的更多功能，如编辑增强、交互优化、绘图工具和文献管理等等，大多都可以通过配置相应的插件来实现。&lt;/p&gt;
+&lt;p&gt;国内用PKMer Market安装就很舒适（非广！），两步走即可👇&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;访问&lt;a href=&#34;https://pkmer.cn/products/market/&#34;&gt;PKMer_PKMer 插件主题市场&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在其官网下载zip包后参考&lt;a href=&#34;https://pkmer.cn/Pkmer-Docs/10-obsidian/obsidian%E7%A4%BE%E5%8C%BA%E6%8F%92%E4%BB%B6/pkmer-market/pkmer%E6%8F%92%E4%BB%B6%E7%94%B5%E8%84%91%E7%AB%AF%E5%AE%89%E8%A3%85%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E7%A8%8B/&#34;&gt;教程&lt;/a&gt;进行手动安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考👉&lt;a href=&#34;https://blog.csdn.net/sinat_32525917/article/details/149714238&#34;&gt;此链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我安装的第三方插件如下：(在&lt;code&gt;设置&lt;/code&gt;-&amp;gt;&lt;code&gt;选项&lt;/code&gt;-&amp;gt;&lt;code&gt;第三方插件&lt;/code&gt;查看)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Calendar(Beta)&lt;/li&gt;
+&lt;li&gt;Dataview&lt;/li&gt;
+&lt;li&gt;Diagrams&lt;/li&gt;
+&lt;li&gt;Editing Toolbar&lt;/li&gt;
+&lt;li&gt;Emoji Toolbar&lt;/li&gt;
+&lt;li&gt;ExcaliBrain&lt;/li&gt;
+&lt;li&gt;Excalidraw&lt;/li&gt;
+&lt;li&gt;PKMer&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="指南" />
+        <updated>2025-08-24T08:30:06.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/</id>
+        <title>指南🧭 ⋮ Obsidian Git同步</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/"/>
+        <content type="html">&lt;p&gt;这里假设你用&lt;code&gt;A设备&lt;/code&gt;写Obsidian笔记，并想要在&lt;code&gt;B设备&lt;/code&gt;上拉取笔记内容。&lt;a href=&#34;https://zhuanlan.zhihu.com/p/657663584&#34;&gt;参考链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;在A设备上&#34;&gt;&lt;a href=&#34;#在A设备上&#34; class=&#34;headerlink&#34; title=&#34;在A设备上&#34;&gt;&lt;/a&gt;在A设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;a href=&#34;#1️⃣初始化本地Git仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣初始化本地Git仓库&#34;&gt;&lt;/a&gt;1️⃣初始化本地Git仓库&lt;/h3&gt;&lt;h4 id=&#34;安装Git&#34;&gt;&lt;a href=&#34;#安装Git&#34; class=&#34;headerlink&#34; title=&#34;安装Git&#34;&gt;&lt;/a&gt;安装&lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;官网下载&lt;/li&gt;
+&lt;li&gt;默认配置安装&lt;/li&gt;
+&lt;li&gt;打开命令行git bash here&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;在Obsidian仓库中初始化Git&#34;&gt;&lt;a href=&#34;#在Obsidian仓库中初始化Git&#34; class=&#34;headerlink&#34; title=&#34;在Obsidian仓库中初始化Git&#34;&gt;&lt;/a&gt;在Obsidian仓库中初始化Git&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1. 进入你的本地Obsidian库文件夹&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里建议资源管理器跳转到对应目录，在地址栏直接输入cmd+回车打开终端即可。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;cd /path/to/your/ObsidianVault
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;2. 初始化Git仓库&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;a href=&#34;#2️⃣连接远程Github仓库&#34; class=&#34;headerlink&#34; title=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;/a&gt;2️⃣连接远程Github仓库&lt;/h3&gt;&lt;h4 id=&#34;在你的Github上创建新仓库&#34;&gt;&lt;a href=&#34;#在你的Github上创建新仓库&#34; class=&#34;headerlink&#34; title=&#34;在你的Github上创建新仓库&#34;&gt;&lt;/a&gt;在你的Github上创建新仓库&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1. 登录&lt;/strong&gt;你的Github账号&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. New Repository&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置仓库名，例如&lt;code&gt;MyObsidianVault&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Private&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;不要勾选&lt;code&gt;Initialize with README&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;将本地仓库推送到Github&#34;&gt;&lt;a href=&#34;#将本地仓库推送到Github&#34; class=&#34;headerlink&#34; title=&#34;将本地仓库推送到Github&#34;&gt;&lt;/a&gt;将本地仓库推送到Github&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;在上一个步骤的Obsidian笔记目录下（.git隐藏文件所在根目录）cmd进入终端&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;关联你的远程仓库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/你的用户名/你的仓库名.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;添加所有文件并提交&#34;&gt;&lt;a href=&#34;#添加所有文件并提交&#34; class=&#34;headerlink&#34; title=&#34;添加所有文件并提交&#34;&gt;&lt;/a&gt;添加所有文件并提交&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;日常同步仅用以下三步即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;你的更新日志&amp;quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;在B设备上&#34;&gt;&lt;a href=&#34;#在B设备上&#34; class=&#34;headerlink&#34; title=&#34;在B设备上&#34;&gt;&lt;/a&gt;在B设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣克隆仓库&#34;&gt;&lt;a href=&#34;#1️⃣克隆仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣克隆仓库&#34;&gt;&lt;/a&gt;1️⃣克隆仓库&lt;/h3&gt;&lt;p&gt;进入你想要放置笔记文件的目录下，依旧地址栏cmd打开终端&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/你的用户名/你的仓库名.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;a href=&#34;#2️⃣Obsidian打开克隆的文件夹&#34; class=&#34;headerlink&#34; title=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;/a&gt;2️⃣Obsidian打开克隆的文件夹&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;左边栏点击&lt;code&gt;打开命令面板&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;打开其他仓库&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;链接到刚刚Clone的目录即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3️⃣同步更新&#34;&gt;&lt;a href=&#34;#3️⃣同步更新&#34; class=&#34;headerlink&#34; title=&#34;3️⃣同步更新&#34;&gt;&lt;/a&gt;3️⃣同步更新&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;git pull #拉取最新更改
+git push # 推送本地更改
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;经过以上简易快速的手动同步方式，你已经完成了Obsidian在github仓库上的同步。&lt;br&gt;🆗可以在任何时候在Github官网登录账号，点击&lt;code&gt;Your repositories&lt;/code&gt;进入你私有的仓库查看同步笔记内容。&lt;/p&gt;
+</content>
+        <category term="指南" />
+        <updated>2025-08-24T08:30:05.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/</id>
+        <title>指南🧭 ⋮ API Key导入</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;在调用模型服务时需要配置对应平台的API Key，但直接将API Key硬编码在代码中是个非常危险且不推荐的行为！！！&lt;/p&gt;
+&lt;p&gt;因此关于Python项目中API Key的几种导入方法，简单归个类👇&lt;br&gt;&lt;em&gt;&lt;code&gt;（Windows11）&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;系统环境变量-System-Environment-Variables&#34;&gt;&lt;a href=&#34;#系统环境变量-System-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;系统环境变量 (System Environment Variables)&#34;&gt;&lt;/a&gt;系统环境变量 (System Environment Variables)&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# cmd（需要管理员权限）
+setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot; /M
+
+# powershell（需要管理员权限）
+[Environment]::SetEnvironmentVariable(&amp;quot;XXX_API_KEY&amp;quot;, &amp;quot;your_api_key_here&amp;quot;, &amp;quot;Machine&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Win+S搜索-&amp;gt;&lt;strong&gt;编辑系统环境变量&lt;/strong&gt;-&amp;gt;手动添加变量&amp;amp;值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;变量：XXX_API_KEY&lt;/li&gt;
+&lt;li&gt;值：your_api_key_here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;管理员权限&lt;/li&gt;
+&lt;li&gt;全局生效（适用于所有用户）&lt;/li&gt;
+&lt;li&gt;重启终端后生效&lt;/li&gt;
+&lt;li&gt;适合生产环境或服务器部署&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;用户环境变量-User-Environment-Variables&#34;&gt;&lt;a href=&#34;#用户环境变量-User-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;用户环境变量 (User Environment Variables)&#34;&gt;&lt;/a&gt;用户环境变量 (User Environment Variables)&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# cmd（无需管理员权限）
+setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot;
+
+# powershell（无需管理员权限）
+[Environment]::SetEnvironmentVariable(&amp;quot;XXX_API_KEY&amp;quot;, &amp;quot;your_api_key_here&amp;quot;, &amp;quot;User&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Win+S搜索-&amp;gt;&lt;strong&gt;编辑账户的环境变量&lt;/strong&gt;-&amp;gt;手动添加变量&amp;amp;值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;变量：XXX_API_KEY&lt;/li&gt;
+&lt;li&gt;值：your_api_key_here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;无需管理员权限&lt;/li&gt;
+&lt;li&gt;只对当前用户生效&lt;/li&gt;
+&lt;li&gt;重启终端后生效&lt;/li&gt;
+&lt;li&gt;适合个人开发环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;会话环境变量-Session-Environment-Variables&#34;&gt;&lt;a href=&#34;#会话环境变量-Session-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;会话环境变量 (Session Environment Variables)&#34;&gt;&lt;/a&gt;会话环境变量 (Session Environment Variables)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# cmd
+set XXX_API_KEY=your_api_key_here
+
+# powershell
+$env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只在当前终端会话中有效&lt;/li&gt;
+&lt;li&gt;关闭终端后失效&lt;/li&gt;
+&lt;li&gt;无需重启终端，立即生效&lt;/li&gt;
+&lt;li&gt;适合临时测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;env-文件&#34;&gt;&lt;a href=&#34;#env-文件&#34; class=&#34;headerlink&#34; title=&#34;.env 文件&#34;&gt;&lt;/a&gt;.env 文件&lt;/h3&gt;&lt;p&gt;项目根目录下创建名为&lt;code&gt;.env&lt;/code&gt;的文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;XXX_API_KEY=your_api_key_here
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;无需管理员权限&lt;/li&gt;
+&lt;li&gt;项目级别隔离，不同项目可独立管理密钥&lt;/li&gt;
+&lt;li&gt;支持多环境配置（如&lt;code&gt;.env.local&lt;/code&gt;, &lt;code&gt;.env.production&lt;/code&gt;等）&lt;/li&gt;
+&lt;li&gt;通常被&lt;code&gt;.gitignore&lt;/code&gt;排除，安全性好&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;环境变量优先级（Python-dotenv）&#34;&gt;&lt;a href=&#34;#环境变量优先级（Python-dotenv）&#34; class=&#34;headerlink&#34; title=&#34;环境变量优先级（Python-dotenv）&#34;&gt;&lt;/a&gt;环境变量优先级（Python-dotenv）&lt;/h3&gt;&lt;p&gt;当使用python-dotenv加载环境变量时，变量的生效优先级如下：（从高到低）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;系统环境变量 (最高优先级)&lt;/li&gt;
+&lt;li&gt;用户环境变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;env&lt;/code&gt;文件中的变量&lt;/li&gt;
+&lt;li&gt;默认值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;即：进程总是取用当前环境中已存在的最高优先级的那个值。&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;💡需要注意：&lt;/strong&gt;&lt;br&gt;&lt;code&gt;python-dotenv&lt;/code&gt;的作用是将&lt;code&gt;.env&lt;/code&gt;文件中的变量&lt;strong&gt;注入&lt;/strong&gt;到当前 Python 进程的环境中，这个注入的环境&lt;strong&gt;并不会覆盖&lt;/strong&gt;系统或用户环境变量。&lt;br&gt;&lt;strong&gt;例如：&lt;/strong&gt;&lt;br&gt;某个变量（如 &lt;code&gt;XXX_API_KEY&lt;/code&gt;）已经在系统的环境变量中定义了，那么&lt;code&gt;python-dotenv&lt;/code&gt;从文件读取到的同名值会被忽略。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="指南" />
+        <updated>2025-08-24T08:30:04.000Z</updated>
+    </entry>
+</feed>
