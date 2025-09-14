@@ -3,7 +3,7 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-08-24T08:44:30.000Z</updated>
+    <updated>2025-09-14T13:39:03.000Z</updated>
     <category term="记录" />
     <category term="TIPS" />
     <category term="专题" />
@@ -15,9 +15,9 @@
     <category term="案例" />
     <category term="笔记" />
     <entry>
-        <id>https://232akira.github.io/2025/08/24/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
+        <id>https://232akira.github.io/2025/09/14/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/09/14/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
         <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -32,7 +32,63 @@
 &lt;/ul&gt;
 </content>
         <category term="记录" />
-        <updated>2025-08-24T08:44:30.000Z</updated>
+        <updated>2025-09-14T13:39:03.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/09/14/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</id>
+        <title>笔记🗒️ ⋮ 评论系统配置</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/09/14/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;先叨叨一下心路历程。一开始在死磕&lt;strong&gt;waline&lt;/strong&gt;的配置（+vercle），结果就是前端有评论模块，但是点击提交评论就会报错&lt;code&gt;Failed to fetch&lt;/code&gt;，历经多月绞尽脑汁最终惨败。&lt;br&gt;今天突发奇想换成&lt;strong&gt;twikoo&lt;/strong&gt;试一下，结果跟着官方教程一遍过了😭特别感动！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;本博客的美丽主题来自👉&lt;a href=&#34;https://github.com/theme-shoka-x/hexo-theme-shokaX&#34;&gt;ShokaX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;美丽主题的评论系统配置&lt;a href=&#34;https://docs.shokax.kaitaku.xyz/features/comments/&#34;&gt;戳此&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twikoo快速上手&lt;a href=&#34;https://twikoo.js.org/quick-start.html&#34;&gt;戳此&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;开始配置&#34;&gt;&lt;a href=&#34;#开始配置&#34; class=&#34;headerlink&#34; title=&#34;开始配置&#34;&gt;&lt;/a&gt;开始配置&lt;/h2&gt;&lt;p&gt;此博客用的是shokax官方推荐的&lt;code&gt;云函数部署&lt;/code&gt;-&amp;gt;&lt;code&gt;Vercel部署&lt;/code&gt;的方式。&lt;/p&gt;
+&lt;p&gt;主要在&lt;strong&gt;两个网站&lt;/strong&gt;上操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;MongoDB Atlas&lt;/code&gt;：云端数据库托管服务&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Vercel&lt;/code&gt;：云端部署平台&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;MongoDB Atlas&lt;/code&gt;、&lt;code&gt;Vercel&lt;/code&gt;、&lt;code&gt;用户评论&lt;/code&gt;&lt;strong&gt;三者的关系&lt;/strong&gt;可以理解为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;用户评论 -- Vercel --&amp;gt; MongoDB（长期保存）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;MongoDB-Atlas&#34;&gt;&lt;a href=&#34;#MongoDB-Atlas&#34; class=&#34;headerlink&#34; title=&#34;MongoDB Atlas&#34;&gt;&lt;/a&gt;MongoDB Atlas&lt;/h3&gt;&lt;p&gt;官方教程&lt;a href=&#34;https://twikoo.js.org/mongodb-atlas.html&#34;&gt;戳此&lt;/a&gt;。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册账号&lt;/li&gt;
+&lt;li&gt;新建数据库（区域选择AWS）&lt;/li&gt;
+&lt;li&gt;Database Access-&amp;gt;新建权限为Admin的用户并记住账号密码&lt;/li&gt;
+&lt;li&gt;Network Access-&amp;gt;添加网络白名单（0.0.0.0&amp;#x2F;0）&lt;/li&gt;
+&lt;li&gt;Database-&amp;gt;Connect-&amp;gt;Drivers&lt;/li&gt;
+&lt;li&gt;复制&lt;code&gt;数据库连接字符串&lt;/code&gt;（&lt;code&gt;&amp;lt;username&amp;gt;:&amp;lt;passname&amp;gt;&lt;/code&gt;修改为&lt;code&gt;用户名：密码&lt;/code&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;⚠注意替换用户名密码时把原尖括号删掉！！！&lt;/p&gt;
+&lt;h3 id=&#34;Vercel&#34;&gt;&lt;a href=&#34;#Vercel&#34; class=&#34;headerlink&#34; title=&#34;Vercel&#34;&gt;&lt;/a&gt;Vercel&lt;/h3&gt;&lt;p&gt;官方教程&lt;a href=&#34;https://twikoo.js.org/backend.html#vercel-%E9%83%A8%E7%BD%B2&#34;&gt;戳此&lt;/a&gt;。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册账号&lt;/li&gt;
+&lt;li&gt;将twikoo&lt;a href=&#34;https://vercel.com/import/project?template=https://github.com/twikoojs/twikoo/tree/main/src/server/vercel-min&#34;&gt;一键部署&lt;/a&gt;到vercel&lt;/li&gt;
+&lt;li&gt;进入你上一步部署的repo-&amp;gt;settings&lt;/li&gt;
+&lt;li&gt;settings-&amp;gt;Environment Variables-&amp;gt;添加环境变量（NAME:&lt;code&gt;MONGODB_URI&lt;/code&gt;；VALUE：&lt;code&gt;数据库连接字符串&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;弹窗-&amp;gt;Redeploy&lt;/li&gt;
+&lt;li&gt;settings-&amp;gt;Deployment Protection-&amp;gt;&lt;code&gt;Vercel Authentication&lt;/code&gt;设置为&lt;code&gt;Disabled&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;弹窗-&amp;gt;Redeploy&lt;/li&gt;
+&lt;li&gt;Overview-&amp;gt;visit-&amp;gt;Twikoo云函数运行正常&lt;/li&gt;
+&lt;li&gt;复制&lt;code&gt;visit跳转的网址&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;config-shokax-yml&#34;&gt;&lt;a href=&#34;#config-shokax-yml&#34; class=&#34;headerlink&#34; title=&#34;_config.shokax.yml&#34;&gt;&lt;/a&gt;_config.shokax.yml&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#twikoo评论配置
+twikoo:
+  enable: true # 是否开启
+  mode: vercel # vercel(私有部署) 或 tencent
+  envId: &amp;quot;visit跳转的网址&amp;quot; # twikoo 环境 ID,vercel 和私有部署填地址
+  region: # vercel 和私有部署不填，腾讯云见 twikoo 文档
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;评论系统就这样配好了！欢迎宝宝们友好交流！！o(&lt;em&gt;￣▽￣&lt;/em&gt;)ブ~♥&lt;/p&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-09-14T13:38:03.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</id>
@@ -1416,9 +1472,9 @@ public:
         <updated>2025-04-08T07:29:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</id>
+        <id>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</id>
         <title>笔记1️⃣ ⋮ 游戏开发</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B01%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
         <content type="html">&lt;p&gt;👌当下主要学习&lt;strong&gt;图形&lt;/strong&gt;方向，具体细节可以查看&lt;a href=&#34;https://docs.unity3d.com/cn/current/Manual/Graphics.html&#34;&gt;Unity官方文档&lt;/a&gt;。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;渲染管线
 摄像机
