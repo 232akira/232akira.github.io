@@ -3290,7 +3290,7 @@ use.stop-animation {
   padding: 0 2rem;
 }
 .md {
-  font-family: 'Noto Serif CJK', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Nunito Sans', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -3359,7 +3359,7 @@ use.stop-animation {
 .post header .meta {
   text-align: center;
   border-top: 0.0625rem dashed var(--grey-9-a1);
-  font-family: 'Noto Serif CJK', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Nunito Sans', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .post .meta {
   color: var(--grey-5);
@@ -3663,7 +3663,7 @@ use.stop-animation {
 .article .md .anchor::before,
 .article .md .anchor::after {
   content: "H";
-  font-family: 'Noto Serif CJK', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Nunito Sans', 'Kode Mono', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   left: -1.875rem;
   top: 1rem;
   width: 1.25rem;
@@ -5159,7 +5159,7 @@ use.stop-animation {
 pre,
 code,
 .code-container {
-  font-family: 'Source Code Pro', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Inconsolata', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
   font-size: 1em;
 }
 :not(td)>pre {
@@ -5886,7 +5886,7 @@ span.label {
   border-radius: 0.3rem;
   border: 0.0625rem solid;
   padding: 0.2rem 0.3rem;
-  font-family: 'Source Code Pro', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Inconsolata', consolas, Menlo, -apple-system, "PingFang SC", "Microsoft YaHei";
   font-size: 1em;
   background: var(--note-bg, var(--grey-2));
   border-color: var(--note-border, var(--grey-4));

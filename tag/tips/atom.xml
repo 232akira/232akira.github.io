@@ -4,16 +4,16 @@
     <title>Per aspera ad astra • Posts by &#34;tips&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-09-24T08:30:11.000Z</updated>
-    <category term="记录" />
     <category term="TIPS" />
+    <category term="记录" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
     <category term="备忘录" />
     <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
     <entry>
         <id>https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/</id>
         <title>TIPS💡 ⋮ args VS parm</title>
@@ -29,9 +29,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;D老师将二者类比为：做蛋糕的模具&lt;code&gt;parameter&lt;/code&gt;，和实际倒入的面糊&lt;code&gt;argument&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;函数参数&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 函数参数&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// name、times为parameters（形参）
 void greet(string name,int times)&amp;#123;
     for(int i=0;i&amp;lt;times;i++)&amp;#123;
@@ -43,9 +41,7 @@ int main()&amp;#123;
     greet(&amp;quot;KYC&amp;quot;,6)
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;模板参数&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;2. 模板参数&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// T为parameters（形参）
 template&amp;lt;class T&amp;gt;
 class Box&amp;#123;

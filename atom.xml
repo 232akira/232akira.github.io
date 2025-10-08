@@ -4,16 +4,16 @@
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
     <updated>2025-09-30T13:39:03.000Z</updated>
-    <category term="记录" />
     <category term="TIPS" />
+    <category term="记录" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
     <category term="备忘录" />
     <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
     <entry>
         <id>https://232akira.github.io/2025/09/30/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
@@ -35,6 +35,146 @@
         <updated>2025-09-30T13:39:03.000Z</updated>
     </entry>
     <entry>
+        <id>https://232akira.github.io/2025/09/29/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</id>
+        <title>笔记🗒️ ⋮ AI Agent</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/09/29/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/"/>
+        <content type="html">&lt;h3 id=&#34;Agent&#34;&gt;&lt;a href=&#34;#Agent&#34; class=&#34;headerlink&#34; title=&#34;Agent&#34;&gt;&lt;/a&gt;Agent&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;长期以来&lt;/strong&gt;，通用人工智能（Artificial General Intelligence，&lt;strong&gt;AGI&lt;/strong&gt;）&lt;strong&gt;一直被人类所追求&lt;/strong&gt;。&lt;br&gt;从1950年代Alan Turing的设想开始，Agent技术从早期的构想阶段逐渐成熟并落地，在2020年至今进入了爆发期——大模型Agent时代。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AI Agent&lt;/strong&gt;（Agent&amp;#x2F;代理&amp;#x2F;智能体…）更具备“人类”的思维方式，可以识别任务的需求分析、执行规划和问题决策。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;有一种说法……💭&lt;/strong&gt;&lt;br&gt;AI Agent是prompt工程的一种升级。而当下的商业产品也确实在走着&lt;code&gt;Chatbot&lt;/code&gt;-&amp;gt;&lt;code&gt;Copilot&lt;/code&gt;-&amp;gt;&lt;code&gt;Agent&lt;/code&gt;的演变路径。&lt;/p&gt;
+&lt;h3 id=&#34;基于LLM驱动的AI-Agent&#34;&gt;&lt;a href=&#34;#基于LLM驱动的AI-Agent&#34; class=&#34;headerlink&#34; title=&#34;基于LLM驱动的AI Agent&#34;&gt;&lt;/a&gt;基于LLM驱动的AI Agent&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://imgchr.com/i/pVyvhy6&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s21.ax1x.com/2025/08/27/pVyvhy6.png&#34; alt=&#34;pVyvhy6.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当下，我们常见的&lt;strong&gt;Agent&lt;/strong&gt;往往就是&lt;strong&gt;基于LLM驱动的&lt;/strong&gt;AI Agent。在其体系中，LLM作为智能体的“大脑”（🧠），其他能力，如规划（Planning）、记忆（Memory）、工具使用（Tools）等作为补充。&lt;/p&gt;
+&lt;h4 id=&#34;1️⃣规划能力（Planning）&#34;&gt;&lt;a href=&#34;#1️⃣规划能力（Planning）&#34; class=&#34;headerlink&#34; title=&#34;1️⃣规划能力（Planning）&#34;&gt;&lt;/a&gt;1️⃣规划能力（Planning）&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1.  任务拆解&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CoT（Chain of Thought）思维链&lt;/strong&gt;&lt;br&gt;告知模型要“step by step”，也就是去尝试把复杂任务拆解成更小的、更简单的任务列表。其使模型的思考过程更可解释。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;ToT（Tree of Thoughts）思维树&lt;/strong&gt;&lt;br&gt;ToT继承了CoT，并在CoT的基础上做了扩展：进一步要求LLM对子步骤生成更多思考，形成思维树。其结果的搜索可以是&lt;code&gt;BFS&lt;/code&gt;（breadth-first search）或&lt;code&gt;DFS&lt;/code&gt;(depth-first search)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2.  自我反思&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ReAct（Reasoning and Acting）&lt;/strong&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：是&lt;a href=&#34;https://arxiv.org/pdf/2210.03629&#34;&gt;ReAct&lt;/a&gt;不是前端框架React！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;即&lt;strong&gt;推理与行动&lt;/strong&gt;：追踪LLM的生成过程（与外部系统交互、思考等）。相当于用自然语言做logging。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Reflexion&lt;/strong&gt;&lt;br&gt;即&lt;strong&gt;反思&lt;/strong&gt;：给agents装备动态记忆和自我反省能力，以增强推理能力的框架。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：区别&lt;code&gt;reflection&lt;/code&gt;与&lt;code&gt;reflexion&lt;/code&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CoH（Chain of Hindsight）后见链&lt;/strong&gt;&lt;br&gt;让模型学习人类是如何根据反馈（尤其是负面反馈）来逐步改进和修正其输出的。其本质上是一种模型训练方法&amp;#x2F;推理策略，而不是像CoT、ToT、ReAct那样的&lt;a href=&#34;&#34;&gt;Prompt Engineering&lt;/a&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2️⃣记忆能力（Memory）&#34;&gt;&lt;a href=&#34;#2️⃣记忆能力（Memory）&#34; class=&#34;headerlink&#34; title=&#34;2️⃣记忆能力（Memory）&#34;&gt;&lt;/a&gt;2️⃣记忆能力（Memory）&lt;/h4&gt;&lt;p&gt;记忆可以被定义为获取、存储、保留、事后取回等针对信息的流程。一定程度上可与人类的记忆类型进行映射。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgchr.com/i/pVyzlVS&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s21.ax1x.com/2025/08/27/pVyzlVS.jpg&#34; alt=&#34;pVyzlVS.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里就不照搬&lt;a href=&#34;https://lilianweng.github.io/posts/2023-06-23-agent/&#34;&gt;原文&lt;/a&gt;了，简单拉个表总结一下👇&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;记忆类型&lt;/th&gt;
+&lt;th&gt;英文名&lt;/th&gt;
+&lt;th&gt;时长&lt;/th&gt;
+&lt;th&gt;人类记忆&lt;/th&gt;
+&lt;th&gt;映射到Agent&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;感觉记忆&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Sensory&lt;/strong&gt; Memory&lt;/td&gt;
+&lt;td&gt;几秒&lt;/td&gt;
+&lt;td&gt;瞬间的原始感官输入&lt;/td&gt;
+&lt;td&gt;对原始输入做Embedding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;短期记忆&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Short-Term&lt;/strong&gt; Memory&lt;/td&gt;
+&lt;td&gt;20~30秒&lt;/td&gt;
+&lt;td&gt;临时存储少量信息&lt;/td&gt;
+&lt;td&gt;上下文学习（In-Context Learning）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;长期记忆&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Long-Term&lt;/strong&gt; Memory&lt;/td&gt;
+&lt;td&gt;几天~几十年&lt;/td&gt;
+&lt;td&gt;长期存储大量信息&lt;/td&gt;
+&lt;td&gt;外部的向量数据库&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h4 id=&#34;3️⃣工具使用（Tool-use）&#34;&gt;&lt;a href=&#34;#3️⃣工具使用（Tool-use）&#34; class=&#34;headerlink&#34; title=&#34;3️⃣工具使用（Tool use）&#34;&gt;&lt;/a&gt;3️⃣工具使用（Tool use）&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;调用外部API&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. function call：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数调用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. mcp（model context protocol）：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模型上下文协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;开源框架&#34;&gt;&lt;a href=&#34;#开源框架&#34; class=&#34;headerlink&#34; title=&#34;开源框架&#34;&gt;&lt;/a&gt;开源框架&lt;/h2&gt;&lt;h3 id=&#34;CrewAI&#34;&gt;&lt;a href=&#34;#CrewAI&#34; class=&#34;headerlink&#34; title=&#34;CrewAI&#34;&gt;&lt;/a&gt;CrewAI&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://crewai.org.cn/&#34;&gt;CrewAI官网戳此&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multi-Agent&lt;/li&gt;
+&lt;li&gt;Orchestration&lt;/li&gt;
+&lt;li&gt;Collaboration&lt;/li&gt;
+&lt;li&gt;Crews&lt;/li&gt;
+&lt;li&gt;Process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;LangGraph&#34;&gt;&lt;a href=&#34;#LangGraph&#34; class=&#34;headerlink&#34; title=&#34;LangGraph&#34;&gt;&lt;/a&gt;LangGraph&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.langchain.com/langgraph&#34;&gt;LangGraph官网戳此&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stateful&lt;/li&gt;
+&lt;li&gt;Workflows&lt;/li&gt;
+&lt;li&gt;Cycles&lt;/li&gt;
+&lt;li&gt;Graph&lt;/li&gt;
+&lt;li&gt;Control Flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;LlamaIndex&#34;&gt;&lt;a href=&#34;#LlamaIndex&#34; class=&#34;headerlink&#34; title=&#34;LlamaIndex&#34;&gt;&lt;/a&gt;LlamaIndex&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://docs.llamaindex.ai/en/stable/&#34;&gt;LlamaIndex官网戳此&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data&lt;/li&gt;
+&lt;li&gt;RAG&lt;/li&gt;
+&lt;li&gt;Retrieval&lt;/li&gt;
+&lt;li&gt;Querying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Strands-Agents&#34;&gt;&lt;a href=&#34;#Strands-Agents&#34; class=&#34;headerlink&#34; title=&#34;Strands Agents&#34;&gt;&lt;/a&gt;Strands Agents&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://strandsagents.com/latest/&#34;&gt;Strands Agents官网戳此&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial&lt;/li&gt;
+&lt;li&gt;Data Analysis&lt;/li&gt;
+&lt;li&gt;Pre-built&lt;/li&gt;
+&lt;li&gt;Domain-Specific&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Agent-Infra&#34;&gt;&lt;a href=&#34;#Agent-Infra&#34; class=&#34;headerlink&#34; title=&#34;Agent Infra&#34;&gt;&lt;/a&gt;Agent Infra&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;即AI Agentic基础设施&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;AgentCore&#34;&gt;&lt;a href=&#34;#AgentCore&#34; class=&#34;headerlink&#34; title=&#34;AgentCore&#34;&gt;&lt;/a&gt;AgentCore&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;即Amazon Bedrock AgentCore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;未完待续……&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://lilianweng.github.io/posts/2023-06-23-agent/&#34;&gt;LLM Powered Autonomous Agents | Lil’Log&lt;/a&gt; ⭐&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/641322714&#34;&gt;LLM Powered Autonomous Agents（中翻+insight） - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/678046050&#34;&gt;7000长文：一文读懂Agent，大模型的下一站 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/2401_84204207/article/details/147516308&#34;&gt;380篇文献！首份Agentic大模型最新技术综述_agentic+llm-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/2532014&#34;&gt;【科普篇】LLM、GPT、AIGC、AI Agent、Agentic AI 到底是个啥？-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/641322714&#34;&gt;(9 封私信) LLM Powered Autonomous Agents（中翻+insight） - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.woshipm.com/ai/6246084.html&#34;&gt;万字Agent详解：Agent的发展和应用 | 人人都是产品经理&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://react-lm.github.io/&#34;&gt;ReAct: Synergizing Reasoning and Acting in Language Models&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-09-29T08:30:01.000Z</updated>
+    </entry>
+    <entry>
         <id>https://232akira.github.io/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</id>
         <title>笔记🗒️ ⋮ Git &amp; GitHub名词解释</title>
         <link rel="alternate" href="https://232akira.github.io/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/"/>
@@ -45,22 +185,21 @@
 &lt;h3 id=&#34;PR（Pull-Requests）&#34;&gt;&lt;a href=&#34;#PR（Pull-Requests）&#34; class=&#34;headerlink&#34; title=&#34;PR（Pull Requests）&#34;&gt;&lt;/a&gt;PR（Pull Requests）&lt;/h3&gt;&lt;h3 id=&#34;Wiki&#34;&gt;&lt;a href=&#34;#Wiki&#34; class=&#34;headerlink&#34; title=&#34;Wiki&#34;&gt;&lt;/a&gt;Wiki&lt;/h3&gt;&lt;h3 id=&#34;branch&#34;&gt;&lt;a href=&#34;#branch&#34; class=&#34;headerlink&#34; title=&#34;branch&#34;&gt;&lt;/a&gt;branch&lt;/h3&gt;&lt;p&gt;分支&lt;/p&gt;
 &lt;h3 id=&#34;merge&#34;&gt;&lt;a href=&#34;#merge&#34; class=&#34;headerlink&#34; title=&#34;merge&#34;&gt;&lt;/a&gt;merge&lt;/h3&gt;&lt;p&gt;合并&lt;/p&gt;
 &lt;h3 id=&#34;commit&#34;&gt;&lt;a href=&#34;#commit&#34; class=&#34;headerlink&#34; title=&#34;commit&#34;&gt;&lt;/a&gt;commit&lt;/h3&gt;&lt;p&gt;提交&lt;/p&gt;
-&lt;h3 id=&#34;FAQ&#34;&gt;&lt;a href=&#34;#FAQ&#34; class=&#34;headerlink&#34; title=&#34;FAQ&#34;&gt;&lt;/a&gt;FAQ&lt;/h3&gt;&lt;p&gt;（Frequently Asked Questions，常见问题解答）&lt;/p&gt;
+&lt;h3 id=&#34;FAQ&#34;&gt;&lt;a href=&#34;#FAQ&#34; class=&#34;headerlink&#34; title=&#34;FAQ&#34;&gt;&lt;/a&gt;FAQ&lt;/h3&gt;&lt;p&gt;Frequently Asked Questions，常见问题解答&lt;/p&gt;
 &lt;h3 id=&#34;Issue状态&#34;&gt;&lt;a href=&#34;#Issue状态&#34; class=&#34;headerlink&#34; title=&#34;Issue状态&#34;&gt;&lt;/a&gt;Issue状态&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;open（开启）&lt;/li&gt;
-&lt;li&gt;closed（关闭）&lt;/li&gt;
-&lt;li&gt;reopened（重新开启）&lt;/li&gt;
+&lt;li&gt;open:开启&lt;/li&gt;
+&lt;li&gt;closed:关闭&lt;/li&gt;
+&lt;li&gt;reopened:重新开启&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;任务状态&#34;&gt;&lt;a href=&#34;#任务状态&#34; class=&#34;headerlink&#34; title=&#34;任务状态&#34;&gt;&lt;/a&gt;任务状态&lt;/h3&gt;&lt;p&gt;（Task Status，看板状态）&lt;/p&gt;
+&lt;h3 id=&#34;任务状态&#34;&gt;&lt;a href=&#34;#任务状态&#34; class=&#34;headerlink&#34; title=&#34;任务状态&#34;&gt;&lt;/a&gt;任务状态&lt;/h3&gt;&lt;p&gt;Task Status，看板状态&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;TODO（待办）&lt;/li&gt;
-&lt;li&gt;WIP（Work In Progress，进行中）&lt;/li&gt;
-&lt;li&gt;Done（已完成）&lt;/li&gt;
+&lt;li&gt;TODO:待办&lt;/li&gt;
+&lt;li&gt;WIP:Work In Progress，进行中&lt;/li&gt;
+&lt;li&gt;Done:已完成&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;一个Issue可关联多个任务，每个任务有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;任务状态&lt;/span&gt;，每个Issue有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;issue状态&lt;/span&gt;。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href=&#34;https://python.langchain.com/docs/get_started/introduction&#34;&gt;https://python.langchain.com/docs/get_started/introduction&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="笔记" />
         <updated>2025-09-24T08:30:12.000Z</updated>
@@ -80,9 +219,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;D老师将二者类比为：做蛋糕的模具&lt;code&gt;parameter&lt;/code&gt;，和实际倒入的面糊&lt;code&gt;argument&lt;/code&gt;。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;函数参数&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 函数参数&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// name、times为parameters（形参）
 void greet(string name,int times)&amp;#123;
     for(int i=0;i&amp;lt;times;i++)&amp;#123;
@@ -94,9 +231,7 @@ int main()&amp;#123;
     greet(&amp;quot;KYC&amp;quot;,6)
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;模板参数&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;2. 模板参数&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// T为parameters（形参）
 template&amp;lt;class T&amp;gt;
 class Box&amp;#123;
@@ -593,116 +728,6 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 </content>
         <category term="笔记" />
         <updated>2025-08-24T08:30:02.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</id>
-        <title>笔记🗒️ ⋮ AI Agent</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/"/>
-        <content type="html">&lt;h3 id=&#34;Agent&#34;&gt;&lt;a href=&#34;#Agent&#34; class=&#34;headerlink&#34; title=&#34;Agent&#34;&gt;&lt;/a&gt;Agent&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;长期以来&lt;/strong&gt;，通用人工智能（Artificial General Intelligence，&lt;strong&gt;AGI&lt;/strong&gt;）&lt;strong&gt;一直被人类所追求&lt;/strong&gt;。&lt;br&gt;从1950年代Alan Turing的设想开始，Agent技术从早期的构想阶段逐渐成熟并落地，在2020年至今进入了爆发期——大模型Agent时代。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;AI Agent&lt;/strong&gt;（Agent&amp;#x2F;代理&amp;#x2F;智能体…）更具备“人类”的思维方式，可以识别任务的需求分析、执行规划和问题决策。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;有一种说法……💭&lt;/strong&gt;&lt;br&gt;AI Agent是prompt工程的一种升级。而当下的商业产品也确实在走着&lt;code&gt;Chatbot&lt;/code&gt;-&amp;gt;&lt;code&gt;Copilot&lt;/code&gt;-&amp;gt;&lt;code&gt;Agent&lt;/code&gt;的演变路径。&lt;/p&gt;
-&lt;h3 id=&#34;基于LLM驱动的AI-Agent&#34;&gt;&lt;a href=&#34;#基于LLM驱动的AI-Agent&#34; class=&#34;headerlink&#34; title=&#34;基于LLM驱动的AI Agent&#34;&gt;&lt;/a&gt;基于LLM驱动的AI Agent&lt;/h3&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://imgse.com/i/pVyvhy6&#34; alt=&#34;Overview of a LLM-powered autonomous agent system.&#34;&gt;&lt;/p&gt;
-&lt;p&gt;当下，我们常见的&lt;code&gt;Agent&lt;/code&gt;往往就是&lt;code&gt;基于LLM驱动的AI Agent&lt;/code&gt;。在其体系中，LLM作为智能体的“大脑”（🧠），其他能力，如规划（&lt;code&gt;Planning&lt;/code&gt;）、记忆（&lt;code&gt;Memory&lt;/code&gt;）、工具使用（&lt;code&gt;Tools&lt;/code&gt;）等作为补充。&lt;/p&gt;
-&lt;h4 id=&#34;1️⃣规划能力（Planning）&#34;&gt;&lt;a href=&#34;#1️⃣规划能力（Planning）&#34; class=&#34;headerlink&#34; title=&#34;1️⃣规划能力（Planning）&#34;&gt;&lt;/a&gt;1️⃣规划能力（Planning）&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1.  任务拆解&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;CoT（Chain of Thought）思维链&lt;/strong&gt;&lt;br&gt;告知模型要“step by step”，也就是去尝试把复杂任务拆解成更小的、更简单的任务列表。其使模型的思考过程更可解释。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;ToT（Tree of Thoughts）思维树&lt;/strong&gt;&lt;br&gt;ToT继承了CoT，并在CoT的基础上做了扩展：进一步要求LLM对子步骤生成更多思考，形成思维树。其结果的搜索可以是&lt;code&gt;BFS&lt;/code&gt;（breadth-first search）或&lt;code&gt;DFS&lt;/code&gt;(depth-first search)。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;2.  自我反思&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ReAct（Reasoning and Acting）&lt;/strong&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;💥是&lt;a href=&#34;https://arxiv.org/pdf/2210.03629&#34;&gt;ReAct&lt;/a&gt;不是前端框架React！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;即&lt;strong&gt;推理与行动&lt;/strong&gt;：追踪LLM的生成过程（与外部系统交互、思考等）。相当于用自然语言做logging。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Reflexion&lt;/strong&gt;&lt;br&gt;即&lt;strong&gt;反思&lt;/strong&gt;：给agents装备动态记忆和自我反省能力，以增强推理能力的框架。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;**注意💥**区别&lt;code&gt;reflection&lt;/code&gt;与&lt;code&gt;reflexion&lt;/code&gt;!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;CoH（Chain of Hindsight）后见链&lt;/strong&gt;&lt;br&gt;让模型学习人类是如何根据反馈（尤其是负面反馈）来逐步改进和修正其输出的。其本质上是一种模型训练方法&amp;#x2F;推理策略，而不是像CoT、ToT、ReAct那样的&lt;a href=&#34;&#34;&gt;Prompt Engineering&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;2️⃣记忆能力（Memory）&#34;&gt;&lt;a href=&#34;#2️⃣记忆能力（Memory）&#34; class=&#34;headerlink&#34; title=&#34;2️⃣记忆能力（Memory）&#34;&gt;&lt;/a&gt;2️⃣记忆能力（Memory）&lt;/h4&gt;&lt;p&gt;记忆可以被定义为获取、存储、保留、事后取回等针对信息的流程。一定程度上可与人类的记忆类型进行映射。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://imgse.com/i/pVyzlVS&#34; alt=&#34;Categorization of human memory.&#34;&gt;&lt;/p&gt;
-&lt;p&gt;这里就不照搬&lt;a href=&#34;https://lilianweng.github.io/posts/2023-06-23-agent/&#34;&gt;原文&lt;/a&gt;了，简单拉个表总结一下👇&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;记忆类型&lt;/th&gt;
-&lt;th&gt;英文名&lt;/th&gt;
-&lt;th&gt;时长&lt;/th&gt;
-&lt;th&gt;人类记忆&lt;/th&gt;
-&lt;th&gt;映射到Agent&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;感觉记忆&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;Sensory Memory&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;几秒&lt;/td&gt;
-&lt;td&gt;瞬间的原始感官输入&lt;/td&gt;
-&lt;td&gt;对原始输入做Embedding&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;短期记忆&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;Short-Term Memory&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;20~30秒&lt;/td&gt;
-&lt;td&gt;临时存储少量信息&lt;/td&gt;
-&lt;td&gt;上下文学习（In-Context Learning）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;长期记忆&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;Long-Term Memory&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;几天~几十年&lt;/td&gt;
-&lt;td&gt;长期存储大量信息&lt;/td&gt;
-&lt;td&gt;外部的向量数据库&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;h4 id=&#34;3️⃣工具使用（Tool-use）&#34;&gt;&lt;a href=&#34;#3️⃣工具使用（Tool-use）&#34; class=&#34;headerlink&#34; title=&#34;3️⃣工具使用（Tool use）&#34;&gt;&lt;/a&gt;3️⃣工具使用（Tool use）&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;调用外部API&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1. function call：&lt;/strong&gt;&lt;br&gt;函数调用&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2. mcp（model context protocol）：&lt;/strong&gt;&lt;br&gt;模型上下文协议&lt;/p&gt;
-&lt;h2 id=&#34;开源框架&#34;&gt;&lt;a href=&#34;#开源框架&#34; class=&#34;headerlink&#34; title=&#34;开源框架&#34;&gt;&lt;/a&gt;开源框架&lt;/h2&gt;&lt;h3 id=&#34;CrewAI&#34;&gt;&lt;a href=&#34;#CrewAI&#34; class=&#34;headerlink&#34; title=&#34;CrewAI&#34;&gt;&lt;/a&gt;CrewAI&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://crewai.org.cn/&#34;&gt;CrewAI官网戳此&lt;/a&gt;&lt;br&gt;&lt;code&gt;Multi-Agent&lt;/code&gt;, &lt;code&gt;Orchestration&lt;/code&gt;, &lt;code&gt;Collaboration&lt;/code&gt;, &lt;code&gt;Crews&lt;/code&gt;, &lt;code&gt;Process&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;LangGraph&#34;&gt;&lt;a href=&#34;#LangGraph&#34; class=&#34;headerlink&#34; title=&#34;LangGraph&#34;&gt;&lt;/a&gt;LangGraph&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.langchain.com/langgraph&#34;&gt;LangGraph官网戳此&lt;/a&gt;&lt;br&gt;&lt;code&gt;Stateful&lt;/code&gt;, &lt;code&gt;Workflows&lt;/code&gt;, &lt;code&gt;Cycles&lt;/code&gt;, &lt;code&gt;Graph&lt;/code&gt;, &lt;code&gt;Control Flow&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;LlamaIndex&#34;&gt;&lt;a href=&#34;#LlamaIndex&#34; class=&#34;headerlink&#34; title=&#34;LlamaIndex&#34;&gt;&lt;/a&gt;LlamaIndex&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://docs.llamaindex.ai/en/stable/&#34;&gt;LlamaIndex官网戳此&lt;/a&gt;&lt;br&gt;&lt;code&gt;Data&lt;/code&gt;, &lt;code&gt;RAG&lt;/code&gt;, &lt;code&gt;Retrieval&lt;/code&gt;, &lt;code&gt;Querying&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Strands-Agents&#34;&gt;&lt;a href=&#34;#Strands-Agents&#34; class=&#34;headerlink&#34; title=&#34;Strands Agents&#34;&gt;&lt;/a&gt;Strands Agents&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://strandsagents.com/latest/&#34;&gt;Strands Agents官网戳此&lt;/a&gt;&lt;br&gt;&lt;code&gt;Financial&lt;/code&gt;, &lt;code&gt;Data Analysis&lt;/code&gt;, &lt;code&gt;Pre-built&lt;/code&gt;, &lt;code&gt;Domain-Specific&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;Agent-Infra&#34;&gt;&lt;a href=&#34;#Agent-Infra&#34; class=&#34;headerlink&#34; title=&#34;Agent Infra&#34;&gt;&lt;/a&gt;Agent Infra&lt;/h2&gt;&lt;p&gt;即AI Agentic基础设施&lt;/p&gt;
-&lt;h3 id=&#34;AgentCore&#34;&gt;&lt;a href=&#34;#AgentCore&#34; class=&#34;headerlink&#34; title=&#34;AgentCore&#34;&gt;&lt;/a&gt;AgentCore&lt;/h3&gt;&lt;p&gt;Amazon Bedrock AgentCore&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;未完待续……&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://lilianweng.github.io/posts/2023-06-23-agent/&#34;&gt;LLM Powered Autonomous Agents | Lil’Log&lt;/a&gt; ⭐&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/641322714&#34;&gt;LLM Powered Autonomous Agents（中翻+insight） - 知乎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/678046050&#34;&gt;7000长文：一文读懂Agent，大模型的下一站 - 知乎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;[380篇文献！首份Agentic大模型最新技术综述_agentic+llm-CSDN博客](&lt;a href=&#34;https://blog.csdn.net/2401_84204207/article/details/147516308&#34;&gt;https://blog.csdn.net/2401_84204207/article/details/147516308&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/2532014&#34;&gt;【科普篇】LLM、GPT、AIGC、AI Agent、Agentic AI 到底是个啥？-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/641322714&#34;&gt;(9 封私信) LLM Powered Autonomous Agents（中翻+insight） - 知乎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.woshipm.com/ai/6246084.html&#34;&gt;万字Agent详解：Agent的发展和应用 | 人人都是产品经理&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://react-lm.github.io/&#34;&gt;ReAct: Synergizing Reasoning and Acting in Language Models&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;参考链接-1&#34;&gt;&lt;a href=&#34;#参考链接-1&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/678046050&#34;&gt;7000长文：一文读懂Agent，大模型的下一站 - 知乎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/2401_84204207/article/details/147516308&#34;&gt;380篇文献！首份Agentic大模型最新技术综述_agentic+llm-CSDN博客&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloud.tencent.com/developer/article/2532014&#34;&gt;【科普篇】LLM、GPT、AIGC、AI Agent、Agentic AI 到底是个啥？-腾讯云开发者社区-腾讯云&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-        <category term="笔记" />
-        <updated>2025-08-24T08:30:01.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
