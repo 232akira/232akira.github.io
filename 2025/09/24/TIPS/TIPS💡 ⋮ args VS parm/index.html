@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Per aspera ad astra" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Per aspera ad astra" type="application/atom+xml"><link rel="alternate" type="application/json" title="Per aspera ad astra" href="https://232akira.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kode%20Mono:400,400italic,700,700italic%7CNoto%20Serif%20CJK:400,400italic,700,700italic%7CSource%20Code%20Pro:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.21"><link rel="modulepreload" href="/js/chunk-B63TNDLW.js"></link><link rel="modulepreload" href="/js/chunk-HSO3URNK.js"></link><link rel="modulepreload" href="/js/chunk-IBOB5WAO.js"></link><link rel="modulepreload" href="/js/chunk-X7VTR5IM.js"></link><link rel="modulepreload" href="/js/copy-tex-NQOMVDTX.js"></link><link rel="modulepreload" href="/js/index.esm-RHSD4ZR5.js"></link><link rel="modulepreload" href="/js/post-O463VHDT.js"></link><link rel="modulepreload" href="/js/quicklink-YBI4CP6B.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/tcomments-RII7NTEF.js"></link><link rel="preload" href="/images/kgyk.jpg" as="image" fetchpriority="high"><meta name="keywords" content="TIPS"/><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/"><title>TIPS💡 ⋮ args VS parm</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">TIPS💡 ⋮ args VS parm</h1><div class="meta"><span class="item" title="创建时间：2025-09-24 16:30:11"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-09-24T16:30:11+08:00">2025-09-24</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>1k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>1 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/kgyk.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="KangYiChen"/><meta itemprop="description" content="😼, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/it1988888/article/details/8871895">参考链接戳此</a></p>
+<p>arg（argument）、param（Parameter）……同样可以翻译成<code>参数</code>，粗略情况下二者可以混用。</p>
+<p>但如果要区分👇</p>
+<h3 id="argument"><a href="#argument" class="headerlink" title="argument"></a><strong>arg</strong>ument</h3><blockquote>
+<p>形参。函数&#x2F;模板<strong>定义时</strong>写的“占位符”</p>
+</blockquote>
+<h3 id="parameter"><a href="#parameter" class="headerlink" title="parameter"></a><strong>param</strong>eter</h3><blockquote>
+<p>实参。函数&#x2F;模板<strong>调用时</strong>传入的“实际值”</p>
+</blockquote>
+<p>D老师将二者类比为：做蛋糕的模具<code>parameter</code>，和实际倒入的面糊<code>argument</code>。</p>
+<hr>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><ol>
+<li>函数参数</li>
+</ol>
+<pre><code class="language-cpp">// name、times为parameters（形参）
+void greet(string name,int times)&#123;
+    for(int i=0;i&lt;times;i++)&#123;
+        cout&lt;&lt;&quot;Hello,&quot;&lt;&lt;name&lt;&lt;&quot;!&quot;&lt;&lt;endl;
+    &#125;
+&#125;
+//KYC、6为arguments（实参）
+int main()&#123;
+    greet(&quot;KYC&quot;,6)
+&#125;
+</code></pre>
+<ol start="2">
+<li>模板参数</li>
+</ol>
+<pre><code class="language-cpp">// T为parameters（形参）
+template&lt;class T&gt;
+class Box&#123;
+    T content;
+&#125;;
+// int、string为arguments（实参）
+int main()&#123;
+    Box&lt;int&gt; intBox;
+    Box&lt;string&gt; strBox;
+    return 0;
+&#125;
+</code></pre>
+<h3 id="总结表格"><a href="#总结表格" class="headerlink" title="总结表格"></a>总结表格</h3><table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Parameter (形参)</th>
+<th>Argument (实参)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>中文名</strong></td>
+<td>形式参数</td>
+<td>实际参数</td>
+</tr>
+<tr>
+<td><strong>定义时</strong></td>
+<td>✓ 函数&#x2F;模板定义中</td>
+<td>✗</td>
+</tr>
+<tr>
+<td><strong>调用时</strong></td>
+<td>✗</td>
+<td>✓ 函数&#x2F;模板调用中</td>
+</tr>
+<tr>
+<td><strong>本质</strong></td>
+<td><code>占位符</code>、<code>变量声明</code></td>
+<td><code>实际的值</code>、<code>表达式</code></td>
+</tr>
+<tr>
+<td><strong>类比</strong></td>
+<td>空白表格栏位</td>
+<td>实际填写的内容</td>
+</tr>
+</tbody></table>
+<div class="tags"><a href="/tags/TIPS/" rel="tag"><i class="ic i-tag"></i>TIPS</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/09/24/TIPS/TIPS💡 ⋮ args VS parm/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-10-08 18:54:22" itemprop="dateModified" datetime="2025-10-08T18:54:22+08:00">2025-10-08</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="KangYiChen 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="KangYiChen 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>KangYiChen<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/" title="TIPS💡 ⋮ args VS parm">https://232akira.github.io/2025/09/24/TIPS/TIPS💡 ⋮ args VS parm/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/" rel="prev" itemprop="url" title="TIPS💡 ⋮ 关于pip" style="background-image: linear-gradient(to bottom right, #86ac82, #db92d7);"><span class="type">上一篇</span><h3>TIPS💡 ⋮ 关于pip</h3></a></div><div class="item right"><a href="/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/" rel="next" itemprop="url" title="笔记🗒️ ⋮ Git &amp; GitHub名词解释" style="background-image: linear-gradient(to bottom right, #85a985, #81e5c0);"><span class="type">下一篇</span><h3>笔记🗒️ ⋮ Git & GitHub名词解释</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#argument"><span class="toc-number">1.</span> <span class="toc-text">argument</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parameter"><span class="toc-number">2.</span> <span class="toc-text">parameter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">代码示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E8%A1%A8%E6%A0%BC"><span class="toc-number">4.</span> <span class="toc-text">总结表格</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="KangYiChen" src="/assets/avatar.jpg"/><p class="name" itemprop="name">KangYiChen</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">30</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">10</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1399789377" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;1399789377"><i class="ic i-cloud-music"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/">案例1️⃣ ⋮ 入门指南</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/">Leetcode ⋮ 数组</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/02/20/%E5%85%B6%E4%BB%96/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/">博客搭建小半年的痛</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/">TIPS💡 ⋮ 关于pip</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/11/23/%E5%85%B6%E4%BB%96/%E5%AD%98%E5%AD%98markdown%E7%9B%B8%E5%85%B3/">存存markdown相关</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/">Leetcode ⋮ HOT 100</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20LangChain/">笔记🗒️ ⋮ LangChain</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/">Leetcode ⋮ 字符串</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/02/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E5%8A%9B%E6%89%A3/">备忘录 ⋮ 力扣</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/14/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/">笔记🗒️ ⋮ 评论系统配置</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">KangYiChen @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">121k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">1:50</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2025/09/24/TIPS/TIPS💡 ⋮ args VS parm/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script data-pjax="data-pjax">var _hmt = _hmt || [];
+(function () {
+    const hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3320ed8870d3707cace61e4b8d5c146f"
+    hm.async = true;
+    const s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+ })();</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.21" type="module" fetchpriority="high" defer></script></body></html>

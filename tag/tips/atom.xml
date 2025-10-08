@@ -3,17 +3,122 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;tips&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-08-24T08:30:10.000Z</updated>
+    <updated>2025-09-24T08:30:11.000Z</updated>
     <category term="记录" />
     <category term="TIPS" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="指南" />
     <category term="备忘录" />
     <category term="AI" />
+    <category term="指南" />
     <category term="案例" />
     <category term="笔记" />
+    <entry>
+        <id>https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/</id>
+        <title>TIPS💡 ⋮ args VS parm</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/it1988888/article/details/8871895&#34;&gt;参考链接戳此&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;arg（argument）、param（Parameter）……同样可以翻译成&lt;code&gt;参数&lt;/code&gt;，粗略情况下二者可以混用。&lt;/p&gt;
+&lt;p&gt;但如果要区分👇&lt;/p&gt;
+&lt;h3 id=&#34;argument&#34;&gt;&lt;a href=&#34;#argument&#34; class=&#34;headerlink&#34; title=&#34;argument&#34;&gt;&lt;/a&gt;&lt;strong&gt;arg&lt;/strong&gt;ument&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;形参。函数&amp;#x2F;模板&lt;strong&gt;定义时&lt;/strong&gt;写的“占位符”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;parameter&#34;&gt;&lt;a href=&#34;#parameter&#34; class=&#34;headerlink&#34; title=&#34;parameter&#34;&gt;&lt;/a&gt;&lt;strong&gt;param&lt;/strong&gt;eter&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;实参。函数&amp;#x2F;模板&lt;strong&gt;调用时&lt;/strong&gt;传入的“实际值”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;D老师将二者类比为：做蛋糕的模具&lt;code&gt;parameter&lt;/code&gt;，和实际倒入的面糊&lt;code&gt;argument&lt;/code&gt;。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;函数参数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// name、times为parameters（形参）
+void greet(string name,int times)&amp;#123;
+    for(int i=0;i&amp;lt;times;i++)&amp;#123;
+        cout&amp;lt;&amp;lt;&amp;quot;Hello,&amp;quot;&amp;lt;&amp;lt;name&amp;lt;&amp;lt;&amp;quot;!&amp;quot;&amp;lt;&amp;lt;endl;
+    &amp;#125;
+&amp;#125;
+//KYC、6为arguments（实参）
+int main()&amp;#123;
+    greet(&amp;quot;KYC&amp;quot;,6)
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;模板参数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// T为parameters（形参）
+template&amp;lt;class T&amp;gt;
+class Box&amp;#123;
+    T content;
+&amp;#125;;
+// int、string为arguments（实参）
+int main()&amp;#123;
+    Box&amp;lt;int&amp;gt; intBox;
+    Box&amp;lt;string&amp;gt; strBox;
+    return 0;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;总结表格&#34;&gt;&lt;a href=&#34;#总结表格&#34; class=&#34;headerlink&#34; title=&#34;总结表格&#34;&gt;&lt;/a&gt;总结表格&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;特性&lt;/th&gt;
+&lt;th&gt;Parameter (形参)&lt;/th&gt;
+&lt;th&gt;Argument (实参)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;中文名&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;形式参数&lt;/td&gt;
+&lt;td&gt;实际参数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;定义时&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✓ 函数&amp;#x2F;模板定义中&lt;/td&gt;
+&lt;td&gt;✗&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;调用时&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✗&lt;/td&gt;
+&lt;td&gt;✓ 函数&amp;#x2F;模板调用中&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;本质&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;占位符&lt;/code&gt;、&lt;code&gt;变量声明&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;实际的值&lt;/code&gt;、&lt;code&gt;表达式&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;类比&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;空白表格栏位&lt;/td&gt;
+&lt;td&gt;实际填写的内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</content>
+        <category term="TIPS" />
+        <updated>2025-09-24T08:30:11.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/</id>
+        <title>TIPS💡 ⋮ 关于pip</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/"/>
+        <content type="html">&lt;p&gt;备忘一下常用的pip命令方便python包安装👇&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以下命令已成功运行于&lt;strong&gt;Win11&lt;/strong&gt; VSCode Powershell&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;安装&#34;&gt;&lt;a href=&#34;#安装&#34; class=&#34;headerlink&#34; title=&#34;安装&#34;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip install XXX&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;卸载&#34;&gt;&lt;a href=&#34;#卸载&#34; class=&#34;headerlink&#34; title=&#34;卸载&#34;&gt;&lt;/a&gt;卸载&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip uninstall XXX&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;清理缓存&#34;&gt;&lt;a href=&#34;#清理缓存&#34; class=&#34;headerlink&#34; title=&#34;清理缓存&#34;&gt;&lt;/a&gt;清理缓存&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip cache purge&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;查看已安装包版本&#34;&gt;&lt;a href=&#34;#查看已安装包版本&#34; class=&#34;headerlink&#34; title=&#34;查看已安装包版本&#34;&gt;&lt;/a&gt;查看已安装包版本&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip list | findstr XXX&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;查看已安装包详细信息&#34;&gt;&lt;a href=&#34;#查看已安装包详细信息&#34; class=&#34;headerlink&#34; title=&#34;查看已安装包详细信息&#34;&gt;&lt;/a&gt;查看已安装包详细信息&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip show XXX&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;设置清华源镜像&#34;&gt;&lt;a href=&#34;#设置清华源镜像&#34; class=&#34;headerlink&#34; title=&#34;设置清华源镜像&#34;&gt;&lt;/a&gt;设置清华源镜像&lt;/h3&gt;&lt;p&gt;&lt;code&gt;pip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simple&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装python项目依赖&#34;&gt;&lt;a href=&#34;#安装python项目依赖&#34; class=&#34;headerlink&#34; title=&#34;安装python项目依赖&#34;&gt;&lt;/a&gt;安装python项目依赖&lt;/h3&gt;&lt;p&gt;如果你的项目中存在pyproject.toml，即可使用&lt;code&gt;pip install .&lt;/code&gt;快速安装项目的所有依赖。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;requirements.txt的安装方法见本站另一篇TIPS&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实际上每次用一次性安装项目依赖的方法大多都因为网络超时失败了(lll￢ω￢)我还是一个一个安装完了……😭&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="TIPS" />
+        <updated>2025-09-24T08:30:10.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/</id>
         <title>TIPS💡 ⋮ STDIO的“本地”</title>
