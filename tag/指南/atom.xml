@@ -3,17 +3,56 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;指南&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-10-25T05:12:13.000Z</updated>
+    <updated>2025-10-25T05:12:14.000Z</updated>
     <category term="记录" />
-    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
+    <category term="TIPS" />
+    <category term="指南" />
     <category term="案例" />
     <category term="AI" />
     <category term="备忘录" />
     <category term="笔记" />
-    <category term="指南" />
+    <entry>
+        <id>https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+        <title>指南🧭 ⋮ Docker Desktop使用方法</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Docker Desktop是&lt;strong&gt;Docker&lt;/strong&gt;的可视化图形界面版。有了就不需要再额外装Linux虚拟机来运行容器力🤭。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;官网下载&lt;br&gt;点击安装包无脑allow+下一步。&lt;br&gt;&lt;del&gt;电脑不出意外会重启。&lt;/del&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更新WSL到最新版本&lt;br&gt;Docker Desktop在Windows上不是直接运行在系统里，而是通过WSL（Linux子系统）来运行容器。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;管理员身份打开cmd&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wsl --update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;打开Docker Desktop，刷新即可。&lt;br&gt;&lt;a href=&#34;https://imgchr.com/i/pVvIfqf&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s21.ax1x.com/2025/10/26/pVvIfqf.png&#34; alt=&#34;pVvIfqf.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;观察容器情况&lt;br&gt;更多情况下，&lt;strong&gt;终端&lt;/strong&gt;复制命令执行，跑项目；而Docker &lt;strong&gt;Desktop&lt;/strong&gt;用来观察容器变化（查看存在哪些images、volumes），点点看每个容器，查看实时日志输出。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;!你需要注意！&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker Desktop默认把所有images、Containers、Volumes、Cache……都装到C盘😭我后知后觉C盘为什么突然多了10G爆红了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么为绝后患，把Docker整盘迁移走。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开Docker Desktop&lt;/li&gt;
+&lt;li&gt;点击右上角齿轮 -&amp;gt; settings&lt;/li&gt;
+&lt;li&gt;左边栏选择Resources -&amp;gt; Advanced&lt;/li&gt;
+&lt;li&gt;Disk image location&lt;/li&gt;
+&lt;li&gt;Browse -&amp;gt;选择你要迁移的文件路径&lt;/li&gt;
+&lt;li&gt;apply&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="指南" />
+        <updated>2025-10-25T05:12:14.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE/</id>
         <title>指南🧭 ⋮ 开源贡献</title>

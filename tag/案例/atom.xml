@@ -5,15 +5,15 @@
     <link href="https://232akira.github.io" />
     <updated>2025-04-17T05:43:07.000Z</updated>
     <category term="记录" />
-    <category term="TIPS" />
+    <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="专题" />
+    <category term="TIPS" />
+    <category term="指南" />
     <category term="案例" />
     <category term="AI" />
     <category term="备忘录" />
     <category term="笔记" />
-    <category term="指南" />
     <entry>
         <id>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1-2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</id>
         <title>案例1️⃣-2 ⋮ 接入DeepSeek-R1优化提示词</title>
@@ -300,7 +300,7 @@ except Exception as e:
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
-        <title>案例1️⃣ ⋮ 入门指南</title>
+        <title>案例 ⋮ 开源贡献</title>
         <link rel="alternate" href="https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B1%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
         <content type="html">&lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
