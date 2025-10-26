@@ -9,10 +9,10 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
+    <category term="备忘录" />
     <category term="案例" />
+    <category term="AI" />
     <category term="笔记" />
     <entry>
         <id>https://232akira.github.io/2025/10/26/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
@@ -1135,8 +1135,8 @@ else:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
@@ -1254,8 +1254,8 @@ except Exception as e:
 &lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
 &lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
@@ -1278,8 +1278,8 @@ except Exception as e:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
     <entry>
