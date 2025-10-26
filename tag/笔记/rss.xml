@@ -5,18 +5,57 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 29 Sep 2025 16:30:01 +0800</pubDate>
-        <lastBuildDate>Mon, 29 Sep 2025 16:30:01 +0800</lastBuildDate>
-        <category>TIPS</category>
+        <pubDate>Sat, 25 Oct 2025 13:12:12 +0800</pubDate>
+        <lastBuildDate>Sat, 25 Oct 2025 13:12:12 +0800</lastBuildDate>
         <category>记录</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
+        <category>TIPS</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>案例</category>
         <category>指南</category>
         <category>笔记</category>
-        <category>案例</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/10/25/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</guid>
+            <title>笔记🗒️ ⋮ Git相关</title>
+            <link>https://232akira.github.io/2025/10/25/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</link>
+            <category>笔记</category>
+            <pubDate>Sat, 25 Oct 2025 13:12:12 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Git相关补充也可访问：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;指南🧭 ⋮ 开源贡献&lt;/li&gt;
+&lt;li&gt;指南🧭 ⋮ Obsidian Git同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Repo&#34;&gt;&lt;a href=&#34;#Repo&#34; class=&#34;headerlink&#34; title=&#34;Repo&#34;&gt;&lt;/a&gt;Repo&lt;/h3&gt;&lt;p&gt;repository，代码仓库&lt;/p&gt;
+&lt;h3 id=&#34;Fork&#34;&gt;&lt;a href=&#34;#Fork&#34; class=&#34;headerlink&#34; title=&#34;Fork&#34;&gt;&lt;/a&gt;Fork&lt;/h3&gt;&lt;p&gt;分叉&lt;/p&gt;
+&lt;h3 id=&#34;Clone&#34;&gt;&lt;a href=&#34;#Clone&#34; class=&#34;headerlink&#34; title=&#34;Clone&#34;&gt;&lt;/a&gt;Clone&lt;/h3&gt;&lt;p&gt;克隆&lt;/p&gt;
+&lt;h3 id=&#34;Issues&#34;&gt;&lt;a href=&#34;#Issues&#34; class=&#34;headerlink&#34; title=&#34;Issues&#34;&gt;&lt;/a&gt;Issues&lt;/h3&gt;&lt;p&gt;议题&lt;/p&gt;
+&lt;h3 id=&#34;PR（Pull-Requests）&#34;&gt;&lt;a href=&#34;#PR（Pull-Requests）&#34; class=&#34;headerlink&#34; title=&#34;PR（Pull Requests）&#34;&gt;&lt;/a&gt;PR（Pull Requests）&lt;/h3&gt;&lt;p&gt;合并申请。请求原作者把你fork仓库里的某个branch的改动，merge进他们的主仓库。&lt;/p&gt;
+&lt;h3 id=&#34;Wiki&#34;&gt;&lt;a href=&#34;#Wiki&#34; class=&#34;headerlink&#34; title=&#34;Wiki&#34;&gt;&lt;/a&gt;Wiki&lt;/h3&gt;&lt;h3 id=&#34;branch&#34;&gt;&lt;a href=&#34;#branch&#34; class=&#34;headerlink&#34; title=&#34;branch&#34;&gt;&lt;/a&gt;branch&lt;/h3&gt;&lt;p&gt;分支&lt;/p&gt;
+&lt;h3 id=&#34;merge&#34;&gt;&lt;a href=&#34;#merge&#34; class=&#34;headerlink&#34; title=&#34;merge&#34;&gt;&lt;/a&gt;merge&lt;/h3&gt;&lt;p&gt;合并&lt;/p&gt;
+&lt;h3 id=&#34;commit&#34;&gt;&lt;a href=&#34;#commit&#34; class=&#34;headerlink&#34; title=&#34;commit&#34;&gt;&lt;/a&gt;commit&lt;/h3&gt;&lt;p&gt;提交&lt;/p&gt;
+&lt;h3 id=&#34;FAQ&#34;&gt;&lt;a href=&#34;#FAQ&#34; class=&#34;headerlink&#34; title=&#34;FAQ&#34;&gt;&lt;/a&gt;FAQ&lt;/h3&gt;&lt;p&gt;Frequently Asked Questions，常见问题解答。&lt;/p&gt;
+&lt;h3 id=&#34;Issue状态&#34;&gt;&lt;a href=&#34;#Issue状态&#34; class=&#34;headerlink&#34; title=&#34;Issue状态&#34;&gt;&lt;/a&gt;Issue状态&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;open（开启）&lt;/li&gt;
+&lt;li&gt;closed（关闭）&lt;/li&gt;
+&lt;li&gt;reopened（重新开启）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;任务状态&#34;&gt;&lt;a href=&#34;#任务状态&#34; class=&#34;headerlink&#34; title=&#34;任务状态&#34;&gt;&lt;/a&gt;任务状态&lt;/h3&gt;&lt;p&gt;（Task Status，看板状态）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO（待办）&lt;/li&gt;
+&lt;li&gt;WIP（Work In Progress，进行中）&lt;/li&gt;
+&lt;li&gt;Done（已完成）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个Issue可关联多个任务，每个任务有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;任务状态&lt;/span&gt;，每个Issue有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;issue状态&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;画了张图：&lt;br&gt;&lt;a href=&#34;https://imgchr.com/i/pVvWksU&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s21.ax1x.com/2025/10/26/pVvWksU.png&#34; alt=&#34;常用Git关系&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/09/29/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20AI%20Agent/</guid>
             <title>笔记🗒️ ⋮ AI Agent</title>
@@ -154,36 +193,6 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://react-lm.github.io/&#34;&gt;ReAct: Synergizing Reasoning and Acting in Language Models&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</guid>
-            <title>笔记🗒️ ⋮ Git &amp; GitHub名词解释</title>
-            <link>https://232akira.github.io/2025/09/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</link>
-            <category>笔记</category>
-            <pubDate>Wed, 24 Sep 2025 16:30:12 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;Repo&#34;&gt;&lt;a href=&#34;#Repo&#34; class=&#34;headerlink&#34; title=&#34;Repo&#34;&gt;&lt;/a&gt;Repo&lt;/h3&gt;&lt;p&gt;repository，代码仓库&lt;/p&gt;
-&lt;h3 id=&#34;Fork&#34;&gt;&lt;a href=&#34;#Fork&#34; class=&#34;headerlink&#34; title=&#34;Fork&#34;&gt;&lt;/a&gt;Fork&lt;/h3&gt;&lt;p&gt;分叉&lt;/p&gt;
-&lt;h3 id=&#34;Clone&#34;&gt;&lt;a href=&#34;#Clone&#34; class=&#34;headerlink&#34; title=&#34;Clone&#34;&gt;&lt;/a&gt;Clone&lt;/h3&gt;&lt;p&gt;克隆&lt;/p&gt;
-&lt;h3 id=&#34;Issues&#34;&gt;&lt;a href=&#34;#Issues&#34; class=&#34;headerlink&#34; title=&#34;Issues&#34;&gt;&lt;/a&gt;Issues&lt;/h3&gt;&lt;p&gt;议题&lt;/p&gt;
-&lt;h3 id=&#34;PR（Pull-Requests）&#34;&gt;&lt;a href=&#34;#PR（Pull-Requests）&#34; class=&#34;headerlink&#34; title=&#34;PR（Pull Requests）&#34;&gt;&lt;/a&gt;PR（Pull Requests）&lt;/h3&gt;&lt;h3 id=&#34;Wiki&#34;&gt;&lt;a href=&#34;#Wiki&#34; class=&#34;headerlink&#34; title=&#34;Wiki&#34;&gt;&lt;/a&gt;Wiki&lt;/h3&gt;&lt;h3 id=&#34;branch&#34;&gt;&lt;a href=&#34;#branch&#34; class=&#34;headerlink&#34; title=&#34;branch&#34;&gt;&lt;/a&gt;branch&lt;/h3&gt;&lt;p&gt;分支&lt;/p&gt;
-&lt;h3 id=&#34;merge&#34;&gt;&lt;a href=&#34;#merge&#34; class=&#34;headerlink&#34; title=&#34;merge&#34;&gt;&lt;/a&gt;merge&lt;/h3&gt;&lt;p&gt;合并&lt;/p&gt;
-&lt;h3 id=&#34;commit&#34;&gt;&lt;a href=&#34;#commit&#34; class=&#34;headerlink&#34; title=&#34;commit&#34;&gt;&lt;/a&gt;commit&lt;/h3&gt;&lt;p&gt;提交&lt;/p&gt;
-&lt;h3 id=&#34;FAQ&#34;&gt;&lt;a href=&#34;#FAQ&#34; class=&#34;headerlink&#34; title=&#34;FAQ&#34;&gt;&lt;/a&gt;FAQ&lt;/h3&gt;&lt;p&gt;Frequently Asked Questions，常见问题解答&lt;/p&gt;
-&lt;h3 id=&#34;Issue状态&#34;&gt;&lt;a href=&#34;#Issue状态&#34; class=&#34;headerlink&#34; title=&#34;Issue状态&#34;&gt;&lt;/a&gt;Issue状态&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;open:开启&lt;/li&gt;
-&lt;li&gt;closed:关闭&lt;/li&gt;
-&lt;li&gt;reopened:重新开启&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;任务状态&#34;&gt;&lt;a href=&#34;#任务状态&#34; class=&#34;headerlink&#34; title=&#34;任务状态&#34;&gt;&lt;/a&gt;任务状态&lt;/h3&gt;&lt;p&gt;Task Status，看板状态&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TODO:待办&lt;/li&gt;
-&lt;li&gt;WIP:Work In Progress，进行中&lt;/li&gt;
-&lt;li&gt;Done:已完成&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;一个Issue可关联多个任务，每个任务有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;任务状态&lt;/span&gt;，每个Issue有自己的&lt;span style=&#34;border-bottom:2px dashed pink;&#34;&gt;issue状态&lt;/span&gt;。&lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
         </item>
@@ -342,7 +351,7 @@ twikoo:
         </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
-            <title>笔记1️⃣ ⋮ 游戏开发</title>
+            <title>笔记🗒️ ⋮ 游戏开发</title>
             <link>https://232akira.github.io/2025/04/06/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
             <category>笔记</category>
             <pubDate>Sun, 06 Apr 2025 22:22:22 +0800</pubDate>

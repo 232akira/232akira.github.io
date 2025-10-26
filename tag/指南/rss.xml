@@ -5,18 +5,206 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 24 Aug 2025 16:30:06 +0800</pubDate>
-        <lastBuildDate>Sun, 24 Aug 2025 16:30:06 +0800</lastBuildDate>
-        <category>TIPS</category>
+        <pubDate>Sat, 25 Oct 2025 13:12:13 +0800</pubDate>
+        <lastBuildDate>Sat, 25 Oct 2025 13:12:13 +0800</lastBuildDate>
         <category>记录</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
+        <category>TIPS</category>
         <category>备忘录</category>
         <category>AI</category>
+        <category>案例</category>
         <category>指南</category>
         <category>笔记</category>
-        <category>案例</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE/</guid>
+            <title>指南🧭 ⋮ 开源贡献</title>
+            <link>https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE/</link>
+            <category>指南</category>
+            <pubDate>Sat, 25 Oct 2025 13:12:13 +0800</pubDate>
+            <description><![CDATA[ &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git config --global user.name &amp;quot;xxx&amp;quot;
+git config --global user.email &amp;quot;xxx&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;先把gpt老师说的流程记录在这里，仅供参考。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;”关键步骤能具体说说吗,比如一开始我新建分支,是在fork后的目录下?然后普我本地用编译器是不是也可以进行push,我还没整过这种,之前一直是在本地偷摸弄就没了“&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;做开源贡献时最容易卡住的地方。别担心，我一步步帮你理清整个流程——从 Fork 到 Push 到提 PR，每个环节我都写上具体命令和注意点，你直接照着做就能跑通。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🧩-一、Fork-项目（在-GitHub-网页上操作）&#34;&gt;&lt;a href=&#34;#🧩-一、Fork-项目（在-GitHub-网页上操作）&#34; class=&#34;headerlink&#34; title=&#34;🧩 一、Fork 项目（在 GitHub 网页上操作）&#34;&gt;&lt;/a&gt;🧩 一、Fork 项目（在 GitHub 网页上操作）&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开目标项目的 GitHub 页面，比如：&lt;br&gt; 👉 &lt;code&gt;https://github.com/bowang-lab/MedRAX&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点右上角的 &lt;strong&gt;“Fork”&lt;/strong&gt; 按钮（通常在 ⭐ Star 按钮旁边）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;等几秒后，GitHub 会在你的账号下生成一个副本，比如：&lt;br&gt; 👉 &lt;code&gt;https://github.com/yourname/MedRAX&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 现在你在你自己的账户下有一份完整的拷贝，你可以随意改代码，不会影响原项目。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🧱-二、把-Fork-下来的项目克隆到本地&#34;&gt;&lt;a href=&#34;#🧱-二、把-Fork-下来的项目克隆到本地&#34; class=&#34;headerlink&#34; title=&#34;🧱 二、把 Fork 下来的项目克隆到本地&#34;&gt;&lt;/a&gt;🧱 二、把 Fork 下来的项目克隆到本地&lt;/h2&gt;&lt;p&gt;在终端执行（选一个文件夹，比如 D:\Projects\）：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/yourname/MedRAX.git cd MedRAX&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔍 确认命令中的链接是你自己账户下的那个仓库！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🌿-三、新建分支（非常重要）&#34;&gt;&lt;a href=&#34;#🌿-三、新建分支（非常重要）&#34; class=&#34;headerlink&#34; title=&#34;🌿 三、新建分支（非常重要）&#34;&gt;&lt;/a&gt;🌿 三、新建分支（非常重要）&lt;/h2&gt;&lt;p&gt;在本地克隆下来的仓库目录下执行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git checkout -b feature/giteeai-adapter&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;checkout -b&lt;/code&gt;：新建并切换到该分支；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;feature/giteeai-adapter&lt;/code&gt;：分支名，代表“添加 GiteeAI 支持”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ 所有修改都在这个分支上完成，避免动到 main 分支。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🧠-四、修改代码（在编译器中进行）&#34;&gt;&lt;a href=&#34;#🧠-四、修改代码（在编译器中进行）&#34; class=&#34;headerlink&#34; title=&#34;🧠 四、修改代码（在编译器中进行）&#34;&gt;&lt;/a&gt;🧠 四、修改代码（在编译器中进行）&lt;/h2&gt;&lt;p&gt;你可以用 &lt;strong&gt;VS Code &amp;#x2F; PyCharm &amp;#x2F; 任意 IDE&lt;/strong&gt; 来编辑。&lt;br&gt;一般来说你要改的部分包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;模型调用文件&lt;/strong&gt;（比如 &lt;code&gt;model.py&lt;/code&gt;、&lt;code&gt;agents/llm_utils.py&lt;/code&gt; 等）；&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;把 &lt;code&gt;openai.ChatCompletion.create(...)&lt;/code&gt; 改成调用 Gitee.AI 接口；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;或者新建一个独立模块 &lt;code&gt;giteeai_adapter.py&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;配置文件&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 &lt;code&gt;.env&lt;/code&gt; 或 &lt;code&gt;config.py&lt;/code&gt; 里添加 &lt;code&gt;GITEEAI_API_KEY&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;README 更新&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;增加使用 Gitee.AI 的说明：&lt;/p&gt;
+&lt;p&gt;  &lt;code&gt;export GITEEAI_API_KEY=你的API密钥 python demo_giteeai.py&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;测试运行&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地确认能跑通（最好做个简单的demo）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;💾-五、提交修改到本地-Git&#34;&gt;&lt;a href=&#34;#💾-五、提交修改到本地-Git&#34; class=&#34;headerlink&#34; title=&#34;💾 五、提交修改到本地 Git&#34;&gt;&lt;/a&gt;💾 五、提交修改到本地 Git&lt;/h2&gt;&lt;p&gt;在终端（VS Code 的终端也行）输入：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add . git commit -m &amp;quot;Add Gitee.AI model backend support&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt; 把所有改动加入暂存区；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt; 生成一次提交记录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;💡 养成写清楚 commit message 的习惯。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🚀-六、Push-到你自己的远程仓库（Fork-的那个）&#34;&gt;&lt;a href=&#34;#🚀-六、Push-到你自己的远程仓库（Fork-的那个）&#34; class=&#34;headerlink&#34; title=&#34;🚀 六、Push 到你自己的远程仓库（Fork 的那个）&#34;&gt;&lt;/a&gt;🚀 六、Push 到你自己的远程仓库（Fork 的那个）&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git push origin feature/giteeai-adapter&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解释：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;origin&lt;/code&gt; 是你自己的远程仓库；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;feature/giteeai-adapter&lt;/code&gt; 是刚才创建的分支；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;这一步会把你本地的改动上传到 GitHub。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🧭 完成后，在你自己的仓库页面上就能看到这个新分支。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🔁-七、在-GitHub-上发起-Pull-Request（PR）&#34;&gt;&lt;a href=&#34;#🔁-七、在-GitHub-上发起-Pull-Request（PR）&#34; class=&#34;headerlink&#34; title=&#34;🔁 七、在 GitHub 上发起 Pull Request（PR）&#34;&gt;&lt;/a&gt;🔁 七、在 GitHub 上发起 Pull Request（PR）&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开你自己的仓库页面，比如：&lt;/p&gt;
+&lt;p&gt; &lt;code&gt;https://github.com/yourname/MedRAX&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GitHub 通常会自动弹出提示：“Compare &amp;amp; pull request”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果没弹出，就点 “Pull requests” → “New pull request”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;base repository&lt;/strong&gt;（目标仓库） → 原项目（如 &lt;code&gt;bowang-lab/MedRAX&lt;/code&gt;）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;compare&lt;/strong&gt;（你的分支） → 你刚 push 的分支 &lt;code&gt;feature/giteeai-adapter&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;填写标题和说明：&lt;/p&gt;
+&lt;p&gt; &lt;code&gt;Title: Add support for Gitee.AI model API as backend option Description: This PR adds support for the Gitee.AI platform as a compatible LLM backend. It allows domestic users to run the agent without access to OpenAI API. Tested with Gitee.AI ChatCompletion.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击 “Create pull request”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;✨-八、后续&#34;&gt;&lt;a href=&#34;#✨-八、后续&#34; class=&#34;headerlink&#34; title=&#34;✨ 八、后续&#34;&gt;&lt;/a&gt;✨ 八、后续&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;你的 PR 会显示在原项目的 “Pull Requests” 列表里；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;等维护者审核，他们可能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;合并（🎉）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提建议（你改下再提交）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;或者拒绝（但仍是有效贡献记录）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;🧭-小结：操作顺序简化版&#34;&gt;&lt;a href=&#34;#🧭-小结：操作顺序简化版&#34; class=&#34;headerlink&#34; title=&#34;🧭 小结：操作顺序简化版&#34;&gt;&lt;/a&gt;🧭 小结：操作顺序简化版&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;步骤&lt;/th&gt;
+&lt;th&gt;操作&lt;/th&gt;
+&lt;th&gt;命令&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Fork 项目&lt;/td&gt;
+&lt;td&gt;网页操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Clone 到本地&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;git clone &amp;lt;你的fork&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;创建分支&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;git checkout -b feature/giteeai-adapter&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;修改代码&lt;/td&gt;
+&lt;td&gt;在 IDE 里改&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;提交修改&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;git add . &amp;amp;&amp;amp; git commit -m &amp;quot;...&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;推送到远程&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;git push origin feature/giteeai-adapter&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;提 PR&lt;/td&gt;
+&lt;td&gt;在 GitHub 上发起&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/</guid>
             <title>指南🧭 ⋮ PKMer Market安装</title>
