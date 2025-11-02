@@ -9,11 +9,11 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
+    <category term="AI" />
+    <category term="备忘录" />
     <entry>
         <id>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</id>
         <title>备忘录 ⋮ 案例</title>
@@ -58,8 +58,8 @@
 &lt;/ul&gt;
 &lt;p&gt;待整理~😴&lt;/p&gt;
 </content>
-        <category term="备忘录" />
         <category term="AI" />
+        <category term="备忘录" />
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>

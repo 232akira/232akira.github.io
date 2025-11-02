@@ -12,11 +12,11 @@
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>备忘录</category>
-        <category>AI</category>
         <category>指南</category>
-        <category>案例</category>
         <category>笔记</category>
+        <category>案例</category>
+        <category>AI</category>
+        <category>备忘录</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
             <title>指南🧭 ⋮ Docker Desktop使用方法</title>
@@ -291,10 +291,10 @@ git config --global user.email &amp;quot;xxx&amp;quot;
 &lt;blockquote&gt;
 &lt;p&gt;这里建议资源管理器跳转到对应目录，在地址栏直接输入cmd+回车打开终端即可。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;cd /path/to/your/ObsidianVault
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /path/to/your/ObsidianVault
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;2. 初始化Git仓库&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git init
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git init
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;a href=&#34;#2️⃣连接远程Github仓库&#34; class=&#34;headerlink&#34; title=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;/a&gt;2️⃣连接远程Github仓库&lt;/h3&gt;&lt;h4 id=&#34;在你的Github上创建新仓库&#34;&gt;&lt;a href=&#34;#在你的Github上创建新仓库&#34; class=&#34;headerlink&#34; title=&#34;在你的Github上创建新仓库&#34;&gt;&lt;/a&gt;在你的Github上创建新仓库&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1. 登录&lt;/strong&gt;你的Github账号&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. New Repository&lt;/strong&gt;&lt;/p&gt;
@@ -309,25 +309,25 @@ git config --global user.email &amp;quot;xxx&amp;quot;
 &lt;ul&gt;
 &lt;li&gt;关联你的远程仓库&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/你的用户名/你的仓库名.git
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git remote add origin https://github.com/你的用户名/你的仓库名.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;添加所有文件并提交&#34;&gt;&lt;a href=&#34;#添加所有文件并提交&#34; class=&#34;headerlink&#34; title=&#34;添加所有文件并提交&#34;&gt;&lt;/a&gt;添加所有文件并提交&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;日常同步仅用以下三步即可&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;git add .
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git add .
 git commit -m &amp;quot;你的更新日志&amp;quot;
 git push
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;在B设备上&#34;&gt;&lt;a href=&#34;#在B设备上&#34; class=&#34;headerlink&#34; title=&#34;在B设备上&#34;&gt;&lt;/a&gt;在B设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣克隆仓库&#34;&gt;&lt;a href=&#34;#1️⃣克隆仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣克隆仓库&#34;&gt;&lt;/a&gt;1️⃣克隆仓库&lt;/h3&gt;&lt;p&gt;进入你想要放置笔记文件的目录下，依旧地址栏cmd打开终端&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/你的用户名/你的仓库名.git
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/你的用户名/你的仓库名.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;a href=&#34;#2️⃣Obsidian打开克隆的文件夹&#34; class=&#34;headerlink&#34; title=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;/a&gt;2️⃣Obsidian打开克隆的文件夹&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;左边栏点击&lt;code&gt;打开命令面板&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;选择&lt;code&gt;打开其他仓库&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;链接到刚刚Clone的目录即可&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;3️⃣同步更新&#34;&gt;&lt;a href=&#34;#3️⃣同步更新&#34; class=&#34;headerlink&#34; title=&#34;3️⃣同步更新&#34;&gt;&lt;/a&gt;3️⃣同步更新&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;git pull #拉取最新更改
+&lt;h3 id=&#34;3️⃣同步更新&#34;&gt;&lt;a href=&#34;#3️⃣同步更新&#34; class=&#34;headerlink&#34; title=&#34;3️⃣同步更新&#34;&gt;&lt;/a&gt;3️⃣同步更新&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git pull #拉取最新更改
 git push # 推送本地更改
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
@@ -347,7 +347,7 @@ git push # 推送本地更改
 &lt;h3 id=&#34;系统环境变量-System-Environment-Variables&#34;&gt;&lt;a href=&#34;#系统环境变量-System-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;系统环境变量 (System Environment Variables)&#34;&gt;&lt;/a&gt;系统环境变量 (System Environment Variables)&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;# cmd（需要管理员权限）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd（需要管理员权限）
 setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot; /M
 
 # powershell（需要管理员权限）
@@ -370,7 +370,7 @@ setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot; /M
 &lt;h3 id=&#34;用户环境变量-User-Environment-Variables&#34;&gt;&lt;a href=&#34;#用户环境变量-User-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;用户环境变量 (User Environment Variables)&#34;&gt;&lt;/a&gt;用户环境变量 (User Environment Variables)&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;# cmd（无需管理员权限）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd（无需管理员权限）
 setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot;
 
 # powershell（无需管理员权限）
@@ -391,7 +391,7 @@ setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot;
 &lt;li&gt;适合个人开发环境&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;会话环境变量-Session-Environment-Variables&#34;&gt;&lt;a href=&#34;#会话环境变量-Session-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;会话环境变量 (Session Environment Variables)&#34;&gt;&lt;/a&gt;会话环境变量 (Session Environment Variables)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# cmd
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd
 set XXX_API_KEY=your_api_key_here
 
 # powershell
@@ -405,7 +405,7 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 &lt;li&gt;适合临时测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;env-文件&#34;&gt;&lt;a href=&#34;#env-文件&#34; class=&#34;headerlink&#34; title=&#34;.env 文件&#34;&gt;&lt;/a&gt;.env 文件&lt;/h3&gt;&lt;p&gt;项目根目录下创建名为&lt;code&gt;.env&lt;/code&gt;的文件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;XXX_API_KEY=your_api_key_here
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;XXX_API_KEY=your_api_key_here
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;

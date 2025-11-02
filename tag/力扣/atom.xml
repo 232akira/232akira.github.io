@@ -9,11 +9,11 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
+    <category term="AI" />
+    <category term="备忘录" />
     <entry>
         <id>https://232akira.github.io/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/</id>
         <title>Leetcode ⋮ HOT 100</title>
@@ -2506,7 +2506,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void Print_TR(int n)&amp;#123;
+&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void Print_TR(int n)&amp;#123;
     int arr[n]=&amp;#123;1&amp;#125;;
     for(int i=0;i&amp;lt;n;i++)&amp;#123;
         for(int j=i;j&amp;gt;0;j--)&amp;#123;

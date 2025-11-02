@@ -12,11 +12,11 @@
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>备忘录</category>
-        <category>AI</category>
         <category>指南</category>
-        <category>案例</category>
         <category>笔记</category>
+        <category>案例</category>
+        <category>AI</category>
+        <category>备忘录</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/</guid>
             <title>TIPS💡 ⋮ args VS parm</title>
@@ -130,14 +130,14 @@ int main()&amp;#123;
 &lt;p&gt;因为实际应用场景中，我们常见的12306、飞常准等等很多Host MCP Server都支持以STDIO方式接入，但是它们的服务器代码也不在本地啊？&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;豆包在这里解释的特别清楚👇&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;上面所提到的MCP Server连接确实需要联网，但STDIO也确实不具备网络传输能力。因为它的配置是如下的“组合模式”&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;也就是说，STDIO的传输作用于&lt;code&gt;客户端&lt;/code&gt;与&lt;code&gt;本地代理进程&lt;/code&gt;的本地管道，相当于通过&lt;code&gt;本地代理进程&lt;/code&gt;与&lt;code&gt;远程服务器&lt;/code&gt;间接对接了远程MCP服务。&lt;/p&gt;
 &lt;p&gt;💡通俗的打个比方就很容易理解了：你和快递。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;你&lt;/strong&gt;在网上买了件快递，快递走了x通长途跋涉从&lt;strong&gt;远方仓库&lt;/strong&gt;送到了——&lt;strong&gt;快递柜&lt;/strong&gt;，而不是你的手里……&lt;br&gt;于是你下班后赶忙跑去快递柜打开柜门，终于拿到了你的快递。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;【你】--柜门交互--【快递柜】--物流网络--【远方仓库】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【你】--柜门交互--【快递柜】--物流网络--【远方仓库】
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;【你】-&amp;gt;【MCP客户端】&lt;/li&gt;
@@ -154,11 +154,11 @@ int main()&amp;#123;
             <link>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
             <category>TIPS</category>
             <pubDate>Sun, 24 Aug 2025 16:30:09 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;python -m venv 起的名
+            <description><![CDATA[ &lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python -m venv 起的名
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;.\起的名\Scripts\Activate.ps1
+&lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;.\起的名\Scripts\Activate.ps1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;退出虚拟环境&#34;&gt;&lt;a href=&#34;#退出虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;退出虚拟环境&#34;&gt;&lt;/a&gt;退出虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;deactivate
+&lt;h3 id=&#34;退出虚拟环境&#34;&gt;&lt;a href=&#34;#退出虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;退出虚拟环境&#34;&gt;&lt;/a&gt;退出虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;deactivate
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>

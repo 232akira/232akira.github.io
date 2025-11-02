@@ -9,11 +9,11 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
+    <category term="AI" />
+    <category term="备忘录" />
     <entry>
         <id>https://232akira.github.io/2025/10/26/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
@@ -81,17 +81,17 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h3 id=&#34;Shoka主题配置&#34;&gt;&lt;a href=&#34;#Shoka主题配置&#34; class=&#34;headerlink&#34; title=&#34;Shoka主题配置&#34;&gt;&lt;/a&gt;Shoka主题配置&lt;/h3&gt;&lt;p&gt;一开始胡乱配置，后来更新的时候爆出来好多问题。于是这两天从头重做&lt;/p&gt;
-&lt;h4 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;前置hexo init、Node.js等
+&lt;h4 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;前置hexo init、Node.js等
 pnpm安装shokax
 /_config.landscape.yml重命名为_config.shokax.yml
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;markdown配置
+&lt;h4 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;markdown配置
 停用默认代码高亮
 文件压缩
 feed生成
 站内搜索
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;静态资源存放目录
+&lt;h4 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;静态资源存放目录
 ShokaX功能模块
 主页头图
 Iconfont图标

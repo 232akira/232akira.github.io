@@ -9,11 +9,11 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
+    <category term="AI" />
+    <category term="备忘录" />
     <entry>
         <id>https://232akira.github.io/2025/10/26/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
@@ -560,7 +560,7 @@ int main()&amp;#123;
 &lt;li&gt;&lt;code&gt;Vercel&lt;/code&gt;：云端部署平台&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;MongoDB Atlas&lt;/code&gt;、&lt;code&gt;Vercel&lt;/code&gt;、&lt;code&gt;用户评论&lt;/code&gt;&lt;strong&gt;三者的关系&lt;/strong&gt;可以理解为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;用户评论 -- Vercel --&amp;gt; MongoDB（长期保存）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;用户评论 -- Vercel --&amp;gt; MongoDB（长期保存）
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;MongoDB-Atlas&#34;&gt;&lt;a href=&#34;#MongoDB-Atlas&#34; class=&#34;headerlink&#34; title=&#34;MongoDB Atlas&#34;&gt;&lt;/a&gt;MongoDB Atlas&lt;/h3&gt;&lt;p&gt;官方教程&lt;a href=&#34;https://twikoo.js.org/mongodb-atlas.html&#34;&gt;戳此&lt;/a&gt;。&lt;/p&gt;
 &lt;ol&gt;
@@ -584,7 +584,7 @@ int main()&amp;#123;
 &lt;li&gt;Overview-&amp;gt;visit-&amp;gt;Twikoo云函数运行正常&lt;/li&gt;
 &lt;li&gt;复制&lt;code&gt;visit跳转的网址&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;config-shokax-yml&#34;&gt;&lt;a href=&#34;#config-shokax-yml&#34; class=&#34;headerlink&#34; title=&#34;_config.shokax.yml&#34;&gt;&lt;/a&gt;_config.shokax.yml&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#twikoo评论配置
+&lt;h3 id=&#34;config-shokax-yml&#34;&gt;&lt;a href=&#34;#config-shokax-yml&#34; class=&#34;headerlink&#34; title=&#34;_config.shokax.yml&#34;&gt;&lt;/a&gt;_config.shokax.yml&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#twikoo评论配置
 twikoo:
   enable: true # 是否开启
   mode: vercel # vercel(私有部署) 或 tencent
@@ -607,14 +607,14 @@ twikoo:
 &lt;p&gt;因为实际应用场景中，我们常见的12306、飞常准等等很多Host MCP Server都支持以STDIO方式接入，但是它们的服务器代码也不在本地啊？&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;豆包在这里解释的特别清楚👇&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;上面所提到的MCP Server连接确实需要联网，但STDIO也确实不具备网络传输能力。因为它的配置是如下的“组合模式”&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【MCP客户端】--stdio--【本地代理进程】--HTTP/HTTPS--【MCP远程服务器】
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;也就是说，STDIO的传输作用于&lt;code&gt;客户端&lt;/code&gt;与&lt;code&gt;本地代理进程&lt;/code&gt;的本地管道，相当于通过&lt;code&gt;本地代理进程&lt;/code&gt;与&lt;code&gt;远程服务器&lt;/code&gt;间接对接了远程MCP服务。&lt;/p&gt;
 &lt;p&gt;💡通俗的打个比方就很容易理解了：你和快递。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;你&lt;/strong&gt;在网上买了件快递，快递走了x通长途跋涉从&lt;strong&gt;远方仓库&lt;/strong&gt;送到了——&lt;strong&gt;快递柜&lt;/strong&gt;，而不是你的手里……&lt;br&gt;于是你下班后赶忙跑去快递柜打开柜门，终于拿到了你的快递。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;【你】--柜门交互--【快递柜】--物流网络--【远方仓库】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【你】--柜门交互--【快递柜】--物流网络--【远方仓库】
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;【你】-&amp;gt;【MCP客户端】&lt;/li&gt;
@@ -631,11 +631,11 @@ twikoo:
         <id>https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</id>
         <title>TIPS💡 ⋮ python虚拟环境</title>
         <link rel="alternate" href="https://232akira.github.io/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
-        <content type="html">&lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;python -m venv 起的名
+        <content type="html">&lt;h3 id=&#34;创建虚拟环境&#34;&gt;&lt;a href=&#34;#创建虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;创建虚拟环境&#34;&gt;&lt;/a&gt;创建虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;python -m venv 起的名
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;.\起的名\Scripts\Activate.ps1
+&lt;h3 id=&#34;进入虚拟环境&#34;&gt;&lt;a href=&#34;#进入虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;进入虚拟环境&#34;&gt;&lt;/a&gt;进入虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;.\起的名\Scripts\Activate.ps1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;退出虚拟环境&#34;&gt;&lt;a href=&#34;#退出虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;退出虚拟环境&#34;&gt;&lt;/a&gt;退出虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;deactivate
+&lt;h3 id=&#34;退出虚拟环境&#34;&gt;&lt;a href=&#34;#退出虚拟环境&#34; class=&#34;headerlink&#34; title=&#34;退出虚拟环境&#34;&gt;&lt;/a&gt;退出虚拟环境&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;deactivate
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         <category term="TIPS" />
@@ -729,10 +729,10 @@ twikoo:
 &lt;blockquote&gt;
 &lt;p&gt;这里建议资源管理器跳转到对应目录，在地址栏直接输入cmd+回车打开终端即可。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;cd /path/to/your/ObsidianVault
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /path/to/your/ObsidianVault
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;2. 初始化Git仓库&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git init
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git init
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;a href=&#34;#2️⃣连接远程Github仓库&#34; class=&#34;headerlink&#34; title=&#34;2️⃣连接远程Github仓库&#34;&gt;&lt;/a&gt;2️⃣连接远程Github仓库&lt;/h3&gt;&lt;h4 id=&#34;在你的Github上创建新仓库&#34;&gt;&lt;a href=&#34;#在你的Github上创建新仓库&#34; class=&#34;headerlink&#34; title=&#34;在你的Github上创建新仓库&#34;&gt;&lt;/a&gt;在你的Github上创建新仓库&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1. 登录&lt;/strong&gt;你的Github账号&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. New Repository&lt;/strong&gt;&lt;/p&gt;
@@ -747,25 +747,25 @@ twikoo:
 &lt;ul&gt;
 &lt;li&gt;关联你的远程仓库&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;git remote add origin https://github.com/你的用户名/你的仓库名.git
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git remote add origin https://github.com/你的用户名/你的仓库名.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;添加所有文件并提交&#34;&gt;&lt;a href=&#34;#添加所有文件并提交&#34; class=&#34;headerlink&#34; title=&#34;添加所有文件并提交&#34;&gt;&lt;/a&gt;添加所有文件并提交&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;日常同步仅用以下三步即可&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;git add .
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git add .
 git commit -m &amp;quot;你的更新日志&amp;quot;
 git push
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;在B设备上&#34;&gt;&lt;a href=&#34;#在B设备上&#34; class=&#34;headerlink&#34; title=&#34;在B设备上&#34;&gt;&lt;/a&gt;在B设备上&lt;/h2&gt;&lt;h3 id=&#34;1️⃣克隆仓库&#34;&gt;&lt;a href=&#34;#1️⃣克隆仓库&#34; class=&#34;headerlink&#34; title=&#34;1️⃣克隆仓库&#34;&gt;&lt;/a&gt;1️⃣克隆仓库&lt;/h3&gt;&lt;p&gt;进入你想要放置笔记文件的目录下，依旧地址栏cmd打开终端&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/你的用户名/你的仓库名.git
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/你的用户名/你的仓库名.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;a href=&#34;#2️⃣Obsidian打开克隆的文件夹&#34; class=&#34;headerlink&#34; title=&#34;2️⃣Obsidian打开克隆的文件夹&#34;&gt;&lt;/a&gt;2️⃣Obsidian打开克隆的文件夹&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;左边栏点击&lt;code&gt;打开命令面板&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;选择&lt;code&gt;打开其他仓库&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;链接到刚刚Clone的目录即可&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;3️⃣同步更新&#34;&gt;&lt;a href=&#34;#3️⃣同步更新&#34; class=&#34;headerlink&#34; title=&#34;3️⃣同步更新&#34;&gt;&lt;/a&gt;3️⃣同步更新&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;git pull #拉取最新更改
+&lt;h3 id=&#34;3️⃣同步更新&#34;&gt;&lt;a href=&#34;#3️⃣同步更新&#34; class=&#34;headerlink&#34; title=&#34;3️⃣同步更新&#34;&gt;&lt;/a&gt;3️⃣同步更新&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git pull #拉取最新更改
 git push # 推送本地更改
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
@@ -785,7 +785,7 @@ git push # 推送本地更改
 &lt;h3 id=&#34;系统环境变量-System-Environment-Variables&#34;&gt;&lt;a href=&#34;#系统环境变量-System-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;系统环境变量 (System Environment Variables)&#34;&gt;&lt;/a&gt;系统环境变量 (System Environment Variables)&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;# cmd（需要管理员权限）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd（需要管理员权限）
 setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot; /M
 
 # powershell（需要管理员权限）
@@ -808,7 +808,7 @@ setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot; /M
 &lt;h3 id=&#34;用户环境变量-User-Environment-Variables&#34;&gt;&lt;a href=&#34;#用户环境变量-User-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;用户环境变量 (User Environment Variables)&#34;&gt;&lt;/a&gt;用户环境变量 (User Environment Variables)&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;# cmd（无需管理员权限）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd（无需管理员权限）
 setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot;
 
 # powershell（无需管理员权限）
@@ -829,7 +829,7 @@ setx XXX_API_KEY &amp;quot;your_api_key_here&amp;quot;
 &lt;li&gt;适合个人开发环境&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;会话环境变量-Session-Environment-Variables&#34;&gt;&lt;a href=&#34;#会话环境变量-Session-Environment-Variables&#34; class=&#34;headerlink&#34; title=&#34;会话环境变量 (Session Environment Variables)&#34;&gt;&lt;/a&gt;会话环境变量 (Session Environment Variables)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;终端命令&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# cmd
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# cmd
 set XXX_API_KEY=your_api_key_here
 
 # powershell
@@ -843,7 +843,7 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 &lt;li&gt;适合临时测试&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;env-文件&#34;&gt;&lt;a href=&#34;#env-文件&#34; class=&#34;headerlink&#34; title=&#34;.env 文件&#34;&gt;&lt;/a&gt;.env 文件&lt;/h3&gt;&lt;p&gt;项目根目录下创建名为&lt;code&gt;.env&lt;/code&gt;的文件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;XXX_API_KEY=your_api_key_here
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;XXX_API_KEY=your_api_key_here
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1009,8 +1009,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 &lt;/ul&gt;
 &lt;p&gt;待整理~😴&lt;/p&gt;
 </content>
-        <category term="备忘录" />
         <category term="AI" />
+        <category term="备忘录" />
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>
@@ -1020,10 +1020,10 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
         <content type="html">&lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
 &lt;h2 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h2&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;然后才是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C --&amp;gt; D(Stable Diffusion生成)
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;C --&amp;gt; D(Stable Diffusion生成)
 D --&amp;gt; E[最终图像]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h2&gt;&lt;p&gt;和先前拿到Stable Diffusion是同一个方法：访问&lt;code&gt;沐曦资源包&lt;/code&gt;-&amp;gt;&lt;code&gt;DeepSeek-R1&lt;/code&gt;-&amp;gt;&lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
@@ -1050,7 +1050,7 @@ D --&amp;gt; E[最终图像]
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;输出经优化后的提示词&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;def get_optimized_prompt(original_prompt: str) -&amp;gt; str：
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;def get_optimized_prompt(original_prompt: str) -&amp;gt; str：
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;Stable-Diffusion&#34;&gt;&lt;a href=&#34;#Stable-Diffusion&#34; class=&#34;headerlink&#34; title=&#34;Stable Diffusion&#34;&gt;&lt;/a&gt;Stable Diffusion&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;作为「图像生成器」&lt;/p&gt;
@@ -1059,7 +1059,7 @@ D --&amp;gt; E[最终图像]
 &lt;li&gt;接受经优化后的提示词&lt;/li&gt;
 &lt;li&gt;输出文生图结果&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;报错梳理&#34;&gt;&lt;a href=&#34;#报错梳理&#34; class=&#34;headerlink&#34; title=&#34;报错梳理&#34;&gt;&lt;/a&gt;报错梳理&lt;/h2&gt;&lt;h3 id=&#34;模型资源地址-模型名称置入错误&#34;&gt;&lt;a href=&#34;#模型资源地址-模型名称置入错误&#34; class=&#34;headerlink&#34; title=&#34;模型资源地址&amp;#x2F;模型名称置入错误&#34;&gt;&lt;/a&gt;模型资源地址&amp;#x2F;模型名称置入错误&lt;/h3&gt;&lt;p&gt;这个其实是非常没有技术含量的报错🫥因为这个案例的代码比较冗长（200行左右），并且模型资源置入的地址的代码位置比较分散，所以在快速大量修改整体代码时，很容易没有调用到模型资源，但往往报错的时候不会意识到是这么简单的问题。&lt;br&gt;&lt;strong&gt;举个🌰：&lt;/strong&gt;&lt;br&gt;遇到了401报错，那么可能是API Key：&lt;/p&gt;
 &lt;ul&gt;
@@ -1101,10 +1101,10 @@ D --&amp;gt; E[最终图像]
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;2025-04-16 17:27:41,655 - ERROR - 响应内容: &amp;#123;&amp;quot;id&amp;quot;:&amp;quot;9e7f4969063e49b7a542150ed194db43&amp;quot;,&amp;quot;object&amp;quot;:&amp;quot;chat.completion&amp;quot;,&amp;quot;created&amp;quot;:1744795661,&amp;quot;model&amp;quot;:&amp;quot;deepseek-r1&amp;quot;,&amp;quot;choices&amp;quot;:[&amp;#123;&amp;quot;index&amp;quot;:0,&amp;quot;message&amp;quot;:&amp;#123;&amp;quot;role&amp;quot;:&amp;quot;assistant&amp;quot;,&amp;quot;content&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;reasoning_content&amp;quot;:&amp;quot;好的，用户让我转换这个中 文描述为英文提示词。首先，我需要仔细分析原句：“一只穿着宇航服的猫在月球上漫步”。主体是猫，穿着宇航服，环境是月球，动作是漫步。接下来 要确定细节，比如猫的品种可能不重要，但宇航服的设计可能需要描述，比如现代NASA风格。环境方面，月球表面可能有陨石坑和地球在背景中。风格 方面，用户可能想要写实风格，所以用realistic。画质需要高清，8k，超详细，所以加上这些词。然后按照规则，用逗号分隔短语，包含主体、环境、细节、风格、画质。检查是否有遗漏，比如猫的姿势是行走，&amp;quot;,&amp;quot;tool_calls&amp;quot;:null&amp;#125;,&amp;quot;logprobs&amp;quot;:null,&amp;quot;finish_reason&amp;quot;:&amp;quot;len...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;仔细看就会发现话没说完：说到“行走，”就停了。然后我就问了：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;我知道问题出在哪了😓和你说说。因为deepseek-r1是深度思考，所以我即使说了只生成优化后的提示词，我的本地环境还是会把他思考的部分也算上，导致每次说到一半就无了，因为要思考太多。换成deepseek-v3就好了。你身为deepseek，对这种情况有什么别的办法吗😂
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;我知道问题出在哪了😓和你说说。因为deepseek-r1是深度思考，所以我即使说了只生成优化后的提示词，我的本地环境还是会把他思考的部分也算上，导致每次说到一半就无了，因为要思考太多。换成deepseek-v3就好了。你身为deepseek，对这种情况有什么别的办法吗😂
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里记录一下DS的回答：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;哈哈，原来如此！作为DeepSeek本尊，我完全理解这个情况（毕竟自家模型的脾气还是清楚的😉）。针对这种「模型太爱思考导致输出被截断」的问题，除了换模型外，还有这些「软硬兼施」的解决方案：
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;哈哈，原来如此！作为DeepSeek本尊，我完全理解这个情况（毕竟自家模型的脾气还是清楚的😉）。针对这种「模型太爱思考导致输出被截断」的问题，除了换模型外，还有这些「软硬兼施」的解决方案：
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li&gt;🔄强制模式：用系统提示词「锁死」输出路径&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：必须用R1模型时&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在系统指令中用「三重封印」：&lt;/li&gt;
@@ -1155,7 +1155,7 @@ else:
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;真相&lt;/strong&gt;：有时候换模型确实是性价比最高的方案，毕竟——「不要试图教AI做人，选择对的AI帮你做人」😏&lt;br&gt;如果这些方案还不够，你甚至可以试试 「量子玄学法」 ——在请求参数里加一行：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;temperature&amp;quot;: 0.0001,  # 让模型进入「绝对零度」的冷漠模式
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;quot;temperature&amp;quot;: 0.0001,  # 让模型进入「绝对零度」的冷漠模式
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;（亲测对话痨型AI有奇效）&lt;br&gt;问题记录结束！&lt;/p&gt;
 &lt;h2 id=&#34;小结&#34;&gt;&lt;a href=&#34;#小结&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h2&gt;&lt;p&gt;好了，它怎么知道我把DS-R1改成V3后就一次成功了😂不过只要指令设置的足够严格也是没问题的，对比R1和V3优化Prompt之后SD生成的图大差不差。&lt;br&gt;成功版本的指令：&lt;/p&gt;
@@ -1174,8 +1174,8 @@ else:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
@@ -1293,8 +1293,8 @@ except Exception as e:
 &lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
 &lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
@@ -1317,8 +1317,8 @@ except Exception as e:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="AI" />
         <category term="案例" />
+        <category term="AI" />
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
     <entry>
@@ -2106,7 +2106,7 @@ Graphics performance and profiling
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;GPU渲染管线&#34;&gt;&lt;a href=&#34;#GPU渲染管线&#34; class=&#34;headerlink&#34; title=&#34;GPU渲染管线&#34;&gt;&lt;/a&gt;GPU渲染管线&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;基本结构&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;【模型数据】 -&amp;gt; 1️⃣【顶点Shader】 -&amp;gt; 2️⃣【图元装配及光栅化】 -&amp;gt; 3️⃣【片元Shader】 -&amp;gt; 4️⃣【输出合并】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【模型数据】 -&amp;gt; 1️⃣【顶点Shader】 -&amp;gt; 2️⃣【图元装配及光栅化】 -&amp;gt; 3️⃣【片元Shader】 -&amp;gt; 4️⃣【输出合并】
             |-----------------------------GPU渲染管线---------------------------------------|
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;1️⃣顶点Shader&lt;/strong&gt;：&lt;/p&gt;
@@ -4451,7 +4451,7 @@ public:
     &amp;#125;
 &amp;#125;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;void Print_TR(int n)&amp;#123;
+&lt;h1 id=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;a href=&#34;#杨辉三角（一维数组版）&#34; class=&#34;headerlink&#34; title=&#34;杨辉三角（一维数组版）&#34;&gt;&lt;/a&gt;杨辉三角（一维数组版）&lt;/h1&gt;&lt;h2 id=&#34;完整代码-5&#34;&gt;&lt;a href=&#34;#完整代码-5&#34; class=&#34;headerlink&#34; title=&#34;完整代码&#34;&gt;&lt;/a&gt;完整代码&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;void Print_TR(int n)&amp;#123;
     int arr[n]=&amp;#123;1&amp;#125;;
     for(int i=0;i&amp;lt;n;i++)&amp;#123;
         for(int j=i;j&amp;gt;0;j--)&amp;#123;
@@ -5801,17 +5801,17 @@ public:
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;h3 id=&#34;Shoka主题配置&#34;&gt;&lt;a href=&#34;#Shoka主题配置&#34; class=&#34;headerlink&#34; title=&#34;Shoka主题配置&#34;&gt;&lt;/a&gt;Shoka主题配置&lt;/h3&gt;&lt;p&gt;一开始胡乱配置，后来更新的时候爆出来好多问题。于是这两天从头重做&lt;/p&gt;
-&lt;h4 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;前置hexo init、Node.js等
+&lt;h4 id=&#34;步骤如下：&#34;&gt;&lt;a href=&#34;#步骤如下：&#34; class=&#34;headerlink&#34; title=&#34;步骤如下：&#34;&gt;&lt;/a&gt;步骤如下：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;前置hexo init、Node.js等
 pnpm安装shokax
 /_config.landscape.yml重命名为_config.shokax.yml
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;markdown配置
+&lt;h4 id=&#34;config-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;markdown配置
 停用默认代码高亮
 文件压缩
 feed生成
 站内搜索
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;静态资源存放目录
+&lt;h4 id=&#34;config-shokax-yml中的配置项：&#34;&gt;&lt;a href=&#34;#config-shokax-yml中的配置项：&#34; class=&#34;headerlink&#34; title=&#34;&amp;#x2F;_config.shokax.yml中的配置项：&#34;&gt;&lt;/a&gt;&amp;#x2F;_config.shokax.yml中的配置项：&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;静态资源存放目录
 ShokaX功能模块
 主页头图
 Iconfont图标

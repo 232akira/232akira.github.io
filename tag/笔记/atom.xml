@@ -9,11 +9,11 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
-    <category term="AI" />
     <category term="指南" />
-    <category term="案例" />
     <category term="笔记" />
+    <category term="案例" />
+    <category term="AI" />
+    <category term="备忘录" />
     <entry>
         <id>https://232akira.github.io/2025/10/25/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&amp;%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/</id>
         <title>笔记🗒️ ⋮ Git相关</title>
@@ -212,7 +212,7 @@
 &lt;li&gt;&lt;code&gt;Vercel&lt;/code&gt;：云端部署平台&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;MongoDB Atlas&lt;/code&gt;、&lt;code&gt;Vercel&lt;/code&gt;、&lt;code&gt;用户评论&lt;/code&gt;&lt;strong&gt;三者的关系&lt;/strong&gt;可以理解为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;用户评论 -- Vercel --&amp;gt; MongoDB（长期保存）
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;用户评论 -- Vercel --&amp;gt; MongoDB（长期保存）
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;MongoDB-Atlas&#34;&gt;&lt;a href=&#34;#MongoDB-Atlas&#34; class=&#34;headerlink&#34; title=&#34;MongoDB Atlas&#34;&gt;&lt;/a&gt;MongoDB Atlas&lt;/h3&gt;&lt;p&gt;官方教程&lt;a href=&#34;https://twikoo.js.org/mongodb-atlas.html&#34;&gt;戳此&lt;/a&gt;。&lt;/p&gt;
 &lt;ol&gt;
@@ -236,7 +236,7 @@
 &lt;li&gt;Overview-&amp;gt;visit-&amp;gt;Twikoo云函数运行正常&lt;/li&gt;
 &lt;li&gt;复制&lt;code&gt;visit跳转的网址&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;config-shokax-yml&#34;&gt;&lt;a href=&#34;#config-shokax-yml&#34; class=&#34;headerlink&#34; title=&#34;_config.shokax.yml&#34;&gt;&lt;/a&gt;_config.shokax.yml&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#twikoo评论配置
+&lt;h3 id=&#34;config-shokax-yml&#34;&gt;&lt;a href=&#34;#config-shokax-yml&#34; class=&#34;headerlink&#34; title=&#34;_config.shokax.yml&#34;&gt;&lt;/a&gt;_config.shokax.yml&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#twikoo评论配置
 twikoo:
   enable: true # 是否开启
   mode: vercel # vercel(私有部署) 或 tencent
@@ -461,7 +461,7 @@ Graphics performance and profiling
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;GPU渲染管线&#34;&gt;&lt;a href=&#34;#GPU渲染管线&#34; class=&#34;headerlink&#34; title=&#34;GPU渲染管线&#34;&gt;&lt;/a&gt;GPU渲染管线&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;基本结构&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;【模型数据】 -&amp;gt; 1️⃣【顶点Shader】 -&amp;gt; 2️⃣【图元装配及光栅化】 -&amp;gt; 3️⃣【片元Shader】 -&amp;gt; 4️⃣【输出合并】
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;【模型数据】 -&amp;gt; 1️⃣【顶点Shader】 -&amp;gt; 2️⃣【图元装配及光栅化】 -&amp;gt; 3️⃣【片元Shader】 -&amp;gt; 4️⃣【输出合并】
             |-----------------------------GPU渲染管线---------------------------------------|
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;1️⃣顶点Shader&lt;/strong&gt;：&lt;/p&gt;

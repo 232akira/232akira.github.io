@@ -12,25 +12,25 @@
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>备忘录</category>
-        <category>AI</category>
         <category>指南</category>
-        <category>案例</category>
         <category>笔记</category>
+        <category>案例</category>
+        <category>AI</category>
+        <category>备忘录</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
             <title>案例③ ⋮ 接入DeepSeek-R1优化提示词</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
 &lt;h2 id=&#34;问题引入&#34;&gt;&lt;a href=&#34;#问题引入&#34; class=&#34;headerlink&#34; title=&#34;问题引入&#34;&gt;&lt;/a&gt;问题引入&lt;/h2&gt;&lt;p&gt;上面说到对提示词进行优化，那么可以直接再引入一个文本生成模型来进行这个操作，那么整体的流程就变为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;A[原始提示词] --&amp;gt; B(DeepSeek-R1优化)--&amp;gt; C[优化后提示词]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;然后才是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C --&amp;gt; D(Stable Diffusion生成)
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;C --&amp;gt; D(Stable Diffusion生成)
 D --&amp;gt; E[最终图像]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;获取DeepSeek-R1-API&#34;&gt;&lt;a href=&#34;#获取DeepSeek-R1-API&#34; class=&#34;headerlink&#34; title=&#34;获取DeepSeek-R1 API&#34;&gt;&lt;/a&gt;获取DeepSeek-R1 API&lt;/h2&gt;&lt;p&gt;和先前拿到Stable Diffusion是同一个方法：访问&lt;code&gt;沐曦资源包&lt;/code&gt;-&amp;gt;&lt;code&gt;DeepSeek-R1&lt;/code&gt;-&amp;gt;&lt;code&gt;API&lt;/code&gt;&lt;/p&gt;
@@ -57,7 +57,7 @@ D --&amp;gt; E[最终图像]
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;输出经优化后的提示词&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;def get_optimized_prompt(original_prompt: str) -&amp;gt; str：
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;def get_optimized_prompt(original_prompt: str) -&amp;gt; str：
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;Stable-Diffusion&#34;&gt;&lt;a href=&#34;#Stable-Diffusion&#34; class=&#34;headerlink&#34; title=&#34;Stable Diffusion&#34;&gt;&lt;/a&gt;Stable Diffusion&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;作为「图像生成器」&lt;/p&gt;
@@ -66,7 +66,7 @@ D --&amp;gt; E[最终图像]
 &lt;li&gt;接受经优化后的提示词&lt;/li&gt;
 &lt;li&gt;输出文生图结果&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;def generate_image(prompt: str, output_path: str = &amp;quot;output-DS-R1.png&amp;quot;) -&amp;gt; bool:
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;报错梳理&#34;&gt;&lt;a href=&#34;#报错梳理&#34; class=&#34;headerlink&#34; title=&#34;报错梳理&#34;&gt;&lt;/a&gt;报错梳理&lt;/h2&gt;&lt;h3 id=&#34;模型资源地址-模型名称置入错误&#34;&gt;&lt;a href=&#34;#模型资源地址-模型名称置入错误&#34; class=&#34;headerlink&#34; title=&#34;模型资源地址&amp;#x2F;模型名称置入错误&#34;&gt;&lt;/a&gt;模型资源地址&amp;#x2F;模型名称置入错误&lt;/h3&gt;&lt;p&gt;这个其实是非常没有技术含量的报错🫥因为这个案例的代码比较冗长（200行左右），并且模型资源置入的地址的代码位置比较分散，所以在快速大量修改整体代码时，很容易没有调用到模型资源，但往往报错的时候不会意识到是这么简单的问题。&lt;br&gt;&lt;strong&gt;举个🌰：&lt;/strong&gt;&lt;br&gt;遇到了401报错，那么可能是API Key：&lt;/p&gt;
 &lt;ul&gt;
@@ -108,10 +108,10 @@ D --&amp;gt; E[最终图像]
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;2025-04-16 17:27:41,655 - ERROR - 响应内容: &amp;#123;&amp;quot;id&amp;quot;:&amp;quot;9e7f4969063e49b7a542150ed194db43&amp;quot;,&amp;quot;object&amp;quot;:&amp;quot;chat.completion&amp;quot;,&amp;quot;created&amp;quot;:1744795661,&amp;quot;model&amp;quot;:&amp;quot;deepseek-r1&amp;quot;,&amp;quot;choices&amp;quot;:[&amp;#123;&amp;quot;index&amp;quot;:0,&amp;quot;message&amp;quot;:&amp;#123;&amp;quot;role&amp;quot;:&amp;quot;assistant&amp;quot;,&amp;quot;content&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;reasoning_content&amp;quot;:&amp;quot;好的，用户让我转换这个中 文描述为英文提示词。首先，我需要仔细分析原句：“一只穿着宇航服的猫在月球上漫步”。主体是猫，穿着宇航服，环境是月球，动作是漫步。接下来 要确定细节，比如猫的品种可能不重要，但宇航服的设计可能需要描述，比如现代NASA风格。环境方面，月球表面可能有陨石坑和地球在背景中。风格 方面，用户可能想要写实风格，所以用realistic。画质需要高清，8k，超详细，所以加上这些词。然后按照规则，用逗号分隔短语，包含主体、环境、细节、风格、画质。检查是否有遗漏，比如猫的姿势是行走，&amp;quot;,&amp;quot;tool_calls&amp;quot;:null&amp;#125;,&amp;quot;logprobs&amp;quot;:null,&amp;quot;finish_reason&amp;quot;:&amp;quot;len...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;仔细看就会发现话没说完：说到“行走，”就停了。然后我就问了：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;我知道问题出在哪了😓和你说说。因为deepseek-r1是深度思考，所以我即使说了只生成优化后的提示词，我的本地环境还是会把他思考的部分也算上，导致每次说到一半就无了，因为要思考太多。换成deepseek-v3就好了。你身为deepseek，对这种情况有什么别的办法吗😂
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;我知道问题出在哪了😓和你说说。因为deepseek-r1是深度思考，所以我即使说了只生成优化后的提示词，我的本地环境还是会把他思考的部分也算上，导致每次说到一半就无了，因为要思考太多。换成deepseek-v3就好了。你身为deepseek，对这种情况有什么别的办法吗😂
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这里记录一下DS的回答：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;哈哈，原来如此！作为DeepSeek本尊，我完全理解这个情况（毕竟自家模型的脾气还是清楚的😉）。针对这种「模型太爱思考导致输出被截断」的问题，除了换模型外，还有这些「软硬兼施」的解决方案：
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;哈哈，原来如此！作为DeepSeek本尊，我完全理解这个情况（毕竟自家模型的脾气还是清楚的😉）。针对这种「模型太爱思考导致输出被截断」的问题，除了换模型外，还有这些「软硬兼施」的解决方案：
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li&gt;🔄强制模式：用系统提示词「锁死」输出路径&lt;br&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：必须用R1模型时&lt;br&gt;&lt;strong&gt;技巧&lt;/strong&gt;：在系统指令中用「三重封印」：&lt;/li&gt;
@@ -162,7 +162,7 @@ else:
 &amp;#125;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;真相&lt;/strong&gt;：有时候换模型确实是性价比最高的方案，毕竟——「不要试图教AI做人，选择对的AI帮你做人」😏&lt;br&gt;如果这些方案还不够，你甚至可以试试 「量子玄学法」 ——在请求参数里加一行：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;temperature&amp;quot;: 0.0001,  # 让模型进入「绝对零度」的冷漠模式
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;&amp;quot;temperature&amp;quot;: 0.0001,  # 让模型进入「绝对零度」的冷漠模式
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;（亲测对话痨型AI有奇效）&lt;br&gt;问题记录结束！&lt;/p&gt;
 &lt;h2 id=&#34;小结&#34;&gt;&lt;a href=&#34;#小结&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h2&gt;&lt;p&gt;好了，它怎么知道我把DS-R1改成V3后就一次成功了😂不过只要指令设置的足够严格也是没问题的，对比R1和V3优化Prompt之后SD生成的图大差不差。&lt;br&gt;成功版本的指令：&lt;/p&gt;
@@ -186,8 +186,8 @@ else:
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A1%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
             <title>案例② ⋮ Stable Diffusion图像生成</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A1%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
@@ -305,8 +305,8 @@ except Exception as e:
             <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
             <title>案例① ⋮ 入门指南</title>
             <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
