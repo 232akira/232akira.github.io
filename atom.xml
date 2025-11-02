@@ -3,21 +3,21 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-10-26T12:12:12.000Z</updated>
-    <category term="记录" />
+    <updated>2025-11-02T13:49:12.000Z</updated>
     <category term="TIPS" />
+    <category term="记录" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
+    <category term="备忘录" />
+    <category term="AI" />
+    <category term="案例" />
     <category term="指南" />
     <category term="笔记" />
-    <category term="案例" />
-    <category term="AI" />
-    <category term="备忘录" />
     <entry>
-        <id>https://232akira.github.io/2025/10/26/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
+        <id>https://232akira.github.io/2025/11/02/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
-        <link rel="alternate" href="https://232akira.github.io/2025/10/26/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
+        <link rel="alternate" href="https://232akira.github.io/2025/11/02/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/"/>
         <content type="html">&lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -26,13 +26,26 @@
 &lt;p&gt;也可以直接点击目录上方的数字跳转。&lt;/p&gt;
 &lt;h2 id=&#34;🧩其他&#34;&gt;&lt;a href=&#34;#🧩其他&#34; class=&#34;headerlink&#34; title=&#34;🧩其他&#34;&gt;&lt;/a&gt;🧩其他&lt;/h2&gt;&lt;h3 id=&#34;想来点音乐？&#34;&gt;&lt;a href=&#34;#想来点音乐？&#34; class=&#34;headerlink&#34; title=&#34;想来点音乐？&#34;&gt;&lt;/a&gt;想来点音乐？&lt;/h3&gt;&lt;p&gt;&lt;code&gt;波浪动效&lt;/code&gt;-&amp;gt;&lt;code&gt;右边播放键&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;待完善的功能&#34;&gt;&lt;a href=&#34;#待完善的功能&#34; class=&#34;headerlink&#34; title=&#34;待完善的功能&#34;&gt;&lt;/a&gt;待完善的功能&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;评论系统&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;评论系统&lt;/del&gt; ✅️&lt;strong&gt;2025-09-14&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;代码高亮&lt;/del&gt; ✅️&lt;strong&gt;2025-11-02&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;文章搜索&lt;/li&gt;
-&lt;li&gt;其他异常显示&lt;br&gt;…&lt;/li&gt;
+&lt;li&gt;其他异常显示……&lt;br&gt;…&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="记录" />
-        <updated>2025-10-26T12:12:12.000Z</updated>
+        <updated>2025-11-02T13:49:12.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/</id>
+        <title>笔记🗒️ ⋮ Docker</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;最近做的开源项目复现越来越多，发现自己在项目部署方面的实践太浅薄，平时往往就是编个码注重功能实现。&lt;br&gt;于是决定好好学习一下&lt;code&gt;Docker&lt;/code&gt;。这篇基本完成后会开启&lt;code&gt;K8s&lt;/code&gt;笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这周末玩疯了……😶下周将会补充并完善此篇！&lt;/p&gt;
+</content>
+        <category term="笔记" />
+        <updated>2025-11-02T13:48:12.000Z</updated>
     </entry>
     <entry>
         <id>https://232akira.github.io/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
@@ -1009,8 +1022,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 &lt;/ul&gt;
 &lt;p&gt;待整理~😴&lt;/p&gt;
 </content>
-        <category term="AI" />
         <category term="备忘录" />
+        <category term="AI" />
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>
@@ -1174,8 +1187,8 @@ else:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-17T05:43:07.000Z</updated>
     </entry>
     <entry>
@@ -1293,8 +1306,8 @@ except Exception as e:
 &lt;h2 id=&#34;后续问题扩展&#34;&gt;&lt;a href=&#34;#后续问题扩展&#34; class=&#34;headerlink&#34; title=&#34;后续问题扩展&#34;&gt;&lt;/a&gt;后续问题扩展&lt;/h2&gt;&lt;p&gt;如果你成功调用Stable Diffusion模型的API，并输入中文提示词，会发现生成的图几乎不相关…因此后续需要对提示词&lt;code&gt;prompt&lt;/code&gt;进行调整。&lt;/p&gt;
 &lt;p&gt;下方 ↓ 跳转查看下一篇文章【实战2️⃣ 接入DeepSeek-R1优化提示词】。&lt;/p&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-17T05:43:01.000Z</updated>
     </entry>
     <entry>
@@ -1317,8 +1330,8 @@ except Exception as e:
 &lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/openapi/v1#tag/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/POST/images/generations&#34;&gt;Gitee AI Inference OpenAPI&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="案例" />
         <category term="AI" />
+        <category term="案例" />
         <updated>2025-04-16T07:29:31.000Z</updated>
     </entry>
     <entry>

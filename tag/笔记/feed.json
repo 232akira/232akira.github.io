@@ -5,6 +5,16 @@
     "home_page_url": "https://232akira.github.io",
     "items": [
         {
+            "id": "https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/",
+            "url": "https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/",
+            "title": "笔记🗒️ ⋮ Docker",
+            "date_published": "2025-11-02T13:48:12.000Z",
+            "content_html": "<blockquote>\n<p>最近做的开源项目复现越来越多，发现自己在项目部署方面的实践太浅薄，平时往往就是编个码注重功能实现。<br>于是决定好好学习一下<code>Docker</code>。这篇基本完成后会开启<code>K8s</code>笔记。</p>\n</blockquote>\n<p>这周末玩疯了……😶下周将会补充并完善此篇！</p>\n",
+            "tags": [
+                "笔记"
+            ]
+        },
+        {
             "id": "https://232akira.github.io/2025/10/25/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/",
             "url": "https://232akira.github.io/2025/10/25/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Git%20&%20GitHub%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A/",
             "title": "笔记🗒️ ⋮ Git相关",
