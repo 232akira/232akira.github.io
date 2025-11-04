@@ -5,18 +5,29 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 02 Nov 2025 21:48:12 +0800</pubDate>
-        <lastBuildDate>Sun, 02 Nov 2025 21:48:12 +0800</lastBuildDate>
+        <pubDate>Tue, 04 Nov 2025 21:48:12 +0800</pubDate>
+        <lastBuildDate>Tue, 04 Nov 2025 21:48:12 +0800</lastBuildDate>
         <category>TIPS</category>
         <category>记录</category>
-        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
         <category>备忘录</category>
         <category>AI</category>
-        <category>案例</category>
         <category>指南</category>
+        <category>案例</category>
         <category>笔记</category>
+        <category>专题</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/</guid>
+            <title>笔记🗒️ ⋮ Function calling</title>
+            <link>https://232akira.github.io/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/</link>
+            <category>笔记</category>
+            <pubDate>Tue, 04 Nov 2025 21:48:12 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;开新坑开新坑~等我月中前写好这篇🐱&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/</guid>
             <title>笔记🗒️ ⋮ Docker</title>
@@ -26,7 +37,165 @@
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;最近做的开源项目复现越来越多，发现自己在项目部署方面的实践太浅薄，平时往往就是编个码注重功能实现。&lt;br&gt;于是决定好好学习一下&lt;code&gt;Docker&lt;/code&gt;。这篇基本完成后会开启&lt;code&gt;K8s&lt;/code&gt;笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;这周末玩疯了……😶下周将会补充并完善此篇！&lt;/p&gt;
+&lt;h2 id=&#34;核心概念&#34;&gt;&lt;a href=&#34;#核心概念&#34; class=&#34;headerlink&#34; title=&#34;核心概念&#34;&gt;&lt;/a&gt;核心概念&lt;/h2&gt;&lt;p&gt;容器化能让我们快速部署、隔离环境和复现项目的运行条件，那么就不能不提到&lt;strong&gt;Docker&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么先理解三个概念：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Image&lt;/strong&gt;（镜像）&lt;br&gt;类似一个系统模板，包含运行程序的所有依赖。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Container&lt;/strong&gt;（容器）&lt;br&gt;一个实际运行中的项目环境。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;&lt;br&gt;描述镜像怎么构建。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安全合规的Docker使用方案&#34;&gt;&lt;a href=&#34;#安全合规的Docker使用方案&#34; class=&#34;headerlink&#34; title=&#34;安全合规的Docker使用方案&#34;&gt;&lt;/a&gt;安全合规的Docker使用方案&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;公司电脑是装不上Docker Desktop的：一是有权限限制，二是Docker Desktop License不允许公司企业免费使用。&lt;/p&gt;
+&lt;p&gt;但是公司提供了&lt;strong&gt;内网镜像源&lt;/strong&gt;和&lt;strong&gt;Docker CE安装仓库&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;理解Docker的整体工作流程&#34;&gt;&lt;a href=&#34;#理解Docker的整体工作流程&#34; class=&#34;headerlink&#34; title=&#34;理解Docker的整体工作流程&#34;&gt;&lt;/a&gt;理解Docker的整体工作流程&lt;/h3&gt;&lt;p&gt;比如你的项目想在Docker里跑，需要：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;写一个Dockerfile（告诉Dockers环境和依赖）&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;docker build&lt;/code&gt;打包成镜像&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;docker run&lt;/code&gt;启动容器&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;docker exec -it&lt;/code&gt;进去调试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;在虚拟机中安装Docker&#34;&gt;&lt;a href=&#34;#在虚拟机中安装Docker&#34; class=&#34;headerlink&#34; title=&#34;在虚拟机中安装Docker&#34;&gt;&lt;/a&gt;在虚拟机中安装Docker&lt;/h3&gt;&lt;h4 id=&#34;1-创建虚拟机&#34;&gt;&lt;a href=&#34;#1-创建虚拟机&#34; class=&#34;headerlink&#34; title=&#34;1. 创建虚拟机&#34;&gt;&lt;/a&gt;1. 创建虚拟机&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：获得可控的Linux环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我安装的是&lt;strong&gt;Oracle VM VirtualBox&lt;/strong&gt;。花了将近一周纠缠在装Ubuntu上😶&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟机系统镜像来自Ubuntu官网：&lt;a href=&#34;https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop&#34;&gt;https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VirtualBoxVM-&amp;gt;光驱-&amp;gt;选择官网下载的镜像文件（.iso）&lt;/li&gt;
+&lt;li&gt;打开VM-&amp;gt;Try or Install Ubuntu&lt;/li&gt;
+&lt;li&gt;Ubuntu&lt;strong&gt;安装&lt;/strong&gt;时&lt;strong&gt;非常非常容易卡死&lt;/strong&gt;在复制文件&amp;#x2F;安装系统的步骤。这里建议一是：把镜像文件放在全英文目录下；二是：VM默认联网没问题，但在点击最后一个安装的选项前，断掉你的本机网络。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;安装完成&lt;/strong&gt;。登录VM并打开终端界面，执行：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 更新系统并安装常用工具
+sudo apt update &amp;amp;&amp;amp; sudo apt upgrade -y
+sudo apt install -y curl wget git ca-certificates gnupg lsb-release apt-transport-https
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;之后的部分内命令非企业外公开，因此后期会二次整理成文字描述形式~&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-安装Docker-CE&#34;&gt;&lt;a href=&#34;#2-安装Docker-CE&#34; class=&#34;headerlink&#34; title=&#34;2. 安装Docker CE&#34;&gt;&lt;/a&gt;2. 安装Docker CE&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：获取Docker环境。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;也就是进行换源+安装Docker CE企业版。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;添加公司Docker CE GPG Key并添加镜像仓库（公司内网）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;待整理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;（可选）更新并移除旧版本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get update
+sudo apt-get remove -y docker docker-engine docker.io containerd runc || true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;安装docker-ce （这步下了至少一个小时……😭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;启动并设置开机自启&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl enable --now docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;3-配置镜像代理仓库&#34;&gt;&lt;a href=&#34;#3-配置镜像代理仓库&#34; class=&#34;headerlink&#34; title=&#34;3. 配置镜像代理仓库&#34;&gt;&lt;/a&gt;3. 配置镜像代理仓库&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：确保从公司内网拉取镜像，不受外网限制。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;编辑&lt;code&gt;/etc/docker/daemon.json&lt;/code&gt;：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;打开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo nano /etc/docker/daemon.json
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;编辑：&lt;code&gt;Ctrl + O&lt;/code&gt;、&lt;code&gt;回车&lt;/code&gt;、&lt;code&gt;Ctrl + X&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;待整理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;重启Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo systemctl daemon-reload
+sudo systemctl restart docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;4-测试Docker是否能正常拉取镜像&#34;&gt;&lt;a href=&#34;#4-测试Docker是否能正常拉取镜像&#34; class=&#34;headerlink&#34; title=&#34;4. 测试Docker是否能正常拉取镜像&#34;&gt;&lt;/a&gt;4. 测试Docker是否能正常拉取镜像&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：确认内网镜像访问权限与代理配置无误。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;登录公司私有仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;待整理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;测试拉取&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;待整理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;查看输出&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# 类似如下格式则表示拉取成功
+Status: Downloaded newer image for ……
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;5-（可选）给当前用户添加Docker权限&#34;&gt;&lt;a href=&#34;#5-（可选）给当前用户添加Docker权限&#34; class=&#34;headerlink&#34; title=&#34;5. （可选）给当前用户添加Docker权限&#34;&gt;&lt;/a&gt;5. （可选）给当前用户添加Docker权限&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：避免每次都要sudo。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo usermod -aG docker $USER
+newgrp docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;6-启动容器-运行项目&#34;&gt;&lt;a href=&#34;#6-启动容器-运行项目&#34; class=&#34;headerlink&#34; title=&#34;6. 启动容器 运行项目&#34;&gt;&lt;/a&gt;6. 启动容器 运行项目&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的&lt;/strong&gt;：实际部署&amp;#x2F;运行镜像中的项目。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;待整理
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;补充&#34;&gt;&lt;a href=&#34;#补充&#34; class=&#34;headerlink&#34; title=&#34;补充&#34;&gt;&lt;/a&gt;&lt;strong&gt;补充&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;为了优化我们在Ubuntu的使用体验，可以安装增强功能（Guest Additions）：&lt;br&gt;&lt;a href=&#34;https://download.virtualbox.org/virtualbox/7.2.0/&#34;&gt;点此安装iso镜像文件&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;上方任务栏 -&amp;gt; &lt;strong&gt;设备&lt;/strong&gt; -&amp;gt; 安装增强功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;启动&lt;strong&gt;终端&lt;/strong&gt;，安装前置包。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install gcc make perl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;p&gt;点击左侧边栏的&lt;strong&gt;光盘图标&lt;/strong&gt; -&amp;gt; VboxWindowsAdditions.exe （我这里是VBox_GAs_7.2.0）-&amp;gt; 选择运行软件：&lt;br&gt;终端此时会自动执行安装命令。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启再&lt;strong&gt;验证&lt;/strong&gt;：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo reboot
+lsmod | grep vbox
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;p&gt;如果出现&lt;strong&gt;vboxguest&lt;/strong&gt;、vboxvideo等等：&lt;br&gt;那就是安装成功了！&lt;br&gt;缺少你需要的功能或是没有成功，那就多安装几次试试；sudo命令安装方法同理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;VirtualBox+Ubuntu&lt;strong&gt;全屏显示&lt;/strong&gt;&lt;br&gt;前五步完成后自动全屏显示了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;主机与虚拟机之间的&lt;strong&gt;复制粘贴&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Oracle VirtualBox管理器 -&amp;gt; 设置 -&amp;gt; 常规 -&amp;gt; Features&amp;#x2F;高级&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;把Shared Clipboard（共享粘贴板）和Drag-and-Drop（拖放）都设置为双向。&lt;/p&gt;
+&lt;p&gt;如果你装了很久都没能复制粘贴……😭请一定要注意：&lt;em&gt;&lt;strong&gt;桌面环境可直接Ctr+C&amp;#x2F;V，但是终端需要Ctrl+Shift+C&amp;#x2F;V！！！&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考教程&#34;&gt;&lt;a href=&#34;#参考教程&#34; class=&#34;headerlink&#34; title=&#34;参考教程&#34;&gt;&lt;/a&gt;参考教程&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1892960016316748037&#34;&gt;(14 封私信 &amp;#x2F; 78 条消息) Docker入门教程（非常详细）从零基础入门到精通，看完这一篇就够了 - 知乎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_74135521/article/details/145969933&#34;&gt;安装Ubuntu遇见正在复制文件卡住时，仅需断网即可-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/wanghuizhao/p/16923829.html&#34;&gt;VirtualBox-Ubuntu-主机和虚拟机实现互相复制粘贴 - 夏夜星空晚风 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_41812346/article/details/150585718?spm=1001.2101.3001.6650.3&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-150585718-blog-48729471.235%5Ev43%5Epc_blog_bottom_relevance_base1&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-150585718-blog-48729471.235%5Ev43%5Epc_blog_bottom_relevance_base1&amp;utm_relevant_index=6&#34;&gt;VirtualBox下载安装-创建Ubuntu虚拟机-增强功能（共享剪切板，共享文件夹）-中文输入法ibus(pinyin)-Chrome_virtualbox7.2 guest additions-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;公司善良IT大佬の建议&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>

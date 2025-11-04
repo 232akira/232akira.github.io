@@ -114,11 +114,169 @@ div.code-toolbar > .toolbar button:active {
     border-color: var(--grey-6);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
-</style><link rel="preload" href="/images/wave.jpg" as="image" fetchpriority="high"><meta name="keywords" content="笔记"/><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/"><title>笔记🗒️ ⋮ Docker</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">笔记🗒️ ⋮ Docker</h1><div class="meta"><span class="item" title="创建时间：2025-11-02 21:48:12"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-11-02T21:48:12+08:00">2025-11-02</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>117</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>1 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/wave.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="yichen-kang"/><meta itemprop="description" content="😼, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><blockquote>
+</style><link rel="preload" href="/images/wave.jpg" as="image" fetchpriority="high"><meta name="keywords" content="笔记"/><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/"><title>笔记🗒️ ⋮ Docker</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">笔记🗒️ ⋮ Docker</h1><div class="meta"><span class="item" title="创建时间：2025-11-02 21:48:12"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-11-02T21:48:12+08:00">2025-11-02</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>3.8k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>3 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/wave.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="yichen-kang"/><meta itemprop="description" content="😼, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><blockquote>
 <p>最近做的开源项目复现越来越多，发现自己在项目部署方面的实践太浅薄，平时往往就是编个码注重功能实现。<br>于是决定好好学习一下<code>Docker</code>。这篇基本完成后会开启<code>K8s</code>笔记。</p>
 </blockquote>
-<p>这周末玩疯了……😶下周将会补充并完善此篇！</p>
-<div class="tags"><a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="ic i-tag"></i>笔记</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/11/02/笔记/笔记🗒️ ⋮ Docker/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-11-02 21:49:19" itemprop="dateModified" datetime="2025-11-02T21:49:19+08:00">2025-11-02</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="yichen-kang 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="yichen-kang 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>yichen-kang<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/" title="笔记🗒️ ⋮ Docker">https://232akira.github.io/2025/11/02/笔记/笔记🗒️ ⋮ Docker/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" rel="prev" itemprop="url" title="指南🧭 ⋮ Docker Desktop使用方法" style="background-image: linear-gradient(to bottom right, #9b86f6, #eebada);"><span class="type">上一篇</span><h3>指南🧭 ⋮ Docker Desktop使用方法</h3></a></div><div class="item right"><a href="/2025/11/02/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/" rel="next" itemprop="url" title="🔝点我查看站点指引" style="background-image: linear-gradient(to bottom right, #aad0b9, #a49796);"><span class="type">下一篇</span><h3>🔝点我查看站点指引</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="yichen-kang" src="/assets/avatar.jpg"/><p class="name" itemprop="name">yichen-kang</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">33</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">10</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1399789377" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;1399789377"><i class="ic i-cloud-music"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2025/11/02/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/">TIPS💡 ⋮ STDIO的“本地”</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Obsidian%20Git%E5%90%8C%E6%AD%A5/">指南🧭 ⋮ Obsidian Git同步</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/">案例③ ⋮ 接入DeepSeek-R1优化提示词</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/">TIPS💡 ⋮ args VS parm</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">指南🧭 ⋮ Docker Desktop使用方法</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/">Leetcode ⋮ 字符串</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20API%20Key%E5%AF%BC%E5%85%A5/">指南🧭 ⋮ API Key导入</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20MCP%EF%BC%88Model%20Context%20Protocol%EF%BC%89/">笔记🗒️ ⋮ MCP（Model Context Protocol）</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/">案例① ⋮ 入门指南</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">专题1️⃣ ⋮ 滑动窗口</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">yichen-kang @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">125k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">1:54</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+<h2 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h2><p>容器化能让我们快速部署、隔离环境和复现项目的运行条件，那么就不能不提到<strong>Docker</strong>。</p>
+<p>那么先理解三个概念：</p>
+<ol>
+<li><p><strong>Image</strong>（镜像）<br>类似一个系统模板，包含运行程序的所有依赖。</p>
+</li>
+<li><p><strong>Container</strong>（容器）<br>一个实际运行中的项目环境。</p>
+</li>
+<li><p><strong>Dockerfile</strong><br>描述镜像怎么构建。</p>
+</li>
+</ol>
+<h2 id="安全合规的Docker使用方案"><a href="#安全合规的Docker使用方案" class="headerlink" title="安全合规的Docker使用方案"></a>安全合规的Docker使用方案</h2><blockquote>
+<p>公司电脑是装不上Docker Desktop的：一是有权限限制，二是Docker Desktop License不允许公司企业免费使用。</p>
+<p>但是公司提供了<strong>内网镜像源</strong>和<strong>Docker CE安装仓库</strong>。</p>
+</blockquote>
+<h3 id="理解Docker的整体工作流程"><a href="#理解Docker的整体工作流程" class="headerlink" title="理解Docker的整体工作流程"></a>理解Docker的整体工作流程</h3><p>比如你的项目想在Docker里跑，需要：</p>
+<ol>
+<li>写一个Dockerfile（告诉Dockers环境和依赖）</li>
+<li>用<code>docker build</code>打包成镜像</li>
+<li>用<code>docker run</code>启动容器</li>
+<li>用<code>docker exec -it</code>进去调试</li>
+</ol>
+<h3 id="在虚拟机中安装Docker"><a href="#在虚拟机中安装Docker" class="headerlink" title="在虚拟机中安装Docker"></a>在虚拟机中安装Docker</h3><h4 id="1-创建虚拟机"><a href="#1-创建虚拟机" class="headerlink" title="1. 创建虚拟机"></a>1. 创建虚拟机</h4><blockquote>
+<p><strong>目的</strong>：获得可控的Linux环境。</p>
+</blockquote>
+<p>我安装的是<strong>Oracle VM VirtualBox</strong>。花了将近一周纠缠在装Ubuntu上😶</p>
+<ul>
+<li>虚拟机系统镜像来自Ubuntu官网：<a target="_blank" rel="noopener" href="https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop</a></li>
+<li>VirtualBoxVM-&gt;光驱-&gt;选择官网下载的镜像文件（.iso）</li>
+<li>打开VM-&gt;Try or Install Ubuntu</li>
+<li>Ubuntu<strong>安装</strong>时<strong>非常非常容易卡死</strong>在复制文件&#x2F;安装系统的步骤。这里建议一是：把镜像文件放在全英文目录下；二是：VM默认联网没问题，但在点击最后一个安装的选项前，断掉你的本机网络。</li>
+</ul>
+<p><strong>安装完成</strong>。登录VM并打开终端界面，执行：</p>
+<pre><code class="language-bash"># 更新系统并安装常用工具
+sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt install -y curl wget git ca-certificates gnupg lsb-release apt-transport-https
+</code></pre>
+<hr>
+<p><em><strong>之后的部分内命令非企业外公开，因此后期会二次整理成文字描述形式~</strong></em></p>
+<h4 id="2-安装Docker-CE"><a href="#2-安装Docker-CE" class="headerlink" title="2. 安装Docker CE"></a>2. 安装Docker CE</h4><blockquote>
+<p><strong>目的</strong>：获取Docker环境。</p>
+</blockquote>
+<p>也就是进行换源+安装Docker CE企业版。</p>
+<ol>
+<li>添加公司Docker CE GPG Key并添加镜像仓库（公司内网）</li>
+</ol>
+<pre><code class="language-bash">待整理
+</code></pre>
+<ol start="2">
+<li>（可选）更新并移除旧版本</li>
+</ol>
+<pre><code class="language-bash">sudo apt-get update
+sudo apt-get remove -y docker docker-engine docker.io containerd runc || true
+</code></pre>
+<ol start="3">
+<li>安装docker-ce （这步下了至少一个小时……😭</li>
+</ol>
+<pre><code class="language-bash">sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre>
+<ol start="4">
+<li>启动并设置开机自启</li>
+</ol>
+<pre><code class="language-bash">sudo systemctl enable --now docker
+</code></pre>
+<h4 id="3-配置镜像代理仓库"><a href="#3-配置镜像代理仓库" class="headerlink" title="3. 配置镜像代理仓库"></a>3. 配置镜像代理仓库</h4><blockquote>
+<p><strong>目的</strong>：确保从公司内网拉取镜像，不受外网限制。</p>
+</blockquote>
+<ol>
+<li>编辑<code>/etc/docker/daemon.json</code>：</li>
+</ol>
+<ul>
+<li>打开</li>
+</ul>
+<pre><code class="language-bash">sudo nano /etc/docker/daemon.json
+</code></pre>
+<ul>
+<li>编辑：<code>Ctrl + O</code>、<code>回车</code>、<code>Ctrl + X</code></li>
+</ul>
+<pre><code class="language-bash">待整理
+</code></pre>
+<ol start="3">
+<li>重启Docker</li>
+</ol>
+<pre><code class="language-bash">sudo systemctl daemon-reload
+sudo systemctl restart docker
+</code></pre>
+<h4 id="4-测试Docker是否能正常拉取镜像"><a href="#4-测试Docker是否能正常拉取镜像" class="headerlink" title="4. 测试Docker是否能正常拉取镜像"></a>4. 测试Docker是否能正常拉取镜像</h4><blockquote>
+<p><strong>目的</strong>：确认内网镜像访问权限与代理配置无误。</p>
+</blockquote>
+<ol>
+<li>登录公司私有仓库</li>
+</ol>
+<pre><code class="language-bash">待整理
+</code></pre>
+<ol start="2">
+<li>测试拉取</li>
+</ol>
+<pre><code class="language-bash">待整理
+</code></pre>
+<ol start="3">
+<li>查看输出</li>
+</ol>
+<pre><code># 类似如下格式则表示拉取成功
+Status: Downloaded newer image for ……
+</code></pre>
+<h4 id="5-（可选）给当前用户添加Docker权限"><a href="#5-（可选）给当前用户添加Docker权限" class="headerlink" title="5. （可选）给当前用户添加Docker权限"></a>5. （可选）给当前用户添加Docker权限</h4><blockquote>
+<p><strong>目的</strong>：避免每次都要sudo。</p>
+</blockquote>
+<pre><code class="language-bash">sudo usermod -aG docker $USER
+newgrp docker
+</code></pre>
+<h4 id="6-启动容器-运行项目"><a href="#6-启动容器-运行项目" class="headerlink" title="6. 启动容器 运行项目"></a>6. 启动容器 运行项目</h4><blockquote>
+<p><strong>目的</strong>：实际部署&#x2F;运行镜像中的项目。</p>
+</blockquote>
+<p>举例：</p>
+<pre><code class="language-bash">待整理
+</code></pre>
+<h4 id="补充"><a href="#补充" class="headerlink" title="补充"></a><strong>补充</strong></h4><p>为了优化我们在Ubuntu的使用体验，可以安装增强功能（Guest Additions）：<br><a target="_blank" rel="noopener" href="https://download.virtualbox.org/virtualbox/7.2.0/">点此安装iso镜像文件</a></p>
+<ol>
+<li><p>上方任务栏 -&gt; <strong>设备</strong> -&gt; 安装增强功能。</p>
+</li>
+<li><p>启动<strong>终端</strong>，安装前置包。</p>
+</li>
+</ol>
+<pre><code class="language-bash">sudo apt-get install gcc make perl
+</code></pre>
+<ol start="3">
+<li><p>点击左侧边栏的<strong>光盘图标</strong> -&gt; VboxWindowsAdditions.exe （我这里是VBox_GAs_7.2.0）-&gt; 选择运行软件：<br>终端此时会自动执行安装命令。</p>
+</li>
+<li><p>重启再<strong>验证</strong>：</p>
+</li>
+</ol>
+<pre><code class="language-bash">sudo reboot
+lsmod | grep vbox
+</code></pre>
+<ol start="5">
+<li><p>如果出现<strong>vboxguest</strong>、vboxvideo等等：<br>那就是安装成功了！<br>缺少你需要的功能或是没有成功，那就多安装几次试试；sudo命令安装方法同理。</p>
+</li>
+<li><p>VirtualBox+Ubuntu<strong>全屏显示</strong><br>前五步完成后自动全屏显示了。</p>
+</li>
+<li><p>主机与虚拟机之间的<strong>复制粘贴</strong></p>
+<blockquote>
+<p>Oracle VirtualBox管理器 -&gt; 设置 -&gt; 常规 -&gt; Features&#x2F;高级</p>
+</blockquote>
+</li>
+</ol>
+<p>把Shared Clipboard（共享粘贴板）和Drag-and-Drop（拖放）都设置为双向。</p>
+<p>如果你装了很久都没能复制粘贴……😭请一定要注意：<em><strong>桌面环境可直接Ctr+C&#x2F;V，但是终端需要Ctrl+Shift+C&#x2F;V！！！</strong></em></p>
+<h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/1892960016316748037">(14 封私信 &#x2F; 78 条消息) Docker入门教程（非常详细）从零基础入门到精通，看完这一篇就够了 - 知乎</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_74135521/article/details/145969933">安装Ubuntu遇见正在复制文件卡住时，仅需断网即可-CSDN博客</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wanghuizhao/p/16923829.html">VirtualBox-Ubuntu-主机和虚拟机实现互相复制粘贴 - 夏夜星空晚风 - 博客园</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41812346/article/details/150585718?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-150585718-blog-48729471.235%5Ev43%5Epc_blog_bottom_relevance_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-3-150585718-blog-48729471.235%5Ev43%5Epc_blog_bottom_relevance_base1&utm_relevant_index=6">VirtualBox下载安装-创建Ubuntu虚拟机-增强功能（共享剪切板，共享文件夹）-中文输入法ibus(pinyin)-Chrome_virtualbox7.2 guest additions-CSDN博客</a></p>
+</li>
+<li><p>公司善良IT大佬の建议</p>
+</li>
+</ol>
+<div class="tags"><a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="ic i-tag"></i>笔记</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/11/02/笔记/笔记🗒️ ⋮ Docker/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-11-04 21:09:09" itemprop="dateModified" datetime="2025-11-04T21:09:09+08:00">2025-11-04</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="yichen-kang 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="yichen-kang 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>yichen-kang<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/11/02/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Docker/" title="笔记🗒️ ⋮ Docker">https://232akira.github.io/2025/11/02/笔记/笔记🗒️ ⋮ Docker/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" rel="prev" itemprop="url" title="指南🧭 ⋮ Docker Desktop使用方法" style="background-image: linear-gradient(to bottom right, #eefccb, #928992);"><span class="type">上一篇</span><h3>指南🧭 ⋮ Docker Desktop使用方法</h3></a></div><div class="item right"><a href="/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/" rel="next" itemprop="url" title="笔记🗒️ ⋮ Function calling" style="background-image: linear-gradient(to bottom right, #f597de, #f3e7d2);"><span class="type">下一篇</span><h3>笔记🗒️ ⋮ Function calling</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">核心概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E5%90%88%E8%A7%84%E7%9A%84Docker%E4%BD%BF%E7%94%A8%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text">安全合规的Docker使用方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%A7%A3Docker%E7%9A%84%E6%95%B4%E4%BD%93%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">2.1.</span> <span class="toc-text">理解Docker的整体工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E5%AE%89%E8%A3%85Docker"><span class="toc-number">2.2.</span> <span class="toc-text">在虚拟机中安装Docker</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-number">2.2.1.</span> <span class="toc-text">1. 创建虚拟机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85Docker-CE"><span class="toc-number">2.2.2.</span> <span class="toc-text">2. 安装Docker CE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E4%BB%A3%E7%90%86%E4%BB%93%E5%BA%93"><span class="toc-number">2.2.3.</span> <span class="toc-text">3. 配置镜像代理仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%B5%8B%E8%AF%95Docker%E6%98%AF%E5%90%A6%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="toc-number">2.2.4.</span> <span class="toc-text">4. 测试Docker是否能正常拉取镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89%E7%BB%99%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0Docker%E6%9D%83%E9%99%90"><span class="toc-number">2.2.5.</span> <span class="toc-text">5. （可选）给当前用户添加Docker权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8-%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.2.6.</span> <span class="toc-text">6. 启动容器 运行项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">2.2.7.</span> <span class="toc-text">补充</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">参考教程</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="yichen-kang" src="/assets/avatar.jpg"/><p class="name" itemprop="name">yichen-kang</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">34</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">10</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1399789377" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;1399789377"><i class="ic i-cloud-music"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/05/%E5%8A%9B%E6%89%A3/Leetcode-%E5%AD%97%E7%AC%A6%E4%B8%B2/">Leetcode ⋮ 字符串</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%BC%80%E6%BA%90%E8%B4%A1%E7%8C%AE/">指南🧭 ⋮ 开源贡献</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/">TIPS💡 ⋮ 关于pip</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/">TIPS💡 ⋮ args VS parm</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20STDIO%E7%9A%84%E2%80%9C%E6%9C%AC%E5%9C%B0%E2%80%9D/">TIPS💡 ⋮ STDIO的“本地”</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/">备忘录 ⋮ 案例</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/01/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%983-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">专题3️⃣ ⋮ 动态规划</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20PKMer%20Market%E5%AE%89%E8%A3%85/">指南🧭 ⋮ PKMer Market安装</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/02/20/%E5%85%B6%E4%BB%96/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%B0%8F%E5%8D%8A%E5%B9%B4%E7%9A%84%E7%97%9B/">博客搭建小半年的痛</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A1%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/">案例② ⋮ Stable Diffusion图像生成</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">yichen-kang @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">129k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">1:57</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
     ispost: true,
     path: `2025/11/02/笔记/笔记🗒️ ⋮ Docker/`,
     favicon: {
