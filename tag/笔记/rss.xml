@@ -7,16 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Tue, 04 Nov 2025 21:48:12 +0800</pubDate>
         <lastBuildDate>Tue, 04 Nov 2025 21:48:12 +0800</lastBuildDate>
-        <category>TIPS</category>
-        <category>记录</category>
+        <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
+        <category>记录</category>
+        <category>TIPS</category>
         <category>备忘录</category>
-        <category>AI</category>
         <category>指南</category>
+        <category>AI</category>
         <category>案例</category>
+        <category>调研</category>
         <category>笔记</category>
-        <category>专题</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/</guid>
             <title>笔记🗒️ ⋮ Function calling</title>
@@ -24,8 +25,110 @@
             <category>笔记</category>
             <pubDate>Tue, 04 Nov 2025 21:48:12 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;开新坑开新坑~等我月中前写好这篇🐱&lt;/p&gt;
+&lt;p&gt;这篇主要整理一下openai和国内（dashscope、gitee等）模型平台的function calling的格式区别。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;仅总结&lt;strong&gt;可调用工具列表&lt;/strong&gt;的定义方式，即：“如何定义工具列表”。&lt;/p&gt;
+&lt;h3 id=&#34;OpenAI&#34;&gt;&lt;a href=&#34;#OpenAI&#34; class=&#34;headerlink&#34; title=&#34;OpenAI&#34;&gt;&lt;/a&gt;OpenAI&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;tools = [
+    &amp;#123;
+        &amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;,
+        &amp;quot;name&amp;quot;: &amp;quot;get_horoscope&amp;quot;,
+        &amp;quot;description&amp;quot;: &amp;quot;Get today&amp;#39;s horoscope for an astrological sign.&amp;quot;,
+        &amp;quot;parameters&amp;quot;: &amp;#123;
+            &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot;,
+            &amp;quot;properties&amp;quot;: &amp;#123;
+                &amp;quot;sign&amp;quot;: &amp;#123;
+                    &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;,
+                    &amp;quot;description&amp;quot;: &amp;quot;An astrological sign like Taurus or Aquarius&amp;quot;,
+                &amp;#125;,
+            &amp;#125;,
+            &amp;quot;required&amp;quot;: [&amp;quot;sign&amp;quot;],
+        &amp;#125;,
+    &amp;#125;,
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;DashScope&#34;&gt;&lt;a href=&#34;#DashScope&#34; class=&#34;headerlink&#34; title=&#34;DashScope&#34;&gt;&lt;/a&gt;DashScope&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;tools = [
+    &amp;#123;
+        &amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;,
+        &amp;quot;function&amp;quot;: &amp;#123;
+            &amp;quot;name&amp;quot;: &amp;quot;get_current_weather&amp;quot;,
+            &amp;quot;description&amp;quot;: &amp;quot;当你想查询指定城市的天气时非常有用。&amp;quot;,
+            &amp;quot;parameters&amp;quot;: &amp;#123;
+                &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot;,
+                &amp;quot;properties&amp;quot;: &amp;#123;
+                    &amp;quot;location&amp;quot;: &amp;#123;
+                        &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;,
+                        &amp;quot;description&amp;quot;: &amp;quot;城市或县区，比如北京市、杭州市、余杭区等。&amp;quot;,
+                    &amp;#125;
+                &amp;#125;,
+                &amp;quot;required&amp;quot;: [&amp;quot;location&amp;quot;],
+            &amp;#125;,
+        &amp;#125;,
+    &amp;#125;,
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;Gitee-AI&#34;&gt;&lt;a href=&#34;#Gitee-AI&#34; class=&#34;headerlink&#34; title=&#34;Gitee AI&#34;&gt;&lt;/a&gt;Gitee AI&lt;/h2&gt;&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;tools = [
+    &amp;#123;
+        &amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;,
+        &amp;quot;function&amp;quot;: &amp;#123;
+            &amp;quot;name&amp;quot;: &amp;quot;get_current_weather&amp;quot;,
+            &amp;quot;description&amp;quot;: &amp;quot;通过城市名和日期获取地点的天气情况，包括温度、天气状况等信息&amp;quot;,
+            &amp;quot;parameters&amp;quot;: &amp;#123;
+                &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot;,
+                &amp;quot;properties&amp;quot;: &amp;#123;
+                    &amp;quot;city&amp;quot;: &amp;#123;
+                        &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;,
+                        &amp;quot;description&amp;quot;: &amp;quot;用户想要查询天气的城市名称&amp;quot;,
+                    &amp;#125;,
+                    &amp;quot;date&amp;quot;: &amp;#123;
+                        &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;,
+                        &amp;quot;description&amp;quot;: &amp;quot;想要查询的日期，如&amp;#39;今天&amp;#39;、&amp;#39;明天&amp;#39;或具体日期&amp;#39;2023-10-01&amp;#39;&amp;quot;,
+                    &amp;#125;
+                &amp;#125;,
+                &amp;quot;required&amp;quot;: [&amp;quot;city&amp;quot;, &amp;quot;date&amp;quot;],
+            &amp;#125;,
+        &amp;#125;
+    &amp;#125;
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;Function-Calling-工具定义格式对比&#34;&gt;&lt;a href=&#34;#Function-Calling-工具定义格式对比&#34; class=&#34;headerlink&#34; title=&#34;Function Calling 工具定义格式对比&#34;&gt;&lt;/a&gt;Function Calling 工具定义格式对比&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;这个表是g老师写的，等我二次审核。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;平台&lt;/th&gt;
+&lt;th&gt;工具定义结构&lt;/th&gt;
+&lt;th&gt;关键字段层级&lt;/th&gt;
+&lt;th&gt;特点说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;OpenAI&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;、&lt;code&gt;description&lt;/code&gt;、&lt;code&gt;parameters&lt;/code&gt; 直接位于最外层&lt;/td&gt;
+&lt;td&gt;结构更简洁；无 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 嵌套层。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;DashScope（阿里云百炼）&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;多一层 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 包裹内部定义&lt;/td&gt;
+&lt;td&gt;函数信息嵌套在 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 字段中。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Gitee AI（模力方舟）&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;与 DashScope 相同&lt;/td&gt;
+&lt;td&gt;结构几乎一致，字段名完全相同，说明文字不同。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✅ &lt;strong&gt;总结&lt;/strong&gt;：OpenAI 与国内平台的主要区别在于是否包裹 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 层；DashScope 与 Gitee AI 的结构基本一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://platform.openai.com/docs/guides/function-calling&#34;&gt;Function calling - OpenAI API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.aliyun.com/zh/model-studio/qwen-function-calling?spm=5176.30275541.J_ZGek9Blx07Hclc3Ddt9dg.14.5f8e2f3ds4Wskn&amp;scm=20140722.S_help@@%E6%96%87%E6%A1%A3@@2862208._.ID_help@@%E6%96%87%E6%A1%A3@@2862208-RL_functioncall-LOC_2024HSPAllResult-OR_ser-PAR1_213e012917629402469488248ea3d7-V_4-PAR3_o-RE_new10-P0_0-P1_0&#34;&gt;大模型调用外部工具解决问题-Function Calling-大模型服务平台百炼-阿里云&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ai.gitee.com/docs/products/apis/texts/function-calling&#34;&gt;函数调用 (Function Calling) | 模力方舟&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
