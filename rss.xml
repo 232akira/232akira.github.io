@@ -7,17 +7,17 @@
         <language>zh-CN</language>
         <pubDate>Wed, 12 Nov 2025 16:33:01 +0800</pubDate>
         <lastBuildDate>Wed, 12 Nov 2025 16:33:01 +0800</lastBuildDate>
+        <category>记录</category>
+        <category>TIPS</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>记录</category>
-        <category>TIPS</category>
         <category>备忘录</category>
         <category>指南</category>
         <category>AI</category>
-        <category>案例</category>
-        <category>调研</category>
         <category>笔记</category>
+        <category>调研</category>
+        <category>案例</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/11/12/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
@@ -49,16 +49,17 @@
 &lt;p&gt;开新坑🐱作为&lt;strong&gt;调研&lt;/strong&gt;模块的第一篇文章，记录一下最近又火起来的大模型OCR技术。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;OCR&lt;/strong&gt;，即&lt;strong&gt;O&lt;/strong&gt;ptical &lt;strong&gt;C&lt;/strong&gt;haracter &lt;strong&gt;R&lt;/strong&gt;ecognition，&lt;strong&gt;光学字符识别&lt;/strong&gt;。这个概念从简单来看，就是我们生活中常用到的：“提取图中文字”。&lt;/p&gt;
-&lt;h3 id=&#34;传统OCR&#34;&gt;&lt;a href=&#34;#传统OCR&#34; class=&#34;headerlink&#34; title=&#34;传统OCR&#34;&gt;&lt;/a&gt;传统OCR&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;未完待续&lt;/p&gt;
+&lt;h3 id=&#34;传统OCR&#34;&gt;&lt;a href=&#34;#传统OCR&#34; class=&#34;headerlink&#34; title=&#34;传统OCR&#34;&gt;&lt;/a&gt;传统OCR&lt;/h3&gt;&lt;p&gt;未完待续……&lt;/p&gt;
+&lt;h3 id=&#34;大模型OCR&#34;&gt;&lt;a href=&#34;#大模型OCR&#34; class=&#34;headerlink&#34; title=&#34;大模型OCR&#34;&gt;&lt;/a&gt;大模型OCR&lt;/h3&gt;&lt;p&gt;未完待续……&lt;/p&gt;
+&lt;h3 id=&#34;模型汇总&#34;&gt;&lt;a href=&#34;#模型汇总&#34; class=&#34;headerlink&#34; title=&#34;模型汇总&#34;&gt;&lt;/a&gt;模型汇总&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;四个都是国内模型！喜欢！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;大模型OCR&#34;&gt;&lt;a href=&#34;#大模型OCR&#34; class=&#34;headerlink&#34; title=&#34;大模型OCR&#34;&gt;&lt;/a&gt;大模型OCR&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;未完待续&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;模型汇总&#34;&gt;&lt;a href=&#34;#模型汇总&#34; class=&#34;headerlink&#34; title=&#34;模型汇总&#34;&gt;&lt;/a&gt;模型汇总&lt;/h3&gt;&lt;h4 id=&#34;PaddleOCR-VL&#34;&gt;&lt;a href=&#34;#PaddleOCR-VL&#34; class=&#34;headerlink&#34; title=&#34;PaddleOCR-VL&#34;&gt;&lt;/a&gt;PaddleOCR-VL&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/PaddlePaddle/PaddleOCR-VL&#34;&gt;PaddlePaddle&amp;#x2F;PaddleOCR-VL · Hugging Face&lt;/a&gt;&lt;br&gt;PaddleOCR-VL在页面级文档解析（OminiDocBench v1.5、v1.0）与元素级识别均达到 SOTA 表现。&lt;/p&gt;
-&lt;h4 id=&#34;DeepSeek-OCR&#34;&gt;&lt;a href=&#34;#DeepSeek-OCR&#34; class=&#34;headerlink&#34; title=&#34;DeepSeek-OCR&#34;&gt;&lt;/a&gt;DeepSeek-OCR&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/deepseek-ai/DeepSeek-OCR&#34;&gt;deepseek-ai&amp;#x2F;DeepSeek-OCR · Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;PaddleOCR-VL&#34;&gt;&lt;a href=&#34;#PaddleOCR-VL&#34; class=&#34;headerlink&#34; title=&#34;PaddleOCR-VL&#34;&gt;&lt;/a&gt;PaddleOCR-VL&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/PaddlePaddle/PaddleOCR-VL&#34;&gt;https://huggingface.co/PaddlePaddle/PaddleOCR-VL&lt;/a&gt;&lt;br&gt;PaddleOCR-VL在页面级文档解析（OminiDocBench v1.5、v1.0）与元素级识别均达到 SOTA 表现。&lt;/p&gt;
+&lt;h4 id=&#34;DeepSeek-OCR&#34;&gt;&lt;a href=&#34;#DeepSeek-OCR&#34; class=&#34;headerlink&#34; title=&#34;DeepSeek-OCR&#34;&gt;&lt;/a&gt;DeepSeek-OCR&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/deepseek-ai/DeepSeek-OCR&#34;&gt;https://huggingface.co/deepseek-ai/DeepSeek-OCR&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;MinerU&#34;&gt;&lt;a href=&#34;#MinerU&#34; class=&#34;headerlink&#34; title=&#34;MinerU&#34;&gt;&lt;/a&gt;MinerU&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/opendatalab/MinerU2.5-2509-1.2B&#34;&gt;https://huggingface.co/opendatalab/MinerU2.5-2509-1.2B&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;GOT-OCR&#34;&gt;&lt;a href=&#34;#GOT-OCR&#34; class=&#34;headerlink&#34; title=&#34;GOT-OCR&#34;&gt;&lt;/a&gt;GOT-OCR&lt;/h4&gt;&lt;p&gt;&lt;a href=&#34;https://huggingface.co/stepfun-ai/GOT-OCR2_0&#34;&gt;https://huggingface.co/stepfun-ai/GOT-OCR2_0&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;本次调研时间：2025年11月06日~&lt;/p&gt;
+&lt;p&gt;本次调研截止时间：2025年11月13日~&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.paddleocr.ai/latest/index.html#_2&#34;&gt;PaddleOCR 文档&lt;/a&gt;&lt;/li&gt;
