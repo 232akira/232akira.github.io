@@ -9,12 +9,12 @@
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
     <category term="指南" />
+    <category term="备忘录" />
     <category term="AI" />
-    <category term="笔记" />
     <category term="调研" />
     <category term="案例" />
+    <category term="笔记" />
     <entry>
         <id>https://232akira.github.io/2025/11/12/%E8%B0%83%E7%A0%94/%E8%B0%83%E7%A0%94%F0%9F%94%8D%20%E2%8B%AE%20OCR/</id>
         <title>调研🔍 ⋮ OCR</title>
@@ -37,6 +37,7 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.paddleocr.ai/latest/index.html#_2&#34;&gt;PaddleOCR 文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
         <category term="调研" />

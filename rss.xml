@@ -12,12 +12,12 @@
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>备忘录</category>
         <category>指南</category>
+        <category>备忘录</category>
         <category>AI</category>
-        <category>笔记</category>
         <category>调研</category>
         <category>案例</category>
+        <category>笔记</category>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/11/12/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
@@ -63,6 +63,7 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.paddleocr.ai/latest/index.html#_2&#34;&gt;PaddleOCR 文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
         </item>
