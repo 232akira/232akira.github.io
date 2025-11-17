@@ -5,25 +5,25 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 12 Nov 2025 16:33:01 +0800</pubDate>
-        <lastBuildDate>Wed, 12 Nov 2025 16:33:01 +0800</lastBuildDate>
+        <pubDate>Mon, 17 Nov 2025 20:56:07 +0800</pubDate>
+        <lastBuildDate>Mon, 17 Nov 2025 20:56:07 +0800</lastBuildDate>
         <category>记录</category>
         <category>TIPS</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
         <category>指南</category>
-        <category>备忘录</category>
-        <category>AI</category>
-        <category>调研</category>
         <category>案例</category>
+        <category>AI</category>
+        <category>备忘录</category>
+        <category>调研</category>
         <category>笔记</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/11/12/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/11/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
-            <link>https://232akira.github.io/2025/11/12/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
+            <link>https://232akira.github.io/2025/11/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
             <category>记录</category>
-            <pubDate>Wed, 12 Nov 2025 16:33:01 +0800</pubDate>
+            <pubDate>Mon, 17 Nov 2025 20:56:07 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -36,6 +36,46 @@
 &lt;li&gt;&lt;del&gt;代码高亮&lt;/del&gt; ✅️&lt;strong&gt;2025-11-02&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;文章搜索&lt;/li&gt;
 &lt;li&gt;其他异常显示……&lt;br&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/11/17/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Python%E4%BE%BF%E6%90%BA%E7%89%88%E5%AE%89%E8%A3%85/</guid>
+            <title>指南🧭 ⋮ Python便携版安装</title>
+            <link>https://232akira.github.io/2025/11/17/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Python%E4%BE%BF%E6%90%BA%E7%89%88%E5%AE%89%E8%A3%85/</link>
+            <category>指南</category>
+            <pubDate>Mon, 17 Nov 2025 20:56:06 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;在有权限限制的设备上无法安装&lt;strong&gt;python完整版&lt;/strong&gt;，特别糟心。于是摸索出了&lt;strong&gt;python便携版&lt;/strong&gt;的使用方法。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Win11&lt;/code&gt;、&lt;code&gt;python3.13.8&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1-官网下载&#34;&gt;&lt;a href=&#34;#1-官网下载&#34; class=&#34;headerlink&#34; title=&#34;1. 官网下载&#34;&gt;&lt;/a&gt;1. 官网下载&lt;/h3&gt;&lt;p&gt;👉&lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;官网戳此&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择你需要下载的python版本&lt;/li&gt;
+&lt;li&gt;显示&lt;strong&gt;embeddable package&lt;/strong&gt;的.zip即为便携版。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-编辑pythonXXX-pth&#34;&gt;&lt;a href=&#34;#2-编辑pythonXXX-pth&#34; class=&#34;headerlink&#34; title=&#34;2. 编辑pythonXXX._pth&#34;&gt;&lt;/a&gt;2. 编辑&lt;code&gt;pythonXXX._pth&lt;/code&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;解压.zip（例：pyenv-win-master）&lt;/li&gt;
+&lt;li&gt;解压后的文件夹放在你有权限的目录下，记住路径&lt;/li&gt;
+&lt;li&gt;打开文件夹根目录的pythonXXX._pth（例：python313._pth）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;删掉import site前面的&lt;code&gt;#&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-安装pip&#34;&gt;&lt;a href=&#34;#3-安装pip&#34; class=&#34;headerlink&#34; title=&#34;3. 安装pip&#34;&gt;&lt;/a&gt;3. 安装&lt;code&gt;pip&lt;/code&gt;&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;便携版python往往没有&lt;code&gt;venv&lt;/code&gt;和&lt;code&gt;pip&lt;/code&gt;包。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+   C:\Users\i25149\python-3.13.8-embed-amd64\python.exe get-pip.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4-安装virtualenv&#34;&gt;&lt;a href=&#34;#4-安装virtualenv&#34; class=&#34;headerlink&#34; title=&#34;4. 安装virtualenv&#34;&gt;&lt;/a&gt;4. 安装&lt;code&gt;virtualenv&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;用virtualenv替代venv安装。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;   C:\Users\i25149\python-3.13.8-embed-amd64\python.exe -m pip install virtualenv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;🎉到这里就安装完成啦！！！&lt;/p&gt;
+&lt;h3 id=&#34;5-后续：创建虚拟环境-使用虚拟环境-安装其他依赖……&#34;&gt;&lt;a href=&#34;#5-后续：创建虚拟环境-使用虚拟环境-安装其他依赖……&#34; class=&#34;headerlink&#34; title=&#34;5. 后续：创建虚拟环境&amp;amp;使用虚拟环境&amp;amp;安装其他依赖……&#34;&gt;&lt;/a&gt;5. 后续：创建虚拟环境&amp;amp;使用虚拟环境&amp;amp;安装其他依赖……&lt;/h3&gt;&lt;p&gt;可参考本站点其他几篇文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《TIPS💡 ⋮ python虚拟环境》&lt;/li&gt;
+&lt;li&gt;《TIPS💡 ⋮ 关于requirements.txt》&lt;br&gt;……&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -1285,8 +1325,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
             <title>备忘录 ⋮ 案例</title>
             <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
-            <category>备忘录</category>
             <category>AI</category>
+            <category>备忘录</category>
             <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
 &lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
@@ -1333,8 +1373,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
             <title>案例③ ⋮ 接入DeepSeek-R1优化提示词</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A2%20%E6%8E%A5%E5%85%A5DeepSeek-R1%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:07 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-16&lt;/p&gt;
 &lt;h2 id=&#34;优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34;&gt;&lt;a href=&#34;#优化Stable-Difussion生成效果-接入DeepSeek-R1处理提示词&#34; class=&#34;headerlink&#34; title=&#34;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&#34;&gt;&lt;/a&gt;优化Stable Difussion生成效果(接入DeepSeek-R1处理提示词)&lt;/h2&gt;&lt;p&gt;哇这里只加了一个功能流程中就出现很多bug😅待我慢慢梳理一下&lt;/p&gt;
@@ -1498,8 +1538,8 @@ else:
             <guid isPermalink="true">https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A1%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</guid>
             <title>案例② ⋮ Stable Diffusion图像生成</title>
             <link>https://232akira.github.io/2025/04/17/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A1%20Stable%20Difussion%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Thu, 17 Apr 2025 13:43:01 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;🔆2025-04-15&lt;/p&gt;
 &lt;h1 id=&#34;实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34;&gt;&lt;a href=&#34;#实现第一个图像生成Hello-World（Stable-Diffusion模型）&#34; class=&#34;headerlink&#34; title=&#34;实现第一个图像生成Hello World（Stable Diffusion模型）&#34;&gt;&lt;/a&gt;实现第一个图像生成Hello World（Stable Diffusion模型）&lt;/h1&gt;&lt;blockquote&gt;
@@ -1617,8 +1657,8 @@ except Exception as e:
             <guid isPermalink="true">https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
             <title>案例① ⋮ 入门指南</title>
             <link>https://232akira.github.io/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
-            <category>AI</category>
             <category>案例</category>
+            <category>AI</category>
             <pubDate>Wed, 16 Apr 2025 15:29:31 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;关于案例的内容较多，可点击本页底部标签跳转查看。&lt;/p&gt;
 &lt;h1 id=&#34;工作流入门&#34;&gt;&lt;a href=&#34;#工作流入门&#34; class=&#34;headerlink&#34; title=&#34;工作流入门&#34;&gt;&lt;/a&gt;工作流入门&lt;/h1&gt;&lt;h2 id=&#34;步骤1-安装&#34;&gt;&lt;a href=&#34;#步骤1-安装&#34; class=&#34;headerlink&#34; title=&#34;步骤1 安装&#34;&gt;&lt;/a&gt;步骤1 安装&lt;/h2&gt;&lt;h3 id=&#34;安装vscode&#34;&gt;&lt;a href=&#34;#安装vscode&#34; class=&#34;headerlink&#34; title=&#34;安装vscode&#34;&gt;&lt;/a&gt;安装vscode&lt;/h3&gt;&lt;h4 id=&#34;本体安装&#34;&gt;&lt;a href=&#34;#本体安装&#34; class=&#34;headerlink&#34; title=&#34;本体安装&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;本体安装&lt;/a&gt;&lt;/h4&gt;&lt;h4 id=&#34;AI编程拓展&#34;&gt;&lt;a href=&#34;#AI编程拓展&#34; class=&#34;headerlink&#34; title=&#34;AI编程拓展&#34;&gt;&lt;/a&gt;AI编程拓展&lt;/h4&gt;&lt;ol&gt;
