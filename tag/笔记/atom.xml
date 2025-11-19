@@ -4,17 +4,17 @@
     <title>Per aspera ad astra • Posts by &#34;笔记&#34; tag</title>
     <link href="https://232akira.github.io" />
     <updated>2025-11-04T13:48:12.000Z</updated>
-    <category term="记录" />
-    <category term="TIPS" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="指南" />
+    <category term="记录" />
+    <category term="TIPS" />
     <category term="案例" />
     <category term="AI" />
     <category term="备忘录" />
-    <category term="调研" />
+    <category term="指南" />
     <category term="笔记" />
+    <category term="调研" />
     <entry>
         <id>https://232akira.github.io/2025/11/04/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20Function%20calling/</id>
         <title>笔记🗒️ ⋮ Function calling</title>
@@ -85,10 +85,7 @@
     &amp;#125;
 ]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;Function-Calling-工具定义格式对比&#34;&gt;&lt;a href=&#34;#Function-Calling-工具定义格式对比&#34; class=&#34;headerlink&#34; title=&#34;Function Calling 工具定义格式对比&#34;&gt;&lt;/a&gt;Function Calling 工具定义格式对比&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;这个表是g老师写的，等我二次审核。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;Function-Calling-工具定义格式对比&#34;&gt;&lt;a href=&#34;#Function-Calling-工具定义格式对比&#34; class=&#34;headerlink&#34; title=&#34;Function Calling 工具定义格式对比&#34;&gt;&lt;/a&gt;Function Calling 工具定义格式对比&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;平台&lt;/th&gt;
@@ -101,23 +98,23 @@
 &lt;td&gt;&lt;strong&gt;OpenAI&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;name&lt;/code&gt;、&lt;code&gt;description&lt;/code&gt;、&lt;code&gt;parameters&lt;/code&gt; 直接位于最外层&lt;/td&gt;
-&lt;td&gt;结构更简洁；无 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 嵌套层。&lt;/td&gt;
+&lt;td&gt;无 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 嵌套层。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;DashScope（阿里云百炼）&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;DashScope&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;多一层 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 包裹内部定义&lt;/td&gt;
 &lt;td&gt;函数信息嵌套在 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 字段中。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Gitee AI（模力方舟）&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;与 DashScope 相同&lt;/td&gt;
-&lt;td&gt;结构几乎一致，字段名完全相同，说明文字不同。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Gitee AI&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;✅ &lt;strong&gt;总结&lt;/strong&gt;：OpenAI 与国内平台的主要区别在于是否包裹 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 层；DashScope 与 Gitee AI 的结构基本一致。&lt;/p&gt;
+&lt;p&gt;✅ &lt;strong&gt;总结&lt;/strong&gt;：OpenAI与DashScope&amp;#x2F;Gitee AI的Function Calling形式的主要区别在于：是否包裹 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 层。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://platform.openai.com/docs/guides/function-calling&#34;&gt;Function calling - OpenAI API&lt;/a&gt;&lt;/li&gt;

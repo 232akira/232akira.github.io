@@ -5,25 +5,25 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 17 Nov 2025 20:56:07 +0800</pubDate>
-        <lastBuildDate>Mon, 17 Nov 2025 20:56:07 +0800</lastBuildDate>
-        <category>记录</category>
-        <category>TIPS</category>
+        <pubDate>Wed, 19 Nov 2025 20:58:06 +0800</pubDate>
+        <lastBuildDate>Wed, 19 Nov 2025 20:58:06 +0800</lastBuildDate>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>指南</category>
+        <category>记录</category>
+        <category>TIPS</category>
         <category>案例</category>
         <category>AI</category>
         <category>备忘录</category>
-        <category>调研</category>
+        <category>指南</category>
         <category>笔记</category>
+        <category>调研</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/11/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/11/19/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
-            <link>https://232akira.github.io/2025/11/17/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
+            <link>https://232akira.github.io/2025/11/19/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
             <category>记录</category>
-            <pubDate>Mon, 17 Nov 2025 20:56:07 +0800</pubDate>
+            <pubDate>Wed, 19 Nov 2025 20:58:06 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -36,6 +36,76 @@
 &lt;li&gt;&lt;del&gt;代码高亮&lt;/del&gt; ✅️&lt;strong&gt;2025-11-02&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;文章搜索&lt;/li&gt;
 &lt;li&gt;其他异常显示……&lt;br&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/11/19/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%B0%86Github%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB%E5%88%B0Gitee/</guid>
+            <title>指南🧭 ⋮ 将Github项目迁移到Gitee</title>
+            <link>https://232akira.github.io/2025/11/19/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20%E5%B0%86Github%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB%E5%88%B0Gitee/</link>
+            <category>指南</category>
+            <pubDate>Wed, 19 Nov 2025 20:56:06 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Gitee&lt;/strong&gt;（&lt;strong&gt;开源中国&lt;/strong&gt;）是一个与&lt;strong&gt;Github&lt;/strong&gt;类似的，基于&lt;strong&gt;Git&lt;/strong&gt;的代码托管和协作平台。&lt;br&gt;最近经常在github上fork原仓库、进行二次开发，于是想在gitee上同时留存一份复现成果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;那么像这样的github个人仓库要如何上传到gitee，才能保留&lt;strong&gt;贡献者信息&lt;/strong&gt;和后续的&lt;strong&gt;源代码管理&lt;/strong&gt;符合规范呢？&lt;/p&gt;
+&lt;p&gt;此处记录一下操作步骤……💡&lt;/p&gt;
+&lt;h4 id=&#34;检查仓库状态&#34;&gt;&lt;a href=&#34;#检查仓库状态&#34; class=&#34;headerlink&#34; title=&#34;检查仓库状态&#34;&gt;&lt;/a&gt;检查仓库状态&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;前提&lt;/strong&gt;：已在编译器（vscode、cursor等）打开你的github项目，并且能在左侧的「源代码管理」中看到当前的版本状态。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;查看所有远程仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git remote -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;查看所有分支&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git branch -a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;查看当前分支的修改状态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;绑定Gitee远程仓库&#34;&gt;&lt;a href=&#34;#绑定Gitee远程仓库&#34; class=&#34;headerlink&#34; title=&#34;绑定Gitee远程仓库&#34;&gt;&lt;/a&gt;绑定Gitee远程仓库&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在Gitee新建一个空仓库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例如：&lt;a href=&#34;https://gitee.com/akira_232/CryptoTradingAgents-Gitee.git&#34;&gt;https://gitee.com/akira_232/CryptoTradingAgents-Gitee.git&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为本地项目添加新的远程地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# gitee为远程仓库的别名，类比github的origin
+git remote add gitee https://gitee.com/akira_232/CryptoTradingAgents-Gitee.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;验证绑定并切换分支&#34;&gt;&lt;a href=&#34;#验证绑定并切换分支&#34; class=&#34;headerlink&#34; title=&#34;验证绑定并切换分支&#34;&gt;&lt;/a&gt;验证绑定并切换分支&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;确认是否添加gitee地址&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git remote -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;切换到主要开发分支（例如：main）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git checkout main
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;推送代码到Gitee&#34;&gt;&lt;a href=&#34;#推送代码到Gitee&#34; class=&#34;headerlink&#34; title=&#34;推送代码到Gitee&#34;&gt;&lt;/a&gt;推送代码到Gitee&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git push -u gitee main:master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;命令结构&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push&lt;/code&gt;：建立本地分支与远程分支的追踪关系&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gitee&lt;/code&gt;：远程仓库的别名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main:master&lt;/code&gt;：将本地main分支推送到远程的master分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;✅完成啦！&#34;&gt;&lt;a href=&#34;#✅完成啦！&#34; class=&#34;headerlink&#34; title=&#34;✅完成啦！&#34;&gt;&lt;/a&gt;✅完成啦！&lt;/h3&gt;&lt;p&gt;执行完成后，你的Gitee仓库会完整保留：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;GitHub 原项目的 &lt;strong&gt;提交记录与贡献者信息&lt;/strong&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自己修改和提交的历史；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;后续还可通过 &lt;code&gt;git push gitee&lt;/code&gt; 实现同步更新。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -179,10 +249,7 @@
     &amp;#125;
 ]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;Function-Calling-工具定义格式对比&#34;&gt;&lt;a href=&#34;#Function-Calling-工具定义格式对比&#34; class=&#34;headerlink&#34; title=&#34;Function Calling 工具定义格式对比&#34;&gt;&lt;/a&gt;Function Calling 工具定义格式对比&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;这个表是g老师写的，等我二次审核。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
+&lt;h3 id=&#34;Function-Calling-工具定义格式对比&#34;&gt;&lt;a href=&#34;#Function-Calling-工具定义格式对比&#34; class=&#34;headerlink&#34; title=&#34;Function Calling 工具定义格式对比&#34;&gt;&lt;/a&gt;Function Calling 工具定义格式对比&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;平台&lt;/th&gt;
@@ -195,23 +262,23 @@
 &lt;td&gt;&lt;strong&gt;OpenAI&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;name&lt;/code&gt;、&lt;code&gt;description&lt;/code&gt;、&lt;code&gt;parameters&lt;/code&gt; 直接位于最外层&lt;/td&gt;
-&lt;td&gt;结构更简洁；无 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 嵌套层。&lt;/td&gt;
+&lt;td&gt;无 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 嵌套层。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;DashScope（阿里云百炼）&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;DashScope&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;多一层 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 包裹内部定义&lt;/td&gt;
 &lt;td&gt;函数信息嵌套在 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 字段中。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Gitee AI（模力方舟）&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;&amp;#123;&amp;quot;type&amp;quot;: &amp;quot;function&amp;quot;, &amp;quot;function&amp;quot;: &amp;#123;&amp;quot;name&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;...&amp;quot;, &amp;quot;parameters&amp;quot;: &amp;#123;...&amp;#125;&amp;#125;&amp;#125;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;与 DashScope 相同&lt;/td&gt;
-&lt;td&gt;结构几乎一致，字段名完全相同，说明文字不同。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Gitee AI&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
+&lt;td&gt;同DashScope&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;&lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;✅ &lt;strong&gt;总结&lt;/strong&gt;：OpenAI 与国内平台的主要区别在于是否包裹 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 层；DashScope 与 Gitee AI 的结构基本一致。&lt;/p&gt;
+&lt;p&gt;✅ &lt;strong&gt;总结&lt;/strong&gt;：OpenAI与DashScope&amp;#x2F;Gitee AI的Function Calling形式的主要区别在于：是否包裹 &lt;code&gt;&amp;quot;function&amp;quot;&lt;/code&gt; 层。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://platform.openai.com/docs/guides/function-calling&#34;&gt;Function calling - OpenAI API&lt;/a&gt;&lt;/li&gt;
