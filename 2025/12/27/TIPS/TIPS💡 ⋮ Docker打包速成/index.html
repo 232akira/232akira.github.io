@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="Per aspera ad astra" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="Per aspera ad astra" type="application/atom+xml"><link rel="alternate" type="application/json" title="Per aspera ad astra" href="https://232akira.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kode%20Mono:400,400italic,700,700italic%7CNoto%20Serif%20CJK:400,400italic,700,700italic%7CNunito%20Sans:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.21"><link rel="modulepreload" href="/js/chunk-2GJTWJB2.js"></link><link rel="modulepreload" href="/js/chunk-6ORL4QFP.js"></link><link rel="modulepreload" href="/js/chunk-DZ4TZMBF.js"></link><link rel="modulepreload" href="/js/chunk-OBYPSCU7.js"></link><link rel="modulepreload" href="/js/copy-tex-FOLMX2F2.js"></link><link rel="modulepreload" href="/js/index.esm-W66GN7UW.js"></link><link rel="modulepreload" href="/js/post-LYF2PRTH.js"></link><link rel="modulepreload" href="/js/quicklink-UQXULMFE.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="modulepreload" href="/js/tcomments-TQETI5BO.js"></link><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/themes/prism.min.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.css"/><style>/* 自定义代码块容器样式 */
+pre[class*="language-"] {
+    background: var(--grey-1) !important;
+    border: 1px solid var(--grey-3) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem !important;
+    margin: 1.25rem 0 !important;
+    position: relative;
+}
+/* 代码块内的 code 标签 */
+pre[class*="language-"] code {
+    background: transparent !important;
+    color: inherit !important;
+    text-shadow: none !important;
+}
+/* 夜间模式下的代码块样式 */
+[data-theme="dark"] pre[class*="language-"] {
+    background: var(--grey-2) !important;
+    border-color: var(--grey-4) !important;
+}
+[data-theme="dark"] pre[class*="language-"] code {
+    color: var(--grey-7) !important;
+    text-shadow: none !important;
+}
+/* 行号样式 */
+pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em !important;
+    counter-reset: linenumber;
+}
+pre.line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 1.25rem;
+    left: 0;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid var(--grey-3);
+    user-select: none;
+}
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+}
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: var(--grey-5);
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+[data-theme="dark"] .line-numbers .line-numbers-rows {
+    border-right-color: var(--grey-4);
+}
+[data-theme="dark"] .line-numbers-rows > span:before {
+    color: var(--grey-6);
+}
+/* 复制按钮样式 */
+div.code-toolbar {
+    position: relative;
+}
+div.code-toolbar > .toolbar {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+div.code-toolbar:hover > .toolbar {
+    opacity: 1;
+}
+div.code-toolbar > .toolbar .toolbar-item {
+    display: inline-block;
+}
+div.code-toolbar > .toolbar button {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--grey-7);
+    border: 1px solid var(--grey-3);
+    border-radius: 6px;
+    padding: 0.35em 0.75em;
+    font-size: 0.8125em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+div.code-toolbar > .toolbar button:hover {
+    background: rgba(255, 255, 255, 1);
+    color: var(--grey-8);
+    border-color: var(--grey-4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+div.code-toolbar > .toolbar button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] div.code-toolbar > .toolbar button {
+    background: rgba(34, 34, 34, 0.9);
+    color: var(--grey-6);
+    border-color: var(--grey-5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] div.code-toolbar > .toolbar button:hover {
+    background: rgba(50, 50, 50, 1);
+    color: var(--grey-7);
+    border-color: var(--grey-6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+</style><link rel="preload" href="/images/wave.jpg" as="image" fetchpriority="high"><meta name="keywords" content="TIPS"/><meta name="description" content="欢迎交流学习!"/><link rel="canonical" href="https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/"><title>TIPS💡 ⋮ Docker打包速成</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">TIPS💡 ⋮ Docker打包速成</h1><div class="meta"><span class="item" title="创建时间：2025-12-27 20:24:10"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-12-27T20:24:10+08:00">2025-12-27</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>1k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>1 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">K'sBLOG</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><img src="/images/wave.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Per aspera ad astra"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"/><meta itemprop="name" content="yichen-kang"/><meta itemprop="description" content="😼, 欢迎交流学习!"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Per aspera ad astra"/></span><div class="body md" itemprop="articleBody"><blockquote>
+<p>众所周知，我们程序员最大的“谎言”：“项目在我这明明能跑……”😂所以容器化真的很重要啦要重视。</p>
+</blockquote>
+<hr>
+<p><em><strong>想要快速了解Docker镜像交付方法，就看这篇！！！</strong></em></p>
+<blockquote>
+<p><strong>此篇为浓缩省流版本</strong></p>
+<ul>
+<li><strong>Docker</strong>的基本概念 &amp; 安装：详见<code>笔记🗒️ ⋮ Docker</code></li>
+<li><strong>Dockerfile</strong>的编写 &amp; 使用：详见<code>指南🧭 ⋮ Dockerfile</code></li>
+<li><strong>docker-compose</strong>的使用：详见<code>指南🧭 ⋮ docker-compose</code></li>
+</ul>
+</blockquote>
+<hr>
+<p>以以下配置为例👇</p>
+<table>
+<thead>
+<tr>
+<th>自定义配置项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>镜像名</td>
+<td>my-app</td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>latest</td>
+</tr>
+<tr>
+<td>主机端口</td>
+<td>7860</td>
+</tr>
+<tr>
+<td>容器端口</td>
+<td>7860</td>
+</tr>
+</tbody></table>
+<h3 id="1-项目代码传入VM"><a href="#1-项目代码传入VM" class="headerlink" title="1. 项目代码传入VM"></a>1. <strong>项目代码传入VM</strong></h3><p>使用<strong>复制粘贴</strong> 或 <strong>共享文件夹</strong>，具体方式根据你的VM配置来哦🤔</p>
+<h3 id="2-编写Dockerfile并构建镜像"><a href="#2-编写Dockerfile并构建镜像" class="headerlink" title="2. 编写Dockerfile并构建镜像"></a>2. <strong>编写Dockerfile并构建镜像</strong></h3><pre><code class="language-bash">docker build -t my-app:latest .
+</code></pre>
+<h3 id="3-本地运行镜像，验证功能"><a href="#3-本地运行镜像，验证功能" class="headerlink" title="3. 本地运行镜像，验证功能"></a>3. 本地运行镜像，验证功能</h3><pre><code class="language-bash">docker run -it --rm -p 7860:7860 my-app:latest
+</code></pre>
+<h3 id="4-导出镜像为tar包"><a href="#4-导出镜像为tar包" class="headerlink" title="4. 导出镜像为tar包"></a>4. 导出镜像为tar包</h3><pre><code class="language-bash">docker save -o my-app.tar my-app:latest
+</code></pre>
+<h3 id="5-（推荐）重新加载并验证tar包"><a href="#5-（推荐）重新加载并验证tar包" class="headerlink" title="5. （推荐）重新加载并验证tar包"></a>5. （推荐）重新加载并验证tar包</h3><pre><code class="language-bash">docker rmi my-app:latest
+docker load -i my-app.tar
+docker run -it --rm -p 7860:7860 my-app:latest
+</code></pre>
+<hr>
+<blockquote>
+<p>按自己的理解画了张图~仅供参考！</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/pZ1IAKO"><img loading="lazy" data-src="https://s41.ax1x.com/2025/12/19/pZ1IAKO.png" alt="pZ1IAKO.png"></a></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/2302_79169315/article/details/142056315">使用docker打包项目的流程（小白可懂）_docker打包本地项目-CSDN博客</a></li>
+</ol>
+<div class="tags"><a href="/tags/TIPS/" rel="tag"><i class="ic i-tag"></i>TIPS</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-eye"></i></span><span class="text">总访问量：</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="/2025/12/27/TIPS/TIPS💡 ⋮ Docker打包速成/">加载中...</span></span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-12-27 20:28:11" itemprop="dateModified" datetime="2025-12-27T20:28:11+08:00">2025-12-27</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="yichen-kang 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="yichen-kang 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>232akira：</strong>yichen-kang<i class="ic i-at"><em>@</em></i>Per aspera ad astra</li><li class="link"><strong>本文链接：</strong><a href="https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/" title="TIPS💡 ⋮ Docker打包速成">https://232akira.github.io/2025/12/27/TIPS/TIPS💡 ⋮ Docker打包速成/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/" rel="prev" itemprop="url" title="TIPS💡 ⋮ LLM API endpoint理解" style="background-image: linear-gradient(to bottom right, #95e8f5, #ecfaab);"><span class="type">上一篇</span><h3>TIPS💡 ⋮ LLM API endpoint理解</h3></a></div><div class="item right"><a href="/2025/12/27/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20K8s%EF%BC%88Kubernetes%EF%BC%89/" rel="next" itemprop="url" title="笔记🗒️ ⋮ K8s（Kubernetes）" style="background-image: linear-gradient(to bottom right, #c7b683, #a5bcd2);"><span class="type">下一篇</span><h3>笔记🗒️ ⋮ K8s（Kubernetes）</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E4%BC%A0%E5%85%A5VM"><span class="toc-number">1.</span> <span class="toc-text">1. 项目代码传入VM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%BC%96%E5%86%99Dockerfile%E5%B9%B6%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F"><span class="toc-number">2.</span> <span class="toc-text">2. 编写Dockerfile并构建镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C%E9%95%9C%E5%83%8F%EF%BC%8C%E9%AA%8C%E8%AF%81%E5%8A%9F%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">3. 本地运行镜像，验证功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AF%BC%E5%87%BA%E9%95%9C%E5%83%8F%E4%B8%BAtar%E5%8C%85"><span class="toc-number">4.</span> <span class="toc-text">4. 导出镜像为tar包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD%E5%B9%B6%E9%AA%8C%E8%AF%81tar%E5%8C%85"><span class="toc-number">5.</span> <span class="toc-text">5. （推荐）重新加载并验证tar包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number"></span> <span class="toc-text">参考链接</span></a></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="yichen-kang" src="/assets/avatar.jpg"/><p class="name" itemprop="name">yichen-kang</p><div class="description" itemprop="description">欢迎交流学习!</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">42</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">11</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/232akira" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;232akira"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://music.163.com/#/user/home?id=1399789377" class="item music" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;1399789377"><i class="ic i-cloud-music"></i></a><a href="/kangyichen1507@163.com" class="item email" title="kangyichen1507@163.com"><i class="ic i-envelope"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/links/" rel="section"><i class="ic i-magic"></i>links</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2025/12/27/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20K8s%EF%BC%88Kubernetes%EF%BC%89/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/04/%E5%8A%9B%E6%89%A3/Leetcode-%E6%95%B0%E7%BB%84/">Leetcode ⋮ 数组</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/03/12/%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%981-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">专题1️⃣ ⋮ 滑动窗口</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/08/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20MCP%E7%9A%84%E2%80%9CC%E2%80%9D/">TIPS💡 ⋮ MCP的“C”</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/10/25/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Docker%20Desktop%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">指南🧭 ⋮ Docker Desktop使用方法</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/">TIPS💡 ⋮ args VS parm</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/11/12/%E8%B0%83%E7%A0%94/%E8%B0%83%E7%A0%94%F0%9F%94%8D%20%E2%8B%AE%20OCR/">调研🔍 ⋮ OCR</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/16/%E6%A1%88%E4%BE%8B/%E6%A1%88%E4%BE%8B%E2%91%A0%20%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/">案例① ⋮ 入门指南</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/11/17/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Python%E4%BE%BF%E6%90%BA%E7%89%88%E5%AE%89%E8%A3%85/">指南🧭 ⋮ Python便携版安装</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/04/08/%E5%8A%9B%E6%89%A3/Leetcode-HOT%20100/">Leetcode ⋮ HOT 100</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20%E5%85%B3%E4%BA%8Epip/">TIPS💡 ⋮ 关于pip</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2024 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">yichen-kang @ K'sBLOG</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">140k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">2:08</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2025/12/27/TIPS/TIPS💡 ⋮ Docker打包速成/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script data-pjax="data-pjax">var _hmt = _hmt || [];
+(function () {
+    const hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3320ed8870d3707cace61e4b8d5c146f"
+    hm.async = true;
+    const s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+ })();</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.21" type="module" fetchpriority="high" defer></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-core.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-markup.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-css.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-clike.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-javascript.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-cpp.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-python.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-bash.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-markdown.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/line-numbers/prism-line-numbers.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/toolbar/prism-toolbar.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script><script>// PrismJS 自动加载语言支持
+if (typeof Prism !== 'undefined') {
+    Prism.plugins.autoloader.languages_path = 'https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/';
+}
+// 高亮代码块的函数（自动添加行号和复制按钮）
+function highlightCodeBlocks() {
+    if (typeof Prism !== 'undefined') {
+        // 延迟一点确保所有脚本都加载完成
+        setTimeout(function() {
+            // 为所有代码块添加行号类（可以手动在代码块上添加 line-numbers 类，这里自动添加）
+            document.querySelectorAll('pre[class*="language-"]:not(.line-numbers)').forEach(function(pre) {
+                pre.classList.add('line-numbers');
+            });
+            // 执行高亮
+            Prism.highlightAll();
+        }, 100);
+    }
+}
+// 页面加载时高亮
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', highlightCodeBlocks);
+} else {
+    highlightCodeBlocks();
+}
+// pjax 切换后也需要高亮
+window.addEventListener('pjax:success', highlightCodeBlocks);
+</script></body></html>

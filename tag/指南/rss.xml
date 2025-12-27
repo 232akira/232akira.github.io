@@ -5,19 +5,72 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 14 Dec 2025 16:30:04 +0800</pubDate>
-        <lastBuildDate>Sun, 14 Dec 2025 16:30:04 +0800</lastBuildDate>
+        <pubDate>Sat, 27 Dec 2025 20:18:06 +0800</pubDate>
+        <lastBuildDate>Sat, 27 Dec 2025 20:18:06 +0800</lastBuildDate>
         <category>记录</category>
         <category>TIPS</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>指南</category>
+        <category>备忘录</category>
         <category>案例</category>
         <category>AI</category>
-        <category>备忘录</category>
-        <category>调研</category>
+        <category>指南</category>
         <category>笔记</category>
+        <category>调研</category>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20docker-compose/</guid>
+            <title>指南🧭 ⋮ docker-compose</title>
+            <link>https://232akira.github.io/2025/12/27/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20docker-compose/</link>
+            <category>指南</category>
+            <pubDate>Sat, 27 Dec 2025 20:18:06 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;”&lt;strong&gt;一个容器只运行一个进程&lt;/strong&gt;“——那么对于大多数的项目，会打包出多个容器，而各容器间也存在着依赖关系。&lt;br&gt;而&lt;code&gt;docker-compose&lt;/code&gt;就可以用来进行这些Docker容器集群的&lt;strong&gt;快速编排&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;官网戳此👉&lt;a href=&#34;https://github.com/docker/compose&#34;&gt;docker&amp;#x2F;compose: Define and run multi-container applications with Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;核心概念&#34;&gt;&lt;a href=&#34;#核心概念&#34; class=&#34;headerlink&#34; title=&#34;核心概念&#34;&gt;&lt;/a&gt;核心概念&lt;/h2&gt;&lt;p&gt;Docker Compose is a &lt;strong&gt;tool&lt;/strong&gt; for running &lt;strong&gt;multi-container&lt;/strong&gt; applications on Docker defined using the &lt;a href=&#34;https://compose-spec.io/&#34;&gt;Compose file format&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Multi-container&lt;/code&gt;：多容器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Running&lt;/code&gt;：一键运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Compose file format&lt;/code&gt;：用yaml格式写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何编写&#34;&gt;&lt;a href=&#34;#如何编写&#34; class=&#34;headerlink&#34; title=&#34;如何编写&#34;&gt;&lt;/a&gt;如何编写&lt;/h2&gt;&lt;p&gt;应用交付时，docker-compose用来&lt;strong&gt;指明&lt;/strong&gt;各个镜像对应的端口、依赖关系等等。&lt;/p&gt;
+&lt;h3 id=&#34;Services&#34;&gt;&lt;a href=&#34;#Services&#34; class=&#34;headerlink&#34; title=&#34;Services&#34;&gt;&lt;/a&gt;Services&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;服务定义&lt;/strong&gt;。确定你的项目由哪几个部分组成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt;：API服务、模型推理引擎&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend&lt;/strong&gt;：Vue、React&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DB&lt;/strong&gt;：Redis、ChromaDB&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Properties&#34;&gt;&lt;a href=&#34;#Properties&#34; class=&#34;headerlink&#34; title=&#34;Properties&#34;&gt;&lt;/a&gt;Properties&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;属性配置&lt;/strong&gt;。指明每个镜像的具体信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;image&lt;/strong&gt;：镜像名、版本号&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ports&lt;/strong&gt;：主机端口、容器端口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;environment&lt;/strong&gt;：注入环境变量（如API_KEY、数据库连接字符串）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;volumes&lt;/strong&gt;：挂载持久化存储（如模型权重路径、日志目录）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;deploy&lt;/strong&gt;：资源分配策略（如CPU使用率限制、GPU资源申请）&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Networks&#34;&gt;&lt;a href=&#34;#Networks&#34; class=&#34;headerlink&#34; title=&#34;Networks&#34;&gt;&lt;/a&gt;Networks&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;网络通信&lt;/strong&gt;。设置多容器之间的服务方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Service Name&lt;/strong&gt;：默认机制。docker-compose会为项目创建一个默认网桥，容器间可以通过Service Name直接通信。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自定义&lt;/strong&gt;子网掩码和IP范围等&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;等我写好一版再继续更这篇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/wpc2018/article/details/122251426&#34;&gt;Docker进阶——Docker Compose 的详细使用_docker-compose up -d-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://232akira.github.io/2025/12/14/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20Dockerfile/</guid>
             <title>指南🧭 ⋮ Dockerfile</title>
@@ -35,8 +88,8 @@
 &lt;p&gt;1️⃣那么你需要做的就是以下几步（以VirtualBox+Ubuntu为例）：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;把你的win项目代码放进ubuntu&lt;/li&gt;
-&lt;li&gt;在ubuntu中构建docker镜像&lt;/li&gt;
-&lt;li&gt;运行容器&lt;/li&gt;
+&lt;li&gt;在ubuntu中构建docker镜像 &lt;strong&gt;👈基于Dockerfile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;打包出来的&lt;code&gt;.tar&lt;/code&gt;即为所求&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;Dockerfile是什么&#34;&gt;&lt;a href=&#34;#Dockerfile是什么&#34; class=&#34;headerlink&#34; title=&#34;Dockerfile是什么&#34;&gt;&lt;/a&gt;Dockerfile是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;是一个文本文件，包含构建Docker镜像的所有指令，指导Docekr构建镜像。&lt;/p&gt;
 &lt;p&gt;定义好后：用&lt;code&gt;docker build .&lt;/code&gt;就可以把Dockerfile变成一个可运行的镜像力。&lt;/p&gt;
@@ -76,6 +129,9 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;7-启动命令&#34;&gt;&lt;a href=&#34;#7-启动命令&#34; class=&#34;headerlink&#34; title=&#34;7. 启动命令&#34;&gt;&lt;/a&gt;7. 启动命令&lt;/h4&gt;&lt;p&gt;设置容器启动时默认执行的命令。这里以&lt;code&gt;python -m cli.main&lt;/code&gt;命令运行的项目为例：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CMD [&amp;quot;python&amp;quot;,&amp;quot;cli/main.py&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;合并第五步的日志查看，也可写为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CMD [&amp;quot;python&amp;quot;, &amp;quot;-u&amp;quot;, &amp;quot;app.py&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;如何使用Dockerfile&#34;&gt;&lt;a href=&#34;#如何使用Dockerfile&#34; class=&#34;headerlink&#34; title=&#34;如何使用Dockerfile&#34;&gt;&lt;/a&gt;如何使用Dockerfile&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在你的项目根目录新建&lt;code&gt;Dockerfile&lt;/code&gt;（无扩展名）文件。&lt;/li&gt;

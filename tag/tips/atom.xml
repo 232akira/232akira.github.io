@@ -3,18 +3,119 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra • Posts by &#34;tips&#34; tag</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-09-24T08:30:11.000Z</updated>
+    <updated>2025-12-27T12:24:10.000Z</updated>
     <category term="记录" />
     <category term="TIPS" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="指南" />
+    <category term="备忘录" />
     <category term="案例" />
     <category term="AI" />
-    <category term="备忘录" />
-    <category term="调研" />
+    <category term="指南" />
     <category term="笔记" />
+    <category term="调研" />
+    <entry>
+        <id>https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/</id>
+        <title>TIPS💡 ⋮ Docker打包速成</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;众所周知，我们程序员最大的“谎言”：“项目在我这明明能跑……”😂所以容器化真的很重要啦要重视。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;想要快速了解Docker镜像交付方法，就看这篇！！！&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;此篇为浓缩省流版本&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;的基本概念 &amp;amp; 安装：详见&lt;code&gt;笔记🗒️ ⋮ Docker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;的编写 &amp;amp; 使用：详见&lt;code&gt;指南🧭 ⋮ Dockerfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;docker-compose&lt;/strong&gt;的使用：详见&lt;code&gt;指南🧭 ⋮ docker-compose&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;以以下配置为例👇&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;自定义配置项&lt;/th&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;镜像名&lt;/td&gt;
+&lt;td&gt;my-app&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;版本号&lt;/td&gt;
+&lt;td&gt;latest&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主机端口&lt;/td&gt;
+&lt;td&gt;7860&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;容器端口&lt;/td&gt;
+&lt;td&gt;7860&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;1-项目代码传入VM&#34;&gt;&lt;a href=&#34;#1-项目代码传入VM&#34; class=&#34;headerlink&#34; title=&#34;1. 项目代码传入VM&#34;&gt;&lt;/a&gt;1. &lt;strong&gt;项目代码传入VM&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;使用&lt;strong&gt;复制粘贴&lt;/strong&gt; 或 &lt;strong&gt;共享文件夹&lt;/strong&gt;，具体方式根据你的VM配置来哦🤔&lt;/p&gt;
+&lt;h3 id=&#34;2-编写Dockerfile并构建镜像&#34;&gt;&lt;a href=&#34;#2-编写Dockerfile并构建镜像&#34; class=&#34;headerlink&#34; title=&#34;2. 编写Dockerfile并构建镜像&#34;&gt;&lt;/a&gt;2. &lt;strong&gt;编写Dockerfile并构建镜像&lt;/strong&gt;&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker build -t my-app:latest .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;3-本地运行镜像，验证功能&#34;&gt;&lt;a href=&#34;#3-本地运行镜像，验证功能&#34; class=&#34;headerlink&#34; title=&#34;3. 本地运行镜像，验证功能&#34;&gt;&lt;/a&gt;3. 本地运行镜像，验证功能&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it --rm -p 7860:7860 my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4-导出镜像为tar包&#34;&gt;&lt;a href=&#34;#4-导出镜像为tar包&#34; class=&#34;headerlink&#34; title=&#34;4. 导出镜像为tar包&#34;&gt;&lt;/a&gt;4. 导出镜像为tar包&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker save -o my-app.tar my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;5-（推荐）重新加载并验证tar包&#34;&gt;&lt;a href=&#34;#5-（推荐）重新加载并验证tar包&#34; class=&#34;headerlink&#34; title=&#34;5. （推荐）重新加载并验证tar包&#34;&gt;&lt;/a&gt;5. （推荐）重新加载并验证tar包&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rmi my-app:latest
+docker load -i my-app.tar
+docker run -it --rm -p 7860:7860 my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;按自己的理解画了张图~仅供参考！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgchr.com/i/pZ1IAKO&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s41.ax1x.com/2025/12/19/pZ1IAKO.png&#34; alt=&#34;pZ1IAKO.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/2302_79169315/article/details/142056315&#34;&gt;使用docker打包项目的流程（小白可懂）_docker打包本地项目-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="TIPS" />
+        <updated>2025-12-27T12:24:10.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/</id>
+        <title>TIPS💡 ⋮ LLM API endpoint理解</title>
+        <link rel="alternate" href="https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/"/>
+        <content type="html">&lt;p&gt; 搞了大半年AI应用开发相关，后知后觉一些细节问题……&lt;/p&gt;
+&lt;h2 id=&#34;Q-A&#34;&gt;&lt;a href=&#34;#Q-A&#34; class=&#34;headerlink&#34; title=&#34;Q &amp;amp; A&#34;&gt;&lt;/a&gt;Q &amp;amp; A&lt;/h2&gt;&lt;p&gt;我们调用LLM API时，&lt;strong&gt;URL&lt;/strong&gt;，也就是调用的端点设置至关重要。但在同一个模型服务中，你可能会看到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python示例：base_url &amp;#x3D; …&amp;#x2F;v1&lt;/li&gt;
+&lt;li&gt;curl示例：base_url &amp;#x3D; …&amp;#x2F;v1&amp;#x2F;&lt;strong&gt;chat&amp;#x2F;completions&lt;/strong&gt;（文本对话模型）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;🤔为什么？&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;因为Python &lt;strong&gt;SDK&lt;/strong&gt;把&lt;strong&gt;endpoint&lt;/strong&gt;封装在&lt;code&gt;client.chat.completions.create&lt;/code&gt;里了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;具体讲讲&#34;&gt;&lt;a href=&#34;#具体讲讲&#34; class=&#34;headerlink&#34; title=&#34;具体讲讲&#34;&gt;&lt;/a&gt;具体讲讲&lt;/h2&gt;&lt;p&gt;也就是SDK能够补全&lt;strong&gt;API&lt;/strong&gt;提供的base_&lt;strong&gt;url&lt;/strong&gt;的所需&lt;strong&gt;endpoint&lt;/strong&gt;，从而找到模型服务真正定位到的服务器资源位置（入口）；&lt;br&gt;而curl&amp;#x2F;requests需要的是完整的endpoint，因此这时如果配置的仅仅是&amp;#x2F;v1，那必报错。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;示例&#34;&gt;&lt;a href=&#34;#示例&#34; class=&#34;headerlink&#34; title=&#34;示例&#34;&gt;&lt;/a&gt;示例&lt;/h2&gt;&lt;p&gt;这里的&lt;code&gt;client.chat.completions.create&lt;/code&gt;实现了：“用OpenAI Chat Completions协议，向当前client的base_url发请求。”&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    response = client.chat.completions.create(
+        model=config[&amp;quot;search_llm&amp;quot;],
+        messages=[
+            &amp;#123;&amp;quot;role&amp;quot;: &amp;quot;system&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;You are a helpful assistant.&amp;quot;&amp;#125;,
+            &amp;#123;
+                &amp;quot;role&amp;quot;: &amp;quot;user&amp;quot;,
+                &amp;quot;content&amp;quot;: get_prompts(&amp;quot;tools&amp;quot;, &amp;quot;get_asset_news_llm&amp;quot;) \
+                    .replace(&amp;quot;&amp;#123;ticker&amp;#125;&amp;quot;, ticker) \
+                    .replace(&amp;quot;&amp;#123;curr_date&amp;#125;&amp;quot;, curr_date)
+            &amp;#125;
+        ],
+        extra_body=&amp;#123;&amp;quot;enable_search&amp;quot;: True&amp;#125;
+    )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;⭐而真正发生url拼接的地方，则是上下游代码实现的内部&lt;strong&gt;自动构造请求&lt;/strong&gt;：&lt;code&gt;POST .../v1/**chat/completions&lt;/code&gt;&lt;/p&gt;
+</content>
+        <category term="TIPS" />
+        <updated>2025-12-27T12:22:10.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/09/24/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20args%20VS%20parm/</id>
         <title>TIPS💡 ⋮ args VS parm</title>

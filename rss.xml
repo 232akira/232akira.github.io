@@ -5,25 +5,25 @@
         <link>https://232akira.github.io</link>
         <description>欢迎交流学习!</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 14 Dec 2025 22:58:06 +0800</pubDate>
-        <lastBuildDate>Sun, 14 Dec 2025 22:58:06 +0800</lastBuildDate>
+        <pubDate>Sat, 27 Dec 2025 23:59:00 +0800</pubDate>
+        <lastBuildDate>Sat, 27 Dec 2025 23:59:00 +0800</lastBuildDate>
         <category>记录</category>
         <category>TIPS</category>
         <category>专题</category>
         <category>力扣</category>
         <category>算法</category>
-        <category>指南</category>
+        <category>备忘录</category>
         <category>案例</category>
         <category>AI</category>
-        <category>备忘录</category>
-        <category>调研</category>
+        <category>指南</category>
         <category>笔记</category>
+        <category>调研</category>
         <item>
-            <guid isPermalink="true">https://232akira.github.io/2025/12/14/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</guid>
             <title>🔝点我查看站点指引</title>
-            <link>https://232akira.github.io/2025/12/14/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
+            <link>https://232akira.github.io/2025/12/27/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</link>
             <category>记录</category>
-            <pubDate>Sun, 14 Dec 2025 22:58:06 +0800</pubDate>
+            <pubDate>Sat, 27 Dec 2025 23:59:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;关于如何食用本博客&#34;&gt;&lt;a href=&#34;#关于如何食用本博客&#34; class=&#34;headerlink&#34; title=&#34;关于如何食用本博客&#34;&gt;&lt;/a&gt;关于如何食用本博客&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;任务栏&lt;/strong&gt;：pc全屏可直接点击顶端选项🍭pc分屏&amp;#x2F;移动端点击左上角三横杠&lt;/p&gt;
 &lt;h2 id=&#34;了解更多我的故事&#34;&gt;&lt;a href=&#34;#了解更多我的故事&#34; class=&#34;headerlink&#34; title=&#34;了解更多我的故事&#34;&gt;&lt;/a&gt;了解更多我的故事&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏左上角&lt;/code&gt;-&amp;gt;&lt;code&gt;关于&lt;/code&gt;&lt;br&gt;一些碎碎念，感谢赏光&lt;/p&gt;
 &lt;h2 id=&#34;昼夜模式&#34;&gt;&lt;a href=&#34;#昼夜模式&#34; class=&#34;headerlink&#34; title=&#34;昼夜模式&#34;&gt;&lt;/a&gt;昼夜模式&lt;/h2&gt;&lt;p&gt;&lt;code&gt;任务栏右上角&lt;/code&gt;-&amp;gt;&lt;code&gt;太阳&lt;/code&gt;or&lt;code&gt;月亮图标&lt;/code&gt;&lt;br&gt;不管白天黑夜，选择您舒适的方式浏览~&lt;/p&gt;
@@ -37,6 +37,223 @@
 &lt;li&gt;文章搜索&lt;/li&gt;
 &lt;li&gt;其他异常显示……&lt;br&gt;…&lt;/li&gt;
 &lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20K8s%EF%BC%88Kubernetes%EF%BC%89/</guid>
+            <title>笔记🗒️ ⋮ K8s（Kubernetes）</title>
+            <link>https://232akira.github.io/2025/12/27/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20K8s%EF%BC%88Kubernetes%EF%BC%89/</link>
+            <category>笔记</category>
+            <pubDate>Sat, 27 Dec 2025 20:27:02 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;终于开启&lt;code&gt;K8s&lt;/code&gt;！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;👉那么先来重温&lt;strong&gt;容器&lt;/strong&gt;：一种虚拟化（打包&lt;strong&gt;应用&lt;/strong&gt;及其&lt;strong&gt;运行依赖环境&lt;/strong&gt;的）技术。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;核心概念&#34;&gt;&lt;a href=&#34;#核心概念&#34; class=&#34;headerlink&#34; title=&#34;核心概念&#34;&gt;&lt;/a&gt;核心概念&lt;/h2&gt;&lt;p&gt;Kubernetes（K8s）是一个用来&lt;strong&gt;管理容器化的工作负载和服务&lt;/strong&gt;的平台，即&lt;strong&gt;容器编排&lt;/strong&gt;（管理、调度、运行容器化应用）领域的事实标准。&lt;/p&gt;
+&lt;h2 id=&#34;K8s核心资源&#34;&gt;&lt;a href=&#34;#K8s核心资源&#34; class=&#34;headerlink&#34; title=&#34;K8s核心资源&#34;&gt;&lt;/a&gt;K8s核心资源&lt;/h2&gt;&lt;h3 id=&#34;Cluster&#34;&gt;&lt;a href=&#34;#Cluster&#34; class=&#34;headerlink&#34; title=&#34;Cluster&#34;&gt;&lt;/a&gt;Cluster&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;集群&lt;/strong&gt;。由一组Node组成的K8s部署环境。&lt;/p&gt;
+&lt;h3 id=&#34;Node&#34;&gt;&lt;a href=&#34;#Node&#34; class=&#34;headerlink&#34; title=&#34;Node&#34;&gt;&lt;/a&gt;Node&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;节点&lt;/strong&gt;。集群中的工作机器（物理机 or 虚拟机），运行容器。&lt;/p&gt;
+&lt;h3 id=&#34;Pod&#34;&gt;&lt;a href=&#34;#Pod&#34; class=&#34;headerlink&#34; title=&#34;Pod&#34;&gt;&lt;/a&gt;Pod&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;最小部署单元&lt;/strong&gt;。可包含至少一个关联容器。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;K8s不直接管理容器，只管理Pod，容器永远运行在Pod里。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;资源（编写yaml使用）&#34;&gt;&lt;a href=&#34;#资源（编写yaml使用）&#34; class=&#34;headerlink&#34; title=&#34;资源（编写yaml使用）&#34;&gt;&lt;/a&gt;资源（编写yaml使用）&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;资源&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;理解&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Deployment&lt;/td&gt;
+&lt;td&gt;管理Pod副本、滚动更新&lt;/td&gt;
+&lt;td&gt;控制器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Service&lt;/td&gt;
+&lt;td&gt;暴露网络访问方式&lt;/td&gt;
+&lt;td&gt;固定入口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ConfigMap&amp;#x2F;Secret&lt;/td&gt;
+&lt;td&gt;配置管理与敏感信息&lt;/td&gt;
+&lt;td&gt;配置外置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ingress&lt;/td&gt;
+&lt;td&gt;HTTP入口控制&lt;/td&gt;
+&lt;td&gt;网关&amp;#x2F;反向代理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;使用方案&#34;&gt;&lt;a href=&#34;#使用方案&#34; class=&#34;headerlink&#34; title=&#34;使用方案&#34;&gt;&lt;/a&gt;使用方案&lt;/h2&gt;&lt;p&gt;K8s的使用通常遵循“3+1”步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打包（Docker）&lt;/li&gt;
+&lt;li&gt;描述（YAML）&lt;/li&gt;
+&lt;li&gt;交付（Kubectl）&lt;/li&gt;
+&lt;li&gt;维护（K8s自我修复）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;工作流程&#34;&gt;&lt;a href=&#34;#工作流程&#34; class=&#34;headerlink&#34; title=&#34;工作流程&#34;&gt;&lt;/a&gt;工作流程&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;待更新~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://kubernetes.io/zh-cn/docs/home/&#34;&gt;Kubernetes 文档 | Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_44262492/article/details/155533029&#34;&gt;【 Kubernetes（K8s）完全指南】从入门到实战（含命令+配置+表格对比）_kubernetes 教程-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/SinnetCloud/article/details/105580566&#34;&gt;关于kubernetes（k8s），这可能是讲的最通俗易懂的一次了_kubernates-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/</guid>
+            <title>TIPS💡 ⋮ Docker打包速成</title>
+            <link>https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20Docker%E6%89%93%E5%8C%85%E9%80%9F%E6%88%90/</link>
+            <category>TIPS</category>
+            <pubDate>Sat, 27 Dec 2025 20:24:10 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;众所周知，我们程序员最大的“谎言”：“项目在我这明明能跑……”😂所以容器化真的很重要啦要重视。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;想要快速了解Docker镜像交付方法，就看这篇！！！&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;此篇为浓缩省流版本&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;的基本概念 &amp;amp; 安装：详见&lt;code&gt;笔记🗒️ ⋮ Docker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;的编写 &amp;amp; 使用：详见&lt;code&gt;指南🧭 ⋮ Dockerfile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;docker-compose&lt;/strong&gt;的使用：详见&lt;code&gt;指南🧭 ⋮ docker-compose&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;以以下配置为例👇&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;自定义配置项&lt;/th&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;镜像名&lt;/td&gt;
+&lt;td&gt;my-app&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;版本号&lt;/td&gt;
+&lt;td&gt;latest&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主机端口&lt;/td&gt;
+&lt;td&gt;7860&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;容器端口&lt;/td&gt;
+&lt;td&gt;7860&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id=&#34;1-项目代码传入VM&#34;&gt;&lt;a href=&#34;#1-项目代码传入VM&#34; class=&#34;headerlink&#34; title=&#34;1. 项目代码传入VM&#34;&gt;&lt;/a&gt;1. &lt;strong&gt;项目代码传入VM&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;使用&lt;strong&gt;复制粘贴&lt;/strong&gt; 或 &lt;strong&gt;共享文件夹&lt;/strong&gt;，具体方式根据你的VM配置来哦🤔&lt;/p&gt;
+&lt;h3 id=&#34;2-编写Dockerfile并构建镜像&#34;&gt;&lt;a href=&#34;#2-编写Dockerfile并构建镜像&#34; class=&#34;headerlink&#34; title=&#34;2. 编写Dockerfile并构建镜像&#34;&gt;&lt;/a&gt;2. &lt;strong&gt;编写Dockerfile并构建镜像&lt;/strong&gt;&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker build -t my-app:latest .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;3-本地运行镜像，验证功能&#34;&gt;&lt;a href=&#34;#3-本地运行镜像，验证功能&#34; class=&#34;headerlink&#34; title=&#34;3. 本地运行镜像，验证功能&#34;&gt;&lt;/a&gt;3. 本地运行镜像，验证功能&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -it --rm -p 7860:7860 my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4-导出镜像为tar包&#34;&gt;&lt;a href=&#34;#4-导出镜像为tar包&#34; class=&#34;headerlink&#34; title=&#34;4. 导出镜像为tar包&#34;&gt;&lt;/a&gt;4. 导出镜像为tar包&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker save -o my-app.tar my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;5-（推荐）重新加载并验证tar包&#34;&gt;&lt;a href=&#34;#5-（推荐）重新加载并验证tar包&#34; class=&#34;headerlink&#34; title=&#34;5. （推荐）重新加载并验证tar包&#34;&gt;&lt;/a&gt;5. （推荐）重新加载并验证tar包&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker rmi my-app:latest
+docker load -i my-app.tar
+docker run -it --rm -p 7860:7860 my-app:latest
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;按自己的理解画了张图~仅供参考！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgchr.com/i/pZ1IAKO&#34;&gt;&lt;img loading=&#34;lazy&#34; data-src=&#34;https://s41.ax1x.com/2025/12/19/pZ1IAKO.png&#34; alt=&#34;pZ1IAKO.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/2302_79169315/article/details/142056315&#34;&gt;使用docker打包项目的流程（小白可懂）_docker打包本地项目-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/</guid>
+            <title>TIPS💡 ⋮ LLM API endpoint理解</title>
+            <link>https://232akira.github.io/2025/12/27/TIPS/TIPS%F0%9F%92%A1%20%E2%8B%AE%20LLM%20API%20endpoint%E7%90%86%E8%A7%A3/</link>
+            <category>TIPS</category>
+            <pubDate>Sat, 27 Dec 2025 20:22:10 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt; 搞了大半年AI应用开发相关，后知后觉一些细节问题……&lt;/p&gt;
+&lt;h2 id=&#34;Q-A&#34;&gt;&lt;a href=&#34;#Q-A&#34; class=&#34;headerlink&#34; title=&#34;Q &amp;amp; A&#34;&gt;&lt;/a&gt;Q &amp;amp; A&lt;/h2&gt;&lt;p&gt;我们调用LLM API时，&lt;strong&gt;URL&lt;/strong&gt;，也就是调用的端点设置至关重要。但在同一个模型服务中，你可能会看到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python示例：base_url &amp;#x3D; …&amp;#x2F;v1&lt;/li&gt;
+&lt;li&gt;curl示例：base_url &amp;#x3D; …&amp;#x2F;v1&amp;#x2F;&lt;strong&gt;chat&amp;#x2F;completions&lt;/strong&gt;（文本对话模型）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;🤔为什么？&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;因为Python &lt;strong&gt;SDK&lt;/strong&gt;把&lt;strong&gt;endpoint&lt;/strong&gt;封装在&lt;code&gt;client.chat.completions.create&lt;/code&gt;里了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;具体讲讲&#34;&gt;&lt;a href=&#34;#具体讲讲&#34; class=&#34;headerlink&#34; title=&#34;具体讲讲&#34;&gt;&lt;/a&gt;具体讲讲&lt;/h2&gt;&lt;p&gt;也就是SDK能够补全&lt;strong&gt;API&lt;/strong&gt;提供的base_&lt;strong&gt;url&lt;/strong&gt;的所需&lt;strong&gt;endpoint&lt;/strong&gt;，从而找到模型服务真正定位到的服务器资源位置（入口）；&lt;br&gt;而curl&amp;#x2F;requests需要的是完整的endpoint，因此这时如果配置的仅仅是&amp;#x2F;v1，那必报错。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;示例&#34;&gt;&lt;a href=&#34;#示例&#34; class=&#34;headerlink&#34; title=&#34;示例&#34;&gt;&lt;/a&gt;示例&lt;/h2&gt;&lt;p&gt;这里的&lt;code&gt;client.chat.completions.create&lt;/code&gt;实现了：“用OpenAI Chat Completions协议，向当前client的base_url发请求。”&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;    response = client.chat.completions.create(
+        model=config[&amp;quot;search_llm&amp;quot;],
+        messages=[
+            &amp;#123;&amp;quot;role&amp;quot;: &amp;quot;system&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;You are a helpful assistant.&amp;quot;&amp;#125;,
+            &amp;#123;
+                &amp;quot;role&amp;quot;: &amp;quot;user&amp;quot;,
+                &amp;quot;content&amp;quot;: get_prompts(&amp;quot;tools&amp;quot;, &amp;quot;get_asset_news_llm&amp;quot;) \
+                    .replace(&amp;quot;&amp;#123;ticker&amp;#125;&amp;quot;, ticker) \
+                    .replace(&amp;quot;&amp;#123;curr_date&amp;#125;&amp;quot;, curr_date)
+            &amp;#125;
+        ],
+        extra_body=&amp;#123;&amp;quot;enable_search&amp;quot;: True&amp;#125;
+    )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;⭐而真正发生url拼接的地方，则是上下游代码实现的内部&lt;strong&gt;自动构造请求&lt;/strong&gt;：&lt;code&gt;POST .../v1/**chat/completions&lt;/code&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://232akira.github.io/2025/12/27/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20docker-compose/</guid>
+            <title>指南🧭 ⋮ docker-compose</title>
+            <link>https://232akira.github.io/2025/12/27/%E6%8C%87%E5%8D%97/%E6%8C%87%E5%8D%97%F0%9F%A7%AD%20%E2%8B%AE%20docker-compose/</link>
+            <category>指南</category>
+            <pubDate>Sat, 27 Dec 2025 20:18:06 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;”&lt;strong&gt;一个容器只运行一个进程&lt;/strong&gt;“——那么对于大多数的项目，会打包出多个容器，而各容器间也存在着依赖关系。&lt;br&gt;而&lt;code&gt;docker-compose&lt;/code&gt;就可以用来进行这些Docker容器集群的&lt;strong&gt;快速编排&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;官网戳此👉&lt;a href=&#34;https://github.com/docker/compose&#34;&gt;docker&amp;#x2F;compose: Define and run multi-container applications with Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;核心概念&#34;&gt;&lt;a href=&#34;#核心概念&#34; class=&#34;headerlink&#34; title=&#34;核心概念&#34;&gt;&lt;/a&gt;核心概念&lt;/h2&gt;&lt;p&gt;Docker Compose is a &lt;strong&gt;tool&lt;/strong&gt; for running &lt;strong&gt;multi-container&lt;/strong&gt; applications on Docker defined using the &lt;a href=&#34;https://compose-spec.io/&#34;&gt;Compose file format&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Multi-container&lt;/code&gt;：多容器&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Running&lt;/code&gt;：一键运行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Compose file format&lt;/code&gt;：用yaml格式写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何编写&#34;&gt;&lt;a href=&#34;#如何编写&#34; class=&#34;headerlink&#34; title=&#34;如何编写&#34;&gt;&lt;/a&gt;如何编写&lt;/h2&gt;&lt;p&gt;应用交付时，docker-compose用来&lt;strong&gt;指明&lt;/strong&gt;各个镜像对应的端口、依赖关系等等。&lt;/p&gt;
+&lt;h3 id=&#34;Services&#34;&gt;&lt;a href=&#34;#Services&#34; class=&#34;headerlink&#34; title=&#34;Services&#34;&gt;&lt;/a&gt;Services&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;服务定义&lt;/strong&gt;。确定你的项目由哪几个部分组成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt;：API服务、模型推理引擎&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend&lt;/strong&gt;：Vue、React&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DB&lt;/strong&gt;：Redis、ChromaDB&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Properties&#34;&gt;&lt;a href=&#34;#Properties&#34; class=&#34;headerlink&#34; title=&#34;Properties&#34;&gt;&lt;/a&gt;Properties&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;属性配置&lt;/strong&gt;。指明每个镜像的具体信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;image&lt;/strong&gt;：镜像名、版本号&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ports&lt;/strong&gt;：主机端口、容器端口&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;environment&lt;/strong&gt;：注入环境变量（如API_KEY、数据库连接字符串）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;volumes&lt;/strong&gt;：挂载持久化存储（如模型权重路径、日志目录）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;deploy&lt;/strong&gt;：资源分配策略（如CPU使用率限制、GPU资源申请）&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Networks&#34;&gt;&lt;a href=&#34;#Networks&#34; class=&#34;headerlink&#34; title=&#34;Networks&#34;&gt;&lt;/a&gt;Networks&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;网络通信&lt;/strong&gt;。设置多容器之间的服务方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Service Name&lt;/strong&gt;：默认机制。docker-compose会为项目创建一个默认网桥，容器间可以通过Service Name直接通信。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自定义&lt;/strong&gt;子网掩码和IP范围等&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;等我写好一版再继续更这篇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/wpc2018/article/details/122251426&#34;&gt;Docker进阶——Docker Compose 的详细使用_docker-compose up -d-CSDN博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
@@ -56,8 +273,8 @@
 &lt;p&gt;1️⃣那么你需要做的就是以下几步（以VirtualBox+Ubuntu为例）：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;把你的win项目代码放进ubuntu&lt;/li&gt;
-&lt;li&gt;在ubuntu中构建docker镜像&lt;/li&gt;
-&lt;li&gt;运行容器&lt;/li&gt;
+&lt;li&gt;在ubuntu中构建docker镜像 &lt;strong&gt;👈基于Dockerfile&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;打包出来的&lt;code&gt;.tar&lt;/code&gt;即为所求&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;Dockerfile是什么&#34;&gt;&lt;a href=&#34;#Dockerfile是什么&#34; class=&#34;headerlink&#34; title=&#34;Dockerfile是什么&#34;&gt;&lt;/a&gt;Dockerfile是什么&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Dockerfile&lt;/strong&gt;是一个文本文件，包含构建Docker镜像的所有指令，指导Docekr构建镜像。&lt;/p&gt;
 &lt;p&gt;定义好后：用&lt;code&gt;docker build .&lt;/code&gt;就可以把Dockerfile变成一个可运行的镜像力。&lt;/p&gt;
@@ -97,6 +314,9 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;7-启动命令&#34;&gt;&lt;a href=&#34;#7-启动命令&#34; class=&#34;headerlink&#34; title=&#34;7. 启动命令&#34;&gt;&lt;/a&gt;7. 启动命令&lt;/h4&gt;&lt;p&gt;设置容器启动时默认执行的命令。这里以&lt;code&gt;python -m cli.main&lt;/code&gt;命令运行的项目为例：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CMD [&amp;quot;python&amp;quot;,&amp;quot;cli/main.py&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;合并第五步的日志查看，也可写为：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;CMD [&amp;quot;python&amp;quot;, &amp;quot;-u&amp;quot;, &amp;quot;app.py&amp;quot;]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;如何使用Dockerfile&#34;&gt;&lt;a href=&#34;#如何使用Dockerfile&#34; class=&#34;headerlink&#34; title=&#34;如何使用Dockerfile&#34;&gt;&lt;/a&gt;如何使用Dockerfile&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在你的项目根目录新建&lt;code&gt;Dockerfile&lt;/code&gt;（无扩展名）文件。&lt;/li&gt;
@@ -1413,7 +1633,7 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
           ↑
  【Function Calling】  //模型原生能力
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Google将A2A比作互联网早期的HTTP协议&lt;/p&gt;
+&lt;p&gt;👉Google将A2A比作互联网早期的HTTP协议。&lt;/p&gt;
 &lt;h2 id=&#34;参考链接&#34;&gt;&lt;a href=&#34;#参考链接&#34; class=&#34;headerlink&#34; title=&#34;参考链接&#34;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1916821381879931822&#34;&gt;(7 封私信) 深度研究报告：大模型工具调用（Tool-use）的技术演进与协议生态分析 - 知乎&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/hwhsong/article/details/147244842&#34;&gt;【AI学习】大模型调用外部工具的主流方式对比_大模型工具调用-CSDN博客&lt;/a&gt;&lt;/li&gt;
@@ -1476,8 +1696,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
             <guid isPermalink="true">https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</guid>
             <title>备忘录 ⋮ 案例</title>
             <link>https://232akira.github.io/2025/06/16/%E5%A4%87%E5%BF%98/%E5%A4%87%E5%BF%98%E5%BD%95-%E6%A1%88%E4%BE%8B/</link>
-            <category>AI</category>
             <category>备忘录</category>
+            <category>AI</category>
             <pubDate>Mon, 16 Jun 2025 10:10:30 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;工作以来接触到了很多新知识，博客也拖了俩月没更了…😂今天开始慢慢补充案例！&lt;/p&gt;
 &lt;h2 id=&#34;工作案例备忘&#34;&gt;&lt;a href=&#34;#工作案例备忘&#34; class=&#34;headerlink&#34; title=&#34;工作案例备忘&#34;&gt;&lt;/a&gt;工作案例备忘&lt;/h2&gt;&lt;ul&gt;
