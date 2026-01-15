@@ -3,18 +3,29 @@
     <id>https://232akira.github.io</id>
     <title>Per aspera ad astra</title>
     <link href="https://232akira.github.io" />
-    <updated>2025-12-27T15:59:00.000Z</updated>
+    <updated>2026-01-12T12:27:02.000Z</updated>
     <category term="记录" />
-    <category term="TIPS" />
     <category term="专题" />
     <category term="力扣" />
     <category term="算法" />
-    <category term="备忘录" />
+    <category term="TIPS" />
     <category term="案例" />
     <category term="AI" />
+    <category term="备忘录" />
+    <category term="调研" />
     <category term="指南" />
     <category term="笔记" />
-    <category term="调研" />
+    <entry>
+        <id>https://232akira.github.io/2026/01/12/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%A8%A1%E5%9E%8B%E6%9D%83%E9%87%8D/</id>
+        <title>笔记🗒️ ⋮ 模型权重</title>
+        <link rel="alternate" href="https://232akira.github.io/2026/01/12/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0%F0%9F%97%92%EF%B8%8F%20%E2%8B%AE%20%E6%A8%A1%E5%9E%8B%E6%9D%83%E9%87%8D/"/>
+        <content type="html">&lt;blockquote&gt;
+&lt;p&gt;新年第一篇~等我更新！&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="笔记" />
+        <updated>2026-01-12T12:27:02.000Z</updated>
+    </entry>
     <entry>
         <id>https://232akira.github.io/2025/12/27/%E7%82%B9%E6%88%91%E6%9F%A5%E7%9C%8B%E7%AB%99%E7%82%B9%E6%8C%87%E5%BC%95/</id>
         <title>🔝点我查看站点指引</title>
@@ -1733,8 +1744,8 @@ $env:XXX_API_KEY=&amp;quot;your_api_key_here&amp;quot;
 &lt;/ul&gt;
 &lt;p&gt;待整理~😴&lt;/p&gt;
 </content>
-        <category term="备忘录" />
         <category term="AI" />
+        <category term="备忘录" />
         <updated>2025-06-16T02:10:30.000Z</updated>
     </entry>
     <entry>
